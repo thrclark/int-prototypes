@@ -5,3 +5,5 @@ int-prototypes.iml
 .idea/modules.xml
 .idea/vcs.xml
 .idea/workspace.xml
+node_modules/
+.sass-cache/

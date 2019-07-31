@@ -1,0 +1,32 @@
+{
+  "name": "tomtest",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrclark/int-prototypes.git"
+  },
+  "author": "tom clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thrclark/int-prototypes/issues"
+  },
+  "homepage": "https://github.com/thrclark/int-prototypes#readme",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "font-awesome": "4.7",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.1",
+    "paginationjs": "^2.1.4",
+    "popper.js": "^1.14.7",
+    "prismjs": "^1.11.0",
+    "simplemde": "^1.11.2"
+  },
+  "devDependencies": {
+    "rivet-bootstrap": "1.4.0-1"
+  }
+}
