@@ -9,7 +9,7 @@ $page_title = 'Template';
 <?php include('includes/styles.php') ?>
 </head>
 <body>
-<h1> <?php echo $page_title; ?></h1>
+<h1> <?php echo $page_title; ?></h1>testing
 <?php include('includes/template-include.php') ?>
 <?php include('modals/modal-template.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
