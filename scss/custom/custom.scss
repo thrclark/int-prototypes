@@ -1,1 +1,26 @@
 //custom SCSS
+
+html {
+  .int-user {
+    background: $color-black--150;
+    main {
+      @extend .container;
+      @extend .mt-5;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+
+  html {
+    .int-user {
+      main {
+        max-width: 440px;
+
+      }
+    }
+  }
+
+}
+
