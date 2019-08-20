@@ -1,6 +1,6 @@
 <?php 
 $section = '';
-$page_title = 'LOGIN';
+$page_title = 'VERIFY';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,16 +19,8 @@ $page_title = 'LOGIN';
     <section>
         <div class="card">
             <div class="card-body">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" aria-describedby="username" >
-                </div>
-                <div class="form-group">
-                    <label for="passphrase">Passphrase</label>
-                    <input type="password" class="form-control" id="passphrase" aria-describedby="passphrase" >
-                </div>
-                <button type="button" class="btn btn-primary btn-block mt-6" onclick="location.href='verification.php';">Log in</button>
-                <div class="int-help"> <a href="https://kb.iu.edu/d/auog" target="_blank" class="mr-5"><i class="rbt-icon-info-circle"></i> About the new look</a> <a href="https://kb.iu.edu/d/alpu" target="_blank"><i class="rbt-icon-question-mark"></i> Get help</a></div>
+                <p> On occasion, Indiana University requires verification of personal information regarding your affiliation with the university. The item(s) presented on this page have been marked as needing your review for accuracy. </p>
+                <p>This is an additional, optional paragraph that may be customized as needed. This paragraph can include <a href="#">links</a> that could take the user to help content, or <a href="#">contact information</a>. </p>
             </div>
         </div>
     </section>
