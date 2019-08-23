@@ -92,9 +92,8 @@ $page_title = 'VERIFY';
             </div>
         </div>
         <div class="p-3">
-            <p class="">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open.
+            <p class="">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
             <hr>
-            </p>
             <div class="row mb-5" id="demojs_revealskipscreen">
                 <div class="col-md-6 d-flex">
                     <div class="d-flex flex-column">
@@ -150,11 +149,7 @@ $page_title = 'VERIFY';
 		$("#demojs_verifyscreen").show();
         $(".int-privatedata").show();	
     });
-</script>
-
-
-
-
+</script> 
 <script>
     $(document).ready(function() {
         $("#submit2").click(function() {
@@ -177,9 +172,5 @@ $page_title = 'VERIFY';
 		
     }); 
 </script>
-
-
-
-
 </body>
 </html>
