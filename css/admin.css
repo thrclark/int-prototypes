@@ -5,6 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url(../node_modules/font-awesome/css/font-awesome.css);
 :root {
   --blue: #006298;
   --indigo: #6610f2;
@@ -11822,10 +11823,16 @@ html .int-user {
     letter-spacing: .04rem; }
   html .int-user main section .card .card-body {
     padding: 2rem 2.5rem 2.5rem; }
+    html .int-user main section .card .card-body .int-mask {
+      font-size: 10px;
+      letter-spacing: 1px; }
     html .int-user main section .card .card-body .int-help {
       text-align: center; }
       html .int-user main section .card .card-body .int-help a {
         text-decoration: none; }
+  html .int-user .popover {
+    top: -31px !important;
+    left: 18px !important; }
 
 @media (min-width: 576px) {
   html .int-user header {

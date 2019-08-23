@@ -44,6 +44,10 @@ html {
 
           .card-body {
             padding: 2rem 2.5rem 2.5rem;
+            .int-mask {
+              font-size: 10px;
+              letter-spacing: 1px;
+            }
             .int-help {
               @extend .ts-14;
               text-align: center;
@@ -56,6 +60,10 @@ html {
         }
 
       }
+    }
+    .popover {
+      top: -31px !important;
+      left: 18px !important;
     }
   }
 }
