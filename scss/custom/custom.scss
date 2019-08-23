@@ -66,13 +66,25 @@ html {
   html {
     .int-user {
       header {
-        max-width: 440px;
+        max-width: 880px;
 
       }
       main {
-        max-width: 440px;
+        max-width: 880px;
 
       }
+      //CAS styles are for prototyping only
+      &.cas {
+        header {
+          max-width: 440px;
+
+        }
+        main {
+          max-width: 440px;
+
+        }
+      }
+
     }
   }
 

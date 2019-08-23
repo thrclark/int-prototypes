@@ -3,4 +3,4 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-<title>IU Notifications</title>
+<title>Verify</title>

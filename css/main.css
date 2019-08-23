@@ -12157,8 +12157,12 @@ html .int-user {
 
 @media (min-width: 576px) {
   html .int-user header {
-    max-width: 440px; }
+    max-width: 880px; }
   html .int-user main {
+    max-width: 880px; }
+  html .int-user.cas header {
+    max-width: 440px; }
+  html .int-user.cas main {
     max-width: 440px; } }
 button[data-theme] {
   display: inline-block;
