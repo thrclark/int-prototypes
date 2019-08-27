@@ -9,13 +9,15 @@ $page_title = 'VERIFY';
 <?php include('includes/styles.php') ?>
 </head>
 <body class="int-user">
-<header class="align-items-center"> <img alt="" class="int-brand-image">
-    <div class="int-lockup-group flex-grow-1">
-        <div class="int-lockup-org">INDIANA UNIVERSITY</div>
-        <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
-    </div>
-    <div class="d-none d-lg-block">
-        <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
+<header class="container p-0 mt-7 mb-3">
+    <div class="d-flex"> <img alt="" class="int-brand-image">
+        <div class="int-lockup-group flex-grow-1">
+            <div class="int-lockup-org">INDIANA UNIVERSITY</div>
+            <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
+        </div>
+        <div class="d-none d-lg-block">
+            <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
+        </div>
     </div>
 </header>
 <main>
@@ -45,8 +47,7 @@ $page_title = 'VERIFY';
             <div class="card-body">
                 <h2>Verify your data</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                <!--  <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. </p>-->
-                
+                <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
                 <h3 class="ts-26 mt-5">IU Notify</h3>
                 <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
                 <ul class="list-group">

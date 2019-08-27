@@ -9,10 +9,13 @@ $page_title = 'LOGIN';
 <?php include('includes/styles.php') ?>
 </head>
 <body class="int-user cas">
-<header> <img alt="" class="int-brand-image">
-    <div class="int-lockup-group">
-        <div class="int-lockup-org">INDIANA UNIVERSITY</div>
-        <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
+<header class="container p-0 mt-7 mb-3">
+    <div class="d-flex"> <img alt="" class="int-brand-image">
+        <div class="int-lockup-group flex-grow-1">
+            <div class="int-lockup-org">INDIANA UNIVERSITY</div>
+            <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
+        </div>
+       
     </div>
 </header>
 <main>

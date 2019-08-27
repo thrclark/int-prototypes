@@ -8,12 +8,12 @@ html {
     background-color: var(--body-bg-color);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     header {
-      @extend .container;
-      @extend .d-flex;
-      @extend .flex-row;
-      @extend .pb-3;
-      @extend .px-0;
-      @extend .pt-5;
+      //@extend .container;
+      //@extend .d-flex;
+      //@extend .flex-row;
+      //@extend .pb-3;
+      //@extend .px-0;
+      //@extend .pt-5;
       .int-brand-image {
         content: var(--logo-image-url);
         max-height: 58px;
