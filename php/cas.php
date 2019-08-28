@@ -6,7 +6,7 @@ $page_title = 'LOGIN';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<?php include('includes/styles.php') ?>
+<?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user cas">
 <header class="container p-0 mt-7 mb-3">
