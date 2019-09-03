@@ -9,17 +9,84 @@ $page_title = 'VERIFY';
 <style type="text/css"></style>
 <?php include('includes/styles-main.php') ?>
 </head>
-<body class="int-user" >
+<body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
     <div class="rbt-shell">
+        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 20rem;width: 20rem;">
+            <h2 class="mb-3">Theme controls</h2>
+            <section class="predefined-themes mb-5">
+                <div class="">Predefined Themes</div>
+                <button data-theme="white" style="background-color: white"> white </button>
+                <button data-theme="brown" style="background-color: #6f5929"> brown </button>
+                <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
+                <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
+                <button data-theme="black" style="background-color: #222"> black </button>
+            </section>
+            <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
+                <div class="card">
+                    <h5 class="mb-2" id="headingOne">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
+                    </h5>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="logoimage-visibility">Logo image</label>
+                            <select class="form-control mb-3" id="logoimage-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <label for="logoimage-url" class="demojs-logourl">Logo image URL</label>
+                            <input type="text" class="form-control mb-3 demojs-logourl" id="logoimage-url" value="">
+                            <label for="lockup-visibility">Lockup</label>
+                            <select class="form-control mb-3" id="lockup-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="mb-2" id="headingTwo">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Colors</button>
+                    </h5>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="body-bg-color">Body background color</label>
+                            <input type="color" class="form-control mb-3" id="body-bg-color" value="#444444">
+                            <label for="body-text-color">Body text color</label>
+                            <input type="color" class="form-control mb-3" id="body-text-color" value="#444444">
+                            <label for="panel-bg-color">Panel background color</label>
+                            <input type="color" class="form-control mb-3" id="panel-bg-color" value="#444444">
+                            <label for="panel-text-color">Panel text color</label>
+                            <input type="color" class="form-control mb-3" id="panel-text-color" value="#444444">
+                            <label for="action-color">Action color</label>
+                            <input type="color" class="form-control mb-3" id="action-color" value="#006298">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="mb-2" id="headingThree">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="rbt-icon-chevron-right"></i> Typography</button>
+                    </h5>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body"> Nostrum fugit a natus. Corporis voluptates ut odio omnis nobis voluptas. Est dolor et eum quis deleniti explicabo autem est magnam. Unde expedita ab quia maxime quia. Qui voluptas distinctio ipsa laborum laboriosam. </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="savetheme" disabled>Apply changes</button>
+        </div>
         <div class="rbt-shell-stage p-3">
             <header class="container p-0 mt-7 mb-3" style="max-width:880px">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
-                    <div class="int-lockup-group flex-grow-1">
-                        <div class="int-lockup-org">INDIANA UNIVERSITY</div>
-                        <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
+                    <div class="int-lockup-group text-nowrap">
+                        <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
+                        <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
                     </div>
-                    <div class="d-none d-lg-block">
+                    <div class="w-100"></div>
+                    <div class="d-none d-lg-block text-nowrap">
                         <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">UN</span> username </div>
                     </div>
                 </div>
@@ -31,7 +98,7 @@ $page_title = 'VERIFY';
                             <h2 class="ts-26">Verify your data</h2>
                             <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                             <h3 class="ts-26 mt-5">Sample data</h3>
-                            <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
+                            <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <dl class="row">
@@ -47,7 +114,7 @@ $page_title = 'VERIFY';
                             </ul>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="int-verify-controls p-3">
                         <div class="row mb-5" id="demojs_verifyscreen">
                             <div class="col-md-6 d-flex">
                                 <div class="d-flex flex-column">
@@ -74,67 +141,6 @@ $page_title = 'VERIFY';
                     </div>
                 </section>
             </main>
-        </div>
-        <div class="rbt-shell-sidebar d-none d-md-block" style="    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 20rem;
-    width: 20rem;">
-            <h2 class="mb-3">Theme controls</h2>
-            <section class="predefined-themes mb-5">
-                <div class="">Predefined Themes</div>
-                <button data-theme="white" style="background-color: white"> white </button>
-                <button data-theme="brown" style="background-color: #6f5929"> brown </button>
-                <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
-                <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
-                <button data-theme="black" style="background-color: #222"> black </button>
-            </section>
-            <div class="rbt-collapse-accordion" id="accordion">
-                <div class="card">
-                    <h5 class="mb-2" id="headingOne">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
-                    </h5>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            <label for="application-name">Lockup visibility</label>
-                            <select class="form-control mb-3" id="application-name">
-                                <option selected="" value="block">Show</option>
-                                <option value="none">Hide</option>
-                            </select>
-                            <label for="org-name">Organization name</label>
-                            <input type="text" class="form-control mb-3" id="org-name" aria-describedby="textinput" >
-                            <label for="org-name">Application name</label>
-                            <input type="text" class="form-control mb-3" id="org-name" aria-describedby="textinput" >
-                            
-                            
-                            
-                              <label for="lockup-font-color">Lockup font color</label>
-                            
-                            
-                            <input type="color" class="form-control" id="headerfooter-text-color" value="#444444">
-                            
-                            
-                            
-                            
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="mb-2" id="headingTwo">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Colors</button>
-                    </h5>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body"> Nostrum fugit a natus. Corporis voluptates ut odio omnis nobis voluptas. Est dolor et eum quis deleniti explicabo autem est magnam. Unde expedita ab quia maxime quia. Qui voluptas distinctio ipsa laborum laboriosam.</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="mb-2" id="headingThree">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="rbt-icon-chevron-right"></i> Typography</button>
-                    </h5>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body"> Nostrum fugit a natus. Corporis voluptates ut odio omnis nobis voluptas. Est dolor et eum quis deleniti explicabo autem est magnam. Unde expedita ab quia maxime quia. Qui voluptas distinctio ipsa laborum laboriosam. </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </main>
@@ -170,6 +176,37 @@ $page_title = 'VERIFY';
 		
 		
 		
+    }); 
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#lockup-visibility').change(function() {
+            if ($(this).val() == "block") {
+                $(".demojs-lockupcontrols").show();
+            }
+            if ($(this).val() == "none") {
+                $(".demojs-lockupcontrols").hide();
+            }
+
+        });
+		
+		
+		
+		 $('#logoimage-visibility').change(function() {
+            if ($(this).val() == "block") {
+                $(".demojs-logourl").show();
+            }
+            if ($(this).val() == "none") {
+                $(".demojs-logourl").hide();
+            }
+
+        });
+		
+		
+	
+
+
+
     }); 
 </script>
 </body>

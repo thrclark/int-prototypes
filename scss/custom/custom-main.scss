@@ -6,8 +6,12 @@
 html {
 
   .int-brand-image {
-    content: var(--logo-image-url);
+    content: var(--logoimage-url);
     max-height: 58px;
+    display: var(--logoimage-visibility);
+  }
+  .int-lockup-group {
+    display: var(--lockup-visibility);
   }
   .int-user {
     background-color: var(--body-bg-color);
@@ -21,6 +25,7 @@ html {
       //@extend .pt-5;
 
       .int-lockup-group {
+        color: var(--body-text-color);
         @extend .pl-2;
         .int-lockup-org {
           @extend .ts-14;
@@ -33,6 +38,9 @@ html {
         }
 
       }
+      .rbt-header-avatar-id {
+        color: var(--body-text-color);
+      }
     }
     main {
       @extend .container;
@@ -43,9 +51,17 @@ html {
 
       section {
         .card {
+          background-color: var(--panel-bg-color);
 
           .card-body {
+            color: var(--panel-text-color);
             padding: 2rem 2.5rem 2.5rem;
+            a {
+              color: var(--action-color);
+              &:focus {
+                outline: 0.125rem solid var(--action-color);
+              }
+            }
             .int-mask {
               font-size: 10px;
               letter-spacing: 1px;
@@ -57,6 +73,52 @@ html {
               a {
                 text-decoration: none;
               }
+            }
+            .list-group {
+              .list-group-item {
+                background-color: var(--panel-bg-color);
+                color: var(--panel-text-color);
+                .btn-outline-primary {
+                  color: var(--action-color);
+                  border-color: var(--action-color);
+                  &:focus {
+                    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+
+        .int-verify-controls {
+          color: var(--body-text-color);
+
+          input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
+
+            box-shadow: 0 0 0 0.08rem var(--body-text-color);
+
+          }
+
+          input[type="checkbox"]:focus + label:before, input[type="checkbox"]:focus + input + label:before {
+            box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+          }
+          .rbt-button-group {
+            .btn-primary {
+              background-color: var(--action-color);
+              border-color: var(--action-color);
+              &:focus {
+                box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+              }
+            }
+            .btn-outline-primary {
+              border-color: var(--action-color);
+              color: var(--action-color);
+              //background-color: var(--panel-bg-color);
+              &:focus {
+                box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+              }
+
             }
           }
         }
@@ -119,45 +181,3 @@ button[data-theme] {
 }
 
 
-
-
-.demo-theme-builder input[type="color"] {
-  -webkit-appearance: none;
-  border: 1px solid $color-black--800;
-  width: 1.5rem;
-  height: 1.5rem;
-  outline: 0;
-}
-.demo-theme-builder input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-.demo-theme-builder input[type="color"]::-webkit-color-swatch {
-  border: none;
-}
-
-#body-bg-color {
-  background-color: var(--body-bg-color);
-}
-
-#body-font-color {
-  background-color: var(--body-font-color);
-}
-
-#headerfooter-bg-color {
-  background-color: var(--headerfooter-bg-color);
-}
-
-#headerfooter-text-color {
-  background-color: var(--headerfooter-text-color);
-}
-
-#footer-link-color {
-  background-color: var(--footer-link-color);
-}
-
-.row {
-  &.color-picker {
-    @extend .mb-3;
-    @extend .align-items-center;
-  }
-}
