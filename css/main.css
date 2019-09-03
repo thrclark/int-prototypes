@@ -12139,12 +12139,12 @@ button[aria-expanded="true"] .rbt-icon-chevron-right:before {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0; }
 
+html .int-brand-image {
+  content: var(--logo-image-url);
+  max-height: 58px; }
 html .int-user {
   background-color: var(--body-bg-color);
   transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
-  html .int-user header .int-brand-image {
-    content: var(--logo-image-url);
-    max-height: 58px; }
   html .int-user header .int-lockup-group .int-lockup-pagetitle {
     letter-spacing: .04rem; }
   html .int-user main section .card .card-body {

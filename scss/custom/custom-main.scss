@@ -4,6 +4,11 @@
 
 
 html {
+
+  .int-brand-image {
+    content: var(--logo-image-url);
+    max-height: 58px;
+  }
   .int-user {
     background-color: var(--body-bg-color);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -14,10 +19,7 @@ html {
       //@extend .pb-3;
       //@extend .px-0;
       //@extend .pt-5;
-      .int-brand-image {
-        content: var(--logo-image-url);
-        max-height: 58px;
-      }
+
       .int-lockup-group {
         @extend .pl-2;
         .int-lockup-org {

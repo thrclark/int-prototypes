@@ -1,0 +1,83 @@
+//custom SCSS
+
+
+
+
+html {
+
+  .int-brand-image {
+    content: var(--logo-image-url);
+    max-height: 72px;
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+
+  html {
+
+  }
+
+}
+
+
+
+//theme builder
+
+
+button[data-theme] {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.25rem;
+  border: 1px solid $color-black--800;
+  //border-radius: 50%;
+  font-size: 0;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+
+
+
+.demo-theme-builder input[type="color"] {
+  -webkit-appearance: none;
+  border: 1px solid $color-black--800;
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: 0;
+}
+.demo-theme-builder input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.demo-theme-builder input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+#body-bg-color {
+  background-color: var(--body-bg-color);
+}
+
+#body-font-color {
+  background-color: var(--body-font-color);
+}
+
+#headerfooter-bg-color {
+  background-color: var(--headerfooter-bg-color);
+}
+
+#headerfooter-text-color {
+  background-color: var(--headerfooter-text-color);
+}
+
+#footer-link-color {
+  background-color: var(--footer-link-color);
+}
+
+.row {
+  &.color-picker {
+    @extend .mb-3;
+    @extend .align-items-center;
+  }
+}
