@@ -6,7 +6,7 @@ $page_title = 'VERIFY';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<?php include('includes/styles.php') ?>
+<?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
 <header class="container p-0 mt-7 mb-3">
@@ -45,7 +45,7 @@ $page_title = 'VERIFY';
         </div>
         <div class="card">
             <div class="card-body">
-                <h2>Verify your data</h2>
+                <h2 class="ts-26">Verify your data</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                 <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
                 <h3 class="ts-26 mt-5">IU Notify</h3>
@@ -92,7 +92,7 @@ $page_title = 'VERIFY';
                 </ul>
             </div>
         </div>
-        <div class="p-3">
+        <div class="int-verify-controls p-3">
             <p class="">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
             <hr>
             <div class="row mb-5" id="demojs_revealskipscreen">
@@ -140,7 +140,7 @@ $page_title = 'VERIFY';
     </section>
 </main>
 <?php include('includes/custom-footer.php') ?>
-<!--<?php include('includes/theme-controls.php') ?>-->
+<?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(".demojs-reveal").click(function() {

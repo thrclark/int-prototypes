@@ -1,0 +1,220 @@
+//custom SCSS
+
+
+
+
+html {
+
+  .int-brand-image {
+    content: var(--logoimage-url);
+    max-height: 58px;
+    display: var(--logoimage-visibility);
+  }
+  .int-lockup-group {
+    display: var(--lockup-visibility);
+    font-family: var(--font-header);
+  }
+  .int-user {
+    background-color: var(--body-bg-color);
+    transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    .rbt-shell-sidebar {
+      .int-themehandle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        right: -40px;
+        top: 10px;
+        background: #f7f7f7;
+        border-radius: 0.25rem;
+        padding-top: 9px;
+        padding-left: 9px;
+        border: none;
+        z-index: 10;
+        i {
+          font-size: 24px;
+          color: $color-black--700;
+        }
+      }
+    }
+
+    header {
+      //@extend .container;
+      //@extend .d-flex;
+      //@extend .flex-row;
+      //@extend .pb-3;
+      //@extend .px-0;
+      //@extend .pt-5;
+
+      .int-lockup-group {
+        color: var(--body-text-color);
+        @extend .pl-2;
+        .int-lockup-org {
+          @extend .ts-14;
+          @extend .pt-1;
+        }
+        .int-lockup-pagetitle {
+          @extend .ts-26;
+          @extend .font-weight-bold;
+          letter-spacing: .04rem;
+        }
+
+      }
+      .rbt-header-avatar-id {
+        color: var(--body-text-color);
+        font-family: var(--font-body);
+      }
+    }
+    main {
+      @extend .container;
+      //@extend .mt-5;
+      @extend .p-0;
+
+
+
+      section {
+        .card {
+          background-color: var(--panel-bg-color);
+          h1,h2,h3 {
+            font-family: var(--font-header);
+          }
+
+          .card-body {
+            color: var(--panel-text-color);
+            padding: 2rem 2.5rem 2.5rem;
+            font-family: var(--font-body);
+            a {
+              color: var(--action-color);
+              &:focus {
+                outline: 0.125rem solid var(--action-color);
+              }
+            }
+            .int-mask {
+              font-size: 10px;
+              letter-spacing: 1px;
+            }
+            .int-help {
+              @extend .ts-14;
+              text-align: center;
+              @extend .mt-6;
+              a {
+                text-decoration: none;
+              }
+            }
+            .list-group {
+              .list-group-item {
+                background-color: var(--panel-bg-color);
+                color: var(--panel-text-color);
+                .btn-outline-primary {
+                  color: var(--action-color);
+                  border-color: var(--action-color);
+                  &:focus {
+                    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+
+        .int-verify-controls {
+          color: var(--body-text-color);
+          font-family: var(--font-body);
+
+          input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
+
+            box-shadow: 0 0 0 0.08rem var(--body-text-color);
+
+          }
+
+          input[type="checkbox"]:focus + label:before, input[type="checkbox"]:focus + input + label:before {
+            box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+          }
+          .rbt-button-group {
+            .btn-primary {
+              background-color: var(--action-color);
+              border-color: var(--action-color);
+              &:focus {
+                box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+              }
+            }
+            .btn-outline-primary {
+              border-color: var(--action-color);
+              color: var(--action-color);
+              //background-color: var(--panel-bg-color);
+              &:focus {
+                box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+    .popover {
+      top: -31px !important;
+      left: 18px !important;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(sm) {
+
+  html {
+    .int-user {
+      header {
+        max-width: 880px;
+
+      }
+      main {
+        max-width: 880px;
+
+      }
+      //CAS styles are for prototyping only
+      &.cas {
+        header {
+          max-width: 440px;
+
+        }
+        main {
+          max-width: 440px;
+
+        }
+      }
+
+    }
+  }
+
+}
+
+
+
+//theme builder
+
+
+
+.int-themeopen {
+  margin-left: inherit
+}
+.int-themeclose {
+  margin-left: -480px
+}
+
+
+
+button[data-theme] {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.25rem;
+  border: 1px solid $color-black--800;
+  //border-radius: 50%;
+  font-size: 0;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+

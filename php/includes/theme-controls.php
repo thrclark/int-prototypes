@@ -1,4 +1,4 @@
-<div class="container">
+<!--<div class="container">
     <div class="rbt-collapse-accordion" id="accordion_single">
         <div class="card">
             <h5 class="mb-2" id="heading_single">
@@ -26,4 +26,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->

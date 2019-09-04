@@ -6,7 +6,7 @@ $page_title = 'Template';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<?php include('includes/styles.php') ?>
+<?php include('includes/styles-main.php') ?>
 </head>
 <body>
 <h1> <?php echo $page_title; ?></h1> feature branch test

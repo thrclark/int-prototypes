@@ -55,7 +55,7 @@ $rbt-font-path:  "../fonts" !default;
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-extra-collapse";
 
 // import Verify specific styles
-@import "custom/custom";
+@import "custom/custom-admin";
 
 // import 3rd party styles
 @import "../node_modules/font-awesome/css/font-awesome.css";

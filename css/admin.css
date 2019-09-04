@@ -457,23 +457,23 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, html .int-user main {
+.container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
-    .container, html .int-user main {
+    .container {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container, html .int-user main {
+    .container {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container, html .int-user main {
+    .container {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container, html .int-user main {
+    .container {
       max-width: 1140px; } }
 
 .container-fluid {
@@ -3058,7 +3058,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
   align-items: center;
   justify-content: space-between;
   padding: 0.25rem 0.5rem; }
-  .navbar > .container, html .int-user .navbar > main,
+  .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
     flex-wrap: wrap;
@@ -3119,7 +3119,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, html .int-user .navbar-expand-sm > main,
+  .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3134,7 +3134,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-sm > .container, html .int-user .navbar-expand-sm > main,
+    .navbar-expand-sm > .container,
     .navbar-expand-sm > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-sm .navbar-collapse {
@@ -3143,7 +3143,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand-sm .navbar-toggler {
       display: none; } }
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, html .int-user .navbar-expand-md > main,
+  .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3158,7 +3158,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-md > .container, html .int-user .navbar-expand-md > main,
+    .navbar-expand-md > .container,
     .navbar-expand-md > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-md .navbar-collapse {
@@ -3167,7 +3167,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand-md .navbar-toggler {
       display: none; } }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, html .int-user .navbar-expand-lg > main,
+  .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3182,7 +3182,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container, html .int-user .navbar-expand-lg > main,
+    .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-lg .navbar-collapse {
@@ -3191,7 +3191,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand-lg .navbar-toggler {
       display: none; } }
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, html .int-user .navbar-expand-xl > main,
+  .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3206,7 +3206,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-xl > .container, html .int-user .navbar-expand-xl > main,
+    .navbar-expand-xl > .container,
     .navbar-expand-xl > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-xl .navbar-collapse {
@@ -3217,7 +3217,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
 .navbar-expand {
   flex-flow: row nowrap;
   justify-content: flex-start; }
-  .navbar-expand > .container, html .int-user .navbar-expand > main,
+  .navbar-expand > .container,
   .navbar-expand > .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -3228,7 +3228,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .navbar-expand > .container, html .int-user .navbar-expand > main,
+  .navbar-expand > .container,
   .navbar-expand > .container-fluid {
     flex-wrap: nowrap; }
   .navbar-expand .navbar-collapse {
@@ -5804,7 +5804,7 @@ button.bg-dark:focus {
 .m-6 {
   margin: 2.5rem !important; }
 
-.mt-6, html .int-user main section .card .card-body .int-help,
+.mt-6,
 .my-6 {
   margin-top: 2.5rem !important; }
 
@@ -5839,7 +5839,7 @@ button.bg-dark:focus {
 .mx-7 {
   margin-left: 4rem !important; }
 
-.p-0, html .int-user main {
+.p-0 {
   padding: 0 !important; }
 
 .pt-0,
@@ -5861,7 +5861,7 @@ button.bg-dark:focus {
 .p-1 {
   padding: 0.25rem !important; }
 
-.pt-1, html .int-user header .int-lockup-group .int-lockup-org,
+.pt-1,
 .py-1 {
   padding-top: 0.25rem !important; }
 
@@ -5892,7 +5892,7 @@ button.bg-dark:focus {
 .py-2 {
   padding-bottom: 0.5rem !important; }
 
-.pl-2, html .int-user header .int-lockup-group,
+.pl-2,
 .px-2 {
   padding-left: 0.5rem !important; }
 
@@ -8047,7 +8047,7 @@ button.bg-dark:focus {
 .font-weight-normal {
   font-weight: 400 !important; }
 
-.font-weight-bold, html .int-user header .int-lockup-group .int-lockup-pagetitle {
+.font-weight-bold {
   font-weight: 700 !important; }
 
 .font-weight-bolder {
@@ -8185,7 +8185,7 @@ a.text-dark:hover, a.text-dark:focus {
   body {
     min-width: 992px !important; }
 
-  .container, html .int-user main {
+  .container {
     min-width: 992px !important; }
 
   .navbar {
@@ -9415,7 +9415,7 @@ ul li, ol li {
 .rbt-ts-xxs {
   font-size: 0.75rem !important; }
 
-.ts-14, html .int-user header .int-lockup-group .int-lockup-org, html .int-user main section .card .card-body .int-help,
+.ts-14,
 .rbt-ts-14,
 .form-group label,
 .valid-feedback,
@@ -9447,7 +9447,7 @@ ul li, ol li {
 .rbt-ts-23 {
   font-size: 1.4375rem !important; }
 
-.ts-26, html .int-user header .int-lockup-group .int-lockup-pagetitle,
+.ts-26,
 .rbt-ts-26,
 .rbt-ts-md {
   font-size: 1.625rem !important; }
@@ -9490,7 +9490,7 @@ p {
 .rbt-ts-12 {
   font-size: 0.75rem !important; }
 
-.ts-14, html .int-user header .int-lockup-group .int-lockup-org, html .int-user main section .card .card-body .int-help,
+.ts-14,
 .rbt-ts-14,
 .form-group label,
 .valid-feedback,
@@ -9519,7 +9519,7 @@ p {
 .rbt-ts-23 {
   font-size: 1.4375rem !important; }
 
-.ts-26, html .int-user header .int-lockup-group .int-lockup-pagetitle,
+.ts-26,
 .rbt-ts-26 {
   font-size: 1.625rem !important; }
 
@@ -9807,9 +9807,9 @@ p {
   .ts-52-xl-up,
   .rbt-ts-52-xl-up {
     font-size: 3.25rem !important; } }
-a.font-weight-bold, html .int-user header .int-lockup-group a.int-lockup-pagetitle {
+a.font-weight-bold {
   text-decoration: none; }
-  a.font-weight-bold:hover, html .int-user header .int-lockup-group a.int-lockup-pagetitle:hover {
+  a.font-weight-bold:hover {
     text-decoration: underline; }
 
 a.rbt-nounderline {
@@ -11774,7 +11774,7 @@ html {
           overflow-y: auto; }
           html body .rbt-shell-main .rbt-shell .rbt-shell-stage.bg-light {
             background-color: #f7f7f7 !important; }
-          html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main {
+          html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
             max-width: 680px;
             padding-top: 4rem;
             padding-left: 1.5rem;
@@ -11789,7 +11789,7 @@ html {
   background: #fff; }
 
 @media (max-width: 767.98px) {
-  html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main {
+  html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
     padding-top: 2rem; } }
 button[aria-expanded="true"] .rbt-icon-chevron-right:before {
   content: "\e941"; }
@@ -11811,36 +11811,10 @@ button[aria-expanded="true"] .rbt-icon-chevron-right:before {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0; }
 
-html .int-user {
-  background-color: var(--body-bg-color);
-  transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
-  html .int-user header .int-brand-image {
-    content: var(--logo-image-url);
-    max-height: 58px; }
-  html .int-user header .int-lockup-group .int-lockup-pagetitle {
-    letter-spacing: .04rem; }
-  html .int-user main section .card .card-body {
-    padding: 2rem 2.5rem 2.5rem; }
-    html .int-user main section .card .card-body .int-mask {
-      font-size: 10px;
-      letter-spacing: 1px; }
-    html .int-user main section .card .card-body .int-help {
-      text-align: center; }
-      html .int-user main section .card .card-body .int-help a {
-        text-decoration: none; }
-  html .int-user .popover {
-    top: -31px !important;
-    left: 18px !important; }
+html .int-brand-image {
+  content: var(--logo-image-url);
+  max-height: 72px; }
 
-@media (min-width: 576px) {
-  html .int-user header {
-    max-width: 880px; }
-  html .int-user main {
-    max-width: 880px; }
-  html .int-user.cas header {
-    max-width: 440px; }
-  html .int-user.cas main {
-    max-width: 440px; } }
 button[data-theme] {
   display: inline-block;
   width: 2rem;
