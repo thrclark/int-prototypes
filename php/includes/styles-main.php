@@ -7,9 +7,11 @@
  --lockup-visibility: block;
  --body-bg-color: #EAEAEA;
  --body-text-color: #444444;
- --panel-bg-color: #EAEAEA;
+ --panel-bg-color: #ffffff;
  --panel-text-color: #444444;
  --action-color: #006298;
+ --font-header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+ --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
 }
 .demo-theme-builder input[type="color"] {
 	-webkit-appearance: none;

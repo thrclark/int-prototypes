@@ -12144,21 +12144,41 @@ html .int-brand-image {
   max-height: 58px;
   display: var(--logoimage-visibility); }
 html .int-lockup-group {
-  display: var(--lockup-visibility); }
+  display: var(--lockup-visibility);
+  font-family: var(--font-header); }
 html .int-user {
   background-color: var(--body-bg-color);
   transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+  html .int-user .rbt-shell-sidebar .int-themehandle {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: -40px;
+    top: 10px;
+    background: #f7f7f7;
+    border-radius: 0.25rem;
+    padding-top: 9px;
+    padding-left: 9px;
+    border: none;
+    z-index: 10; }
+    html .int-user .rbt-shell-sidebar .int-themehandle i {
+      font-size: 24px;
+      color: #666666; }
   html .int-user header .int-lockup-group {
     color: var(--body-text-color); }
     html .int-user header .int-lockup-group .int-lockup-pagetitle {
       letter-spacing: .04rem; }
   html .int-user header .rbt-header-avatar-id {
-    color: var(--body-text-color); }
+    color: var(--body-text-color);
+    font-family: var(--font-body); }
   html .int-user main section .card {
     background-color: var(--panel-bg-color); }
+    html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3 {
+      font-family: var(--font-header); }
     html .int-user main section .card .card-body {
       color: var(--panel-text-color);
-      padding: 2rem 2.5rem 2.5rem; }
+      padding: 2rem 2.5rem 2.5rem;
+      font-family: var(--font-body); }
       html .int-user main section .card .card-body a {
         color: var(--action-color); }
         html .int-user main section .card .card-body a:focus {
@@ -12179,7 +12199,8 @@ html .int-user {
           html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
             box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
   html .int-user main section .int-verify-controls {
-    color: var(--body-text-color); }
+    color: var(--body-text-color);
+    font-family: var(--font-body); }
     html .int-user main section .int-verify-controls input[type="checkbox"] + label:before, html .int-user main section .int-verify-controls input[type="checkbox"] + input + label:before {
       box-shadow: 0 0 0 0.08rem var(--body-text-color); }
     html .int-user main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user main section .int-verify-controls input[type="checkbox"]:focus + input + label:before {
@@ -12207,6 +12228,12 @@ html .int-user {
     max-width: 440px; }
   html .int-user.cas main {
     max-width: 440px; } }
+.int-themeopen {
+  margin-left: inherit; }
+
+.int-themeclose {
+  margin-left: -480px; }
+
 button[data-theme] {
   display: inline-block;
   width: 2rem;

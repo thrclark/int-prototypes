@@ -52,6 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('panel-bg-color');
     setValueFromLocalStorage('panel-text-color');
     setValueFromLocalStorage('action-color');
+	
+	setValueFromLocalStorage('font-header');
+	setValueFromLocalStorage('font-body');
 
 
 });
@@ -76,6 +79,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
+					'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                 });
                 return;
             case 'blue':
@@ -86,39 +91,45 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'app-name': 'VERIFY',
                     'logo-image-visibility': 'block',
                     'logoimage-url': "url('https://cdn.freebiesupply.com/logos/large/2x/villanova-wildcats-logo-png-transparent.png')",
-                    'body-bg-color': '#f6f6f6',
+                    'body-bg-color': '#e7e7f0',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
-                    'action-color': '#006298',
+                    'action-color': '#198f1a',
+									'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                 });
                 return;
             case 'yellow':
                 setTheme({
 					'logoimage-visibility': 'block',
-					'lockup-visibility': 'block',
+					'lockup-visibility': 'none',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/img/webster.png')",
-                    'body-bg-color': '#fffcf6',
+                    'body-bg-color': '#fff3db',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
-                    'action-color': '#006298',
+                    'action-color': '#b3842c',
+									'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                 });
                 return;
             case 'black':
                 setTheme({
-					'logoimage-visibility': 'block',
+					'logoimage-visibility': 'none',
 					'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
-                    'body-bg-color': '#fafafa',
-                    'body-text-color': '#444444',
+                    'body-bg-color': '#929292',
+                    'body-text-color': '#ffffff',
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
-                    'action-color': '#006298',
+                    'action-color': '#980209',
+									'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                 });
                 return;
             case 'white':
@@ -133,6 +144,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
+					'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+					'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                 });
                 return;
         }
@@ -173,7 +186,12 @@ document.querySelector('#panel-text-color').addEventListener('change', event => 
 document.querySelector('#action-color').addEventListener('change', event => {
     handleInputChange('action-color', false);
 });
-
+document.querySelector('#font-header').addEventListener('change', event => {
+    handleInputChange('font-header', false);
+});
+document.querySelector('#font-body').addEventListener('change', event => {
+    handleInputChange('font-body', false);
+});
 
 
 </script>

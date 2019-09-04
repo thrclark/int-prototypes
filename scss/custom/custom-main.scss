@@ -12,10 +12,31 @@ html {
   }
   .int-lockup-group {
     display: var(--lockup-visibility);
+    font-family: var(--font-header);
   }
   .int-user {
     background-color: var(--body-bg-color);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    .rbt-shell-sidebar {
+      .int-themehandle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        right: -40px;
+        top: 10px;
+        background: #f7f7f7;
+        border-radius: 0.25rem;
+        padding-top: 9px;
+        padding-left: 9px;
+        border: none;
+        z-index: 10;
+        i {
+          font-size: 24px;
+          color: $color-black--700;
+        }
+      }
+    }
+
     header {
       //@extend .container;
       //@extend .d-flex;
@@ -40,6 +61,7 @@ html {
       }
       .rbt-header-avatar-id {
         color: var(--body-text-color);
+        font-family: var(--font-body);
       }
     }
     main {
@@ -52,10 +74,14 @@ html {
       section {
         .card {
           background-color: var(--panel-bg-color);
+          h1,h2,h3 {
+            font-family: var(--font-header);
+          }
 
           .card-body {
             color: var(--panel-text-color);
             padding: 2rem 2.5rem 2.5rem;
+            font-family: var(--font-body);
             a {
               color: var(--action-color);
               &:focus {
@@ -93,6 +119,7 @@ html {
 
         .int-verify-controls {
           color: var(--body-text-color);
+          font-family: var(--font-body);
 
           input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
 
@@ -165,6 +192,16 @@ html {
 
 
 //theme builder
+
+
+
+.int-themeopen {
+  margin-left: inherit
+}
+.int-themeclose {
+  margin-left: -480px
+}
+
 
 
 button[data-theme] {

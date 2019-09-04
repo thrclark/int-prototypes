@@ -12,17 +12,24 @@ $page_title = 'VERIFY';
 <body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
     <div class="rbt-shell">
-        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 20rem;width: 20rem;">
-            <h2 class="mb-3">Theme controls</h2>
-            <section class="predefined-themes mb-5">
-                <div class="">Predefined Themes</div>
-                <button data-theme="white" style="background-color: white"> white </button>
-                <button data-theme="brown" style="background-color: #6f5929"> brown </button>
-                <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
-                <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
-                <button data-theme="black" style="background-color: #222"> black </button>
-            </section>
+        <div class="rbt-shell-sidebar d-none d-md-block int-themeopen" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+            <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-gear"></i></button>
+            <h2 class="mb-3 mt-7">Customize theme</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
+                <div class="card predefined-themes">
+                    <h5 class="mb-2" id="headingOne1">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> <i class="rbt-icon-chevron-right"></i> Predefined Themes </button>
+                    </h5>
+                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordion">
+                        <div class="card-body p-3">
+                            <button data-theme="white" style="background-color: white"> white </button>
+                            <button data-theme="brown" style="background-color: #6f5929"> brown </button>
+                            <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
+                            <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
+                            <button data-theme="black" style="background-color: #222"> black </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="card">
                     <h5 class="mb-2" id="headingOne">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
@@ -72,11 +79,44 @@ $page_title = 'VERIFY';
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="rbt-icon-chevron-right"></i> Typography</button>
                     </h5>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body"> Nostrum fugit a natus. Corporis voluptates ut odio omnis nobis voluptas. Est dolor et eum quis deleniti explicabo autem est magnam. Unde expedita ab quia maxime quia. Qui voluptas distinctio ipsa laborum laboriosam. </div>
+                        <div class="card-body">
+                            <label for="font-header">Header font</label>
+                            <select class="form-control mb-3" id="font-header">
+                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                <option value="Georgia, serif">Serif Georgia, serif</option>
+                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                            </select>
+                            <label for="font-header">Body font</label>
+                            <select class="form-control mb-3" id="font-body">
+                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                <option value="Georgia, serif">Serif Georgia, serif</option>
+                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                            </select>
+                            <label for="font-size">Base font size</label>
+                            <input type="range" id="font-size" min="12" max="16" step="1" value="16" class="mb-3 w-100">
+                            <label for="line-height">Base line height</label>
+                            <input type="range"id="line-height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-100">
+                        </div>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary btn-block" id="savetheme" disabled>Apply changes</button>
+            <button type="button" class="btn btn-primary btn-block" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Apply changes</span> </button>
         </div>
         <div class="rbt-shell-stage p-3">
             <header class="container p-0 mt-7 mb-3" style="max-width:880px">
@@ -148,6 +188,13 @@ $page_title = 'VERIFY';
 <?php include('modals/modal-theme.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
+$(document).ready(function(){
+  $("#demojs-themehandle").click(function(){
+    $(".rbt-shell-sidebar").toggleClass("int-themeclose");
+  });
+});
+</script> 
+<script>
     $(".demojs-reveal").click(function() {
         $(".int-mask").hide();
 		$(".alert").hide();
@@ -203,11 +250,68 @@ $page_title = 'VERIFY';
         });
 		
 		
+		
+		 $("[data-theme='white']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='brown']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='blue']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='yellow']").click(function() {
+			$(".demojs-lockupcontrols").hide();
+			$(".demojs-logourl").show();
+        });
+		 $("[data-theme='black']").click(function() {
+			$(".demojs-logourl").hide();
+			$(".demojs-lockupcontrols").show();
+        });
+		
 	
 
 
-
     }); 
+</script> 
+<script>
+    $(document).ready(function() {
+		
+		
+		
+		$( ".card-body .form-control, .predefined-themes .card-body button" ).click(function() {
+  $('#savetheme').prop("disabled", false); // Element(s) are now enabled.
+});
+
+
+
+
+
+ }); 
+
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $("#savetheme").click(function() {
+                $('.btn.btn-primary').addClass('rbt-loading');
+				$('.btn.btn-primary .spinner-border').removeClass('d-none');
+				$('.btn.btn-primary .visible').toggleClass('invisible');
+				$("#savetheme").prop('disabled', true);
+				
+                setTimeout(function() {
+                    $('.btn.btn-primary').removeClass('rbt-loading');
+					$('.btn.btn-primary .spinner-border').addClass('d-none');
+					$("#savetheme").prop('disabled', true);
+					$('.btn.btn-primary .invisible').removeClass('invisible');
+					
+                }, 4000)
+            });
+        });
+    });
 </script>
 </body>
 </html>
