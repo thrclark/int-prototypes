@@ -5,10 +5,18 @@
 
 html {
 
-  .int-brand-image {
-    content: var(--logo-image-url);
-    max-height: 72px;
+  header {
+    .int-brand-image {
+      content: var(--logo-image-url);
+      max-height: 72px;
+    }
   }
+  .main-content{
+    h1 {
+      @extend .mb-5
+    }
+  }
+
 }
 
 

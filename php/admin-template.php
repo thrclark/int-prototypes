@@ -59,7 +59,6 @@ $page_title = 'Admin list view';
         </div>
     </main>
 </div>
-
 <?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

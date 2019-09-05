@@ -1,11 +1,5 @@
  <a class="rbt-skip-link" href="admin-xxxxxxxxxxxxxxxx.php" tabindex="0">Skip to content</a>
-<header class="d-flex flex-nowrap rbt-app-header"> 
-
-
-<img alt="trident" class="int-brand-image mr-3"/>
-
-
-
+<header class="d-flex flex-nowrap rbt-app-header"> <img alt="trident" class="int-brand-image mr-3"/>
     <div class="rbt-brand-title-container flex-grow-1"> <a href="admin-xxxxxxxxxxxxxxxx.php" class="rbt-brand-title"><span class="font-weight-bold">IU Verify</span> Administration </a> </div>
     <nav class="d-none d-lg-block">
         <ul class="nav align-items-center d-flex flex-nowrap mr-5">
@@ -18,8 +12,8 @@
                 <div class="dropdown-menu"> <a class="dropdown-item" href="admin-settings-genereal.php">General Settings </a> <a class="dropdown-item" href="admin-settings-apiaccounts.php">API Accounts </a> <a class="dropdown-item" href="admin-settings-apidocs.php">API Documentation </a> <a class="dropdown-item" href="admin-settings-publishers.php">Publishers</a> <a class="dropdown-item" href="admin-settings-viewreset.php">View/Reset User Verifications </a> <a class="dropdown-item" href="admin-settings-ldap.php">LDAP Configuration </a></div>
             </li>
             <li class="nav-item dropdown">
-                <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Branding</button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="admin-branding-headerfooter.php">Header &amp; Footer </a> <a class="dropdown-item" href="admin-branding-colors.php">Colors</a> <a class="dropdown-item" href="admin-branding-fonts.php">Fonts</a> <a class="dropdown-item" href="admin-branding-pageview.php">Page View Styles </a> <a class="dropdown-item" href="admin-branding-appicons.php">Application Icon </a> </div>
+                <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Theme</button>
+                <div class="dropdown-menu"> <a class="dropdown-item" href="admin-theme-headerfooter.php">Header &amp; Footer </a> <a class="dropdown-item" href="admin-theme-themetool.php">Theming tool</a> <a class="dropdown-item" href="admin-theme-appicons.php">Application Icon </a> </div>
             </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
@@ -33,6 +27,7 @@
 
  
 
+
 <a href="admin-xxxxxxxxxxxxxxxx.php" class="pr-3 text-primary">Log out</a> </div>-->
     <div class="d-lg-none rbt-drawer-button">
         <button class="btn btn-link"><span class="rbt-icon-menu" aria-hidden="true"><span class="sr-only">Menu</span></span> </button>
@@ -42,36 +37,36 @@
     <nav>
         <h3 class="rbt-ts-14 text-uppercase mt-4 mb-2">Optional header</h3>
         <ul class="list-group mt-3">
-            <li class="list-group-item rbt-collapsable"><a href="#" class="collapsed"  data-toggle="collapse"  data-target="#nav_pub">Publishing</a>
+            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse"  data-target="#nav_pub">Publishing</a>
                 <ul class="collapse" id="nav_pub">
-                    <li class="list-group-item"><a href="admin-verifications.php">Verifications</a> </li>
-                    <li class="list-group-item"><a href="admin-verification-new.php">New verification</a></li>
+                    <li class="list-group-item"> <a href="admin-verifications.php">Verifications</a> </li>
+                    <li class="list-group-item"> <a href="admin-verification-new.php">New verification</a></li>
                 </ul>
             </li>
-            <li class="list-group-item rbt-collapsable"><a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_settings">Settings</a>
+            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_settings">Settings</a>
                 <ul class="collapse" id="nav_settings">
-                    <li class="list-group-item"><a href="admin-settings-genereal.php">General Settings </a> </li>
-                    <li class="list-group-item"><a href="admin-settings-apiaccounts.php">API Accounts </a> </li>
-                    <li class="list-group-item"><a href="admin-settings-apidocs.php">API Documentation </a> </li>
-                    <li class="list-group-item"><a href="admin-settings-publishers.php">Publishers</a> </li>
-                    <li class="list-group-item"><a href="admin-settings-viewreset.php">View/Reset User Verifications </a> </li>
-                    <li class="list-group-item"><a href="admin-settings-ldap.php">LDAP Configuration </a></li>
+                    <li class="list-group-item"> <a href="admin-settings-genereal.php">General Settings </a> </li>
+                    <li class="list-group-item"> <a href="admin-settings-apiaccounts.php">API Accounts </a> </li>
+                    <li class="list-group-item"> <a href="admin-settings-apidocs.php">API Documentation </a> </li>
+                    <li class="list-group-item"> <a href="admin-settings-publishers.php">Publishers</a> </li>
+                    <li class="list-group-item"> <a href="admin-settings-viewreset.php">View/Reset User Verifications </a> </li>
+                    <li class="list-group-item"> <a href="admin-settings-ldap.php">LDAP Configuration </a></li>
                 </ul>
             </li>
-            <li class="list-group-item rbt-collapsable"><a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_branding">Branding</a>
+            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_branding">Branding</a>
                 <ul class="collapse" id="nav_branding">
-                    <li class="list-group-item"><a href="admin-branding-headerfooter.php">Header &amp; Footer </a> </li>
-                    <li class="list-group-item"><a href="admin-branding-colors.php">Colors</a> </li>
-                    <li class="list-group-item"><a href="admin-branding-fonts.php">Fonts</a> </li>
-                    <li class="list-group-item"><a href="admin-branding-pageview.php">Page View Styles </a> </li>
-                    <li class="list-group-item"><a href="admin-branding-appicons.php">Application Icon </a></li>
+                    <li class="list-group-item"> <a href="admin-theme-headerfooter.php">Header &amp; Footer </a> </li>
+                    <li class="list-group-item"> <a href="admin-theme-themetool.php">Theming tool</a> </li>
+                    <li class="list-group-item"> <a href="admin-theme-fonts.php">Fonts</a> </li>
+                    <li class="list-group-item"> <a href="admin-theme-pageview.php">Page View Styles </a> </li>
+                    <li class="list-group-item"> <a href="admin-theme-appicons.php">Application Icon </a></li>
                 </ul>
             </li>
-            <li class="list-group-item rbt-collapsable"><a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_admin">Admin</a>
+            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_admin">Admin</a>
                 <ul class="collapse" id="nav_admin">
-                    <li class="list-group-item"><a href="admin-admin-ga.php">Google Analytics</a> </li>
-                    <li class="list-group-item"><a href="admin-admin-systemparameters.php">System parameters</a> </li>
-                    <li class="list-group-item"><a href="admin-admin-reloadcache.php">Relaod Cache</a></li>
+                    <li class="list-group-item"> <a href="admin-admin-ga.php">Google Analytics</a> </li>
+                    <li class="list-group-item"> <a href="admin-admin-systemparameters.php">System parameters</a> </li>
+                    <li class="list-group-item"> <a href="admin-admin-reloadcache.php">Relaod Cache</a></li>
                 </ul>
             </li>
         </ul>

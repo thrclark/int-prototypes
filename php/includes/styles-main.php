@@ -12,7 +12,7 @@
  --action-color: #006298;
  --font-header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
  --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
-  --base-font-size: 16px;
+ --base-font-size: 1rem;
  --base-line-height: 1.5;
 }
 .demo-theme-builder input[type="color"] {
