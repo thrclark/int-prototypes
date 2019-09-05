@@ -43,18 +43,21 @@ const setTheme = options => {
 document.addEventListener('DOMContentLoaded', () => {
 
     setValueFromLocalStorage('logoimage-visibility');
-	setValueFromLocalStorage('logoimage-url');
-	setValueFromLocalStorage('lockup-visibility');
-	setValueFromLocalStorage('org-name');
+    setValueFromLocalStorage('logoimage-url');
+    setValueFromLocalStorage('lockup-visibility');
+    setValueFromLocalStorage('org-name');
     setValueFromLocalStorage('app-name');
     setValueFromLocalStorage('body-bg-color');
     setValueFromLocalStorage('body-text-color');
     setValueFromLocalStorage('panel-bg-color');
     setValueFromLocalStorage('panel-text-color');
     setValueFromLocalStorage('action-color');
-	
-	setValueFromLocalStorage('font-header');
-	setValueFromLocalStorage('font-body');
+
+    setValueFromLocalStorage('font-header');
+    setValueFromLocalStorage('font-body');
+
+    setValueFromLocalStorage('base-font-size');
+    setValueFromLocalStorage('base-line-height');
 
 
 });
@@ -68,9 +71,9 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
         switch (theme) {
             case 'brown':
                 setTheme({
-					'logoimage-visibility': 'block',
-					
-					'lockup-visibility': 'block',
+                    'logoimage-visibility': 'block',
+
+                    'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logoimage-url': "url('https://is.wfu.edu/wp-content/uploads/2017/01/cropped-favicon.png')",
@@ -79,14 +82,16 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
-					'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
-					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base-font-size': '1rem',
+                    'base-line-height': '1.5',
                 });
                 return;
             case 'blue':
                 setTheme({
-					'logoimage-visibility': 'block',
-					'lockup-visibility': 'block',
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logo-image-visibility': 'block',
@@ -96,14 +101,16 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#198f1a',
-									'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
-					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base-font-size': '1rem',
+                    'base-line-height': '1.5',
                 });
                 return;
             case 'yellow':
                 setTheme({
-					'logoimage-visibility': 'block',
-					'lockup-visibility': 'none',
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'none',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/img/webster.png')",
@@ -112,14 +119,16 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#b3842c',
-									'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
-					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base-font-size': '1rem',
+                    'base-line-height': '1.5',
                 });
                 return;
             case 'black':
                 setTheme({
-					'logoimage-visibility': 'none',
-					'lockup-visibility': 'block',
+                    'logoimage-visibility': 'none',
+                    'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
@@ -128,14 +137,16 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#980209',
-									'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
-					'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base-font-size': '1rem',
+                    'base-line-height': '1.5',
                 });
                 return;
             case 'white':
                 setTheme({
-					'logoimage-visibility': 'block',
-					'lockup-visibility': 'block',
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
                     'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
@@ -144,8 +155,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
-					'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-					'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'base-font-size': '1rem',
+                    'base-line-height': '1.5',
                 });
                 return;
         }
@@ -192,8 +205,12 @@ document.querySelector('#font-header').addEventListener('change', event => {
 document.querySelector('#font-body').addEventListener('change', event => {
     handleInputChange('font-body', false);
 });
-
-
+document.querySelector('#base-font-size').addEventListener('input', event => {
+    handleInputChange('base-font-size', true);
+});
+document.querySelector('#base-line-height').addEventListener('input', event => {
+    handleInputChange('base-line-height', false);
+});
 </script>
 
 
