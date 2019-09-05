@@ -5793,7 +5793,7 @@ button.bg-dark:focus {
 .mx-5 {
   margin-right: 2rem !important; }
 
-.mb-5,
+.mb-5, html .main-content h1,
 .my-5 {
   margin-bottom: 2rem !important; }
 
@@ -11811,7 +11811,7 @@ button[aria-expanded="true"] .rbt-icon-chevron-right:before {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0; }
 
-html .int-brand-image {
+html header .int-brand-image {
   content: var(--logo-image-url);
   max-height: 72px; }
 

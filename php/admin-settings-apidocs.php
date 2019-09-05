@@ -11,17 +11,10 @@ $page_title = 'API Documentation';
 <body>
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-5 mb-5">
-    <main class="main-content">
-        <div class="form-row">
-            <div class="col-12">
-                <main class="main-content" id="main-content">
-                    <h1> <?php echo $page_title; ?></h1>
-                </main>
-            </div>
-        </div>
+    <main class="main-content" id="main-content">
+        <h1> <?php echo $page_title; ?></h1>
     </main>
 </div>
-
 <?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>
