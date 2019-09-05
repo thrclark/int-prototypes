@@ -61,16 +61,46 @@ $page_title = 'VERIFY';
                     </h5>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="body-bg-color">Body background color</label>
-                            <input type="color" class="form-control mb-3" id="body-bg-color" value="#444444">
-                            <label for="body-text-color">Body text color</label>
-                            <input type="color" class="form-control mb-3" id="body-text-color" value="#444444">
-                            <label for="panel-bg-color">Panel background color</label>
-                            <input type="color" class="form-control mb-3" id="panel-bg-color" value="#444444">
-                            <label for="panel-text-color">Panel text color</label>
-                            <input type="color" class="form-control mb-3" id="panel-text-color" value="#444444">
-                            <label for="action-color">Action color</label>
-                            <input type="color" class="form-control mb-3" id="action-color" value="#006298">
+                            <div class="media">
+                                <div class="rbt-media-prepend p-2">
+                                    <input type="color" class="form-control mb-3" id="body-bg-color" value="#444444">
+                                </div>
+                                <div class="media-body p-2">
+                                    <label for="body-bg-color">Body background color</label>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="rbt-media-prepend p-2">
+                                    <input type="color" class="form-control mb-3" id="body-text-color" value="#444444">
+                                </div>
+                                <div class="media-body p-2">
+                                    <label for="body-text-color">Body text color</label>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="rbt-media-prepend p-2">
+                                    <input type="color" class="form-control mb-3" id="panel-bg-color" value="#444444">
+                                </div>
+                                <div class="media-body p-2">
+                                    <label for="panel-bg-color">Panel background color</label>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="rbt-media-prepend p-2">
+                                    <input type="color" class="form-control mb-3" id="panel-text-color" value="#444444">
+                                </div>
+                                <div class="media-body p-2">
+                                    <label for="panel-text-color">Panel text color</label>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="rbt-media-prepend p-2">
+                                    <input type="color" class="form-control mb-3" id="action-color" value="#006298">
+                                </div>
+                                <div class="media-body p-2">
+                                    <label for="action-color">Action color</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
