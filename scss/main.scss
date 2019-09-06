@@ -38,6 +38,9 @@ $rbt-font-path:  "../fonts" !default;
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-loading";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-box";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-mediaobject";
+@import "../node_modules/rivet-bootstrap/scss/rbt/rbt-menu";
+@import "../node_modules/rivet-bootstrap/scss/rbt/rbt-stepindicator";
+
 
 //load additional Rivet-B components
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-extra-inputgroup";

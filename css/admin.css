@@ -9977,6 +9977,200 @@ a:focus, button:focus {
   box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07);
   border: none; }
 
+.rbt-menu .nav .nav-item {
+  margin-top: 0px;
+  width: 100%; }
+  .rbt-menu .nav .nav-item .nav-link {
+    text-decoration: none;
+    color: #444444;
+    border-left: solid 4px transparent;
+    padding: .25rem 1rem; }
+    .rbt-menu .nav .nav-item .nav-link:hover {
+      border-left: solid 4px #006298; }
+    .rbt-menu .nav .nav-item .nav-link.active {
+      border-left: solid 4px #006298;
+      background: #eeeeee; }
+    .rbt-menu .nav .nav-item .nav-link:after {
+      display: none; }
+.rbt-menu.rbt-menu-horizontal .nav {
+  border-bottom: solid 1px #dddddd;
+  flex-wrap: nowrap; }
+  .rbt-menu.rbt-menu-horizontal .nav .nav-item {
+    margin-top: 0px;
+    width: inherit; }
+    .rbt-menu.rbt-menu-horizontal .nav .nav-item .nav-link {
+      text-decoration: none;
+      color: #444444;
+      border-bottom: solid 4px transparent;
+      border-left: none;
+      padding: 1rem 1.25rem; }
+      .rbt-menu.rbt-menu-horizontal .nav .nav-item .nav-link:hover {
+        border-bottom: solid 4px #dddddd;
+        border-left: none; }
+      .rbt-menu.rbt-menu-horizontal .nav .nav-item .nav-link.active {
+        border-bottom: solid 4px #006298;
+        border-left: none;
+        background: transparent; }
+
+@media (min-width: 576px) {
+  .rbt-menu .nav {
+    border-bottom: solid 1px #dddddd;
+    flex-wrap: nowrap; }
+    .rbt-menu .nav .nav-item {
+      margin-top: 0px;
+      width: inherit; }
+      .rbt-menu .nav .nav-item .nav-link {
+        text-decoration: none;
+        color: #444444;
+        border-bottom: solid 4px transparent;
+        border-left: none;
+        padding: 1rem 1.25rem; }
+        .rbt-menu .nav .nav-item .nav-link:hover {
+          border-bottom: solid 4px #dddddd;
+          border-left: none; }
+        .rbt-menu .nav .nav-item .nav-link.active {
+          border-bottom: solid 4px #006298;
+          border-left: none;
+          background: transparent; }
+  .rbt-menu.rbt-menu-vertical .nav {
+    border-bottom: none;
+    flex-wrap: wrap; }
+    .rbt-menu.rbt-menu-vertical .nav .nav-item {
+      margin-top: 0px;
+      width: 100%; }
+      .rbt-menu.rbt-menu-vertical .nav .nav-item .nav-link {
+        text-decoration: none;
+        color: #444444;
+        border-left: solid 4px transparent;
+        border-bottom: none;
+        padding: .25rem 1rem; }
+        .rbt-menu.rbt-menu-vertical .nav .nav-item .nav-link:hover {
+          border-left: solid 4px #006298;
+          border-bottom: none; }
+        .rbt-menu.rbt-menu-vertical .nav .nav-item .nav-link.active {
+          border-left: solid 4px #006298;
+          border-bottom: none;
+          background: #eeeeee; } }
+.rvb-steps {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /**
+   * Allows content to be scrollable on smaller screens
+   */
+  overflow-x: scroll;
+  /**
+   * Start vertical variant
+   */ }
+  .rvb-steps__item {
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    position: relative; }
+    .rvb-steps__item::before {
+      content: "";
+      display: block;
+      width: 100%;
+      box-shadow: 0 2.75rem 0 .125rem #eee;
+      z-index: 0; }
+    .rvb-steps__item:last-child::before {
+      width: 50%; }
+    .rvb-steps__item:first-child::before {
+      position: absolute;
+      left: 50%; }
+  .rvb-steps__item-content {
+    color: #333333;
+    /**
+     * If we set the link to display flex, we can use
+     * flex-direction: column-reverse to add a variant where the label
+     * is on the bottom.
+     */
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column; }
+  .rvb-steps__item-content[aria-current] .rvb-steps__indicator {
+    font-weight: 700; }
+  .rvb-steps__item-content:focus {
+    box-shadow: none;
+    outline: none; }
+  .rvb-steps__item-content:focus .rvb-steps__indicator {
+    box-shadow: 0 0 0 0.25rem #95adcb; }
+  .rvb-steps__label {
+    display: block;
+    color: #333333;
+    margin-bottom: .5rem;
+    font-size: 0.875rem;
+    padding-right: .5rem;
+    padding-left: .5rem; }
+  .rvb-steps__indicator {
+    align-items: center;
+    background-color: #fff;
+    border: 4px solid #dddddd;
+    border-radius: 999rem;
+    box-shadow: 0 0 0 4px #ffffff;
+    display: inline-flex;
+    height: 32px;
+    justify-content: center;
+    position: relative;
+    width: 32px;
+    z-index: 100; }
+  .rvb-steps__indicator--success {
+    background-color: #008a28;
+    border-color: #50a253;
+    color: #fff; }
+  .rvb-steps__indicator--warning {
+    background-color: #f5bb17;
+    border-color: #ffdd9b;
+    color: #000000; }
+  .rvb-steps__indicator--danger {
+    background-color: #df3603;
+    border-color: #ef663c;
+    color: #fff; }
+  .rvb-steps--vertical {
+    flex-direction: column; }
+  .rvb-steps--vertical .rvb-steps__item {
+    text-align: left;
+    margin-top: 0;
+    padding-top: 1.5rem;
+    position: relative; }
+  .rvb-steps--vertical .rvb-steps__item:first-child::before {
+    content: none; }
+  .rvb-steps--vertical .rvb-steps__item::before {
+    box-shadow: -4px 0 0 0 #eeeeee;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 18px; }
+  .rvb-steps--vertical .rvb-steps__item-content {
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative; }
+  .rvb-steps--vertical .rvb-steps__label {
+    margin-bottom: 0;
+    padding-left: 16px; }
+
+/**
+ * Alternate styles used when wrapper element is a link. For instance,
+ * when user can click through all steps of a multi-page flow.
+ */
+a.rvb-steps__item-content {
+  text-decoration: none; }
+
+a.rvb-steps__item-content:hover .rvb-steps__label,
+a.rvb-steps__item-content:focus .rvb-steps__label {
+  text-decoration: underline; }
+
+a.rvb-steps__item-content:hover .rvb-steps__indicator,
+a.rvb-steps__item-content:focus .rvb-steps__indicator,
+a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
+  background-color: #006298;
+  color: #ffffff;
+  border-color: #006298; }
+
+@media (min-width: 576px) {
+  .rvb-steps {
+    overflow-x: visible; } }
 .input-group .input-group-append .btn, .input-group .input-group-append ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group .input-group-append label.img-ul-button {
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px; }
@@ -11814,6 +12008,27 @@ button[aria-expanded="true"] .rbt-icon-chevron-right:before {
 html header .int-brand-image {
   content: var(--logo-image-url);
   max-height: 72px; }
+html .main-content .int-tabs .nav-item {
+  margin-right: 0px; }
+  html .main-content .int-tabs .nav-item .nav-link {
+    z-index: 100;
+    background: none;
+    border: none;
+    color: #444444;
+    border-bottom: solid 4px transparent;
+    border-radius: 0px;
+    padding: 1rem 1.25rem; }
+    html .main-content .int-tabs .nav-item .nav-link:hover {
+      border-bottom: solid 4px #dddddd; }
+    html .main-content .int-tabs .nav-item .nav-link.active {
+      border-bottom: solid 4px #006298; }
+html .main-content .int-tabs + .tab-content {
+  border: none;
+  border-top: solid 1px #dddddd;
+  padding: 0px;
+  transition: box-shadow .2s ease; }
+  html .main-content .int-tabs + .tab-content:focus {
+    box-shadow: none; }
 
 button[data-theme] {
   display: inline-block;
