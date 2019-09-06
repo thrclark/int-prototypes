@@ -11,10 +11,7 @@
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</button>
                 <div class="dropdown-menu"> <a class="dropdown-item" href="admin-settings-genereal.php">General Settings </a> <a class="dropdown-item" href="admin-settings-apiaccounts.php">API Accounts </a> <a class="dropdown-item" href="admin-settings-apidocs.php">API Documentation </a> <a class="dropdown-item" href="admin-settings-publishers.php">Publishers</a> <a class="dropdown-item" href="admin-settings-viewreset.php">View/Reset User Verifications </a> <a class="dropdown-item" href="admin-settings-ldap.php">LDAP Configuration </a></div>
             </li>
-            <li class="nav-item dropdown">
-                <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Theme</button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="admin-theme-headerfooter.php">Header &amp; Footer </a> <a class="dropdown-item" href="admin-theme-themetool.php">Theming tool</a> <a class="dropdown-item" href="admin-theme-appicons.php">Application Icon </a> </div>
-            </li>
+            <li class="nav-item"> <a class="nav-link  " href="admin-theme.php">Theme</a> </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
                 <div class="dropdown-menu"> <a class="dropdown-item" href="admin-admin-ga.php">Google Analytics</a> <a class="dropdown-item" href="admin-admin-systemparameters.php">System parameters</a> <a class="dropdown-item" href="admin-admin-reloadcache.php">Relaod Cache</a> </div>
@@ -53,13 +50,9 @@
                     <li class="list-group-item"> <a href="admin-settings-ldap.php">LDAP Configuration </a></li>
                 </ul>
             </li>
-            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_branding">Branding</a>
+            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_branding">Theme</a>
                 <ul class="collapse" id="nav_branding">
-                    <li class="list-group-item"> <a href="admin-theme-headerfooter.php">Header &amp; Footer </a> </li>
-                    <li class="list-group-item"> <a href="admin-theme-themetool.php">Theming tool</a> </li>
-                    <li class="list-group-item"> <a href="admin-theme-fonts.php">Fonts</a> </li>
-                    <li class="list-group-item"> <a href="admin-theme-pageview.php">Page View Styles </a> </li>
-                    <li class="list-group-item"> <a href="admin-theme-appicons.php">Application Icon </a></li>
+                    <li class="list-group-item"> <a href="admin-theme.php">Theme</a> </li>
                 </ul>
             </li>
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_admin">Admin</a>
