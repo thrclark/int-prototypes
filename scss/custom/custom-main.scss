@@ -18,6 +18,13 @@ html {
     background-color: var(--body-bg-color);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     .rbt-shell-sidebar {
+      &.int-themeclose {
+        i {
+          &:before{
+            content: '\e93f';
+          }
+        }
+      }
       .int-themehandle {
         position: absolute;
         width: 42px;
@@ -34,7 +41,9 @@ html {
           font-size: 24px;
           color: $color-black--700;
         }
+
       }
+
     }
 
     header {
@@ -76,6 +85,7 @@ html {
         .card {
           line-height: var(--base-line-height);
           font-size: var(--base-font-size);
+          border-radius: var(--border-radius);
 
           background-color: var(--panel-bg-color);
           h1,h2,h3 {
@@ -109,6 +119,7 @@ html {
                 background-color: var(--panel-bg-color);
                 color: var(--panel-text-color);
                 .btn-outline-primary {
+                  border-radius: var(--border-radius);
                   color: var(--action-color);
                   border-color: var(--action-color);
                   &:focus {
@@ -137,6 +148,7 @@ html {
           }
           .rbt-button-group {
             .btn-primary {
+              border-radius: var(--border-radius);
               background-color: var(--action-color);
               border-color: var(--action-color);
               &:focus {
@@ -144,6 +156,7 @@ html {
               }
             }
             .btn-outline-primary {
+              border-radius: var(--border-radius);
               border-color: var(--action-color);
               color: var(--action-color);
               //background-color: var(--panel-bg-color);
@@ -169,12 +182,12 @@ html {
 
   html {
     .int-user {
-      header {
-        max-width: 880px;
+      header.container {
+        max-width: var(--page-margin);
 
       }
       main {
-        max-width: 880px;
+        max-width: var(--page-margin);
 
       }
       //CAS styles are for prototyping only
@@ -194,6 +207,10 @@ html {
 
 }
 
+
+html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
+  max-width: var(--page-margin);
+}
 
 
 //theme builder

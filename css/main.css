@@ -12149,6 +12149,8 @@ html .int-lockup-group {
 html .int-user {
   background-color: var(--body-bg-color);
   transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+  html .int-user .rbt-shell-sidebar.int-themeclose i:before {
+    content: '\e93f'; }
   html .int-user .rbt-shell-sidebar .int-themehandle {
     position: absolute;
     width: 42px;
@@ -12174,6 +12176,7 @@ html .int-user {
   html .int-user main section .card {
     line-height: var(--base-line-height);
     font-size: var(--base-font-size);
+    border-radius: var(--border-radius);
     background-color: var(--panel-bg-color); }
     html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3 {
       font-family: var(--font-header); }
@@ -12196,6 +12199,7 @@ html .int-user {
         background-color: var(--panel-bg-color);
         color: var(--panel-text-color); }
         html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button {
+          border-radius: var(--border-radius);
           color: var(--action-color);
           border-color: var(--action-color); }
           html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
@@ -12209,11 +12213,13 @@ html .int-user {
     html .int-user main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user main section .int-verify-controls input[type="checkbox"]:focus + input + label:before {
       box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color); }
     html .int-user main section .int-verify-controls .rbt-button-group .btn-primary {
+      border-radius: var(--border-radius);
       background-color: var(--action-color);
       border-color: var(--action-color); }
       html .int-user main section .int-verify-controls .rbt-button-group .btn-primary:focus {
         box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
     html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button {
+      border-radius: var(--border-radius);
       border-color: var(--action-color);
       color: var(--action-color); }
       html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button:focus {
@@ -12223,14 +12229,17 @@ html .int-user {
     left: 18px !important; }
 
 @media (min-width: 576px) {
-  html .int-user header {
-    max-width: 880px; }
+  html .int-user header.container {
+    max-width: var(--page-margin); }
   html .int-user main {
-    max-width: 880px; }
+    max-width: var(--page-margin); }
   html .int-user.cas header {
     max-width: 440px; }
   html .int-user.cas main {
     max-width: 440px; } }
+html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main {
+  max-width: var(--page-margin); }
+
 .int-themeopen {
   margin-left: inherit; }
 

@@ -12,8 +12,8 @@ $page_title = 'VERIFY';
 <body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
     <div class="rbt-shell">
-        <div class="rbt-shell-sidebar d-none d-md-block int-themeopen" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
-            <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-gear"></i></button>
+        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+            <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Customize theme</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card predefined-themes">
@@ -145,11 +145,31 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <h5 class="mb-2" id="headingFour">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> <i class="rbt-icon-chevron-right"></i> Layout</button>
+                    </h5>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="border-radius">Border radius</label>
+                            <input type="range" id="border-radius" min="0" max="20" step="1" value="4" class="mb-3 w-100">
+                            <label for="page-margin">Page margin</label>
+                            <input type="range"id="page-margin"min="440"max="880"step="10"value="880" class="mb-3 w-100">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button type="button" class="btn btn-primary btn-block" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Apply changes</span> </button>
+            <div class="form-row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme" id="" disabled> Restore values </button>
+                </div>
+            </div>
         </div>
         <div class="rbt-shell-stage p-3">
-            <header class="container p-0 mt-7 mb-3" style="max-width:880px">
+            <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
                     <div class="int-lockup-group text-nowrap">
                         <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
@@ -313,7 +333,7 @@ $(document).ready(function(){
 		
 		
 		$( ".card-body .form-control, .predefined-themes .card-body button" ).click(function() {
-  $('#savetheme').prop("disabled", false); // Element(s) are now enabled.
+  $('.demojs-savetheme').prop("disabled", false); // Element(s) are now enabled.
 });
 
 
@@ -330,15 +350,15 @@ $(document).ready(function(){
                 $('.btn.btn-primary').addClass('rbt-loading');
 				$('.btn.btn-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-primary .visible').toggleClass('invisible');
-				$("#savetheme").prop('disabled', true);
+				$('.demojs-savetheme').prop('disabled', true);
 				
                 setTimeout(function() {
                     $('.btn.btn-primary').removeClass('rbt-loading');
 					$('.btn.btn-primary .spinner-border').addClass('d-none');
-					$("#savetheme").prop('disabled', true);
+					$('.demojs-savetheme').prop('disabled', true);
 					$('.btn.btn-primary .invisible').removeClass('invisible');
 					
-                }, 4000)
+                }, 3000)
             });
         });
     });

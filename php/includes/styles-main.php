@@ -14,6 +14,10 @@
  --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
  --base-font-size: 1rem;
  --base-line-height: 1.5;
+ 
+ --border-radius: 0.25rem;
+ --page-margin: 880;
+ 
 }
 .demo-theme-builder input[type="color"] {
 	-webkit-appearance: none;s

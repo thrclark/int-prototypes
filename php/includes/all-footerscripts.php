@@ -1,7 +1,6 @@
 <script src="../js/jquery-3.3.1.slim.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-
 <script>
     $(".rbt-drawer-button").click(function() {
         $(".rbt-drawer,.rbt-drawer-button").toggleClass("open");
@@ -12,7 +11,6 @@
         $(".rbt-drawer,.rbt-drawer-button").removeClass("open");
     });
 </script>
-
 <script>
 const setValue = (property, value) => {
     if (value) {
@@ -58,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setValueFromLocalStorage('base-font-size');
     setValueFromLocalStorage('base-line-height');
+	
+	setValueFromLocalStorage('border-radius');
+    setValueFromLocalStorage('page-margin');
 
 
 });
@@ -86,6 +87,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base-font-size': '1rem',
                     'base-line-height': '1.5',
+                    'border-radius': '0.25rem',
+                    'page-margin': '880px',
                 });
                 return;
             case 'blue':
@@ -105,6 +108,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base-font-size': '1rem',
                     'base-line-height': '1.5',
+                    'border-radius': '0.25rem',
+                    'page-margin': '880px',
                 });
                 return;
             case 'yellow':
@@ -123,6 +128,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base-font-size': '1rem',
                     'base-line-height': '1.5',
+                    'border-radius': '0.25rem',
+                    'page-margin': '880px',
                 });
                 return;
             case 'black':
@@ -141,6 +148,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base-font-size': '1rem',
                     'base-line-height': '1.5',
+                    'border-radius': '0.25rem',
+                    'page-margin': '880px',
                 });
                 return;
             case 'white':
@@ -159,6 +168,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base-font-size': '1rem',
                     'base-line-height': '1.5',
+                    'border-radius': '0.25rem',
+                    'page-margin': '880px',
                 });
                 return;
         }
@@ -169,8 +180,6 @@ const handleInputChange = (property, pixels) => {
     document.documentElement.style.setProperty(`--${property}`, `${event.target.value}${pixels ? 'px' : ''}`);
     localStorage.setItem(property, `${event.target.value}${pixels ? 'px' : ''}`);
 };
-
-
 document.querySelector('#logoimage-visibility').addEventListener('change', event => {
     handleInputChange('logoimage-visibility', false);
 });
@@ -180,7 +189,6 @@ document.querySelector('#logoimage-url').addEventListener('input', event => {
 document.querySelector('#lockup-visibility').addEventListener('change', event => {
     handleInputChange('lockup-visibility', false);
 });
-
 document.querySelector('#logoimage-url').addEventListener('input', event => {
     handleInputChange('logoimage-url', false);
 });
@@ -211,9 +219,15 @@ document.querySelector('#base-font-size').addEventListener('input', event => {
 document.querySelector('#base-line-height').addEventListener('input', event => {
     handleInputChange('base-line-height', false);
 });
+document.querySelector('#border-radius').addEventListener('input', event => {
+    handleInputChange('border-radius', true);
+});
+document.querySelector('#page-margin').addEventListener('input', event => {
+    handleInputChange('page-margin', true);
+});
+
+
 </script>
-
-
 <script>
 function orgnameset() {
     texttosave = document.getElementById('org-name').value;
