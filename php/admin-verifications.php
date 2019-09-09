@@ -10,9 +10,8 @@ $page_title = 'Verifications';
 <style>
 
 
-/*this needs to be added to RVB*/
 @media (max-width: 767.98px) {
-.rbt-tables-actions td:last-child {
+.rbt-table-actions td:last-child {
 	width: auto !important;
 	text-align: left !important;
 	white-space: normal !important;
