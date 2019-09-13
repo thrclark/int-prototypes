@@ -77,6 +77,24 @@ $page_title = 'New verification';
                                 <textarea class="form-control" cols="40" id="verify_now_custom_field" name="textarea1" rows="3" placeholder="Custom text"></textarea>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label" for="disclaimerLabel"> Deferral Text</label>
+                            <div class="" id=""> The text that will display for the deferral for this verification.</div>
+                            <select class="form-control" id="defer_now_select" name="select">
+                                <option value="defer_now_standard"> Use Default Text </option>
+                                <option value="defer_now_custom"> Enter Custom Text </option>
+                            </select>
+                        </div>
+                        <div class="form-group ">
+                            <div style=" display:block">
+                                <label class="sr-only" for="defer_now_standard"> Verification Confirmation Standard Text </label>
+                                <textarea class="form-control" cols="40" id="defer_now_standard" name="textarea1" rows="3" disabled="" style="display: block;">I have verified that the information on this page is currently accurate.</textarea>
+                            </div>
+                            <div id="defer_now_custom" style="display: none;">
+                                <label class="sr-only" for="defer_now_custom_field"> Verification Confirmation Custom Text </label>
+                                <textarea class="form-control" cols="40" id="defer_now_custom_field" name="textarea1" rows="3" placeholder="Custom text"></textarea>
+                            </div>
+                        </div>
                         <br>
                         <br>
                         <br>
@@ -228,6 +246,19 @@ var simplemde = new SimpleMDE({ element: $("#disclaimerLabel")[0] });
 
         $('#verify_later_select').change(function() {
             $('#verify_later_custom, #verify_later_standard').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#defer_now_select').change(function() {
+            $('#defer_now_custom, #defer_now_standard').hide();
+            $('#' + $(this).val()).show();
+        });
+
+        $('#defer_later_select').change(function() {
+            $('#defer_later_custom, #defer_later_standard').hide();
             $('#' + $(this).val()).show();
         });
     });
