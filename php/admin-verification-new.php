@@ -95,135 +95,58 @@ $page_title = 'New verification';
                                 <textarea class="form-control" cols="40" id="defer_now_custom_field" name="textarea1" rows="3" placeholder="Custom text"></textarea>
                             </div>
                         </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
                         <div class="form-group">
-                            <label class="control-label" id=""> Description </label>
-                            <div class="" id=""> This description will appear in the user's Notification Center settings. </div>
-                            <input value="" type="text" class="form-control" id="" aria-describedby="textinput">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" id="buttonprimary"> Primary action label </label>
-                            <div class="" id=""> The label to use for the primary action button on notifications of this type. </div>
-                            <countdown>
-                                <div class="rbt-charcount">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <input type="text" class="form-control" id="buttonprimary" aria-describedby="textinput">
-                                        </div>
-                                    </div>
-                                </div>
-                            </countdown>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" id="buttonsecondary"> Secondary action label </label>
-                            <div class="" id=""> The label to use for the secondary action button on notifications of this type. </div>
-                            <countdown>
-                                <div class="rbt-charcount">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <input type="text" class="form-control" id="buttonsecondary" aria-describedby="textinput">
-                                        </div>
-                                    </div>
-                                </div>
-                            </countdown>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label" id="systemLabel"> System </label>
-                            <div class="" id="systemDirections"> The System that the Notification Type is assigned to. </div>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Bursar</option>
-                                <option>I-Bucks</option>
-                                <option>Music School</option>
-                                <option>Parking</option>
+                            <label class="control-label" for="verify_button_select"> Verify Button Text</label>
+                            <div class="" id=""> The text that will display on the verify button for this verification.</div>
+                            <select class="form-control" id="verify_button_select" name="select">
+                                <option value="verify_button_standard"> Use Default Text </option>
+                                <option value="verify_button_custom"> Enter Custom Text </option>
                             </select>
                         </div>
-                        <div class="font-weight-bold mb-2 ts-14">Notification delivery method</div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="">
-                            <label class="form-check-label" for="defaultCheck1"> Email </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="">
-                            <label class="form-check-label" for="defaultCheck2"> Push </label>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" name="smsChecks" id="defaultCheck7" value="option2">
-                            <label class="form-check-label" for="defaultCheck7"> Text message </label>
-                        </div>
-                        <div class="font-weight-bold mb-2 ts-14">Allow "Urgent" notification priority</div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                            <label class="form-check-label" for="defaultCheck4"> Yes </label>
-                        </div>
-                        <div class="font-weight-bold mb-2 ts-14">Status</div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1" checked="">
-                            <label class="form-check-label" for="stacked1"> Active</label>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="stacked2" value="option2">
-                            <label class="form-check-label" for="stacked2"> Inactive </label>
+                        <div class="form-group">
+                            <div style=" display:block">
+                                <label class="sr-only" for="verify_button_standard"> Verify button default label </label>
+                                <input type="text" class="form-control" id="verify_button_standard" disabled="" style="display: block;" value="Verify">
+                            </div>
+                            <div id="verify_button_custom" style="display: none;">
+                                <label class="sr-only" for="verify_button_custom_label"> Verify button custom label </label>
+                                <input type="text" class="form-control" id="verify_button_custom_label" value="" placeholder="Custom label">
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" id="testusers"> Test users </label>
-                            <div class="" id=""> In test environments, notifications will be sent to these users instead of their intended recipients. This is a comma-delimited list.</div>
-                            <input aria-labelledby="testusers" value="" ccfvalidated="" class="form-control" id="isinvalid" formcontrolname="name" type="text">
+                            <label class="control-label" for="defer_button_select"> Deferral Button Text</label>
+                            <div class="" id=""> The text that will display on the deferral button for this verification.</div>
+                            <select class="form-control" id="defer_button_select" name="select">
+                                <option value="defer_button_standard"> Use Default Text </option>
+                                <option value="defer_button_custom"> Enter Custom Text </option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" id="testgroups"> Test groups </label>
-                            <div class="" id=""> In test environments, notifications will be sent to the users in these groups instead of their intended recipients. This is a comma-delimited list. </div>
-                            <input aria-labelledby="testgroups" value="" ccfvalidated="" class="form-control" id="isinvalid" formcontrolname="name" type="text">
+                            <div style=" display:block">
+                                <label class="sr-only" for="defer_button_standard"> Deferral button default label </label>
+                                <input type="text" class="form-control" id="defer_button_standard" disabled="" style="display: block;" value="Defer">
+                            </div>
+                            <div id="defer_button_custom" style="display: none;">
+                                <label class="sr-only" for="defer_button_custom_label"> Deferral button custom label </label>
+                                <input type="text" class="form-control" id="defer_button_custom_label" value="" placeholder="Custom label">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="deferrallimit"> Deferral Limit </label>
+                            <div class="" id=""> The number of times a user can defer this verification. A 0 means they must verify immediately. If left blank, there is no restriction and is unlimited. </div>
+                            <input value="" aria-labelledby="deferrallimit" ccfvalidated="" class="form-control w-25" id="deferrallimit" formcontrolname="clientid" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="deferralwait">Deferral Wait </label>
+                            <div class="" id=""> The time to wait to display this verification to the user after they have verified later (in minutes). The max is 43200 minutes which is 30 days. </div>
+                            <input value="" aria-labelledby="deferralwait" ccfvalidated="" class="form-control w-25" id="deferralwait" formcontrolname="clientid" type="text">
                         </div>
                         <hr>
-                        <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary" routerlink="/markets" href="admin-notificationtype.php"> Cancel </a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="#" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body">
-                        <ol class="rvb-steps rvb-steps--vertical" style="overflow-x:inherit">
-                            <li class="rvb-steps__item"> <a href="#" class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
-                            <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </li>
-                            <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </li>
-                            <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i></span> </span> </li>
-                            <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/Save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9"></div>
-        </div>--> 
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
@@ -259,6 +182,19 @@ var simplemde = new SimpleMDE({ element: $("#disclaimerLabel")[0] });
 
         $('#defer_later_select').change(function() {
             $('#defer_later_custom, #defer_later_standard').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#verify_button_select').change(function() {
+            $('#verify_button_standard, #verify_button_custom').hide();
+            $('#' + $(this).val()).show();
+        });
+
+        $('#defer_button_select').change(function() {
+            $('#defer_button_standard, #defer_button_custom').hide();
             $('#' + $(this).val()).show();
         });
     });
