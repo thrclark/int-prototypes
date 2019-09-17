@@ -12041,6 +12041,9 @@ button[data-theme] {
   outline: 0;
   cursor: pointer; }
 
+.editor-statusbar {
+  display: none; }
+
 .demo-theme-builder input[type="color"] {
   -webkit-appearance: none;
   border: 1px solid #555555;
@@ -12068,5 +12071,18 @@ button[data-theme] {
 
 #footer-link-color {
   background-color: var(--footer-link-color); }
+
+.rbt-collapse-accordion .int-accordion-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 36px;
+  height: 44px;
+  padding: 8px; }
+  .rbt-collapse-accordion .int-accordion-controls .dropdown .dropdown-toggle:after {
+    content: "\e944"; }
+
+.int-data-api .card-header .int-accordion-controls {
+  background: blue; }
 
 /*# sourceMappingURL=admin.css.map */

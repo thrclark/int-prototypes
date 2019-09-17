@@ -1,6 +1,7 @@
 <?php 
 $section = '';
 $page_title = 'New verification';
+$page_subtitle = 'Setup';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,7 @@ $page_title = 'New verification';
                 </ol>
             </div>
             <div class="col-10 pl-5">
-                <h2 class="mb-3">Setup</h2>
+                <h2 class="mb-3"><?php echo $page_subtitle; ?></h2>
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <div class="form-group">
@@ -142,7 +143,7 @@ $page_title = 'New verification';
                             <input value="" aria-labelledby="deferralwait" ccfvalidated="" class="form-control w-25" id="deferralwait" formcontrolname="clientid" type="text">
                         </div>
                         <hr>
-                        <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="#" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="admin-verification-new2.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>
                 </div>
             </div>
