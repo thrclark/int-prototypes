@@ -12083,6 +12083,8 @@ button[data-theme] {
     content: "\e944"; }
 
 .int-data-api .card-header .int-accordion-controls {
-  background: blue; }
+  padding-top: 3px;
+  padding-left: 8px;
+  height: 33px; }
 
 /*# sourceMappingURL=admin.css.map */
