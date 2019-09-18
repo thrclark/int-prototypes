@@ -32,7 +32,7 @@ $page_subtitle = 'Data';
                                 <h2><?php echo $page_subtitle; ?></h2>
                             </div>
                             <div class="col-auto">
-                                <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> Data</button>
+                                <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Data</button>
                             </div>
                         </div>
                         <div class="rbt-collapse-accordion" id="accordion">
@@ -185,6 +185,161 @@ $page_subtitle = 'Data';
                                     </div>
                                 </div>
                             </div>
+                            <div class="card" id='datacard2' style="display: none">
+                                <div class="" id="headingTwo">
+                                    <h3 class="mb-2">
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> <span id="data-name2-display">New set</span></button>
+                                    </h3>
+                                    <div class="int-accordion-controls">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton11" aria-hidden="true" role="menu">
+                                                <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
+                                                <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
+                                                <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
+                                                <button class="dropdown-item disabled" id="xxxxxx">Move to bottom</button>
+                                                <div class="dropdown-divider"></div>
+                                                <button class="dropdown-item" id="deletedatacard2">Delete </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body" id="child2">
+                                        <div class="form-group">
+                                            <label class="control-label" for="data-name2"> Name </label>
+                                            <div> The name of this verification (displayed on the main verification page).</div>
+                                            <input type="text" class="form-control"  id="data-name2" aria-describedby="data-name2" oninput='datamnameset2();datanamestore2();'>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="uniquekeyLabel2"> Unique Key </label>
+                                            <div class="" > This uniquely identifies this section on the current verification.</div>
+                                            <input id="uniquekeyLabel2" aria-labelledby="uniquekeyLabel2"  class="form-control" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="descriptionLabel2"> Description (optional) </label>
+                                            <div> The description for this section. It will display at the top of this section.</div>
+                                            <textarea id="descriptionLabel2"></textarea>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="font-weight-bold mb-3">APIs</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API</button>
+                                            </div>
+                                        </div>
+                                        <div class="card mt-3" style="margin-bottom: 3rem !important">
+                                            <div class="card-body">
+                                                <div class="ts-20 text-center"> No APIs specified.</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!--           <div class="card int-data-api">
+                                            <div class="card-header border-bottom-0 p-1">
+                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey11"> <i class="rbt-icon-chevron-right"></i> Unique key 1</button>
+                                                <div class="int-accordion-controls">
+                                                    <div class="dropdown">
+                                                        <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton22" aria-hidden="true" role="menu">
+                                                            <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
+                                                            <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
+                                                            <button class="dropdown-item" id="xxxxxx">Move down</button>
+                                                            <button class="dropdown-item" id="xxxxxx">Move to bottom</button>
+                                                            <div class="dropdown-divider"></div>
+                                                            <button class="dropdown-item" id="xxxxxx">Delete </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body collapse" data-parent="#child2" id="uniquekey11">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api1_UniqueKey11"> Unique key </label>
+                                                    <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <input id="api1_UniqueKey11" aria-labelledby="api1_UniqueKey11"  class="form-control" type="text" value="Unique key 1">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api1_liveDataEndpoint11"> Live Data Endpoint </label>
+                                                    <div> API Endpoint to pull Live Data </div>
+                                                    <select  id="api1_liveDataEndpoint11"  class="form-control" aria-label="Live Data Endpoint">
+                                                        <option label="" value=""></option>
+                                                        <option label="Demo API" value="number:1020">Demo API</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api1_callbackEndpoint11"> Callback Endpoint </label>
+                                                    <div> API Endpoint to call before submission is allowed </div>
+                                                    <select  id="api1_callbackEndpoint11"  class="form-control" aria-label="Live Data Endpoint">
+                                                        <option label="" value=""></option>
+                                                        <option value="" class="" selected="selected">yes</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api1_nameLabel11">URL </label>
+                                                    <div class="" > URL to the external application that allows action to be taken.</div>
+                                                    <input id="api1_nameLabel11" aria-labelledby="api1_nameLabel11"  class="form-control" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api1_buttonLabel11">Button label </label>
+                                                    <div class="" > The label for the button that will launch the URL.</div>
+                                                    <input id="api1_buttonLabel11" aria-labelledby="api1_buttonLabel11"  class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card int-data-api">
+                                            <div class="card-header border-bottom-0 p-1">
+                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey22"> <i class="rbt-icon-chevron-right"></i> Unique key 2</button>
+                                                <div class="int-accordion-controls">
+                                                    <div class="dropdown">
+                                                        <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton33" aria-hidden="true" role="menu">
+                                                            <button class="dropdown-item" id="xxxxxx">Move to top</button>
+                                                            <button class="dropdown-item" id="xxxxxx">Move up</button>
+                                                            <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
+                                                            <button class="dropdown-item disabled" id="xxxxxx">Move to bottom</button>
+                                                            <div class="dropdown-divider"></div>
+                                                            <button class="dropdown-item" id="xxxxxx">Delete </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body collapse" data-parent="#child2" id="uniquekey22">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api2_UniqueKey22"> Unique key </label>
+                                                    <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <input id="api2_UniqueKey22" aria-labelledby="api2_UniqueKey22"  class="form-control" type="text" value="Unique key 2">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api2_liveDataEndpoint22"> Live Data Endpoint </label>
+                                                    <div> API Endpoint to pull Live Data </div>
+                                                    <select  id="api2_liveDataEndpoint22"  class="form-control" aria-label="Live Data Endpoint">
+                                                        <option label="" value=""></option>
+                                                        <option label="Demo API" value="number:1020">Demo API</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api2_callbackEndpoint22"> Callback Endpoint </label>
+                                                    <div> API Endpoint to call before submission is allowed </div>
+                                                    <select  id="api2_callbackEndpoint22"  class="form-control" aria-label="Live Data Endpoint">
+                                                        <option label="" value=""></option>
+                                                        <option value="" class="" selected="selected">yes</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api2_nameLabel22">URL </label>
+                                                    <div class="" > URL to the external application that allows action to be taken.</div>
+                                                    <input id="api2_nameLabel22" aria-labelledby="api2_nameLabel22"  class="form-control" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api2_buttonLabel22">Button label </label>
+                                                    <div class="" > The label for the button that will launch the URL.</div>
+                                                    <input id="api2_buttonLabel22" aria-labelledby="api2_buttonLabel22"  class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                        </div>--> 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="admin-verification-new1.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="#" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>
@@ -201,6 +356,7 @@ $page_subtitle = 'Data';
 </script> 
 <script>
 var simplemde = new SimpleMDE({ element: $("#descriptionLabel")[0] });
+var simplemde = new SimpleMDE({ element: $("#descriptionLabel2")[0] });
 </script> 
 <script>
 function datamnameset() {
@@ -211,12 +367,30 @@ function datanamestore() {
     textdata = document.getElementById('data-name').value;
     document.getElementById('data-name-display').innerHTML = textdata;
 }
+	
+	function datamnameset2() {
+    texttosave = document.getElementById('data-name2').value;
+    localStorage.setItem('data-name2', texttosave);
+}
+function datanamestore2() {
+    textdata = document.getElementById('data-name2').value;
+    document.getElementById('data-name2-display').innerHTML = textdata;
+}
+	
+	
 
 </script> 
 <script>
 $(document).ready(function(){
   $("#deletedatacard1").click(function(){
     $("#datacard1").remove();
+  });
+});
+</script> 
+<script>
+$(document).ready(function(){
+  $("#add-data-card").click(function(){
+    $("#datacard2").show();
   });
 });
 </script>
