@@ -384,7 +384,7 @@ $page_subtitle = 'Recipient rulesets';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
-<script src="../js/pikaday.js"></script> xcv 
+<script src="../js/pikaday.js"></script> 
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> 
 <script>
   $(document).ready(function(){
