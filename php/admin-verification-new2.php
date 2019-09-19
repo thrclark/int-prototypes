@@ -26,7 +26,7 @@ $page_subtitle = 'Data';
             </div>
             <div class="col-10 pl-5">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-12">
                         <div class="row mb-2">
                             <div class="col">
                                 <h2><?php echo $page_subtitle; ?></h2>
@@ -71,6 +71,11 @@ $page_subtitle = 'Data';
                                             <label class="control-label" for="descriptionLabel"> Description (optional) </label>
                                             <div> The description for this section. It will display at the top of this section.</div>
                                             <textarea id="descriptionLabel"></textarea>
+                                        </div>
+                                        <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="maskdata1">
+                                            <label class="form-check-label" for="maskdata1"> Mask this data for the user until the user takes action to unmask it. </label>
                                         </div>
                                         <div class="row">
                                             <div class="col">
@@ -221,6 +226,11 @@ $page_subtitle = 'Data';
                                             <div> The description for this section. It will display at the top of this section.</div>
                                             <textarea id="descriptionLabel2"></textarea>
                                         </div>
+                                        <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="maskdata1">
+                                            <label class="form-check-label" for="maskdata1"> Mask this data for the user until the user takes action to unmask it. </label>
+                                        </div>
                                         <div class="row">
                                             <div class="col">
                                                 <div class="font-weight-bold mb-3">APIs</div>
@@ -341,7 +351,7 @@ $page_subtitle = 'Data';
                                 </div>
                             </div>
                         </div>
-                        <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="admin-verification-new1.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="#" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="admin-verification-new1.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new3.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,274 @@
+<?php
+$section = '';
+$page_title = 'New verification';
+$page_subtitle = 'Recipients';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include('includes/all-head-meta.php') ?>
+<?php include('includes/styles-admin.php') ?>
+</head>
+<body>
+<?php include('includes/admin-navigation.php') ?>
+<div class="container mt-5 mb-5">
+    <main class="main-content" id="main-content">
+        <h1 class="mb-6"> <?php echo $page_title; ?></h1>
+        <div class="row">
+            <div class="col-2 border-right">
+                <ol class="rvb-steps rvb-steps--vertical" style="overflow-x:inherit">
+                    <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
+                    <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
+                    <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
+                    <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i></span> </span> </li>
+                    <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/Save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </span></li>
+                </ol>
+            </div>
+            <div class="col-10 pl-5">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="row mb-2">
+                            <div class="col">
+                                <h2><?php echo $page_subtitle; ?></h2>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Trigger</button>
+                            </div>
+                        </div>
+                        <div class="rbt-collapse-accordion" id="accordion">
+                            <div class="card" id='datacard1'>
+                                <div class="" id="headingOne">
+                                    <h3 class="mb-2">
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">New set</span></button>
+                                    </h3>
+                                    <div class="int-accordion-controls">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu">
+                                                <button class="dropdown-item" id="deletedatacard1">Delete </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body" id="child1">
+                                        <div class="form-group">
+                                            <label class="control-label" for="data-name"> Recipient Rule Set Title </label>
+                                            <div> Provide a name for this set of recipient rules.</div>
+                                            <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
+                                        </div>
+                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-5">
+                                            <legend class="ts-14 font-weight-bold mb-0">Effective Date</legend>
+                                            <span class="" id="maintenance-window-hint">The start date and time that this trigger will begin displaying for the selected users (your current timezone is GMT-04:00).</span>
+                                            <div class="row mt-3">
+                                                <div class="col-6">
+                                                    <label for="time-demo-start-day" class="">Start day</label>
+                                                    <div class="rbt-datepicker__input">
+                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control">
+                                                        <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label for="start-time"  class="">Start time</label>
+                                                    <input type="time" id="start-time" class="form-control" value="00:01">
+                                                </div>
+                                            </div>
+                                        </fieldset>
+										
+										
+										
+										
+										
+										 <div class="form-group">
+											 
+											 
+											 <div class="font-weight-bold">Specify recipients</div>
+										   <div> Use the expression builder below to add users and groups to this trigger.</div>
+                                       
+											 <div id="builder" class="rbt-expressionbuilder"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id='datacard2' style="display: none">
+                                <div class="" id="headingTwo">
+                                    <h3 class="mb-2">
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> <span id="data-name2-display">New set</span></button>
+                                    </h3>
+                                    <div class="int-accordion-controls">
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton11" aria-hidden="true" role="menu">
+                                                <button class="dropdown-item" id="deletedatacard2">Delete </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body" id="child2">
+                                        <div class="form-group">
+                                            <label class="control-label" for="data-name2"> Name </label>
+                                            <div> The name of this verification (displayed on the main verification page).</div>
+                                            <input type="text" class="form-control"  id="data-name2" aria-describedby="data-name2" oninput='datamnameset2();datanamestore2();'>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"><a href="admin-verification-new2.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new4.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<?php include('includes/all-footerscripts.php') ?>
+<script src="../js/pikaday.js"></script> 
+
+ 
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
+<script src='../js/query-builder.standalone.js'></script> 
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> 
+<script>
+  $(document).ready(function(){
+    $(".rvb-steps").sticky({topSpacing:0});
+  });
+</script> 
+<script>
+function datamnameset() {
+    texttosave = document.getElementById('data-name').value;
+    localStorage.setItem('data-name', texttosave);
+}
+function datanamestore() {
+    textdata = document.getElementById('data-name').value;
+    document.getElementById('data-name-display').innerHTML = textdata;
+}
+	
+	function datamnameset2() {
+    texttosave = document.getElementById('data-name2').value;
+    localStorage.setItem('data-name2', texttosave);
+}
+function datanamestore2() {
+    textdata = document.getElementById('data-name2').value;
+    document.getElementById('data-name2-display').innerHTML = textdata;
+}
+	
+	
+
+</script> 
+<script>
+$(document).ready(function(){
+  $("#deletedatacard1").click(function(){
+    $("#datacard1").remove();
+  });
+});
+</script> 
+<script>
+$(document).ready(function(){
+  $("#add-data-card").click(function(){
+    $("#datacard2").show();
+  });
+});
+</script> 
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
+</script> 
+<script>
+    var rules_basic = {
+        condition: 'AND',
+        rules: [{
+            id: 'email',
+            operators: ['equal', 'not_equal']
+        }]
+    };
+    $('#builder').queryBuilder({
+        plugins: ['bt-tooltip-errors'],
+        filters: [{
+                id: 'email',
+                label: 'Email Address',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'firstname',
+                label: 'First Name',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'lastname',
+                label: 'Last Name',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'campus',
+                label: 'Campus',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'roles',
+                label: 'Roles',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'groups',
+                label: 'Groups',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'personid',
+                label: 'Person ID',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+
+            {
+                id: 'username',
+                label: 'User Name',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            },
+            {
+                id: 'primarystudentaffiliation',
+                label: 'Primary Student Affiliation',
+                type: 'string',
+                operators: ['equal', 'not_equal']
+            }
+        ],
+        rules: rules_basic
+    });
+    /****************************************************************
+     Triggers and Changers QueryBuilder
+     *****************************************************************/
+
+    $('#btn-get').on('click', function() {
+        var result = $('#builder').queryBuilder('getRules');
+        if (!$.isEmptyObject(result)) {
+            alert(JSON.stringify(result, null, 2));
+        } else {
+            console.log("invalid object :");
+        }
+        console.log(result);
+    });
+
+    $('#btn-reset').on('click', function() {
+        $('#builder').queryBuilder('reset');
+    });
+
+    $('#btn-set').on('click', function() {
+        //$('#builder').queryBuilder('setRules', rules_basic);
+        var result = $('#builder').queryBuilder('getRules');
+        if (!$.isEmptyObject(result)) {
+            rules_basic = result;
+        }
+    });
+    //When rules changed :
+    $('#builder').on('getRules.queryBuilder.filter', function(e) {
+        //$log.info(e.value);
+    });
+</script>
+</body>
+</html>

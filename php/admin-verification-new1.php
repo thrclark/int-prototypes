@@ -27,7 +27,7 @@ $page_subtitle = 'Setup';
             <div class="col-10 pl-5">
                 <h2 class="mb-3"><?php echo $page_subtitle; ?></h2>
                 <div class="row">
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-12">
                         <div class="form-group">
                             <label class="control-label" for="nameLabel"> Name </label>
                             <div class="" id="nameLabel"> The name of this verification. It will be displayed on the main verification page.</div>
