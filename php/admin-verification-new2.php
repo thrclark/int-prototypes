@@ -20,6 +20,7 @@ $page_subtitle = 'Data';
                     <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
                     <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
                     <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </li>
+                    <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i></span> </span> </li>
                     <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i></span> </span> </li>
                     <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/Save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </span></li>
                 </ol>
@@ -67,15 +68,15 @@ $page_subtitle = 'Data';
                                             <div class="" > This uniquely identifies this section on the current verification.</div>
                                             <input id="uniquekeyLabel" aria-labelledby="uniquekeyLabel"  class="form-control" type="text">
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label" for="descriptionLabel"> Description (optional) </label>
-                                            <div> The description for this section. It will display at the top of this section.</div>
-                                            <textarea id="descriptionLabel"></textarea>
-                                        </div>
                                         <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" type="checkbox" value="" id="maskdata1">
                                             <label class="form-check-label" for="maskdata1"> Mask this data for the user until the user takes action to unmask it. </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="descriptionLabel"> Description (optional) </label>
+                                            <div> The description for this section. It will display at the top of this section.</div>
+                                            <textarea id="descriptionLabel"></textarea>
                                         </div>
                                         <div class="row">
                                             <div class="col">
@@ -221,15 +222,15 @@ $page_subtitle = 'Data';
                                             <div class="" > This uniquely identifies this section on the current verification.</div>
                                             <input id="uniquekeyLabel2" aria-labelledby="uniquekeyLabel2"  class="form-control" type="text">
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label" for="descriptionLabel2"> Description (optional) </label>
-                                            <div> The description for this section. It will display at the top of this section.</div>
-                                            <textarea id="descriptionLabel2"></textarea>
-                                        </div>
                                         <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" type="checkbox" value="" id="maskdata1">
                                             <label class="form-check-label" for="maskdata1"> Mask this data for the user until the user takes action to unmask it. </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label" for="descriptionLabel2"> Description (optional) </label>
+                                            <div> The description for this section. It will display at the top of this section.</div>
+                                            <textarea id="descriptionLabel2"></textarea>
                                         </div>
                                         <div class="row">
                                             <div class="col">

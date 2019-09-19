@@ -1,7 +1,7 @@
 <?php
 $section = '';
 $page_title = 'New verification';
-$page_subtitle = 'Recipients';
+$page_subtitle = 'Recipient rulesets';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +20,7 @@ $page_subtitle = 'Recipients';
                     <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
                     <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
                     <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
+                    <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i></span> </span> </li>
                     <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i></span> </span> </li>
                     <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/Save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </span></li>
                 </ol>
@@ -32,7 +33,7 @@ $page_subtitle = 'Recipients';
                                 <h2><?php echo $page_subtitle; ?></h2>
                             </div>
                             <div class="col-auto">
-                                <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Trigger</button>
+                                <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Ruleset</button>
                             </div>
                         </div>
                         <div class="rbt-collapse-accordion" id="accordion">
@@ -53,62 +54,323 @@ $page_subtitle = 'Recipients';
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
-                                            <label class="control-label" for="data-name"> Recipient Rule Set Title </label>
-                                            <div> Provide a name for this set of recipient rules.</div>
+                                            <label class="control-label" for="data-name"> Recipient ruleset title </label>
+                                            <div> Provide a name for this recipient ruleset.</div>
                                             <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
                                         </div>
                                         <fieldset aria-describedby="maintenance-window-hint" class="mb-5">
-                                            <legend class="ts-14 font-weight-bold mb-0">Effective Date</legend>
-                                            <span class="" id="maintenance-window-hint">The start date and time that this trigger will begin displaying for the selected users (your current timezone is GMT-04:00).</span>
-                                            <div class="row mt-3">
-                                                <div class="col-6">
+                                            <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
+                                            <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
+                                            <div class="row mt-3 mb-1">
+                                                <div class="col-3">
                                                     <label for="time-demo-start-day" class="">Start day</label>
                                                     <div class="rbt-datepicker__input">
                                                         <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-3">
                                                     <label for="start-time"  class="">Start time</label>
-                                                    <input type="time" id="start-time" class="form-control" value="00:01">
+                                                    <input type="time" id="start-time" class="form-control" value="">
+                                                </div>
+                                                <div class="col-6 d-flex align-items-end">
+                                                    <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
                                                 </div>
                                             </div>
                                         </fieldset>
-										
-										
-										
-										
-										
-										 <div class="form-group">
-											 
-											 
-											 <div class="font-weight-bold">Specify recipients</div>
-										   <div> Use the expression builder below to add users and groups to this trigger.</div>
-                                       
-											 <div id="builder" class="rbt-expressionbuilder"></div></div>
+                                        <div class="form-group">
+                                            <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
+                                            <div> Use the expression builder below to add users and groups to this ruleset.</div>
+                                            <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
+                                                <dl id="builder_group_0" class="rules-group-container">
+                                                    <dt class="rules-group-header">
+                                                        <div class="btn-group pull-right group-actions">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Add </button>
+                                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(73px, 24px, 0px);">
+                                                                    <button type="button" class="dropdown-item" data-add="rule"> <i class="glyphicon glyphicon-plus"></i> Add rule </button>
+                                                                    <button type="button" class="dropdown-item" data-add="group"> <i class="glyphicon glyphicon-plus-sign"></i> Add group </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-group group-conditions">
+                                                            <label class="btn btn-sm btn-primary active">
+                                                                <input type="radio" name="builder_group_0_cond" value="AND">
+                                                                All </label>
+                                                            <label class="btn btn-sm btn-primary">
+                                                                <input type="radio" name="builder_group_0_cond" value="OR">
+                                                                Any </label>
+                                                        </div>
+                                                        <div class="error-container" data-toggle="tooltip"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                    </dt>
+                                                    <dd class="rules-group-body">
+                                                        <ul class="rules-list">
+                                                            <li id="builder_rule_0" class="rule-container">
+                                                                <div class="rule-header">
+                                                                    <div class="btn-group pull-right rule-actions">
+                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                                <div class="rule-filter-container">
+                                                                    <select class="form-control" name="builder_rule_0_filter">
+                                                                        <option value="-1">------</option>
+                                                                        <option value="email">Email Address</option>
+                                                                        <option value="firstname">First Name</option>
+                                                                        <option value="lastname">Last Name</option>
+                                                                        <option value="campus">Campus</option>
+                                                                        <option value="roles">Roles</option>
+                                                                        <option value="groups">Groups</option>
+                                                                        <option value="personid">Person ID</option>
+                                                                        <option value="username">User Name</option>
+                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-operator-container">
+                                                                    <select class="form-control" name="builder_rule_0_operator">
+                                                                        <option value="equal">equal</option>
+                                                                        <option value="not_equal">not equal</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-value-container">
+                                                                    <input class="form-control" type="text" name="builder_rule_0_value_0">
+                                                                </div>
+                                                            </li>
+                                                            <li id="builder_rule_1" class="rule-container">
+                                                                <div class="rule-header">
+                                                                    <div class="btn-group pull-right rule-actions">
+                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                                <div class="rule-filter-container">
+                                                                    <select class="form-control" name="builder_rule_1_filter">
+                                                                        <option value="-1">------</option>
+                                                                        <option value="email">Email Address</option>
+                                                                        <option value="firstname">First Name</option>
+                                                                        <option value="lastname">Last Name</option>
+                                                                        <option value="campus">Campus</option>
+                                                                        <option value="roles">Roles</option>
+                                                                        <option value="groups">Groups</option>
+                                                                        <option value="personid">Person ID</option>
+                                                                        <option value="username">User Name</option>
+                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-operator-container">
+                                                                    <select class="form-control" name="builder_rule_1_operator">
+                                                                        <option value="equal">equal</option>
+                                                                        <option value="not_equal">not equal</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-value-container">
+                                                                    <input class="form-control" type="text" name="builder_rule_1_value_0">
+                                                                </div>
+                                                            </li>
+                                                            <li id="builder_rule_2" class="rule-container">
+                                                                <div class="rule-header">
+                                                                    <div class="btn-group pull-right rule-actions">
+                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                                <div class="rule-filter-container">
+                                                                    <select class="form-control" name="builder_rule_2_filter">
+                                                                        <option value="-1">------</option>
+                                                                        <option value="email">Email Address</option>
+                                                                        <option value="firstname">First Name</option>
+                                                                        <option value="lastname">Last Name</option>
+                                                                        <option value="campus">Campus</option>
+                                                                        <option value="roles">Roles</option>
+                                                                        <option value="groups">Groups</option>
+                                                                        <option value="personid">Person ID</option>
+                                                                        <option value="username">User Name</option>
+                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-operator-container">
+                                                                    <select class="form-control" name="builder_rule_2_operator">
+                                                                        <option value="equal">equal</option>
+                                                                        <option value="not_equal">not equal</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-value-container">
+                                                                    <input class="form-control" type="text" name="builder_rule_2_value_0">
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card" id='datacard2' style="display: none">
                                 <div class="" id="headingTwo">
                                     <h3 class="mb-2">
-                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> <span id="data-name2-display">New set</span></button>
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">New set</span></button>
                                     </h3>
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
-                                            <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton11" aria-hidden="true" role="menu">
+                                            <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item" id="deletedatacard2">Delete </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                    <div class="card-body" id="child2">
+                                    <div class="card-body" id="child1">
                                         <div class="form-group">
-                                            <label class="control-label" for="data-name2"> Name </label>
-                                            <div> The name of this verification (displayed on the main verification page).</div>
-                                            <input type="text" class="form-control"  id="data-name2" aria-describedby="data-name2" oninput='datamnameset2();datanamestore2();'>
+                                            <label class="control-label" for="data-name"> Recipient ruleset title </label>
+                                            <div> Provide a name for this recipient ruleset.</div>
+                                            <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
+                                        </div>
+                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-5">
+                                            <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
+                                            <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
+                                            <div class="row mt-3 mb-1">
+                                                <div class="col-3">
+                                                    <label for="time-demo-start-day" class="">Start day</label>
+                                                    <div class="rbt-datepicker__input">
+                                                        <input autocomplete="off" type="text" id="datepicker_start2" aria-describedby="hs-date-hint" class="form-control">
+                                                        <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <label for="start-time2"  class="">Start time</label>
+                                                    <input type="time" id="start-time2" class="form-control" value="">
+                                                </div>
+                                                <div class="col-6 d-flex align-items-end">
+                                                    <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group">
+                                            <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
+                                            <div> Use the expression builder below to add users and groups to this ruleset.</div>
+                                            <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
+                                                <dl id="builder_group_0" class="rules-group-container">
+                                                    <dt class="rules-group-header">
+                                                        <div class="btn-group pull-right group-actions">
+                                                            <div class="dropdown">
+                                                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Add </button>
+                                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(73px, 24px, 0px);">
+                                                                    <button type="button" class="dropdown-item" data-add="rule"> <i class="glyphicon glyphicon-plus"></i> Add rule </button>
+                                                                    <button type="button" class="dropdown-item" data-add="group"> <i class="glyphicon glyphicon-plus-sign"></i> Add group </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-group group-conditions">
+                                                            <label class="btn btn-sm btn-primary active">
+                                                                <input type="radio" name="builder_group_0_cond" value="AND">
+                                                                All </label>
+                                                            <label class="btn btn-sm btn-primary">
+                                                                <input type="radio" name="builder_group_0_cond" value="OR">
+                                                                Any </label>
+                                                        </div>
+                                                        <div class="error-container" data-toggle="tooltip"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                    </dt>
+                                                    <dd class="rules-group-body">
+                                                        <ul class="rules-list">
+                                                            <li id="builder_rule_0" class="rule-container">
+                                                                <div class="rule-header">
+                                                                    <div class="btn-group pull-right rule-actions">
+                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                                <div class="rule-filter-container">
+                                                                    <select class="form-control" name="builder_rule_0_filter">
+                                                                        <option value="-1">------</option>
+                                                                        <option value="email">Email Address</option>
+                                                                        <option value="firstname">First Name</option>
+                                                                        <option value="lastname">Last Name</option>
+                                                                        <option value="campus">Campus</option>
+                                                                        <option value="roles">Roles</option>
+                                                                        <option value="groups">Groups</option>
+                                                                        <option value="personid">Person ID</option>
+                                                                        <option value="username">User Name</option>
+                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-operator-container">
+                                                                    <select class="form-control" name="builder_rule_0_operator">
+                                                                        <option value="equal">equal</option>
+                                                                        <option value="not_equal">not equal</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-value-container">
+                                                                    <input class="form-control" type="text" name="builder_rule_0_value_0">
+                                                                </div>
+                                                            </li>
+                                                            <li id="builder_rule_1" class="rule-container">
+                                                                <div class="rule-header">
+                                                                    <div class="btn-group pull-right rule-actions">
+                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                                <div class="rule-filter-container">
+                                                                    <select class="form-control" name="builder_rule_1_filter">
+                                                                        <option value="-1">------</option>
+                                                                        <option value="email">Email Address</option>
+                                                                        <option value="firstname">First Name</option>
+                                                                        <option value="lastname">Last Name</option>
+                                                                        <option value="campus">Campus</option>
+                                                                        <option value="roles">Roles</option>
+                                                                        <option value="groups">Groups</option>
+                                                                        <option value="personid">Person ID</option>
+                                                                        <option value="username">User Name</option>
+                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-operator-container">
+                                                                    <select class="form-control" name="builder_rule_1_operator">
+                                                                        <option value="equal">equal</option>
+                                                                        <option value="not_equal">not equal</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-value-container">
+                                                                    <input class="form-control" type="text" name="builder_rule_1_value_0">
+                                                                </div>
+                                                            </li>
+                                                            <li id="builder_rule_2" class="rule-container">
+                                                                <div class="rule-header">
+                                                                    <div class="btn-group pull-right rule-actions">
+                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
+                                                                <div class="rule-filter-container">
+                                                                    <select class="form-control" name="builder_rule_2_filter">
+                                                                        <option value="-1">------</option>
+                                                                        <option value="email">Email Address</option>
+                                                                        <option value="firstname">First Name</option>
+                                                                        <option value="lastname">Last Name</option>
+                                                                        <option value="campus">Campus</option>
+                                                                        <option value="roles">Roles</option>
+                                                                        <option value="groups">Groups</option>
+                                                                        <option value="personid">Person ID</option>
+                                                                        <option value="username">User Name</option>
+                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-operator-container">
+                                                                    <select class="form-control" name="builder_rule_2_operator">
+                                                                        <option value="equal">equal</option>
+                                                                        <option value="not_equal">not equal</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="rule-value-container">
+                                                                    <input class="form-control" type="text" name="builder_rule_2_value_0">
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -122,11 +384,7 @@ $page_subtitle = 'Recipients';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
-<script src="../js/pikaday.js"></script> 
-
- 
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
-<script src='../js/query-builder.standalone.js'></script> 
+<script src="../js/pikaday.js"></script> xcv 
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> 
 <script>
   $(document).ready(function(){
@@ -160,12 +418,19 @@ $(document).ready(function(){
   $("#deletedatacard1").click(function(){
     $("#datacard1").remove();
   });
+	
+	  $("#deletedatacard2").click(function(){
+    $("#datacard2").remove();
+  });
+	
+	
 });
 </script> 
 <script>
 $(document).ready(function(){
   $("#add-data-card").click(function(){
-    $("#datacard2").show();
+    $("#datacard1").show();
+	   $("#datacard2").show();
   });
 });
 </script> 
@@ -241,7 +506,7 @@ $(document).ready(function(){
         rules: rules_basic
     });
     /****************************************************************
-     Triggers and Changers QueryBuilder
+     rulesets and Changers QueryBuilder
      *****************************************************************/
 
     $('#btn-get').on('click', function() {
@@ -269,6 +534,13 @@ $(document).ready(function(){
     $('#builder').on('getRules.queryBuilder.filter', function(e) {
         //$log.info(e.value);
     });
+</script> 
+<script>
+$(document).ready(function(){
+  $("#add-data-card").click(function(){
+    $("#datacard2").show();
+  });
+});
 </script>
 </body>
 </html>
