@@ -34,7 +34,7 @@ $page_title = 'Theme';
                     <div class="col-8">
                         <h2>Theme tool</h2>
                         <p class="">Use the theming tool to customize the end user view to align with your institutional brand. This tool allows you to select custom colors, add logos, and specify typography. </p>
-                        <div class="mt-7"> <a href="verification-themetool.php" target="_blank" class="btn btn-primary">Launch theming tool <i class="rbt-icon-link-external ml-3"></i> </a></div>
+                        <div class="mt-7"> <a href="verification-themetool-var1.php" target="_blank" class="btn btn-primary">Launch theming tool <i class="rbt-icon-link-external ml-3"></i> </a></div>
                     </div>
                 </div>
             </div>

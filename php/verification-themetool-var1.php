@@ -1,4 +1,4 @@
-<?php 
+<?php
 $section = '';
 $page_title = 'VERIFY';
 ?>
@@ -183,6 +183,10 @@ $page_title = 'VERIFY';
             </header>
             <main>
                 <section>
+                    <div class="alert alert-primary mb-5" role="alert">
+                        <h2 class="alert-heading">Privacy note</h2>
+                        <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
+                    </div>
                     <div class="card">
                         <div class="card-body">
                             <h2 class="ts-26">Verify your data</h2>
