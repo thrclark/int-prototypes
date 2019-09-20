@@ -58,7 +58,7 @@ $page_subtitle = 'Recipient rulesets';
                                             <div> Provide a name for this recipient ruleset.</div>
                                             <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
                                         </div>
-                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-5">
+                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-3">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
                                             <div class="row mt-3 mb-1">
@@ -78,6 +78,11 @@ $page_subtitle = 'Recipient rulesets';
                                                 </div>
                                             </div>
                                         </fieldset>
+                                        <div class="font-weight-bold mb-2 ts-14">Recur annually</div>
+                                        <div class="form-check mb-5">
+                                            <input class="form-check-input" type="checkbox" value="" id="recurannually">
+                                            <label class="form-check-label" for="recurannually"> Yes </label>
+                                        </div>
                                         <div class="form-group">
                                             <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
                                             <div> Use the expression builder below to add users and groups to this ruleset.</div>
@@ -227,7 +232,7 @@ $page_subtitle = 'Recipient rulesets';
                                             <div> Provide a name for this recipient ruleset.</div>
                                             <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
                                         </div>
-                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-5">
+                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-3">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
                                             <div class="row mt-3 mb-1">
@@ -247,6 +252,11 @@ $page_subtitle = 'Recipient rulesets';
                                                 </div>
                                             </div>
                                         </fieldset>
+                                        <div class="font-weight-bold mb-2 ts-14">Recur annually</div>
+                                        <div class="form-check mb-5">
+                                            <input class="form-check-input" type="checkbox" value="" id="recurannually">
+                                            <label class="form-check-label" for="recurannually"> Yes </label>
+                                        </div>
                                         <div class="form-group">
                                             <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
                                             <div> Use the expression builder below to add users and groups to this ruleset.</div>
@@ -384,7 +394,7 @@ $page_subtitle = 'Recipient rulesets';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
-<script src="../js/pikaday.js"></script> 
+
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> 
 <script>
   $(document).ready(function(){

@@ -29,7 +29,7 @@ $page_subtitle = 'Leeway';
                 <h2 class="mb-3"><?php echo $page_subtitle; ?></h2>
                 <div class="row">
                     <div class="col-12 col-lg-12">
-                        <div class="form-group">
+                        <div class="form-group mb-5">
                             <label class="sr-only" for="specifyleeway">Text Input</label>
                             <div class="mb-3">If the user has updated their information within this many days prior to the Effective Date, they will not be required to verify. This is useful if the external application behind this verification makes use of the user entry API.</div>
                             <div class="row">

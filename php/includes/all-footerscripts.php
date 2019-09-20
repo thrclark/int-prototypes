@@ -2,9 +2,8 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery.sticky.js"></script>
-<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script> 
-
-
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script src="../js/pikaday.js"></script>
 <script>
     $(".rbt-drawer-button").click(function() {
         $(".rbt-drawer,.rbt-drawer-button").toggleClass("open");
