@@ -22,7 +22,7 @@ $page_subtitle = 'Review/save';
                     <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
                     <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </span> </a></li>
                     <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Review/Save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
+                    <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
                 </ol>
             </div>
             <div class="col-10 pl-5">
@@ -288,7 +288,7 @@ $page_subtitle = 'Review/save';
                             </div>
                         </div>
                         <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"><a href="admin-verification-new4.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new4.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="axxxxxxxxxx.php" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i></a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
                     </div>
                 </div>
             </div>

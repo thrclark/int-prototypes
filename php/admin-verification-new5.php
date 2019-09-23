@@ -16,17 +16,19 @@ $page_subtitle = 'Scheduling';
         <h1 class="mb-6"> <?php echo $page_title; ?></h1>
         <div class="row">
             <div class="col-2 border-right">
-                <ol class="rvb-steps rvb-steps--vertical" style="overflow-x:inherit">
-                    <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i></span> </span></a> </li>
-                    <li class="rvb-steps__item"> <span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/Save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </span></li>
-                </ol>
+                <div id="sticky-wrapper" class="sticky-wrapper" style="height: 336px;">
+                    <ol class="rvb-steps rvb-steps--vertical" style="overflow-x: inherit; width: 159px;">
+                        <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i></span> </span></a> </li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" ><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
+                    </ol>
+                </div>
             </div>
             <div class="col-10 pl-5">
-                <h2 class="mb-3"><?php echo $page_subtitle; ?></h2>
+                <h2 class="mb-3">Scheduling</h2>
                 <div class="row">
                     <div class="col-12 col-lg-12">
                         <div class="card mb-5">
@@ -50,7 +52,7 @@ $page_subtitle = 'Scheduling';
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-7" id="enddate" style="display: none">
+                        <div class="mb-7" id="enddate" style="display: none;">
                             <label for="start" class="font-weight-bold">End date (optionoal)</label>
                             <div class="mb-1">The date to stop this verification from being displayed (this will be based on the current timezone of GMT-04:00).</div>
                             <div class="row">
