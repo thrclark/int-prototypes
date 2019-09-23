@@ -12076,9 +12076,10 @@ button[data-theme] {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 36px;
+  /* width: 36px; */
   height: 44px;
-  padding: 8px; }
+  padding: 8px;
+  margin-right: 10px; }
   .rbt-collapse-accordion .int-accordion-controls .dropdown .dropdown-toggle:after {
     content: "\e944"; }
 

@@ -132,10 +132,10 @@ button[data-theme] {
     position: absolute;
     top: 0px;
     right: 0px;
-    //background: red;
-    width: 36px;
+    /* width: 36px; */
     height: 44px;
     padding: 8px;
+    margin-right: 10px;
     .dropdown {
       .dropdown-toggle {
         &:after {

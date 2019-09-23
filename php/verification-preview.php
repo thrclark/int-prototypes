@@ -1,68 +1,20 @@
 <?php
 $section = '';
-$page_title = 'New verification';
-$page_subtitle = 'Review/save';
+$page_title = 'VERIFY';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<?php include('includes/styles-admin.php') ?>
+<?php include('includes/styles-main.php') ?>
 </head>
-<body>
-<?php include('includes/admin-navigation.php') ?>
-<div class="container mt-5 mb-5">
-    <main class="main-content" id="main-content">
-        <h1 class="mb-6"> <?php echo $page_title; ?></h1>
-        <div class="row">
-            <div class="col-2 border-right">
-                <ol class="rvb-steps rvb-steps--vertical" style="overflow-x:inherit">
-                    <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
-                </ol>
-            </div>
-            <div class="col-10 pl-5">
-                <h2 class="mb-3"><?php echo $page_subtitle; ?></h2>
-                <div class="row">
-                    <div class="col-12 col-lg-12">
-                        <div class="rbt-collapse-accordion" id="accordion_parent">
-                            <div class="card">
-                              
-								
-								
-								
-								<h3 class="mb-2" id="collapse_setup">
-                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Setup</span></button>
-                                </h3>
-                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new2.php">Edit</a> </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="collapse_setup" data-parent="#accordion_parent">
-                                    <div class="card-body">xxxxxxxxxxxxxxxxxxxxxx </div>
-                                </div>
-                            </div>
-                         
-							
-						
-							
-							
-							
-							
-							
-							
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="card mb-3">
+<body class="int-user">
+<main class="rbt-shell-main" style="max-width:inherit">
+    <div class="rbt-shell">
+        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+            <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
+            <h2 class="mb-3 mt-7">Preview</h2>
+            <div class="card mb-3">
                             <div class="card-header font-weight-bold">
                                 <div class="row">
                                     <div class="col">
@@ -320,32 +272,200 @@ $page_subtitle = 'Review/save';
                                 </dl>
                             </div>
                         </div>
-                        <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new4.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="axxxxxxxxxx.php" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i></a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
+        </div>
+        <div class="rbt-shell-stage p-3">
+            <header class="container p-0 mt-7 mb-3">
+                <div class="d-flex"> <img alt="" class="int-brand-image">
+                    <div class="int-lockup-group text-nowrap">
+                        <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
+                        <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="d-none d-lg-block text-nowrap">
+                        <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">UN</span> username </div>
                     </div>
                 </div>
-            </div>
+            </header>
+            <main>
+                <section>
+                 
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="ts-26">Verify your data</h2>
+                            <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
+                            <h3 class="ts-26 mt-5">Sample data</h3>
+                            <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Phone 1</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                        <dt class="col-sm-4">Phone 2</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                        <dt class="col-sm-4">Phone 3</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                    </dl>
+                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="int-verify-controls p-3">
+                        <div class="row mb-5" id="demojs_verifyscreen">
+                            <div class="col-md-6 d-flex">
+                                <div class="d-flex flex-column">
+                                    <div class="mb-3 ts-20">
+                                        <div class="form-check form-check-inline">
+                                            <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
+                                            <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
+                                        </div>
+                                    </div>
+                                    <div class="rbt-button-group mt-auto">
+                                        <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex">
+                                <div class="d-flex flex-column">
+                                    <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                    <div class="rbt-button-group mt-auto">
+                                        <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-    </main>
-</div>
+    </div>
+</main>
+<?php include('includes/theme-controls.php') ?>
+<?php include('modals/modal-theme.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
-  $(document).ready(function(){
-    $(".rvb-steps").sticky({topSpacing:0});
+$(document).ready(function(){
+  $("#demojs-themehandle").click(function(){
+    $(".rbt-shell-sidebar").toggleClass("int-themeclose");
   });
+});
 </script> 
 <script>
-    var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
-	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
+    $(".demojs-reveal").click(function() {
+        $(".int-mask").hide();
+		$(".alert").hide();
+		$("#demojs_revealskipscreen").hide();
+		$("#demojs_verifyscreen").show();
+        $(".int-privatedata").show();	
+    });
 </script> 
-<script >
+<script>
     $(document).ready(function() {
-        $('#status').click(function() {
-            if ($(this).is(':checked')) {
-                $("#enddate").show();
-            } else {
-                $("#enddate").hide();
+        $("#submit2").click(function() {
+            $('#question4').popover('toggle')
+        });
+		
+		 $("#question4").click(function() {
+			 $('#question4').popover('show')
+            $('#question4').popover('destroy')
+        });
+		
+		 $('#submit2').click(function() {
+            if ($('#question4').is(':checked')) {
+				 $('#question4').popover('destroy')
             }
+        });
+		
+		
+		
+		
+    }); 
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#lockup-visibility').change(function() {
+            if ($(this).val() == "block") {
+                $(".demojs-lockupcontrols").show();
+            }
+            if ($(this).val() == "none") {
+                $(".demojs-lockupcontrols").hide();
+            }
+
+        });
+		
+		
+		
+		 $('#logoimage-visibility').change(function() {
+            if ($(this).val() == "block") {
+                $(".demojs-logourl").show();
+            }
+            if ($(this).val() == "none") {
+                $(".demojs-logourl").hide();
+            }
+
+        });
+		
+		
+		
+		 $("[data-theme='white']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='brown']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='blue']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='yellow']").click(function() {
+			$(".demojs-lockupcontrols").hide();
+			$(".demojs-logourl").show();
+        });
+		 $("[data-theme='black']").click(function() {
+			$(".demojs-logourl").hide();
+			$(".demojs-lockupcontrols").show();
+        });
+		
+	
+
+
+    }); 
+</script> 
+<script>
+    $(document).ready(function() {
+		
+		
+		
+		$( ".card-body .form-control, .predefined-themes .card-body button" ).click(function() {
+  $('.demojs-savetheme').prop("disabled", false); // Element(s) are now enabled.
+});
+
+
+
+
+
+ }); 
+
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $("#savetheme").click(function() {
+                $('.btn.btn-primary').addClass('rbt-loading');
+				$('.btn.btn-primary .spinner-border').removeClass('d-none');
+				$('.btn.btn-primary .visible').toggleClass('invisible');
+				$('.demojs-savetheme').prop('disabled', true);
+				
+                setTimeout(function() {
+                    $('.btn.btn-primary').removeClass('rbt-loading');
+					$('.btn.btn-primary .spinner-border').addClass('d-none');
+					$('.demojs-savetheme').prop('disabled', true);
+					$('.btn.btn-primary .invisible').removeClass('invisible');
+					
+                }, 3000)
+            });
         });
     });
 </script>
