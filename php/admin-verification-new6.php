@@ -31,47 +31,12 @@ $page_subtitle = 'Review/save';
                     <div class="col-12 col-lg-12">
                         <div class="rbt-collapse-accordion" id="accordion_parent">
                             <div class="card">
-                              
-								
-								
-								
-								<h3 class="mb-2" id="collapse_setup">
-                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Setup</span></button>
+                                <h3 class="mb-2" id="collapse_setup">
+                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Setup</span></button>
                                 </h3>
-                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new2.php">Edit</a> </div>
-                                <div id="collapseOne" class="collapse" aria-labelledby="collapse_setup" data-parent="#accordion_parent">
-                                    <div class="card-body">xxxxxxxxxxxxxxxxxxxxxx </div>
-                                </div>
-                            </div>
-                         
-							
-						
-							
-							
-							
-							
-							
-							
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="card mb-3">
-                            <div class="card-header font-weight-bold">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="ts-16 font-weight-bold">Setup</h3>
-                                    </div>
-                                    <div class="col-auto"><a class="btn btn-sm btn-outline-primary"  href="admin-verification-new1.php">Edit</a></div>
-                                </div>
-                            </div>
-                            <div class="card-body">
+                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new1.php">Edit</a> </div>
+                                <div id="collapse1" class="collapse" aria-labelledby="collapse_setup" data-parent="#accordion_parent">
+                                            <div class="card-body">
                                 <dl class="row">
                                     <dt class="col-sm-3">Name</dt>
                                     <dd class="col-sm-9">FERPA Compliance </dd>
@@ -97,17 +62,15 @@ $page_subtitle = 'Review/save';
                                     <dd class="col-sm-9">-- </dd>
                                 </dl>
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-header font-weight-bold">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="ts-16 font-weight-bold">Data</h3>
-                                    </div>
-                                    <div class="col-auto"><a class="btn btn-sm btn-outline-primary"  href="admin-verification-new2.php">Edit</a></div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card">
+                                <h3 class="mb-2" id="collapse_data">
+                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Data</span></button>
+                                </h3>
+                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new2.php">Edit</a> </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="collapse_data" data-parent="#accordion_parent">
+                                             <div class="card-body">
                                 <div class="rbt-collapse-accordion" id="accordion">
                                     <div class="card">
                                         <h5 class="mb-2" id="headingOne">
@@ -201,17 +164,15 @@ $page_subtitle = 'Review/save';
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-header font-weight-bold">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="ts-16 font-weight-bold">Recipients</h3>
-                                    </div>
-                                    <div class="col-auto"><a class="btn btn-sm btn-outline-primary"  href="admin-verification-new3.php">Edit</a></div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card">
+                                <h3 class="mb-2" id="collapse_recipients">
+                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Recipients</span></button>
+                                </h3>
+                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new3.php">Edit</a> </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="collapse_recipients" data-parent="#accordion_parent">
+                                           <div class="card-body">
                                 <div class="rbt-collapse-accordion" id="accordion2">
                                     <div class="card">
                                         <h5 class="mb-2" id="headingTwo">
@@ -285,33 +246,29 @@ $page_subtitle = 'Review/save';
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-header font-weight-bold">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="ts-16 font-weight-bold">Leeway</h3>
-                                    </div>
-                                    <div class="col-auto"><a class="btn btn-sm btn-outline-primary"  href="admin-verification-new4.php">Edit</a></div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card">
+                                <h3 class="mb-2" id="collapse_leeway">
+                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Leeway</span></button>
+                                </h3>
+                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new4.php">Edit</a> </div>
+                                <div id="collapse4" class="collapse" aria-labelledby="collapse_leeway" data-parent="#accordion_parent">
+                                   <div class="card-body">
                                 <dl class="row">
                                     <dt class="col-sm-3">Leeway</dt>
                                     <dd class="col-sm-9">20 days</dd>
                                 </dl>
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-header font-weight-bold">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3 class="ts-16 font-weight-bold">Scheduling</h3>
-                                    </div>
-                                    <div class="col-auto"><a class="btn btn-sm btn-outline-primary"  href="admin-verification-new4.php">Edit</a></div>
                                 </div>
                             </div>
-                            <div class="card-body">
+                            <div class="card">
+                                <h3 class="mb-2" id="collapse_scheduling">
+                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Scheduling</span></button>
+                                </h3>
+                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new5.php">Edit</a> </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="collapse_scheduling" data-parent="#accordion_parent">
+                                   <div class="card-body">
                                 <dl class="row">
                                     <dt class="col-sm-3">Status</dt>
                                     <dd class="col-sm-9">On</dd>
@@ -319,7 +276,10 @@ $page_subtitle = 'Review/save';
                                     <dd class="col-sm-9">Fri May 08 2020</dd>
                                 </dl>
                             </div>
+                                </div>
+                            </div>
                         </div>
+           
                         <hr class="mt-7">
                         <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new4.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="axxxxxxxxxx.php" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i></a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
                     </div>
