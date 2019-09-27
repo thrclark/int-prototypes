@@ -12451,4 +12451,15 @@ button[data-theme] {
   outline: 0;
   cursor: pointer; }
 
+.int-accordion-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* width: 36px; */
+  height: 44px;
+  padding: 8px;
+  margin-right: 10px; }
+  .int-accordion-controls .dropdown .dropdown-toggle:after {
+    content: "\e944"; }
+
 /*# sourceMappingURL=main.css.map */
