@@ -11,9 +11,8 @@ $page_subtitle = 'Data';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-5 mb-5">
-    <main class="main-content" id="main-content">
-        <h1 class="mb-6"> <?php echo $page_title; ?></h1>
+<div class="container mt-3 mt-md-5 mb-5">
+    <main class="main-content" id="main-content"><h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         <div class="row">
             <div class="col-2 border-right">
                 <div id="sticky">
@@ -32,7 +31,7 @@ $page_subtitle = 'Data';
                     <div class="col-12 col-lg-12">
                         <div class="row mb-2">
                             <div class="col">
-                                <h2><?php echo $page_subtitle; ?></h2>
+                                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
                             </div>
                             <div class="col-auto">
                                 <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Data</button>

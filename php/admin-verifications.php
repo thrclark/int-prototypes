@@ -21,7 +21,7 @@ $page_title = 'Verifications';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
         <div class="row align-items-center mb-5">
             <div class="col">

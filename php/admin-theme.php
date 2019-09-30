@@ -14,7 +14,7 @@ $page_title = 'Theme';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
         <h1> <?php echo $page_title; ?></h1>
         <ul class="nav nav-pills int-tabs" id="pills-tab" role="tablist">
