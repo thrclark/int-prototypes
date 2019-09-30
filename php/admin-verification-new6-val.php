@@ -36,7 +36,7 @@ $page_subtitle = 'Review/save';
                                 <h3 class="mb-2" id="collapse_setup">
                                     <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Setup</span></button>
                                 </h3>
-                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new1.php">Edit</a> </div>
+                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-danger"  href="admin-verification-new1.php">Fix errors</a> </div>
                                 <div id="collapse1" class="collapse" aria-labelledby="collapse_setup" data-parent="#accordion_parent">
                                     <div class="card-body">
                                         <dl class="row">
@@ -45,7 +45,11 @@ $page_subtitle = 'Review/save';
                                             <dt class="col-sm-3">Unique Key</dt>
                                             <dd class="col-sm-9">ferpa-compliance </dd>
                                             <dt class="col-sm-3">Publisher</dt>
-                                            <dd class="col-sm-9"> ESI One.IU Team </dd>
+                                            <dd class="col-sm-9">
+                                                <div class="alert alert-inline alert-danger mb-2" role="alert" >
+                                                    <p class="rbt-ts-14" id="standalone4	"> This field is required.</p>
+                                                </div>
+                                            </dd>
                                             <dt class="col-sm-3">Description</dt>
                                             <dd class="col-sm-9">-- </dd>
                                             <dt class="col-sm-3">Disclaimer</dt>
@@ -282,7 +286,7 @@ $page_subtitle = 'Review/save';
                             </div>
                         </div>
                         <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary"> Preview  <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new4.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
                     </div>
                 </div>
             </div>

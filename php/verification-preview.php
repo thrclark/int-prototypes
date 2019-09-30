@@ -10,8 +10,11 @@ $page_title = 'VERIFY';
 </head>
 <body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
-    <div class="rbt-shell">
-        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+    <div style="background: #444" class="py-5">
+        <div class="container text-white text-center rbt-ts-26">Verification preview</div>
+    </div>
+    <div class="rbt-shell"> 
+        <!--    <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Preview</h2>
             <div class="rbt-collapse-accordion" id="accordion_parent">
@@ -264,7 +267,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="rbt-shell-stage p-3">
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
@@ -278,7 +281,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
             </header>
-            <main>
+            <div class="main">
                 <section>
                     <div class="card">
                         <div class="card-body">
@@ -327,7 +330,7 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                 </section>
-            </main>
+            </div>
         </div>
     </div>
 </main>

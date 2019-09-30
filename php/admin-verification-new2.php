@@ -16,14 +16,16 @@ $page_subtitle = 'Data';
         <h1 class="mb-6"> <?php echo $page_title; ?></h1>
         <div class="row">
             <div class="col-2 border-right">
-                <ol class="rvb-steps rvb-steps--vertical" style="overflow-x:inherit">
-                    <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </span> </a></li>
-                    <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" ><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
-                </ol>
+                <div id="sticky">
+                    <ol class="rvb-steps rvb-steps--vertical mb-5" style="overflow-x:inherit">
+                        <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
+                    </ol>
+                </div>
             </div>
             <div class="col-10 pl-5">
                 <div class="row">
@@ -362,7 +364,7 @@ $page_subtitle = 'Data';
 <?php include('includes/all-footerscripts.php') ?>
 <script>
   $(document).ready(function(){
-    $(".rvb-steps").sticky({topSpacing:0});
+    $("#sticky").sticky({topSpacing:0});
   });
 </script> 
 <script>

@@ -73,7 +73,7 @@ html {
         font-family: var(--font-body);
       }
     }
-    main {
+    main, .main {
       @extend .container;
       //@extend .mt-5;
       @extend .p-0;
@@ -186,7 +186,7 @@ html {
         max-width: var(--page-margin);
 
       }
-      main {
+      main, .main {
         max-width: var(--page-margin);
 
       }
