@@ -82,15 +82,15 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <div class="font-weight-bold mb-3">APIs</div>
+                                                <div class="font-weight-bold mb-3">Field groups</div>
                                             </div>
                                             <div class="col-auto">
-                                                <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API</button>
+                                                <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> Field group</button>
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
                                             <div class="card-header border-bottom-0 p-1">
-                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey1"> <i class="rbt-icon-chevron-right"></i> Unique key 1</button>
+                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey1"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
@@ -109,7 +109,7 @@ $page_subtitle = 'Data';
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_UniqueKey"> Unique key </label>
                                                     <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
-                                                    <input id="api1_UniqueKey" aria-labelledby="api1_UniqueKey"  class="form-control" type="text" value="Unique key 1">
+                                                    <input id="api1_UniqueKey" aria-labelledby="api1_UniqueKey"  class="form-control" type="text" value="Field group 1">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_liveDataEndpoint"> Live Data Endpoint </label>
@@ -141,7 +141,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="card int-data-api">
                                             <div class="card-header border-bottom-0 p-1">
-                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Unique key 2</button>
+                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Field group 2</button>
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
@@ -160,7 +160,7 @@ $page_subtitle = 'Data';
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_UniqueKey"> Unique key </label>
                                                     <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
-                                                    <input id="api2_UniqueKey" aria-labelledby="api2_UniqueKey"  class="form-control" type="text" value="Unique key 2">
+                                                    <input id="api2_UniqueKey" aria-labelledby="api2_UniqueKey"  class="form-control" type="text" value="Field group 2">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_liveDataEndpoint"> Live Data Endpoint </label>
@@ -250,7 +250,7 @@ $page_subtitle = 'Data';
                                         
                                         <!--           <div class="card int-data-api">
                                             <div class="card-header border-bottom-0 p-1">
-                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey11"> <i class="rbt-icon-chevron-right"></i> Unique key 1</button>
+                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey11"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
@@ -269,7 +269,7 @@ $page_subtitle = 'Data';
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_UniqueKey11"> Unique key </label>
                                                     <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
-                                                    <input id="api1_UniqueKey11" aria-labelledby="api1_UniqueKey11"  class="form-control" type="text" value="Unique key 1">
+                                                    <input id="api1_UniqueKey11" aria-labelledby="api1_UniqueKey11"  class="form-control" type="text" value="Field group 1">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_liveDataEndpoint11"> Live Data Endpoint </label>
@@ -301,7 +301,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="card int-data-api">
                                             <div class="card-header border-bottom-0 p-1">
-                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey22"> <i class="rbt-icon-chevron-right"></i> Unique key 2</button>
+                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey22"> <i class="rbt-icon-chevron-right"></i> Field group 2</button>
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
@@ -320,7 +320,7 @@ $page_subtitle = 'Data';
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_UniqueKey22"> Unique key </label>
                                                     <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
-                                                    <input id="api2_UniqueKey22" aria-labelledby="api2_UniqueKey22"  class="form-control" type="text" value="Unique key 2">
+                                                    <input id="api2_UniqueKey22" aria-labelledby="api2_UniqueKey22"  class="form-control" type="text" value="Field group 2">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_liveDataEndpoint22"> Live Data Endpoint </label>

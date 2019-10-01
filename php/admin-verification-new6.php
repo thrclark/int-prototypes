@@ -89,7 +89,7 @@ $page_subtitle = 'Review/save';
                                                             <dd class="col-sm-9">yes </dd>
                                                             <dt class="col-sm-3">Description</dt>
                                                             <dd class="col-sm-9">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</dd>
-                                                            <dt class="col-sm-3">Unique key 1</dt>
+                                                            <dt class="col-sm-3">Field group 1</dt>
                                                             <dd class="col-sm-9">
                                                                 <dl class="row">
                                                                     <dt class="col-sm-4">Live Data Endpoint</dt>
@@ -102,7 +102,7 @@ $page_subtitle = 'Review/save';
                                                                     <dd class="col-sm-8">Edit </dd>
                                                                 </dl>
                                                             </dd>
-                                                            <dt class="col-sm-3">Unique key 2</dt>
+                                                            <dt class="col-sm-3">Field group 2</dt>
                                                             <dd class="col-sm-9">
                                                                 <dl class="row">
                                                                     <dt class="col-sm-4">Live Data Endpoint</dt>
@@ -134,7 +134,7 @@ $page_subtitle = 'Review/save';
                                                             <dd class="col-sm-9">yes </dd>
                                                             <dt class="col-sm-3">Description</dt>
                                                             <dd class="col-sm-9">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</dd>
-                                                            <dt class="col-sm-3">Unique key 1</dt>
+                                                            <dt class="col-sm-3">Field group 1</dt>
                                                             <dd class="col-sm-9">
                                                                 <dl class="row">
                                                                     <dt class="col-sm-4">Live Data Endpoint</dt>
@@ -147,7 +147,7 @@ $page_subtitle = 'Review/save';
                                                                     <dd class="col-sm-8">Edit </dd>
                                                                 </dl>
                                                             </dd>
-                                                            <dt class="col-sm-3">Unique key 2</dt>
+                                                            <dt class="col-sm-3">Field group 2</dt>
                                                             <dd class="col-sm-9">
                                                                 <dl class="row">
                                                                     <dt class="col-sm-4">Live Data Endpoint</dt>

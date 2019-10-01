@@ -75,7 +75,7 @@ $page_title = 'VERIFY';
                                                 <dd>yes </dd>
                                                 <dt>Description</dt>
                                                 <dd>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</dd>
-                                                <dt>Unique key 1</dt>
+                                                <dt>Field group 1</dt>
                                                 <dd>
                                                     <dl>
                                                         <dt>Live Data Endpoint</dt>
@@ -88,7 +88,7 @@ $page_title = 'VERIFY';
                                                         <dd>Edit </dd>
                                                     </dl>
                                                 </dd>
-                                                <dt>Unique key 2</dt>
+                                                <dt>Field group 2</dt>
                                                 <dd>
                                                     <dl>
                                                         <dt>Live Data Endpoint</dt>
@@ -120,7 +120,7 @@ $page_title = 'VERIFY';
                                                 <dd>yes </dd>
                                                 <dt>Description</dt>
                                                 <dd>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</dd>
-                                                <dt>Unique key 1</dt>
+                                                <dt>Field group 1</dt>
                                                 <dd>
                                                     <dl>
                                                         <dt>Live Data Endpoint</dt>
@@ -133,7 +133,7 @@ $page_title = 'VERIFY';
                                                         <dd>Edit </dd>
                                                     </dl>
                                                 </dd>
-                                                <dt>Unique key 2</dt>
+                                                <dt>Field group 2</dt>
                                                 <dd>
                                                     <dl>
                                                         <dt>Live Data Endpoint</dt>
