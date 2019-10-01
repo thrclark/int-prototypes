@@ -12,7 +12,8 @@ $page_subtitle = 'Recipient rulesets';
 <body>
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-5">
-    <main class="main-content" id="main-content"><h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+    <main class="main-content" id="main-content">
+        <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         <div class="row">
             <div class="col-2 border-right">
                 <div id="sticky">
@@ -20,8 +21,8 @@ $page_subtitle = 'Recipient rulesets';
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label  d-none d-lg-block">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label  d-none d-lg-block">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span>  </a></li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span>  </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </a> </li>
                     </ol>
                 </div>
@@ -63,18 +64,18 @@ $page_subtitle = 'Recipient rulesets';
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
                                             <div class="row mt-3 mb-1">
-                                                <div class="col-3">
+                                                <div class="col-12 col-sm-6 col-md-4">
                                                     <label for="time-demo-start-day" class="">Start day</label>
                                                     <div class="rbt-datepicker__input">
                                                         <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
+                                                <div class="col-12 col-sm-6 col-md-4">
                                                     <label for="start-time"  class="">Start time</label>
                                                     <input type="time" id="start-time" class="form-control" value="">
                                                 </div>
-                                                <div class="col-6 d-flex align-items-end">
+                                                <div class="col-12 col-sm-6 col-md-4 d-flex align-items-end">
                                                     <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
                                                 </div>
                                             </div>
