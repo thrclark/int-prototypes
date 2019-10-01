@@ -5,7 +5,7 @@
         <ul class="nav align-items-center d-flex flex-nowrap mr-5">
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publishing</button>
-                <div class="dropdown-menu"> <a class="dropdown-item" href="admin-verifications.php">Verifications</a> <a class="dropdown-item" href="admin-verification-new.php">New verification</a> </div>
+                <div class="dropdown-menu"> <a class="dropdown-item" href="admin-verifications.php">Verifications</a> <a class="dropdown-item" href="admin-verification-new1.php">New verification</a> </div>
             </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</button>
@@ -37,7 +37,7 @@
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse"  data-target="#nav_pub">Publishing</a>
                 <ul class="collapse" id="nav_pub">
                     <li class="list-group-item"> <a href="admin-verifications.php">Verifications</a> </li>
-                    <li class="list-group-item"> <a href="admin-verification-new.php">New verification</a></li>
+                    <li class="list-group-item"> <a href="admin-verification-new1.php">New verification</a></li>
                 </ul>
             </li>
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_settings">Settings</a>

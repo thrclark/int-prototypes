@@ -21,13 +21,13 @@ $page_title = 'Verifications';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
         <div class="row align-items-center mb-5">
             <div class="col">
                 <h1> <?php echo $page_title; ?></h1>
             </div>
-            <div class="col-auto"><a href="#" class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> Verification</a></div>
+            <div class="col-auto"><a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> Verification</a></div>
         </div>
         <table class="table rbt-table-responsive rbt-table-actions">
             <caption class="sr-only">

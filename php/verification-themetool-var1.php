@@ -6,7 +6,6 @@ $page_title = 'VERIFY';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<style type="text/css"></style>
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">

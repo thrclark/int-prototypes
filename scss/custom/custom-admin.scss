@@ -79,7 +79,9 @@ button[data-theme] {
   cursor: pointer;
 }
 
-
+.editor-statusbar {
+  display: none;
+}
 
 
 .demo-theme-builder input[type="color"] {
@@ -120,5 +122,40 @@ button[data-theme] {
   &.color-picker {
     @extend .mb-3;
     @extend .align-items-center;
+  }
+}
+
+
+
+.rbt-collapse-accordion {
+  .int-accordion-controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* width: 36px; */
+    height: 44px;
+    padding: 8px;
+    margin-right: 10px;
+    .dropdown {
+      .dropdown-toggle {
+        &:after {
+          content: "\e944";
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
+.int-data-api {
+  .card-header {
+    .int-accordion-controls {
+      padding-top: 3px;
+      padding-left: 8px;
+      height: 33px;
+    }
   }
 }
