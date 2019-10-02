@@ -60,44 +60,49 @@ $page_title = 'VERIFY';
                     </h5>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="body-bg-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="body-bg-color">Body background color</label>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="body-text-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="body-text-color">Body text color</label>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="panel-bg-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="panel-bg-color">Panel background color</label>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="panel-text-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="panel-text-color">Panel text color</label>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="action-color" value="#006298">
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
+                                    </div>
                                 </div>
-                                <div class="media-body p-2">
-                                    <label for="action-color">Action color</label>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -365,6 +370,38 @@ $(document).ready(function(){
             });
         });
     });
+</script> 
+<script>
+$('#body-bg-color').on('change', function() {
+    $('#body-bg-color-hexcolor').val(this.value);
+});
+$('#body-bg-color-hexcolor').on('change', function() {
+    $('#body-bg-color').val(this.value);
+});
+$('#body-text-color').on('change', function() {
+    $('#body-text-color-hexcolor').val(this.value);
+});
+$('#body-text-color-hexcolor').on('change', function() {
+    $('#body-text-color').val(this.value);
+});
+$('#panel-bg-color').on('change', function() {
+    $('#panel-bg-color-hexcolor').val(this.value);
+});
+$('#panel-bg-color-hexcolor').on('change', function() {
+    $('#panel-bg-color').val(this.value);
+});
+$('#panel-text-color').on('change', function() {
+    $('#panel-text-color-hexcolor').val(this.value);
+});
+$('#panel-text-color-hexcolor').on('change', function() {
+    $('#panel-text-color').val(this.value);
+});
+$('#action-color').on('change', function() {
+    $('#action-color-hexcolor').val(this.value);
+});
+$('#action-color-hexcolor').on('change', function() {
+    $('#action-color-color').val(this.value);
+});
 </script>
 </body>
 </html>

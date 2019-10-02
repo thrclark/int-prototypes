@@ -4,6 +4,7 @@
 <script src="../js/jquery.sticky.js"></script>
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 <script src="../js/pikaday.js"></script>
+<script src="../js/jscolor.js"></script>
 <script>
     $(".rbt-drawer-button").click(function() {
         $(".rbt-drawer,.rbt-drawer-button").toggleClass("open");
@@ -198,16 +199,31 @@ document.querySelector('#logoimage-url').addEventListener('input', event => {
 document.querySelector('#body-bg-color').addEventListener('change', event => {
     handleInputChange('body-bg-color', false);
 });
+document.querySelector('#body-bg-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('body-bg-color', false);
+});
 document.querySelector('#body-text-color').addEventListener('change', event => {
+    handleInputChange('body-text-color', false);
+});
+document.querySelector('#body-text-color-hexcolor').addEventListener('change', event => {
     handleInputChange('body-text-color', false);
 });
 document.querySelector('#panel-bg-color').addEventListener('change', event => {
     handleInputChange('panel-bg-color', false);
 });
+document.querySelector('#panel-bg-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('panel-bg-color', false);
+});
 document.querySelector('#panel-text-color').addEventListener('change', event => {
     handleInputChange('panel-text-color', false);
 });
+document.querySelector('#panel-text-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('panel-text-color', false);
+});
 document.querySelector('#action-color').addEventListener('change', event => {
+    handleInputChange('action-color', false);
+});
+document.querySelector('#action-color-hexcolor').addEventListener('change', event => {
     handleInputChange('action-color', false);
 });
 document.querySelector('#font-header').addEventListener('change', event => {
@@ -228,7 +244,6 @@ document.querySelector('#border-radius').addEventListener('input', event => {
 document.querySelector('#page-margin').addEventListener('input', event => {
     handleInputChange('page-margin', true);
 });
-
 
 </script>
 <script>

@@ -22,8 +22,8 @@
 .demo-theme-builder input[type="color"] {
 	-webkit-appearance: none;s
  border: 1px solid $color-black--800;
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 3rem;
+	flex: inherit;
 	outline: 0;
 }
 .demo-theme-builder input[type="color"]::-webkit-color-swatch-wrapper {
