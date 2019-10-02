@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('font-header');
     setValueFromLocalStorage('font-body');
 
-    setValueFromLocalStorage('base-font-size');
-    setValueFromLocalStorage('base-line-height');
+    setValueFromLocalStorage('base_font_size');
+    setValueFromLocalStorage('base_line_height');
 	
 	setValueFromLocalStorage('border-radius');
     setValueFromLocalStorage('page-margin');
@@ -89,8 +89,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#006298',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
                     'border-radius': '0.25rem',
                     'page-margin': '880px',
                 });
@@ -110,8 +110,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#198f1a',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
                     'border-radius': '0.25rem',
                     'page-margin': '880px',
                 });
@@ -130,8 +130,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#b3842c',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
                     'border-radius': '0.25rem',
                     'page-margin': '880px',
                 });
@@ -150,8 +150,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#980209',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
                     'border-radius': '0.25rem',
                     'page-margin': '880px',
                 });
@@ -170,8 +170,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#006298',
                     'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
                     'border-radius': '0.25rem',
                     'page-margin': '880px',
                 });
@@ -232,11 +232,11 @@ document.querySelector('#font-header').addEventListener('change', event => {
 document.querySelector('#font-body').addEventListener('change', event => {
     handleInputChange('font-body', false);
 });
-document.querySelector('#base-font-size').addEventListener('input', event => {
-    handleInputChange('base-font-size', true);
+document.querySelector('#base_font_size').addEventListener('input', event => {
+    handleInputChange('base_font_size', true);
 });
-document.querySelector('#base-line-height').addEventListener('input', event => {
-    handleInputChange('base-line-height', false);
+document.querySelector('#base_line_height').addEventListener('input', event => {
+    handleInputChange('base_line_height', false);
 });
 document.querySelector('#border-radius').addEventListener('input', event => {
     handleInputChange('border-radius', true);

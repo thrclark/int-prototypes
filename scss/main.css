@@ -12368,8 +12368,8 @@ html .int-user {
     color: var(--body-text-color);
     font-family: var(--font-body); }
   html .int-user main section .card, html .int-user .main section .card {
-    line-height: var(--base-line-height);
-    font-size: var(--base-font-size);
+    line-height: var(--base_line_height);
+    font-size: var(--base_font_size);
     border-radius: var(--border-radius);
     background-color: var(--panel-bg-color); }
     html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
@@ -12401,7 +12401,7 @@ html .int-user {
   html .int-user main section .int-verify-controls, html .int-user .main section .int-verify-controls {
     color: var(--body-text-color);
     font-family: var(--font-body);
-    font-size: var(--base-font-size); }
+    font-size: var(--base_font_size); }
     html .int-user main section .int-verify-controls input[type="checkbox"] + label:before, html .int-user main section .int-verify-controls input[type="checkbox"] + input + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"] + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"] + input + label:before {
       box-shadow: 0 0 0 0.08rem var(--body-text-color); }
     html .int-user main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user main section .int-verify-controls input[type="checkbox"]:focus + input + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"]:focus + input + label:before {

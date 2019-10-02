@@ -138,10 +138,10 @@ $page_title = 'VERIFY';
                                 <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
                                 <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
                             </select>
-                            <label for="base-font-size">Base font size</label>
-                            <input type="range" id="base-font-size" min="12" max="16" step="1" value="16" class="mb-3 w-100">
-                            <label for="base-line-height">Base line height</label>
-                            <input type="range"id="base-line-height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-100">
+                            <label for="base_font_size">Base font size</label>
+                            <input type="range" id="base_font_size" min="12" max="16" step="1" value="16" class="mb-3 w-100">
+                            <label for="base_line_height">Base line height</label>
+                            <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-100">
                         </div>
                     </div>
                 </div>

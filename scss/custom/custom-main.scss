@@ -83,8 +83,8 @@ html {
 
       section {
         .card {
-          line-height: var(--base-line-height);
-          font-size: var(--base-font-size);
+          line-height: var(--base_line_height);
+          font-size: var(--base_font_size);
           border-radius: var(--border-radius);
 
           background-color: var(--panel-bg-color);
@@ -135,7 +135,7 @@ html {
         .int-verify-controls {
           color: var(--body-text-color);
           font-family: var(--font-body);
-          font-size: var(--base-font-size);
+          font-size: var(--base_font_size);
 
           input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
 
