@@ -15,7 +15,7 @@
  --base_font_size: 1rem;
  --base_line_height: 1.5;
  
- --border-radius: 0.25rem;
+ --theme_border_radius: 0.25rem;
  --page-margin: 880;
  
 }

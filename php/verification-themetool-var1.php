@@ -142,20 +142,14 @@ $page_title = 'VERIFY';
                                 <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
                                 <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
                             </select>
-                          
                             <label for="base_font_size">Base font size</label>
                             <input type="range" id="base_font_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="font_size_output.value = base_font_size.value">
-							   <output id="font_size_output">16</output> px
-							
+                            <output id="font_size_output">16</output>
+                            px
                             <label for="base_line_height">Base line height</label>
                             <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-75" oninput="line_height_output.value = base_line_height.value">
-							
-							
-							  <output id="line_height_output">1.5</output> rem
-							
-							
-							
-                        </div>
+                            <output id="line_height_output">1.5</output>
+                            rem </div>
                     </div>
                 </div>
                 <div class="card">
@@ -164,8 +158,11 @@ $page_title = 'VERIFY';
                     </h5>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="border-radius">Border radius</label>
-                            <input type="range" id="border-radius" min="0" max="20" step="1" value="4" class="mb-3 w-100">
+                           
+							
+							
+							<label for="theme_border_radius">Border radius</label>
+                            <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-100">
                             <label for="page-margin">Page margin</label>
                             <input type="range"id="page-margin"min="440"max="880"step="10"value="880" class="mb-3 w-100">
                         </div>

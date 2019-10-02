@@ -12370,7 +12370,7 @@ html .int-user {
   html .int-user main section .card, html .int-user .main section .card {
     line-height: var(--base_line_height);
     font-size: var(--base_font_size);
-    border-radius: var(--border-radius);
+    border-radius: var(--theme_border_radius);
     background-color: var(--panel-bg-color); }
     html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
       font-family: var(--font-header); }
@@ -12393,7 +12393,7 @@ html .int-user {
         background-color: var(--panel-bg-color);
         color: var(--panel-text-color); }
         html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button {
-          border-radius: var(--border-radius);
+          border-radius: var(--theme_border_radius);
           color: var(--action-color);
           border-color: var(--action-color); }
           html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button:focus, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
@@ -12407,13 +12407,13 @@ html .int-user {
     html .int-user main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user main section .int-verify-controls input[type="checkbox"]:focus + input + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"]:focus + input + label:before {
       box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color); }
     html .int-user main section .int-verify-controls .rbt-button-group .btn-primary, html .int-user .main section .int-verify-controls .rbt-button-group .btn-primary {
-      border-radius: var(--border-radius);
+      border-radius: var(--theme_border_radius);
       background-color: var(--action-color);
       border-color: var(--action-color); }
       html .int-user main section .int-verify-controls .rbt-button-group .btn-primary:focus, html .int-user .main section .int-verify-controls .rbt-button-group .btn-primary:focus {
         box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
     html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button, html .int-user .main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user .main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .int-verify-controls .rbt-button-group label.img-ul-button {
-      border-radius: var(--border-radius);
+      border-radius: var(--theme_border_radius);
       border-color: var(--action-color);
       color: var(--action-color); }
       html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button:focus, html .int-user .main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user .main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .int-verify-controls .rbt-button-group label.img-ul-button:focus {

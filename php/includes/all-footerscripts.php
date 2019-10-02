@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('base_font_size');
     setValueFromLocalStorage('base_line_height');
 	
-	setValueFromLocalStorage('border-radius');
+	setValueFromLocalStorage('theme_border_radius');
     setValueFromLocalStorage('page-margin');
 
 
@@ -91,7 +91,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
-                    'border-radius': '0.25rem',
+                    'theme_border_radius': '0.25rem',
                     'page-margin': '880px',
                 });
                 return;
@@ -112,7 +112,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
-                    'border-radius': '0.25rem',
+                    'theme_border_radius': '0.25rem',
                     'page-margin': '880px',
                 });
                 return;
@@ -132,7 +132,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
-                    'border-radius': '0.25rem',
+                    'theme_border_radius': '0.25rem',
                     'page-margin': '880px',
                 });
                 return;
@@ -152,7 +152,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
-                    'border-radius': '0.25rem',
+                    'theme_border_radius': '0.25rem',
                     'page-margin': '880px',
                 });
                 return;
@@ -172,7 +172,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
-                    'border-radius': '0.25rem',
+                    'theme_border_radius': '0.25rem',
                     'page-margin': '880px',
                 });
                 return;
@@ -238,8 +238,8 @@ document.querySelector('#base_font_size').addEventListener('input', event => {
 document.querySelector('#base_line_height').addEventListener('input', event => {
     handleInputChange('base_line_height', false);
 });
-document.querySelector('#border-radius').addEventListener('input', event => {
-    handleInputChange('border-radius', true);
+document.querySelector('#theme_border_radius').addEventListener('input', event => {
+    handleInputChange('theme_border_radius', true);
 });
 document.querySelector('#page-margin').addEventListener('input', event => {
     handleInputChange('page-margin', true);

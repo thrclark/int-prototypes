@@ -85,7 +85,7 @@ html {
         .card {
           line-height: var(--base_line_height);
           font-size: var(--base_font_size);
-          border-radius: var(--border-radius);
+          border-radius: var(--theme_border_radius);
 
           background-color: var(--panel-bg-color);
           h1,h2,h3 {
@@ -119,7 +119,7 @@ html {
                 background-color: var(--panel-bg-color);
                 color: var(--panel-text-color);
                 .btn-outline-primary {
-                  border-radius: var(--border-radius);
+                  border-radius: var(--theme_border_radius);
                   color: var(--action-color);
                   border-color: var(--action-color);
                   &:focus {
@@ -148,7 +148,7 @@ html {
           }
           .rbt-button-group {
             .btn-primary {
-              border-radius: var(--border-radius);
+              border-radius: var(--theme_border_radius);
               background-color: var(--action-color);
               border-color: var(--action-color);
               &:focus {
@@ -156,7 +156,7 @@ html {
               }
             }
             .btn-outline-primary {
-              border-radius: var(--border-radius);
+              border-radius: var(--theme_border_radius);
               border-color: var(--action-color);
               color: var(--action-color);
               //background-color: var(--panel-bg-color);
