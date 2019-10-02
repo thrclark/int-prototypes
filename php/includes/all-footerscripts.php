@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('base_line_height');
 	
 	setValueFromLocalStorage('theme_border_radius');
-    setValueFromLocalStorage('page-margin');
+    setValueFromLocalStorage('theme_page_margin');
 
 
 });
@@ -92,7 +92,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
-                    'page-margin': '880px',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'blue':
@@ -113,7 +113,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
-                    'page-margin': '880px',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'yellow':
@@ -133,7 +133,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
-                    'page-margin': '880px',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'black':
@@ -153,7 +153,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
-                    'page-margin': '880px',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'white':
@@ -173,7 +173,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_font_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
-                    'page-margin': '880px',
+                    'theme_page_margin': '880px',
                 });
                 return;
         }
@@ -241,8 +241,11 @@ document.querySelector('#base_line_height').addEventListener('input', event => {
 document.querySelector('#theme_border_radius').addEventListener('input', event => {
     handleInputChange('theme_border_radius', true);
 });
-document.querySelector('#page-margin').addEventListener('input', event => {
-    handleInputChange('page-margin', true);
+
+
+	
+document.querySelector('#theme_page_margin').addEventListener('input', event => {
+    handleInputChange('theme_page_margin', true);
 });
 
 </script>

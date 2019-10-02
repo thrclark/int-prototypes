@@ -158,14 +158,15 @@ $page_title = 'VERIFY';
                     </h5>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body">
-                           
-							
-							
-							<label for="theme_border_radius">Border radius</label>
-                            <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-100">
-                            <label for="page-margin">Page margin</label>
-                            <input type="range"id="page-margin"min="440"max="880"step="10"value="880" class="mb-3 w-100">
-                        </div>
+                            <label for="theme_border_radius">Border radius</label>
+                            <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-75" oninput="theme_border_radius_output.value = theme_border_radius.value">
+                            <output id="theme_border_radius_output">4</output>
+                            px
+                            <label class="d-block" for="theme_page_margin">Page margin</label>
+                        
+                            <input type="range"id="theme_page_margin"min="440"max="880"step="10"value="880" class="mb-3 w-75" oninput="theme_page_margin_output.value = theme_page_margin.value">
+                            <output id="theme_page_margin_output">880</output>
+                            px </div>
                     </div>
                 </div>
             </div>

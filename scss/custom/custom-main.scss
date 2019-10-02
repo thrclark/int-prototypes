@@ -183,11 +183,11 @@ html {
   html {
     .int-user {
       header.container {
-        max-width: var(--page-margin);
+        max-width: var(--theme_page_margin);
 
       }
       main, .main {
-        max-width: var(--page-margin);
+        max-width: var(--theme_page_margin);
 
       }
       //CAS styles are for prototyping only
@@ -209,7 +209,7 @@ html {
 
 
 html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
-  max-width: var(--page-margin);
+  max-width: var(--theme_page_margin);
 }
 
 

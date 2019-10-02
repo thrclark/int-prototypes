@@ -1,4 +1,4 @@
-<?php 
+<?php
 $section = '';
 $page_title = 'VERIFY';
 ?>
@@ -9,139 +9,256 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
-<header class="container p-0 mt-7 mb-3">
-    <div class="d-flex"> <img alt="" class="int-brand-image">
-        <div class="int-lockup-group flex-grow-1">
-            <div class="int-lockup-org">INDIANA UNIVERSITY</div>
-            <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
-        </div>
-        <div class="d-none d-lg-block">
-            <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
-        </div>
-    </div>
-</header>
-<main>
-    <section>
-        <div class="alert alert-warning mb-5" role="alert">
-            <h2 class="alert-heading">Privacy note</h2>
-            <div class="row">
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3"> This page contains personally sensitive data which is masked to protect your privacy.</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-sm btn-primary demojs-reveal">Unmask sensitive data</button>
+<main class="rbt-shell-main" style="max-width:inherit">
+    <div class="rbt-shell">
+        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+            <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
+            <h2 class="mb-3 mt-7">Customize theme</h2>
+            <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
+                <div class="card predefined-themes">
+                    <h5 class="mb-2" id="headingOne1">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> <i class="rbt-icon-chevron-right"></i> Predefined Themes </button>
+                    </h5>
+                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordion">
+                        <div class="card-body p-3">
+                            <button data-theme="white" style="background-color: white"> white </button>
+                            <button data-theme="brown" style="background-color: #6f5929"> brown </button>
+                            <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
+                            <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
+                            <button data-theme="black" style="background-color: #222"> black </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3"> You can choose to verify later. You may choose this option 3 more time(s).</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-sm btn-outline-primary">Verify later</button>
+                <div class="card">
+                    <h5 class="mb-2" id="headingOne">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
+                    </h5>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="logoimage-visibility">Logo image</label>
+                            <select class="form-control mb-3" id="logoimage-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <label for="logoimage-url" class="demojs-logourl">Logo image URL</label>
+                            <input type="text" class="form-control mb-3 demojs-logourl" id="logoimage-url" value="">
+                            <label for="lockup-visibility">Lockup</label>
+                            <select class="form-control mb-3" id="lockup-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h2 class="ts-26">Verify your data</h2>
-                <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
-                <h3 class="ts-26 mt-5">IU Notify</h3>
-                <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <dl class="row">
-                            <dt class="col-sm-4">IU Office</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;"> 812-855-5555</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Home</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">812-336-0510</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Secondary Home</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not Specified</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Mobile 1</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">812-369-9664</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Mobile 2</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not Specified</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Mobile 3</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not Specified</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                        </dl>
-                        <button class="btn btn-sm btn-outline-primary">Edit</button>
-                    </li>
-                    <li class="list-group-item">
-                        <dl class="row">
-                            <dt class="col-sm-4">Non-IU Email</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">thrclark@gmail.com</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Recieve notices from</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">IU Bloomington<br>
-                                IU Kokomo</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                        </dl>
-                        <button class="btn btn-sm btn-outline-primary">Edit</button>
-                    </li>
-                </ul>
-                <h3 class="ts-26 mt-5">Military Status</h3>
-                <p>Indiana University periodically invites all employees to update their veteran status. At this time, we ask all employees to review their current status below and click edit if this information is incorrect. Definitions of each veteran category can be seen by clicking the edit button. Data collected will be used for reporting and analysis purposes and will not be used against you in anyway.</p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <dl class="row">
-                            <dt class="col-sm-4">Military Status</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not a Veteran</span> <span class="int-mask"> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> <i class="fa fa-circle" aria-hidden="true"></i> </span> </dd>
-                        </dl>
-                        <button class="btn btn-sm btn-outline-primary">Edit</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="int-verify-controls p-3">
-            <p class="">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
-            <hr>
-            <div class="row mb-5" id="demojs_revealskipscreen">
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3 ts-20"> This page contains personally sensitive data which is masked to protect your privacy.</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-primary btn-block demojs-reveal" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Unmask sensitive data</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-5" id="demojs_verifyscreen" style="display:none">
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3 ts-20">
-                            <div class="form-check form-check-inline">
-                                <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
+                <div class="card">
+                    <h5 class="mb-2" id="headingTwo">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Colors</button>
+                    </h5>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
-                        </div>
+                <div class="card">
+                    <h5 class="mb-2" id="headingThree">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="rbt-icon-chevron-right"></i> Typography</button>
+                    </h5>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="font-header">Header font</label>
+                            <select class="form-control mb-3" id="font-header">
+                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                <option value="Georgia, serif">Serif Georgia, serif</option>
+                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                            </select>
+                            <label for="font-header">Body font</label>
+                            <select class="form-control mb-3" id="font-body">
+                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                <option value="Georgia, serif">Serif Georgia, serif</option>
+                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                            </select>
+                            <label for="base_font_size">Base font size</label>
+                            <input type="range" id="base_font_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="font_size_output.value = base_font_size.value">
+                            <output id="font_size_output">16</output>
+                            px
+                            <label for="base_line_height">Base line height</label>
+                            <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-75" oninput="line_height_output.value = base_line_height.value">
+                            <output id="line_height_output">1.5</output>
+                            rem </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h5 class="mb-2" id="headingFour">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> <i class="rbt-icon-chevron-right"></i> Layout</button>
+                    </h5>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="theme_border_radius">Border radius</label>
+                            <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-75" oninput="theme_border_radius_output.value = theme_border_radius.value">
+                            <output id="theme_border_radius_output">4</output>
+                            px
+                            <label class="d-block" for="theme_page_margin">Page margin</label>
+                        
+                            <input type="range"id="theme_page_margin"min="440"max="880"step="10"value="880" class="mb-3 w-75" oninput="theme_page_margin_output.value = theme_page_margin.value">
+                            <output id="theme_page_margin_output">880</output>
+                            px </div>
                     </div>
                 </div>
             </div>
+            <div class="form-row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme" id="" disabled> Restore values </button>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="rbt-shell-stage p-3">
+            <header class="container p-0 mt-7 mb-3">
+                <div class="d-flex"> <img alt="" class="int-brand-image">
+                    <div class="int-lockup-group text-nowrap">
+                        <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
+                        <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="d-none d-lg-block text-nowrap">
+                        <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">UN</span> username </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <div class="alert alert-warning mb-5" role="alert">
+                        <h2 class="alert-heading">Privacy note</h2>
+                        <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="ts-26">Verify your data</h2>
+                            <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
+                            <h3 class="ts-26 mt-5">Sample data</h3>
+                            <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Phone 1</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                        <dt class="col-sm-4">Phone 2</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                        <dt class="col-sm-4">Phone 3</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                    </dl>
+                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="int-verify-controls p-3">
+                        <div class="row mb-5" id="demojs_verifyscreen">
+                            <div class="col-md-6 d-flex">
+                                <div class="d-flex flex-column">
+                                    <div class="mb-3 ts-20">
+                                        <div class="form-check form-check-inline">
+                                            <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
+                                            <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
+                                        </div>
+                                    </div>
+                                    <div class="rbt-button-group mt-auto">
+                                        <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex">
+                                <div class="d-flex flex-column">
+                                    <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                    <div class="rbt-button-group mt-auto">
+                                        <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
 </main>
-<?php include('includes/custom-footer.php') ?>
 <?php include('includes/theme-controls.php') ?>
+<?php include('modals/modal-theme.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+$(document).ready(function(){
+  $("#demojs-themehandle").click(function(){
+    $(".rbt-shell-sidebar").toggleClass("int-themeclose");
+  });
+});
+</script> 
 <script>
     $(".demojs-reveal").click(function() {
         $(".int-mask").hide();
@@ -172,6 +289,126 @@ $page_title = 'VERIFY';
 		
 		
     }); 
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#lockup-visibility').change(function() {
+            if ($(this).val() == "block") {
+                $(".demojs-lockupcontrols").show();
+            }
+            if ($(this).val() == "none") {
+                $(".demojs-lockupcontrols").hide();
+            }
+
+        });
+		
+		
+		
+		 $('#logoimage-visibility').change(function() {
+            if ($(this).val() == "block") {
+                $(".demojs-logourl").show();
+            }
+            if ($(this).val() == "none") {
+                $(".demojs-logourl").hide();
+            }
+
+        });
+		
+		
+		
+		 $("[data-theme='white']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='brown']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='blue']").click(function() {
+			 $(".demojs-lockupcontrols").show();
+			 $(".demojs-logourl").show();
+        });
+		 $("[data-theme='yellow']").click(function() {
+			$(".demojs-lockupcontrols").hide();
+			$(".demojs-logourl").show();
+        });
+		 $("[data-theme='black']").click(function() {
+			$(".demojs-logourl").hide();
+			$(".demojs-lockupcontrols").show();
+        });
+		
+	
+
+
+    }); 
+</script> 
+<script>
+    $(document).ready(function() {
+		
+		
+		
+		$( ".card-body .form-control, .predefined-themes .card-body button" ).click(function() {
+  $('.demojs-savetheme').prop("disabled", false); // Element(s) are now enabled.
+});
+
+
+
+
+
+ }); 
+
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $("#savetheme").click(function() {
+                $('.btn.btn-primary').addClass('rbt-loading');
+				$('.btn.btn-primary .spinner-border').removeClass('d-none');
+				$('.btn.btn-primary .visible').toggleClass('invisible');
+				$('.demojs-savetheme').prop('disabled', true);
+				
+                setTimeout(function() {
+                    $('.btn.btn-primary').removeClass('rbt-loading');
+					$('.btn.btn-primary .spinner-border').addClass('d-none');
+					$('.demojs-savetheme').prop('disabled', true);
+					$('.btn.btn-primary .invisible').removeClass('invisible');
+					
+                }, 3000)
+            });
+        });
+    });
+</script> 
+<script>
+$('#body-bg-color').on('change', function() {
+    $('#body-bg-color-hexcolor').val(this.value);
+});
+$('#body-bg-color-hexcolor').on('change', function() {
+    $('#body-bg-color').val(this.value);
+});
+$('#body-text-color').on('change', function() {
+    $('#body-text-color-hexcolor').val(this.value);
+});
+$('#body-text-color-hexcolor').on('change', function() {
+    $('#body-text-color').val(this.value);
+});
+$('#panel-bg-color').on('change', function() {
+    $('#panel-bg-color-hexcolor').val(this.value);
+});
+$('#panel-bg-color-hexcolor').on('change', function() {
+    $('#panel-bg-color').val(this.value);
+});
+$('#panel-text-color').on('change', function() {
+    $('#panel-text-color-hexcolor').val(this.value);
+});
+$('#panel-text-color-hexcolor').on('change', function() {
+    $('#panel-text-color').val(this.value);
+});
+$('#action-color').on('change', function() {
+    $('#action-color-hexcolor').val(this.value);
+});
+$('#action-color-hexcolor').on('change', function() {
+    $('#action-color-color').val(this.value);
+});
 </script>
 </body>
 </html>

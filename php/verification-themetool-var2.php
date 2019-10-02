@@ -153,8 +153,8 @@ $page_title = 'VERIFY';
                         <div class="card-body">
                             <label for="border-radius">Border radius</label>
                             <input type="range" id="border-radius" min="0" max="20" step="1" value="4" class="mb-3 w-100">
-                            <label for="page-margin">Page margin</label>
-                            <input type="range"id="page-margin"min="440"max="880"step="10"value="880" class="mb-3 w-100">
+                            <label for="theme_page_margin">Page margin</label>
+                            <input type="range"id="theme_page_margin"min="440"max="880"step="10"value="880" class="mb-3 w-100">
                         </div>
                     </div>
                 </div>

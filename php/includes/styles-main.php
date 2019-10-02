@@ -16,7 +16,7 @@
  --base_line_height: 1.5;
  
  --theme_border_radius: 0.25rem;
- --page-margin: 880;
+ --theme_page_margin: 880;
  
 }
 .demo-theme-builder input[type="color"] {
