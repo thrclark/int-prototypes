@@ -25,7 +25,7 @@ $page_title = 'Verifications';
     <main class="main-content" id="main-content">
         <div class="row align-items-center mb-5">
             <div class="col">
-                <h1> <?php echo $page_title; ?></h1>
+                <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
             <div class="col-auto"><a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> Verification</a></div>
         </div>
