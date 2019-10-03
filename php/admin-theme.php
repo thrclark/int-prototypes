@@ -1,4 +1,4 @@
-<?php 
+<?php
 $section = '';
 $page_title = 'Theme';
 ?>
@@ -7,10 +7,6 @@ $page_title = 'Theme';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
-<style>
-.nav-pills .nav-item .nav-link.active {
-}
-</style>
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
@@ -40,7 +36,7 @@ $page_title = 'Theme';
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" >
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-12 col-lg-8">
                         <h2>Custom header &amp; footer</h2>
                         <p class="">Add an optional custom header and footer to the page view. </p>
                         <div class="form-group">
