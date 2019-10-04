@@ -250,7 +250,7 @@ $page_title = 'VERIFY';
     </div>
 </main>
 <?php include('includes/theme-controls.php') ?>
-<?php include('modals/modal-theme.php') ?>
+
 <?php include('includes/all-footerscripts.php') ?>
 <script>
 $(document).ready(function(){
