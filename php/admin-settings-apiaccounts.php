@@ -23,7 +23,7 @@ $page_title = 'API Accounts';
                     </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-hidden="true" role="menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="#">Version 1 </a> <a class="dropdown-item" href="#">Version 2 </a> <a class="dropdown-item" href="#">Version 3 </a> </div>
                 </div>
-                <a href="xxxxxxxx.php" class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API</a> </div>
+                <a href="admin-settings-apiaccounts-new.php" class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API</a> </div>
         </div>
         <table class="table rbt-table-responsive rbt-table-actions">
             <thead>
