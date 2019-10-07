@@ -7,15 +7,7 @@ $page_title = 'General Settings';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
-<style>
-@media (max-width: 767.98px) {
-.rbt-table-actions td:last-child {
-	width: auto !important;
-	text-align: left !important;
-	white-space: normal !important;
-}
-}
-</style>
+
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
