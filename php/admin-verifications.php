@@ -7,25 +7,15 @@ $page_title = 'Verifications';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
-<style>
 
-
-@media (max-width: 767.98px) {
-.rbt-table-actions td:last-child {
-	width: auto !important;
-	text-align: left !important;
-	white-space: normal !important;
-}
-}
-</style>
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
-        <div class="row align-items-center mb-5">
+        <div class="row align-items-center mb-3 mb-md-6 ">
             <div class="col">
-                <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+                <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
             <div class="col-auto"><a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> Verification</a></div>
         </div>
