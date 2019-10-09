@@ -16,7 +16,7 @@ $page_title = 'Publishers';
             <div class="col">
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
-            <div class="col-auto"><a href="xxxxxxxxx.php" class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> Publisher</a></div>
+            <div class="col-auto"><a href="admin-settings-publishers-new.php" class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> Publisher</a></div>
         </div>
         <table class="table rbt-table-responsive rbt-table-actions">
             <caption class="sr-only">
