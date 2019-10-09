@@ -16,10 +16,10 @@ $page_title = 'View/Reset User Verifications';
         <div class="row mb-5">
             <div class="col-12 col-lg-8">
                 <div class="form-group">
-                    <label class="control-label" for="fcLabel"> Search </label>
+                    <label class="control-label" for="userSearch"> Search </label>
                     <div> You may reset verifications for a specific user by searching user name, ID, or email address.</div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search user name, ID, or email">
+                        <input type="text" class="form-control" placeholder="Search user name, ID, or email" id="userSearch">
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="submit" id="search"><i class="rbt-icon-magnifying-glass"></i> Search</button>
                         </div>
