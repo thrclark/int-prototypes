@@ -12088,4 +12088,10 @@ button[data-theme] {
   padding-left: 8px;
   height: 33px; }
 
+.rvb-steps__item {
+  margin-bottom: 5px; }
+
+.rvb-steps--vertical .rvb-steps__item {
+  margin-bottom: 0px; }
+
 /*# sourceMappingURL=admin.css.map */
