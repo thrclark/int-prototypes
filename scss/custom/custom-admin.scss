@@ -160,4 +160,15 @@ button[data-theme] {
 }
 }
 
+.rvb-steps__item {
 
+  margin-bottom: 5px;
+}
+
+.rvb-steps--vertical {
+  .rvb-steps__item {
+
+    margin-bottom: 0px;
+  }
+
+}

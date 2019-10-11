@@ -21,7 +21,6 @@ $page_subtitle = 'Review/save';
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label  d-none d-lg-block">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </a></li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Leeway</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label  d-none d-lg-block">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
                     </ol>
@@ -34,7 +33,6 @@ $page_subtitle = 'Review/save';
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Recipients</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </a> </li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new4.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Leeway</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clock"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Scheduling</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content"  aria-current="step"> <span class="rvb-steps__label"><span class="sr-only">Review/save</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </a> </li>
                     </ol>
@@ -255,25 +253,32 @@ $page_subtitle = 'Review/save';
                                                         </dl>
                                                     </div>
                                                 </div>
+												
+												
+											
+												
+												
+												
+												
                                             </div>
+											
+											
+											
+												
+												
+												  <dl class="row">
+                                            <dt class="col-sm-3">Leeway</dt>
+                                            <dd class="col-sm-9">20 days</dd>
+                                        </dl>
+												
+											
+											
+											
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <h3 class="mb-2" id="collapse_leeway">
-                                    <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Leeway</span></button>
-                                </h3>
-                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new4.php">Edit</a> </div>
-                                <div id="collapse4" class="collapse" aria-labelledby="collapse_leeway" data-parent="#accordion_parent">
-                                    <div class="card-body">
-                                        <dl class="row">
-                                            <dt class="col-sm-3">Leeway</dt>
-                                            <dd class="col-sm-9">20 days</dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </div>
+                         
                             <div class="card">
                                 <h3 class="mb-2" id="collapse_scheduling">
                                     <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Scheduling</span></button>
