@@ -12,18 +12,18 @@
  --action-color: #006298;
  --font-header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
  --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
- --base-font-size: 1rem;
- --base-line-height: 1.5;
+ --base_font_size: 1rem;
+ --base_line_height: 1.5;
  
- --border-radius: 0.25rem;
- --page-margin: 880;
+ --theme_border_radius: 0.25rem;
+ --theme_page_margin: 880;
  
 }
 .demo-theme-builder input[type="color"] {
 	-webkit-appearance: none;s
  border: 1px solid $color-black--800;
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 3rem;
+	flex: inherit;
 	outline: 0;
 }
 .demo-theme-builder input[type="color"]::-webkit-color-swatch-wrapper {

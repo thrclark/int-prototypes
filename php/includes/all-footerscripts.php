@@ -1,6 +1,10 @@
 <script src="../js/jquery-3.3.1.slim.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.sticky.js"></script>
+<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script src="../js/pikaday.js"></script>
+<script src="../js/jscolor.js"></script>
 <script>
     $(".rbt-drawer-button").click(function() {
         $(".rbt-drawer,.rbt-drawer-button").toggleClass("open");
@@ -54,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('font-header');
     setValueFromLocalStorage('font-body');
 
-    setValueFromLocalStorage('base-font-size');
-    setValueFromLocalStorage('base-line-height');
+    setValueFromLocalStorage('base_font_size');
+    setValueFromLocalStorage('base_line_height');
 	
-	setValueFromLocalStorage('border-radius');
-    setValueFromLocalStorage('page-margin');
+	setValueFromLocalStorage('theme_border_radius');
+    setValueFromLocalStorage('theme_page_margin');
 
 
 });
@@ -85,10 +89,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#006298',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
-                    'border-radius': '0.25rem',
-                    'page-margin': '880px',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'blue':
@@ -106,10 +110,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#198f1a',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
-                    'border-radius': '0.25rem',
-                    'page-margin': '880px',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'yellow':
@@ -126,10 +130,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#b3842c',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
-                    'border-radius': '0.25rem',
-                    'page-margin': '880px',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'black':
@@ -146,10 +150,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#980209',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
-                    'border-radius': '0.25rem',
-                    'page-margin': '880px',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
                 });
                 return;
             case 'white':
@@ -166,10 +170,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#006298',
                     'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-                    'base-font-size': '1rem',
-                    'base-line-height': '1.5',
-                    'border-radius': '0.25rem',
-                    'page-margin': '880px',
+                    'base_font_size': '1rem',
+                    'base_line_height': '1.5',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
                 });
                 return;
         }
@@ -195,16 +199,31 @@ document.querySelector('#logoimage-url').addEventListener('input', event => {
 document.querySelector('#body-bg-color').addEventListener('change', event => {
     handleInputChange('body-bg-color', false);
 });
+document.querySelector('#body-bg-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('body-bg-color', false);
+});
 document.querySelector('#body-text-color').addEventListener('change', event => {
+    handleInputChange('body-text-color', false);
+});
+document.querySelector('#body-text-color-hexcolor').addEventListener('change', event => {
     handleInputChange('body-text-color', false);
 });
 document.querySelector('#panel-bg-color').addEventListener('change', event => {
     handleInputChange('panel-bg-color', false);
 });
+document.querySelector('#panel-bg-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('panel-bg-color', false);
+});
 document.querySelector('#panel-text-color').addEventListener('change', event => {
     handleInputChange('panel-text-color', false);
 });
+document.querySelector('#panel-text-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('panel-text-color', false);
+});
 document.querySelector('#action-color').addEventListener('change', event => {
+    handleInputChange('action-color', false);
+});
+document.querySelector('#action-color-hexcolor').addEventListener('change', event => {
     handleInputChange('action-color', false);
 });
 document.querySelector('#font-header').addEventListener('change', event => {
@@ -213,19 +232,21 @@ document.querySelector('#font-header').addEventListener('change', event => {
 document.querySelector('#font-body').addEventListener('change', event => {
     handleInputChange('font-body', false);
 });
-document.querySelector('#base-font-size').addEventListener('input', event => {
-    handleInputChange('base-font-size', true);
+document.querySelector('#base_font_size').addEventListener('input', event => {
+    handleInputChange('base_font_size', true);
 });
-document.querySelector('#base-line-height').addEventListener('input', event => {
-    handleInputChange('base-line-height', false);
+document.querySelector('#base_line_height').addEventListener('input', event => {
+    handleInputChange('base_line_height', false);
 });
-document.querySelector('#border-radius').addEventListener('input', event => {
-    handleInputChange('border-radius', true);
-});
-document.querySelector('#page-margin').addEventListener('input', event => {
-    handleInputChange('page-margin', true);
+document.querySelector('#theme_border_radius').addEventListener('input', event => {
+    handleInputChange('theme_border_radius', true);
 });
 
+
+	
+document.querySelector('#theme_page_margin').addEventListener('input', event => {
+    handleInputChange('theme_page_margin', true);
+});
 
 </script>
 <script>

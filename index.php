@@ -30,7 +30,7 @@
                     <div class="font-weight-bold rbt-ts-20 flex-grow-1">Administrative views</div>
                     <div class="dropdown">
                         <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> View </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" aria-hidden="true" role="menu"> <a class="dropdown-item " href="php/admin-verifications.php" target="_blank">Verifications</a> <a class="dropdown-item " href="php/verification-themetool-var1.php" target="_blank">Theme tool</a> </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" aria-hidden="true" role="menu"> <a class="dropdown-item " href="php/admin-verifications.php" target="_blank">Amin UI</a> </div>
                     </div>
                 </div>
             </div>

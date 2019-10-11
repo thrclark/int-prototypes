@@ -457,23 +457,23 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, html .int-user main {
+.container, html .int-user main, html .int-user .main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
-    .container, html .int-user main {
+    .container, html .int-user main, html .int-user .main {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container, html .int-user main {
+    .container, html .int-user main, html .int-user .main {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container, html .int-user main {
+    .container, html .int-user main, html .int-user .main {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container, html .int-user main {
+    .container, html .int-user main, html .int-user .main {
       max-width: 1140px; } }
 
 .container-fluid {
@@ -3058,7 +3058,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
   align-items: center;
   justify-content: space-between;
   padding: 0.25rem 0.5rem; }
-  .navbar > .container, html .int-user .navbar > main,
+  .navbar > .container, html .int-user .navbar > main, html .int-user .navbar > .main,
   .navbar > .container-fluid {
     display: flex;
     flex-wrap: wrap;
@@ -3119,7 +3119,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
-  .navbar-expand-sm > .container, html .int-user .navbar-expand-sm > main,
+  .navbar-expand-sm > .container, html .int-user .navbar-expand-sm > main, html .int-user .navbar-expand-sm > .main,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3134,7 +3134,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-sm > .container, html .int-user .navbar-expand-sm > main,
+    .navbar-expand-sm > .container, html .int-user .navbar-expand-sm > main, html .int-user .navbar-expand-sm > .main,
     .navbar-expand-sm > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-sm .navbar-collapse {
@@ -3143,7 +3143,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand-sm .navbar-toggler {
       display: none; } }
 @media (max-width: 767.98px) {
-  .navbar-expand-md > .container, html .int-user .navbar-expand-md > main,
+  .navbar-expand-md > .container, html .int-user .navbar-expand-md > main, html .int-user .navbar-expand-md > .main,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3158,7 +3158,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-md > .container, html .int-user .navbar-expand-md > main,
+    .navbar-expand-md > .container, html .int-user .navbar-expand-md > main, html .int-user .navbar-expand-md > .main,
     .navbar-expand-md > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-md .navbar-collapse {
@@ -3167,7 +3167,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand-md .navbar-toggler {
       display: none; } }
 @media (max-width: 991.98px) {
-  .navbar-expand-lg > .container, html .int-user .navbar-expand-lg > main,
+  .navbar-expand-lg > .container, html .int-user .navbar-expand-lg > main, html .int-user .navbar-expand-lg > .main,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3182,7 +3182,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-lg > .container, html .int-user .navbar-expand-lg > main,
+    .navbar-expand-lg > .container, html .int-user .navbar-expand-lg > main, html .int-user .navbar-expand-lg > .main,
     .navbar-expand-lg > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-lg .navbar-collapse {
@@ -3191,7 +3191,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand-lg .navbar-toggler {
       display: none; } }
 @media (max-width: 1199.98px) {
-  .navbar-expand-xl > .container, html .int-user .navbar-expand-xl > main,
+  .navbar-expand-xl > .container, html .int-user .navbar-expand-xl > main, html .int-user .navbar-expand-xl > .main,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
@@ -3206,7 +3206,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
       .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
-    .navbar-expand-xl > .container, html .int-user .navbar-expand-xl > main,
+    .navbar-expand-xl > .container, html .int-user .navbar-expand-xl > main, html .int-user .navbar-expand-xl > .main,
     .navbar-expand-xl > .container-fluid {
       flex-wrap: nowrap; }
     .navbar-expand-xl .navbar-collapse {
@@ -3217,7 +3217,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
 .navbar-expand {
   flex-flow: row nowrap;
   justify-content: flex-start; }
-  .navbar-expand > .container, html .int-user .navbar-expand > main,
+  .navbar-expand > .container, html .int-user .navbar-expand > main, html .int-user .navbar-expand > .main,
   .navbar-expand > .container-fluid {
     padding-right: 0;
     padding-left: 0; }
@@ -3228,7 +3228,7 @@ ccf-image-upload image-upload .img-ul .img-ul-file-upload .input-group > .input-
     .navbar-expand .navbar-nav .nav-link {
       padding-right: 0.5rem;
       padding-left: 0.5rem; }
-  .navbar-expand > .container, html .int-user .navbar-expand > main,
+  .navbar-expand > .container, html .int-user .navbar-expand > main, html .int-user .navbar-expand > .main,
   .navbar-expand > .container-fluid {
     flex-wrap: nowrap; }
   .navbar-expand .navbar-collapse {
@@ -5804,7 +5804,7 @@ button.bg-dark:focus {
 .m-6 {
   margin: 2.5rem !important; }
 
-.mt-6, html .int-user main section .card .card-body .int-help,
+.mt-6, html .int-user main section .card .card-body .int-help, html .int-user .main section .card .card-body .int-help,
 .my-6 {
   margin-top: 2.5rem !important; }
 
@@ -5839,7 +5839,7 @@ button.bg-dark:focus {
 .mx-7 {
   margin-left: 4rem !important; }
 
-.p-0, html .int-user main {
+.p-0, html .int-user main, html .int-user .main {
   padding: 0 !important; }
 
 .pt-0,
@@ -8185,7 +8185,7 @@ a.text-dark:hover, a.text-dark:focus {
   body {
     min-width: 992px !important; }
 
-  .container, html .int-user main {
+  .container, html .int-user main, html .int-user .main {
     min-width: 992px !important; }
 
   .navbar {
@@ -9415,7 +9415,7 @@ ul li, ol li {
 .rbt-ts-xxs {
   font-size: 0.75rem !important; }
 
-.ts-14, html .int-user header .int-lockup-group .int-lockup-org, html .int-user main section .card .card-body .int-help,
+.ts-14, html .int-user header .int-lockup-group .int-lockup-org, html .int-user main section .card .card-body .int-help, html .int-user .main section .card .card-body .int-help,
 .rbt-ts-14,
 .form-group label,
 .valid-feedback,
@@ -9490,7 +9490,7 @@ p {
 .rbt-ts-12 {
   font-size: 0.75rem !important; }
 
-.ts-14, html .int-user header .int-lockup-group .int-lockup-org, html .int-user main section .card .card-body .int-help,
+.ts-14, html .int-user header .int-lockup-group .int-lockup-org, html .int-user main section .card .card-body .int-help, html .int-user .main section .card .card-body .int-help,
 .rbt-ts-14,
 .form-group label,
 .valid-feedback,
@@ -12296,7 +12296,7 @@ html {
           overflow-y: auto; }
           html body .rbt-shell-main .rbt-shell .rbt-shell-stage.bg-light {
             background-color: #f7f7f7 !important; }
-          html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main {
+          html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user .main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage .main {
             max-width: 680px;
             padding-top: 4rem;
             padding-left: 1.5rem;
@@ -12311,7 +12311,7 @@ html {
   background: #fff; }
 
 @media (max-width: 767.98px) {
-  html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main {
+  html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user .main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage .main {
     padding-top: 2rem; } }
 button[aria-expanded="true"] .rbt-icon-chevron-right:before {
   content: "\e941"; }
@@ -12367,72 +12367,72 @@ html .int-user {
   html .int-user header .rbt-header-avatar-id {
     color: var(--body-text-color);
     font-family: var(--font-body); }
-  html .int-user main section .card {
-    line-height: var(--base-line-height);
-    font-size: var(--base-font-size);
-    border-radius: var(--border-radius);
+  html .int-user main section .card, html .int-user .main section .card {
+    line-height: var(--base_line_height);
+    font-size: var(--base_font_size);
+    border-radius: var(--theme_border_radius);
     background-color: var(--panel-bg-color); }
-    html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3 {
+    html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
       font-family: var(--font-header); }
-    html .int-user main section .card .card-body {
+    html .int-user main section .card .card-body, html .int-user .main section .card .card-body {
       color: var(--panel-text-color);
       padding: 2rem 2.5rem 2.5rem;
       font-family: var(--font-body); }
-      html .int-user main section .card .card-body a {
+      html .int-user main section .card .card-body a, html .int-user .main section .card .card-body a {
         color: var(--action-color); }
-        html .int-user main section .card .card-body a:focus {
+        html .int-user main section .card .card-body a:focus, html .int-user .main section .card .card-body a:focus {
           outline: 0.125rem solid var(--action-color); }
-      html .int-user main section .card .card-body .int-mask {
+      html .int-user main section .card .card-body .int-mask, html .int-user .main section .card .card-body .int-mask {
         font-size: 10px;
         letter-spacing: 1px; }
-      html .int-user main section .card .card-body .int-help {
+      html .int-user main section .card .card-body .int-help, html .int-user .main section .card .card-body .int-help {
         text-align: center; }
-        html .int-user main section .card .card-body .int-help a {
+        html .int-user main section .card .card-body .int-help a, html .int-user .main section .card .card-body .int-help a {
           text-decoration: none; }
-      html .int-user main section .card .card-body .list-group .list-group-item {
+      html .int-user main section .card .card-body .list-group .list-group-item, html .int-user .main section .card .card-body .list-group .list-group-item {
         background-color: var(--panel-bg-color);
         color: var(--panel-text-color); }
-        html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button {
-          border-radius: var(--border-radius);
+        html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button {
+          border-radius: var(--theme_border_radius);
           color: var(--action-color);
           border-color: var(--action-color); }
-          html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
+          html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button:focus, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
             box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
-  html .int-user main section .int-verify-controls {
+  html .int-user main section .int-verify-controls, html .int-user .main section .int-verify-controls {
     color: var(--body-text-color);
     font-family: var(--font-body);
-    font-size: var(--base-font-size); }
-    html .int-user main section .int-verify-controls input[type="checkbox"] + label:before, html .int-user main section .int-verify-controls input[type="checkbox"] + input + label:before {
+    font-size: var(--base_font_size); }
+    html .int-user main section .int-verify-controls input[type="checkbox"] + label:before, html .int-user main section .int-verify-controls input[type="checkbox"] + input + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"] + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"] + input + label:before {
       box-shadow: 0 0 0 0.08rem var(--body-text-color); }
-    html .int-user main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user main section .int-verify-controls input[type="checkbox"]:focus + input + label:before {
+    html .int-user main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user main section .int-verify-controls input[type="checkbox"]:focus + input + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"]:focus + label:before, html .int-user .main section .int-verify-controls input[type="checkbox"]:focus + input + label:before {
       box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color); }
-    html .int-user main section .int-verify-controls .rbt-button-group .btn-primary {
-      border-radius: var(--border-radius);
+    html .int-user main section .int-verify-controls .rbt-button-group .btn-primary, html .int-user .main section .int-verify-controls .rbt-button-group .btn-primary {
+      border-radius: var(--theme_border_radius);
       background-color: var(--action-color);
       border-color: var(--action-color); }
-      html .int-user main section .int-verify-controls .rbt-button-group .btn-primary:focus {
+      html .int-user main section .int-verify-controls .rbt-button-group .btn-primary:focus, html .int-user .main section .int-verify-controls .rbt-button-group .btn-primary:focus {
         box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
-    html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button {
-      border-radius: var(--border-radius);
+    html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button, html .int-user .main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user .main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .int-verify-controls .rbt-button-group label.img-ul-button {
+      border-radius: var(--theme_border_radius);
       border-color: var(--action-color);
       color: var(--action-color); }
-      html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button:focus {
+      html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button:focus, html .int-user .main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user .main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .int-verify-controls .rbt-button-group label.img-ul-button:focus {
         box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
   html .int-user .popover {
     top: -31px !important;
     left: 18px !important; }
 
 @media (min-width: 576px) {
-  html .int-user header.container {
-    max-width: var(--page-margin); }
-  html .int-user main {
-    max-width: var(--page-margin); }
+  html .int-user header.container, html .int-user header.main {
+    max-width: var(--theme_page_margin); }
+  html .int-user main, html .int-user .main {
+    max-width: var(--theme_page_margin); }
   html .int-user.cas header {
     max-width: 440px; }
   html .int-user.cas main {
     max-width: 440px; } }
-html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main {
-  max-width: var(--page-margin); }
+html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user .main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage .main {
+  max-width: var(--theme_page_margin); }
 
 .int-themeopen {
   margin-left: inherit; }
@@ -12450,3 +12450,17 @@ button[data-theme] {
   background: transparent;
   outline: 0;
   cursor: pointer; }
+
+.int-accordion-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* width: 36px; */
+  height: 44px;
+  padding: 8px;
+  margin-right: 10px; }
+  .int-accordion-controls .dropdown .dropdown-toggle:after {
+    content: "\e944"; }
+
+.colorpick label {
+  font-size: 1rem !important; }

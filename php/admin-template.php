@@ -10,12 +10,12 @@ $page_title = 'Admin list view';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content">
         <div class="form-row">
             <div class="col-12">
                 <main class="main-content" id="main-content">
-                    <h1> <?php echo $page_title; ?></h1>
+                    <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                     <div class="form-row align-items-center mb-3">
                         <div class="col"> </div>
                         <div class="col-auto"> <a href="xxxxxxxxxxxxxxxxx.php" class="btn btn-sm btn-outline-primary"> <i aria-hidden="true" class="fa fa-plus"></i> Item</a> </div>

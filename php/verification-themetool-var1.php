@@ -6,7 +6,6 @@ $page_title = 'VERIFY';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<style type="text/css"></style>
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
@@ -61,44 +60,49 @@ $page_title = 'VERIFY';
                     </h5>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="body-bg-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="body-bg-color">Body background color</label>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="body-text-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="body-text-color">Body text color</label>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="panel-bg-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="panel-bg-color">Panel background color</label>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="panel-text-color" value="#444444">
-                                </div>
-                                <div class="media-body p-2">
-                                    <label for="panel-text-color">Panel text color</label>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="media">
-                                <div class="rbt-media-prepend p-2">
-                                    <input type="color" class="form-control mb-3" id="action-color" value="#006298">
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
+                                    </div>
                                 </div>
-                                <div class="media-body p-2">
-                                    <label for="action-color">Action color</label>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -138,11 +142,14 @@ $page_title = 'VERIFY';
                                 <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
                                 <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
                             </select>
-                            <label for="base-font-size">Base font size</label>
-                            <input type="range" id="base-font-size" min="12" max="16" step="1" value="16" class="mb-3 w-100">
-                            <label for="base-line-height">Base line height</label>
-                            <input type="range"id="base-line-height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-100">
-                        </div>
+                            <label for="base_font_size">Base font size</label>
+                            <input type="range" id="base_font_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="font_size_output.value = base_font_size.value">
+                            <output id="font_size_output">16</output>
+                            px
+                            <label for="base_line_height">Base line height</label>
+                            <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-75" oninput="line_height_output.value = base_line_height.value">
+                            <output id="line_height_output">1.5</output>
+                            rem </div>
                     </div>
                 </div>
                 <div class="card">
@@ -151,11 +158,15 @@ $page_title = 'VERIFY';
                     </h5>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="border-radius">Border radius</label>
-                            <input type="range" id="border-radius" min="0" max="20" step="1" value="4" class="mb-3 w-100">
-                            <label for="page-margin">Page margin</label>
-                            <input type="range"id="page-margin"min="440"max="880"step="10"value="880" class="mb-3 w-100">
-                        </div>
+                            <label for="theme_border_radius">Border radius</label>
+                            <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-75" oninput="theme_border_radius_output.value = theme_border_radius.value">
+                            <output id="theme_border_radius_output">4</output>
+                            px
+                            <label class="d-block" for="theme_page_margin">Page margin</label>
+                        
+                            <input type="range"id="theme_page_margin"min="440"max="880"step="10"value="880" class="mb-3 w-75" oninput="theme_page_margin_output.value = theme_page_margin.value">
+                            <output id="theme_page_margin_output">880</output>
+                            px </div>
                     </div>
                 </div>
             </div>
@@ -239,7 +250,7 @@ $page_title = 'VERIFY';
     </div>
 </main>
 <?php include('includes/theme-controls.php') ?>
-<?php include('modals/modal-theme.php') ?>
+
 <?php include('includes/all-footerscripts.php') ?>
 <script>
 $(document).ready(function(){
@@ -273,9 +284,6 @@ $(document).ready(function(){
 				 $('#question4').popover('destroy')
             }
         });
-		
-		
-		
 		
     }); 
 </script> 
@@ -366,6 +374,38 @@ $(document).ready(function(){
             });
         });
     });
+</script> 
+<script>
+$('#body-bg-color').on('change', function() {
+    $('#body-bg-color-hexcolor').val(this.value);
+});
+$('#body-bg-color-hexcolor').on('change', function() {
+    $('#body-bg-color').val(this.value);
+});
+$('#body-text-color').on('change', function() {
+    $('#body-text-color-hexcolor').val(this.value);
+});
+$('#body-text-color-hexcolor').on('change', function() {
+    $('#body-text-color').val(this.value);
+});
+$('#panel-bg-color').on('change', function() {
+    $('#panel-bg-color-hexcolor').val(this.value);
+});
+$('#panel-bg-color-hexcolor').on('change', function() {
+    $('#panel-bg-color').val(this.value);
+});
+$('#panel-text-color').on('change', function() {
+    $('#panel-text-color-hexcolor').val(this.value);
+});
+$('#panel-text-color-hexcolor').on('change', function() {
+    $('#panel-text-color').val(this.value);
+});
+$('#action-color').on('change', function() {
+    $('#action-color-hexcolor').val(this.value);
+});
+$('#action-color-hexcolor').on('change', function() {
+    $('#action-color-color').val(this.value);
+});
 </script>
 </body>
 </html>
