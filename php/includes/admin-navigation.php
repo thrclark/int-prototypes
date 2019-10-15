@@ -11,21 +11,13 @@
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</button>
                 <div class="dropdown-menu"> <a class="dropdown-item" href="admin-settings-genereal.php">General Settings </a> <a class="dropdown-item" href="admin-settings-apiaccounts.php">API Accounts </a> <a class="dropdown-item" href="admin-settings-publishers.php">Publishers</a> <a class="dropdown-item" href="admin-settings-viewreset.php">View/Reset User Verifications </a> <a class="dropdown-item" href="admin-settings-ldap.php">LDAP Configuration </a></div>
             </li>
-            <li class="nav-item"> <a class="nav-link  " href="admin-theme.php">Theme</a> </li>
+            <li class="nav-item"> <a class="nav-link  " href="admin-customize.php">Customize</a> </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
                 <div class="dropdown-menu"> <a class="dropdown-item" href="admin-admin-ga.php">Google Analytics</a> <a class="dropdown-item" href="admin-admin-systemparameters.php">System parameters</a> <a class="dropdown-item" href="admin-admin-reloadcache.php">Relaod Cache</a> </div>
             </li>
         </ul>
     </nav>
-    <!--  <div class="d-none d-lg-block mr-3">
-        <div class="rbt-header-avatar-id border-right pr-3 mr-3 py-1"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
-       
-
- 
-
-
-<a href="admin-xxxxxxxxxxxxxxxx.php" class="pr-3 text-primary">Log out</a> </div>-->
     <div class="d-lg-none rbt-drawer-button">
         <button class="btn btn-link"><span class="rbt-icon-menu" aria-hidden="true"><span class="sr-only">Menu</span></span> </button>
     </div>
@@ -51,7 +43,7 @@
             </li>
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_branding">Theme</a>
                 <ul class="collapse" id="nav_branding">
-                    <li class="list-group-item"> <a href="admin-theme.php">Theme</a> </li>
+                    <li class="list-group-item"> <a href="admin-customize.php">Customize</a> </li>
                 </ul>
             </li>
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_admin">Admin</a>
