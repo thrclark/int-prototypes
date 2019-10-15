@@ -10,16 +10,17 @@ $page_title = 'VERIFY';
 </head>
 <body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
+	
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Customize theme</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card predefined-themes">
-                    <h5 class="mb-2" id="headingOne1">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> <i class="rbt-icon-chevron-right"></i> Predefined Themes </button>
-                    </h5>
-                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordion">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_preset" aria-expanded="false" aria-controls="panel_preset"> <i class="rbt-icon-chevron-right"></i> Predefined Themes </button>
+                    </h3>
+                    <div id="panel_preset" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body p-3">
                             <button data-theme="white" style="background-color: white"> white </button>
                             <button data-theme="brown" style="background-color: #6f5929"> brown </button>
@@ -30,10 +31,31 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h5 class="mb-2" id="headingOne">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
-                    </h5>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_customheadfoot" aria-expanded="false" aria-controls="panel_customheadfoot"> <i class="rbt-icon-chevron-right"></i> Custom header/footer </button>
+                    </h3>
+                    <div id="panel_customheadfoot" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group mb-3">
+                                <label for="header_html">Header HTML</label>
+                                <textarea class="form-control" id="header_html" rows="5" oninput='headerhtml_set();headerhtml_store();'></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="footer_html">Footer HTML</label>
+                                <textarea class="form-control" id="footer_html" rows="5" oninput='footerhtml_set();footerhtml_store();'></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="headerfooter_css">Header/footer CSS</label>
+                                <textarea class="form-control" id="headerfooter_css" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logolockup" aria-expanded="false" aria-controls="panel_logolockup"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
+                    </h3>
+                    <div id="panel_logolockup" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <label for="logoimage-visibility">Logo image</label>
                             <select class="form-control mb-3" id="logoimage-visibility">
@@ -55,10 +77,10 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h5 class="mb-2" id="headingTwo">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Colors</button>
-                    </h5>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
+                    </h3>
+                    <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
                                 <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
@@ -109,10 +131,10 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h5 class="mb-2" id="headingThree">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="rbt-icon-chevron-right"></i> Typography</button>
-                    </h5>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fonts" aria-expanded="false" aria-controls="panel_fonts"> <i class="rbt-icon-chevron-right"></i> Typography</button>
+                    </h3>
+                    <div id="panel_fonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <label for="font-header">Header font</label>
                             <select class="form-control mb-3" id="font-header">
@@ -153,10 +175,10 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h5 class="mb-2" id="headingFour">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> <i class="rbt-icon-chevron-right"></i> Layout</button>
-                    </h5>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Layout</button>
+                    </h3>
+                    <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <label for="theme_border_radius">Border radius</label>
                             <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-75" oninput="theme_border_radius_output.value = theme_border_radius.value">
@@ -179,6 +201,15 @@ $page_title = 'VERIFY';
             </div>
         </div>
         <div class="rbt-shell-stage p-3">
+			
+			
+			
+			
+			
+			<div class="container p-0" id="header_html_display">asdf</div>
+			
+			
+			
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
                     <div class="int-lockup-group text-nowrap">
@@ -245,6 +276,14 @@ $page_title = 'VERIFY';
                     </div>
                 </section>
             </main>
+			
+			
+				
+			<div class="container p-0" id="footer_html_display">asdf</div>
+			
+			
+			
+			
         </div>
     </div>
 </main>

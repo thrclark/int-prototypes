@@ -258,8 +258,6 @@ function orgnamestore() {
     textdata = document.getElementById('org-name').value;
     document.getElementById('org-name-display').innerHTML = textdata;
 }
-
-
 function appnameset() {
     texttosave = document.getElementById('app-name').value;
     localStorage.setItem('app-name', texttosave);
@@ -267,5 +265,28 @@ function appnameset() {
 function appnamestore() {
     textdata = document.getElementById('app-name').value;
     document.getElementById('app-name-display').innerHTML = textdata;
+} 
+function headerhtml_set() {
+    texttosave = document.getElementById('header_html').value;
+    localStorage.setItem('header_html', texttosave);
 }
+function headerhtml_store() {
+    textdata = document.getElementById('header_html').value;
+    document.getElementById('header_html_display').innerHTML = textdata;
+} 
+function footerhtml_set() {
+    texttosave = document.getElementById('footer_html').value;
+    localStorage.setItem('footer_html', texttosave);
+}
+function footerhtml_store() {
+    textdata = document.getElementById('footer_html').value;
+    document.getElementById('footer_html_display').innerHTML = textdata;
+} 
+	
+	
+	
+	
+	
+	
+	
 </script>
