@@ -12087,3 +12087,9 @@ button[data-theme] {
   padding-top: 3px;
   padding-left: 8px;
   height: 33px; }
+
+.rvb-steps__item {
+  margin-bottom: 5px; }
+
+.rvb-steps--vertical .rvb-steps__item {
+  margin-bottom: 0px; }

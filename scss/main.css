@@ -12335,7 +12335,7 @@ button[aria-expanded="true"] .rbt-icon-chevron-right:before {
 
 html .int-brand-image {
   content: var(--logoimage-url);
-  max-height: 58px;
+  max-height: 48px;
   display: var(--logoimage-visibility); }
 html .int-lockup-group {
   display: var(--lockup-visibility);
@@ -12423,6 +12423,10 @@ html .int-user {
     left: 18px !important; }
 
 @media (min-width: 576px) {
+  html .int-brand-image {
+    content: var(--logoimage-url);
+    max-height: 58px;
+    display: var(--logoimage-visibility); }
   html .int-user header.container, html .int-user header.main {
     max-width: var(--theme_page_margin); }
   html .int-user main, html .int-user .main {

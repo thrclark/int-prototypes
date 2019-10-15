@@ -1,4 +1,4 @@
-<?php 
+<?php
 $section = '';
 $page_title = 'VERIFY';
 ?>
@@ -15,36 +15,36 @@ $page_title = 'VERIFY';
             <div class="int-lockup-org">INDIANA UNIVERSITY</div>
             <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
         </div>
-        <div class="d-none d-lg-block">
+        <div class="d-none d-md-block">
             <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
         </div>
     </div>
 </header>
 <main>
     <section>
-        <div class="alert alert-primary mb-5" role="alert">
-            <h2 class="alert-heading">Privacy note</h2>
-            <div class="row">
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3"> This page contains personally sensitive data which is masked to protect your privacy.</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-sm btn-primary demojs-reveal">Unmask sensitive data</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="d-flex flex-column">
-                        <div class="mb-3"> You can choose to verify later. You may choose this option 3 more time(s).</div>
-                        <div class="rbt-button-group mt-auto">
-                            <button type="button" class="btn btn-sm btn-outline-primary">Verify later</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="card">
             <div class="card-body">
+                <div class="alert alert-warning mb-5" role="alert">
+                    <h2 class="alert-heading">Privacy note</h2>
+                    <div class="row">
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex flex-column">
+                                <div class="mb-3"> This page contains personally sensitive data which is masked to protect your privacy.</div>
+                                <div class="rbt-button-group mt-auto">
+                                    <button type="button" class="btn btn-sm btn-primary demojs-reveal">Unmask sensitive data</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="d-flex flex-column">
+                                <div class="mb-3"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                <div class="rbt-button-group mt-auto">
+                                    <button type="button" class="btn btn-sm btn-outline-primary">Verify later</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h2 class="ts-26">Verify your data</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                 <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>

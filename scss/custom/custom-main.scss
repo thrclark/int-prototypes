@@ -7,7 +7,7 @@ html {
 
   .int-brand-image {
     content: var(--logoimage-url);
-    max-height: 58px;
+    max-height: 48px;
     display: var(--logoimage-visibility);
   }
   .int-lockup-group {
@@ -181,6 +181,13 @@ html {
 @include media-breakpoint-up(sm) {
 
   html {
+
+    .int-brand-image {
+      content: var(--logoimage-url);
+      max-height: 58px;
+      display: var(--logoimage-visibility);
+    }
+
     .int-user {
       header.container {
         max-width: var(--theme_page_margin);
@@ -206,6 +213,7 @@ html {
   }
 
 }
+
 
 
 html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
