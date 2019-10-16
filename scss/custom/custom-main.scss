@@ -82,6 +82,9 @@ html {
 
 
       section {
+        .border, .border-bottom {
+          border-color: var(--border-color) !important;
+        }
         .card {
           line-height: var(--base_line_height);
           font-size: var(--base_font_size);
@@ -118,6 +121,7 @@ html {
               .list-group-item {
                 background-color: var(--panel-bg-color);
                 color: var(--panel-text-color);
+                border-color: var(--border-color);
                 .btn-outline-primary {
                   border-radius: var(--theme_border_radius);
                   color: var(--action-color);
@@ -169,6 +173,8 @@ html {
         }
 
       }
+
+
     }
     .popover {
       top: -31px !important;

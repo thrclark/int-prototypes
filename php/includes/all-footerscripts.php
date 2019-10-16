@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('panel-bg-color');
     setValueFromLocalStorage('panel-text-color');
     setValueFromLocalStorage('action-color');
+    setValueFromLocalStorage('border-color');
 
     setValueFromLocalStorage('font-header');
     setValueFromLocalStorage('font-body');
@@ -87,6 +88,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -108,6 +110,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#198f1a',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -128,6 +131,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#b3842c',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -148,6 +152,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#980209',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -168,6 +173,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
+					'border-color': '#dddddd',
                     'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base_font_size': '1rem',
@@ -244,6 +250,17 @@ document.querySelector('#theme_border_radius').addEventListener('input', event =
 
 
 	
+	
+document.querySelector('#border-color').addEventListener('change', event => {
+    handleInputChange('border-color', false);
+});
+document.querySelector('#border-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('border-color', false);
+});
+	
+	
+	
+	
 document.querySelector('#theme_page_margin').addEventListener('input', event => {
     handleInputChange('theme_page_margin', true);
 });
@@ -258,8 +275,6 @@ function orgnamestore() {
     textdata = document.getElementById('org-name').value;
     document.getElementById('org-name-display').innerHTML = textdata;
 }
-
-
 function appnameset() {
     texttosave = document.getElementById('app-name').value;
     localStorage.setItem('app-name', texttosave);
@@ -267,5 +282,28 @@ function appnameset() {
 function appnamestore() {
     textdata = document.getElementById('app-name').value;
     document.getElementById('app-name-display').innerHTML = textdata;
+} 
+function headerhtml_set() {
+    texttosave = document.getElementById('header_html').value;
+    localStorage.setItem('header_html', texttosave);
 }
+function headerhtml_store() {
+    textdata = document.getElementById('header_html').value;
+    document.getElementById('header_html_display').innerHTML = textdata;
+} 
+function footerhtml_set() {
+    texttosave = document.getElementById('footer_html').value;
+    localStorage.setItem('footer_html', texttosave);
+}
+function footerhtml_store() {
+    textdata = document.getElementById('footer_html').value;
+    document.getElementById('footer_html_display').innerHTML = textdata;
+} 
+	
+	
+	
+	
+	
+	
+	
 </script>
