@@ -10,7 +10,6 @@ $page_title = 'VERIFY';
 </head>
 <body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
-	
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
@@ -18,7 +17,7 @@ $page_title = 'VERIFY';
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card predefined-themes">
                     <h3 class="mb-2" id="">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_preset" aria-expanded="false" aria-controls="panel_preset"> <i class="rbt-icon-chevron-right"></i> Predefined Themes </button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_preset" aria-expanded="false" aria-controls="panel_preset"> <i class="rbt-icon-chevron-right"></i> Predefined themes </button>
                     </h3>
                     <div id="panel_preset" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body p-3">
@@ -127,6 +126,15 @@ $page_title = 'VERIFY';
                                     </div>
                                 </div>
                             </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="border-color" class="font-weight-normal ts-16 mb-2">Border color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="border-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,15 +209,7 @@ $page_title = 'VERIFY';
             </div>
         </div>
         <div class="rbt-shell-stage p-3">
-			
-			
-			
-			
-			
-			<div class="container p-0" id="header_html_display">asdf</div>
-			
-			
-			
+            <div class="container p-0" id="header_html_display"></div>
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
                     <div class="int-lockup-group text-nowrap">
@@ -249,6 +249,7 @@ $page_title = 'VERIFY';
                             </ul>
                         </div>
                     </div>
+                    <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
                     <div class="int-verify-controls p-3">
                         <div class="row mb-5" id="demojs_verifyscreen">
                             <div class="col-md-6 d-flex">
@@ -276,14 +277,7 @@ $page_title = 'VERIFY';
                     </div>
                 </section>
             </main>
-			
-			
-				
-			<div class="container p-0" id="footer_html_display">asdf</div>
-			
-			
-			
-			
+            <div class="container p-0" id="footer_html_display"></div>
         </div>
     </div>
 </main>
@@ -442,7 +436,16 @@ $('#action-color').on('change', function() {
 });
 $('#action-color-hexcolor').on('change', function() {
     $('#action-color-color').val(this.value);
+});	
+$('#border-color').on('change', function() {
+    $('#border-color-hexcolor').val(this.value);
 });
+$('#border-color-hexcolor').on('change', function() {
+    $('#border-color-color').val(this.value);
+});
+	
+	
+	
 </script>
 </body>
 </html>

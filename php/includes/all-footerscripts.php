@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('panel-bg-color');
     setValueFromLocalStorage('panel-text-color');
     setValueFromLocalStorage('action-color');
+    setValueFromLocalStorage('border-color');
 
     setValueFromLocalStorage('font-header');
     setValueFromLocalStorage('font-body');
@@ -87,6 +88,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -108,6 +110,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#198f1a',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -128,6 +131,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#b3842c',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -148,6 +152,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#980209',
+					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_font_size': '1rem',
@@ -168,6 +173,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
+					'border-color': '#dddddd',
                     'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base_font_size': '1rem',
@@ -243,6 +249,17 @@ document.querySelector('#theme_border_radius').addEventListener('input', event =
 });
 
 
+	
+	
+document.querySelector('#border-color').addEventListener('change', event => {
+    handleInputChange('border-color', false);
+});
+document.querySelector('#border-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('border-color', false);
+});
+	
+	
+	
 	
 document.querySelector('#theme_page_margin').addEventListener('input', event => {
     handleInputChange('theme_page_margin', true);

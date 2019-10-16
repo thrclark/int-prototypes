@@ -12367,6 +12367,8 @@ html .int-user {
   html .int-user header .rbt-header-avatar-id {
     color: var(--body-text-color);
     font-family: var(--font-body); }
+  html .int-user main section .border, html .int-user main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user main section .card, html .int-user main section .border-bottom, html .int-user .main section .border, html .int-user .main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user .main section .card, html .int-user .main section .border-bottom {
+    border-color: var(--border-color) !important; }
   html .int-user main section .card, html .int-user .main section .card {
     line-height: var(--base_line_height);
     font-size: var(--base_font_size);
@@ -12391,7 +12393,8 @@ html .int-user {
           text-decoration: none; }
       html .int-user main section .card .card-body .list-group .list-group-item, html .int-user .main section .card .card-body .list-group .list-group-item {
         background-color: var(--panel-bg-color);
-        color: var(--panel-text-color); }
+        color: var(--panel-text-color);
+        border-color: var(--border-color); }
         html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button {
           border-radius: var(--theme_border_radius);
           color: var(--action-color);

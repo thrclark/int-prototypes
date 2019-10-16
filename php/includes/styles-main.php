@@ -14,7 +14,7 @@
  --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
  --base_font_size: 1rem;
  --base_line_height: 1.5;
- 
+ --border-color:#dddddd;
  --theme_border_radius: 0.25rem;
  --theme_page_margin: 880;
  
@@ -53,6 +53,12 @@
 #headerfooter-text-color {
 	background-color: var(--headerfooter-text-color);
 }
+	
+#border-color {
+	background-color: var(--border-color);
+}
+	
+	
 #footer-link-color {
 	background-color: var(--footer-link-color);
 }
