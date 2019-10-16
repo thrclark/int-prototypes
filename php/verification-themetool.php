@@ -188,14 +188,35 @@ $page_title = 'VERIFY';
                     </h3>
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="theme_border_radius">Border radius</label>
-                            <input type="range" id="theme_border_radius" min="0" max="20" step="1" value="4" class="mb-3 w-75" oninput="theme_border_radius_output.value = theme_border_radius.value">
-                            <output id="theme_border_radius_output">4</output>
-                            px
-                            <label class="d-block" for="theme_page_margin">Page margin</label>
-                            <input type="range"id="theme_page_margin"min="440"max="880"step="10"value="880" class="mb-3 w-75" oninput="theme_page_margin_output.value = theme_page_margin.value">
-                            <output id="theme_page_margin_output">880</output>
-                            px </div>
+                            <div class="form-group">
+                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_border_radius">Border radius</label>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input id="theme_border_radius" type="range"min="0" max="20" step="1" value="4"  class="w-100">
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="input-group mb-5">
+                                            <input id="show_border_value" name="price" value="4" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_page_margin">Page margin</label>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input id="theme_page_margin" type="range"min="440"max="880"step="10"value="880" class="w-100">
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="input-group mb-5">
+                                            <input id="show_margin_value" name="price" value="100" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -379,10 +400,6 @@ $(document).ready(function(){
   $('.demojs-savetheme').prop("disabled", false); // Element(s) are now enabled.
 });
 
-
-
-
-
  }); 
 
 </script> 
@@ -444,7 +461,25 @@ $('#border-color-hexcolor').on('change', function() {
     $('#border-color-color').val(this.value);
 });
 	
-	
+</script> 
+<script>
+$(document).ready(function() {
+
+    $('#theme_page_margin').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_margin_value").val(newVal);
+    });
+    $('#show_margin_value').on('input', function() {
+        $('#theme_page_margin').val($(this).val())
+    });
+	 $('#theme_border_radius').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_border_value").val(newVal);
+    });
+    $('#show_border_value').on('input', function() {
+        $('#theme_border_radius').val($(this).val())
+    });
+});
 	
 </script>
 </body>
