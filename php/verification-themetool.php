@@ -210,7 +210,7 @@ $page_title = 'VERIFY';
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
-                                            <input id="show_margin_value" name="price" value="100" class="form-control">
+                                            <input id="show_margin_value" name="price" value="880" class="form-control">
                                             <div class="input-group-append"> <span class="input-group-text">px</span> </div>
                                         </div>
                                     </div>
