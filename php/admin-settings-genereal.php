@@ -115,22 +115,7 @@ $page_title = 'General Settings';
         </table>
     </main>
 </div>
-<?php include('modals/modal_gensettings_welcomemessage.php') ?>
-<?php include('modals/modal_gensettings_verificationintro.php') ?>
-<?php include('modals/modal_gensettings_timezone.php') ?>
-<?php include('modals/modal_gensettings_systememail.php') ?>
-<?php include('modals/modal_gensettings_maintenanceresource.php') ?>
-<?php include('modals/modal_gensettings_googleanaid.php') ?>
-<?php include('modals/modal_gensettings_errormessage.php') ?>
-<?php include('modals/modal_gensettings_enableemail.php') ?>
-<?php include('modals/modal_gensettings_defaultvfymessage.php') ?>
-<?php include('modals/modal_gensettings_defaultvfybtntext.php') ?>
-<?php include('modals/modal_gensettings_defaulttargeturl.php') ?>
-<?php include('modals/modal_gensettings_defaultdeffermessage.php') ?>
-<?php include('modals/modal_gensettings_defaultdefferbtntext.php') ?>
-<?php include('modals/modal_gensettings_defalutverifybtntext.php') ?>
-<?php include('modals/modal_gensettings_appname.php') ?>
-<?php include('includes/all-footerscripts.php') ?>
+
 <script>
 var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
 </script>
