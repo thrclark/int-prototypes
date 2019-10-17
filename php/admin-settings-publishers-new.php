@@ -42,7 +42,7 @@ $page_title = 'Add publisher';
                     <textarea class="form-control" id="descLabel" rows="5"></textarea>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="aclLabel"> Member ACL Expression </label>
+                    <label class="control-label" for="aclLabel">Publisher permissions </label>
                     <div id="aclLabel" class="rbt-expressionbuilder"></div>
                 </div>
                 <div class="form-group">
