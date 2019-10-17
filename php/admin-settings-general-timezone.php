@@ -1,14 +1,28 @@
-<!-- Modal -->
-<div class="modal fade" id="modal_gensettings_timezone" tabindex="-1" role="dialog" aria-labelledby="modal_gensettings_timezone_Label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title" id="modal_gensettings_timezone_Label">General settings</div>
-                <button type="button" class="close" aria-label="Close" data-dismiss="modal"> <span class="rbt-icon-close"></span> </button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="textinput-full" class="ts-26">Time Zone</label>
+<?php
+$section = '';
+$page_title = 'Time zone';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include('includes/all-head-meta.php') ?>
+<?php include('includes/styles-admin.php') ?>
+</head>
+<body>
+<?php include('includes/admin-navigation.php') ?>
+<div class="container mt-3 mt-md-5 mb-5">
+    <main class="main-content" id="main-content">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb rbt-breadcrumb-no-bkg">
+                        <li class="breadcrumb-item"><a href="admin-settings-genereal.php">General settings</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
+                    </ol>
+                </nav>
+                         <div class="form-group">
+                    <label for="textinput-full" class="ts-26">Time zone</label>
                     <div>Select the your time zone.</div>
                     <select class="form-control">
                         <option label="Asia/Aden" value="string:Asia/Aden">Asia/Aden</option>
@@ -612,13 +626,32 @@
                         <option label="Europe/Monaco" value="string:Europe/Monaco">Europe/Monaco</option>
                     </select>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <div class="rbt-button-group">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-                    <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
-                </div>
+                <hr>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
             </div>
         </div>
-    </div>
+    </main>
 </div>
+<?php include('modals/modal_gensettings_welcomemessage.php') ?>
+<?php include('modals/modal_gensettings_verificationintro.php') ?>
+<?php include('modals/modal_gensettings_timezone.php') ?>
+<?php include('modals/modal_gensettings_systememail.php') ?>
+<?php include('modals/modal_gensettings_maintenanceresource.php') ?>
+<?php include('modals/modal_gensettings_googleanaid.php') ?>
+<?php include('modals/modal_gensettings_errormessage.php') ?>
+<?php include('modals/modal_gensettings_enableemail.php') ?>
+<?php include('modals/modal_gensettings_defaultvfymessage.php') ?>
+<?php include('modals/modal_gensettings_defaultvfybtntext.php') ?>
+<?php include('modals/modal_gensettings_defaulttargeturl.php') ?>
+<?php include('modals/modal_gensettings_defaultdeffermessage.php') ?>
+<?php include('modals/modal_gensettings_defaultdefferbtntext.php') ?>
+<?php include('modals/modal_gensettings_defalutverifybtntext.php') ?>
+<?php include('modals/modal_gensettings_appname.php') ?>
+<?php include('includes/all-footerscripts.php') ?>
+<script>
+var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
+</script>
+</body>
+</html>
+
+
