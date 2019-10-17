@@ -5,6 +5,9 @@
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 <script src="../js/pikaday.js"></script>
 <script src="../js/jscolor.js"></script>
+<script src="../js/jquery.multi-select.js"></script>
+
+
 <script>
     $(".rbt-drawer-button").click(function() {
         $(".rbt-drawer,.rbt-drawer-button").toggleClass("open");

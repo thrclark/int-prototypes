@@ -50,6 +50,44 @@ $page_title = 'New API account';
                         </div>
                     </div>
                 </div>
+				
+				
+				
+				
+				
+				
+				
+					
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				
+				
+				
+				
+				
+				
+				 <select multiple="multiple" id="my-select" name="my-select[]">
+      <option value='elem_1'>elem 1</option>
+      <option value='elem_2'>elem 2</option>
+      <option value='elem_3'>elem 3</option>
+      <option value='elem_4'>elem 4</option>
+
+      <option value='elem_100'>elem 100</option>
+    </select>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <div class="form-group">
                     <label class="control-label" id="nameLabel"> Email </label>
                     <div> The email is used to send a daily reminder starting 30 days from the API Account expiring. </div>
@@ -74,5 +112,15 @@ $page_title = 'New API account';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+	
+	
+	<script>
+    $(document).ready(function() {
+
+		$('#my-select').multiSelect()
+    });
+</script> 
+	
+	
 </body>
 </html>
