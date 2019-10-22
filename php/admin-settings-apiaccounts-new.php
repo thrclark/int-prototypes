@@ -60,8 +60,12 @@ $page_title = 'New API account';
                 <br>
                 <br>
                 <br>
-                <div class="form-group">
-                    <select multiple="multiple" id="my-select" class="form-control">
+                <div class="form-group demojs-externalapi">
+					
+					  <label class="control-label" for="publishers"> Publishers </label>
+					
+					
+                    <select multiple="multiple" id="publishers" class="form-control">
                         <option value='elem_1'>Item 1</option>
                         <option value='elem_2'>Item 2</option>
                         <option value='elem_3'>Item 3</option>
@@ -107,7 +111,7 @@ $page_title = 'New API account';
 <script>
     $(document).ready(function() {
 
-		$('#my-select').multiSelect()
+		$('#publishers').multiSelect()
     });
 </script>
 </body>
