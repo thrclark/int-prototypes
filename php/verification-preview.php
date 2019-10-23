@@ -306,7 +306,7 @@ $page_title = 'VERIFY';
                     </div>
                     <div class="int-verify-controls p-3">
                         <div class="row mb-5" id="demojs_verifyscreen">
-                            <div class="col-md-6 d-flex">
+                            <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-column">
                                     <div class="mb-3 ts-20">
                                         <div class="form-check form-check-inline">
@@ -319,7 +319,7 @@ $page_title = 'VERIFY';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 d-flex">
+                            <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-column">
                                     <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                                     <div class="rbt-button-group mt-auto">
@@ -335,7 +335,6 @@ $page_title = 'VERIFY';
     </div>
 </main>
 <?php include('includes/theme-controls.php') ?>
-
 <?php include('includes/all-footerscripts.php') ?>
 <script>
 $(document).ready(function(){
