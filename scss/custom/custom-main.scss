@@ -54,6 +54,12 @@ html {
       //@extend .px-0;
       //@extend .pt-5;
 
+
+
+      .dropdown-item-text {
+        padding: 0.375rem 1rem;
+      }
+
       .int-lockup-group {
         color: var(--body-text-color);
         @extend .pl-2;
@@ -225,6 +231,23 @@ html {
 html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
   max-width: var(--theme_page_margin);
 }
+
+
+
+
+@include media-breakpoint-down(md) {
+  header {
+    .dropdown-toggle {
+      &:after {
+
+        content: "\e943";
+
+      }
+    }
+  }
+}
+
+
 
 
 //theme builder

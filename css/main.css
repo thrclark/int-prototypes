@@ -5839,7 +5839,7 @@ button.bg-dark:focus {
 .mx-7 {
   margin-left: 4rem !important; }
 
-.p-0, .ms-container .ms-selectable, .ms-container .ms-selection, html .int-user main, html .int-user .main {
+.p-0, html .int-user main, html .int-user .main {
   padding: 0 !important; }
 
 .pt-0,
@@ -12465,6 +12465,8 @@ html .int-user {
     html .int-user .rbt-shell-sidebar .int-themehandle i {
       font-size: 24px;
       color: #666666; }
+  html .int-user header .dropdown-item-text {
+    padding: 0.375rem 1rem; }
   html .int-user header .int-lockup-group {
     color: var(--body-text-color); }
     html .int-user header .int-lockup-group .int-lockup-pagetitle {
@@ -12546,6 +12548,9 @@ html .int-user {
 html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user .main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage .main {
   max-width: var(--theme_page_margin); }
 
+@media (max-width: 991.98px) {
+  header .dropdown-toggle:after {
+    content: "\e943"; } }
 .int-themeopen {
   margin-left: inherit; }
 

@@ -9,17 +9,19 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
-<header class="container p-0 mt-7 mb-3">
-    <div class="d-flex"> <img alt="" class="int-brand-image">
+<header class="container p-3 px-sm-0 pt-sm-5">
+    <div class="d-flex align-items-center"> <img alt="" class="int-brand-image">
         <div class="int-lockup-group flex-grow-1">
             <div class="int-lockup-org">INDIANA UNIVERSITY</div>
             <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
         </div>
-        <div class="d-none d-lg-block">
+        <div class="">
             <button class="btn font-weight-normal dropdown-toggle pr-2" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-            <div class="rbt-header-avatar-id py-1"> <span class="rbt-header-avatar" aria-hidden="true">RS</span> rswanson </div>
+            <div class="d-none d-lg-inline rbt-header-avatar-id py-1 "> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
             </button>
-            <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="admin-verifications.php">Administrator</a> </div>
+            <div class="dropdown-menu dropdown-menu-right"> <span class="dropdown-item-text d-lg-none"><i class="rbt-icon-user-solid"></i> thrclark</span>
+                <div class="dropdown-divider d-lg-none"></div>
+                <a class="dropdown-item" href="admin-verifications.php">Administrator</a> </div>
         </div>
     </div>
 </header>
@@ -29,16 +31,14 @@ $page_title = 'VERIFY';
             <div class="card-body">
                 <div class="alert alert-warning mb-5" role="alert">
                     <h2 class="alert-heading">Privacy note</h2>
-                    <div class="row">
-                        <div class="col-md-6 d-flex">
+                    <div class="row"><div class="col-md-6 d-flex pb-5 pb-md-0">
                             <div class="d-flex flex-column">
                                 <div class="mb-3"> This page contains personally sensitive data which is masked to protect your privacy.</div>
                                 <div class="rbt-button-group mt-auto">
                                     <button type="button" class="btn btn-sm btn-primary demojs-reveal">Unmask sensitive data</button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 d-flex">
+                        </div><div class="col-md-6 d-flex pb-5 pb-md-0">
                             <div class="d-flex flex-column">
                                 <div class="mb-3"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                                 <div class="rbt-button-group mt-auto">
@@ -97,17 +97,14 @@ $page_title = 'VERIFY';
         </div>
         <div class="int-verify-controls p-3">
             <p class="border-bottom">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
-         
-            <div class="row mb-5" id="demojs_revealskipscreen">
-                <div class="col-md-6 d-flex">
+            <div class="row mb-5" id="demojs_revealskipscreen"><div class="col-md-6 d-flex pb-5 pb-md-0">
                     <div class="d-flex flex-column">
                         <div class="mb-3 ts-20"> This page contains personally sensitive data which is masked to protect your privacy.</div>
                         <div class="rbt-button-group mt-auto">
                             <button type="button" class="btn btn-primary btn-block demojs-reveal" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Unmask sensitive data</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 d-flex">
+                </div><div class="col-md-6 d-flex pb-5 pb-md-0">
                     <div class="d-flex flex-column">
                         <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                         <div class="rbt-button-group mt-auto">
@@ -116,8 +113,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
             </div>
-            <div class="row mb-5" id="demojs_verifyscreen" style="display:none">
-                <div class="col-md-6 d-flex">
+            <div class="row mb-5" id="demojs_verifyscreen" style="display:none"><div class="col-md-6 d-flex pb-5 pb-md-0">
                     <div class="d-flex flex-column">
                         <div class="mb-3 ts-20">
                             <div class="form-check form-check-inline">
@@ -129,8 +125,7 @@ $page_title = 'VERIFY';
                             <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 d-flex">
+                </div><div class="col-md-6 d-flex pb-5 pb-md-0">
                     <div class="d-flex flex-column">
                         <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                         <div class="rbt-button-group mt-auto">

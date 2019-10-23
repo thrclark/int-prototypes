@@ -273,7 +273,7 @@ $page_title = 'VERIFY';
                     <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
                     <div class="int-verify-controls p-3">
                         <div class="row mb-5" id="demojs_verifyscreen">
-                            <div class="col-md-6 d-flex">
+                            <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-column">
                                     <div class="mb-3 ts-20">
                                         <div class="form-check form-check-inline">
@@ -286,7 +286,7 @@ $page_title = 'VERIFY';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 d-flex">
+                            <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-column">
                                     <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                                     <div class="rbt-button-group mt-auto">

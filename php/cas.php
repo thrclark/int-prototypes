@@ -9,7 +9,7 @@ $page_title = 'LOGIN';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user cas">
-<header class="container p-3 pl-sm-0 pt-sm-5">
+<header class="container p-3 px-sm-0 pt-sm-5">
     <div class="d-flex align-items-center"> <img alt="" class="int-brand-image">
         <div class="int-lockup-group flex-grow-1">
             <div class="int-lockup-org d-none d-sm-block">INDIANA UNIVERSITY</div>
