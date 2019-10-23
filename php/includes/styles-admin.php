@@ -18,12 +18,3 @@
 	color: #333;
 }
 </style>
-<style>
-@media (max-width: 767.98px) {
-.rbt-table-actions td:last-child {
-	width: auto !important;
-	text-align: left !important;
-	white-space: normal !important;
-}
-}
-</style>

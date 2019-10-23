@@ -27,6 +27,6 @@
     "simplemde": "^1.11.2"
   },
   "devDependencies": {
-    "rivet-bootstrap": "1.7.0-beta.0"
+    "rivet-bootstrap": "1.7.1-beta.2"
   }
 }
