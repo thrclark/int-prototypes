@@ -45,7 +45,7 @@ $page_title = 'API Accounts';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
                             </div>
                         </div></td>
                 </tr>
@@ -55,11 +55,11 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b>
+                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
@@ -69,11 +69,11 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b>
+                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
@@ -83,11 +83,11 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">No</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b>
+                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> <a class="dropdown-item" href="#">Renew account</a></div>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
@@ -97,11 +97,11 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">No</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b>
+                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> <a class="dropdown-item" href="#">Renew account</a></div>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
