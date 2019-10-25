@@ -15,14 +15,8 @@ $page_title = 'VERIFY';
             <div class="int-lockup-org">INDIANA UNIVERSITY</div>
             <h1 class="int-lockup-pagetitle"><?php echo $page_title; ?></h1>
         </div>
-        <div class="d-none d-md-block">
-            <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
-        </div>
-        <div class="d-md-none">
-            <button class="btn font-weight-normal dropdown-toggle pr-2" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-            <div class="d-none d-lg-inline rbt-header-avatar-id py-1 "> <span class="rbt-header-avatar" aria-hidden="true">TC</span> thrclark </div>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right"> <span class="dropdown-item-text d-lg-none"><i class="rbt-icon-user-solid"></i> thrclark</span> </div>
+        <div class="">
+            <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">TC</span> <span class="d-none d-md-inline">thrclark</span> </div>
         </div>
     </div>
 </header>
