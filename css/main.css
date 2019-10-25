@@ -12548,9 +12548,6 @@ html .int-user {
 html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage main, html body .rbt-shell-main .rbt-shell .rbt-shell-stage .int-user .main, html .int-user body .rbt-shell-main .rbt-shell .rbt-shell-stage .main {
   max-width: var(--theme_page_margin); }
 
-@media (max-width: 991.98px) {
-  header .dropdown-toggle:after {
-    content: "\e943"; } }
 .int-themeopen {
   margin-left: inherit; }
 
