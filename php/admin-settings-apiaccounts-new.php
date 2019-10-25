@@ -222,10 +222,12 @@ $page_title = 'New API account';
                 <div class="form-group demojs-publishers">
                     <label class="control-label" for="publishers"> Publishers </label>
                     <select multiple="multiple" id="publishers" class="form-control">
+                        <option value='elem_0'>Bursar</option>
                         <option value='elem_1'>ESI One.IU team</option>
                         <option value='elem_2'>HR</option>
                         <option value='elem_3'>IMS</option>
-                        <option value='elem_4'>Student Services</option>
+                        <option value='elem_4'>ITCO</option>
+                        <option value='elem_5'>Student Services</option>
                     </select>
                 </div>
                 <div class="form-group">
