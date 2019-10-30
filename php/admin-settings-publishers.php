@@ -37,7 +37,8 @@ $page_title = 'Publishers';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
                             </div>
                         </div></td>
                 </tr>
@@ -48,7 +49,8 @@ $page_title = 'Publishers';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
                             </div>
                         </div></td>
                 </tr>
@@ -59,7 +61,8 @@ $page_title = 'Publishers';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
                             </div>
                         </div></td>
                 </tr>

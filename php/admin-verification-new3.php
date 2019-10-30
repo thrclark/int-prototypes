@@ -55,7 +55,8 @@ $page_subtitle = 'Recipient rulesets';
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+1" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item" id="deletedatacard1">Delete </button>
                                             </div>
                                         </div>
@@ -229,7 +230,8 @@ $page_subtitle = 'Recipient rulesets';
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+2" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item" id="deletedatacard2">Delete </button>
                                             </div>
                                         </div>

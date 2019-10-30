@@ -55,7 +55,8 @@ $page_subtitle = 'Data';
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+1" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
@@ -102,7 +103,8 @@ $page_subtitle = 'Data';
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+2" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move down</button>
@@ -153,7 +155,8 @@ $page_subtitle = 'Data';
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+3" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
@@ -209,7 +212,8 @@ $page_subtitle = 'Data';
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton11" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+11" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
@@ -262,7 +266,8 @@ $page_subtitle = 'Data';
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton22" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+22" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move down</button>
@@ -313,7 +318,8 @@ $page_subtitle = 'Data';
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton33" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
+33" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
