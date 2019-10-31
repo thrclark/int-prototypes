@@ -279,7 +279,7 @@ $page_title = 'New API account';
                     </div>
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary" routerlink="/markets" href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-settings-apiaccounts.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary" href="admin-settings-apiaccounts.php"> Cancel </a> </div>
             </div>
         </div>
     </main>

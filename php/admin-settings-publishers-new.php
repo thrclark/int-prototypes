@@ -51,7 +51,7 @@ $page_title = 'Add publisher';
                     <input value="" class="form-control" id="emailLabel" type="text">
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-settings-publishers.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-settings-publishers.php"> Cancel </a> </div>
             </div>
         </div>
     </main>

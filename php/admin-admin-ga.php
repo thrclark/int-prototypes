@@ -40,7 +40,7 @@ $page_title = 'Google Analytics';
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher">
-                    <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
+                    <button class="btn btn-primary" id="submitform" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                 </div>
             </div>
         </div>
@@ -58,12 +58,23 @@ $page_title = 'Google Analytics';
                 setTimeout(function() {
                     $('.btn.btn-primary').removeClass('rbt-loading');
 					$('.btn.btn-primary .spinner-border').addClass('d-none');
-					$("#submitform").prop('disabled', false);
+					$("#submitform").prop('disabled', true);
 					$('.btn.btn-primary .invisible').removeClass('invisible');
                 }, 2000)
             });
         });
     });
 </script>
+	
+	
+<script >
+    $(document).ready(function() {
+
+        $(".form-check-input").click(function() {
+           $("#submitform").prop('disabled', false);
+        });
+    }); 
+</script> 
+	
 </body>
 </html>
