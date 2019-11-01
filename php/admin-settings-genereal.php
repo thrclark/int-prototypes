@@ -115,9 +115,6 @@ $page_title = 'General Settings';
         </table>
     </main>
 </div>
-
-<script>
-var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
-</script>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

@@ -14,3 +14,5 @@ scss/_notes/dwsync.xml
 
 _DelSyncFiles/scss/_notes/dwsync.xml
 *.xml
+scss/.DS_Store
+.DS_Store
