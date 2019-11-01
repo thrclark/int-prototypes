@@ -14,7 +14,7 @@
             <li class="nav-item"> <a class="nav-link  " href="admin-customize.php">Customize</a> </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left"> <a class="dropdown-item" href="admin-admin-ga.php">Google Analytics</a> <a class="dropdown-item" href="admin-admin-systemparameters.php">System parameters</a> <a class="dropdown-item" href="admin-admin-reloadcache.php">Reload Cache</a> </div>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left"> <a class="dropdown-item" href="admin-admin-ga.php">Google Analytics</a> <a class="dropdown-item" href="admin-admin-sysparam.php">System parameters</a> <a class="dropdown-item" href="admin-admin-reloadcache.php">Reload Cache</a> </div>
             </li>
         </ul>
     </nav>
@@ -49,7 +49,7 @@
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_admin">Admin</a>
                 <ul class="collapse" id="nav_admin">
                     <li class="list-group-item"> <a href="admin-admin-ga.php">Google Analytics</a> </li>
-                    <li class="list-group-item"> <a href="admin-admin-systemparameters.php">System parameters</a> </li>
+                    <li class="list-group-item"> <a href="admin-admin-sysparam.php">System parameters</a> </li>
                     <li class="list-group-item"> <a href="admin-admin-reloadcache.php">Reload Cache</a></li>
                 </ul>
             </li>

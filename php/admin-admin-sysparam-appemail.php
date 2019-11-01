@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'Default defer message';
+$page_title = 'Application email';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,24 +17,21 @@ $page_title = 'Default defer message';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb rbt-breadcrumb-no-bkg">
-                        <li class="breadcrumb-item"><a href="admin-settings-genereal.php">General settings</a></li>
+                        <li class="breadcrumb-item"><a href="admin-admin-sysparam.php">System parameters</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
                     </ol>
                 </nav>
                 <div class="form-group">
-                    <label for="textinput-full" class="ts-26">Default defer message</label>
-                    <div>Text to be displayed next to the Defer option. This can be overridden by an individual verification.</div>
-                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput" >
+                    <label for="app_email" class="ts-26">Application email</label>
+                    <div>	The address from which global emails are sent.</div>
+                    <input type="text" class="form-control" id="app_email" aria-describedby="app_email" >
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
         </div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
-<script>
-var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
-</script>
 </body>
 </html>

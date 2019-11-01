@@ -32,5 +32,6 @@ $page_title = 'Google Analytics ID';
         </div>
     </main>
 </div>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

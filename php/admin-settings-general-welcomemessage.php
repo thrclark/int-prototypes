@@ -32,6 +32,7 @@ $page_title = 'Welcome message';
         </div>
     </main>
 </div>
+<?php include('includes/all-footerscripts.php') ?>
 <script>
 var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
 </script>

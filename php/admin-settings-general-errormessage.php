@@ -32,5 +32,6 @@ $page_title = 'Error message';
         </div>
     </main>
 </div>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'Enable email';
+$page_title = 'Send exception email toggle';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,24 +17,24 @@ $page_title = 'Enable email';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb rbt-breadcrumb-no-bkg">
-                        <li class="breadcrumb-item"><a href="admin-settings-genereal.php">General settings</a></li>
+                        <li class="breadcrumb-item"><a href="admin-admin-sysparam.php">System parameters</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
                     </ol>
                 </nav>
                 <div class="form-group">
-                    <label for="textinput-full" class="ts-26">Enable email</label>
-                    <div>Turn on email functionality. Default is no</div>
+                    <label for="send_exemail" class="ts-26">Send exception email toggle</label>
+                    <div>Turn on sending of email for exceptions. Default is no.</div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1" checked>
-                        <label class="form-check-label" for="stacked1">Yes</label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1" >
+                        <label class="form-check-label" for="stacked1"> No </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="stacked2" value="option2">
-                        <label class="form-check-label" for="stacked2">No </label>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="stacked2" value="option2" checked>
+                        <label class="form-check-label" for="stacked2"> Yes </label>
                     </div>
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
         </div>
     </main>

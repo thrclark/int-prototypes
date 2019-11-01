@@ -32,5 +32,6 @@ $page_title = 'Default defer button text';
         </div>
     </main>
 </div>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

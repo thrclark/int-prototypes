@@ -27,31 +27,31 @@ $page_title = 'System parameters';
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Application email</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">	The address from which global emails are sent.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> one@iu.edu </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-admin-sysparam-appemail.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Google Analytics rollup ID</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Data for selected tenants will be sent to this Google Analytics ID.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> 	UA-39645822-16 </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-admin-sysparam-garollup.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Send exception email</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Space delimited list of email addresses to which exception reports are sent.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> jhopf@iu.edu </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-admin-sysparam-sendexemail.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Send exception email Toggle</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Turn on sending of email for exceptions. Default is no.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Yes </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-admin-sysparam-sendexemailtoggle.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Update Server</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Enter the name of one of the servers that will be used for updating new data on releases.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> esappj82.uits.iupui.edu </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-admin-sysparam-updateserver.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
             </tbody>
         </table>

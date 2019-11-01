@@ -27,10 +27,10 @@ $page_title = 'System email';
                     <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput" >
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save <!----></a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
             </div>
         </div>
     </main>
-</div>
+</div><?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>
