@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'System email';
+$page_title = 'Google Analytics rollup ID';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,20 +17,21 @@ $page_title = 'System email';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb rbt-breadcrumb-no-bkg">
-                        <li class="breadcrumb-item"><a href="admin-settings-general.php">General settings</a></li>
+                        <li class="breadcrumb-item"><a href="admin-admin-sysparam.php">System parameters</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
                     </ol>
                 </nav>
                 <div class="form-group">
-                    <label for="textinput-full" class="ts-26">System email</label>
-                    <div>Email address from which email is sent.</div>
-                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput" >
+                    <label for="ga_id" class="ts-26">Google Analytics rollup ID</label>
+                    <div>Data for selected tenants will be sent to this Google Analytics ID.</div>
+                    <input type="text" class="form-control" id="ga_id" aria-describedby="ga_id" >
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save <!----></a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
         </div>
     </main>
-</div><?php include('includes/all-footerscripts.php') ?>
+</div>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

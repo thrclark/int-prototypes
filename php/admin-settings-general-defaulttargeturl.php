@@ -17,7 +17,7 @@ $page_title = 'Default target URL';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb rbt-breadcrumb-no-bkg">
-                        <li class="breadcrumb-item"><a href="admin-settings-genereal.php">General settings</a></li>
+                        <li class="breadcrumb-item"><a href="admin-settings-general.php">General settings</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
                     </ol>
                 </nav>
@@ -32,5 +32,6 @@ $page_title = 'Default target URL';
         </div>
     </main>
 </div>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>
