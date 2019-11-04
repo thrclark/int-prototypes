@@ -13,8 +13,6 @@ $page_title = 'Reload Cache';
 <div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
-    </main>
-    <main class="main-content" id="main-content">
         <div class="mb-3">Manually reload the system cache for all the resources and tenants.</div>
         <button class="btn btn-primary" type="button" id="ButtonLoading"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Reload cache</span> </button>
     </main>
