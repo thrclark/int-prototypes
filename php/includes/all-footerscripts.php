@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setValueFromLocalStorage('font-header');
     setValueFromLocalStorage('font-body');
-
-    setValueFromLocalStorage('base_font_size');
+    setValueFromLocalStorage('base_headerfont_size');
+    setValueFromLocalStorage('base_bodyfont_size');
     setValueFromLocalStorage('base_line_height');
 	
 	setValueFromLocalStorage('theme_border_radius');
@@ -94,7 +94,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_font_size': '1rem',
+					'base_headerfont_size': '1rem',
+                    'base_bodyfont_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
@@ -116,7 +117,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_font_size': '1rem',
+					'base_headerfont_size': '1rem',
+                    'base_bodyfont_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
@@ -137,7 +139,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_font_size': '1rem',
+					'base_headerfont_size': '1rem',
+                    'base_bodyfont_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
@@ -158,7 +161,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_font_size': '1rem',
+					'base_headerfont_size': '1rem',
+                    'base_bodyfont_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
@@ -179,7 +183,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-                    'base_font_size': '1rem',
+					'base_headerfont_size': '1rem',
+                    'base_bodyfont_size': '1rem',
                     'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
@@ -241,8 +246,11 @@ document.querySelector('#font-header').addEventListener('change', event => {
 document.querySelector('#font-body').addEventListener('change', event => {
     handleInputChange('font-body', false);
 });
-document.querySelector('#base_font_size').addEventListener('input', event => {
-    handleInputChange('base_font_size', true);
+document.querySelector('#base_headerfont_size').addEventListener('input', event => {
+    handleInputChange('base_headerfont_size', true);
+});
+document.querySelector('#base_bodyfont_size').addEventListener('input', event => {
+    handleInputChange('base_bodyfont_size', true);
 });
 document.querySelector('#base_line_height').addEventListener('input', event => {
     handleInputChange('base_line_height', false);
@@ -250,20 +258,12 @@ document.querySelector('#base_line_height').addEventListener('input', event => {
 document.querySelector('#theme_border_radius').addEventListener('input', event => {
     handleInputChange('theme_border_radius', true);
 });
-
-
-	
-	
 document.querySelector('#border-color').addEventListener('change', event => {
     handleInputChange('border-color', false);
 });
 document.querySelector('#border-color-hexcolor').addEventListener('change', event => {
     handleInputChange('border-color', false);
-});
-	
-	
-	
-	
+});	
 document.querySelector('#theme_page_margin').addEventListener('input', event => {
     handleInputChange('theme_page_margin', true);
 });

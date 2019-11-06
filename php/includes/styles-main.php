@@ -12,7 +12,8 @@
  --action-color: #006298;
  --font-header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
  --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
- --base_font_size: 1rem;
+ --base_headerfont_size: 1rem;
+ --base_bodyfont_size: 1rem;
  --base_line_height: 1.5;
  --border-color:#dddddd;
  --theme_border_radius: 0.25rem;

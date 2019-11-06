@@ -13,7 +13,7 @@ $page_title = 'VERIFY';
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
-            <h2 class="mb-3 mt-7">Customize theme</h2>
+            <h2 class="mb-3 mt-7">Customize</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card predefined-themes">
                     <h3 class="mb-2" id="">
@@ -140,9 +140,9 @@ $page_title = 'VERIFY';
                 </div>
                 <div class="card">
                     <h3 class="mb-2" id="">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fonts" aria-expanded="false" aria-controls="panel_fonts"> <i class="rbt-icon-chevron-right"></i> Typography</button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_headerfonts" aria-expanded="false" aria-controls="panel_headerfonts"> <i class="rbt-icon-chevron-right"></i> Header font</button>
                     </h3>
-                    <div id="panel_fonts" class="collapse" aria-labelledby="" data-parent="#accordion">
+                    <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <label for="font-header">Header font</label>
                             <select class="form-control mb-3" id="font-header">
@@ -158,6 +158,22 @@ $page_title = 'VERIFY';
                                 <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
                                 <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
                             </select>
+                            <label for="base_headerfont_size">Base font size</label>
+                            <input type="range" id="base_headerfont_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="headerfont_size_output.value = base_headerfont_size.value">
+                            <output id="headerfont_size_output">16</output>
+                            px 
+                            <!--<label for="base_line_height">Base line height</label>
+                            <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-75" oninput="line_height_output.value = base_line_height.value">
+                            <span id="line_height_output">1.5</span>
+                            rem --></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2" id="">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_bodyfonts" aria-expanded="false" aria-controls="panel_bodyfonts"> <i class="rbt-icon-chevron-right"></i> Body font</button>
+                    </h3>
+                    <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
                             <label for="font-header">Body font</label>
                             <select class="form-control mb-3" id="font-body">
                                 <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
@@ -172,14 +188,14 @@ $page_title = 'VERIFY';
                                 <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
                                 <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
                             </select>
-                            <label for="base_font_size">Base font size</label>
-                            <input type="range" id="base_font_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="font_size_output.value = base_font_size.value">
-                            <output id="font_size_output">16</output>
-                            px
-                            <label for="base_line_height">Base line height</label>
+                            <label for="base_bodyfont_size">Base font size</label>
+                            <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="bodyfont_size_output.value = base_bodyfont_size.value">
+                            <output id="bodyfont_size_output">16</output>
+                            px 
+                            <!--<label for="base_line_height">Base line height</label>
                             <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-75" oninput="line_height_output.value = base_line_height.value">
-                            <output id="line_height_output">1.5</output>
-                            rem </div>
+                            <span id="line_height_output">1.5</span>
+                            rem --></div>
                     </div>
                 </div>
                 <div class="card">
