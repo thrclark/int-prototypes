@@ -58,13 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('panel-text-color');
     setValueFromLocalStorage('action-color');
     setValueFromLocalStorage('border-color');
-
     setValueFromLocalStorage('font-header');
     setValueFromLocalStorage('font-body');
     setValueFromLocalStorage('base_headerfont_size');
     setValueFromLocalStorage('base_bodyfont_size');
-    setValueFromLocalStorage('base_line_height');
-	
 	setValueFromLocalStorage('theme_border_radius');
     setValueFromLocalStorage('theme_page_margin');
 
@@ -94,9 +91,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-					'base_headerfont_size': '1rem',
+					'base_headerfont_size': '24px',
                     'base_bodyfont_size': '1rem',
-                    'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -117,9 +113,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-					'base_headerfont_size': '1rem',
+					'base_headerfont_size': '24px',
                     'base_bodyfont_size': '1rem',
-                    'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -139,9 +134,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-					'base_headerfont_size': '1rem',
+					'base_headerfont_size': '24px',
                     'base_bodyfont_size': '1rem',
-                    'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -161,9 +155,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font-body': 'Cambria, Georgia, "Times New Roman", serif;',
-					'base_headerfont_size': '1rem',
+					'base_headerfont_size': '24px',
                     'base_bodyfont_size': '1rem',
-                    'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -183,9 +176,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
 					'border-color': '#dddddd',
                     'font-header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font-body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-					'base_headerfont_size': '1rem',
+					'base_headerfont_size': '24px',
                     'base_bodyfont_size': '1rem',
-                    'base_line_height': '1.5',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -251,9 +243,6 @@ document.querySelector('#base_headerfont_size').addEventListener('input', event 
 });
 document.querySelector('#base_bodyfont_size').addEventListener('input', event => {
     handleInputChange('base_bodyfont_size', true);
-});
-document.querySelector('#base_line_height').addEventListener('input', event => {
-    handleInputChange('base_line_height', false);
 });
 document.querySelector('#theme_border_radius').addEventListener('input', event => {
     handleInputChange('theme_border_radius', true);

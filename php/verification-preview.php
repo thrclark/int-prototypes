@@ -285,9 +285,9 @@ $page_title = 'VERIFY';
                 <section>
                     <div class="card">
                         <div class="card-body">
-                            <h2 class="ts-26">Verify your data</h2>
+                            <h2 class="int-theme-header">Verify your data</h2>
                             <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                            <h3 class="ts-26 mt-5">Sample data</h3>
+                            <h3 class="int-theme-header mt-5">Sample data</h3>
                             <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
                             <ul class="list-group">
                                 <li class="list-group-item">

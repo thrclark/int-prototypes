@@ -97,7 +97,7 @@ html {
           border-radius: var(--theme_border_radius);
 
           background-color: var(--panel-bg-color);
-          h1,h2,h3 {
+          .int-theme-header {
             font-family: var(--font-header);
 			font-size: var(--base_headerfont_size);
           }

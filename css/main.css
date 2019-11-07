@@ -15729,7 +15729,7 @@ html .int-user main section .card, html .int-user .main section .card {
   border-radius: var(--theme_border_radius);
   background-color: var(--panel-bg-color);
 }
-html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
+html .int-user main section .card .int-theme-header, html .int-user .main section .card .int-theme-header {
   font-family: var(--font-header);
   font-size: var(--base_headerfont_size);
 }
