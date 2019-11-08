@@ -6,6 +6,10 @@ $page_title = 'VERIFY';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
+<style type="text/css">
+.int-fontlinks .list-group-item .int-fontlink-checker {
+}
+</style>
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
@@ -157,8 +161,67 @@ $page_title = 'VERIFY';
                                     <option value="Georgia, serif">Serif Georgia, serif</option>
                                     <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
                                     <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Benton</option>
+                                    <option value="demojs-customheaderfont"> Use Custom Font</option>
                                 </select>
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="custom_fontname">Font family name</label>
+                                <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <input type="text" class="form-control" id="custom_fontname" aria-describedby="textinput" >
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="custom_fontweight">Weight</label>
+                                <div class="mb-2">Specify the weight of this custom font.</div>
+                                <select class="form-control" id="custom_fontweight">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="BOLD">bold</option>
+                                    <option value="W_100">100</option>
+                                    <option value="W_200">200</option>
+                                    <option value="W_300">300</option>
+                                    <option value="W_400">400</option>
+                                    <option value="W_500">500</option>
+                                    <option value="W_600">600</option>
+                                    <option value="W_700">700</option>
+                                    <option value="W_800">800</option>
+                                    <option value="W_900">900</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="custom_fontstyle">Style</label>
+                                <div class="mb-2">Specify the style of this custom font.</div>
+                                <select class="form-control" id="custom_fontstyle">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="ITALIC">italic</option>
+                                    <option value="OBLIQUE">oblique</option>
+                                </select>
+                            </div>
+                            <div class="row mb-2 demojs-customheaderfont" style="display: none">
+                                <div class="col">
+                                    <div class="ts-14 font-weight-bold mr-auto">Header font file sources</div>
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_headerfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
+                                </div>
+                            </div>
+                            <div class="card demojs-customheaderfont" style="display: none">
+                                <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="form-group">
                                 <label for="base_headerfont_size">Header font size</label>
@@ -336,8 +399,32 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </main>
+<?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+$(document).ready(function() {
+    $(function() {
+        $('#font-header').change(function() {
+			$('.demojs-customheaderfont').hide();
+
+            $('.' + $(this).val()).show();
+        });
+    });
+});
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $(".int-fontlink-checker button").click(function() {
+                $(this).text("Success!");
+                setTimeout(function() {
+                    $(".int-fontlink-checker button").text("Check link");
+                }, 4000)
+            });
+        });
+    });
+</script> 
 <script>
 $(document).ready(function(){
   $("#demojs-themehandle").click(function(){

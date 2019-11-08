@@ -302,3 +302,26 @@ button[data-theme] {
     font-size: 1rem !important;
   }
 }
+
+.int-fontlinks {
+  .list-group-item {
+    .int-fontlink-checker {
+      opacity: 0;
+      transition: 0.3s;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 9999;
+      left: 0;
+      display: flex;
+    }
+    &:hover {
+      .int-fontlink-checker {
+
+        opacity: 1;
+      }
+    }
+  }
+}
