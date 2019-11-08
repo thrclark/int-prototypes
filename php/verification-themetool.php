@@ -144,30 +144,34 @@ $page_title = 'VERIFY';
                     </h3>
                     <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="font-header">Header font face</label>
-                            <select class="form-control mb-3" id="font-header">
-                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
-                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
-                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
-                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
-                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
-                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
-                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
-                                <option value="Georgia, serif">Serif Georgia, serif</option>
-                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
-                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
-                            </select>
-                            <label for="base_headerfont_size">Header font size</label>
-                            <div class="row align-items-end">
-                                <div class="col-4">
-                                    <div class="input-group">
-                                        <input id="show_headerfontsize_value" name="size" value="24" class="form-control">
-                                        <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                            <div class="form-group">
+                                <label for="font-header">Header font face</label>
+                                <select class="form-control mb-3" id="font-header">
+                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="base_headerfont_size">Header font size</label>
+                                <div class="row align-items-end">
+                                    <div class="col-4">
+                                        <div class="input-group">
+                                            <input id="show_headerfontsize_value" name="size" value="24" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-8">
-                                    <input id="base_headerfont_size" type="range"value="32" min="20" max="48" step="1"  class="w-100">
+                                    <div class="col-8">
+                                        <input id="base_headerfont_size" type="range"value="32" min="20" max="48" step="1"  class="w-100">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -179,30 +183,34 @@ $page_title = 'VERIFY';
                     </h3>
                     <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="font-header">Body font face</label>
-                            <select class="form-control mb-3" id="font-body">
-                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
-                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
-                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
-                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
-                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
-                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
-                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
-                                <option value="Georgia, serif">Serif Georgia, serif</option>
-                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
-                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
-                            </select>
-                            <label for="base_bodyfont_size">Body font size</label>
-                            <div class="row align-items-end">
-                                <div class="col-4">
-                                    <div class="input-group">
-                                        <input id="show_bodyfontsize_value" name="size" value="16" class="form-control">
-                                        <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                            <div class="form-group">
+                                <label for="font-header">Body font face</label>
+                                <select class="form-control mb-3" id="font-body">
+                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="base_bodyfont_size">Body font size</label>
+                                <div class="row align-items-end">
+                                    <div class="col-4">
+                                        <div class="input-group">
+                                            <input id="show_bodyfontsize_value" name="size" value="16" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-8">
-                                    <input id="base_bodyfont_size" type="range" value="16" min="12" max="16" step="1"  class="w-100">
+                                    <div class="col-8">
+                                        <input id="base_bodyfont_size" type="range" value="16" min="12" max="16" step="1"  class="w-100">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -214,28 +222,32 @@ $page_title = 'VERIFY';
                     </h3>
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="theme_border_radius">Border radius</label>
-                            <div class="row align-items-end mb-3">
-                                <div class="col-4">
-                                    <div class="input-group">
-                                        <input id="show_border_value" name="price" value="4" class="form-control">
-                                        <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                            <div class="form-group">
+                                <label for="theme_border_radius">Border radius</label>
+                                <div class="row align-items-end mb-3">
+                                    <div class="col-4">
+                                        <div class="input-group">
+                                            <input id="show_border_value" name="price" value="4" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-8">
-                                    <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4" class="w-100">
+                                    <div class="col-8">
+                                        <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4" class="w-100">
+                                    </div>
                                 </div>
                             </div>
-                            <label for="theme_page_margin">Page margin</label>
-                            <div class="row align-items-end">
-                                <div class="col-4">
-                                    <div class="input-group">
-                                        <input id="show_margin_value" name="price" value="880" class="form-control">
-                                        <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                            <div class="form-group">
+                                <label for="theme_page_margin">Page margin</label>
+                                <div class="row align-items-end">
+                                    <div class="col-4">
+                                        <div class="input-group">
+                                            <input id="show_margin_value" name="price" value="880" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-8">
-                                    <input id="theme_page_margin" type="range" min="440" max="880"step="10" value="880" class="w-100">
+                                    <div class="col-8">
+                                        <input id="theme_page_margin" type="range" min="440" max="880"step="10" value="880" class="w-100">
+                                    </div>
                                 </div>
                             </div>
                         </div>
