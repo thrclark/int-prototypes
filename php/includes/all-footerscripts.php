@@ -232,7 +232,7 @@ document.querySelector('#action-color').addEventListener('change', event => {
 document.querySelector('#action-color-hexcolor').addEventListener('change', event => {
     handleInputChange('action-color', false);
 });
-document.querySelector('#font-header').addEventListener('change', event => {
+document.querySelector('#custom_headerfontface').addEventListener('change', event => {
     handleInputChange('font-header', false);
 });
 document.querySelector('#font-body').addEventListener('change', event => {

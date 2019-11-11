@@ -149,8 +149,8 @@ $page_title = 'VERIFY';
                     <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="font-header">Header font face</label>
-                                <select class="form-control mb-3" id="font-header">
+                                <label for="custom_headerfontface">Header font face</label>
+                                <select class="form-control mb-3" id="custom_headerfontface">
                                     <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
                                     <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
@@ -161,19 +161,19 @@ $page_title = 'VERIFY';
                                     <option value="Georgia, serif">Serif Georgia, serif</option>
                                     <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
                                     <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Benton</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Benton (prototype only)</option>
                                     <option value="demojs-customheaderfont"> Use Custom Font</option>
                                 </select>
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
-                                <label for="custom_fontname">Font family name</label>
+                                <label for="custom_headerfontname">Font family name</label>
                                 <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
-                                <input type="text" class="form-control" id="custom_fontname" aria-describedby="textinput" >
+                                <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
-                                <label for="custom_fontweight">Weight</label>
+                                <label for="custom_headerfontweight">Weight</label>
                                 <div class="mb-2">Specify the weight of this custom font.</div>
-                                <select class="form-control" id="custom_fontweight">
+                                <select class="form-control" id="custom_headerfontweight">
                                     <option value="NORMAL">normal</option>
                                     <option value="BOLD">bold</option>
                                     <option value="W_100">100</option>
@@ -188,9 +188,9 @@ $page_title = 'VERIFY';
                                 </select>
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
-                                <label for="custom_fontstyle">Style</label>
+                                <label for="custom_headerfontstyle">Style</label>
                                 <div class="mb-2">Specify the style of this custom font.</div>
-                                <select class="form-control" id="custom_fontstyle">
+                                <select class="form-control" id="custom_headerfontstyle">
                                     <option value="NORMAL">normal</option>
                                     <option value="ITALIC">italic</option>
                                     <option value="OBLIQUE">oblique</option>
@@ -247,8 +247,8 @@ $page_title = 'VERIFY';
                     <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="font-header">Body font face</label>
-                                <select class="form-control mb-3" id="font-body">
+                                <label for="custom_bodyfontface">Body font face</label>
+                                <select class="form-control mb-3" id="custom_bodyfontface">
                                     <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
                                     <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
@@ -259,20 +259,79 @@ $page_title = 'VERIFY';
                                     <option value="Georgia, serif">Serif Georgia, serif</option>
                                     <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
                                     <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Benton (prototype only)</option>
+                                    <option value="demojs-custombodyfont"> Use Custom Font</option>
                                 </select>
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="custom_bodyfontname">Font family name</label>
+                                <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput" >
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="custom_bodyfontweight">Weight</label>
+                                <div class="mb-2">Specify the weight of this custom font.</div>
+                                <select class="form-control" id="custom_bodyfontweight">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="BOLD">bold</option>
+                                    <option value="W_100">100</option>
+                                    <option value="W_200">200</option>
+                                    <option value="W_300">300</option>
+                                    <option value="W_400">400</option>
+                                    <option value="W_500">500</option>
+                                    <option value="W_600">600</option>
+                                    <option value="W_700">700</option>
+                                    <option value="W_800">800</option>
+                                    <option value="W_900">900</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="custom_bodyfontstyle">Style</label>
+                                <div class="mb-2">Specify the style of this custom font.</div>
+                                <select class="form-control" id="custom_bodyfontstyle">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="ITALIC">italic</option>
+                                    <option value="OBLIQUE">oblique</option>
+                                </select>
+                            </div>
+                            <div class="row mb-2 demojs-custombodyfont" style="display: none">
+                                <div class="col">
+                                    <div class="ts-14 font-weight-bold mr-auto">Body font file sources</div>
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_bodyfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
+                                </div>
+                            </div>
+                            <div class="card demojs-custombodyfont" style="display: none">
+                                <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="form-group">
                                 <label for="base_bodyfont_size">Body font size</label>
                                 <div class="row align-items-end">
                                     <div class="col-4">
                                         <div class="input-group">
-                                            <input id="show_bodyfontsize_value" name="size" value="16" class="form-control">
+                                            <input id="show_bodyfontsize_value" name="size" value="24" class="form-control">
                                             <div class="input-group-append"> <span class="input-group-text">px</span> </div>
                                         </div>
                                     </div>
                                     <div class="col-8">
-                                        <input id="base_bodyfont_size" type="range" value="16" min="12" max="16" step="1"  class="w-100">
+                                        <input id="base_bodyfont_size" type="range" value="32" min="20" max="48" step="1" class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -405,11 +464,19 @@ $page_title = 'VERIFY';
 <script>
 $(document).ready(function() {
     $(function() {
-        $('#font-header').change(function() {
+        $('#custom_headerfontface').change(function() {
 			$('.demojs-customheaderfont').hide();
 
             $('.' + $(this).val()).show();
         });
+		
+		 $('#custom_bodyfontface').change(function() {
+			$('.demojs-custombodyfont').hide();
+
+            $('.' + $(this).val()).show();
+        });
+		
+		
     });
 });
 </script> 
