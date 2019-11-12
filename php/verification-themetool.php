@@ -139,47 +139,217 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" id="">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fonts" aria-expanded="false" aria-controls="panel_fonts"> <i class="rbt-icon-chevron-right"></i> Typography</button>
+                    <h3 class="mb-2" >
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_headerfonts" aria-expanded="false" aria-controls="panel_headerfonts"> <i class="rbt-icon-chevron-right"></i> Header font</button>
                     </h3>
-                    <div id="panel_fonts" class="collapse" aria-labelledby="" data-parent="#accordion">
+                    <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="font-header">Header font</label>
-                            <select class="form-control mb-3" id="font-header">
-                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
-                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
-                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
-                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
-                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
-                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
-                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
-                                <option value="Georgia, serif">Serif Georgia, serif</option>
-                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
-                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
-                            </select>
-                            <label for="font-header">Body font</label>
-                            <select class="form-control mb-3" id="font-body">
-                                <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
-                                <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
-                                <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
-                                <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
-                                <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
-                                <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
-                                <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
-                                <option value="Georgia, serif">Serif Georgia, serif</option>
-                                <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
-                                <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
-                                <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Use Custom Font</option>
-                            </select>
-                            <label for="base_font_size">Base font size</label>
-                            <input type="range" id="base_font_size" value="16" min="12" max="16" class="mb-3 w-75" oninput="font_size_output.value = base_font_size.value">
-                            <output id="font_size_output">16</output>
-                            px
-                            <label for="base_line_height">Base line height</label>
-                            <input type="range"id="base_line_height"min="1.2"max="2.0"step="0.1"value="1.6" class="mb-3 w-75" oninput="line_height_output.value = base_line_height.value">
-                            <output id="line_height_output">1.5</output>
-                            rem </div>
+                            <div class="form-group">
+                                <label for="font_header">Header font face</label>
+                                <select class="form-control mb-3" id="font_header">
+                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Benton (prototype only)</option>
+                                    <option value="demojs-customheaderfont"> Use Custom Font</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="custom_headerfontname">Font family name</label>
+                                <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="custom_headerfontweight">Weight</label>
+                                <div class="mb-2">Specify the weight of this custom font.</div>
+                                <select class="form-control" id="custom_headerfontweight">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="BOLD">bold</option>
+                                    <option value="W_100">100</option>
+                                    <option value="W_200">200</option>
+                                    <option value="W_300">300</option>
+                                    <option value="W_400">400</option>
+                                    <option value="W_500">500</option>
+                                    <option value="W_600">600</option>
+                                    <option value="W_700">700</option>
+                                    <option value="W_800">800</option>
+                                    <option value="W_900">900</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="custom_headerfontstyle">Style</label>
+                                <div class="mb-2">Specify the style of this custom font.</div>
+                                <select class="form-control" id="custom_headerfontstyle">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="ITALIC">italic</option>
+                                    <option value="OBLIQUE">oblique</option>
+                                </select>
+                            </div>
+                            <div class="row mb-2 demojs-customheaderfont" style="display: none">
+                                <div class="col">
+                                    <div class="ts-14 font-weight-bold mr-auto">Header font file sources</div>
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_headerfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
+                                </div>
+                            </div>
+                            <div class="card demojs-customheaderfont" style="display: none">
+                                <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+							
+							
+							
+							
+							
+							
+                            <div class="form-group">
+                                <label for="base_headerfont_size">Header font size</label>
+                                <div class="row align-items-end">
+                                    <div class="col-4">
+                                        <div class="input-group">
+                                            <input id="show_headerfontsize_value" name="size" value="24" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <input id="base_headerfont_size" type="range"value="32" min="20" max="48" step="1"  class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2" >
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_bodyfonts" aria-expanded="false" aria-controls="panel_bodyfonts"> <i class="rbt-icon-chevron-right"></i> Body font</button>
+                    </h3>
+                    <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="font_body">Body font face</label>
+                                <select class="form-control mb-3" id="font_body">
+                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                    <option value="'BentonSans', 'Helvetica Neue', 'Helvetica', sans-serif"> Benton (prototype only)</option>
+                                    <option value="demojs-custombodyfont"> Use Custom Font</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="custom_bodyfontname">Font family name</label>
+                                <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput" >
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="custom_bodyfontweight">Weight</label>
+                                <div class="mb-2">Specify the weight of this custom font.</div>
+                                <select class="form-control" id="custom_bodyfontweight">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="BOLD">bold</option>
+                                    <option value="W_100">100</option>
+                                    <option value="W_200">200</option>
+                                    <option value="W_300">300</option>
+                                    <option value="W_400">400</option>
+                                    <option value="W_500">500</option>
+                                    <option value="W_600">600</option>
+                                    <option value="W_700">700</option>
+                                    <option value="W_800">800</option>
+                                    <option value="W_900">900</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="custom_bodyfontstyle">Style</label>
+                                <div class="mb-2">Specify the style of this custom font.</div>
+                                <select class="form-control" id="custom_bodyfontstyle">
+                                    <option value="NORMAL">normal</option>
+                                    <option value="ITALIC">italic</option>
+                                    <option value="OBLIQUE">oblique</option>
+                                </select>
+                            </div>
+                            <div class="row mb-2 demojs-custombodyfont" style="display: none">
+                                <div class="col">
+                                    <div class="ts-14 font-weight-bold mr-auto">Body font file sources</div>
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_bodyfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
+                                </div>
+                            </div>
+                            <div class="card demojs-custombodyfont" style="display: none">
+                                <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
+                                        <div class="int-fontlink-checker align-items-center justify-content-center">
+                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+							
+							
+							
+							
+							
+							   <div class="form-group">
+                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_bodyfont_size">Body font size</label>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="mb-3 w-100">
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="input-group mb-5">
+                                            <input id="show_base_bodyfont_size_value" name="price" value="16" class="form-control">
+                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							
+							
+							
+							
+							
+							
+							
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -304,6 +474,64 @@ $page_title = 'VERIFY';
 </main>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+$(document).ready(function() {
+    $(function() {
+        $('#font_header').change(function() {
+			$('.demojs-customheaderfont').hide();
+
+            $('.' + $(this).val()).show();
+        });
+		
+		 $('#font_body').change(function() {
+			$('.demojs-custombodyfont').hide();
+
+            $('.' + $(this).val()).show();
+        });
+		
+		
+    });
+});
+</script> 
+	
+	
+	
+	
+<script>
+$(document).ready(function() {
+
+    $('#theme_page_margin').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_margin_value").val(newVal);
+    });
+    $('#show_margin_value').on('input', function() {
+        $('#theme_page_margin').val($(this).val())
+    });
+    $('#theme_border_radius').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_border_value").val(newVal);
+    });
+    $('#show_border_value').on('input', function() {
+        $('#theme_border_radius').val($(this).val())
+    });
+	
+	
+	
+	
+	$('#base_bodyfont_size').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_base_bodyfont_size_value").val(newVal);
+    });
+    $('#show_base_bodyfont_size_value').on('input', function() {
+        $('#base_bodyfont_size').val($(this).val())
+    });
+});
+	
+</script>
+	
+	
+	
+	
 <script>
 $(document).ready(function(){
   $("#demojs-themehandle").click(function(){
@@ -462,25 +690,6 @@ $('#border-color-hexcolor').on('change', function() {
 });
 	
 </script> 
-<script>
-$(document).ready(function() {
 
-    $('#theme_page_margin').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_margin_value").val(newVal);
-    });
-    $('#show_margin_value').on('input', function() {
-        $('#theme_page_margin').val($(this).val())
-    });
-	 $('#theme_border_radius').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_border_value").val(newVal);
-    });
-    $('#show_border_value').on('input', function() {
-        $('#theme_border_radius').val($(this).val())
-    });
-});
-	
-</script>
 </body>
 </html>
