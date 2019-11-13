@@ -25,7 +25,7 @@ $page_title = 'Send exception email toggle';
                     <label for="send_exemail" class="ts-26">Send exception email toggle</label>
                     <div>Turn on sending of email for exceptions. Default is no.</div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1" >
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1">
                         <label class="form-check-label" for="stacked1"> No </label>
                     </div>
                     <div class="form-check">

@@ -1,9 +1,9 @@
 <!-- Modal -->
-<div class="modal fade" id="custom_headerfont_urls" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="custom_bodyfont_urls" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title" id="exampleModalLabel">Header font file sources</h2>
+                <h2 class="modal-title" id="exampleModalLabel">Body font file sources</h2>
                 <button type="button" class="close" aria-label="Close" data-dismiss="modal"> <span class="rbt-icon-close"></span> </button>
             </div>
             <div class="modal-body">

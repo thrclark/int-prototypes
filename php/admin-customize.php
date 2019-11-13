@@ -21,8 +21,8 @@ $page_title = 'Customize';
                 <button class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" tabindex="-1">Application icons</button>
             </li>
         </ul>
-        <div class="tab-content pt-5" id="myTabContent" tabindex="0" role="tabpanel" >
-            <div class="tab-pane fade show active " id="pills-home"  role="tabpanel" aria-labelledby="tab1" aria-hidden="false" >
+        <div class="tab-content pt-5" id="myTabContent" tabindex="0" role="tabpanel">
+            <div class="tab-pane fade show active " id="pills-home"  role="tabpanel" aria-labelledby="tab1" aria-hidden="false">
                 <div class="row">
                     <div class="col-8">
                         <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up">Theme tool</h2>
@@ -31,7 +31,7 @@ $page_title = 'Customize';
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" >
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="tab3" aria-hidden="true">
                 <h3 class="rbt-ts-23 font-weight-bold mb-3">A grid inside a tab panel</h3>
                 <div class="row">
                     <div class="col-4">

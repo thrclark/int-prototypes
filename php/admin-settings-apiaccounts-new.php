@@ -73,7 +73,7 @@ $page_title = 'New API account';
                                         <div>This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url1_name" >
+                                                <input type="text" class="form-control" id="url1_name">
                                             </div>
                                         </div>
                                     </div>
@@ -82,7 +82,7 @@ $page_title = 'New API account';
                                         <div>External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url1_url" >
+                                                <input type="text" class="form-control" id="url1_url">
                                             </div>
                                         </div>
                                     </div>
@@ -113,7 +113,7 @@ $page_title = 'New API account';
                                         <div>Amount of time to wait for a response from the external application in milliseconds.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url1_timeout" >
+                                                <input type="text" class="form-control" id="url1_timeout">
                                             </div>
                                         </div>
                                     </div>
@@ -136,7 +136,7 @@ $page_title = 'New API account';
                                         <div>This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url2_name" >
+                                                <input type="text" class="form-control" id="url2_name">
                                             </div>
                                         </div>
                                     </div>
@@ -145,7 +145,7 @@ $page_title = 'New API account';
                                         <div>External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url2_url" >
+                                                <input type="text" class="form-control" id="url2_url">
                                             </div>
                                         </div>
                                     </div>
@@ -176,7 +176,7 @@ $page_title = 'New API account';
                                         <div>Amount of time to wait for a response from the external application in milliseconds.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url2_timeout" >
+                                                <input type="text" class="form-control" id="url2_timeout">
                                             </div>
                                         </div>
                                     </div>
@@ -203,7 +203,7 @@ $page_title = 'New API account';
                     <div>Number of resources that are allowed to be created by this API Account. This prevents outside systems from accidentally over populating the system.</div>
                     <div class="row">
                         <div class="col-12 col-sm-8 col-md-6">
-                            <input type="text" class="form-control" id="max_resources" >
+                            <input type="text" class="form-control" id="max_resources">
                         </div>
                     </div>
                 </div>

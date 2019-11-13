@@ -454,6 +454,8 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </main>
+<?php include('modals/modal-headerfont-urls.php') ?>
+<?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
@@ -470,7 +472,6 @@ $(document).ready(function() {
     });
 });
 </script> 
-	
 <script>
     $(document).ready(function() {
         $(function() {
@@ -483,8 +484,6 @@ $(document).ready(function() {
         });
     });
 </script> 
-	
-	
 <script>
 $(document).ready(function() {
     $('#theme_page_margin').on('input', function() {
