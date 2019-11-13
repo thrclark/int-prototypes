@@ -223,7 +223,7 @@ $page_title = 'VERIFY';
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_headerfont_size">Header font size</label>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="range" id="base_headerfont_size" value="32" min="20" max="48" step="1"class="mb-3 w-100">
+                                        <input type="range" id="base_headerfont_size" value="32" min="20" max="48" step="1" class="form-control-range mb-3 w-100">
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
@@ -321,7 +321,7 @@ $page_title = 'VERIFY';
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_bodyfont_size">Body font size</label>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="mb-3 w-100">
+                                        <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="form-control-range mb-3 w-100">
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
@@ -344,7 +344,7 @@ $page_title = 'VERIFY';
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_border_radius">Border radius</label>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input id="theme_border_radius" type="range"min="0" max="20" step="1" value="4"  class="w-100">
+                                        <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4"  class="form-control-range w-100">
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
@@ -358,7 +358,7 @@ $page_title = 'VERIFY';
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_page_margin">Page margin</label>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input id="theme_page_margin" type="range"min="440"max="880"step="10"value="880" class="w-100">
+                                        <input id="theme_page_margin" type="range" min="440"max="880"step="10"value="880" class=" form-control-range w-100">
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
