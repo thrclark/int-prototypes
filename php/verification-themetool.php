@@ -11,12 +11,12 @@ $page_title = 'VERIFY';
 <body class="int-user">
 <main class="rbt-shell-main" style="max-width:inherit">
     <div class="rbt-shell">
-        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Customize theme</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card predefined-themes">
-                    <h3 class="mb-2" id="">
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_preset" aria-expanded="false" aria-controls="panel_preset"> <i class="rbt-icon-chevron-right"></i> Predefined themes </button>
                     </h3>
                     <div id="panel_preset" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -30,7 +30,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" id="">
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_customheadfoot" aria-expanded="false" aria-controls="panel_customheadfoot"> <i class="rbt-icon-chevron-right"></i> Custom header/footer </button>
                     </h3>
                     <div id="panel_customheadfoot" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -51,7 +51,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" id="">
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logolockup" aria-expanded="false" aria-controls="panel_logolockup"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
                     </h3>
                     <div id="panel_logolockup" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -76,7 +76,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" id="">
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
                     </h3>
                     <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -139,7 +139,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" >
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_headerfonts" aria-expanded="false" aria-controls="panel_headerfonts"> <i class="rbt-icon-chevron-right"></i> Header font</button>
                     </h3>
                     <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -237,7 +237,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" >
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_bodyfonts" aria-expanded="false" aria-controls="panel_bodyfonts"> <i class="rbt-icon-chevron-right"></i> Body font</button>
                     </h3>
                     <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -262,7 +262,7 @@ $page_title = 'VERIFY';
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontname">Font family name</label>
                                 <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
-                                <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput" >
+                                <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput">
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontweight">Weight</label>
@@ -335,7 +335,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2" id="">
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Layout</button>
                     </h3>
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -377,7 +377,7 @@ $page_title = 'VERIFY';
                     <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
                 </div>
                 <div class="col-6">
-                    <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme" id="" disabled> Restore values </button>
+                    <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme"  disabled> Restore values </button>
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@
 }
 .demo-theme-builder input[type="color"] {
 	-webkit-appearance: none;s
- border: 1px solid $color-black--800;
+ border: 1px solid black;
 	width: 3rem;
 	flex: inherit;
 	outline: 0;
