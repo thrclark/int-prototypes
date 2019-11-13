@@ -470,6 +470,21 @@ $(document).ready(function() {
     });
 });
 </script> 
+	
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $(".int-fontlink-checker button").click(function() {
+                $(this).text("Success!");
+                setTimeout(function() {
+                    $(".int-fontlink-checker button").text("Check link");
+                }, 4000)
+            });
+        });
+    });
+</script> 
+	
+	
 <script>
 $(document).ready(function() {
     $('#theme_page_margin').on('input', function() {
