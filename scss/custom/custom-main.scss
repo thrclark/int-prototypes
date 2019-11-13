@@ -85,6 +85,9 @@ html {
 
 
       section {
+        color: var(--body-text-color);
+        font-family: var(--font_body);
+        font-size: var(--base_bodyfont_size);
         .border, .border-bottom {
           border-color: var(--border-color) !important;
         }
@@ -95,6 +98,7 @@ html {
           background-color: var(--panel-bg-color);
           h1,h2,h3 {
             font-family: var(--font_header);
+			font-size: var(--base_headerfont_size);
           }
 
           .card-body {

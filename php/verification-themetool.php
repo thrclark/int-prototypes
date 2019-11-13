@@ -219,23 +219,17 @@ $page_title = 'VERIFY';
                                     </li>
                                 </ul>
                             </div>
-							
-							
-							
-							
-							
-							
                             <div class="form-group">
-                                <label for="base_headerfont_size">Header font size</label>
-                                <div class="row align-items-end">
+                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_headerfont_size">Header font size</label>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="range" id="base_headerfont_size" value="32" min="20" max="48" step="1"class="mb-3 w-100">
+                                    </div>
                                     <div class="col-4">
-                                        <div class="input-group">
-                                            <input id="show_headerfontsize_value" name="size" value="24" class="form-control">
+                                        <div class="input-group mb-5">
+                                            <input id="show_base_headerfont_size_value" name="price" value="16" class="form-control">
                                             <div class="input-group-append"> <span class="input-group-text">px</span> </div>
                                         </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <input id="base_headerfont_size" type="range"value="32" min="20" max="48" step="1"  class="w-100">
                                     </div>
                                 </div>
                             </div>
@@ -323,12 +317,7 @@ $page_title = 'VERIFY';
                                     </li>
                                 </ul>
                             </div>
-							
-							
-							
-							
-							
-							   <div class="form-group">
+                            <div class="form-group">
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_bodyfont_size">Body font size</label>
                                 <div class="row">
                                     <div class="col-12">
@@ -342,13 +331,6 @@ $page_title = 'VERIFY';
                                     </div>
                                 </div>
                             </div>
-							
-							
-							
-							
-							
-							
-							
                         </div>
                     </div>
                 </div>
@@ -421,9 +403,9 @@ $page_title = 'VERIFY';
                                 <h2 class="alert-heading">Privacy note</h2>
                                 <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
                             </div>
-                            <h2 class="ts-26">Verify your data</h2>
+                            <h2>Verify your data</h2>
                             <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                            <h3 class="ts-26 mt-5">Sample data</h3>
+                            <h3 class="mt-5">Sample data</h3>
                             <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
@@ -441,7 +423,7 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                     <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
-                    <div class="int-verify-controls p-3">
+                    <div class="int-verify-controls py-3">
                         <div class="row mb-5" id="demojs_verifyscreen">
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-column">
@@ -479,27 +461,17 @@ $(document).ready(function() {
     $(function() {
         $('#font_header').change(function() {
 			$('.demojs-customheaderfont').hide();
-
             $('.' + $(this).val()).show();
         });
-		
 		 $('#font_body').change(function() {
 			$('.demojs-custombodyfont').hide();
-
             $('.' + $(this).val()).show();
         });
-		
-		
     });
 });
 </script> 
-	
-	
-	
-	
 <script>
 $(document).ready(function() {
-
     $('#theme_page_margin').on('input', function() {
         var newVal = $(this).val();
         $("#show_margin_value").val(newVal);
@@ -514,10 +486,6 @@ $(document).ready(function() {
     $('#show_border_value').on('input', function() {
         $('#theme_border_radius').val($(this).val())
     });
-	
-	
-	
-	
 	$('#base_bodyfont_size').on('input', function() {
         var newVal = $(this).val();
         $("#show_base_bodyfont_size_value").val(newVal);
@@ -525,13 +493,15 @@ $(document).ready(function() {
     $('#show_base_bodyfont_size_value').on('input', function() {
         $('#base_bodyfont_size').val($(this).val())
     });
+	$('#base_headerfont_size').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_base_headerfont_size_value").val(newVal);
+    });
+    $('#show_base_headerfont_size_value').on('input', function() {
+        $('#base_headerfont_size').val($(this).val())
+    });
 });
-	
-</script>
-	
-	
-	
-	
+</script> 
 <script>
 $(document).ready(function(){
   $("#demojs-themehandle").click(function(){
@@ -553,18 +523,15 @@ $(document).ready(function(){
         $("#submit2").click(function() {
             $('#question4').popover('toggle')
         });
-		
 		 $("#question4").click(function() {
 			 $('#question4').popover('show')
             $('#question4').popover('destroy')
         });
-		
 		 $('#submit2').click(function() {
             if ($('#question4').is(':checked')) {
 				 $('#question4').popover('destroy')
             }
         });
-		
     }); 
 </script> 
 <script>
@@ -576,11 +543,7 @@ $(document).ready(function(){
             if ($(this).val() == "none") {
                 $(".demojs-lockupcontrols").hide();
             }
-
         });
-		
-		
-		
 		 $('#logoimage-visibility').change(function() {
             if ($(this).val() == "block") {
                 $(".demojs-logourl").show();
@@ -588,11 +551,7 @@ $(document).ready(function(){
             if ($(this).val() == "none") {
                 $(".demojs-logourl").hide();
             }
-
         });
-		
-		
-		
 		 $("[data-theme='white']").click(function() {
 			 $(".demojs-lockupcontrols").show();
 			 $(".demojs-logourl").show();
@@ -613,23 +572,14 @@ $(document).ready(function(){
 			$(".demojs-logourl").hide();
 			$(".demojs-lockupcontrols").show();
         });
-		
-	
-
-
     }); 
 </script> 
 <script>
-    $(document).ready(function() {
-		
-		
-		
-		$( ".card-body .form-control, .predefined-themes .card-body button" ).click(function() {
-  $('.demojs-savetheme').prop("disabled", false); // Element(s) are now enabled.
-});
-
- }); 
-
+	$(document).ready(function() {
+		$(".card-body .form-control, .predefined-themes .card-body button").click(function() {
+			$('.demojs-savetheme').prop("disabled", false); // Element(s) are now enabled.
+		});
+	});
 </script> 
 <script>
     $(document).ready(function() {
@@ -639,57 +589,53 @@ $(document).ready(function(){
 				$('.btn.btn-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-primary .visible').toggleClass('invisible');
 				$('.demojs-savetheme').prop('disabled', true);
-				
                 setTimeout(function() {
                     $('.btn.btn-primary').removeClass('rbt-loading');
 					$('.btn.btn-primary .spinner-border').addClass('d-none');
 					$('.demojs-savetheme').prop('disabled', true);
 					$('.btn.btn-primary .invisible').removeClass('invisible');
-					
                 }, 3000)
             });
         });
     });
 </script> 
 <script>
-$('#body-bg-color').on('change', function() {
-    $('#body-bg-color-hexcolor').val(this.value);
-});
-$('#body-bg-color-hexcolor').on('change', function() {
-    $('#body-bg-color').val(this.value);
-});
-$('#body-text-color').on('change', function() {
-    $('#body-text-color-hexcolor').val(this.value);
-});
-$('#body-text-color-hexcolor').on('change', function() {
-    $('#body-text-color').val(this.value);
-});
-$('#panel-bg-color').on('change', function() {
-    $('#panel-bg-color-hexcolor').val(this.value);
-});
-$('#panel-bg-color-hexcolor').on('change', function() {
-    $('#panel-bg-color').val(this.value);
-});
-$('#panel-text-color').on('change', function() {
-    $('#panel-text-color-hexcolor').val(this.value);
-});
-$('#panel-text-color-hexcolor').on('change', function() {
-    $('#panel-text-color').val(this.value);
-});
-$('#action-color').on('change', function() {
-    $('#action-color-hexcolor').val(this.value);
-});
-$('#action-color-hexcolor').on('change', function() {
-    $('#action-color-color').val(this.value);
-});	
-$('#border-color').on('change', function() {
-    $('#border-color-hexcolor').val(this.value);
-});
-$('#border-color-hexcolor').on('change', function() {
-    $('#border-color-color').val(this.value);
-});
-	
-</script> 
-
+	$('#body-bg-color').on('change', function() {
+		$('#body-bg-color-hexcolor').val(this.value);
+	});
+	$('#body-bg-color-hexcolor').on('change', function() {
+		$('#body-bg-color').val(this.value);
+	});
+	$('#body-text-color').on('change', function() {
+		$('#body-text-color-hexcolor').val(this.value);
+	});
+	$('#body-text-color-hexcolor').on('change', function() {
+		$('#body-text-color').val(this.value);
+	});
+	$('#panel-bg-color').on('change', function() {
+		$('#panel-bg-color-hexcolor').val(this.value);
+	});
+	$('#panel-bg-color-hexcolor').on('change', function() {
+		$('#panel-bg-color').val(this.value);
+	});
+	$('#panel-text-color').on('change', function() {
+		$('#panel-text-color-hexcolor').val(this.value);
+	});
+	$('#panel-text-color-hexcolor').on('change', function() {
+		$('#panel-text-color').val(this.value);
+	});
+	$('#action-color').on('change', function() {
+		$('#action-color-hexcolor').val(this.value);
+	});
+	$('#action-color-hexcolor').on('change', function() {
+		$('#action-color-color').val(this.value);
+	});	
+	$('#border-color').on('change', function() {
+		$('#border-color-hexcolor').val(this.value);
+	});
+	$('#border-color-hexcolor').on('change', function() {
+		$('#border-color-color').val(this.value);
+	});
+</script>
 </body>
 </html>

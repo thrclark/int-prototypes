@@ -6,8 +6,6 @@
 <script src="../js/pikaday.js"></script>
 <script src="../js/jscolor.js"></script>
 <script src="../js/jquery.multi-select.js"></script>
-
-
 <script>
     $(".rbt-drawer-button").click(function() {
         $(".rbt-drawer,.rbt-drawer-button").toggleClass("open");
@@ -22,7 +20,6 @@
 const setValue = (property, value) => {
     if (value) {
         document.documentElement.style.setProperty(`--${property}`, value);
-
         const input = document.querySelector(`#${property}`);
         if (input) {
             value = value.replace('px', '');
@@ -30,12 +27,10 @@ const setValue = (property, value) => {
         }
     }
 };
-
 const setValueFromLocalStorage = property => {
     let value = localStorage.getItem(property);
     setValue(property, value);
 };
-
 const setTheme = options => {
     for (let option of Object.keys(options)) {
         const property = option;
@@ -44,9 +39,7 @@ const setTheme = options => {
         localStorage.setItem(property, value);
     }
 }
-
 document.addEventListener('DOMContentLoaded', () => {
-
     setValueFromLocalStorage('logoimage-visibility');
     setValueFromLocalStorage('logoimage-url');
     setValueFromLocalStorage('lockup-visibility');
@@ -58,30 +51,21 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('panel-text-color');
     setValueFromLocalStorage('action-color');
     setValueFromLocalStorage('border-color');
-
     setValueFromLocalStorage('font_header');
     setValueFromLocalStorage('font_body');
-
+    setValueFromLocalStorage('base_headerfont_size');
     setValueFromLocalStorage('base_bodyfont_size');
-
-	
-	setValueFromLocalStorage('theme_border_radius');
+    setValueFromLocalStorage('theme_border_radius');
     setValueFromLocalStorage('theme_page_margin');
-
-
 });
-
 const dataThemeButtons = document.querySelectorAll('[data-theme]');
-
 for (let i = 0; i < dataThemeButtons.length; i++) {
     dataThemeButtons[i].addEventListener('click', () => {
         const theme = dataThemeButtons[i].dataset.theme;
-
         switch (theme) {
             case 'brown':
                 setTheme({
                     'logoimage-visibility': 'block',
-
                     'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
@@ -91,11 +75,11 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
-					'border-color': '#dddddd',
+                    'border-color': '#dddddd',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
-                    
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -113,11 +97,11 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#198f1a',
-					'border-color': '#dddddd',
+                    'border-color': '#dddddd',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
-                    
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -134,11 +118,11 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#b3842c',
-					'border-color': '#dddddd',
+                    'border-color': '#dddddd',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
-                    
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -155,11 +139,11 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#980209',
-					'border-color': '#dddddd',
+                    'border-color': '#dddddd',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
+                    'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
-                    
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -176,11 +160,11 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
                     'action-color': '#006298',
-					'border-color': '#dddddd',
+                    'border-color': '#dddddd',
                     'font_header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
-                    
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                 });
@@ -241,6 +225,10 @@ document.querySelector('#font_header').addEventListener('change', event => {
 document.querySelector('#font_body').addEventListener('change', event => {
     handleInputChange('font_body', false);
 });
+document.querySelector('#base_headerfont_size').addEventListener('input', event => {
+    handleInputChange('base_headerfont_size', true);
+});
+
 document.querySelector('#base_bodyfont_size').addEventListener('input', event => {
     handleInputChange('base_bodyfont_size', true);
 });
@@ -248,24 +236,15 @@ document.querySelector('#base_bodyfont_size').addEventListener('input', event =>
 document.querySelector('#theme_border_radius').addEventListener('input', event => {
     handleInputChange('theme_border_radius', true);
 });
-
-
-	
-	
 document.querySelector('#border-color').addEventListener('change', event => {
     handleInputChange('border-color', false);
 });
 document.querySelector('#border-color-hexcolor').addEventListener('change', event => {
     handleInputChange('border-color', false);
 });
-	
-	
-	
-	
 document.querySelector('#theme_page_margin').addEventListener('input', event => {
     handleInputChange('theme_page_margin', true);
 });
-
 </script>
 <script>
 function orgnameset() {
@@ -300,11 +279,4 @@ function footerhtml_store() {
     textdata = document.getElementById('footer_html').value;
     document.getElementById('footer_html_display').innerHTML = textdata;
 } 
-	
-	
-	
-	
-	
-	
-	
 </script>

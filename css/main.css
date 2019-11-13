@@ -15720,6 +15720,11 @@ html .int-user header .rbt-header-avatar-id {
   color: var(--body-text-color);
   font-family: var(--font_body);
 }
+html .int-user main section, html .int-user .main section {
+  color: var(--body-text-color);
+  font-family: var(--font_body);
+  font-size: var(--base_bodyfont_size);
+}
 html .int-user main section .border, html .int-user main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user main section .card, html .int-user main section .border-bottom, html .int-user .main section .border, html .int-user .main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user .main section .card, html .int-user .main section .border-bottom {
   border-color: var(--border-color) !important;
 }
@@ -15730,6 +15735,7 @@ html .int-user main section .card, html .int-user .main section .card {
 }
 html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
   font-family: var(--font_header);
+  font-size: var(--base_headerfont_size);
 }
 html .int-user main section .card .card-body, html .int-user .main section .card .card-body {
   color: var(--panel-text-color);
