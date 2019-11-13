@@ -12,7 +12,7 @@ html {
   }
   .int-lockup-group {
     display: var(--lockup-visibility);
-    font-family: var(--font-header);
+    font-family: var(--font_header);
   }
   .int-user {
     background-color: var(--body-bg-color);
@@ -55,7 +55,6 @@ html {
       //@extend .pt-5;
 
 
-
       .dropdown-item-text {
         padding: 0.375rem 1rem;
       }
@@ -76,7 +75,7 @@ html {
       }
       .rbt-header-avatar-id {
         color: var(--body-text-color);
-        font-family: var(--font-body);
+        font-family: var(--font_body);
       }
     }
     main, .main {
@@ -85,26 +84,27 @@ html {
       @extend .p-0;
 
 
-
-
       section {
+        color: var(--body-text-color);
+        font-family: var(--font_body);
+        font-size: var(--base_bodyfont_size);
         .border, .border-bottom {
           border-color: var(--border-color) !important;
         }
         .card {
-          line-height: var(--base_line_height);
-          font-size: var(--base_font_size);
+          font-size: var(--base_bodyfont_size);
           border-radius: var(--theme_border_radius);
 
           background-color: var(--panel-bg-color);
           h1,h2,h3 {
-            font-family: var(--font-header);
+            font-family: var(--font_header);
+			font-size: var(--base_headerfont_size);
           }
 
           .card-body {
             color: var(--panel-text-color);
             padding: 2rem 2.5rem 2.5rem;
-            font-family: var(--font-body);
+            font-family: var(--font_body);
             a {
               color: var(--action-color);
               &:focus {
@@ -144,8 +144,8 @@ html {
 
         .int-verify-controls {
           color: var(--body-text-color);
-          font-family: var(--font-body);
-          font-size: var(--base_font_size);
+          font-family: var(--font_body);
+          font-size: var(--base_bodyfont_size);
 
           input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
 
