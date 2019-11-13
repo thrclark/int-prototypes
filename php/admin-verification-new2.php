@@ -37,11 +37,11 @@ $page_subtitle = 'Data';
                 </div>
                 <div id="sticky2" class="bg-white pb-2 d-sm-none rbt-z-1000">
                     <ol class="rvb-steps mb-5 d-sm-none">
-                        <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content" > <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Recipients</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Scheduling</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a> </li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" > <span class="rvb-steps__label"><span class="sr-only">Review/save</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </a> </li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Review/save</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </a> </li>
                     </ol>
                 </div>
                 <div class="row">
@@ -76,7 +76,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="uniquekeyLabel"> Unique Key </label>
-                                            <div class="" > This uniquely identifies this section on the current verification.</div>
+                                            <div class=""> This uniquely identifies this section on the current verification.</div>
                                             <input id="uniquekeyLabel" aria-labelledby="uniquekeyLabel"  class="form-control" type="text">
                                         </div>
                                         <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
@@ -118,7 +118,7 @@ $page_subtitle = 'Data';
                                             <div class="card-body collapse" data-parent="#child1" id="uniquekey1">
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_UniqueKey"> Unique key </label>
-                                                    <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <div class=""> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <input id="api1_UniqueKey" aria-labelledby="api1_UniqueKey"  class="form-control" type="text" value="Field group 1">
                                                 </div>
                                                 <div class="form-group">
@@ -139,12 +139,12 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_nameLabel">URL </label>
-                                                    <div class="" > URL to the external application that allows action to be taken.</div>
+                                                    <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api1_nameLabel" aria-labelledby="api1_nameLabel"  class="form-control" type="text">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_buttonLabel">Button label </label>
-                                                    <div class="" > The label for the button that will launch the URL.</div>
+                                                    <div class=""> The label for the button that will launch the URL.</div>
                                                     <input id="api1_buttonLabel" aria-labelledby="api1_buttonLabel"  class="form-control" type="text">
                                                 </div>
                                             </div>
@@ -170,7 +170,7 @@ $page_subtitle = 'Data';
                                             <div class="card-body collapse" data-parent="#child1" id="uniquekey2">
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_UniqueKey"> Unique key </label>
-                                                    <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <div class=""> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <input id="api2_UniqueKey" aria-labelledby="api2_UniqueKey"  class="form-control" type="text" value="Field group 2">
                                                 </div>
                                                 <div class="form-group">
@@ -191,12 +191,12 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_nameLabel">URL </label>
-                                                    <div class="" > URL to the external application that allows action to be taken.</div>
+                                                    <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api2_nameLabel" aria-labelledby="api2_nameLabel"  class="form-control" type="text">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_buttonLabel">Button label </label>
-                                                    <div class="" > The label for the button that will launch the URL.</div>
+                                                    <div class=""> The label for the button that will launch the URL.</div>
                                                     <input id="api2_buttonLabel" aria-labelledby="api2_buttonLabel"  class="form-control" type="text">
                                                 </div>
                                             </div>
@@ -233,7 +233,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="uniquekeyLabel2"> Unique Key </label>
-                                            <div class="" > This uniquely identifies this section on the current verification.</div>
+                                            <div class=""> This uniquely identifies this section on the current verification.</div>
                                             <input id="uniquekeyLabel2" aria-labelledby="uniquekeyLabel2"  class="form-control" type="text">
                                         </div>
                                         <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
@@ -281,7 +281,7 @@ $page_subtitle = 'Data';
                                             <div class="card-body collapse" data-parent="#child2" id="uniquekey11">
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_UniqueKey11"> Unique key </label>
-                                                    <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <div class=""> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <input id="api1_UniqueKey11" aria-labelledby="api1_UniqueKey11"  class="form-control" type="text" value="Field group 1">
                                                 </div>
                                                 <div class="form-group">
@@ -302,12 +302,12 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_nameLabel11">URL </label>
-                                                    <div class="" > URL to the external application that allows action to be taken.</div>
+                                                    <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api1_nameLabel11" aria-labelledby="api1_nameLabel11"  class="form-control" type="text">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_buttonLabel11">Button label </label>
-                                                    <div class="" > The label for the button that will launch the URL.</div>
+                                                    <div class=""> The label for the button that will launch the URL.</div>
                                                     <input id="api1_buttonLabel11" aria-labelledby="api1_buttonLabel11"  class="form-control" type="text">
                                                 </div>
                                             </div>
@@ -333,7 +333,7 @@ $page_subtitle = 'Data';
                                             <div class="card-body collapse" data-parent="#child2" id="uniquekey22">
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_UniqueKey22"> Unique key </label>
-                                                    <div class="" > This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <div class=""> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <input id="api2_UniqueKey22" aria-labelledby="api2_UniqueKey22"  class="form-control" type="text" value="Field group 2">
                                                 </div>
                                                 <div class="form-group">
@@ -354,12 +354,12 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_nameLabel22">URL </label>
-                                                    <div class="" > URL to the external application that allows action to be taken.</div>
+                                                    <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api2_nameLabel22" aria-labelledby="api2_nameLabel22"  class="form-control" type="text">
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_buttonLabel22">Button label </label>
-                                                    <div class="" > The label for the button that will launch the URL.</div>
+                                                    <div class=""> The label for the button that will launch the URL.</div>
                                                     <input id="api2_buttonLabel22" aria-labelledby="api2_buttonLabel22"  class="form-control" type="text">
                                                 </div>
                                             </div>

@@ -14,7 +14,7 @@ $page_title = 'VERIFY';
         <div class="container text-white text-center rbt-ts-26">Verification preview</div>
     </div>
     <div class="rbt-shell"> 
-        <!--    <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+        <!--    <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Preview</h2>
             <div class="rbt-collapse-accordion" id="accordion_parent">

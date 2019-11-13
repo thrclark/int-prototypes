@@ -454,6 +454,8 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </main>
+<?php include('modals/modal-headerfont-urls.php') ?>
+<?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
@@ -469,6 +471,18 @@ $(document).ready(function() {
         });
     });
 });
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $(".int-fontlink-checker button").click(function() {
+                $(this).text("Success!");
+                setTimeout(function() {
+                    $(".int-fontlink-checker button").text("Check link");
+                }, 4000)
+            });
+        });
+    });
 </script> 
 <script>
 $(document).ready(function() {

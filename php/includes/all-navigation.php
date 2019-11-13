@@ -5,7 +5,7 @@
         </a> </div>
     <nav class="d-none d-lg-block mr-5">
         <ul class="nav align-items-center d-flex flex-nowrap">
-            <li class="nav-item"> <a href="nc-main.php" class="nav-link <?php if ($page == 'notification_center') { echo 'active'; } ?>" >Notifications</a> </li>
+            <li class="nav-item"> <a href="nc-main.php" class="nav-link <?php if ($page == 'notification_center') { echo 'active'; } ?>">Notifications</a> </li>
             <li class="nav-item"> <a href="nc-settings.php"class="nav-link <?php if ($page == 'notification_settings') { echo 'active'; } ?>">Settings</a> </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</button>
