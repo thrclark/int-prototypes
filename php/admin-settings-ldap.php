@@ -16,7 +16,6 @@ $page_title = 'LDAP Configuration';
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="alert alert-warning alert-dismissible fade show mb-4" role="alert">
-                   
                     <div class="alert-heading">Notice</div>
                     <p class="small mb-3">Changes to this LDAP configuration will affect the following tenants:</p>
                     <dl class="row ts-14">
@@ -33,12 +32,11 @@ $page_title = 'LDAP Configuration';
                         <dd class="col-sm-8">IU Mobile</dd>
                     </dl>
                 </div>
-              
                 <div class="form-group">
                     <label class="control-label" for="ldap_url"> LDAP URL </label>
                     <div> URL to the LDAP server (example: ldap://ads.mydomain.edu). </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_url" type="text">
                         </div>
                     </div>
@@ -47,7 +45,7 @@ $page_title = 'LDAP Configuration';
                     <label class="control-label" for="ldap_base">Base </label>
                     <div> LDAP base information. (example: ou=myOu,dc=ads,dc=myDomain,dc=edu). </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_base" type="text">
                         </div>
                     </div>
@@ -56,7 +54,7 @@ $page_title = 'LDAP Configuration';
                     <label class="control-label" for="ldap_username">User name </label>
                     <div> LDAP account user name. (example: cn=myUser,ou=myOu,dc=ads,dc=myDomain,dc=edu). </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_username" type="text">
                         </div>
                     </div>
@@ -65,7 +63,7 @@ $page_title = 'LDAP Configuration';
                     <label class="control-label" for="ldap_password">Password </label>
                     <div> LDAP user account password. </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_password" type="password">
                         </div>
                     </div>
@@ -74,7 +72,7 @@ $page_title = 'LDAP Configuration';
                     <label class="control-label" for="ldap_passwordconfirm">Confirm password </label>
                     <div> Confirm the password. Passwords must match. </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-lg-6">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_passwordconfirm" type="password">
                         </div>
                     </div>
