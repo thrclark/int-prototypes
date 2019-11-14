@@ -291,13 +291,15 @@ $page_title = 'VERIFY';
                             <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <dl>
-                                        <dt>Phone 1</dt>
-                                        <dd><span class="int-privatedata"> 123-456-7890</span> </dd>
-                                        <dt>Phone 2</dt>
-                                        <dd><span class="int-privatedata"> 123-456-7890</span> </dd>
-                                        <dt>Phone 3</dt>
-                                        <dd><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Street address</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
+                                        <dt class="col-sm-4">City</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
+                                        <dt class="col-sm-4">State</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
+                                        <dt class="col-sm-4">Zip</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
                                     </dl>
                                     <button class="btn btn-sm btn-outline-primary">Edit</button>
                                 </li>

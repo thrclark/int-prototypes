@@ -67,7 +67,11 @@ $page_subtitle = 'Recipient rulesets';
                                         <div class="form-group">
                                             <label class="control-label" for="data-name"> Recipient ruleset title </label>
                                             <div> Provide a name for this recipient ruleset.</div>
-                                            <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
+                                                </div>
+                                            </div>
                                         </div>
                                         <fieldset aria-describedby="maintenance-window-hint" class="mb-3">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
@@ -230,8 +234,7 @@ $page_subtitle = 'Recipient rulesets';
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item" id="deletedatacard2">Delete </button>
                                             </div>
                                         </div>
@@ -242,7 +245,11 @@ $page_subtitle = 'Recipient rulesets';
                                         <div class="form-group">
                                             <label class="control-label" for="data-name"> Recipient ruleset title </label>
                                             <div> Provide a name for this recipient ruleset.</div>
-                                            <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
+                                                </div>
+                                            </div>
                                         </div>
                                         <fieldset aria-describedby="maintenance-window-hint" class="mb-3">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
