@@ -21,7 +21,7 @@ $page_title = 'VERIFY';
             </button>
             <div class="dropdown-menu dropdown-menu-right"> <!--<span class="dropdown-item-text d-lg-none"><i class="rbt-icon-user-solid"></i> thrclark</span>
                 <div class="dropdown-divider d-lg-none"></div>--> 
-                <a class="dropdown-item" href="admin-verifications.php">Administrator</a> </div>
+                <a class="dropdown-item" href="admin-verifications.php">Publishing</a> </div>
         </div>
     </div>
 </header>
