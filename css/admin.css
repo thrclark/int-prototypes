@@ -6378,7 +6378,7 @@ button.bg-dark:focus {
   align-items: flex-end !important;
 }
 
-.align-items-center, .row.color-picker, .color-picker.ms-container {
+.align-items-center {
   align-items: center !important;
 }
 
@@ -7300,7 +7300,7 @@ button.bg-dark:focus {
   margin-right: 1rem !important;
 }
 
-.mb-3, .row.color-picker, .color-picker.ms-container, .rbt-collapse-accordion .card,
+.mb-3, .rbt-collapse-accordion .card,
 .my-3 {
   margin-bottom: 1rem !important;
 }
@@ -15248,14 +15248,35 @@ button[aria-expanded=true] .rbt-icon-chevron-right:before {
   cursor: text;
 }
 
-html header .int-brand-image {
+:root {
+  --logoimage-visibility: block;
+  --logoimage-url: url("http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png");
+  --lockup-visibility: block;
+  --body-bg-color: #EAEAEA;
+  --body-text-color: #444444;
+  --panel-bg-color: #ffffff;
+  --panel-text-color: #444444;
+  --action-color: #006298;
+  --font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+  --font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+  --base_headerfont_size: 2rem;
+  --base_bodyfont_size: 1rem;
+  --border-color:#dddddd;
+  --theme_border_radius: 0.25rem;
+  --theme_page_margin: 880;
+}
+
+html body {
+  background-color: var(--body-bg-color);
+}
+html body header .int-brand-image {
   content: var(--logo-image-url);
   max-height: 72px;
 }
-html .main-content .int-tabs .nav-item {
+html body .main-content .int-tabs .nav-item {
   margin-right: 0px;
 }
-html .main-content .int-tabs .nav-item .nav-link {
+html body .main-content .int-tabs .nav-item .nav-link {
   z-index: 100;
   background: none;
   border: none;
@@ -15264,72 +15285,20 @@ html .main-content .int-tabs .nav-item .nav-link {
   border-radius: 0px;
   padding: 1rem 1.25rem;
 }
-html .main-content .int-tabs .nav-item .nav-link:hover {
+html body .main-content .int-tabs .nav-item .nav-link:hover {
   border-bottom: solid 4px #dddddd;
 }
-html .main-content .int-tabs .nav-item .nav-link.active {
+html body .main-content .int-tabs .nav-item .nav-link.active {
   border-bottom: solid 4px #006298;
 }
-html .main-content .int-tabs + .tab-content {
+html body .main-content .int-tabs + .tab-content {
   border: none;
   border-top: solid 1px #dddddd;
   padding: 0px;
   transition: box-shadow 0.2s ease;
 }
-html .main-content .int-tabs + .tab-content:focus {
+html body .main-content .int-tabs + .tab-content:focus {
   box-shadow: none;
-}
-
-button[data-theme] {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.25rem;
-  border: 1px solid #555555;
-  font-size: 0;
-  background: transparent;
-  outline: 0;
-  cursor: pointer;
-}
-
-.editor-statusbar {
-  display: none;
-}
-
-.demo-theme-builder input[type=color] {
-  -webkit-appearance: none;
-  border: 1px solid #555555;
-  width: 1.5rem;
-  height: 1.5rem;
-  outline: 0;
-}
-
-.demo-theme-builder input[type=color]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-.demo-theme-builder input[type=color]::-webkit-color-swatch {
-  border: none;
-}
-
-#body-bg-color {
-  background-color: var(--body-bg-color);
-}
-
-#body-font-color {
-  background-color: var(--body-font-color);
-}
-
-#headerfooter-bg-color {
-  background-color: var(--headerfooter-bg-color);
-}
-
-#headerfooter-text-color {
-  background-color: var(--headerfooter-text-color);
-}
-
-#footer-link-color {
-  background-color: var(--footer-link-color);
 }
 
 .rbt-collapse-accordion .int-accordion-controls {

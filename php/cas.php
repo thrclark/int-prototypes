@@ -35,7 +35,6 @@ $page_title = 'LOGIN';
         </div>
     </section>
 </main>
-<?php include('includes/custom-footer.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>
