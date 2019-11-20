@@ -410,12 +410,14 @@ $page_title = 'VERIFY';
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <dl class="row">
-                                        <dt class="col-sm-4">Phone 1</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
-                                        <dt class="col-sm-4">Phone 2</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
-                                        <dt class="col-sm-4">Phone 3</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                        <dt class="col-sm-4">Street address</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
+                                        <dt class="col-sm-4">City</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
+                                        <dt class="col-sm-4">State</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
+                                        <dt class="col-sm-4">Zip</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
                                     </dl>
                                     <button class="btn btn-sm btn-outline-primary">Edit</button>
                                 </li>
@@ -454,6 +456,8 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </main>
+<?php include('modals/modal-headerfont-urls.php') ?>
+<?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
@@ -469,6 +473,18 @@ $(document).ready(function() {
         });
     });
 });
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $(".int-fontlink-checker button").click(function() {
+                $(this).text("Success!");
+                setTimeout(function() {
+                    $(".int-fontlink-checker button").text("Check link");
+                }, 4000)
+            });
+        });
+    });
 </script> 
 <script>
 $(document).ready(function() {

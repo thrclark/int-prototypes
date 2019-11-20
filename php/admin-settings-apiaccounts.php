@@ -16,7 +16,7 @@ $page_title = 'API Accounts';
             <div class="col">
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
-            <div class="col-auto">
+            <div class="col-auto"> <a href="admin-settings-apiaccounts-sources.php" class="btn btn-sm btn-outline-primary"> External sources</a>
                 <div class="dropdown d-inline">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> API documentation </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-hidden="true" role="menu" aria-labelledby="dropdownMenuButton1"> <a class="dropdown-item" href="#">Version 1 </a> <a class="dropdown-item" href="#">Version 2 </a> <a class="dropdown-item" href="#">Version 3 </a> </div>
@@ -45,8 +45,7 @@ $page_title = 'API Accounts';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a> </div>
                             </div>
                         </div></td>
                 </tr>

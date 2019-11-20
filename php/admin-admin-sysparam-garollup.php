@@ -24,7 +24,7 @@ $page_title = 'Google Analytics rollup ID';
                 <div class="form-group">
                     <label for="ga_id" class="ts-26">Google Analytics rollup ID</label>
                     <div>Data for selected tenants will be sent to this Google Analytics ID.</div>
-                    <input type="text" class="form-control" id="ga_id" aria-describedby="ga_id" >
+                    <input type="text" class="form-control" id="ga_id" aria-describedby="ga_id">
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>

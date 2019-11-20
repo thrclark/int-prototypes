@@ -14,7 +14,7 @@ $page_title = 'VERIFY';
         <div class="container text-white text-center rbt-ts-26">Verification preview</div>
     </div>
     <div class="rbt-shell"> 
-        <!--    <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; " >
+        <!--    <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Preview</h2>
             <div class="rbt-collapse-accordion" id="accordion_parent">
@@ -291,13 +291,15 @@ $page_title = 'VERIFY';
                             <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <dl>
-                                        <dt>Phone 1</dt>
-                                        <dd><span class="int-privatedata"> 123-456-7890</span> </dd>
-                                        <dt>Phone 2</dt>
-                                        <dd><span class="int-privatedata"> 123-456-7890</span> </dd>
-                                        <dt>Phone 3</dt>
-                                        <dd><span class="int-privatedata"> 123-456-7890</span> </dd>
+                                    <dl class="row">
+                                        <dt class="col-sm-4">Street address</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
+                                        <dt class="col-sm-4">City</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
+                                        <dt class="col-sm-4">State</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
+                                        <dt class="col-sm-4">Zip</dt>
+                                        <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
                                     </dl>
                                     <button class="btn btn-sm btn-outline-primary">Edit</button>
                                 </li>

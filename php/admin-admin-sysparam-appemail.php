@@ -24,7 +24,7 @@ $page_title = 'Application email';
                 <div class="form-group">
                     <label for="app_email" class="ts-26">Application email</label>
                     <div>	The address from which global emails are sent.</div>
-                    <input type="text" class="form-control" id="app_email" aria-describedby="app_email" >
+                    <input type="text" class="form-control" id="app_email" aria-describedby="app_email">
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>

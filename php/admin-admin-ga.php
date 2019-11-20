@@ -67,7 +67,7 @@ $page_title = 'Google Analytics';
 </script>
 	
 	
-<script >
+<script>
     $(document).ready(function() {
 
         $(".form-check-input").click(function() {
