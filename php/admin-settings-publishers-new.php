@@ -38,7 +38,7 @@ $page_title = 'Add publisher';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="descLabel"> Description </label>
-                    <div> Description of the publisher. This is helpful for discriminating between publishers with similar names.</div>
+                    <div> Description of the publisher. This is helpful for distinguishing publishers with similar names.</div>
                     <textarea class="form-control" id="descLabel" rows="5"></textarea>
                 </div>
                 <div class="form-group">
