@@ -19,7 +19,7 @@ $page_subtitle = 'Review/save';
                 <div id="sticky">
                     <ol class="rvb-steps rvb-steps--vertical mb-5" style="overflow-x:inherit">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content" > <span class="rvb-steps__label  d-none d-lg-block">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label  d-none d-lg-block">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
@@ -59,13 +59,13 @@ $page_subtitle = 'Review/save';
                                             <dt class="col-sm-3">Disclaimer</dt>
                                             <dd class="col-sm-9">--</dd>
                                             <dt class="col-sm-3">Verify Text</dt>
-                                            <dd class="col-sm-9"> <span> I have verified that the above information is up to date and correct. </span> <span > I verify that I have completed the FERPA Compliance Training. </span> </dd>
+                                            <dd class="col-sm-9"> <span> I have verified that the above information is up to date and correct. </span> <span> I verify that I have completed the FERPA Compliance Training. </span> </dd>
                                             <dt class="col-sm-3">Deferral Text</dt>
-                                            <dd class="col-sm-9"> <span > You may also skip this verification for now. </span> </dd>
+                                            <dd class="col-sm-9"> <span> You may also skip this verification for now. </span> </dd>
                                             <dt class="col-sm-3">Verify Button Text</dt>
-                                            <dd class="col-sm-9"> <span > Verify </span> </dd>
+                                            <dd class="col-sm-9"> <span> Verify </span> </dd>
                                             <dt class="col-sm-3">Deferral Button Text</dt>
-                                            <dd class="col-sm-9"> <span > Verify Later </span> </dd>
+                                            <dd class="col-sm-9"> <span> Verify Later </span> </dd>
                                             <dt class="col-sm-3"> Deferral Limit </dt>
                                             <dd class="col-sm-9">--</dd>
                                             <dt class="col-sm-3"> Deferral Wait </dt>
@@ -199,19 +199,19 @@ $page_subtitle = 'Review/save';
                                                             <dd class="col-sm-9">
                                                                 <div class="rbt-expressionbuilder-read-only">
                                                                     <ul>
-                                                                        <li > <span class="badge badge-primary ">User Name</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">thrclark</span> </li>
-                                                                        <li class="and-or"> <span aria-hidden="false" > - or - </span> </li>
-                                                                        <li > <span class="badge badge-primary ">User Name</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">jhopf</span> </li>
-                                                                        <li class="and-or" style=""> <span aria-hidden="false" > - and - </span> </li>
+                                                                        <li> <span class="badge badge-primary ">User Name</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">thrclark</span> </li>
+                                                                        <li class="and-or"> <span aria-hidden="false"> - or - </span> </li>
+                                                                        <li> <span class="badge badge-primary ">User Name</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">jhopf</span> </li>
+                                                                        <li class="and-or" style=""> <span aria-hidden="false"> - and - </span> </li>
                                                                         <li>
-                                                                            <ul >
-                                                                                <li  style=""> <span class="badge badge-primary ">Email Address</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">thrclark@iu.edu</span> </li>
-                                                                                <li class="and-or" style=""> <span aria-hidden="false" > - or - </span> </li>
-                                                                                <li  style=""> <span class="badge badge-primary ">Last Name</span> <span aria-hidden="true" class="ng-hide">is</span> <span aria-hidden="false" >is not</span> <span class="badge badge-secondary">clark</span> </li>
+                                                                            <ul>
+                                                                                <li  style=""> <span class="badge badge-primary ">Email Address</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">thrclark@iu.edu</span> </li>
+                                                                                <li class="and-or" style=""> <span aria-hidden="false"> - or - </span> </li>
+                                                                                <li  style=""> <span class="badge badge-primary ">Last Name</span> <span aria-hidden="true" class="ng-hide">is</span> <span aria-hidden="false">is not</span> <span class="badge badge-secondary">clark</span> </li>
                                                                             </ul>
                                                                         </li>
-                                                                        <li class="and-or"> <span aria-hidden="false" > - or - </span> </li>
-                                                                        <li > <span class="badge badge-primary ">User Name</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">ewestfal</span> </li>
+                                                                        <li class="and-or"> <span aria-hidden="false"> - or - </span> </li>
+                                                                        <li> <span class="badge badge-primary ">User Name</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">ewestfal</span> </li>
                                                                     </ul>
                                                                 </div>
                                                             </dd>
@@ -234,19 +234,19 @@ $page_subtitle = 'Review/save';
                                                             <dd class="col-sm-9">
                                                                 <div class="rbt-expressionbuilder-read-only">
                                                                     <ul>
-                                                                        <li > <span class="badge badge-primary ">User Name</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">thrclark</span> </li>
-                                                                        <li class="and-or"> <span aria-hidden="false" > - or - </span> </li>
-                                                                        <li > <span class="badge badge-primary ">User Name</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">jhopf</span> </li>
-                                                                        <li class="and-or" style=""> <span aria-hidden="false" > - and - </span> </li>
+                                                                        <li> <span class="badge badge-primary ">User Name</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">thrclark</span> </li>
+                                                                        <li class="and-or"> <span aria-hidden="false"> - or - </span> </li>
+                                                                        <li> <span class="badge badge-primary ">User Name</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">jhopf</span> </li>
+                                                                        <li class="and-or" style=""> <span aria-hidden="false"> - and - </span> </li>
                                                                         <li>
-                                                                            <ul >
-                                                                                <li  style=""> <span class="badge badge-primary ">Email Address</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">thrclark@iu.edu</span> </li>
-                                                                                <li class="and-or" style=""> <span aria-hidden="false" > - or - </span> </li>
-                                                                                <li  style=""> <span class="badge badge-primary ">Last Name</span> <span aria-hidden="true" class="ng-hide">is</span> <span aria-hidden="false" >is not</span> <span class="badge badge-secondary">clark</span> </li>
+                                                                            <ul>
+                                                                                <li  style=""> <span class="badge badge-primary ">Email Address</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">thrclark@iu.edu</span> </li>
+                                                                                <li class="and-or" style=""> <span aria-hidden="false"> - or - </span> </li>
+                                                                                <li  style=""> <span class="badge badge-primary ">Last Name</span> <span aria-hidden="true" class="ng-hide">is</span> <span aria-hidden="false">is not</span> <span class="badge badge-secondary">clark</span> </li>
                                                                             </ul>
                                                                         </li>
-                                                                        <li class="and-or"> <span aria-hidden="false" > - or - </span> </li>
-                                                                        <li > <span class="badge badge-primary ">User Name</span> <span aria-hidden="false" >is</span> <span class="badge badge-secondary">ewestfal</span> </li>
+                                                                        <li class="and-or"> <span aria-hidden="false"> - or - </span> </li>
+                                                                        <li> <span class="badge badge-primary ">User Name</span> <span aria-hidden="false">is</span> <span class="badge badge-secondary">ewestfal</span> </li>
                                                                     </ul>
                                                                 </div>
                                                             </dd>
@@ -319,7 +319,7 @@ $page_subtitle = 'Review/save';
     var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
 	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
 </script> 
-<script >
+<script>
     $(document).ready(function() {
         $('#status').click(function() {
             if ($(this).is(':checked')) {

@@ -34,7 +34,7 @@ $page_subtitle = 'Setup';
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Recipients</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Scheduling</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a> </li>
-                        <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" > <span class="rvb-steps__label"><span class="sr-only">Review/save</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </a> </li>
+                        <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Review/save</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i> </span> </a> </li>
                     </ol>
                 </div>
                 <div class="row">
@@ -42,24 +42,36 @@ $page_subtitle = 'Setup';
                         <div class="form-group">
                             <label class="control-label" for="nameLabel"> Name </label>
                             <div class="" id="nameLabel"> The name of this verification. It will be displayed on the main verification page.</div>
-                            <input aria-labelledby="nameLabel" value="" ccfvalidated="" class="form-control" id="isinvalid" formcontrolname="name" type="text">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input aria-labelledby="nameLabel" value="" ccfvalidated="" class="form-control" id="isinvalid" formcontrolname="name" type="text">
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="keyLabel"> Unique Key </label>
                             <div class="" id=""> This uniquely identifies this verification in the application. </div>
-                            <input value="" aria-labelledby="keyLabel" ccfvalidated="" class="form-control" id="keyLabel" formcontrolname="clientid" type="text">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input value="" aria-labelledby="keyLabel" ccfvalidated="" class="form-control" id="keyLabel" formcontrolname="clientid" type="text">
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="publisherLabel"> Publisher </label>
                             <div class="" id=""> The owner of this verification </div>
-                            <select class="form-control" id="publisherLabel">
-                                <option value="?" selected="selected"></option>
-                                <option label="ESI One.IU Team" value="number:1040">ESI One.IU Team</option>
-                                <option label="HR" value="number:1120">HR</option>
-                                <option label="IMS" value="number:1080">IMS</option>
-                                <option label="ryantest" value="number:1140">ryantest</option>
-                                <option label="Student Services" value="number:1000">Student Services</option>
-                            </select>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="publisherLabel">
+                                        <option value="?" selected="selected"></option>
+                                        <option label="ESI One.IU Team" value="number:1040">ESI One.IU Team</option>
+                                        <option label="HR" value="number:1120">HR</option>
+                                        <option label="IMS" value="number:1080">IMS</option>
+                                        <option label="ryantest" value="number:1140">ryantest</option>
+                                        <option label="Student Services" value="number:1000">Student Services</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="descriptionLabel"> Description (optional) </label>
@@ -74,10 +86,14 @@ $page_subtitle = 'Setup';
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Verify Text</label>
                             <div class="" id=""> The text that will display for the verify checkbox for this verification.</div>
-                            <select class="form-control" id="verify_now_select" name="select">
-                                <option value="verify_now_standard"> Use Default Text </option>
-                                <option value="verify_now_custom"> Enter Custom Text </option>
-                            </select>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="verify_now_select" name="select">
+                                        <option value="verify_now_standard"> Use Default Text </option>
+                                        <option value="verify_now_custom"> Enter Custom Text </option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group ">
                             <div style=" display:block">
@@ -92,10 +108,14 @@ $page_subtitle = 'Setup';
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Deferral Text</label>
                             <div class="" id=""> The text that will display for the deferral for this verification.</div>
-                            <select class="form-control" id="defer_now_select" name="select">
-                                <option value="defer_now_standard"> Use Default Text </option>
-                                <option value="defer_now_custom"> Enter Custom Text </option>
-                            </select>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="defer_now_select" name="select">
+                                        <option value="defer_now_standard"> Use Default Text </option>
+                                        <option value="defer_now_custom"> Enter Custom Text </option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group ">
                             <div style=" display:block">
@@ -110,37 +130,61 @@ $page_subtitle = 'Setup';
                         <div class="form-group">
                             <label class="control-label" for="verify_button_select"> Verify Button Text</label>
                             <div class="" id=""> The text that will display on the verify button for this verification.</div>
-                            <select class="form-control" id="verify_button_select" name="select">
-                                <option value="verify_button_standard"> Use Default Text </option>
-                                <option value="verify_button_custom"> Enter Custom Text </option>
-                            </select>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="verify_button_select" name="select">
+                                        <option value="verify_button_standard"> Use Default Text </option>
+                                        <option value="verify_button_custom"> Enter Custom Text </option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <div style=" display:block">
                                 <label class="sr-only" for="verify_button_standard"> Verify button default label </label>
-                                <input type="text" class="form-control" id="verify_button_standard" disabled="" style="display: block;" value="Verify">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <input type="text" class="form-control" id="verify_button_standard" disabled="" style="display: block;" value="Verify">
+                                    </div>
+                                </div>
                             </div>
                             <div id="verify_button_custom" style="display: none;">
                                 <label class="sr-only" for="verify_button_custom_label"> Verify button custom label </label>
-                                <input type="text" class="form-control" id="verify_button_custom_label" value="" placeholder="Custom label">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <input type="text" class="form-control" id="verify_button_custom_label" value="" placeholder="Custom label">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="defer_button_select"> Deferral Button Text</label>
                             <div class="" id=""> The text that will display on the deferral button for this verification.</div>
-                            <select class="form-control" id="defer_button_select" name="select">
-                                <option value="defer_button_standard"> Use Default Text </option>
-                                <option value="defer_button_custom"> Enter Custom Text </option>
-                            </select>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="defer_button_select" name="select">
+                                        <option value="defer_button_standard"> Use Default Text </option>
+                                        <option value="defer_button_custom"> Enter Custom Text </option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <div style=" display:block">
-                                <label class="sr-only" for="defer_button_standard"> Deferral button default label </label>
-                                <input type="text" class="form-control" id="defer_button_standard" disabled="" style="display: block;" value="Defer">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <label class="sr-only" for="defer_button_standard"> Deferral button default label </label>
+                                        <input type="text" class="form-control" id="defer_button_standard" disabled="" style="display: block;" value="Defer">
+                                    </div>
+                                </div>
                             </div>
                             <div id="defer_button_custom" style="display: none;">
-                                <label class="sr-only" for="defer_button_custom_label"> Deferral button custom label </label>
-                                <input type="text" class="form-control" id="defer_button_custom_label" value="" placeholder="Custom label">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <label class="sr-only" for="defer_button_custom_label"> Deferral button custom label </label>
+                                        <input type="text" class="form-control" id="defer_button_custom_label" value="" placeholder="Custom label">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">

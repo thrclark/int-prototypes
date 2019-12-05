@@ -21,7 +21,7 @@ $page_title = 'VERIFY';
             </button>
             <div class="dropdown-menu dropdown-menu-right"> <!--<span class="dropdown-item-text d-lg-none"><i class="rbt-icon-user-solid"></i> thrclark</span>
                 <div class="dropdown-divider d-lg-none"></div>--> 
-                <a class="dropdown-item" href="admin-verifications.php">Administrator</a> </div>
+                <a class="dropdown-item" href="admin-verifications.php">Publishing</a> </div>
         </div>
     </div>
 </header>
@@ -50,10 +50,10 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                 </div>
-                <h2 class="ts-26">Verify your data</h2>
+                <h2>Verify your data</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                 <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
-                <h3 class="ts-26 mt-5">IU Notify</h3>
+                <h3 class="mt-5">IU Notify</h3>
                 <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -84,7 +84,7 @@ $page_title = 'VERIFY';
                         <button class="btn btn-sm btn-outline-primary">Edit</button>
                     </li>
                 </ul>
-                <h3 class="ts-26 mt-5">Military Status</h3>
+                <h3 class="mt-5">Military Status</h3>
                 <p>Indiana University periodically invites all employees to update their veteran status. At this time, we ask all employees to review their current status below and click edit if this information is incorrect. Definitions of each veteran category can be seen by clicking the edit button. Data collected will be used for reporting and analysis purposes and will not be used against you in anyway.</p>
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -97,7 +97,7 @@ $page_title = 'VERIFY';
                 </ul>
             </div>
         </div>
-        <div class="int-verify-controls p-3">
+        <div class="int-verify-controls py-3">
             <p class="border-bottom">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
             <div class="row mb-5" id="demojs_revealskipscreen">
                 <div class="col-md-6 d-flex pb-5 pb-md-0">

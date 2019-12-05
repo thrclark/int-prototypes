@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'Default verify button text';
+$page_title = 'Update server';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,17 +17,17 @@ $page_title = 'Default verify button text';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb rbt-breadcrumb-no-bkg">
-                        <li class="breadcrumb-item"><a href="admin-settings-general.php">General settings</a></li>
+                        <li class="breadcrumb-item"><a href="admin-admin-sysparam.php">System parameters</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
                     </ol>
                 </nav>
                 <div class="form-group">
-                    <label for="textinput-full" class="ts-26">Default verify button text</label>
-                    <div>Text to be displayed on the Verification button. This can be overridden by an individual verification.</div>
-                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
+                    <label for="ghjkfrtyn" class="ts-26">Update server</label>
+                    <div>Enter the name of one of the servers that will be used for updating new data on releases.</div>
+                    <input type="text" class="form-control" id="ghjkfrtyn" aria-describedby="ghjkfrtyn">
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
         </div>
     </main>

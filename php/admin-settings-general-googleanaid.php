@@ -17,14 +17,14 @@ $page_title = 'Google Analytics ID';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
                 <nav aria-label="breadcrumb" role="navigation">
                     <ol class="breadcrumb rbt-breadcrumb-no-bkg">
-                        <li class="breadcrumb-item"><a href="admin-settings-genereal.php">General settings</a></li>
+                        <li class="breadcrumb-item"><a href="admin-settings-general.php">General settings</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
                     </ol>
                 </nav>
                 <div class="form-group">
                     <label for="textinput-full" class="ts-26">Google Analytics ID</label>
                     <div>The ID assigned to your domain in the Google Analytics administration tool.</div>
-                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput" >
+                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
@@ -32,5 +32,6 @@ $page_title = 'Google Analytics ID';
         </div>
     </main>
 </div>
+<?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

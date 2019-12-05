@@ -64,7 +64,7 @@ $page_title = 'View/Reset User Verifications';
 	
 	
 	
-<script >
+<script>
     $(document).ready(function() {
         $("#search").click(function() {
             $(".demojs-searchresults").show();

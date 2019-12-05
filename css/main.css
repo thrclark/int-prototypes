@@ -15681,7 +15681,7 @@ html .int-brand-image {
 }
 html .int-lockup-group {
   display: var(--lockup-visibility);
-  font-family: var(--font-header);
+  font-family: var(--font_header);
 }
 html .int-user {
   background-color: var(--body-bg-color);
@@ -15718,24 +15718,29 @@ html .int-user header .int-lockup-group .int-lockup-pagetitle {
 }
 html .int-user header .rbt-header-avatar-id {
   color: var(--body-text-color);
-  font-family: var(--font-body);
+  font-family: var(--font_body);
+}
+html .int-user main section, html .int-user .main section {
+  color: var(--body-text-color);
+  font-family: var(--font_body);
+  font-size: var(--base_bodyfont_size);
 }
 html .int-user main section .border, html .int-user main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user main section .card, html .int-user main section .border-bottom, html .int-user .main section .border, html .int-user .main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user .main section .card, html .int-user .main section .border-bottom {
   border-color: var(--border-color) !important;
 }
 html .int-user main section .card, html .int-user .main section .card {
-  line-height: var(--base_line_height);
-  font-size: var(--base_font_size);
+  font-size: var(--base_bodyfont_size);
   border-radius: var(--theme_border_radius);
   background-color: var(--panel-bg-color);
 }
 html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
-  font-family: var(--font-header);
+  font-family: var(--font_header);
+  font-size: var(--base_headerfont_size);
 }
 html .int-user main section .card .card-body, html .int-user .main section .card .card-body {
   color: var(--panel-text-color);
   padding: 2rem 2.5rem 2.5rem;
-  font-family: var(--font-body);
+  font-family: var(--font_body);
 }
 html .int-user main section .card .card-body a, html .int-user .main section .card .card-body a {
   color: var(--action-color);
@@ -15768,8 +15773,8 @@ html .int-user main section .card .card-body .list-group .list-group-item .btn-o
 }
 html .int-user main section .int-verify-controls, html .int-user .main section .int-verify-controls {
   color: var(--body-text-color);
-  font-family: var(--font-body);
-  font-size: var(--base_font_size);
+  font-family: var(--font_body);
+  font-size: var(--base_bodyfont_size);
 }
 html .int-user main section .int-verify-controls input[type=checkbox] + label:before, html .int-user main section .int-verify-controls input[type=checkbox] + input + label:before, html .int-user .main section .int-verify-controls input[type=checkbox] + label:before, html .int-user .main section .int-verify-controls input[type=checkbox] + input + label:before {
   box-shadow: 0 0 0 0.08rem var(--body-text-color);
@@ -15856,6 +15861,22 @@ button[data-theme] {
 
 .colorpick label {
   font-size: 1rem !important;
+}
+
+.int-fontlinks .list-group-item .int-fontlink-checker {
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  left: 0;
+  display: flex;
+}
+.int-fontlinks .list-group-item:hover .int-fontlink-checker {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
