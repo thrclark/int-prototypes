@@ -16,7 +16,7 @@ $page_title = 'Google Analytics';
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="form-group">
-                    <label class="control-label" for="ldap_url"> Google Analytics Rollup ID</label>
+                    <label class="control-label" for="ldap_url"> Google Analytics rollup ID</label>
                     <div>Specify a Google Analytics ID to which tenant data will be submitted.</div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
@@ -64,8 +64,10 @@ $page_title = 'Google Analytics';
             });
         });
     });
+
 </script> 
-<script >
+<script>
+
     $(document).ready(function() {
 
         $(".form-check-input").click(function() {
