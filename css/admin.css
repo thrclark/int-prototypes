@@ -15266,9 +15266,126 @@ button[aria-expanded=true] .rbt-icon-chevron-right:before {
   --theme_page_margin: 880;
 }
 
-html body {
+body {
   background-color: var(--body-bg-color);
 }
+body a {
+  color: var(--action-color);
+}
+body a:hover {
+  color: var(--action-color);
+}
+body .btn-primary {
+  border-radius: var(--theme_border_radius);
+  background-color: var(--action-color);
+  border-color: var(--action-color);
+}
+body .btn-primary:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+}
+body .btn-primary:hover {
+  background-color: var(--action-color);
+  border-color: var(--action-color);
+}
+body .btn-outline-primary, body ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body label.img-ul-button {
+  border-radius: var(--theme_border_radius);
+  border-color: var(--action-color);
+  color: var(--action-color);
+}
+body .btn-outline-primary:focus, body ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload body label.img-ul-button:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+}
+body .btn-link {
+  color: var(--action-color);
+}
+body input[type=checkbox]:checked + label:before, body input[type=checkbox]:checked + input + label:before {
+  background-color: var(--action-color);
+  box-shadow: 0 0 0 2px var(--action-color);
+}
+body .dropdown-item:hover {
+  background-color: var(--action-color);
+}
+body .rbt-app-header .nav .nav-item a:focus, body .rbt-app-header .nav .nav-item button:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+}
+body a:focus, body button:focus {
+  outline: 0.125rem solid var(--action-color);
+  outline-offset: 0.125rem;
+}
+body input[type=checkbox]:focus + label:before, body input[type=checkbox]:focus + input + label:before {
+  box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+}
+body input[type=checkbox]:checked:focus + label:before, body input[type=checkbox]:checked:focus + input + label:before {
+  box-shadow: 0 0 0 0.08rem #006298, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+}
+body.int-admin {
+  color: var(--body-text-color);
+}
+body.int-admin .rbt-app-header.rbt-app-header--light {
+  background-color: var(--panel-bg-color);
+}
+body.int-admin .rbt-app-header.rbt-app-header--light .rbt-brand-title {
+  color: var(--panel-text-color);
+}
+body.int-admin .rbt-app-header.rbt-app-header--light .nav .nav-link {
+  color: var(--panel-text-color);
+}
+body.int-admin .table {
+  color: var(--body-text-color);
+}
+body.int-admin .table th {
+  color: #444444;
+}
+body.int-admin a.rvb-steps__item-content:hover .rvb-steps__indicator,
+body.int-admin a.rvb-steps__item-content:focus .rvb-steps__indicator,
+body.int-admin a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
+  background-color: var(--action-color);
+  color: #ffffff;
+  border-color: var(--action-color);
+}
+body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions .btn.active, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.active.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions label.active.img-ul-button {
+  background: var(--action-color);
+}
+body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions .btn, ccf-image-upload image-upload .img-ul .img-ul-file-upload body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, body.int-admin ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
+  color: var(--action-color);
+}
+body.int-admin .btn-primary:not(:disabled):not(.disabled):active, body.int-admin .btn-primary:not(:disabled):not(.disabled).active, body.int-admin .show > .btn-primary.dropdown-toggle {
+  border-color: var(--action-color);
+  color: #fff;
+}
+body.int-admin .rvb-switch.rvb-switch-primary input:checked + .rvb-slider {
+  background-color: var(--action-color);
+}
+body.int-admin .rvb-switch input:focus + .rvb-slider {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+}
+body.int-admin .int-tabs .nav-item .nav-link.active {
+  border-bottom: solid 4px var(--action-color);
+}
+body.int-admin .rbt-collapse-accordion .card h1 button:focus,
+body.int-admin .rbt-collapse-accordion .card h2 button:focus,
+body.int-admin .rbt-collapse-accordion .card h3 button:focus,
+body.int-admin .rbt-collapse-accordion .card h4 button:focus,
+body.int-admin .rbt-collapse-accordion .card h5 button:focus,
+body.int-admin .rbt-collapse-accordion .card h6 button:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+}
+body.int-admin .form-control:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+}
+body.int-admin .nav-pills .nav-item .nav-link:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color) !important;
+  background-color: var(--action-color);
+  color: #ffffff;
+  border: solid 1px var(--action-color);
+}
+body.int-user {
+  color: var(--body-text-color);
+}
+body.int-user .rbt-shell-sidebar {
+  color: #444444;
+}
+
 html body header .int-brand-image {
   content: var(--logo-image-url);
   max-height: 72px;
@@ -15284,12 +15401,6 @@ html body .main-content .int-tabs .nav-item .nav-link {
   border-bottom: solid 4px transparent;
   border-radius: 0px;
   padding: 1rem 1.25rem;
-}
-html body .main-content .int-tabs .nav-item .nav-link:hover {
-  border-bottom: solid 4px #dddddd;
-}
-html body .main-content .int-tabs .nav-item .nav-link.active {
-  border-bottom: solid 4px #006298;
 }
 html body .main-content .int-tabs + .tab-content {
   border: none;

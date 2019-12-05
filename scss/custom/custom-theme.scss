@@ -16,3 +16,165 @@
   --theme_page_margin: 880;
 
 }
+
+body {
+  background-color: var(--body-bg-color);
+  a {
+    color: var(--action-color);
+    &:hover {
+      color: var(--action-color);
+    }
+  }
+  .btn-primary {
+    border-radius: var(--theme_border_radius);
+    background-color: var(--action-color);
+    border-color: var(--action-color);
+    &:focus {
+      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+    }
+    &:hover {
+      background-color: var(--action-color);
+      border-color: var(--action-color);
+    }
+  }
+  .btn-outline-primary {
+    border-radius: var(--theme_border_radius);
+    border-color: var(--action-color);
+    color: var(--action-color);
+    //background-color: var(--panel-bg-color);
+    &:focus {
+      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+    }
+  }
+
+  .btn-link {
+
+    color: var(--action-color);
+
+  }
+
+  input[type=checkbox]:checked + label:before, input[type=checkbox]:checked + input + label:before {
+
+    background-color: var(--action-color);
+    box-shadow: 0 0 0 2px var(--action-color);
+
+  }
+  .dropdown-item:hover {
+    background-color: var(--action-color);
+
+  }
+
+  .rbt-app-header .nav .nav-item a:focus, .rbt-app-header .nav .nav-item button:focus {
+    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+  }
+
+  a:focus, button:focus {
+    outline: 0.125rem solid  var(--action-color);
+    outline-offset: 0.125rem;
+  }
+  input[type=checkbox]:focus + label:before, input[type=checkbox]:focus + input + label:before {
+    box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+  }
+
+  input[type=checkbox]:checked:focus + label:before, input[type=checkbox]:checked:focus + input + label:before {
+    box-shadow: 0 0 0 0.08rem #006298, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+  }
+
+  //specific theming to admin screens
+  &.int-admin {
+    color: var(--body-text-color);
+    .rbt-app-header {
+      &.rbt-app-header--light {
+        background-color: var(--panel-bg-color);
+        .rbt-brand-title {
+          color: var(--panel-text-color);
+        }
+        .nav {
+          .nav-link {
+            color: var(--panel-text-color);
+          }
+        }
+        }
+    }
+    .table {
+      color: var(--body-text-color);
+      th {
+        color: $color-black--900;
+      }
+    }
+
+
+    a.rvb-steps__item-content:hover .rvb-steps__indicator,
+    a.rvb-steps__item-content:focus .rvb-steps__indicator,
+    a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
+      background-color: var(--action-color);
+      color: $color-white;
+      border-color: var(--action-color);
+    }
+    .rbt-expressionbuilder .rules-group-container .group-conditions .btn.active {
+      background: var(--action-color);
+
+    }
+
+    .rbt-expressionbuilder .rules-group-container .group-conditions .btn, .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
+
+      color:  var(--action-color);
+    }
+
+    .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+
+      border-color: var(--action-color);
+      color: $white;
+    }
+
+    .rvb-switch.rvb-switch-primary input:checked + .rvb-slider {
+      background-color: var(--action-color);
+    }
+    .rvb-switch input:focus + .rvb-slider {
+      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+    }
+
+    .int-tabs .nav-item .nav-link.active {
+      border-bottom: solid 4px var(--action-color);
+    }
+
+    .rbt-collapse-accordion .card h1 button:focus,
+    .rbt-collapse-accordion .card h2 button:focus,
+    .rbt-collapse-accordion .card h3 button:focus,
+    .rbt-collapse-accordion .card h4 button:focus,
+    .rbt-collapse-accordion .card h5 button:focus,
+    .rbt-collapse-accordion .card h6 button:focus {
+      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+
+    }
+    .form-control:focus {
+      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+
+    }
+
+    .nav-pills .nav-item .nav-link:focus {
+      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color) !important;
+      background-color: var(--action-color);
+      color: #ffffff;
+      border: solid 1px var(--action-color);
+
+    }
+
+
+  }
+  //specific theming to end user screens
+  &.int-user {
+    color: var(--body-text-color);
+
+    .rbt-shell-sidebar {
+      color: $color-black--900;
+    }
+  }
+}
+
+
+
+
+
+
+
