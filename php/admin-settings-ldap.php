@@ -45,7 +45,7 @@ $page_title = 'LDAP Configuration';
                     <label class="control-label" for="ldap_base">Base </label>
                     <div> LDAP base information. (example: ou=myOu,dc=ads,dc=myDomain,dc=edu). </div>
                     <div class="row">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_base" type="text">
                         </div>
                     </div>
@@ -54,7 +54,7 @@ $page_title = 'LDAP Configuration';
                     <label class="control-label" for="ldap_username">User name </label>
                     <div> LDAP account user name. (example: cn=myUser,ou=myOu,dc=ads,dc=myDomain,dc=edu). </div>
                     <div class="row">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12">
                             <input value="" aria-labelledby="" class="form-control" id="ldap_username" type="text">
                         </div>
                     </div>
