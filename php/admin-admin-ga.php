@@ -28,15 +28,15 @@ $page_title = 'Google Analytics';
                 <div class="mb-3">Select the tenants that will submit data to the specified Google Analytics ID.</div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                    <label class="form-check-label" for="defaultCheck1">Classifieds.IU STG </label>
+                    <label class="form-check-label" for="defaultCheck1">Tenant1.IU CNV </label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                    <label class="form-check-label" for="defaultCheck2">Classifieds.IU STG</label>
+                    <label class="form-check-label" for="defaultCheck2">Tenant2.IU STG</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                    <label class="form-check-label" for="defaultCheck3">Classifieds.IU PRD</label>
+                    <label class="form-check-label" for="defaultCheck3">Tenant3.IU PRD</label>
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher">
@@ -64,17 +64,16 @@ $page_title = 'Google Analytics';
             });
         });
     });
-</script>
-	
-	
-<script >
+
+</script> 
+<script>
+
     $(document).ready(function() {
 
         $(".form-check-input").click(function() {
            $("#submitform").prop('disabled', false);
         });
     }); 
-</script> 
-	
+</script>
 </body>
 </html>

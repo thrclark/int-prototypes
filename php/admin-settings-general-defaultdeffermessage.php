@@ -24,10 +24,10 @@ $page_title = 'Default defer message';
                 <div class="form-group">
                     <label for="textinput-full" class="ts-26">Default defer message</label>
                     <div>Text to be displayed next to the Defer option. This can be overridden by an individual verification.</div>
-                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput" >
+                    <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5"> <a href="admin-settings-general.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-settings-general.php"> Cancel </a> </div>
             </div>
         </div>
     </main>

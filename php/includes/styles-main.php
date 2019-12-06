@@ -10,10 +10,10 @@
  --panel-bg-color: #ffffff;
  --panel-text-color: #444444;
  --action-color: #006298;
- --font-header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
- --font-body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
- --base_font_size: 1rem;
- --base_line_height: 1.5;
+ --font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+ --font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+ --base_headerfont_size: 2rem;
+ --base_bodyfont_size: 1rem;
  --border-color:#dddddd;
  --theme_border_radius: 0.25rem;
  --theme_page_margin: 880;
@@ -21,7 +21,7 @@
 }
 .demo-theme-builder input[type="color"] {
 	-webkit-appearance: none;s
- border: 1px solid $color-black--800;
+ border: 1px solid black;
 	width: 3rem;
 	flex: inherit;
 	outline: 0;

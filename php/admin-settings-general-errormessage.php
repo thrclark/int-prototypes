@@ -27,7 +27,7 @@ $page_title = 'Error message';
                     <textarea class="form-control" id="textarea-full" rows="5" placeholder="There is a system error that is currently preventing verification of your information. Please skip verification at this time to proceed with your login. You will be prompted to verify your information at a later time."></textarea>
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-notificationtype.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-notificationtype.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5"> <a href="admin-settings-general.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-settings-general.php"> Cancel </a> </div>
             </div>
         </div>
     </main>

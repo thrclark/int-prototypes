@@ -24,7 +24,7 @@ $page_title = 'Update server';
                 <div class="form-group">
                     <label for="ghjkfrtyn" class="ts-26">Update server</label>
                     <div>Enter the name of one of the servers that will be used for updating new data on releases.</div>
-                    <input type="text" class="form-control" id="ghjkfrtyn" aria-describedby="ghjkfrtyn" >
+                    <input type="text" class="form-control" id="ghjkfrtyn" aria-describedby="ghjkfrtyn">
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-admin-sysparam.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
