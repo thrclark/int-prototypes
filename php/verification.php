@@ -138,7 +138,6 @@ $page_title = 'VERIFY';
         </div>
     </section>
 </main>
-<?php include('includes/custom-footer.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>

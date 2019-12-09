@@ -10501,13 +10501,14 @@ h3 {
 }
 
 .badge {
-  font-size: 80% !important;
+  font-size: 88% !important;
   letter-spacing: 0.02rem !important;
-  line-height: 1.5 !important;
+  line-height: 1.6 !important;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
   display: inline-block;
   border: 2px solid;
+  padding: 0.03125em 0.5rem;
 }
 .badge.badge-secondary {
   border-color: #cccccc;
@@ -11259,8 +11260,8 @@ input[type=radio]:disabled + label:before, input[type=radio]:disabled + input + 
   box-shadow: 0 0 0 0.08rem #cccccc;
 }
 input[type=radio]:checked:disabled + label:before, input[type=radio]:checked:disabled + input + label:before {
-  background-color: #cccccc;
-  box-shadow: inset 0 0 0 3px #dddddd, 0 0 0 2px #cccccc;
+  background-color: #777777;
+  box-shadow: inset 0 0 0 0.125rem #dddddd, 0 0 0 0.08rem #777777;
 }
 input[type=radio]:checked:focus + label:before, input[type=radio]:checked:focus + input + label:before {
   box-shadow: inset 0 0 0 0.125rem #ffffff, 0 0 0 0.125rem #006298, 0 0 0 0.3125rem rgba(0, 98, 152, 0.7);
@@ -11939,6 +11940,13 @@ ul li, ol li {
   }
   .table.rbt-table-responsive td:last-child .rbt-table-responsive-cell-content, .table.rbt-table-responsive th:last-child .rbt-table-responsive-cell-content {
     border-bottom: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .rbt-table-actions td:last-child {
+    width: auto !important;
+    text-align: left !important;
+    white-space: normal !important;
   }
 }
 .ts-12,
@@ -12973,30 +12981,37 @@ a:focus, button:focus {
 .spinner-border.rbt-spinner--xxs {
   width: 1rem;
   height: 1rem;
+  border-width: 0.125rem;
 }
 .spinner-border.rbt-spinner--xs {
   width: 1.25rem;
   height: 1.25rem;
+  border-width: 0.15625rem;
 }
 .spinner-border.rbt-spinner--sm {
   width: 1.75rem;
   height: 1.75rem;
+  border-width: 0.21875rem;
 }
 .spinner-border.rbt-spinner--md {
   width: 2rem;
   height: 2rem;
+  border-width: 0.25rem;
 }
 .spinner-border.rbt-spinner--lg {
   width: 2.75rem;
   height: 2.75rem;
+  border-width: 0.34375rem;
 }
 .spinner-border.rbt-spinner--xl {
   width: 3.25rem;
   height: 3.25rem;
+  border-width: 0.40625rem;
 }
 .spinner-border.rbt-spinner--xxl {
   width: 4rem;
   height: 4rem;
+  border-width: 0.5rem;
 }
 
 .list-group .list-group-item.active {
@@ -14316,6 +14331,14 @@ growls {
   padding-bottom: 6px;
   background: #ffffff;
   width: 100%;
+}
+.rbt-expressionbuilder .rules-group-container .group-conditions .btn, .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
+  background: #fff;
+  color: #006298;
+}
+.rbt-expressionbuilder .rules-group-container .group-conditions .btn.active, .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.active.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.active.img-ul-button {
+  background: #006298;
+  color: #fff;
 }
 .rbt-expressionbuilder .rules-group-container .rules-group-header {
   margin-bottom: 10px;
@@ -15651,6 +15674,156 @@ button[aria-expanded=true] .rbt-icon-chevron-right:before {
   cursor: text;
 }
 
+:root {
+  --logoimage-visibility: block;
+  --logoimage-url: url("http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png");
+  --lockup-visibility: block;
+  --body-bg-color: #EAEAEA;
+  --body-text-color: #444444;
+  --panel-bg-color: #ffffff;
+  --panel-text-color: #444444;
+  --action-color: #006298;
+  --font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+  --font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+  --base_headerfont_size: 2rem;
+  --base_bodyfont_size: 1rem;
+  --border-color:#dddddd;
+  --theme_border_radius: 0.25rem;
+  --theme_page_margin: 880;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+body a {
+  color: var(--action-color);
+}
+body a:hover {
+  color: var(--action-color);
+}
+body .btn-primary {
+  border-radius: var(--theme_border_radius);
+  background-color: var(--action-color);
+  border-color: var(--action-color);
+}
+body .btn-primary:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+}
+body .btn-primary:hover {
+  background-color: var(--action-color);
+  border-color: var(--action-color);
+}
+body .btn-outline-primary, body ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body label.img-ul-button {
+  border-radius: var(--theme_border_radius);
+  border-color: var(--action-color);
+  color: var(--action-color);
+}
+body .btn-outline-primary:focus, body ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload body label.img-ul-button:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+}
+body .btn-link {
+  color: var(--action-color);
+}
+body input[type=checkbox]:checked + label:before, body input[type=checkbox]:checked + input + label:before {
+  background-color: var(--action-color);
+  box-shadow: 0 0 0 2px var(--action-color);
+}
+body .dropdown-item:hover {
+  background-color: var(--action-color);
+}
+body .rbt-app-header .nav .nav-item a:focus, body .rbt-app-header .nav .nav-item button:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+}
+body a:focus, body button:focus {
+  outline: 0.125rem solid var(--action-color);
+  outline-offset: 0.125rem;
+}
+body input[type=checkbox]:focus + label:before, body input[type=checkbox]:focus + input + label:before {
+  box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+}
+body input[type=checkbox]:checked:focus + label:before, body input[type=checkbox]:checked:focus + input + label:before {
+  box-shadow: 0 0 0 0.08rem #006298, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
+}
+body.int-admin {
+  color: var(--body-text-color);
+}
+body.int-admin .rbt-app-header.rbt-app-header--light {
+  background-color: var(--panel-bg-color);
+}
+body.int-admin .rbt-app-header.rbt-app-header--light .rbt-brand-title {
+  color: var(--panel-text-color);
+}
+body.int-admin .rbt-app-header.rbt-app-header--light .nav .nav-link {
+  color: var(--panel-text-color);
+}
+body.int-admin .table {
+  color: var(--body-text-color);
+}
+body.int-admin .table th {
+  color: #444444;
+}
+body.int-admin .table tr {
+  border-bottom: 1px solid var(--border-color);
+}
+body.int-admin a.rvb-steps__item-content:hover .rvb-steps__indicator,
+body.int-admin a.rvb-steps__item-content:focus .rvb-steps__indicator,
+body.int-admin a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
+  background-color: var(--action-color);
+  color: #ffffff;
+  border-color: var(--action-color);
+}
+body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions .btn.active, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.active.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions label.active.img-ul-button {
+  background: var(--action-color);
+}
+body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions .btn, ccf-image-upload image-upload .img-ul .img-ul-file-upload body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, body.int-admin ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
+  color: var(--action-color);
+}
+body.int-admin .btn-primary:not(:disabled):not(.disabled):active, body.int-admin .btn-primary:not(:disabled):not(.disabled).active, body.int-admin .show > .btn-primary.dropdown-toggle {
+  border-color: var(--action-color);
+  color: #fff;
+}
+body.int-admin .rvb-switch.rvb-switch-primary input:checked + .rvb-slider {
+  background-color: var(--action-color);
+}
+body.int-admin .rvb-switch input:focus + .rvb-slider {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
+}
+body.int-admin .int-tabs .nav-item .nav-link.active {
+  border-bottom: solid 4px var(--action-color);
+}
+body.int-admin .rbt-collapse-accordion .card h1 button:focus,
+body.int-admin .rbt-collapse-accordion .card h2 button:focus,
+body.int-admin .rbt-collapse-accordion .card h3 button:focus,
+body.int-admin .rbt-collapse-accordion .card h4 button:focus,
+body.int-admin .rbt-collapse-accordion .card h5 button:focus,
+body.int-admin .rbt-collapse-accordion .card h6 button:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+}
+body.int-admin .form-control:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
+}
+body.int-admin .nav-pills .nav-item .nav-link:focus {
+  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color) !important;
+  background-color: var(--action-color);
+  color: #ffffff;
+  border: solid 1px var(--action-color);
+}
+body.int-admin .border-right {
+  border-right: 1px solid var(--border-color) !important;
+}
+body.int-admin hr {
+  border-top: 1px solid var(--border-color) !important;
+}
+body.int-admin .int-tabs + .tab-content {
+  border-top: solid 1px var(--border-color) !important;
+}
+body.int-user {
+  color: var(--body-text-color);
+}
+body.int-user .rbt-shell-sidebar {
+  color: #444444;
+}
+
 html .int-brand-image {
   content: var(--logoimage-url);
   max-height: 48px;
@@ -15661,7 +15834,6 @@ html .int-lockup-group {
   font-family: var(--font_header);
 }
 html .int-user {
-  background-color: var(--body-bg-color);
   transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 html .int-user .rbt-shell-sidebar.int-themeclose i:before {
@@ -15686,9 +15858,6 @@ html .int-user .rbt-shell-sidebar .int-themehandle i {
 }
 html .int-user header .dropdown-item-text {
   padding: 0.375rem 1rem;
-}
-html .int-user header .int-lockup-group {
-  color: var(--body-text-color);
 }
 html .int-user header .int-lockup-group .int-lockup-pagetitle {
   letter-spacing: 0.04rem;
@@ -15752,28 +15921,6 @@ html .int-user main section .int-verify-controls, html .int-user .main section .
   color: var(--body-text-color);
   font-family: var(--font_body);
   font-size: var(--base_bodyfont_size);
-}
-html .int-user main section .int-verify-controls input[type=checkbox] + label:before, html .int-user main section .int-verify-controls input[type=checkbox] + input + label:before, html .int-user .main section .int-verify-controls input[type=checkbox] + label:before, html .int-user .main section .int-verify-controls input[type=checkbox] + input + label:before {
-  box-shadow: 0 0 0 0.08rem var(--body-text-color);
-}
-html .int-user main section .int-verify-controls input[type=checkbox]:focus + label:before, html .int-user main section .int-verify-controls input[type=checkbox]:focus + input + label:before, html .int-user .main section .int-verify-controls input[type=checkbox]:focus + label:before, html .int-user .main section .int-verify-controls input[type=checkbox]:focus + input + label:before {
-  box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
-}
-html .int-user main section .int-verify-controls .rbt-button-group .btn-primary, html .int-user .main section .int-verify-controls .rbt-button-group .btn-primary {
-  border-radius: var(--theme_border_radius);
-  background-color: var(--action-color);
-  border-color: var(--action-color);
-}
-html .int-user main section .int-verify-controls .rbt-button-group .btn-primary:focus, html .int-user .main section .int-verify-controls .rbt-button-group .btn-primary:focus {
-  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
-}
-html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button, html .int-user .main section .int-verify-controls .rbt-button-group .btn-outline-primary, html .int-user .main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .int-verify-controls .rbt-button-group label.img-ul-button {
-  border-radius: var(--theme_border_radius);
-  border-color: var(--action-color);
-  color: var(--action-color);
-}
-html .int-user main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .int-verify-controls .rbt-button-group label.img-ul-button:focus, html .int-user .main section .int-verify-controls .rbt-button-group .btn-outline-primary:focus, html .int-user .main section .int-verify-controls .rbt-button-group ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .int-verify-controls .rbt-button-group label.img-ul-button:focus {
-  box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
 }
 html .int-user .popover {
   top: -31px !important;

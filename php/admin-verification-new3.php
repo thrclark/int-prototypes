@@ -9,7 +9,7 @@ $page_subtitle = 'Recipient rulesets';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
 </head>
-<body>
+<body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
@@ -34,8 +34,7 @@ $page_subtitle = 'Recipient rulesets';
                     <div class="col-auto">
                         <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Ruleset</button>
                     </div>
-                </div>
-                <div id="sticky2" class="bg-white pb-2 d-sm-none rbt-z-1000">
+                </div> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
                     <ol class="rvb-steps mb-5 d-sm-none">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>

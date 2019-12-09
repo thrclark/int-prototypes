@@ -15,7 +15,6 @@ html {
     font-family: var(--font_header);
   }
   .int-user {
-    background-color: var(--body-bg-color);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     .rbt-shell-sidebar {
       &.int-themeclose {
@@ -60,7 +59,7 @@ html {
       }
 
       .int-lockup-group {
-        color: var(--body-text-color);
+
         @extend .pl-2;
         .int-lockup-org {
           @extend .ts-14;
@@ -147,34 +146,9 @@ html {
           font-family: var(--font_body);
           font-size: var(--base_bodyfont_size);
 
-          input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
 
-            box-shadow: 0 0 0 0.08rem var(--body-text-color);
-
-          }
-
-          input[type="checkbox"]:focus + label:before, input[type="checkbox"]:focus + input + label:before {
-            box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color);
-          }
           .rbt-button-group {
-            .btn-primary {
-              border-radius: var(--theme_border_radius);
-              background-color: var(--action-color);
-              border-color: var(--action-color);
-              &:focus {
-                box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
-              }
-            }
-            .btn-outline-primary {
-              border-radius: var(--theme_border_radius);
-              border-color: var(--action-color);
-              color: var(--action-color);
-              //background-color: var(--panel-bg-color);
-              &:focus {
-                box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
-              }
 
-            }
           }
         }
 
@@ -187,6 +161,8 @@ html {
       left: 18px !important;
     }
   }
+
+
 }
 
 
