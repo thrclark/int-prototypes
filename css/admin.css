@@ -15336,6 +15336,9 @@ body.int-admin .table {
 body.int-admin .table th {
   color: #444444;
 }
+body.int-admin .table tr {
+  border-bottom: 1px solid var(--border-color);
+}
 body.int-admin a.rvb-steps__item-content:hover .rvb-steps__indicator,
 body.int-admin a.rvb-steps__item-content:focus .rvb-steps__indicator,
 body.int-admin a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
@@ -15378,6 +15381,12 @@ body.int-admin .nav-pills .nav-item .nav-link:focus {
   background-color: var(--action-color);
   color: #ffffff;
   border: solid 1px var(--action-color);
+}
+body.int-admin .border-right {
+  border-right: 1px solid var(--border-color) !important;
+}
+body.int-admin hr {
+  border-top: 1px solid var(--border-color) !important;
 }
 body.int-user {
   color: var(--body-text-color);

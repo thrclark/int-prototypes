@@ -98,8 +98,12 @@ body {
     }
     .table {
       color: var(--body-text-color);
+
       th {
         color: $color-black--900;
+      }
+      tr {
+        border-bottom: 1px solid  var(--border-color);
       }
     }
 
@@ -158,6 +162,14 @@ body {
       color: #ffffff;
       border: solid 1px var(--action-color);
 
+    }
+
+    .border-right {
+      border-right: 1px solid var(--border-color) !important;
+    }
+    hr {
+
+      border-top: 1px solid  var(--border-color) !important;
     }
 
 

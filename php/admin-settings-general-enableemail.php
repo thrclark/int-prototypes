@@ -34,11 +34,7 @@ $page_title = 'Enable email';
                     </div>
                 </div>
                 <hr>
-<<<<<<< HEAD
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-settings-general.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-settings-general.php"> Cancel </a> </div>
-=======
                 <div class="rbt-button-group mt-3 mb-5"> <a href="admin-settings-general.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary"  href="admin-settings-general.php"> Cancel </a> </div>
->>>>>>> master
             </div>
         </div>
     </main>
