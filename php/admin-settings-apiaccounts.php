@@ -16,7 +16,7 @@ $page_title = 'API Accounts';
             <div class="col">
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
-            <div class="col-auto"> <a href="admin-settings-apiaccounts-sources.php" class="btn btn-sm btn-outline-primary"> External sources</a>
+            <div class="col-auto"> <!--<a href="admin-settings-apiaccounts-sources.php" class="btn btn-sm btn-outline-primary"> External sources</a>-->
                 <div class="dropdown d-inline">
                     <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> API documentation </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-hidden="true" role="menu" aria-labelledby="dropdownMenuButton1"> <a class="dropdown-item" href="#">Version 1 </a> <a class="dropdown-item" href="#">Version 2 </a> <a class="dropdown-item" href="#">Version 3 </a> </div>
@@ -26,21 +26,21 @@ $page_title = 'API Accounts';
         <table class="table rbt-table-responsive rbt-table-actions">
             <thead>
                 <tr>
+                    <th>Status</th>
                     <th>Name</th>
                     <th>Type</th>
                     <th>Expires</th>
-                    <th>Locked </th>
-                    <th>Status</th>
+                    <th>Email </th>
                     <th><span class="sr-only">Actions</span></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-lightning mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-open" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="UnEmail"></i></span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Citizenship Status API</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External API </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">aohkse@iu.edu</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
@@ -50,11 +50,11 @@ $page_title = 'API Accounts';
                         </div></td>
                 </tr>
                 <tr>
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-lightning mr-2" style="color: #CCCCCC" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Inactive"></i> <i class="rbt-icon-lock-open" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="UnEmail"></i></span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="tablesaw-cell-content ng-binding">HR Personal Information</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External API </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">naiursd@iu.edu</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
@@ -65,11 +65,11 @@ $page_title = 'API Accounts';
                         </div></td>
                 </tr>
                 <tr>
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-lightning mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-open" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="UnEmail"></i></span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">IU Notify Live Data</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External API </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">-</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">tharoh@iu.edu</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
@@ -80,11 +80,11 @@ $page_title = 'API Accounts';
                         </div></td>
                 </tr>
                 <tr>
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-lightning mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-closed" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Email"></i></span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">IU Notify Maintenance API</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Maintenance API </span></td>
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">No</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">yjalek@iu.edu</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
@@ -95,11 +95,11 @@ $page_title = 'API Accounts';
                         </div></td>
                 </tr>
                 <tr>
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-lightning mr-2 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-open" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="UnEmail"></i></span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">TAM PRD Notifications</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Maintenance API</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Locked</b> <span class="rbt-table-responsive-cell-content ">No</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content ">Active</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">marcte@iu.edu</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
@@ -114,5 +114,10 @@ $page_title = 'API Accounts';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </body>
 </html>
