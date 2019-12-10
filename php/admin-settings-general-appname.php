@@ -8,7 +8,7 @@ $page_title = 'Application name';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
 </head>
-<body>
+<body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
@@ -33,8 +33,5 @@ $page_title = 'Application name';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
-<script>
-var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
-</script>
 </body>
 </html>

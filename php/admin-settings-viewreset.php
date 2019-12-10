@@ -8,7 +8,7 @@ $page_title = 'View/Reset User Verifications';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
 </head>
-<body>
+<body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
