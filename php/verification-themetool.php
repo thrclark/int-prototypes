@@ -93,6 +93,22 @@ $page_title = 'VERIFY';
                                     <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
                                 </ccf-image-upload>
                             </div>
+                            <div class="form-group">
+                                <label>Upload .ico file</label>
+                                <div>For best results, image should be a minimum of 196x196 pixels.</div>
+                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                    <image-upload >
+                                        <div  filedrop="" class="img-ul"  >
+                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload .png file</span>
+                                                    <input  multiple type="file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </image-upload>
+                                    <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                </ccf-image-upload>
+                            </div>
                         </div>
                     </div>
                 </div>
