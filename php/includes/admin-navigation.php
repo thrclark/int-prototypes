@@ -1,5 +1,5 @@
  <a class="rbt-skip-link" href="admin-xxxxxxxxxxxxxxxx.php" tabindex="0">Skip to content</a>
-<header class="d-flex flex-nowrap rbt-app-header"> <img alt="trident" class="int-brand-image mr-3"/>
+<header class="d-flex flex-nowrap rbt-app-header rbt-app-header--light"> <img alt="trident" class="int-brand-image mr-3"/>
     <div class="rbt-brand-title-container flex-grow-1"> <a href="admin-xxxxxxxxxxxxxxxx.php" class="rbt-brand-title"><span class="font-weight-bold">IU Verify</span> Administration </a> </div>
     <nav class="d-none d-lg-block">
         <ul class="nav align-items-center d-flex flex-nowrap mr-5">

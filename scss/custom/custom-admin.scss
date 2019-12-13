@@ -5,50 +5,56 @@
 
 html {
 
-  header {
-    .int-brand-image {
-      content: var(--logo-image-url);
-      max-height: 72px;
-    }
-  }
-  .main-content{
-    h1 {
-      //@extend .mb-5
-    }
-    .int-tabs {
-      .nav-item {
-        margin-right: 0px;
-        .nav-link {
-          z-index: 100;
-          background: none;
-          border: none;
-          color: $body-color;
-          border-bottom: solid 4px transparent;
-          border-radius: 0px;
-          padding: 1rem 1.25rem;
+  body {
 
-          &:hover {
-            border-bottom: solid 4px $color-black--200;
-          }
+    header {
+      .int-brand-image {
+        content: var(--logo-image-url);
+        max-height: 72px;
+      }
+    }
+    .main-content{
 
-          &.active {
-            border-bottom: solid 4px $blue;
+      h1 {
+        //@extend .mb-5
+      }
+      .int-tabs {
+        .nav-item {
+          margin-right: 0px;
+          .nav-link {
+            z-index: 100;
+            background: none;
+            border: none;
+            color: $body-color;
+            border-bottom: solid 4px transparent;
+            border-radius: 0px;
+            padding: 1rem 1.25rem;
+
+            &:hover {
+              //border-bottom: solid 4px $color-black--200;
+            }
+
+            &.active {
+              //border-bottom: solid 4px $blue;
+            }
           }
         }
       }
-    }
-    .int-tabs + .tab-content {
-      border: none;
-      border-top: solid 1px $color-black--200;
-      //margin-top: -1px;
-      //padding: 1.5rem;
-      padding: 0px;
-      transition: box-shadow .2s ease;
-      &:focus {
-        box-shadow: none;
+      .int-tabs + .tab-content {
+        border: none;
+        border-top: solid 1px $color-black--200;
+        //margin-top: -1px;
+        //padding: 1.5rem;
+        padding: 0px;
+        transition: box-shadow .2s ease;
+        &:focus {
+          box-shadow: none;
+        }
       }
     }
   }
+
+
 
 }
 
@@ -60,70 +66,6 @@ html {
   }
 
 }
-
-
-
-//theme builder
-
-button[data-theme] {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.25rem;
-  border: 1px solid $color-black--800;
-  //border-radius: 50%;
-  font-size: 0;
-  background: transparent;
-  outline: 0;
-  cursor: pointer;
-}
-
-.editor-statusbar {
-  display: none;
-}
-
-.demo-theme-builder input[type="color"] {
-  -webkit-appearance: none;
-  border: 1px solid $color-black--800;
-  width: 1.5rem;
-  height: 1.5rem;
-  outline: 0;
-}
-.demo-theme-builder input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-.demo-theme-builder input[type="color"]::-webkit-color-swatch {
-  border: none;
-}
-
-#body-bg-color {
-  background-color: var(--body-bg-color);
-}
-
-#body-font-color {
-  background-color: var(--body-font-color);
-}
-
-#headerfooter-bg-color {
-  background-color: var(--headerfooter-bg-color);
-}
-
-#headerfooter-text-color {
-  background-color: var(--headerfooter-text-color);
-}
-
-#footer-link-color {
-  background-color: var(--footer-link-color);
-}
-
-.row {
-  &.color-picker {
-    @extend .mb-3;
-    @extend .align-items-center;
-  }
-}
-
-
 
 .rbt-collapse-accordion {
   .int-accordion-controls {

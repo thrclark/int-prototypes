@@ -8,7 +8,7 @@ $page_title = 'Add publisher';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
 </head>
-<body>
+<body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-5">
     <main class="main-content" id="main-content">
@@ -38,7 +38,7 @@ $page_title = 'Add publisher';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="descLabel"> Description </label>
-                    <div> Description of the publisher. This is helpful for discriminating between publishers with similar names.</div>
+                    <div> Description of the publisher. This is helpful for distinguishing publishers with similar names.</div>
                     <textarea class="form-control" id="descLabel" rows="5"></textarea>
                 </div>
                 <div class="form-group">
