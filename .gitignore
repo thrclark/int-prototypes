@@ -16,3 +16,5 @@ _DelSyncFiles/scss/_notes/dwsync.xml
 *.xml
 scss/.DS_Store
 .DS_Store
+.idea/rivet-bootstrap.iml
+_DelSyncFiles/.idea/.name
