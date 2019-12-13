@@ -31,6 +31,91 @@ $page_title = 'VERIFY';
                 </div>
                 <div class="card">
                     <h3 class="mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
+                    </h3>
+                    <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="logoimage-visibility">Logo image</label>
+                            <select class="form-control mb-3" id="logoimage-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <!--    <label for="logoimage-url" class="demojs-logourl">Logo image URL</label>
+                            <input type="text" class="form-control mb-3 demojs-logourl" id="logoimage-url" value="">
+                            -->
+                            
+                            <div class="form-group demojs-logourl">
+                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                    <div class="">
+                                        <div class="">
+                                            <image-upload >
+                                                <div  filedrop="" class="img-ul"  >
+                                                    <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                        <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
+                                                            <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
+                                                        </label>
+                                                        <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
+                                                    </div>
+                                                </div>
+                                            </image-upload>
+                                            <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                                <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
+                                                    <button class="btn btn-sm btn-danger"> <i class="fa fa-times"></i> <span class="sr-only">
+                                                    <message key="global.buttons.delete">Delete</message>
+                                                    </span> </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ccf-image-upload>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_favicon" aria-expanded="false" aria-controls="panel_favicon"> <i class="rbt-icon-chevron-right"></i> Favicon </button>
+                    </h3>
+                    <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label>Upload .ico file</label>
+                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                    <image-upload >
+                                        <div  filedrop="" class="img-ul"  >
+                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload .ico file</span>
+                                                    <input  multiple type="file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </image-upload>
+                                    <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                </ccf-image-upload>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Lockup </button>
+                    </h3>
+                    <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="lockup-visibility">Lockup</label>
+                            <select class="form-control mb-3" id="lockup-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_customheadfoot" aria-expanded="false" aria-controls="panel_customheadfoot"> <i class="rbt-icon-chevron-right"></i> Custom header/footer </button>
                     </h3>
                     <div id="panel_customheadfoot" class="collapse" aria-labelledby="" data-parent="#accordion">
@@ -47,31 +132,6 @@ $page_title = 'VERIFY';
                                 <label for="headerfooter_css">Header/footer CSS</label>
                                 <textarea class="form-control" id="headerfooter_css" rows="5"></textarea>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logolockup" aria-expanded="false" aria-controls="panel_logolockup"> <i class="rbt-icon-chevron-right"></i> Logo/lockup </button>
-                    </h3>
-                    <div id="panel_logolockup" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
-                            <label for="logoimage-visibility">Logo image</label>
-                            <select class="form-control mb-3" id="logoimage-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
-                            </select>
-                            <label for="logoimage-url" class="demojs-logourl">Logo image URL</label>
-                            <input type="text" class="form-control mb-3 demojs-logourl" id="logoimage-url" value="">
-                            <label for="lockup-visibility">Lockup</label>
-                            <select class="form-control mb-3" id="lockup-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
-                            </select>
-                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
-                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
-                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
-                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
                         </div>
                     </div>
                 </div>
@@ -344,7 +404,7 @@ $page_title = 'VERIFY';
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_border_radius">Border radius</label>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4"  class="form-control-range w-100">
+                                        <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4"  class="form-control-range mb-3 w-100">
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
@@ -358,7 +418,7 @@ $page_title = 'VERIFY';
                                 <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_page_margin">Page margin</label>
                                 <div class="row">
                                     <div class="col-12">
-                                        <input id="theme_page_margin" type="range" min="440"max="880"step="10"value="880" class=" form-control-range w-100">
+                                        <input id="theme_page_margin" type="range" min="440"max="880"step="10"value="880" class="form-control-range mb-3 w-100">
                                     </div>
                                     <div class="col-4">
                                         <div class="input-group mb-5">
@@ -398,11 +458,11 @@ $page_title = 'VERIFY';
             <main>
                 <section>
                     <div class="card">
-                        <div class="card-body">
-                            <div class="alert alert-warning mb-5" role="alert">
+                        <div class="card-body"> 
+                            <!--  <div class="alert alert-warning mb-5" role="alert">
                                 <h2 class="alert-heading">Privacy note</h2>
                                 <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
-                            </div>
+                            </div>-->
                             <h2>Verify your data</h2>
                             <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                             <h3 class="mt-5">Sample data</h3>
@@ -652,6 +712,71 @@ $(document).ready(function(){
 	$('#border-color-hexcolor').on('change', function() {
 		$('#border-color-color').val(this.value);
 	});
-</script>
+</script> 
+<script id="rendered-js">
+      var dropzone = new Dropzone('#demo-upload', {
+  previewTemplate: document.querySelector('#preview-template').innerHTML,
+  parallelUploads: 2,
+  thumbnailHeight: 120,
+  thumbnailWidth: 120,
+  maxFilesize: 3,
+  filesizeBase: 1000,
+  thumbnail: function (file, dataUrl) {
+    if (file.previewElement) {
+      file.previewElement.classList.remove("dz-file-preview");
+      var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+      for (var i = 0; i < images.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+        var thumbnailElement = images[i];
+        thumbnailElement.alt = file.name;
+        thumbnailElement.src = dataUrl;
+      }window.CP.exitedLoop(0);
+      setTimeout(function () {file.previewElement.classList.add("dz-image-preview");}, 1);
+    }
+  } });
+
+
+
+
+// Now fake the file upload, since GitHub does not handle file uploads
+// and returns a 404
+
+var minSteps = 6,
+maxSteps = 60,
+timeBetweenSteps = 100,
+bytesPerStep = 100000;
+
+dropzone.uploadFiles = function (files) {
+  var self = this;
+
+  for (var i = 0; i < files.length; i++) {if (window.CP.shouldStopExecution(1)) break;
+
+    var file = files[i];
+    totalSteps = Math.round(Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep)));
+
+    for (var step = 0; step < totalSteps; step++) {if (window.CP.shouldStopExecution(2)) break;
+      var duration = timeBetweenSteps * (step + 1);
+      setTimeout(function (file, totalSteps, step) {
+        return function () {
+          file.upload = {
+            progress: 100 * (step + 1) / totalSteps,
+            total: file.size,
+            bytesSent: (step + 1) * file.size / totalSteps };
+
+
+          self.emit('uploadprogress', file, file.upload.progress, file.upload.bytesSent);
+          if (file.upload.progress == 100) {
+            file.status = Dropzone.SUCCESS;
+            self.emit("success", file, 'success', null);
+            self.emit("complete", file);
+            self.processQueue();
+            //document.getElementsByClassName("dz-success-mark").style.opacity = "1";
+          }
+        };
+      }(file, totalSteps, step), duration);
+    }window.CP.exitedLoop(2);
+  }window.CP.exitedLoop(1);
+};
+      //# sourceURL=pen.js
+    </script>
 </body>
 </html>
