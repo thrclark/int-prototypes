@@ -40,7 +40,7 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Citizenship Status API</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External  </span></td>
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">aohkse@iu.edu</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">thrclark@iu.edu</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
