@@ -50,7 +50,7 @@ $page_title = 'API Accounts';
                         </div></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle-empty mr-2 ts-12 text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Inactive"></i>  </span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle-empty mr-2 ts-12 text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Inactive"></i> </span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="tablesaw-cell-content ng-binding">HR Personal Information</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
                     <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
@@ -59,8 +59,7 @@ $page_title = 'API Accounts';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
@@ -74,8 +73,7 @@ $page_title = 'API Accounts';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
@@ -89,8 +87,7 @@ $page_title = 'API Accounts';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
@@ -104,8 +101,7 @@ $page_title = 'API Accounts';
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-settings-apiaccounts-new.php">Edit</a> <a class="dropdown-item" href="#">Delete</a></div>
                             </div>
                         </div></td>
                 </tr>
