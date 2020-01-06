@@ -41,7 +41,7 @@ const setTheme = options => {
 }
 document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('logoimage-visibility');
-    setValueFromLocalStorage('logoimage-url');
+    //setValueFromLocalStorage('logoimage-url');
     setValueFromLocalStorage('lockup-visibility');
     setValueFromLocalStorage('org-name');
     setValueFromLocalStorage('app-name');
@@ -180,14 +180,11 @@ const handleInputChange = (property, pixels) => {
 document.querySelector('#logoimage-visibility').addEventListener('change', event => {
     handleInputChange('logoimage-visibility', false);
 });
-document.querySelector('#logoimage-url').addEventListener('input', event => {
-    handleInputChange('logoimage-url', false);
-});
+//document.querySelector('#logoimage-url').addEventListener('input', event => {
+   // handleInputChange('logoimage-url', false);
+//});
 document.querySelector('#lockup-visibility').addEventListener('change', event => {
     handleInputChange('lockup-visibility', false);
-});
-document.querySelector('#logoimage-url').addEventListener('input', event => {
-    handleInputChange('logoimage-url', false);
 });
 document.querySelector('#body-bg-color').addEventListener('change', event => {
     handleInputChange('body-bg-color', false);

@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'Verifications';
+$page_title = 'All verifications';
 ?>
 <!DOCTYPE html>
 <html lang="en">

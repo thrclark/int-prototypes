@@ -20,8 +20,13 @@ $page_title = 'VERIFY';
             <div class="rbt-header-avatar-id py-1 "> <span class="rbt-header-avatar" aria-hidden="true">TC</span> <span class="d-none d-md-inline">thrclark</span> </div>
             </button>
             <div class="dropdown-menu dropdown-menu-right"> <!--<span class="dropdown-item-text d-lg-none"><i class="rbt-icon-user-solid"></i> thrclark</span>
-                <div class="dropdown-divider d-lg-none"></div>--> 
-                <a class="dropdown-item" href="admin-verifications.php">Publishing</a> </div>
+                <div class="dropdown-divider d-lg-none"></div>-->
+                
+                <div class="dropdown-header">Verifications</div>
+                <a class="dropdown-item" href="admin-verifications.php">All verifications</a> <a class="dropdown-item" href="admin-verification-new1.php">New verification</a> <a class="dropdown-item" href="admin-settings-viewreset.php">Reset user verifications </a>
+                <div class="dropdown-divider d-lg-none"></div>
+                <div class="dropdown-header">Settings</div>
+                <a class="dropdown-item" href="admin-settings-general.php">General Settings </a> <a class="dropdown-item" href="admin-customize.php">Custom theme </a> <a class="dropdown-item" href="admin-settings-apiaccounts.php">API Accounts </a> <a class="dropdown-item" href="admin-settings-publishers.php">Publishers</a> <a class="dropdown-item" href="admin-settings-ldap.php">LDAP Configuration </a> <a class="dropdown-item" href="admin-admin-ga.php">Google Analytics</a> <a class="dropdown-item" href="admin-admin-sysparam.php">System parameters</a> <a class="dropdown-item" href="admin-admin-reloadcache.php">Reload Cache</a> </div>
         </div>
     </div>
 </header>
