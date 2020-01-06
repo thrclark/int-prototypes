@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'View/Reset User Verifications';
+$page_title = 'Reset user verifications';
 ?>
 <!DOCTYPE html>
 <html lang="en">
