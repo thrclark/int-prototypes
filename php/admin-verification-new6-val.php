@@ -27,7 +27,8 @@ $page_subtitle = 'Review/save';
                 </div>
             </div>
             <div class="col-12 col-sm-10 pl-sm-5">
-                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
+                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
                     <ol class="rvb-steps mb-5 d-sm-none">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -43,7 +44,7 @@ $page_subtitle = 'Review/save';
                                 <h3 class="mb-2" id="collapse_setup">
                                     <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Setup</span></button>
                                 </h3>
-                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-danger"  href="admin-verification-new1.php">Fix errors</a> </div>
+                                <div class="int-accordion-controls"><span class="text-danger bg-white px-2 py-1 mr-3 rounded">1 error</span> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new1.php">Edit</a> </div>
                                 <div id="collapse1" class="collapse" aria-labelledby="collapse_setup" data-parent="#accordion_parent">
                                     <div class="card-body">
                                         <dl class="row">
@@ -54,7 +55,7 @@ $page_subtitle = 'Review/save';
                                             <dt class="col-sm-3">Publisher</dt>
                                             <dd class="col-sm-9">
                                                 <div class="alert alert-inline alert-danger mb-2" role="alert">
-                                                    <p class="rbt-ts-14" id="standalone4	"> This field is required.</p>
+                                                    <p class="rbt-ts-14"> This field is required.</p>
                                                 </div>
                                             </dd>
                                             <dt class="col-sm-3">Description</dt>
@@ -81,21 +82,26 @@ $page_subtitle = 'Review/save';
                                 <h3 class="mb-2" id="collapse_data">
                                     <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Data</span></button>
                                 </h3>
-                                <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new2.php">Edit</a> </div>
+                                <div class="int-accordion-controls"> <span class="text-danger bg-white px-2 py-1 mr-3 rounded">3 errors</span> <a class="btn btn-sm btn-outline-primary"  href="admin-verification-new2.php">Edit</a> </div>
                                 <div id="collapse2" class="collapse" aria-labelledby="collapse_data" data-parent="#accordion_parent">
                                     <div class="card-body">
                                         <div class="rbt-collapse-accordion" id="accordion">
                                             <div class="card">
-                                                <h5 class="mb-2" id="headingOne">
+                                                <h4 class="mb-2" id="headingOne">
                                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Dataset 1 </button>
-                                                </h5>
+                                                </h4>
+                                                <div class="int-accordion-controls"> <span class="text-danger bg-white px-2 py-1 rounded">2 errors</span> </div>
                                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                                     <div class="card-body">
                                                         <dl class="row">
                                                             <dt class="col-sm-3">Name</dt>
                                                             <dd class="col-sm-9">Dataset 1 </dd>
                                                             <dt class="col-sm-3">Unique Key</dt>
-                                                            <dd class="col-sm-9">dataset1 </dd>
+                                                            <dd class="col-sm-9">
+                                                                <div class="alert alert-inline alert-danger mb-2" role="alert">
+                                                                    <p class="rbt-ts-14"> This field is required.</p>
+                                                                </div>
+                                                            </dd>
                                                             <dt class="col-sm-3">Sensitive Data</dt>
                                                             <dd class="col-sm-9">yes </dd>
                                                             <dt class="col-sm-3">Description</dt>
@@ -121,7 +127,11 @@ $page_subtitle = 'Review/save';
                                                                     <dt class="col-sm-4">Callback Endpoint</dt>
                                                                     <dd class="col-sm-8">yes </dd>
                                                                     <dt class="col-sm-4">URL</dt>
-                                                                    <dd class="col-sm-8">https://www.google.com/ </dd>
+                                                                    <dd class="col-sm-8">
+                                                                        <div class="alert alert-inline alert-danger mb-2" role="alert">
+                                                                            <p class="rbt-ts-14"> This field is required.</p>
+                                                                        </div>
+                                                                    </dd>
                                                                     <dt class="col-sm-4">Button label</dt>
                                                                     <dd class="col-sm-8">Edit </dd>
                                                                 </dl>
@@ -131,16 +141,21 @@ $page_subtitle = 'Review/save';
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <h5 class="mb-2" id="headingThree">
+                                                <h4 class="mb-2" id="headingThree">
                                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> <i class="rbt-icon-chevron-right"></i> Dataset 2 </button>
-                                                </h5>
+                                                </h4>
+                                                <div class="int-accordion-controls"> <span class="text-danger bg-white px-2 py-1 rounded">1 error</span> </div>
                                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                                     <div class="card-body">
                                                         <dl class="row">
                                                             <dt class="col-sm-3">Name</dt>
-                                                            <dd class="col-sm-9">Dataset 1 </dd>
+                                                            <dd class="col-sm-9">Dataset 2 </dd>
                                                             <dt class="col-sm-3">Unique Key</dt>
-                                                            <dd class="col-sm-9">dataset1 </dd>
+                                                            <dd class="col-sm-9">dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2dataset2
+                                                                <div class="alert alert-inline alert-danger mb-2" role="alert">
+                                                                    <p class="rbt-ts-14"> Must be no more than 100 characters</p>
+                                                                </div>
+                                                            </dd>
                                                             <dt class="col-sm-3">Sensitive Data</dt>
                                                             <dd class="col-sm-9">yes </dd>
                                                             <dt class="col-sm-3">Description</dt>
@@ -168,7 +183,7 @@ $page_subtitle = 'Review/save';
                                                                     <dt class="col-sm-4">URL</dt>
                                                                     <dd class="col-sm-8">https://www.google.com/ </dd>
                                                                     <dt class="col-sm-4">Button label</dt>
-                                                                    <dd class="col-sm-8">Edit </dd>
+                                                                    <dd class="col-sm-8">Edit</dd>
                                                                 </dl>
                                                             </dd>
                                                         </dl>
@@ -188,9 +203,9 @@ $page_subtitle = 'Review/save';
                                     <div class="card-body">
                                         <div class="rbt-collapse-accordion" id="accordion2">
                                             <div class="card">
-                                                <h5 class="mb-2" id="headingTwo">
+                                                <h4 class="mb-2" id="headingTwo">
                                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> <i class="rbt-icon-chevron-right"></i> Recipient ruleset 1 </button>
-                                                </h5>
+                                                </h4>
                                                 <div id="collapseOne1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
                                                     <div class="card-body">
                                                         <dl class="row">
@@ -223,9 +238,9 @@ $page_subtitle = 'Review/save';
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <h5 class="mb-2" id="headingTwo2">
+                                                <h4 class="mb-2" id="headingTwo2">
                                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Recipient ruleset 2 </button>
-                                                </h5>
+                                                </h4>
                                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
                                                     <div class="card-body">
                                                         <dl class="row">
@@ -283,7 +298,8 @@ $page_subtitle = 'Review/save';
                             </div>
                         </div>
                         <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new4.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
+                        <div class="invalid-feedback mt-3"><span class="rbt-icon-close-circle" aria-hidden="true"></span> All errors must be fixed before previewing and saving. </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary disabled"> Preview <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary disabled"> Save</a> </div>
                     </div>
                 </div>
             </div>

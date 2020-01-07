@@ -51,11 +51,11 @@ $page_subtitle = 'Data';
                                     <h3 class="mb-2">
                                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">New set</span></button>
                                     </h3>
-                                    <div class="int-accordion-controls">
+                                    <div class="int-accordion-controls d-flex align-items-center">
+                                            <span class="text-danger bg-white rounded px-2 py-0 mr-3">2 errors</span>
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-1" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
@@ -74,6 +74,9 @@ $page_subtitle = 'Data';
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
+                                                    <div class="alert alert-inline alert-danger mb-2" role="alert">
+                                                    <p class="rbt-ts-14"> This field is required.</p>
+                                                </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -105,13 +108,12 @@ $page_subtitle = 'Data';
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
-                                            <div class="card-header border-bottom-0 p-1">
-                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey1"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
+                                            <div class="card-header border-bottom-0 p-0">
+                                                <button class="rbt-btn-nostyle btn-block p-1" type="button" data-toggle="collapse" data-target="#uniquekey1"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-2" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move down</button>
@@ -173,13 +175,18 @@ $page_subtitle = 'Data';
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
-                                            <div class="card-header border-bottom-0 p-1">
-                                                <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Field group 2</button>
-                                                <div class="int-accordion-controls">
+                                            <div class="card-header border-bottom-0 p-0">
+                                                <button class="rbt-btn-nostyle btn-block p-1" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Field group 2</button>
+                                                <div class="int-accordion-controls d-flex align-items-center">
+                                                    
+                                                    
+                                                    <span class="text-danger bg-white rounded px-2 py-0 mt-1 mr-3">1 error</span>
+                                                    
+                                                    
+                                                    
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-3" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton3" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
@@ -228,6 +235,11 @@ $page_subtitle = 'Data';
                                                     <label class="control-label" for="api2_nameLabel">URL </label>
                                                     <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api2_nameLabel" aria-labelledby="api2_nameLabel"  class="form-control" type="text">
+                                                    
+                                                    <div class="alert alert-inline alert-danger mb-2" role="alert">
+                                                    <p class="rbt-ts-14"> This field is required.</p>
+                                                </div>
+                                                    
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_buttonLabel">Button label </label>
@@ -251,8 +263,7 @@ $page_subtitle = 'Data';
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-11" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton11" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                 <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
@@ -313,8 +324,7 @@ $page_subtitle = 'Data';
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-22" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton22" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move down</button>
@@ -365,8 +375,7 @@ $page_subtitle = 'Data';
                                                 <div class="int-accordion-controls">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
-                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-33" aria-hidden="true" role="menu">
+                                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton33" aria-hidden="true" role="menu">
                                                             <button class="dropdown-item" id="xxxxxx">Move to top</button>
                                                             <button class="dropdown-item" id="xxxxxx">Move up</button>
                                                             <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
