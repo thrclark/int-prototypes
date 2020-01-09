@@ -27,7 +27,10 @@ $page_title = 'Reset user verifications';
                 </div>
             </div>
         </div>
-        <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up demojs-searchresults" style="display: none">Search results for 'thrclark'</h2>
+        <div class="demojs-searchresults" style="display: none">
+            <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up  d-inline-block" >Search results for 'thrclark'</h2>
+            <button class="btn btn-link ts-14 font-italic font-weight-normal p-0" id="clearresults">(Clear results)</button>
+        </div>
         <table class="table rbt-table-responsive rbt-table-actions demojs-searchresults" style="display: none">
             <thead>
             <th>Verification name</th>
@@ -36,6 +39,7 @@ $page_title = 'Reset user verifications';
                 <th><span class="sr-only">Actions</span></th>
             </tr>
             </thead>
+            
             <tbody>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Verification name</b> <span class="rbt-table-responsive-cell-content ">Citizenship Verification</span></td>
@@ -43,7 +47,7 @@ $page_title = 'Reset user verifications';
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Verify</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
-                            <button class="btn btn-sm btn-outline-primary demojs-showGrowl">Reset</button>
+                            <button class="btn btn-sm btn-outline-primary demojs-showGrowl1">Reset</button>
                         </div></td>
                 </tr>
                 <tr>
@@ -52,7 +56,7 @@ $page_title = 'Reset user verifications';
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Verify</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
-                            <button class="btn btn-sm btn-outline-primary demojs-showGrowl">Reset</button>
+                            <button class="btn btn-sm btn-outline-primary demojs-showGrowl2">Reset</button>
                         </div></td>
                 </tr>
             </tbody>
@@ -60,9 +64,12 @@ $page_title = 'Reset user verifications';
         <growls>
             <div>
                 <alert dismissible="true">
-                    <div role="alert" class="alert alert-success alert-dismissible" style="display:none">
+                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
                         <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
                         <span>Citizenship Verification has now been reset for user '<span class="font-weight-bold">thrclark</span>'.</span> </div>
+                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl2">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                        <span>FERPA Compliance has now been reset for user '<span class="font-weight-bold">thrclark</span>'.</span> </div>
                 </alert>
             </div>
         </growls>
@@ -74,14 +81,20 @@ $page_title = 'Reset user verifications';
         $("#search").click(function() {
             $(".demojs-searchresults").show();
         });
+        $("#clearresults").click(function() {
+            $(".demojs-searchresults").hide();
+        });
     }); 
-</script>
-</body>
-</html>
-<script>
+</script> 
+<script >
     $(document).ready(function() {
-        $(".demojs-showGrowl").click(function() {
-            $("growls .alert").fadeIn().delay(5000).fadeOut();
+        $(".demojs-showGrowl1").click(function() {
+            $("#growl1").fadeIn().delay(5000).fadeOut();
+        });
+        $(".demojs-showGrowl2").click(function() {
+            $("#growl2").fadeIn().delay(5000).fadeOut();
         });
     });
 </script>
+</body>
+</html>
