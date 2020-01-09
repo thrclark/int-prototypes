@@ -62,7 +62,7 @@ $page_title = 'Reset user verifications';
                 <alert dismissible="true">
                     <div role="alert" class="alert alert-success alert-dismissible" style="display:none">
                         <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                        <span>All verifications have now been reset for user '<span class="font-weight-bold">thrclark</span>'.</span> </div>
+                        <span>Citizenship Verification has now been reset for user '<span class="font-weight-bold">thrclark</span>'.</span> </div>
                 </alert>
             </div>
         </growls>
