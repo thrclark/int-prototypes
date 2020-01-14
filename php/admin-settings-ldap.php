@@ -83,6 +83,15 @@ $page_title = 'LDAP Configuration';
                 </div>
             </div>
         </div>
+        <growls>
+            <div>
+                <alert dismissible="true">
+                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                        <span>Changes have been saved.</span> </div>
+                </alert>
+            </div>
+        </growls>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
@@ -112,6 +121,14 @@ $page_title = 'LDAP Configuration';
                 }, 2000)
             });
         });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#submitform").click(function() {
+            $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
+        });
+       
     });
 </script>
 </body>

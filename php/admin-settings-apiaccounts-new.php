@@ -25,7 +25,7 @@ $page_title = 'New API account';
                     <label class="control-label" id="nameLabel"> Name </label>
                     <div> The API Account title is how the API Account will be referred to throughout the system. </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12">
                             <input value="" aria-labelledby="" class="form-control" id="clientID" type="text">
                         </div>
                     </div>
@@ -279,9 +279,20 @@ $page_title = 'New API account';
                     </div>
                 </div>
                 <hr>
-                <div class="rbt-button-group mt-3 mb-5" id="savePublisher"> <a href="admin-settings-apiaccounts.php" class="btn btn-primary"> Save </a> <a class="btn btn-outline-primary" href="admin-settings-apiaccounts.php"> Cancel </a> </div>
+                <div class="rbt-button-group mt-3 mb-5" id="savePublisher">
+                    <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
+                    <a class="btn btn-outline-primary" href="admin-settings-apiaccounts.php"> Cancel </a> </div>
             </div>
         </div>
+        <growls>
+            <div>
+                <alert dismissible="true">
+                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                        <span>Changes have been saved.</span> </div>
+                </alert>
+            </div>
+        </growls>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
@@ -338,6 +349,42 @@ $(document).ready(function() {
         });
     });
 });
+</script> 
+<script>
+	$(document).ready(function() {
+     $('#submitform').prop('disabled', true);
+     $('.form-control').keyup(function() {
+        if($(this).val() != '') {
+           $('#submitform').prop('disabled', false);
+        }
+     });
+ });
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $("#submitform").click(function() {
+                $('.btn.btn-primary').addClass('rbt-loading');
+				$('.btn.btn-primary .spinner-border').removeClass('d-none');
+				$('.btn.btn-primary .visible').toggleClass('invisible');
+				$("#submitform").prop('disabled', true);
+                setTimeout(function() {
+                    $('.btn.btn-primary').removeClass('rbt-loading');
+					$('.btn.btn-primary .spinner-border').addClass('d-none');
+					$("#submitform").prop('disabled', true);
+					$('.btn.btn-primary .invisible').removeClass('invisible');
+                }, 2000)
+            });
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#submitform").click(function() {
+            $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
+        });
+       
+    });
 </script>
 </body>
 </html>

@@ -527,6 +527,15 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                 </section>
+                <growls>
+                    <div>
+                        <alert dismissible="true">
+                            <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
+                                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                                <span>Changes have been saved.</span> </div>
+                        </alert>
+                    </div>
+                </growls>
             </main>
             <div class="container p-0" id="footer_html_display"></div>
         </div>
@@ -681,6 +690,7 @@ $(document).ready(function(){
 				$('.btn.btn-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-primary .visible').toggleClass('invisible');
 				$('.demojs-savetheme').prop('disabled', true);
+                $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
                 setTimeout(function() {
                     $('.btn.btn-primary').removeClass('rbt-loading');
 					$('.btn.btn-primary .spinner-border').addClass('d-none');
@@ -728,7 +738,6 @@ $(document).ready(function(){
 	$('#border-color-hexcolor').on('change', function() {
 		$('#border-color-color').val(this.value);
 	});
-</script> 
-
+</script>
 </body>
 </html>
