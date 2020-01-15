@@ -27,7 +27,8 @@ $page_subtitle = 'Review/save';
                 </div>
             </div>
             <div class="col-12 col-sm-10 pl-sm-5">
-                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
+                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
                     <ol class="rvb-steps mb-5 d-sm-none">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -252,32 +253,15 @@ $page_subtitle = 'Review/save';
                                                         </dl>
                                                     </div>
                                                 </div>
-												
-												
-											
-												
-												
-												
-												
                                             </div>
-											
-											
-											
-												
-												
-												  <dl class="row">
-                                            <dt class="col-sm-3">Leeway</dt>
-                                            <dd class="col-sm-9">20 days</dd>
-                                        </dl>
-												
-											
-											
-											
+                                            <dl class="row">
+                                                <dt class="col-sm-3">Leeway</dt>
+                                                <dd class="col-sm-9">20 days</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                         
                             <div class="card">
                                 <h3 class="mb-2" id="collapse_scheduling">
                                     <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Scheduling</span></button>
@@ -296,7 +280,7 @@ $page_subtitle = 'Review/save';
                             </div>
                         </div>
                         <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
                     </div>
                 </div>
             </div>

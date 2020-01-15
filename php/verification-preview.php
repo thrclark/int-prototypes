@@ -240,7 +240,7 @@ $page_title = 'VERIFY';
                     <h3 class="mb-2" id="collapse_leeway">
                         <button class="rbt-btn-nostyle btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">Leeway</span></button>
                     </h3>
-                    <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary" href="admin-verification-new4.php">Edit</a> </div>
+                    <div class="int-accordion-controls"> <a class="btn btn-sm btn-outline-primary" href="admin-verification-new3.php">Edit</a> </div>
                     <div id="collapse4" class="collapse" aria-labelledby="collapse_leeway" data-parent="#accordion_parent">
                         <div class="card-body">
                             <dl>
