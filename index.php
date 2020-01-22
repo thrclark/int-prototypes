@@ -19,7 +19,7 @@
                     <div class="font-weight-bold rbt-ts-20 flex-grow-1">End user views</div>
                     <div class="dropdown">
                         <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> View </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu"> <a class="dropdown-item" href="php/cas.php" target="_blank">IU Login</a> <a class="dropdown-item" href="php/verification.php" target="_blank">Verification</a> <a class="dropdown-item" href="php/verification-admin.php" target="_blank">Verification -admin </a> </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu"> <a class="dropdown-item" href="php/cas.php" target="_blank">IU Login</a> <a class="dropdown-item" href="php/verification.php" target="_blank">Verification</a></div>
                     </div>
                 </div>
             </div>
