@@ -93,8 +93,8 @@ $page_title = 'VERIFY';
                 </ul>
             </div>
         </div>
-        <div class="int-verify-controls py-3">
-            <p class="border-bottom">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
+        <div class="int-verify-controls py-3 px-3 px-lg-0">
+            <p class="border-bottom pb-3">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
             <div class="row mb-5" id="demojs_revealskipscreen">
                 <div class="col-md-6 d-flex pb-5 pb-md-0">
                     <div class="d-flex flex-column">
