@@ -16,12 +16,20 @@ $page_title = 'API Accounts';
             <div class="col">
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
-            <div class="col-auto"> <!--<a href="admin-settings-apiaccounts-sources.php" class="btn btn-sm btn-outline-primary"> External sources</a>-->
+        </div>
+        <div class="form-row align-items-center mb-3">
+            <div class="col">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="showinactive" value="option1" checked="">
+                    <label class="form-check-label" for="showinactive">Active APIs only</label>
+                </div>
+            </div>
+            <div class="col-auto">
                 <div class="dropdown d-inline">
-                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> API documentation </button>
+                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> API docs </button>
                     <div class="dropdown-menu dropdown-menu-right" aria-hidden="true" role="menu" aria-labelledby="dropdownMenuButton1"> <a class="dropdown-item" href="#">Version 1 </a> <a class="dropdown-item" href="#">Version 2 </a> <a class="dropdown-item" href="#">Version 3 </a> </div>
                 </div>
-                <a href="admin-settings-apiaccounts-new.php" class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API account</a> </div>
+                <a href="admin-settings-apiaccounts-new.php" class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API account</a></div>
         </div>
         <table class="table rbt-table-responsive rbt-table-actions">
             <thead>
@@ -49,7 +57,7 @@ $page_title = 'API Accounts';
                             </div>
                         </div></td>
                 </tr>
-                <tr>
+                <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle-empty mr-2 ts-12 text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Inactive"></i> </span></td>
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="tablesaw-cell-content ng-binding">HR Personal Information</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
@@ -114,6 +122,17 @@ $page_title = 'API Accounts';
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+</script> 
+<script>
+   $(document).ready(function() {
+    $('#showinactive').change(function() {
+        if (this.checked) {
+            $(".demojs-inactive").hide();
+        } else {
+            $(".demojs-inactive").show();
+        }
+    });
+});
 </script>
 </body>
 </html>
