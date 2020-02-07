@@ -27,7 +27,8 @@ $page_subtitle = 'Setup';
                 </div>
             </div>
             <div class="col-12 col-sm-10 pl-sm-5">
-                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
+                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
                     <ol class="rvb-steps mb-5">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"  aria-current="step"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -72,6 +73,14 @@ $page_subtitle = 'Setup';
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="textarea-full">Verification intro</label>
+                            <textarea class="form-control" id="textarea-full" rows="5" disabled>On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
+                         <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="displayintro" checked>
+                            <label class="form-check-label font-weight-normal" for="displayintro"> Display the default verification intro. This can be edited under <a href="admin-settings-general-verificationintro.php">general settings</a>. </label>
+                        </div> </div>
+                      
                         <div class="form-group">
                             <label class="control-label" for="descriptionLabel"> Description (optional) </label>
                             <div class="" id=""> The text that will display above the verification.</div>
