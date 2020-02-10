@@ -27,7 +27,8 @@ $page_subtitle = 'Setup';
                 </div>
             </div>
             <div class="col-12 col-sm-10 pl-sm-5">
-                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
+                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
                     <ol class="rvb-steps mb-5">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"  aria-current="step"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -72,10 +73,35 @@ $page_subtitle = 'Setup';
                                 </div>
                             </div>
                         </div>
+                        <!--   <div class="form-group">
+                            <label for="textarea-full">Verification intro</label>
+                            <textarea class="form-control" id="textarea-full" rows="5" disabled>On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="displayintro" checked>
+                                <label class="form-check-label font-weight-normal" for="displayintro"> Display the default verification intro. This can be edited under <a href="admin-settings-general-verificationintro.php">general settings</a>. </label>
+                            </div>
+                        </div>-->
                         <div class="form-group">
-                            <label class="control-label" for="descriptionLabel"> Description (optional) </label>
+                            <label class="control-label" for="disclaimerLabel"> Description</label>
                             <div class="" id=""> The text that will display above the verification.</div>
-                            <textarea id="descriptionLabel"></textarea>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="verify_select_description" name="select">
+                                        <option value="verify_select_description_standard"> Use default description </option>
+                                        <option value="verify_select_description_custom"> Enter custom description </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div style=" display:block" id="verify_select_description_standard">
+                                <label class="sr-only" for="description_standard"> Verification description default text </label>
+                                <textarea class="form-control" cols="40" id="description_standard" name="description_standard" rows="3" disabled="" style="display: block;">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
+                            </div>
+                            <div id="verify_select_description_custom" style="display: none;">
+                                <label class="sr-only" for="description_custom"> Verification description custom text </label>
+                                <textarea id="description_custom">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Disclaimer (optional) </label>
@@ -213,13 +239,11 @@ $page_subtitle = 'Setup';
 	  $(document).ready(function(){
     $("#sticky2").sticky({topSpacing:0});
   });
-	
-	
 </script> 
 <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script> 
 <script>
-var simplemde = new SimpleMDE({ element: $("#descriptionLabel")[0] });
 var simplemde = new SimpleMDE({ element: $("#disclaimerLabel")[0] });
+var simplemde = new SimpleMDE({ element: $("#description_custom")[0] });
 </script> 
 <script>
     $(document).ready(function() {
@@ -256,6 +280,14 @@ var simplemde = new SimpleMDE({ element: $("#disclaimerLabel")[0] });
 
         $('#defer_button_select').change(function() {
             $('#defer_button_standard, #defer_button_custom').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#verify_select_description').change(function() {
+            $('#verify_select_description_standard, #verify_select_description_custom').hide();
             $('#' + $(this).val()).show();
         });
     });

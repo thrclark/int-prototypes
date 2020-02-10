@@ -36,43 +36,43 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-welcomemessage.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>-->
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Verification Intro</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verification description</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed at the top of every verification.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> On occasion, we require verification of your personal information. The item(s) presented on this … </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-verificationintro.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default Verify Button Text</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verify button text</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed on the Verification button.  This can be overridden by an individual verification.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Verify </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-defaultvfybtntext.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default Verify Message</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verify message</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed next to the Verify option.  This can be overridden by an individual verification.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> I have verified that the above information is up to date and correct. </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-defaultvfymessage.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default Defer Button Text</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default defer button text</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed on the Defer button.  This can be overridden by an individual verification.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Verify Later </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-defaultdefferbtntext.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default Defer Message</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default defer message</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed next to the Defer option.  This can be overridden by an individual verification.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> You may also skip this verification for now. </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-defaultdeffermessage.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Error Message</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Error message</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">A message that is displayed when an error occurs preventing a verification from being completed.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> There is a system error that is currently preventing verification of your information. Please ski… </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-errormessage.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default Target URL</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default target URL</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content">
                         <div>-</div>
@@ -80,7 +80,7 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-defaulttargeturl.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Enable Email</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Enable email</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Turn on email functionality. Default is no</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> No </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-enableemail.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
@@ -98,7 +98,7 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-maintenanceresource.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>-->
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">System Email</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">System email</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Email address from which email is sent.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content">
                         <div>-</div>
@@ -106,7 +106,7 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-systememail.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>
                 <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Time Zone</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Time zone</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Select the your time zone.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> US/Eastern </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-timezone.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>

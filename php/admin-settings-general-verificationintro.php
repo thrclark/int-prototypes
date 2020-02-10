@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'Verification intro';
+$page_title = 'Default verification description';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@ $page_title = 'Verification intro';
                     </ol>
                 </nav>
                 <div class="form-group">
-                    <label for="textinput-full" class="ts-26">Verification intro</label>
+                    <label for="textinput-full" class="ts-26">Default verification description</label>
                     <div>Text to be displayed at the top of every verification.</div>
                     <textarea id="richText1"></textarea>
                 </div>
