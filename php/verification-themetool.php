@@ -9,7 +9,12 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
-<main class="rbt-shell-main" style="max-width:inherit">
+<div class="d-lg-none p-4">
+    <div class="card">
+        <div class="card-body ts-23"> The theme tool is only available on devices with a screen width greater than 992px. </div>
+    </div>
+</div>
+<main class="rbt-shell-main d-none d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
@@ -26,6 +31,24 @@ $page_title = 'VERIFY';
                             <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
                             <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
                             <button data-theme="black" style="background-color: #222"> black </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Application name </button>
+                    </h3>
+                    <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <label for="lockup-visibility">Lockup</label>
+                            <select class="form-control mb-3" id="lockup-visibility">
+                                <option selected="" value="block">Visible</option>
+                                <option value="none">Hidden</option>
+                            </select>
+                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
+                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
                         </div>
                     </div>
                 </div>
@@ -74,17 +97,19 @@ $page_title = 'VERIFY';
                 </div>
                 <div class="card">
                     <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_favicon" aria-expanded="false" aria-controls="panel_favicon"> <i class="rbt-icon-chevron-right"></i> Favicon </button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_favicon" aria-expanded="false" aria-controls="panel_favicon"> <i class="rbt-icon-chevron-right"></i> Application icons </button>
                     </h3>
                     <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
-                                <label>Upload .ico file</label>
+                                <p>Note - application icons are used for bookmarks, browswer tab icons, etc, and are not displayed in the theming tool.</p>
+                                <label>Favicon icon</label>
+                                <div>Icon to display as the favicon. This must be an .ico file.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
                                             <div  class="img-ul-file-upload img-ul-hr-inline-group" >
-                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload .ico image file</span>
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
                                                     <input  multiple type="file">
                                                 </label>
                                             </div>
@@ -94,13 +119,13 @@ $page_title = 'VERIFY';
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group">
-                                <label>Upload .png image file</label>
+                                <label>Favicon image</label>
                                 <div>For best results, image should be a minimum of 196x196 pixels.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
                                             <div  class="img-ul-file-upload img-ul-hr-inline-group" >
-                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload .png file</span>
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
                                                     <input  multiple type="file">
                                                 </label>
                                             </div>
@@ -109,24 +134,75 @@ $page_title = 'VERIFY';
                                     <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
                                 </ccf-image-upload>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Lockup </button>
-                    </h3>
-                    <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
-                            <label for="lockup-visibility">Lockup</label>
-                            <select class="form-control mb-3" id="lockup-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
-                            </select>
-                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
-                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
-                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
-                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                            <div class="form-group">
+                                <label>iOS desktop image</label>
+                                <div>For best results, image should be 180x180 pixels.</div>
+                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                    <image-upload >
+                                        <div  filedrop="" class="img-ul"  >
+                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
+                                                    <input  multiple type="file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </image-upload>
+                                    <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                </ccf-image-upload>
+                            </div>
+                            <div class="form-group">
+                                <label>MS Tile image (square - 310x310 px)</label>
+                                <div>Image to display as the Microsoft tile for size 310x310. The image should represenmt a solid white icon with a transparent background.</div>
+                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                    <image-upload >
+                                        <div  filedrop="" class="img-ul"  >
+                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
+                                                    <input  multiple type="file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </image-upload>
+                                    <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://via.placeholder.com/310x310" class="">
+                                            <button class="btn btn-sm btn-danger"> <i class="fa fa-times"></i> <span class="sr-only">
+                                            <message key="global.buttons.delete">Delete</message>
+                                            </span> </button>
+                                        </div>
+                                    </div>
+                                </ccf-image-upload>
+                            </div>
+                            <div class="form-group">
+                                <label>MS Tile image (wide - 310x150 px)</label>
+                                <div>Image to display as the Microsoft tile for size 310x150. The image should represenmt a solid white icon with a transparent background.</div>
+                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                    <image-upload >
+                                        <div  filedrop="" class="img-ul"  >
+                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
+                                                    <input  multiple type="file">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </image-upload>
+                                    <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://via.placeholder.com/310x150" class="">
+                                            <button class="btn btn-sm btn-danger"> <i class="fa fa-times"></i> <span class="sr-only">
+                                            <message key="global.buttons.delete">Delete</message>
+                                            </span> </button>
+                                        </div>
+                                    </div>
+                                </ccf-image-upload>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="mstile-bg-color" class="font-weight-normal ts-16 mb-2">MS Tile background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="mstile-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="mstile-bg-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -738,6 +814,16 @@ $(document).ready(function(){
 	$('#border-color-hexcolor').on('change', function() {
 		$('#border-color-color').val(this.value);
 	});
+    	$('#mstile-bg-color').on('change', function() {
+		$('#mstile-bg-color-hexcolor').val(this.value);
+	});
+	$('#mstile-bg-color-hexcolor').on('change', function() {
+		$('#mstile-bg-color').val(this.value);
+	});
+    
+    
+    
+    
 </script>
 </body>
 </html>

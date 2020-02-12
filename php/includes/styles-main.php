@@ -40,6 +40,11 @@
 #border-color {
 	background-color: var(--border-color);
 }
+#mstile-bg-color, .mstile-bg-color {
+	background-color: var(--mstile-bg-color);
+}
+    
+    
 </style>
 
 

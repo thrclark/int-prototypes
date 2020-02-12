@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('base_bodyfont_size');
     setValueFromLocalStorage('theme_border_radius');
     setValueFromLocalStorage('theme_page_margin');
+    setValueFromLocalStorage('mstile-bg-color');
 });
 const dataThemeButtons = document.querySelectorAll('[data-theme]');
 for (let i = 0; i < dataThemeButtons.length; i++) {
@@ -82,6 +83,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_bodyfont_size': '1rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
                 });
                 return;
             case 'blue':
@@ -104,6 +106,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_bodyfont_size': '1rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
                 });
                 return;
             case 'yellow':
@@ -125,6 +128,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_bodyfont_size': '1rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
                 });
                 return;
             case 'black':
@@ -146,6 +150,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_bodyfont_size': '1rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
                 });
                 return;
             case 'white':
@@ -167,6 +172,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'base_bodyfont_size': '1rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
                 });
                 return;
         }
@@ -242,6 +248,19 @@ document.querySelector('#border-color-hexcolor').addEventListener('change', even
 document.querySelector('#theme_page_margin').addEventListener('input', event => {
     handleInputChange('theme_page_margin', true);
 });
+    
+    
+    
+document.querySelector('#mstile-bg-color').addEventListener('change', event => {
+    handleInputChange('mstile-bg-color', false);
+});
+document.querySelector('#mstile-bg-color-hexcolor').addEventListener('change', event => {
+    handleInputChange('mstile-bg-color', false);
+});
+    
+    
+    
+    
 </script>
 <script>
 function orgnameset() {
