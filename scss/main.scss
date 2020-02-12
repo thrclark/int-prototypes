@@ -30,7 +30,7 @@ $rbt-font-path:  "../fonts" !default;
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-userprofile.scss";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-focusstyling";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-tabs";
-@import "../node_modules/rivet-bootstrap/scss/rbt/rbt-theme";
+//@import "../node_modules/rivet-bootstrap/scss/rbt/rbt-theme";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-fonts";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-fileinput";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-zindex";
@@ -60,7 +60,6 @@ $rbt-font-path:  "../fonts" !default;
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-extra-shell";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-extra-collapse";
 @import "../node_modules/rivet-bootstrap/scss/rbt/rbt-extra-multiselect";
-
 
 // import Verify specific styles
 @import "custom/custom-theme";
