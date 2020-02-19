@@ -10,7 +10,7 @@ $page_title = 'Maintenance resource page count';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <div class="row">
             <div class="col-12 col-lg-8">

@@ -4,7 +4,6 @@
 
 
 html {
-
   body {
 
     header {
@@ -112,3 +111,73 @@ html {
   }
 
 }
+
+
+
+
+
+
+
+//Fontawesome mappings
+
+.fa.fa-eye {
+  &:before {
+    content: $rbt-icon-eye;
+  }
+}
+.fa.fa-bold {
+  &:before {
+    content: $rbt-icon-bold;
+  }
+}
+.fa.fa-italic {
+  &:before {
+    content: $rbt-icon-italic;
+  }
+}
+.fa.fa-header {
+  &:before {
+    content: $rbt-icon-header;
+  }
+}
+.fa.fa-quote-left {
+  &:before {
+    content: $rbt-icon-quote;
+  }
+}
+.fa.fa-list-ul {
+  &:before {
+    content: $rbt-icon-list;
+  }
+}
+.fa.fa-list-ol {
+  &:before {
+    content: $rbt-icon-list-ordered;
+  }
+}
+.fa.fa-link {
+  &:before {
+    content: $rbt-icon-link;
+  }
+}
+.fa.fa-picture-o {
+  &:before {
+    content: $rbt-icon-image;
+  }
+}
+.fa.fa-columns {
+  &:before {
+    content: $rbt-icon-sidebyside;
+  }
+}
+.fa.fa-arrows-alt {
+  &:before {
+    content: $rbt-icon-expand;
+  }
+}
+.fa.fa-question-circle {
+  &:before {
+    content: $rbt-icon-question-mark;
+  }
+}
+

@@ -10,7 +10,7 @@ $page_title = 'General Settings';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         <table class="table rbt-table-responsive rbt-table-actions">

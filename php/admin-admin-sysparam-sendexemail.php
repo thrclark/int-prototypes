@@ -10,7 +10,7 @@ $page_title = 'Send exception email';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -31,16 +31,15 @@ $page_title = 'Send exception email';
                     <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                     <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
-        </div>
-        <growls>
-            <div>
-                <alert dismissible="true">
-                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
-                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                        <span>Changes have been saved.</span> </div>
-                </alert>
-            </div>
-        </growls>
+        </div> <growls>
+     
+            <alert dismissible="true">
+                <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
+                    <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                    <span>Changes have been saved.</span> </div>
+            </alert>
+    
+    </growls>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>

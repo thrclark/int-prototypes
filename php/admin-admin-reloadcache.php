@@ -10,21 +10,21 @@ $page_title = 'Reload Cache';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         <div class="mb-3">Manually reload the system cache for all the resources and tenants.</div>
         <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Reload cache</span> </button>
-    </main>
-    <growls>
-        <div>
-            <alert dismissible="true">
-                <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
-                    <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                    <span>Cache has been reloaded.</span> </div>
-            </alert>
+        <div class="position-relative mt-3">
+            <growls style=" display: none; position: absolute;" id="growl1">
+                <alert dismissible="true">
+                    <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                        <span>Cache has been reloaded.</span> </div>
+                </alert>
+            </growls>
         </div>
-    </growls>
+    </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script>

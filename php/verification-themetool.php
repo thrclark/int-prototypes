@@ -532,6 +532,15 @@ $page_title = 'VERIFY';
                     <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme"  disabled> Restore values </button>
                 </div>
             </div>
+            <div class="position-relative mt-3">
+                <growls style=" display: none; position: absolute;" id="growl1">
+                    <alert dismissible="true">
+                        <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                            <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                            <span>Changes have been saved.</span> </div>
+                    </alert>
+                </growls>
+            </div>
         </div>
         <div class="rbt-shell-stage p-3">
             <div class="container p-0" id="header_html_display"></div>
@@ -603,15 +612,6 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                 </section>
-                <growls>
-                    <div>
-                        <alert dismissible="true">
-                            <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
-                                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                                <span>Changes have been saved.</span> </div>
-                        </alert>
-                    </div>
-                </growls>
             </main>
             <div class="container p-0" id="footer_html_display"></div>
         </div>
