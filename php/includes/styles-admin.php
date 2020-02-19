@@ -1,5 +1,4 @@
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
-<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <style>
 :root {
  --body-bg-color: #EAEAEA;
