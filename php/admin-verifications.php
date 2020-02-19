@@ -10,7 +10,7 @@ $page_title = 'All verifications';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <div class="row align-items-center mb-3 mb-md-6 ">
             <div class="col"> </div>

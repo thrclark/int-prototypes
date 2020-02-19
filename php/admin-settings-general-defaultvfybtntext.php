@@ -10,7 +10,7 @@ $page_title = 'Default verify button text';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-5">
+<div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -30,18 +30,18 @@ $page_title = 'Default verify button text';
                 <div class="rbt-button-group mt-3 mb-5">
                     <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                     <a class="btn btn-outline-primary"  href="admin-settings-general.php"> Cancel </a> </div>
+                <div class="position-relative">
+                    <growls style=" display: none; position: absolute;" id="growl1">
+                        <alert dismissible="true">
+                            <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                                <span>Changes have been saved.</span> </div>
+                        </alert>
+                    </growls>
+                </div>
             </div>
         </div>
     </main>
-    <growls>
-        <div>
-            <alert dismissible="true">
-                <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
-                    <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                    <span>Changes have been saved.</span> </div>
-            </alert>
-        </div>
-    </growls>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
