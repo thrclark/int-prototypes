@@ -46,10 +46,10 @@ $page_title = 'VERIFY';
                         </div>
                     </div>
                 </div>
-                <h2>Verify your data</h2>
+                <h2>Verification name</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                 <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
-                <h3 class="mt-5">IU Notify</h3>
+                <h3 class="mt-5">Verify section name</h3>
                 <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -80,13 +80,13 @@ $page_title = 'VERIFY';
                         <button class="btn btn-sm btn-outline-primary">Edit</button>
                     </li>
                 </ul>
-                <h3 class="mt-5">Military Status</h3>
-                <p>Indiana University periodically invites all employees to update their veteran status. At this time, we ask all employees to review their current status below and click edit if this information is incorrect. Definitions of each veteran category can be seen by clicking the edit button. Data collected will be used for reporting and analysis purposes and will not be used against you in anyway.</p>
+                <h3 class="mt-5">Verify section name</h3>
+                <p>This is a descriptive paragraph for this section. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <dl class="row">
-                            <dt class="col-sm-4">Military Status</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not a Veteran</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
+                            <dt class="col-sm-4">Label</dt>
+                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Value</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
                         </dl>
                         <button class="btn btn-sm btn-outline-primary">Edit</button>
                     </li>
