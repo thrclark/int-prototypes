@@ -9,7 +9,7 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
-<div class="d-lg-none p-4">
+<div class="d-lg-none p-4"> 
     <div class="card">
         <div class="card-body ts-23"> The theme tool is only available on devices with a screen width greater than 992px. </div>
     </div>
