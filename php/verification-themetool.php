@@ -135,7 +135,7 @@ $page_title = 'VERIFY';
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group">
-                                <label>iOS desktop image</label>
+                                <label>iOS homescreen shortcut image</label>
                                 <div>For best results, image should be 180x180 pixels.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
@@ -564,9 +564,9 @@ $page_title = 'VERIFY';
                                 <h2 class="alert-heading">Privacy note</h2>
                                 <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
                             </div>-->
-                            <h2>Verify your data</h2>
+                            <h2>Verification name</h2>
                             <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                            <h3 class="mt-5">Sample data</h3>
+                            <h3 class="mt-5">Verification data</h3>
                             <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
