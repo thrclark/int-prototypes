@@ -14,6 +14,11 @@
 <main class="container" style="max-width:880px">
     <div class="row">
         <div class="col-12">
+            <div class="alert alert-primary alert-dismissible fade show mb-4" role="alert">
+                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                <div class="alert-heading">Note</div>
+                <p class="small">If any of these prototypes appear to have broken CSS, go to the <a href="php/verification-themetool.php" target="_blank">theme tool</a>, then 'Predefiend themes', and click the first white box.</p>
+            </div>
             <div class="card bg-white mb-4 rbt-box-raised">
                 <div class="card-body">
                     <div class="font-weight-bold rbt-ts-20 flex-grow-1 mb-5">End user views</div>
@@ -68,31 +73,19 @@
                                     </div>
                                 </div>
                             </li>
-                            
-                            
-                            
-                            
-                            
-                             <li class="list-group-item">
+                            <li class="list-group-item">
                                 <div class="media">
                                     <div class="media-body"> <a href="php/verification-preview.php" target="_blank" class="font-weight-bold">Preview banner</a>
                                         <div class="ts-14">Banner that shows up when a publisher previews a verification in the publishing interface.</div>
                                     </div>
                                 </div>
                             </li>
-                            
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-        
-        
-        
-        
-            <div class="col-12 mb-7">
+        <div class="col-12 mb-7">
             <div class="card bg-white mb-4 rbt-box-raised">
                 <div class="card-body">
                     <div class="font-weight-bold rbt-ts-20 flex-grow-1 mb-5">Admin views</div>
@@ -105,58 +98,32 @@
                                     </div>
                                 </div>
                             </li>
-                 
-                            
-                            
-                            
-                            
-                              <li class="list-group-item">
+                            <li class="list-group-item">
                                 <div class="media">
                                     <div class="media-body"> <a href="php/admin-verification-new1.php" target="_blank" class="font-weight-bold">New/edit verification</a>
                                         <div class="ts-14">Create or edit a verification.</div>
                                     </div>
                                 </div>
                             </li>
-                 
-                            
-                            
-                             
-                              <li class="list-group-item">
+                            <li class="list-group-item">
                                 <div class="media">
                                     <div class="media-body"> <a href="php/admin-customize.php" target="_blank" class="font-weight-bold">Theme tool</a>
                                         <div class="ts-14">Theme tool used to configure branding colors, fonts, etc. </div>
                                     </div>
                                 </div>
                             </li>
-                   
-                             
-                              <li class="list-group-item">
+                            <li class="list-group-item">
                                 <div class="media">
                                     <div class="media-body"> <a href="php/admin-settings-general.php" target="_blank" class="font-weight-bold">Settings</a>
                                         <div class="ts-14">Admin view for application settings </div>
                                     </div>
                                 </div>
                             </li>
-                 
-                            
-                            
-                            
-                            
-                            
-                            
-                            
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
     </div>
 </main>
 <footer class="rbt-footer fixed-bottom">
