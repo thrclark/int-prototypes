@@ -75,6 +75,13 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
+                                    <div class="media-body"> <a href="php/verification-none.php" target="_blank" class="font-weight-bold">No more verifications</a>
+                                        <div class="ts-14">End user view when there are no verifications to complete.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
                                     <div class="media-body"> <a href="php/verification-preview.php" target="_blank" class="font-weight-bold">Preview banner</a>
                                         <div class="ts-14">Banner that shows up when a publisher previews a verification in the publishing interface.</div>
                                     </div>
