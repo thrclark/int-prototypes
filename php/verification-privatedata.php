@@ -10,7 +10,7 @@ $page_title = 'VERIFY';
 </head>
 <body class="int-user">
 <header class="container p-3 px-sm-0 pt-sm-5">
-    <div class="d-flex"> <img alt="" class="int-brand-image">
+    <div class="d-flex"> <img src="http://www.indiana.edu/~espd/int/img/trident-large.png" alt="" class="int-brand-image">
         <div class="int-lockup-group text-nowrap" style="display: block">
             <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
             <h1 class="int-lockup-pagetitle" id="app-name-display">VERIFY</h1>
@@ -57,11 +57,11 @@ $page_title = 'VERIFY';
                             <dt class="col-sm-4">IU Office</dt>
                             <dd class="col-sm-8"><span class="int-privatedata" style="display:none;"> 812-855-5555</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
                             <dt class="col-sm-4">Home</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">812-336-0510</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
+                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">812-336-3456</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
                             <dt class="col-sm-4">Secondary Home</dt>
                             <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not Specified</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
                             <dt class="col-sm-4">Mobile 1</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">812-369-9664</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
+                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">812-369-1234</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
                             <dt class="col-sm-4">Mobile 2</dt>
                             <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Not Specified</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
                             <dt class="col-sm-4">Mobile 3</dt>
@@ -69,28 +69,9 @@ $page_title = 'VERIFY';
                         </dl>
                         <button class="btn btn-sm btn-outline-primary">Edit</button>
                     </li>
-                    <li class="list-group-item">
-                        <dl class="row">
-                            <dt class="col-sm-4">Non-IU Email</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">thrclark@gmail.com</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
-                            <dt class="col-sm-4">Recieve notices from</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">IU Bloomington<br>
-                                IU Kokomo</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
-                        </dl>
-                        <button class="btn btn-sm btn-outline-primary">Edit</button>
-                    </li>
+                  
                 </ul>
-                <h3 class="mt-5">Verify section name</h3>
-                <p>This is a descriptive paragraph for this section. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <dl class="row">
-                            <dt class="col-sm-4">Label</dt>
-                            <dd class="col-sm-8"><span class="int-privatedata" style="display:none;">Value</span> <span class="int-mask"> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> <i class="rbt-icon-circle" aria-hidden="true"></i> </span> </dd>
-                        </dl>
-                        <button class="btn btn-sm btn-outline-primary">Edit</button>
-                    </li>
-                </ul>
+        
             </div>
         </div>
         <div class="int-verify-controls py-3 px-3 px-lg-0">
