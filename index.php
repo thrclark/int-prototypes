@@ -54,8 +54,8 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-body"> <a href="php/verification-overlay.php" target="_blank" class="font-weight-bold">Data loading overlay</a>
-                                        <div class="ts-14">Masking overlay displayed while data is loading on the page.</div>
+                                    <div class="media-body"> <a href="php/verification-overlay.php" target="_blank" class="font-weight-bold">Data refresh/loading overlay</a>
+                                        <div class="ts-14">Masking overlay displayed when data needs to be refreshed, and the 'loading' overlay (click the refresh button).</div>
                                     </div>
                                 </div>
                             </li>

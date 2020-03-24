@@ -8,24 +8,7 @@ $page_title = 'VERIFY';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 <style>
-.overlay-loader {
-    background: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    opacity: .8;
-}
-.overlay-loader:before {
-    display: inline-block;
-    width: 1.25rem;
-    height: 1.25rem;
-    vertical-align: text-bottom;
-    border: 0.2em solid currentColor;
-    border-right-color: transparent;
-    border-radius: 50%;
-    animation: spinner-border .75s linear infinite;
-}
+
 </style>
 </head>
 <body class="int-user">
@@ -48,12 +31,15 @@ $page_title = 'VERIFY';
                 <h2>Verification name</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
                 <p>This is an additional, optional paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
+                <h3 class="mt-5">Verify section name</h3>
+                <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
                 <div style="position: relative">
-                    <div class="overlay-loader">
-                        <div class="spinner-border rbt-spinner--xxl" style="position: absolute;top: 45%;left: 45%;" role="status" aria-label="Content loading"> </div>
+                    <div class="int-section-overlay">
+                        <button class="btn btn-primary demojs_refreshbutton" style="position: absolute;top: 45%;left: 45%;"><span class="rbt-icon-sync"></span>
+                        <div class="d-inline-block ml-1">Refresh</div>
+                        </button>
+                        <div class="spinner-border rbt-spinner--xxl demojs_refreshspinner" style="position: absolute;top: 45%;left: 45%; display: none" role="status" aria-label="Content loading" > </div>
                     </div>
-                    <h3 class="mt-5">Verify section name</h3>
-                    <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <dl class="row">
@@ -69,6 +55,35 @@ $page_title = 'VERIFY';
                                 <dd class="col-sm-8"><span class="int-privatedata">Not Specified</span> </dd>
                                 <dt class="col-sm-4">Mobile 3</dt>
                                 <dd class="col-sm-8"><span class="int-privatedata">Not Specified</span> </dd>
+                            </dl>
+                            <button class="btn btn-sm btn-outline-primary">Edit</button>
+                        </li>
+                        <li class="list-group-item">
+                            <dl class="row">
+                                <dt class="col-sm-4">Non-IU Email</dt>
+                                <dd class="col-sm-8">someuser@gmail.com </dd>
+                                <dt class="col-sm-4">Recieve notices from</dt>
+                                <dd class="col-sm-8">IU Bloomington<br>
+                                    IU Kokomo </dd>
+                            </dl>
+                            <button class="btn btn-sm btn-outline-primary">Edit</button>
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="mt-5">Verify section name</h3>
+                <p>This is a descriptive paragraph for this section. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                <div style="position: relative">
+                    <div class="int-section-overlay">
+                        <button class="btn btn-primary demojs_refreshbutton" style="position: absolute;top: 45%;left: 45%;"><span class="rbt-icon-sync"></span>
+                        <div class="d-inline-block ml-1">Refresh</div>
+                        </button>
+                        <div class="spinner-border rbt-spinner--xxl demojs_refreshspinner" style="position: absolute;top: 45%;left: 45%; display: none" role="status" aria-label="Content loading" > </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <dl class="row">
+                                <dt class="col-sm-4">Label</dt>
+                                <dd class="col-sm-8">Value </dd>
                             </dl>
                             <button class="btn btn-sm btn-outline-primary">Edit</button>
                         </li>
@@ -125,11 +140,19 @@ $page_title = 'VERIFY';
 				 $('#question4').popover('destroy')
             }
         });
-		
-		
-		
-		
     }); 
+</script> 
+<script>
+$(document).ready(function() {
+    $(".demojs_refreshbutton").click(function() {
+        $(".demojs_refreshbutton").hide();
+        $(".demojs_refreshspinner").show();
+        setTimeout(function() {
+            $('.int-section-overlay').hide();
+        }, 3000)
+    });
+
+});
 </script>
 </body>
 </html>
