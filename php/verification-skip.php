@@ -110,7 +110,7 @@ $page_title = 'VERIFY';
                         </div>
                         <div class="modal-footer">
                             <div class="rbt-button-group">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="verifylater">Verify later</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="verifylater">Skip verification</button>
                             </div>
                         </div>
                     </div>
