@@ -1,9 +1,7 @@
 //custom SCSS
 
 
-.testtest{
-  color: red;
-}
+
 
 html {
   body {
@@ -18,6 +16,10 @@ html {
 
       h1 {
         //@extend .mb-5
+      }
+
+      .int-wizardmenu-mobile {
+        background: red;
       }
       .int-tabs {
         .nav-item {

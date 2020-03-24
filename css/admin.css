@@ -12297,12 +12297,11 @@ body {
     body.int-user .rbt-shell-sidebar {
       color: #444444; }
 
-.testtest {
-  color: red; }
-
 html body header .int-brand-image {
   content: var(--logo-image-url);
   max-height: 72px; }
+html body .main-content .int-wizardmenu-mobile {
+  background: red; }
 html body .main-content .int-tabs .nav-item {
   margin-right: 0px; }
   html body .main-content .int-tabs .nav-item .nav-link {

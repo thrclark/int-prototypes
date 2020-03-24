@@ -16,7 +16,6 @@ $page_subtitle = 'Data';
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         
              
-        <div class="testtest">sdfg</div>
         <div class="row">
             <div class="col-2 border-right d-none d-sm-block">
                 <div id="sticky">
