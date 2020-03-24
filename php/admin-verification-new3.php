@@ -31,10 +31,8 @@ $page_subtitle = 'Recipient rulesets';
                     <div class="col">
                         <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
                     </div>
-                    <div class="col-auto">
-                        <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Ruleset</button>
-                    </div>
-                </div> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
+                </div>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
                     <ol class="rvb-steps mb-5 d-sm-none">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -49,13 +47,12 @@ $page_subtitle = 'Recipient rulesets';
                             <div class="card" id='datacard1'>
                                 <div class="" id="headingOne">
                                     <h3 class="mb-2">
-                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">New set</span></button>
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Trigger <span id="showdash1" style="display: none">-</span> <span id="data-name-display"> </span></button>
                                     </h3>
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
-                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton
-1" aria-hidden="true" role="menu">
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu">
                                                 <button class="dropdown-item" id="deletedatacard1">Delete </button>
                                             </div>
                                         </div>
@@ -228,7 +225,7 @@ $page_subtitle = 'Recipient rulesets';
                             <div class="card" id='datacard2' style="display: none">
                                 <div class="" id="headingTwo">
                                     <h3 class="mb-2">
-                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">New set</span></button>
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Trigger <span id="showdash2" style="display: none">-</span> <span id="data-name2-display"> </span></button>
                                     </h3>
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
@@ -246,7 +243,7 @@ $page_subtitle = 'Recipient rulesets';
                                             <div> Provide a name for this recipient ruleset.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
-                                                    <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
+                                                    <input type="text" class="form-control"  id="data-name2" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,6 +399,9 @@ $page_subtitle = 'Recipient rulesets';
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Trigger</button>
                             </div>
                             <div class="form-group my-5">
                                 <label for="specifyleeway">Leeway</label>
@@ -582,6 +582,26 @@ $(document).ready(function(){
   $("#add-data-card").click(function(){
     $("#datacard2").show();
   });
+});
+</script> 
+<script>
+$(document).ready(function(){
+    $('#data-name').blur(function(){
+        if(!$(this).val()){
+            $('#showdash1').hide();
+        } else{
+             $('#showdash1').show();
+        }
+    });
+    
+    
+    $('#data-name2').blur(function(){
+        if(!$(this).val()){
+            $('#showdash2').hide();
+        } else{
+             $('#showdash2').show();
+        }
+    });
 });
 </script>
 </body>

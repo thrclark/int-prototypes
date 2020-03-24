@@ -14,8 +14,6 @@ $page_subtitle = 'Data';
 <div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
-        
-             
         <div class="row">
             <div class="col-2 border-right d-none d-sm-block">
                 <div id="sticky">
@@ -33,7 +31,6 @@ $page_subtitle = 'Data';
                     <div class="col">
                         <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
                     </div>
-                    <div class="col-auto"> </div>
                 </div>
                 <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
                     <ol class="rvb-steps mb-5 d-sm-none">
@@ -103,7 +100,6 @@ $page_subtitle = 'Data';
                                             <div class="col">
                                                 <div class="font-weight-bold mb-3">Field groups</div>
                                             </div>
-                                            <div class="col-auto"> </div>
                                         </div>
                                         <div class="card int-data-api">
                                             <div class="card-header border-bottom-0 p-0">
@@ -301,7 +297,6 @@ $page_subtitle = 'Data';
                                             <div class="col">
                                                 <div class="font-weight-bold mb-3">Field groups</div>
                                             </div>
-                                            <div class="col-auto"> </div>
                                         </div>
                                         <div class="card mt-3">
                                             <div class="card-body">
