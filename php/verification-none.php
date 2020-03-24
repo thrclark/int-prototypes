@@ -24,13 +24,14 @@ $page_title = 'VERIFY';
 <main>
     <section>
         <div class="border-top ">
-             <p class="ts-23 text-center py-7"> There are no more items requiring your verification at this time.</p>
+            <p class="ts-23 text-center py-7"> There are no more items requiring your verification at this time.</p>
         </div>
-     
     </section>
 </main>
+<div class="container p-0" id="footer_html_display">
+    <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.iu.edu/copyright/index.html" target="_blank" class="text-dark">Copyright</a> © 2020 The Trustees of <a href="https://www.iu.edu/" target="_blank" class="text-dark">Indiana University</a>. </div>
+</div>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
-
 </body>
 </html>

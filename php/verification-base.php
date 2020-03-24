@@ -27,7 +27,7 @@ $page_title = 'VERIFY';
             <div class="card-body">
                 <h2>Verification name</h2>
                 <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy. 
-               This is a paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
+                    This is a paragraph that may be customized as needed. This paragraph may include <a href="#">links</a>. Esse errem aeterno id, his ad blandit imperdiet. Id unum propriae suavitate sea. Adipisci delicata ocurreret ad qui. Altera impedit expetendis vis at.</p>
                 <h3 class="mt-5">Verify section name</h3>
                 <p>Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
                 <ul class="list-group">
@@ -79,6 +79,9 @@ $page_title = 'VERIFY';
         </div>
     </section>
 </main>
+<div class="container p-0" id="footer_html_display">
+    <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.iu.edu/copyright/index.html" target="_blank" class="text-dark">Copyright</a> © 2020 The Trustees of <a href="https://www.iu.edu/" target="_blank" class="text-dark">Indiana University</a>. </div>
+</div>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
