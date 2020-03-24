@@ -17,6 +17,10 @@ html {
       h1 {
         //@extend .mb-5
       }
+
+      .int-wizardmenu-mobile {
+        background-color: var(--body-bg-color);
+      }
       .int-tabs {
         .nav-item {
           margin-right: 0px;
@@ -181,3 +185,6 @@ html {
   }
 }
 
+.rvb-steps {
+  overflow-x: auto;
+}
