@@ -12301,7 +12301,7 @@ html body header .int-brand-image {
   content: var(--logo-image-url);
   max-height: 72px; }
 html body .main-content .int-wizardmenu-mobile {
-  background: red; }
+  background-color: var(--body-bg-color); }
 html body .main-content .int-tabs .nav-item {
   margin-right: 0px; }
   html body .main-content .int-tabs .nav-item .nav-link {
@@ -12377,5 +12377,8 @@ html body .main-content .int-tabs + .tab-content {
 
 .fa.fa-question-circle:before {
   content: ""; }
+
+.rvb-steps {
+  overflow-x: auto; }
 
 /*# sourceMappingURL=admin.css.map */

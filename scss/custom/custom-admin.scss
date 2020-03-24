@@ -19,7 +19,7 @@ html {
       }
 
       .int-wizardmenu-mobile {
-        background: red;
+        background-color: var(--body-bg-color);
       }
       .int-tabs {
         .nav-item {
@@ -185,3 +185,6 @@ html {
   }
 }
 
+.rvb-steps {
+  overflow-x: auto;
+}
