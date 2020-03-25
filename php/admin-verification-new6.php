@@ -13,6 +13,13 @@ $page_subtitle = 'Review/save';
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
+        <growls style=" display: none; position: absolute; right:30px" id="growl1">
+            <alert dismissible="true">
+                <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                    <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                    <span>Changes have been saved.</span> </div>
+            </alert>
+        </growls>
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         <div class="row">
             <div class="col-2 border-right d-none d-sm-block">
@@ -280,7 +287,9 @@ $page_subtitle = 'Review/save';
                             </div>
                         </div>
                         <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Save</a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i> </a>
+                            <button type="button" class="btn btn-primary" id="saveverification"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -298,7 +307,8 @@ $page_subtitle = 'Review/save';
   });
 	
 	
-</script> <script>
+</script> 
+<script>
     var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
 	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
 </script> 
@@ -310,6 +320,25 @@ $page_subtitle = 'Review/save';
             } else {
                 $("#enddate").hide();
             }
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $(function() {
+            $("#saveverification").click(function() {
+                $('.btn.btn-primary').addClass('rbt-loading');
+				$('.btn.btn-primary .spinner-border').removeClass('d-none');
+				$('.btn.btn-primary .visible').toggleClass('invisible');
+				$('#saveverification').prop('disabled', true);
+                $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
+                setTimeout(function() {
+                    $('.btn.btn-primary').removeClass('rbt-loading');
+					$('.btn.btn-primary .spinner-border').addClass('d-none');
+					$('#saveverification').prop('disabled', true);
+					$('.btn.btn-primary .invisible').removeClass('invisible');
+                }, 3000)
+            });
         });
     });
 </script>
