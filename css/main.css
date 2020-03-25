@@ -12762,6 +12762,12 @@ html .int-user {
         color: var(--panel-text-color);
         padding: 2rem 2.5rem 2.5rem;
         font-family: var(--font_body); }
+        html .int-user main section .card .card-body .int-section-overlay, html .int-user .main section .card .card-body .int-section-overlay {
+          background-color: rgba(255, 255, 255, 0.9);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10; }
         html .int-user main section .card .card-body a, html .int-user .main section .card .card-body a {
           color: var(--action-color); }
           html .int-user main section .card .card-body a:focus, html .int-user .main section .card .card-body a:focus {

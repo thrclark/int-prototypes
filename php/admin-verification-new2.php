@@ -31,10 +31,8 @@ $page_subtitle = 'Data';
                     <div class="col">
                         <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
                     </div>
-                    <div class="col-auto">
-                        <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Data</button>
-                    </div>
-                </div> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000">
+                </div>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
                     <ol class="rvb-steps mb-5 d-sm-none">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -49,10 +47,9 @@ $page_subtitle = 'Data';
                             <div class="card" id='datacard1'>
                                 <div class="" id="headingOne">
                                     <h3 class="mb-2">
-                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">New set</span></button>
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Section <span id="showdash1" style="display: none">-</span> <span id="data-name-display"> </span></button>
                                     </h3>
-                                    <div class="int-accordion-controls d-flex align-items-center">
-                                            <span class="text-danger bg-white rounded px-2 py-0 mr-3">2 errors</span>
+                                    <div class="int-accordion-controls d-flex align-items-center"> <span class="text-danger bg-white rounded px-2 py-0 mr-3">2 errors</span>
                                         <div class="dropdown">
                                             <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="sr-only">Navigation menu</span> </button>
                                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu">
@@ -75,8 +72,8 @@ $page_subtitle = 'Data';
                                                 <div class="col-12 col-lg-6">
                                                     <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert">
-                                                    <p class="rbt-ts-14"> This field is required.</p>
-                                                </div>
+                                                        <p class="rbt-ts-14"> This field is required.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -102,9 +99,6 @@ $page_subtitle = 'Data';
                                         <div class="row">
                                             <div class="col">
                                                 <div class="font-weight-bold mb-3">Field groups</div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> Field group</button>
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
@@ -177,13 +171,7 @@ $page_subtitle = 'Data';
                                         <div class="card int-data-api">
                                             <div class="card-header border-bottom-0 p-0">
                                                 <button class="rbt-btn-nostyle btn-block p-1" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Field group 2</button>
-                                                <div class="int-accordion-controls d-flex align-items-center">
-                                                    
-                                                    
-                                                    <span class="text-danger bg-white rounded px-2 py-0 mt-1 mr-3">1 error</span>
-                                                    
-                                                    
-                                                    
+                                                <div class="int-accordion-controls d-flex align-items-center"> <span class="text-danger bg-white rounded px-2 py-0 mt-1 mr-3">1 error</span>
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
                                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton3" aria-hidden="true" role="menu">
@@ -235,11 +223,9 @@ $page_subtitle = 'Data';
                                                     <label class="control-label" for="api2_nameLabel">URL </label>
                                                     <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api2_nameLabel" aria-labelledby="api2_nameLabel"  class="form-control" type="text">
-                                                    
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert">
-                                                    <p class="rbt-ts-14"> This field is required.</p>
-                                                </div>
-                                                    
+                                                        <p class="rbt-ts-14"> This field is required.</p>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_buttonLabel">Button label </label>
@@ -252,13 +238,16 @@ $page_subtitle = 'Data';
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> Field group</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="card" id='datacard2' style="display: none">
                                 <div class="" id="headingTwo">
                                     <h3 class="mb-2">
-                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> <span id="data-name2-display">New set</span></button>
+                                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Section <span id="showdash2" style="display: none">-</span> <span id="data-name2-display"></span></button>
                                     </h3>
                                     <div class="int-accordion-controls">
                                         <div class="dropdown">
@@ -306,16 +295,16 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="row">
                                             <div class="col">
-                                                <div class="font-weight-bold mb-3">APIs</div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> API</button>
+                                                <div class="font-weight-bold mb-3">Field groups</div>
                                             </div>
                                         </div>
-                                        <div class="card mt-3" style="margin-bottom: 3rem !important">
+                                        <div class="card mt-3">
                                             <div class="card-body">
-                                                <div class="ts-20 text-center"> No APIs specified.</div>
+                                                <div class="ts-20 text-center"> No field groups specified.</div>
                                             </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> Field group</button>
                                         </div>
                                         
                                         <!--           <div class="card int-data-api">
@@ -424,6 +413,9 @@ $page_subtitle = 'Data';
                                 </div>
                             </div>
                         </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-primary" id="add-data-card"><i class="rbt-icon-plus"></i> Section</button>
+                        </div>
                         <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="admin-verification-new1.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new3.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>
                 </div>
@@ -467,6 +459,26 @@ function datanamestore2() {
 	
 	
 
+</script> 
+<script>
+$(document).ready(function(){
+    $('#data-name').blur(function(){
+        if(!$(this).val()){
+            $('#showdash1').hide();
+        } else{
+             $('#showdash1').show();
+        }
+    });
+    
+    
+    $('#data-name2').blur(function(){
+        if(!$(this).val()){
+            $('#showdash2').hide();
+        } else{
+             $('#showdash2').show();
+        }
+    });
+});
 </script> 
 <script>
 $(document).ready(function(){

@@ -14,23 +14,119 @@
 <main class="container" style="max-width:880px">
     <div class="row">
         <div class="col-12">
+            <div class="alert alert-primary alert-dismissible fade show mb-4" role="alert">
+                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                <div class="alert-heading">Note</div>
+                <p class="small">If any of these prototypes appear to have broken CSS, go to the <a href="php/verification-themetool.php" target="_blank">theme tool</a>, then 'Predefiend themes', and click the first white box.</p>
+            </div>
             <div class="card bg-white mb-4 rbt-box-raised">
-                <div class="card-body d-flex">
-                    <div class="font-weight-bold rbt-ts-20 flex-grow-1">End user views</div>
-                    <div class="dropdown">
-                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> View </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1" aria-hidden="true" role="menu"> <a class="dropdown-item" href="php/cas.php" target="_blank">IU Login</a> <a class="dropdown-item" href="php/verification.php" target="_blank">Verification</a></div>
+                <div class="card-body">
+                    <div class="font-weight-bold rbt-ts-20 flex-grow-1 mb-5">End user views</div>
+                    <div class="card mb-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-base.php" target="_blank" class="font-weight-bold">Base view</a>
+                                        <div class="ts-14">Base view of the verification for the end user.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-sections.php" target="_blank" class="font-weight-bold">Multiple sections &amp; datasets</a>
+                                        <div class="ts-14">View with multiple sections and datasets.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-privatedata.php" target="_blank" class="font-weight-bold">Private data</a>
+                                        <div class="ts-14">Verification with private data that must be revealed prior to verification.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-skip.php" target="_blank" class="font-weight-bold">Skip verification</a>
+                                        <div class="ts-14">System error that prevents a verification from being registered. Click the 'Verify' button.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-overlay.php" target="_blank" class="font-weight-bold">Data refresh/loading overlay</a>
+                                        <div class="ts-14">Masking overlay displayed when data needs to be refreshed, and the 'loading' overlay (click the refresh button).</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-validate.php" target="_blank" class="font-weight-bold">Error messaging</a>
+                                        <div class="ts-14">Error message that displays above data section.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-nodeferrals.php" target="_blank" class="font-weight-bold">No more deferrals</a>
+                                        <div class="ts-14">End user view when defferals are disabled or unavailable.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-none.php" target="_blank" class="font-weight-bold">No more verifications</a>
+                                        <div class="ts-14">End user view when there are no verifications to complete.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-preview.php" target="_blank" class="font-weight-bold">Preview banner</a>
+                                        <div class="ts-14">Banner that shows up when a publisher previews a verification in the publishing interface.</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 mb-7">
             <div class="card bg-white mb-4 rbt-box-raised">
-                <div class="card-body d-flex">
-                    <div class="font-weight-bold rbt-ts-20 flex-grow-1">Administrative views</div>
-                    <div class="dropdown">
-                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> View </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item " href="php/admin-verifications.php" target="_blank">Amin UI</a> </div>
+                <div class="card-body">
+                    <div class="font-weight-bold rbt-ts-20 flex-grow-1 mb-5">Admin views</div>
+                    <div class="card mb-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/admin-verifications.php" target="_blank" class="font-weight-bold">Verifications</a>
+                                        <div class="ts-14">List of verifications in the system.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/admin-verification-new1.php" target="_blank" class="font-weight-bold">New/edit verification</a>
+                                        <div class="ts-14">Create or edit a verification.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/admin-customize.php" target="_blank" class="font-weight-bold">Theme tool</a>
+                                        <div class="ts-14">Theme tool used to configure branding colors, fonts, etc. </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/admin-settings-general.php" target="_blank" class="font-weight-bold">Settings</a>
+                                        <div class="ts-14">Admin view for application settings </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
