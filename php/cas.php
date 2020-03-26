@@ -38,4 +38,3 @@ $page_title = 'LOGIN';
 <?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>
-
