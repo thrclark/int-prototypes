@@ -28,7 +28,7 @@ $page_title = 'API Accounts';
             <div class="col">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="showinactive" value="option1" checked="">
-                    <label class="form-check-label" for="showinactive">Active APIs only</label>
+                    <label class="form-check-label" for="showinactive">Active accounts only</label>
                 </div>
             </div>
             <div class="col-auto">
@@ -60,7 +60,7 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
                                     <button class="dropdown-item">Delete</button>
@@ -77,7 +77,7 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
                                     <button class="dropdown-item">Delete</button>
@@ -94,7 +94,7 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
                                     <button class="dropdown-item">Delete</button>
@@ -111,7 +111,7 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
                                     <button class="dropdown-item">Delete</button>
@@ -128,7 +128,7 @@ $page_title = 'API Accounts';
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
                             <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
                                     <button class="dropdown-item">Delete</button>
