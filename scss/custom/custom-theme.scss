@@ -29,11 +29,8 @@ body {
       box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
     }
   }
-
   .btn-link {
-
     color: var(--action-color);
-
   }
 
   input[type=checkbox]:checked + label:before, input[type=checkbox]:checked + input + label:before {

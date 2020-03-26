@@ -26,6 +26,13 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <div class="media">
+                                    <div class="media-body"> <a href="php/cas.php" target="_blank" class="font-weight-bold">IU Login</a>
+                                        <div class="ts-14">Provided only as a styling reference for the Verify end user screen.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
                                     <div class="media-body"> <a href="php/verification-base.php" target="_blank" class="font-weight-bold">Base view</a>
                                         <div class="ts-14">Base view of the verification for the end user.</div>
                                     </div>

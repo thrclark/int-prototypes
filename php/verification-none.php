@@ -21,7 +21,7 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </header>
-<main>
+<main class="container p-0">
     <section>
         <div class="border-top ">
             <p class="ts-23 text-center py-7"> There are no more items requiring your verification at this time.</p>
