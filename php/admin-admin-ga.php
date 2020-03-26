@@ -10,7 +10,8 @@ $page_title = 'Google Analytics';
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
-<div class="container mt-3 mt-md-5 mb-7"><growls style=" display: none; position: absolute; right:30px" id="growl1">
+<div class="container mt-3 mt-md-5 mb-7">
+    <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
         <alert dismissible="true">
             <div role="alert" class="alert alert-success alert-dismissible mb-3">
                 <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
@@ -49,7 +50,7 @@ $page_title = 'Google Analytics';
                     <button class="btn btn-primary" id="submitform" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                 </div>
             </div>
-        </div> 
+        </div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
