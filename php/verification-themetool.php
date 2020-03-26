@@ -560,7 +560,7 @@ $page_title = 'VERIFY';
             
             
            
-            <main>
+            <main class="container p-0">
                 <section>
                     <div class="card">
                         <div class="card-body"> 

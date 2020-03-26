@@ -24,7 +24,7 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </header>
-<main>
+<main class="container p-0">
     <section>
         <div class="card">
             <div class="card-body">

@@ -1,8 +1,4 @@
 //custom SCSS
-
-
-
-
 html {
   .int-brand-image {
     content: var(--logoimage-url);
@@ -39,37 +35,24 @@ html {
           font-size: 24px;
           color: $color-black--700;
         }
-
       }
-
     }
-
     header {
-      //@extend .container;
-      //@extend .d-flex;
-      //@extend .flex-row;
-      //@extend .pb-3;
-      //@extend .px-0;
-      //@extend .pt-5;
-
-
       .dropdown-item-text {
         padding: 0.375rem 1rem;
       }
 
       .int-lockup-group {
-
-        @extend .pl-2;
+        padding-left: 0.5rem;
         .int-lockup-org {
-          @extend .ts-14;
-          @extend .pt-1;
+          font-size: 0.875rem;
+          padding-top: 0.25rem;
         }
         .int-lockup-pagetitle {
-          @extend .ts-26;
-          @extend .font-weight-bold;
+          font-size: 1.625rem;
+          font-weight: 700;
           letter-spacing: .04rem;
         }
-
       }
       .rbt-header-avatar-id {
         color: var(--body-text-color);
@@ -77,11 +60,6 @@ html {
       }
     }
     main, .main {
-      @extend .container;
-      //@extend .mt-5;
-      @extend .p-0;
-
-
       section {
         color: var(--body-text-color);
         font-family: var(--font_body);
@@ -98,7 +76,6 @@ html {
             font-family: var(--font_header);
 			font-size: var(--base_headerfont_size);
           }
-
           .card-body {
             color: var(--panel-text-color);
             padding: 2rem 2.5rem 2.5rem;
@@ -119,14 +96,6 @@ html {
             .int-mask {
               font-size: 10px;
               letter-spacing: 1px;
-            }
-            .int-help {
-              @extend .ts-14;
-              text-align: center;
-              @extend .mt-6;
-              a {
-                text-decoration: none;
-              }
             }
             .list-group {
               .list-group-item {
@@ -215,55 +184,28 @@ html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
 }
 
 
-
-
-@include media-breakpoint-down(md) {
-  header {
-    .dropdown-toggle {
-      &:after {
-
-        //content: "\e943";
-
-      }
-    }
-  }
-}
-
-
-
-
 //theme builder
-
-
-
 .int-themeopen {
   margin-left: inherit
 }
 .int-themeclose {
   margin-left: -480px
 }
-
-
-
 button[data-theme] {
   display: inline-block;
   width: 2rem;
   height: 2rem;
   margin-right: 0.25rem;
   border: 1px solid $color-black--800;
-  //border-radius: 50%;
   font-size: 0;
   background: transparent;
   outline: 0;
   cursor: pointer;
 }
-
-
 .int-accordion-controls {
   position: absolute;
   top: 0px;
   right: 0px;
-  /* width: 36px; */
   height: 44px;
   padding: 8px;
   margin-right: 10px;
@@ -275,16 +217,11 @@ button[data-theme] {
     }
   }
 }
-
-
-
 .colorpick {
   label {
     font-size: 1rem !important;
   }
 }
-
-
 .int-fontlinks {
   .list-group-item {
     .int-fontlink-checker {
