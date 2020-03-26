@@ -593,7 +593,7 @@ $page_title = 'VERIFY';
                     <div class="int-verify-controls py-3">
                         <div class="row mb-5" id="demojs_verifyscreen">
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-fill flex-column">
                                     <div class="mb-3 ts-20">
                                         <div class="form-check form-check-inline">
                                             <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
@@ -606,7 +606,7 @@ $page_title = 'VERIFY';
                                 </div>
                             </div>
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-fill flex-column">
                                     <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                                     <div class="rbt-button-group mt-auto">
                                         <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>

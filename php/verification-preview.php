@@ -58,7 +58,7 @@ $page_title = 'VERIFY';
             <p class="border-bottom pb-3">This is an optional paragraph that can be customized. Abundantly made days herb land called whose. Won't a night. Third hath greater face replenish whales fruit saying is meat. Us bearing. Air day called Also, abundantly forth she'd night may. They're gathered you're place fifth. Fowl they're saw midst for waters kind and make green and winged sea their whales you'll them seas set i days first itself open. </p>
             <div class="row mb-5" id="demojs_verifyscreen">
                 <div class="col-md-6 d-flex pb-5 pb-md-0">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-fill flex-column">
                         <div class="mb-3 ts-20">
                             <div class="form-check form-check-inline">
                                 <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
@@ -71,7 +71,7 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="col-md-6 d-flex pb-5 pb-md-0">
-                    <div class="d-flex flex-column">
+                    <div class="d-flex flex-fill flex-column">
                         <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                         <div class="rbt-button-group mt-auto">
                             <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
