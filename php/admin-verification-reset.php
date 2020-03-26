@@ -11,6 +11,13 @@ $page_title = 'Reset user verifications';
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-7">
+    <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
+        <alert dismissible="true">
+            <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                <span>Changes have been saved.</span> </div>
+        </alert>
+    </growls>
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
         <div class="form-group">
@@ -47,7 +54,7 @@ $page_title = 'Reset user verifications';
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Verify</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
-                            <button class="btn btn-sm btn-outline-primary demojs-showGrowl1">Reset</button>
+                            <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#modal1" data-backdrop="static" data-keyboard="false">Reset</button>
                         </div></td>
                 </tr>
                 <tr>
@@ -56,23 +63,60 @@ $page_title = 'Reset user verifications';
                     <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Verify</span></td>
                     <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
                         <div class="rbt-table-responsive-cell-content">
-                            <button class="btn btn-sm btn-outline-primary demojs-showGrowl2">Reset</button>
+                            <button class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#modal2" data-backdrop="static" data-keyboard="false">Reset</button>
                         </div></td>
                 </tr>
             </tbody>
         </table>
-        <growls>
-            <div>
-                <alert dismissible="true">
-                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
-                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                        <span>Citizenship Verification has now been reset for user '<span class="font-weight-bold">thrclark</span>'.</span> </div>
-                    <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl2">
-                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                        <span>FERPA Compliance has now been reset for user '<span class="font-weight-bold">thrclark</span>'.</span> </div>
-                </alert>
+        <!-- Modal -->
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Confirm Reset User Verification</div>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to reset this user to require verification again immediately?</p>
+                        <dl>
+                            <dt>Name</dt>
+                            <dd>Citizenship Verification</dd>
+                            <dt>Username/Id/Email</dt>
+                            <dd>thrclark</dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rbt-button-group">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="resetbutton1">Reset verification</button>
+                            <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </growls>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Confirm Reset User Verification</div>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you sure you want to reset this user to require verification again immediately?</p>
+                        <dl>
+                            <dt>Name</dt>
+                            <dd>FERPA Compliance</dd>
+                            <dt>Username/Id/Email</dt>
+                            <dd>thrclark</dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rbt-button-group">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="resetbutton2">Reset verification</button>
+                            <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
@@ -86,15 +130,15 @@ $page_title = 'Reset user verifications';
         });
     }); 
 </script> 
-<script >
+<script>
     $(document).ready(function() {
-        $(".demojs-showGrowl1").click(function() {
-            $("#growl1").fadeIn().delay(5000).fadeOut();
-        });
-        $(".demojs-showGrowl2").click(function() {
-            $("#growl2").fadeIn().delay(5000).fadeOut();
+        $(function() {
+            $("#resetbutton1,#resetbutton2").click(function() {
+                $("#growl1").delay(1000).fadeIn().delay(5000).fadeOut();
+            });
         });
     });
+
 </script>
 </body>
 </html>
