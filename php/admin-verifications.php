@@ -20,7 +20,7 @@ $page_title = 'All verifications';
         <div class="form-row align-items-center my-3">
             <div class="col">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="showinactive" value="option1">
+                    <input class="form-check-input" type="checkbox" id="showinactive" value="option1" checked>
                     <label class="form-check-label" for="showinactive">Active verifications only</label>
                 </div>
             </div>
@@ -63,7 +63,7 @@ $page_title = 'All verifications';
                     <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
-                <tr class="demojs-inactive">
+                <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">IU Login</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Inactive</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
@@ -117,7 +117,7 @@ $page_title = 'All verifications';
                     <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
-                <tr class="demojs-inactive">
+                <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Two-Step Login With Duo</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Inactive</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">9/15/2019</span></td>
