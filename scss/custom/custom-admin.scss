@@ -57,9 +57,16 @@ html {
 }
 
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-down(xs) {
 
   html {
+    body {
+      header {
+        .int-brand-image {
+          max-height: 48px;
+        }
+      }
+    }
 
   }
 

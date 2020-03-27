@@ -24,7 +24,6 @@
 </header>
 <div class="rbt-drawer d-lg-none">
     <nav>
-        <h3 class="rbt-ts-14 text-uppercase mt-4 mb-2">Optional header</h3>
         <ul class="list-group mt-3">
             <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse"  data-target="#nav_pub">Verifications</a>
                 <ul class="collapse" id="nav_pub">
@@ -40,10 +39,6 @@
                     <li class="list-group-item"> <a href="admin-customize.php">Custom theme </a> </li>
                     <li class="list-group-item"> <a href="admin-settings-publishers.php">Publishers</a> </li>
                     <li class="list-group-item"> <a href="admin-settings-ldap.php">LDAP Configuration </a></li>
-                </ul>
-            </li>
-            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_admin">Admin</a>
-                <ul class="collapse" id="nav_admin">
                     <li class="list-group-item"> <a href="admin-admin-ga.php">Google Analytics</a> </li>
                     <li class="list-group-item"> <a href="admin-admin-sysparam.php">System parameters</a> </li>
                     <li class="list-group-item"> <a href="admin-admin-reloadcache.php">Reload Cache</a></li>
