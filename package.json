@@ -21,9 +21,9 @@
     "bootstrap": "4.3.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.13.1",
-    "paginationjs": "^2.1.4",
-    "popper.js": "^1.14.7",
-    "prismjs": "^1.11.0",
+    "paginationjs": "^2.1.5",
+    "popper.js": "^1.16.1",
+    "prismjs": "^1.19.0",
     "simplemde": "^1.11.2"
   },
   "devDependencies": {

@@ -100,7 +100,7 @@ $page_subtitle = 'Recipient rulesets';
                                             <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
                                                 <dl id="builder_group_0" class="rules-group-container">
                                                     <dt class="rules-group-header">
-                                                        <div class="btn-group pull-right group-actions">
+                                                        <div class="btn-group float-right group-actions">
                                                             <div class="dropdown">
                                                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Add </button>
                                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(73px, 24px, 0px);">
@@ -123,7 +123,7 @@ $page_subtitle = 'Recipient rulesets';
                                                         <ul class="rules-list">
                                                             <li id="builder_rule_0" class="rule-container">
                                                                 <div class="rule-header">
-                                                                    <div class="btn-group pull-right rule-actions">
+                                                                    <div class="btn-group float-right rule-actions">
                                                                         <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
                                                                     </div>
                                                                 </div>
@@ -154,7 +154,7 @@ $page_subtitle = 'Recipient rulesets';
                                                             </li>
                                                             <li id="builder_rule_1" class="rule-container">
                                                                 <div class="rule-header">
-                                                                    <div class="btn-group pull-right rule-actions">
+                                                                    <div class="btn-group float-right rule-actions">
                                                                         <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
                                                                     </div>
                                                                 </div>
@@ -185,7 +185,7 @@ $page_subtitle = 'Recipient rulesets';
                                                             </li>
                                                             <li id="builder_rule_2" class="rule-container">
                                                                 <div class="rule-header">
-                                                                    <div class="btn-group pull-right rule-actions">
+                                                                    <div class="btn-group float-right rule-actions">
                                                                         <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
                                                                     </div>
                                                                 </div>
@@ -278,7 +278,7 @@ $page_subtitle = 'Recipient rulesets';
                                             <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
                                                 <dl id="builder_group_0" class="rules-group-container">
                                                     <dt class="rules-group-header">
-                                                        <div class="btn-group pull-right group-actions">
+                                                        <div class="btn-group float-right group-actions">
                                                             <div class="dropdown">
                                                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Add </button>
                                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(73px, 24px, 0px);">
@@ -301,7 +301,7 @@ $page_subtitle = 'Recipient rulesets';
                                                         <ul class="rules-list">
                                                             <li id="builder_rule_0" class="rule-container">
                                                                 <div class="rule-header">
-                                                                    <div class="btn-group pull-right rule-actions">
+                                                                    <div class="btn-group float-right rule-actions">
                                                                         <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
                                                                     </div>
                                                                 </div>
@@ -332,7 +332,7 @@ $page_subtitle = 'Recipient rulesets';
                                                             </li>
                                                             <li id="builder_rule_1" class="rule-container">
                                                                 <div class="rule-header">
-                                                                    <div class="btn-group pull-right rule-actions">
+                                                                    <div class="btn-group float-right rule-actions">
                                                                         <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
                                                                     </div>
                                                                 </div>
@@ -363,7 +363,7 @@ $page_subtitle = 'Recipient rulesets';
                                                             </li>
                                                             <li id="builder_rule_2" class="rule-container">
                                                                 <div class="rule-header">
-                                                                    <div class="btn-group pull-right rule-actions">
+                                                                    <div class="btn-group float-right rule-actions">
                                                                         <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
                                                                     </div>
                                                                 </div>
