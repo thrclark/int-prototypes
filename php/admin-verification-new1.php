@@ -8,6 +8,7 @@ $page_subtitle = 'Setup';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/easymde@2.1.0/dist/easymde.min.css">
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
@@ -240,10 +241,19 @@ $page_subtitle = 'Setup';
     $("#sticky2").sticky({topSpacing:0});
   });
 </script> 
-<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script> 
 <script>
-var simplemde = new SimpleMDE({ element: $("#disclaimerLabel")[0] });
-var simplemde = new SimpleMDE({ element: $("#description_custom")[0] });
+    var easyMDE = new EasyMDE({
+        element: $('#disclaimerLabel')[0],
+        toolbar: ["bold", "italic", "link", "|", "preview"],
+        initialValue: '',
+        status: 'false'
+    });
+    var easyMDE = new EasyMDE({
+        element: $('#description_custom')[0],
+        toolbar: ["bold", "italic", "link", "|", "preview"],
+        initialValue: 'On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.',
+        status: 'false'
+    })
 </script> 
 <script>
     $(document).ready(function() {

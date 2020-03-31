@@ -8,6 +8,7 @@ $page_subtitle = 'Data';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/easymde@2.1.0/dist/easymde.min.css">
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
@@ -331,9 +332,18 @@ $page_subtitle = 'Data';
   });
 	
 	
-</script> <script>
-var simplemde = new SimpleMDE({ element: $("#descriptionLabel")[0] });
-var simplemde = new SimpleMDE({ element: $("#descriptionLabel2")[0] });
+</script> 
+<script>
+    var easyMDE = new EasyMDE({
+        element: $('#descriptionLabel')[0],
+        toolbar: ["bold", "italic", "link", "|", "preview"],
+        status: 'false'
+    });
+    var easyMDE = new EasyMDE({
+        element: $('#descriptionLabel2')[0],
+        toolbar: ["bold", "italic", "link", "|", "preview"],
+        status: 'false'
+    })
 </script> 
 <script>
 function datamnameset() {

@@ -23,10 +23,9 @@
     "node-sass": "^4.13.1",
     "paginationjs": "^2.1.5",
     "popper.js": "^1.16.1",
-    "prismjs": "^1.19.0",
-    "simplemde": "^1.11.2"
+    "prismjs": "^1.19.0"
   },
   "devDependencies": {
-    "rivet-bootstrap": "1.7.2"
+    "rivet-bootstrap": "1.7.2-1"
   }
 }

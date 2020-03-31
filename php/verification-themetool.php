@@ -9,7 +9,6 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
-
 <main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
@@ -79,7 +78,7 @@ $page_title = 'VERIFY';
                                             </image-upload>
                                             <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
                                                 <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
-                                                    <button class="btn btn-sm btn-danger"> <i class="fa fa-times"></i> <span class="sr-only">
+                                                    <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
                                                     <message key="global.buttons.delete">Delete</message>
                                                     </span> </button>
                                                 </div>
@@ -148,7 +147,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group">
                                 <label>MS Tile image (square - 310x310 px)</label>
-                                <div>Image to display as the Microsoft tile for size 310x310. The image should represenmt a solid white icon with a transparent background.</div>
+                                <div>Image to display as the Microsoft tile for size 310x310. The image should represent a solid white icon with a transparent background.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -161,7 +160,7 @@ $page_title = 'VERIFY';
                                     </image-upload>
                                     <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
                                         <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://via.placeholder.com/310x310" class="">
-                                            <button class="btn btn-sm btn-danger"> <i class="fa fa-times"></i> <span class="sr-only">
+                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
                                             <message key="global.buttons.delete">Delete</message>
                                             </span> </button>
                                         </div>
@@ -170,7 +169,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group">
                                 <label>MS Tile image (wide - 310x150 px)</label>
-                                <div>Image to display as the Microsoft tile for size 310x150. The image should represenmt a solid white icon with a transparent background.</div>
+                                <div>Image to display as the Microsoft tile for size 310x150. The image should represent a solid white icon with a transparent background.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -183,7 +182,7 @@ $page_title = 'VERIFY';
                                     </image-upload>
                                     <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
                                         <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://via.placeholder.com/310x150" class="">
-                                            <button class="btn btn-sm btn-danger"> <i class="fa fa-times"></i> <span class="sr-only">
+                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
                                             <message key="global.buttons.delete">Delete</message>
                                             </span> </button>
                                         </div>
@@ -528,22 +527,15 @@ $page_title = 'VERIFY';
                     <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme"  disabled> Restore values </button>
                 </div>
             </div>
-           
         </div>
         <div class="rbt-shell-stage p-3">
-            
-            
-             <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
-                    <alert dismissible="true">
-                        <div role="alert" class="alert alert-success alert-dismissible mb-3">
-                            <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                            <span>Changes have been saved.</span> </div>
-                    </alert>
-                </growls>
-            
-            
-            
-            
+            <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
+                <alert dismissible="true">
+                    <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                        <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                        <span>Changes have been saved.</span> </div>
+                </alert>
+            </growls>
             <div class="container p-0" id="header_html_display"></div>
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
@@ -557,9 +549,6 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
             </header>
-            
-            
-           
             <main class="container p-0">
                 <section>
                     <div class="card">
