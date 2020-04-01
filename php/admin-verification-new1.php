@@ -41,29 +41,37 @@ $page_subtitle = 'Setup';
                 <div class="row">
                     <div class="col-12 col-lg-12">
                         <div class="form-group">
-                            <label class="control-label" for="nameLabel"> Name </label>
-                            <div class="" id="nameLabel"> The name of this verification. It will be displayed on the main verification page.</div>
+                            <label class="control-label" for="vfy1_name"> Name </label>
+                            <div> The name of this verification. It will be displayed on the main verification page.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <input aria-labelledby="nameLabel" value="" ccfvalidated="" class="form-control" id="isinvalid" formcontrolname="name" type="text">
+                                    <countdown>
+                                        <div class="rbt-charcount">
+                                            <input aria-labelledby="vfy1_name" class="form-control " formcontrolname="title" id="vfy1_name">
+                                            <span class="badge badge-success" id="vfy1_name_badge"> <span id="vfy1_name_counter">20</span> </span> </div>
+                                    </countdown>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="keyLabel"> Unique Key </label>
-                            <div class="" id=""> This uniquely identifies this verification in the application. </div>
+                            <label class="control-label" for="vfy1_unkey"> Unique Key </label>
+                            <div> This uniquely identifies this verification in the application.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <input value="" aria-labelledby="keyLabel" ccfvalidated="" class="form-control" id="keyLabel" formcontrolname="clientid" type="text">
+                                    <countdown>
+                                        <div class="rbt-charcount">
+                                            <input aria-labelledby="vfy1_unkey" class="form-control " formcontrolname="title" id="vfy1_unkey">
+                                            <span class="badge badge-success" id="vfy1_unkey_badge"> <span id="vfy1_unkey_counter">20</span> </span> </div>
+                                    </countdown>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="publisherLabel"> Publisher </label>
+                            <label class="control-label" for="vfy1_publisherLabel"> Publisher </label>
                             <div class="" id=""> The owner of this verification </div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <select class="form-control" id="publisherLabel">
+                                    <select class="form-control" id="vfy1_publisherLabel">
                                         <option value="?" selected="selected"></option>
                                         <option label="ESI One.IU Team" value="number:1040">ESI One.IU Team</option>
                                         <option label="HR" value="number:1120">HR</option>
@@ -74,14 +82,6 @@ $page_subtitle = 'Setup';
                                 </div>
                             </div>
                         </div>
-                        <!--   <div class="form-group">
-                            <label for="textarea-full">Verification intro</label>
-                            <textarea class="form-control" id="textarea-full" rows="5" disabled>On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
-                            <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" value="" id="displayintro" checked>
-                                <label class="form-check-label font-weight-normal" for="displayintro"> Display the default verification intro. This can be edited under <a href="admin-settings-general-verificationintro.php">general settings</a>. </label>
-                            </div>
-                        </div>-->
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Description</label>
                             <div class="" id=""> The text that will display above the verification.</div>
@@ -100,8 +100,12 @@ $page_subtitle = 'Setup';
                                 <textarea class="form-control" cols="40" id="description_standard" name="description_standard" rows="3" disabled="" style="display: block;">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
                             </div>
                             <div id="verify_select_description_custom" style="display: none;">
-                                <label class="sr-only" for="description_custom"> Verification description custom text </label>
-                                <textarea id="description_custom">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
+                                <countdown>
+                                    <label class="sr-only" for="description_custom"> Verification description custom text </label>
+                                    <div class="rbt-charcount">
+                                        <textarea id="description_custom"></textarea>
+                                        <span class="badge badge-success" id="counterDemo2_badge"><span id="charcounter2">30</span></span> </div>
+                                </countdown>
                             </div>
                         </div>
                         <div class="form-group">
@@ -128,7 +132,11 @@ $page_subtitle = 'Setup';
                             </div>
                             <div id="verify_now_custom" style="display: none;">
                                 <label class="sr-only" for="verify_now_custom_field"> Verification Confirmation Custom Text </label>
-                                <textarea class="form-control" cols="40" id="verify_now_custom_field" name="textarea1" rows="3" placeholder="Custom text"></textarea>
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <textarea class="form-control" id="verify_now_custom_field"></textarea>
+                                        <span class="badge badge-success" id="verify_now_custom_field_badge"><span id="verify_now_custom_field_counter">50</span></span> </div>
+                                </countdown>
                             </div>
                         </div>
                         <div class="form-group">
@@ -150,7 +158,11 @@ $page_subtitle = 'Setup';
                             </div>
                             <div id="defer_now_custom" style="display: none;">
                                 <label class="sr-only" for="defer_now_custom_field"> Verification Confirmation Custom Text </label>
-                                <textarea class="form-control" cols="40" id="defer_now_custom_field" name="textarea1" rows="3" placeholder="Custom text"></textarea>
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <textarea class="form-control" id="defer_now_custom_field"></textarea>
+                                        <span class="badge badge-success" id="defer_now_custom_field_badge"><span id="defer_now_custom_field_counter">50</span></span> </div>
+                                </countdown>
                             </div>
                         </div>
                         <div class="form-group">
@@ -178,7 +190,11 @@ $page_subtitle = 'Setup';
                                 <label class="sr-only" for="verify_button_custom_label"> Verify button custom label </label>
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
-                                        <input type="text" class="form-control" id="verify_button_custom_label" value="" placeholder="Custom label">
+                                        <countdown>
+                                            <div class="rbt-charcount">
+                                                <input aria-labelledby="verify_button_custom_label" class="form-control " formcontrolname="title" id="verify_button_custom_label" value="Verify">
+                                                <span class="badge badge-success" id="verify_button_custom_label_badge"> <span id="verify_button_custom_label_counter">20</span> </span> </div>
+                                        </countdown>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +224,11 @@ $page_subtitle = 'Setup';
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
                                         <label class="sr-only" for="defer_button_custom_label"> Deferral button custom label </label>
-                                        <input type="text" class="form-control" id="defer_button_custom_label" value="" placeholder="Custom label">
+                                        <countdown>
+                                            <div class="rbt-charcount">
+                                                <input aria-labelledby="defer_button_custom_label" class="form-control " formcontrolname="title" id="defer_button_custom_label" value="Defer">
+                                                <span class="badge badge-success" id="defer_button_custom_label_badge"> <span id="defer_button_custom_label_counter">20</span> </span> </div>
+                                        </countdown>
                                     </div>
                                 </div>
                             </div>
@@ -300,6 +320,94 @@ $page_subtitle = 'Setup';
             $('#verify_select_description_standard, #verify_select_description_custom').hide();
             $('#' + $(this).val()).show();
         });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#vfy1_name").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#vfy1_name_counter').text(length);
+            if ($("#vfy1_name").val().length > 20) {
+                $("#vfy1_name_badge").last().addClass("badge-danger");
+            } else {
+                $("#vfy1_name_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+         $("#vfy1_unkey").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#vfy1_unkey_counter').text(length);
+            if ($("#vfy1_unkey").val().length > 20) {
+                $("#vfy1_unkey_badge").last().addClass("badge-danger");
+            } else {
+                $("#vfy1_unkey_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+         $("#verify_now_custom_field").keyup(function() {
+            var length = $(this).val().length;
+            length = 50 - length;
+            $('#verify_now_custom_field_counter').text(length);
+            if ($("#verify_now_custom_field").val().length > 50) {
+                $("#verify_now_custom_field_badge").last().addClass("badge-danger");
+            } else {
+                $("#verify_now_custom_field_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+        
+          $("#defer_now_custom_field").keyup(function() {
+            var length = $(this).val().length;
+            length = 50 - length;
+            $('#defer_now_custom_field_counter').text(length);
+            if ($("#defer_now_custom_field").val().length > 50) {
+                $("#defer_now_custom_field_badge").last().addClass("badge-danger");
+            } else {
+                $("#defer_now_custom_field_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+        
+          $("#verify_button_custom_label").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#verify_button_custom_label_counter').text(length);
+            if ($("#verify_button_custom_label").val().length > 20) {
+                $("#verify_button_custom_label_badge").last().addClass("badge-danger");
+            } else {
+                $("#verify_button_custom_label_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+          $("#defer_button_custom_label").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#defer_button_custom_label_counter').text(length);
+            if ($("#defer_button_custom_label").val().length > 20) {
+                $("#defer_button_custom_label_badge").last().addClass("badge-danger");
+            } else {
+                $("#defer_button_custom_label_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+        
+        
+        
+        
+        
+       
     });
 </script>
 </body>
