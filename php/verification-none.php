@@ -21,10 +21,10 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </header>
-<main class="container p-0">
+<main class="container h-75 p-0">
     <section>
-        <div class="border-top ">
-            <p class="ts-23 text-center py-7"> There are no more items requiring your verification at this time.</p>
+        <div class="border-top text-center mb-2">
+            <p class="ts-23  pt-7 mb-3"> There are no more items requiring your verification at this time.</p>
         </div>
     </section>
 </main>
