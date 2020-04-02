@@ -47,6 +47,13 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
+                                    <div class="media-body"> <a href="php/verification-globalerror.php" target="_blank" class="font-weight-bold">Global error</a>
+                                        <div class="ts-14">End user view of a global error page.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
                                     <div class="media-body"> <a href="php/verification-sections.php" target="_blank" class="font-weight-bold">Multiple sections &amp; datasets</a>
                                         <div class="ts-14">View with multiple sections and datasets.</div>
                                     </div>
