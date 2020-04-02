@@ -21,11 +21,12 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </header>
-<main class="container p-0">
+<main class="container h-75 p-0">
     <section>
-        <div class="border-top text-center mb-7">
+        <div class="border-top text-center mb-2">
             <p class="ts-23  pt-7 mb-3"> Sorry, there was a problem.</p>
-            <button class="btn btn-primary">Home</button>
+            <button class="btn btn-primary mb-5">Home</button>
+            <div class="mb-7 ts-12"> Error: This is a detailed error message. This is a second sentence for this error.</div>
         </div>
     </section>
 </main>
