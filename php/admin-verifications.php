@@ -34,7 +34,7 @@ $page_title = 'All verifications';
                 <tr>
                     <th scope="col">Name</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Expiration</th>
+                    <th scope="col">End date</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -42,85 +42,85 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Acceptable Use Agreement</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Citizenship Verification</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">External Email Flag</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">12/31/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">12/31/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">FERPA Compliance</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">IU Login</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Inactive</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">IU-Notify</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Personal Information</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.12.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.19.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.27.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.5.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 7.3.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">7/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Travel or out-of-pocket Reimbursement Account</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Active</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">--</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">--</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Two-Step Login With Duo</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Inactive</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expiration</b> <span class="rbt-table-responsive-cell-content">9/15/2019</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">End date</b> <span class="rbt-table-responsive-cell-content">9/15/2019</span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
             </tbody>
