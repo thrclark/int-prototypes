@@ -21,7 +21,7 @@ $page_title = 'VERIFY';
         </div>
     </div>
 </header>
-<main class="container h-75 p-0">
+<main class="container p-0">
     <section>
         <div class="border-top text-center mb-2">
             <p class="ts-23  pt-7 mb-3"> Sorry, there was a problem.</p>
@@ -30,7 +30,7 @@ $page_title = 'VERIFY';
         </div>
     </section>
 </main>
-<div class="container p-0" id="footer_html_display">
+<div class="container p-0 mt-auto" id="footer_html_display">
     <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.iu.edu/copyright/index.html" target="_blank" class="text-dark">Copyright</a> © 2020 The Trustees of <a href="https://www.iu.edu/" target="_blank" class="text-dark">Indiana University</a>. </div>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
