@@ -27,7 +27,8 @@ $page_subtitle = 'Scheduling';
                 </div>
             </div>
             <div class="col-12 col-sm-10 pl-sm-5">
-                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2> <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
+                <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
+                <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
                     <ol class="rvb-steps mb-5 d-sm-none">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Setup</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i> </span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"> <span class="rvb-steps__label"><span class="sr-only">Data</span></span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i> </span> </a> </li>
@@ -42,24 +43,23 @@ $page_subtitle = 'Scheduling';
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col">
-                                        <div class="font-weight-bold mb-1 ts-14">Status</div>
+                                        <div class="font-weight-bold mb-1 ts-16">Status</div>
                                         <div>Specify the status of this verification upon saving</div>
                                     </div>
-                                    <div class="col-auto">
-                                        <div class="rvb-switch rvb-switch-primary">
-                                            <label class="">
-                                            <input type="checkbox" id="status">
-                                            <div class="rvb-slider">
-                                                <div class="rvb-slider-on">On</div>
-                                                <div class="rvb-slider-off">Off</div>
-                                            </div>
-                                            </label>
+                                    <div class="col-auto px-7 border-left">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="show_enddate" value="option1" checked>
+                                            <label class="form-check-label" for="show_enddate"> Active </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="hide_enddate" value="option2">
+                                            <label class="form-check-label" for="hide_enddate"> Inactive </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="mb-7" id="enddate" style="display: none;">
+                        <div class="mb-7" id="enddate">
                             <label for="start" class="font-weight-bold">End date (optional)</label>
                             <div class="mb-1">The date to stop this verification from being displayed (this will be based on the current timezone of GMT-04:00).</div>
                             <div class="row">
@@ -71,6 +71,7 @@ $page_subtitle = 'Scheduling';
                                 </div>
                             </div>
                         </div>
+                      
                         <hr class="mt-7">
                         <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"><a href="admin-verification-new3.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>
@@ -95,15 +96,16 @@ $page_subtitle = 'Scheduling';
 	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
 </script> 
 <script>
-    $(document).ready(function() {
-        $('#status').click(function() {
-            if ($(this).is(':checked')) {
-                $("#enddate").show();
-            } else {
-                $("#enddate").hide();
-            }
-        });
-    });
+$(document).ready(function() {
+   $('input[type="radio"]').click(function() {
+       if($(this).attr('id') == 'show_enddate') {
+            $('#enddate').show();           
+       }
+       else {
+            $('#enddate').hide();   
+       }
+   });
+});
 </script>
 </body>
 </html>

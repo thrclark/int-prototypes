@@ -24,7 +24,9 @@ $page_title = 'VERIFY';
 <main class="container h-75 p-0">
     <section>
         <div class="border-top text-center mb-2">
-            <p class="ts-23  pt-7 mb-3"> There are no more items requiring your verification at this time.</p>
+            <p class="ts-23  pt-7 mb-3"> Sorry, there was a problem.</p>
+            <button class="btn btn-primary mb-5">Home</button>
+            <div class="mb-7 ts-12"> Error: This is a detailed error message. This is a second sentence for this error.</div>
         </div>
     </section>
 </main>
