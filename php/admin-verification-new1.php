@@ -236,12 +236,27 @@ $page_subtitle = 'Setup';
                         <div class="form-group">
                             <label class="control-label" for="deferrallimit"> Deferral Limit </label>
                             <div class="" id=""> The number of times a user can defer this verification. A 0 means they must verify immediately. If left blank, there is no restriction and is unlimited. </div>
-                            <input value="" aria-labelledby="deferrallimit" ccfvalidated="" class="form-control w-25" id="deferrallimit" formcontrolname="clientid" type="text">
+                            <input value="" aria-labelledby="deferrallimit" ccfvalidated="" class="form-control w-25" id="deferrallimit" formcontrolname="clientid" type="number" max="10">
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="deferralwait">Deferral Wait </label>
-                            <div class="" id=""> The time to wait to display this verification to the user after they have verified later (in minutes). The max is 43200 minutes which is 30 days. </div>
-                            <input value="" aria-labelledby="deferralwait" ccfvalidated="" class="form-control w-25" id="deferralwait" formcontrolname="clientid" type="text">
+                            <div class="" id=""> The time to wait to display this verification to the user after they have verified later. </div>
+                            <select class="form-control w-25" id="deferralwait">
+                                <option selected="selected">1 hour</option>
+                                <option >3 hours</option>
+                                <option>6 hours</option>
+                                <option>12 hours</option>
+                                <option selected>24 hours</option>
+                                <option>2 days</option>
+                                <option>3 days</option>
+                                <option>4 days</option>
+                                <option>5 days</option>
+                                <option>6 days</option>
+                                <option>7 days (1 week)</option>
+                                <option>14 days (2 weeks)</option>
+                                <option>21 day (3 weeks)</option>
+                                <option>28 days (4 weeks)</option>
+                            </select>
                         </div>
                         <hr>
                         <div class="rbt-button-group mt-3 mb-5" id="saveSetup"> <a href="admin-verification-new2.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
@@ -409,6 +424,82 @@ $page_subtitle = 'Setup';
         
        
     });
-</script>
+</script><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>
