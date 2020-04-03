@@ -61,11 +61,15 @@ $page_subtitle = 'Recipient rulesets';
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
-                                            <label class="control-label" for="data-name"> Recipient ruleset title </label>
+                                            <label class="control-label" for="ruleset1_name"> Recipient ruleset title </label>
                                             <div> Provide a name for this recipient ruleset.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
-                                                    <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
+                                                    <countdown>
+                                                        <div class="rbt-charcount">
+                                                            <input aria-labelledby="ruleset1_name" class="form-control " formcontrolname="title" id="ruleset1_name" oninput='datamnameset();datanamestore();'>
+                                                            <span class="badge badge-success" id="ruleset1_name_badge"> <span id="ruleset1_name_counter">20</span> </span> </div>
+                                                    </countdown>
                                                 </div>
                                             </div>
                                         </div>
@@ -239,11 +243,15 @@ $page_subtitle = 'Recipient rulesets';
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
-                                            <label class="control-label" for="data-name"> Recipient ruleset title </label>
+                                            <label class="control-label" for="ruleset2_name"> Recipient ruleset title </label>
                                             <div> Provide a name for this recipient ruleset.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
-                                                    <input type="text" class="form-control"  id="data-name2" aria-describedby="data-name" oninput='datamnameset2();datanamestore2();'>
+                                                    <countdown>
+                                                        <div class="rbt-charcount">
+                                                            <input aria-labelledby="ruleset2_name" class="form-control " formcontrolname="title" id="ruleset2_name" oninput='datamnameset2();datanamestore2();'>
+                                                            <span class="badge badge-success" id="ruleset2_name_badge"> <span id="ruleset2_name_counter">20</span> </span> </div>
+                                                    </countdown>
                                                 </div>
                                             </div>
                                         </div>
@@ -435,20 +443,20 @@ $page_subtitle = 'Recipient rulesets';
 	
 </script> <script>
 function datamnameset() {
-    texttosave = document.getElementById('data-name').value;
-    localStorage.setItem('data-name', texttosave);
+    texttosave = document.getElementById('ruleset1_name').value;
+    localStorage.setItem('ruleset1_name', texttosave);
 }
 function datanamestore() {
-    textdata = document.getElementById('data-name').value;
+    textdata = document.getElementById('ruleset1_name').value;
     document.getElementById('data-name-display').innerHTML = textdata;
 }
 	
 	function datamnameset2() {
-    texttosave = document.getElementById('data-name2').value;
-    localStorage.setItem('data-name2', texttosave);
+    texttosave = document.getElementById('ruleset2_name').value;
+    localStorage.setItem('ruleset2_name', texttosave);
 }
 function datanamestore2() {
-    textdata = document.getElementById('data-name2').value;
+    textdata = document.getElementById('ruleset2_name').value;
     document.getElementById('data-name2-display').innerHTML = textdata;
 }
 	
@@ -603,6 +611,39 @@ $(document).ready(function(){
         }
     });
 });
+</script> 
+<script>
+$(document).ready(function(){
+    
+    
+        $("#ruleset1_name").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#ruleset1_name_counter').text(length);
+        if ($("#ruleset1_name").val().length > 20) {
+            $("#ruleset1_name_badge").last().addClass("badge-danger");
+        } else {
+            $("#ruleset1_name_badge").last().removeClass("badge-danger");
+        }
+    });
+    
+    
+    
+     $("#ruleset2_name").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#ruleset2_name_counter').text(length);
+        if ($("#ruleset2_name").val().length > 20) {
+            $("#ruleset2_name_badge").last().addClass("badge-danger");
+        } else {
+            $("#ruleset2_name_badge").last().removeClass("badge-danger");
+        }
+    });
+    
+    
+    
+    
+    });
 </script>
 </body>
 </html>
