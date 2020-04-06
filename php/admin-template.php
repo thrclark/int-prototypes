@@ -1,4 +1,4 @@
-<?php 
+<?php
 $section = '';
 $page_title = 'Admin list view';
 ?>

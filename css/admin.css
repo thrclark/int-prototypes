@@ -12029,6 +12029,9 @@ html body .main-content .int-tabs + .tab-content {
 .rvb-steps--vertical .rvb-steps__item {
   margin-bottom: 0px; }
 
+.int-fielddescription {
+  margin-bottom: .5rem; }
+
 .fa.fa-eye:before {
   content: ""; }
 

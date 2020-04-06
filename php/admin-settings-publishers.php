@@ -85,7 +85,7 @@ $page_title = 'Publishers';
             <div class="col-12 col-lg-8">
                 <div class="form-group">
                     <label class="control-label" for="pub_name"> Name </label>
-                    <div> Display name of the publisher </div>
+                    <div class="int-fielddescription"> Display name of the publisher </div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <countdown>
@@ -98,7 +98,7 @@ $page_title = 'Publishers';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="fcLabel"> Functional Contact (Tier 2) </label>
-                    <div> Tier 2 functional contact information. </div>
+                    <div class="int-fielddescription"> Tier 2 functional contact information. </div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <input value="" class="form-control" id="fcLabel" type="text">
@@ -107,7 +107,7 @@ $page_title = 'Publishers';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="tcLabel"> Technical Contact (Tier 2) </label>
-                    <div> Tier 2 technical contact information.</div>
+                    <div class="int-fielddescription"> Tier 2 technical contact information.</div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <input value="" class="form-control" id="tcLabel" type="text">
@@ -116,7 +116,7 @@ $page_title = 'Publishers';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="pub_description"> Description </label>
-                    <div> Description of the publisher. This is helpful for distinguishing publishers with similar names. </div>
+                    <div class="int-fielddescription"> Description of the publisher. This is helpful for distinguishing publishers with similar names. </div>
                     <countdown>
                         <div class="rbt-charcount">
                             <textarea class="form-control" id="descLabel" rows="5" id="pub_description">
@@ -130,7 +130,7 @@ $page_title = 'Publishers';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="emailLabel"> Email </label>
-                    <div> The email address is used to send updates/information to the publisher.</div>
+                    <div class="int-fielddescription"> The email address is used to send updates/information to the publisher.</div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <input value="" class="form-control" id="emailLabel" type="text">

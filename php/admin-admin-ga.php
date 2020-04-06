@@ -24,7 +24,7 @@ $page_title = 'Google Analytics';
             <div class="col-12 col-lg-8">
                 <div class="form-group">
                     <label class="control-label" for="ldap_url"> Google Analytics rollup ID</label>
-                    <div>Specify a Google Analytics ID to which tenant data will be submitted.</div>
+                    <div class="int-fielddescription">Specify a Google Analytics ID to which tenant data will be submitted.</div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <input value="UA-39645822-17" aria-labelledby="" class="form-control" id="ldap_url" type="text">
@@ -32,7 +32,7 @@ $page_title = 'Google Analytics';
                     </div>
                 </div>
                 <div class="font-weight-bold ts-14"> Included Tenants</div>
-                <div class="mb-3">Select the tenants that will submit data to the specified Google Analytics ID.</div>
+                <div class="int-fielddescription">Select the tenants that will submit data to the specified Google Analytics ID.</div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">Tenant1.IU CNV </label>

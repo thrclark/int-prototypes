@@ -61,7 +61,7 @@ $page_subtitle = 'Scheduling';
                         </div>
                         <div class="mb-7" id="enddate">
                             <label for="start" class="font-weight-bold">End date (optional)</label>
-                            <div class="mb-1">The date to stop this verification from being displayed (this will be based on the current timezone of GMT-04:00).</div>
+                            <div class="int-fielddescription">The date to stop this verification from being displayed (this will be based on the current timezone of GMT-04:00).</div>
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="rbt-datepicker__input" aria-hidden="true">
@@ -71,7 +71,6 @@ $page_subtitle = 'Scheduling';
                                 </div>
                             </div>
                         </div>
-                      
                         <hr class="mt-7">
                         <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"><a href="admin-verification-new3.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
                     </div>

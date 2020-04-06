@@ -25,14 +25,14 @@ $page_title = 'System parameters';
             <tbody>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Application email</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">	The address from which global emails are sent.</span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content "> The address from which global emails are sent.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> one@iu.edu </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Google Analytics rollup ID</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Data for selected tenants will be sent to this Google Analytics ID.</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> 	UA-39645822-16 </span></td>
+                    <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> UA-39645822-16 </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="xxxxxxxxxx.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>
                 <tr>

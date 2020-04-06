@@ -151,7 +151,7 @@ $page_title = 'API Accounts';
             <div class="col-12 col-lg-8">
                 <div class="form-group">
                     <label class="control-label" for="api_accountname"> Name </label>
-                    <div> The API Account title is how the API Account will be referred to throughout the system. </div>
+                    <div class="int-fielddescription"> The API Account title is how the API Account will be referred to throughout the system. </div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <countdown>
@@ -164,7 +164,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group">
                     <label class="control-label" id="nameLabel"> Status </label>
-                    <div> The availability of this API Account. </div>
+                    <div class="int-fielddescription"> The availability of this API Account. </div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <select aria-labelledby="statusLabel statusDirections" class="form-control" aria-invalid="false">
@@ -176,7 +176,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="account_type"> API Account Type </label>
-                    <div> Maintenance accounts are used for maintaining resources within the application. External accounts are used to connect to external applications for data.</div>
+                    <div class="int-fielddescription"> Maintenance accounts are used for maintaining resources within the application. External accounts are used to connect to external applications for data.</div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <select aria-labelledby="statusLabel statusDirections" class="form-control" id="account_type">
@@ -202,7 +202,7 @@ $page_title = 'API Accounts';
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label class="control-label" for="url1_name"> Name </label>
-                                        <div> This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
+                                        <div class="int-fielddescription"> This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
                                         <div class="row">
                                             <div class="col-12 col-lg-6">
                                                 <countdown>
@@ -215,7 +215,7 @@ $page_title = 'API Accounts';
                                     </div>
                                     <div class="form-group">
                                         <label for="url1_url">URL</label>
-                                        <div>External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
+                                        <div class="int-fielddescription">External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
                                                 <input type="text" class="form-control" id="url1_url">
@@ -246,7 +246,7 @@ $page_title = 'API Accounts';
                                     </div>
                                     <div class="form-group">
                                         <label for="url1_timeout">Timeout (milliseconds)</label>
-                                        <div>Amount of time to wait for a response from the external application in milliseconds.</div>
+                                        <div class="int-fielddescription">Amount of time to wait for a response from the external application in milliseconds.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
                                                 <input type="text" class="form-control" id="url1_timeout">
@@ -269,7 +269,7 @@ $page_title = 'API Accounts';
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label class="control-label" for="url2_name"> Name </label>
-                                        <div> This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
+                                        <div class="int-fielddescription"> This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
                                         <div class="row">
                                             <div class="col-12 col-lg-6">
                                                 <countdown>
@@ -282,7 +282,7 @@ $page_title = 'API Accounts';
                                     </div>
                                     <div class="form-group">
                                         <label for="url2_url">URL</label>
-                                        <div>External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
+                                        <div class="int-fielddescription">External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
                                                 <input type="text" class="form-control" id="url2_url">
@@ -313,7 +313,7 @@ $page_title = 'API Accounts';
                                     </div>
                                     <div class="form-group">
                                         <label for="url2_timeout">Timeout (milliseconds)</label>
-                                        <div>Amount of time to wait for a response from the external application in milliseconds.</div>
+                                        <div class="int-fielddescription">Amount of time to wait for a response from the external application in milliseconds.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
                                                 <input type="text" class="form-control" id="url2_timeout">
@@ -342,7 +342,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group demojs-maintenanceapi"  style="display: none">
                     <label for="max_resources">Maximum number of new resources</label>
-                    <div>Number of resources that are allowed to be created by this API Account. This prevents outside systems from accidentally over populating the system.</div>
+                    <div class="int-fielddescription">Number of resources that are allowed to be created by this API Account. This prevents outside systems from accidentally over populating the system.</div>
                     <div class="row">
                         <div class="col-12 col-sm-8 col-md-6">
                             <input type="text" class="form-control" id="max_resources">
@@ -351,7 +351,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group demojs-maintenanceapi" style="display: none">
                     <label class="control-label" for="access_level"> Permission access level </label>
-                    <div> Determines what this account will have access to modify. </div>
+                    <div class="int-fielddescription"> Determines what this account will have access to modify. </div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <select aria-labelledby="" class="form-control" aria-invalid="false" id="access_level">
@@ -374,7 +374,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group">
                     <label class="control-label" id="nameLabel"> Email </label>
-                    <div> The email is used to send a daily reminder starting 30 days from the API Account expiring. </div>
+                    <div class="int-fielddescription"> The email is used to send a daily reminder starting 30 days from the API Account expiring. </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <input value="" aria-labelledby="" class="form-control" id="clientID" type="text">
@@ -383,7 +383,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="auth_type">Authentication Type</label>
-                    <div>The authentication type to use when logging into the application.</div>
+                    <div class="int-fielddescription">The authentication type to use when logging into the application.</div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <select aria-labelledby="" class="form-control" aria-invalid="false" id="auth_type">
@@ -395,7 +395,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
                     <label class="control-label" id="username"> User name </label>
-                    <div> Used for identification of the account. </div>
+                    <div class="int-fielddescription"> Used for identification of the account. </div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <input value="" aria-labelledby="" class="form-control" id="username" type="text">
@@ -404,7 +404,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
                     <label class="control-label" id="password"> Password </label>
-                    <div> Used for identification of the account. </div>
+                    <div class="int-fielddescription"> Used for identification of the account. </div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <input value="" aria-labelledby="" class="form-control" id="password" type="password">
@@ -413,7 +413,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
                     <label class="control-label" id="confirmpassword"> Confirm password </label>
-                    <div> Confirm the password. Passwords must match.</div>
+                    <div class="int-fielddescription"> Confirm the password. Passwords must match.</div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
                             <input value="" aria-labelledby="" class="form-control" id="confirmpassword" type="password">

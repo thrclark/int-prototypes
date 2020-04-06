@@ -15,7 +15,7 @@ $page_title = 'System parameters';
         <div class="demojs-section" id="view_main">
             <div class="d-flex justify-content-between">
                 <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
-                 <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
+                <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                     <alert dismissible="true">
                         <div role="alert" class="alert alert-success alert-dismissible mb-3">
                             <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
@@ -88,7 +88,7 @@ $page_title = 'System parameters';
                     </nav>
                     <div class="form-group">
                         <label for="app_email" class="ts-26">Application email</label>
-                        <div> The address from which global emails are sent.</div>
+                        <div class="int-fielddescription"> The address from which global emails are sent.</div>
                         <input type="text" class="form-control" id="app_email" aria-describedby="app_email">
                     </div>
                     <hr>
@@ -111,7 +111,7 @@ $page_title = 'System parameters';
                     </nav>
                     <div class="form-group">
                         <label for="ga_id" class="ts-26">Google Analytics rollup ID</label>
-                        <div>Data for selected tenants will be sent to this Google Analytics ID.</div>
+                        <div class="int-fielddescription">Data for selected tenants will be sent to this Google Analytics ID.</div>
                         <input type="text" class="form-control" id="app_email" aria-describedby="app_email">
                     </div>
                     <hr>
@@ -134,7 +134,7 @@ $page_title = 'System parameters';
                     </nav>
                     <div class="form-group">
                         <label for="send_exemail" class="ts-26">Send exception email</label>
-                        <div>Space delimited list of email addresses to which exception reports are sent.</div>
+                        <div class="int-fielddescription">Space delimited list of email addresses to which exception reports are sent.</div>
                         <textarea class="form-control" id="send_exemail" aria-describedby="send_exemail" rows="5"></textarea>
                     </div>
                     <hr>
@@ -157,7 +157,7 @@ $page_title = 'System parameters';
                     </nav>
                     <div class="form-group">
                         <label for="send_exemail" class="ts-26">Send exception email toggle</label>
-                        <div>Turn on sending of email for exceptions. Default is no.</div>
+                        <div class="int-fielddescription">Turn on sending of email for exceptions. Default is no.</div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1">
                             <label class="form-check-label" for="stacked1"> No </label>
@@ -187,7 +187,7 @@ $page_title = 'System parameters';
                     </nav>
                     <div class="form-group">
                         <label for="ghjkfrtyn" class="ts-26">Update server</label>
-                        <div>Enter the name of one of the servers that will be used for updating new data on releases.</div>
+                        <div class="int-fielddescription">Enter the name of one of the servers that will be used for updating new data on releases.</div>
                         <input type="text" class="form-control" id="ghjkfrtyn" aria-describedby="ghjkfrtyn">
                     </div>
                     <hr>

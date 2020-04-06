@@ -62,7 +62,7 @@ $page_subtitle = 'Recipient rulesets';
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
                                             <label class="control-label" for="ruleset1_name"> Recipient ruleset title </label>
-                                            <div> Provide a name for this recipient ruleset.</div>
+                                            <div class="int-fielddescription"> Provide a name for this recipient ruleset.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <countdown>
@@ -73,9 +73,9 @@ $page_subtitle = 'Recipient rulesets';
                                                 </div>
                                             </div>
                                         </div>
-                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-3">
+                                        <fieldset aria-describedby="selectdate1" class="mb-3">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
-                                            <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
+                                            <div class="int-fielddescription" id="selectdate1">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
                                             <div class="row mt-3 mb-1">
                                                 <div class="col-12 col-sm-6 col-md-4">
                                                     <label for="time-demo-start-day" class="">Start day</label>
@@ -100,7 +100,7 @@ $page_subtitle = 'Recipient rulesets';
                                         </div>
                                         <div class="form-group">
                                             <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
-                                            <div> Use the expression builder below to add users and groups to this ruleset.</div>
+                                            <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
                                             <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
                                                 <dl id="builder_group_0" class="rules-group-container">
                                                     <dt class="rules-group-header">
@@ -244,7 +244,7 @@ $page_subtitle = 'Recipient rulesets';
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
                                             <label class="control-label" for="ruleset2_name"> Recipient ruleset title </label>
-                                            <div> Provide a name for this recipient ruleset.</div>
+                                            <div class="int-fielddescription"> Provide a name for this recipient ruleset.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <countdown>
@@ -255,9 +255,9 @@ $page_subtitle = 'Recipient rulesets';
                                                 </div>
                                             </div>
                                         </div>
-                                        <fieldset aria-describedby="maintenance-window-hint" class="mb-3">
+                                        <fieldset aria-describedby="selectdate2" class="mb-3">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
-                                            <span class="" id="maintenance-window-hint">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</span>
+                                            <div class="int-fielddescription" id="selectdate2">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
                                             <div class="row mt-3 mb-1">
                                                 <div class="col-3">
                                                     <label for="time-demo-start-day" class="">Start day</label>
@@ -282,7 +282,7 @@ $page_subtitle = 'Recipient rulesets';
                                         </div>
                                         <div class="form-group">
                                             <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
-                                            <div> Use the expression builder below to add users and groups to this ruleset.</div>
+                                            <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
                                             <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
                                                 <dl id="builder_group_0" class="rules-group-container">
                                                     <dt class="rules-group-header">
@@ -413,7 +413,7 @@ $page_subtitle = 'Recipient rulesets';
                             </div>
                             <div class="form-group my-5">
                                 <label for="specifyleeway">Leeway</label>
-                                <div class="mb-3">If the user has updated their information within this many days prior to the Effective Date, they will not be required to verify. This is useful if the external application behind this verification makes use of the user entry API.</div>
+                                <div class="int-fielddescription">If the user has updated their information within this many days prior to the Effective Date, they will not be required to verify. This is useful if the external application behind this verification makes use of the user entry API.</div>
                                 <div class="row">
                                     <div class="col-12 col-md-4">
                                         <input type="number" class="form-control" id="specifyleeway" aria-describedby="textinput" placeholder="How many days?">

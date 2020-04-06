@@ -99,7 +99,7 @@ $page_title = 'VERIFY';
                             <div class="form-group">
                                 <p>Note - application icons are used for bookmarks, browswer tab icons, etc, and are not displayed in the theming tool.</p>
                                 <label>Favicon icon</label>
-                                <div>Icon to display as the favicon. This must be an .ico file.</div>
+                                <div class="int-fielddescription">Icon to display as the favicon. This must be an .ico file.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -115,7 +115,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group">
                                 <label>Favicon image</label>
-                                <div>For best results, image should be a minimum of 196x196 pixels.</div>
+                                <div class="int-fielddescription">For best results, image should be a minimum of 196x196 pixels.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -131,7 +131,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group">
                                 <label>iOS homescreen shortcut image</label>
-                                <div>For best results, image should be 180x180 pixels.</div>
+                                <div class="int-fielddescription">For best results, image should be 180x180 pixels.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -147,7 +147,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group">
                                 <label>MS Tile image (square - 310x310 px)</label>
-                                <div>Image to display as the Microsoft tile for size 310x310. The image should represent a solid white icon with a transparent background.</div>
+                                <div class="int-fielddescription">Image to display as the Microsoft tile for size 310x310. The image should represent a solid white icon with a transparent background.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -169,7 +169,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group">
                                 <label>MS Tile image (wide - 310x150 px)</label>
-                                <div>Image to display as the Microsoft tile for size 310x150. The image should represent a solid white icon with a transparent background.</div>
+                                <div class="int-fielddescription">Image to display as the Microsoft tile for size 310x150. The image should represent a solid white icon with a transparent background.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <image-upload >
                                         <div  filedrop="" class="img-ul"  >
@@ -310,12 +310,12 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontname">Font family name</label>
-                                <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
                                 <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontweight">Weight</label>
-                                <div class="mb-2">Specify the weight of this custom font.</div>
+                                <div class="int-fielddescription">Specify the weight of this custom font.</div>
                                 <select class="form-control" id="custom_headerfontweight">
                                     <option value="NORMAL">normal</option>
                                     <option value="BOLD">bold</option>
@@ -332,7 +332,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontstyle">Style</label>
-                                <div class="mb-2">Specify the style of this custom font.</div>
+                                <div class="int-fielddescription">Specify the style of this custom font.</div>
                                 <select class="form-control" id="custom_headerfontstyle">
                                     <option value="NORMAL">normal</option>
                                     <option value="ITALIC">italic</option>
@@ -408,12 +408,12 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontname">Font family name</label>
-                                <div class="mb-2">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
                                 <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput">
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontweight">Weight</label>
-                                <div class="mb-2">Specify the weight of this custom font.</div>
+                                <div class="int-fielddescription">Specify the weight of this custom font.</div>
                                 <select class="form-control" id="custom_bodyfontweight">
                                     <option value="NORMAL">normal</option>
                                     <option value="BOLD">bold</option>
@@ -430,7 +430,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontstyle">Style</label>
-                                <div class="mb-2">Specify the style of this custom font.</div>
+                                <div class="int-fielddescription">Specify the style of this custom font.</div>
                                 <select class="form-control" id="custom_bodyfontstyle">
                                     <option value="NORMAL">normal</option>
                                     <option value="ITALIC">italic</option>
