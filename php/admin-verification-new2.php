@@ -67,11 +67,15 @@ $page_subtitle = 'Data';
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
-                                            <label class="control-label" for="data-name"> Name </label>
-                                            <div> The name of this verification (displayed on the main verification page).</div>
+                                            <label class="control-label" for="vfy2_section_name"> Name </label>
+                                            <div> The name of this verification section.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
-                                                    <input type="text" class="form-control"  id="data-name" aria-describedby="data-name" oninput='datamnameset();datanamestore();'>
+                                                    <countdown>
+                                                        <div class="rbt-charcount">
+                                                            <input aria-labelledby="vfy2_section_name" class="form-control " formcontrolname="title" id="vfy2_section_name">
+                                                            <span class="badge badge-success" id="vfy2_section_name_badge"> <span id="vfy2_section_name_counter">20</span> </span> </div>
+                                                    </countdown>
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert">
                                                         <p class="rbt-ts-14"> This field is required.</p>
                                                     </div>
@@ -79,11 +83,15 @@ $page_subtitle = 'Data';
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="uniquekeyLabel"> Unique Key </label>
-                                            <div class=""> This uniquely identifies this section on the current verification.</div>
+                                            <label class="control-label" for="vfy2_section_unkey"> Unique Key </label>
+                                            <div> This uniquely identifies this section on the current verification.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
-                                                    <input id="uniquekeyLabel" aria-labelledby="uniquekeyLabel"  class="form-control" type="text">
+                                                    <countdown>
+                                                        <div class="rbt-charcount">
+                                                            <input aria-labelledby="vfy2_section_unkey" class="form-control " formcontrolname="title" id="vfy2_section_unkey">
+                                                            <span class="badge badge-success" id="vfy2_section_unkey_badge"> <span id="vfy2_section_unkey_counter">20</span> </span> </div>
+                                                    </countdown>
                                                 </div>
                                             </div>
                                         </div>
@@ -121,11 +129,15 @@ $page_subtitle = 'Data';
                                             </div>
                                             <div class="card-body collapse" data-parent="#child1" id="uniquekey1">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api1_UniqueKey"> Unique key </label>
-                                                    <div class=""> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <label class="control-label" for="api1_uniquekey"> Unique key </label>
+                                                    <div> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
-                                                            <input id="api1_UniqueKey" aria-labelledby="api1_UniqueKey"  class="form-control" type="text" value="Field group 1">
+                                                            <countdown>
+                                                                <div class="rbt-charcount">
+                                                                    <input aria-labelledby="api1_uniquekey" class="form-control " formcontrolname="title" id="api1_uniquekey" value="Field group 1">
+                                                                    <span class="badge badge-success" id="api1_uniquekey_badge"> <span id="api1_uniquekey_counter">20</span> </span> </div>
+                                                            </countdown>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -158,15 +170,30 @@ $page_subtitle = 'Data';
                                                     <div class=""> URL to the external application that allows action to be taken.</div>
                                                     <input id="api1_nameLabel" aria-labelledby="api1_nameLabel"  class="form-control" type="text">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="control-label" for="api1_buttonLabel">Button label </label>
-                                                    <div class=""> The label for the button that will launch the URL.</div>
-                                                    <div class="row">
-                                                        <div class="col-12 col-lg-6">
-                                                            <input id="api1_buttonLabel" aria-labelledby="api1_buttonLabel"  class="form-control" type="text" value="Edit">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                               
+                                                
+                                                   
+       <div class="form-group">
+                            <label class="control-label" for="api1_buttonlable"> Button label </label>
+                            <div> The label for the button that will launch the URL.</div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <countdown>
+                                        <div class="rbt-charcount">
+                                            <input aria-labelledby="api1_buttonlable" class="form-control " formcontrolname="title" id="api1_buttonlable" value="Edit">
+                                            <span class="badge badge-success" id="api1_buttonlable_badge"> <span id="api1_buttonlable_counter">20</span> </span> </div>
+                                    </countdown>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
@@ -188,11 +215,15 @@ $page_subtitle = 'Data';
                                             </div>
                                             <div class="card-body collapse" data-parent="#child1" id="uniquekey2">
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api2_UniqueKey"> Unique key </label>
-                                                    <div class=""> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <label class="control-label" for="api2_uniquekey"> Unique key </label>
+                                                    <div> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
-                                                            <input id="api2_UniqueKey" aria-labelledby="api2_UniqueKey"  class="form-control" type="text" value="Field group 2">
+                                                            <countdown>
+                                                                <div class="rbt-charcount">
+                                                                    <input aria-labelledby="api2_uniquekey" class="form-control " formcontrolname="title" id="api2_uniquekey" value="Field group 2">
+                                                                    <span class="badge badge-success" id="api2_uniquekey_badge"> <span id="api2_uniquekey_counter">20</span> </span> </div>
+                                                            </countdown>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -228,15 +259,29 @@ $page_subtitle = 'Data';
                                                         <p class="rbt-ts-14"> This field is required.</p>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label class="control-label" for="api2_buttonLabel">Button label </label>
-                                                    <div class=""> The label for the button that will launch the URL.</div>
-                                                    <div class="row">
-                                                        <div class="col-12 col-lg-6">
-                                                            <input id="api2_buttonLabel" aria-labelledby="api2_buttonLabel"  class="form-control" type="text" value="Edit">
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
+                                                
+                                                
+                                                                                             
+       <div class="form-group">
+                            <label class="control-label" for="api2_buttonlable"> Button label </label>
+                            <div> The label for the button that will launch the URL.</div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <countdown>
+                                        <div class="rbt-charcount">
+                                            <input aria-labelledby="api2_buttonlable" class="form-control " formcontrolname="title" id="api2_buttonlable" value="Edit">
+                                            <span class="badge badge-success" id="api2_buttonlable_badge"> <span id="api2_buttonlable_counter">20</span> </span> </div>
+                                    </countdown>
+                                </div>
+                            </div>
+                        </div>
+    
+                                                
+                                                
+                                                
+                                                
+                                             
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-end">
@@ -399,6 +444,70 @@ $(document).ready(function(){
   $("#add-data-card").click(function(){
     $("#datacard2").show();
   });
+});
+</script> 
+<script>
+$(document).ready(function() {
+    $("#vfy2_section_name").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#vfy2_section_name_counter').text(length);
+        if ($("#vfy2_section_name").val().length > 20) {
+            $("#vfy2_section_name_badge").last().addClass("badge-danger");
+        } else {
+            $("#vfy2_section_name_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#vfy2_section_unkey").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#vfy2_section_unkey_counter').text(length);
+        if ($("#vfy2_section_unkey").val().length > 20) {
+            $("#vfy2_section_unkey_badge").last().addClass("badge-danger");
+        } else {
+            $("#vfy2_section_unkey_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#api1_uniquekey").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#api1_uniquekey_counter').text(length);
+        if ($("#api1_uniquekey").val().length > 20) {
+            $("#api1_uniquekey_badge").last().addClass("badge-danger");
+        } else {
+            $("#api1_uniquekey_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#api2_uniquekey").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#api2_uniquekey_counter').text(length);
+        if ($("#api2_uniquekey").val().length > 20) {
+            $("#api2_uniquekey_badge").last().addClass("badge-danger");
+        } else {
+            $("#api2_uniquekey_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#api1_buttonlable").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#api1_buttonlable_counter').text(length);
+        if ($("#api1_buttonlable").val().length > 20) {
+            $("#api1_buttonlable_badge").last().addClass("badge-danger");
+        } else {
+            $("#api1_buttonlable_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#api2_buttonlable").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#api2_buttonlable_counter').text(length);
+        if ($("#api2_buttonlable").val().length > 20) {
+            $("#api2_buttonlable_badge").last().addClass("badge-danger");
+        } else {
+            $("#api2_buttonlable_badge").last().removeClass("badge-danger");
+        }
+    });
 });
 </script>
 </body>

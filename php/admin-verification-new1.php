@@ -242,11 +242,12 @@ $page_subtitle = 'Setup';
                             <label class="control-label" for="deferralwait">Deferral Wait </label>
                             <div class="" id=""> The time to wait to display this verification to the user after they have verified later. </div>
                             <select class="form-control w-25" id="deferralwait">
-                                <option selected="selected">1 hour</option>
+                                <option selected="selected">No wait</option>
+                                <option>1 hour</option>
                                 <option >3 hours</option>
                                 <option>6 hours</option>
                                 <option>12 hours</option>
-                                <option selected>24 hours</option>
+                                <option>24 hours</option>
                                 <option>2 days</option>
                                 <option>3 days</option>
                                 <option>4 days</option>
@@ -338,168 +339,68 @@ $page_subtitle = 'Setup';
     });
 </script> 
 <script>
-    $(document).ready(function() {
-        $("#vfy1_name").keyup(function() {
-            var length = $(this).val().length;
-            length = 20 - length;
-            $('#vfy1_name_counter').text(length);
-            if ($("#vfy1_name").val().length > 20) {
-                $("#vfy1_name_badge").last().addClass("badge-danger");
-            } else {
-                $("#vfy1_name_badge").last().removeClass("badge-danger");
-            }
-        });
-        
-         $("#vfy1_unkey").keyup(function() {
-            var length = $(this).val().length;
-            length = 20 - length;
-            $('#vfy1_unkey_counter').text(length);
-            if ($("#vfy1_unkey").val().length > 20) {
-                $("#vfy1_unkey_badge").last().addClass("badge-danger");
-            } else {
-                $("#vfy1_unkey_badge").last().removeClass("badge-danger");
-            }
-        });
-        
-        
-        
-         $("#verify_now_custom_field").keyup(function() {
-            var length = $(this).val().length;
-            length = 50 - length;
-            $('#verify_now_custom_field_counter').text(length);
-            if ($("#verify_now_custom_field").val().length > 50) {
-                $("#verify_now_custom_field_badge").last().addClass("badge-danger");
-            } else {
-                $("#verify_now_custom_field_badge").last().removeClass("badge-danger");
-            }
-        });
-        
-        
-        
-        
-          $("#defer_now_custom_field").keyup(function() {
-            var length = $(this).val().length;
-            length = 50 - length;
-            $('#defer_now_custom_field_counter').text(length);
-            if ($("#defer_now_custom_field").val().length > 50) {
-                $("#defer_now_custom_field_badge").last().addClass("badge-danger");
-            } else {
-                $("#defer_now_custom_field_badge").last().removeClass("badge-danger");
-            }
-        });
-        
-        
-        
-        
-          $("#verify_button_custom_label").keyup(function() {
-            var length = $(this).val().length;
-            length = 20 - length;
-            $('#verify_button_custom_label_counter').text(length);
-            if ($("#verify_button_custom_label").val().length > 20) {
-                $("#verify_button_custom_label_badge").last().addClass("badge-danger");
-            } else {
-                $("#verify_button_custom_label_badge").last().removeClass("badge-danger");
-            }
-        });
-        
-        
-        
-          $("#defer_button_custom_label").keyup(function() {
-            var length = $(this).val().length;
-            length = 20 - length;
-            $('#defer_button_custom_label_counter').text(length);
-            if ($("#defer_button_custom_label").val().length > 20) {
-                $("#defer_button_custom_label_badge").last().addClass("badge-danger");
-            } else {
-                $("#defer_button_custom_label_badge").last().removeClass("badge-danger");
-            }
-        });
-        
-        
-        
-        
-        
-        
-        
-        
-       
+$(document).ready(function() {
+    $("#vfy1_name").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#vfy1_name_counter').text(length);
+        if ($("#vfy1_name").val().length > 20) {
+            $("#vfy1_name_badge").last().addClass("badge-danger");
+        } else {
+            $("#vfy1_name_badge").last().removeClass("badge-danger");
+        }
     });
-</script><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    $("#vfy1_unkey").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#vfy1_unkey_counter').text(length);
+        if ($("#vfy1_unkey").val().length > 20) {
+            $("#vfy1_unkey_badge").last().addClass("badge-danger");
+        } else {
+            $("#vfy1_unkey_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#verify_now_custom_field").keyup(function() {
+        var length = $(this).val().length;
+        length = 50 - length;
+        $('#verify_now_custom_field_counter').text(length);
+        if ($("#verify_now_custom_field").val().length > 50) {
+            $("#verify_now_custom_field_badge").last().addClass("badge-danger");
+        } else {
+            $("#verify_now_custom_field_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#defer_now_custom_field").keyup(function() {
+        var length = $(this).val().length;
+        length = 50 - length;
+        $('#defer_now_custom_field_counter').text(length);
+        if ($("#defer_now_custom_field").val().length > 50) {
+            $("#defer_now_custom_field_badge").last().addClass("badge-danger");
+        } else {
+            $("#defer_now_custom_field_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#verify_button_custom_label").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#verify_button_custom_label_counter').text(length);
+        if ($("#verify_button_custom_label").val().length > 20) {
+            $("#verify_button_custom_label_badge").last().addClass("badge-danger");
+        } else {
+            $("#verify_button_custom_label_badge").last().removeClass("badge-danger");
+        }
+    });
+    $("#defer_button_custom_label").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#defer_button_custom_label_counter').text(length);
+        if ($("#defer_button_custom_label").val().length > 20) {
+            $("#defer_button_custom_label_badge").last().addClass("badge-danger");
+        } else {
+            $("#defer_button_custom_label_badge").last().removeClass("badge-danger");
+        }
+    });
+});
+</script>
 </body>
 </html>

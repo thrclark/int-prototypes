@@ -7,6 +7,7 @@ $page_title = 'General Settings';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/easymde@2.1.0/dist/easymde.min.css">
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
@@ -159,7 +160,7 @@ $page_title = 'General Settings';
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Default verification description</label>
                         <div>Text to be displayed at the top of every verification.</div>
-                        <textarea id="richText1"></textarea>
+                        <textarea id="default_verification_description"></textarea>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -180,9 +181,17 @@ $page_title = 'General Settings';
                         </ol>
                     </nav>
                     <div class="form-group">
-                        <label for="textinput-full" class="ts-26">Default verify button text</label>
-                        <div>Text to be displayed on the Verification button. This can be overridden by an individual verification.</div>
-                        <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
+                        <label class="control-label" for="def_ver_buttontext"> Default verify button text </label>
+                        <div> Text to be displayed on the Verification button (this can be overridden by an individual verification).</div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <input aria-labelledby="def_ver_buttontext" class="form-control " formcontrolname="title" id="def_ver_buttontext">
+                                        <span class="badge badge-success" id="def_ver_buttontext_badge"> <span id="def_ver_buttontext_counter">20</span> </span> </div>
+                                </countdown>
+                            </div>
+                        </div>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -203,9 +212,17 @@ $page_title = 'General Settings';
                         </ol>
                     </nav>
                     <div class="form-group">
-                        <label for="textinput-full" class="ts-26">Default verify message</label>
-                        <div>Text to be displayed next to the Verify option. This can be overridden by an individual verification.</div>
-                        <textarea class="form-control" id="textinput-full" rows="3"></textarea>
+                        <label class="control-label" for="def_verify_message"> Default verify message </label>
+                        <div> Text to be displayed next to the Verify option (this may be overridden by an individual verification).</div>
+                        <div class="row">
+                            <div class="col-12">
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <textarea aria-labelledby="def_verify_message" class="form-control " formcontrolname="title" id="def_verify_message"></textarea>
+                                        <span class="badge badge-success" id="def_verify_message_badge"> <span id="def_verify_message_counter">100</span> </span> </div>
+                                </countdown>
+                            </div>
+                        </div>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -226,9 +243,17 @@ $page_title = 'General Settings';
                         </ol>
                     </nav>
                     <div class="form-group">
-                        <label for="textinput-full" class="ts-26">Default defer button text</label>
-                        <div>Text to be displayed on the Defer button. This can be overridden by an individual verification.</div>
-                        <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
+                        <label class="control-label" for="def_def_buttontext"> Default defer button text </label>
+                        <div> Text to be displayed on the Defer button (this can be overridden by an individual verification).</div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <input aria-labelledby="def_def_buttontext" class="form-control " formcontrolname="title" id="def_def_buttontext">
+                                        <span class="badge badge-success" id="def_def_buttontext_badge"> <span id="def_def_buttontext_counter">20</span> </span> </div>
+                                </countdown>
+                            </div>
+                        </div>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -249,9 +274,13 @@ $page_title = 'General Settings';
                         </ol>
                     </nav>
                     <div class="form-group">
-                        <label for="textinput-full" class="ts-26">Default defer message</label>
-                        <div>Text to be displayed next to the Defer option. This can be overridden by an individual verification.</div>
-                        <textarea class="form-control" id="textinput-full" rows="3"></textarea>
+                        <label for="def_def_message" class="ts-26">Default defer message</label>
+                        <div>Text to be displayed next to the Defer option (this can be overridden by an individual verification).</div>
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <textarea aria-labelledby="def_def_message" class="form-control " formcontrolname="title" id="def_def_message"></textarea>
+                                <span class="badge badge-success" id="def_def_message_badge"> <span id="def_def_message_counter">100</span> </span> </div>
+                        </countdown>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -272,9 +301,13 @@ $page_title = 'General Settings';
                         </ol>
                     </nav>
                     <div class="form-group">
-                        <label for="textinput-full" class="ts-26">Error message</label>
+                        <label for="error_message" class="ts-26">Error message</label>
                         <div>A message that is displayed when an error occurs preventing a verification from being completed.</div>
-                        <textarea class="form-control" id="textarea-full" rows="5" placeholder="There is a system error that is currently preventing verification of your information. Please skip verification at this time to proceed with your login. You will be prompted to verify your information at a later time."></textarea>
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <textarea aria-labelledby="error_message" class="form-control " formcontrolname="title" id="error_message">There is a system error that is currently preventing verification of your information. Please skip verification at this time to proceed with your login. You will be prompted to verify your information at a later time.</textarea>
+                                <span class="badge badge-success" id="error_message_badge"> <span id="error_message_counter">200</span> </span> </div>
+                        </countdown>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -1010,7 +1043,12 @@ $page_title = 'General Settings';
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
-var simplemde = new SimpleMDE({ element: $("#richText1")[0] });
+    var easyMDE = new EasyMDE({
+        element: $('#default_verification_description')[0],
+        toolbar: ["bold", "italic", "link", "|", "preview"],
+        initialValue: '',
+        status: 'false'
+    });
 </script> 
 <script>
 $(document).ready(function() {
@@ -1113,6 +1151,60 @@ $(document).ready(function() {
         });
        
     });
+</script> 
+<script>
+$(document).ready(function() {
+    $("#def_ver_buttontext").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#def_ver_buttontext_counter').text(length);
+        if ($("#def_ver_buttontext").val().length > 20) {
+            $("#def_ver_buttontext_badge").last().addClass("badge-danger");
+        } else {
+            $("#def_ver_buttontext_badge").last().removeClass("badge-danger");
+        }
+    });
+        $("#def_def_buttontext").keyup(function() {
+        var length = $(this).val().length;
+        length = 20 - length;
+        $('#def_def_buttontext_counter').text(length);
+        if ($("#def_def_buttontext").val().length > 20) {
+            $("#def_def_buttontext_badge").last().addClass("badge-danger");
+        } else {
+            $("#def_def_buttontext_badge").last().removeClass("badge-danger");
+        }
+    });
+        $("#def_verify_message").keyup(function() {
+        var length = $(this).val().length;
+        length = 100 - length;
+        $('#def_verify_message_counter').text(length);
+        if ($("#def_verify_message").val().length > 100) {
+            $("#def_verify_message_badge").last().addClass("badge-danger");
+        } else {
+            $("#def_verify_message_badge").last().removeClass("badge-danger");
+        }
+    });
+        $("#def_def_message").keyup(function() {
+        var length = $(this).val().length;
+        length = 100 - length;
+        $('#def_def_message_counter').text(length);
+        if ($("#def_def_message").val().length > 100) {
+            $("#def_def_message_badge").last().addClass("badge-danger");
+        } else {
+            $("#def_def_message_badge").last().removeClass("badge-danger");
+        }
+    });
+        $("#error_message").keyup(function() {
+        var length = $(this).val().length;
+        length = 200 - length;
+        $('#error_message_counter').text(length);
+        if ($("#error_message").val().length > 200) {
+            $("#error_message_badge").last().addClass("badge-danger");
+        } else {
+            $("#error_message_badge").last().removeClass("badge-danger");
+        }
+    });
+});
 </script>
 </body>
 </html>

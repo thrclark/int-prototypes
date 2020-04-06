@@ -84,24 +84,45 @@ $page_title = 'Publishers';
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="form-group">
-                    <label class="control-label" for="nameLabel"> Name </label>
+                    <label class="control-label" for="pub_name"> Name </label>
                     <div> Display name of the publisher </div>
-                    <input value="" class="form-control" id="nameLabel" type="text">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="pub_name" class="form-control" id="pub_name">
+                                    <span class="badge badge-success" id="pub_name_badge"> <span id="pub_name_counter">50</span> </span> </div>
+                            </countdown>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="fcLabel"> Functional Contact (Tier 2) </label>
-                    <div> Tier 2 functional contact information </div>
-                    <input value="" class="form-control" id="fcLabel" type="text">
+                    <div> Tier 2 functional contact information. </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <input value="" class="form-control" id="fcLabel" type="text">
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="tcLabel"> Technical Contact (Tier 2) </label>
-                    <div> Tier 2 technical contact information</div>
-                    <input value="" class="form-control" id="tcLabel" type="text">
+                    <div> Tier 2 technical contact information.</div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <input value="" class="form-control" id="tcLabel" type="text">
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="descLabel"> Description </label>
-                    <div> Description of the publisher. This is helpful for distinguishing publishers with similar names.</div>
-                    <textarea class="form-control" id="descLabel" rows="5"></textarea>
+                    <label class="control-label" for="pub_description"> Description </label>
+                    <div> Description of the publisher. This is helpful for distinguishing publishers with similar names. </div>
+                    <countdown>
+                        <div class="rbt-charcount">
+                            <textarea class="form-control" id="descLabel" rows="5" id="pub_description">
+                            </textarea>
+                            <span class="badge badge-success" id="pub_description_badge"> <span id="pub_description_counter">200</span> </span> </div>
+                    </countdown>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="aclLabel">Publisher permissions </label>
@@ -110,7 +131,11 @@ $page_title = 'Publishers';
                 <div class="form-group">
                     <label class="control-label" for="emailLabel"> Email </label>
                     <div> The email address is used to send updates/information to the publisher.</div>
-                    <input value="" class="form-control" id="emailLabel" type="text">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <input value="" class="form-control" id="emailLabel" type="text">
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="rbt-button-group mt-3 mb-5" id="savePublisher">
@@ -121,10 +146,44 @@ $page_title = 'Publishers';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+    $(document).ready(function(){
+
+    
+            $("#pub_name").keyup(function() {
+            var length = $(this).val().length;
+            length = 50 - length;
+            $('#pub_name_counter').text(length);
+            if ($("#pub_name").val().length > 50) {
+                $("#pub_name_badge").last().addClass("badge-danger");
+            } else {
+                $("#pub_name_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+            
+    
+    
+            $("#pub_description").keyup(function() {
+            var length = $(this).val().length;
+            length = 200 - length;
+            $('#pub_description_counter').text(length);
+            if ($("#pub_description").val().length > 200) {
+                $("#pub_description_badge").last().addClass("badge-danger");
+            } else {
+                $("#pub_description_badge").last().removeClass("badge-danger");
+            }
+        });
     
     
     
-    <script>
+    
+    
+
+    });
+</script> 
+<script>
 $(document).ready(function(){
   $(".demojs_addpublisher").click(function(){
     $(".demojs_listview").hide();
@@ -139,8 +198,7 @@ $(document).ready(function(){
 
 });
 </script> 
-    
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script> 
 <script src='../js/query-builder.standalone.js'></script> 
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> 
 <script>
@@ -277,9 +335,5 @@ $(document).ready(function(){
        
     });
 </script>
-    
-    
-    
-    
 </body>
 </html>

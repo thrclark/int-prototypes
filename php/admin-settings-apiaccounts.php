@@ -150,11 +150,15 @@ $page_title = 'API Accounts';
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="form-group">
-                    <label class="control-label" id="nameLabel"> Name </label>
+                    <label class="control-label" for="api_accountname"> Name </label>
                     <div> The API Account title is how the API Account will be referred to throughout the system. </div>
                     <div class="row">
-                        <div class="col-12">
-                            <input value="" aria-labelledby="" class="form-control" id="clientID" type="text">
+                        <div class="col-12 col-lg-6">
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="api_accountname" class="form-control " formcontrolname="title" id="api_accountname">
+                                    <span class="badge badge-success" id="api_accountname_badge"> <span id="api_accountname_counter">20</span> </span> </div>
+                            </countdown>
                         </div>
                     </div>
                 </div>
@@ -197,11 +201,15 @@ $page_title = 'API Accounts';
                             <div id="collapse_url1" class="collapse" aria-labelledby="heading_url1" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="url1_name">Name</label>
-                                        <div>This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
+                                        <label class="control-label" for="url1_name"> Name </label>
+                                        <div> This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
                                         <div class="row">
-                                            <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url1_name">
+                                            <div class="col-12 col-lg-6">
+                                                <countdown>
+                                                    <div class="rbt-charcount">
+                                                        <input aria-labelledby="url1_name" class="form-control " formcontrolname="title" id="url1_name">
+                                                        <span class="badge badge-success" id="url1_name_badge"> <span id="url1_name_counter">20</span> </span> </div>
+                                                </countdown>
                                             </div>
                                         </div>
                                     </div>
@@ -260,11 +268,15 @@ $page_title = 'API Accounts';
                             <div id="collapse_url2" class="collapse" aria-labelledby="heading_url2" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="url2_name">Name</label>
-                                        <div>This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
+                                        <label class="control-label" for="url2_name"> Name </label>
+                                        <div> This will be displayed in Verification publishing so you can identify this endpoint URL in order to know what to select.</div>
                                         <div class="row">
-                                            <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url2_name">
+                                            <div class="col-12 col-lg-6">
+                                                <countdown>
+                                                    <div class="rbt-charcount">
+                                                        <input aria-labelledby="url2_name" class="form-control " formcontrolname="title" id="url2_name">
+                                                        <span class="badge badge-success" id="url2_name_badge"> <span id="url2_name_counter">20</span> </span> </div>
+                                                </countdown>
                                             </div>
                                         </div>
                                     </div>
@@ -312,7 +324,9 @@ $page_title = 'API Accounts';
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> URL</button>
+                    <div class="text-right">
+                        <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-plus"></i> URL</button>
+                    </div>
                 </div>
                 <div class="mb-5 demojs-maintenanceapi" style="display: none">
                     <div class="form-check mb-3">
@@ -362,7 +376,7 @@ $page_title = 'API Accounts';
                     <label class="control-label" id="nameLabel"> Email </label>
                     <div> The email is used to send a daily reminder starting 30 days from the API Account expiring. </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-6">
                             <input value="" aria-labelledby="" class="form-control" id="clientID" type="text">
                         </div>
                     </div>
@@ -534,6 +548,40 @@ $(document).ready(function() {
             $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
         });
        
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#api_accountname").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#api_accountname_counter').text(length);
+            if ($("#api_accountname").val().length > 20) {
+                $("#api_accountname_badge").last().addClass("badge-danger");
+            } else {
+                $("#api_accountname_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#url1_name").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#url1_name_counter').text(length);
+            if ($("#url1_name").val().length > 20) {
+                $("#url1_name_badge").last().addClass("badge-danger");
+            } else {
+                $("#url1_name_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#url2_name").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#url2_name_counter').text(length);
+            if ($("#url2_name").val().length > 20) {
+                $("#url2_name_badge").last().addClass("badge-danger");
+            } else {
+                $("#url2_name_badge").last().removeClass("badge-danger");
+            }
+        });
     });
 </script>
 </body>
