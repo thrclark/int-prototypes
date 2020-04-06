@@ -42,7 +42,7 @@ $page_subtitle = 'Setup';
                     <div class="col-12 col-lg-12">
                         <div class="form-group">
                             <label class="control-label" for="vfy1_name"> Name </label>
-                            <div> The name of this verification. It will be displayed on the main verification page.</div>
+                            <div class="int-fielddescription"> The name of this verification. It will be displayed on the main verification page.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <countdown>
@@ -55,7 +55,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="vfy1_unkey"> Unique Key </label>
-                            <div> This uniquely identifies this verification in the application.</div>
+                            <div class="int-fielddescription"> This uniquely identifies this verification in the application.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <countdown>
@@ -68,7 +68,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="vfy1_publisherLabel"> Publisher </label>
-                            <div class="" id=""> The owner of this verification </div>
+                            <div class="int-fielddescription"> The owner of this verification </div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="vfy1_publisherLabel">
@@ -84,7 +84,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Description</label>
-                            <div class="" id=""> The text that will display above the verification.</div>
+                            <div class="int-fielddescription"> The text that will display above the verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="verify_select_description" name="select">
@@ -110,12 +110,12 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Disclaimer (optional) </label>
-                            <div class="" id=""> The text that will display below the verification.</div>
+                            <div class="int-fielddescription"> The text that will display below the verification.</div>
                             <textarea id="disclaimerLabel"></textarea>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Verify Text</label>
-                            <div class="" id=""> The text that will display for the verify checkbox for this verification.</div>
+                            <div class="int-fielddescription"> The text that will display for the verify checkbox for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="verify_now_select" name="select">
@@ -141,7 +141,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="disclaimerLabel"> Deferral Text</label>
-                            <div class="" id=""> The text that will display for the deferral for this verification.</div>
+                            <div class="int-fielddescription"> The text that will display for the deferral for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="defer_now_select" name="select">
@@ -167,7 +167,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="verify_button_select"> Verify Button Text</label>
-                            <div class="" id=""> The text that will display on the verify button for this verification.</div>
+                            <div class="int-fielddescription"> The text that will display on the verify button for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="verify_button_select" name="select">
@@ -201,7 +201,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="defer_button_select"> Deferral Button Text</label>
-                            <div class="" id=""> The text that will display on the deferral button for this verification.</div>
+                            <div class="int-fielddescription"> The text that will display on the deferral button for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="defer_button_select" name="select">
@@ -235,12 +235,12 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="deferrallimit"> Deferral Limit </label>
-                            <div class="" id=""> The number of times a user can defer this verification. A 0 means they must verify immediately. If left blank, there is no restriction and is unlimited. </div>
+                            <div class="int-fielddescription"> The number of times a user can defer this verification. A 0 means they must verify immediately. If left blank, there is no restriction and is unlimited. </div>
                             <input value="" aria-labelledby="deferrallimit" ccfvalidated="" class="form-control w-25" id="deferrallimit" formcontrolname="clientid" type="number" max="10">
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="deferralwait">Deferral Wait </label>
-                            <div class="" id=""> The time to wait to display this verification to the user after they have verified later. </div>
+                            <div class="int-fielddescription"> The time to wait to display this verification to the user after they have verified later. </div>
                             <select class="form-control w-25" id="deferralwait">
                                 <option selected="selected">No wait</option>
                                 <option>1 hour</option>

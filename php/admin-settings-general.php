@@ -159,7 +159,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Default verification description</label>
-                        <div>Text to be displayed at the top of every verification.</div>
+                        <div class="int-fielddescription">Text to be displayed at the top of every verification.</div>
                         <textarea id="default_verification_description"></textarea>
                     </div>
                     <hr>
@@ -182,7 +182,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label class="control-label" for="def_ver_buttontext"> Default verify button text </label>
-                        <div> Text to be displayed on the Verification button (this can be overridden by an individual verification).</div>
+                        <div class="int-fielddescription"> Text to be displayed on the Verification button (this can be overridden by an individual verification).</div>
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <countdown>
@@ -213,7 +213,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label class="control-label" for="def_verify_message"> Default verify message </label>
-                        <div> Text to be displayed next to the Verify option (this may be overridden by an individual verification).</div>
+                        <div class="int-fielddescription"> Text to be displayed next to the Verify option (this may be overridden by an individual verification).</div>
                         <div class="row">
                             <div class="col-12">
                                 <countdown>
@@ -244,7 +244,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label class="control-label" for="def_def_buttontext"> Default defer button text </label>
-                        <div> Text to be displayed on the Defer button (this can be overridden by an individual verification).</div>
+                        <div class="int-fielddescription"> Text to be displayed on the Defer button (this can be overridden by an individual verification).</div>
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <countdown>
@@ -275,7 +275,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="def_def_message" class="ts-26">Default defer message</label>
-                        <div>Text to be displayed next to the Defer option (this can be overridden by an individual verification).</div>
+                        <div class="int-fielddescription">Text to be displayed next to the Defer option (this can be overridden by an individual verification).</div>
                         <countdown>
                             <div class="rbt-charcount">
                                 <textarea aria-labelledby="def_def_message" class="form-control " formcontrolname="title" id="def_def_message"></textarea>
@@ -302,7 +302,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="error_message" class="ts-26">Error message</label>
-                        <div>A message that is displayed when an error occurs preventing a verification from being completed.</div>
+                        <div class="int-fielddescription">A message that is displayed when an error occurs preventing a verification from being completed.</div>
                         <countdown>
                             <div class="rbt-charcount">
                                 <textarea aria-labelledby="error_message" class="form-control " formcontrolname="title" id="error_message">There is a system error that is currently preventing verification of your information. Please skip verification at this time to proceed with your login. You will be prompted to verify your information at a later time.</textarea>
@@ -329,7 +329,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Default target URL</label>
-                        <div>Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</div>
+                        <div class="int-fielddescription">Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</div>
                         <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
                     </div>
                     <hr>
@@ -352,7 +352,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Enable email</label>
-                        <div>Turn on email functionality. Default is no</div>
+                        <div class="int-fielddescription">Turn on email functionality. Default is no</div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1" checked>
                             <label class="form-check-label" for="stacked1">Yes</label>
@@ -382,7 +382,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Google Analytics ID</label>
-                        <div>The ID assigned to your domain in the Google Analytics administration tool.</div>
+                        <div class="int-fielddescription">The ID assigned to your domain in the Google Analytics administration tool.</div>
                         <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
                     </div>
                     <hr>
@@ -405,7 +405,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">System email</label>
-                        <div>Email address from which email is sent.</div>
+                        <div class="int-fielddescription">Email address from which email is sent.</div>
                         <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
                     </div>
                     <hr>
@@ -428,7 +428,7 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Time zone</label>
-                        <div>Select the your time zone.</div>
+                        <div class="int-fielddescription">Select the your time zone.</div>
                         <select class="form-control">
                             <option label="Asia/Aden" value="string:Asia/Aden">Asia/Aden</option>
                             <option label="America/Cuiaba" value="string:America/Cuiaba">America/Cuiaba</option>

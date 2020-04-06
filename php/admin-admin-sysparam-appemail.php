@@ -23,7 +23,7 @@ $page_title = 'Application email';
                 </nav>
                 <div class="form-group">
                     <label for="app_email" class="ts-26">Application email</label>
-                    <div> The address from which global emails are sent.</div>
+                    <div class="int-fielddescription"> The address from which global emails are sent.</div>
                     <input type="text" class="form-control" id="app_email" aria-describedby="app_email">
                 </div>
                 <hr>

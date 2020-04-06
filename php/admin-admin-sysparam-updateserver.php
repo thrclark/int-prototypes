@@ -23,7 +23,7 @@ $page_title = 'Update server';
                 </nav>
                 <div class="form-group">
                     <label for="ghjkfrtyn" class="ts-26">Update server</label>
-                    <div>Enter the name of one of the servers that will be used for updating new data on releases.</div>
+                    <div class="int-fielddescription">Enter the name of one of the servers that will be used for updating new data on releases.</div>
                     <input type="text" class="form-control" id="ghjkfrtyn" aria-describedby="ghjkfrtyn">
                 </div>
                 <hr>
@@ -31,15 +31,14 @@ $page_title = 'Update server';
                     <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                     <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
-        </div> <growls>
-     
+        </div>
+        <growls>
             <alert dismissible="true">
                 <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
                     <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
                     <span>Changes have been saved.</span> </div>
             </alert>
-    
-    </growls>
+        </growls>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>

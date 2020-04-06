@@ -23,7 +23,7 @@ $page_title = 'Send exception email toggle';
                 </nav>
                 <div class="form-group">
                     <label for="send_exemail" class="ts-26">Send exception email toggle</label>
-                    <div>Turn on sending of email for exceptions. Default is no.</div>
+                    <div class="int-fielddescription">Turn on sending of email for exceptions. Default is no.</div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="stacked1" value="option1">
                         <label class="form-check-label" for="stacked1"> No </label>
@@ -39,14 +39,13 @@ $page_title = 'Send exception email toggle';
                     <a class="btn btn-outline-primary"  href="admin-settings-general.php"> Cancel </a> </div>
             </div>
         </div>
-    </main> <growls>
-     
-            <alert dismissible="true">
-                <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
-                    <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                    <span>Changes have been saved.</span> </div>
-            </alert>
-    
+    </main>
+    <growls>
+        <alert dismissible="true">
+            <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
+                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                <span>Changes have been saved.</span> </div>
+        </alert>
     </growls>
 </div>
 <?php include('includes/all-footerscripts.php') ?>

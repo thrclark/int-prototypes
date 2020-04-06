@@ -23,7 +23,7 @@ $page_title = 'Send exception email';
                 </nav>
                 <div class="form-group">
                     <label for="send_exemail" class="ts-26">Send exception email</label>
-                    <div>Space delimited list of email addresses to which exception reports are sent.</div>
+                    <div class="int-fielddescription">Space delimited list of email addresses to which exception reports are sent.</div>
                     <textarea class="form-control" id="send_exemail" aria-describedby="send_exemail" rows="5"></textarea>
                 </div>
                 <hr>
@@ -31,15 +31,14 @@ $page_title = 'Send exception email';
                     <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                     <a class="btn btn-outline-primary"  href="admin-admin-sysparam.php"> Cancel </a> </div>
             </div>
-        </div> <growls>
-     
+        </div>
+        <growls>
             <alert dismissible="true">
                 <div role="alert" class="alert alert-success alert-dismissible mb-3" style="display:none" id="growl1">
                     <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
                     <span>Changes have been saved.</span> </div>
             </alert>
-    
-    </growls>
+        </growls>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>

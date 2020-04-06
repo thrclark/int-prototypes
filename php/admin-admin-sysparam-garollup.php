@@ -23,7 +23,7 @@ $page_title = 'Google Analytics rollup ID';
                 </nav>
                 <div class="form-group">
                     <label for="ga_id" class="ts-26">Google Analytics rollup ID</label>
-                    <div>Data for selected tenants will be sent to this Google Analytics ID.</div>
+                    <div class="int-fielddescription">Data for selected tenants will be sent to this Google Analytics ID.</div>
                     <input type="text" class="form-control" id="app_email" aria-describedby="app_email">
                 </div>
                 <hr>

@@ -68,7 +68,7 @@ $page_subtitle = 'Data';
                                     <div class="card-body" id="child1">
                                         <div class="form-group">
                                             <label class="control-label" for="vfy2_section_name"> Name </label>
-                                            <div> The name of this verification section.</div>
+                                            <div class="int-fielddescription"> The name of this verification section.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <countdown>
@@ -84,7 +84,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="vfy2_section_unkey"> Unique Key </label>
-                                            <div> This uniquely identifies this section on the current verification.</div>
+                                            <div class="int-fielddescription"> This uniquely identifies this section on the current verification.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <countdown>
@@ -102,7 +102,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="descriptionLabel"> Description (optional) </label>
-                                            <div> The description for this section. It will display at the top of this section.</div>
+                                            <div class="int-fielddescription"> The description for this section. It will display at the top of this section.</div>
                                             <textarea id="descriptionLabel"></textarea>
                                         </div>
                                         <div class="row">
@@ -130,7 +130,7 @@ $page_subtitle = 'Data';
                                             <div class="card-body collapse" data-parent="#child1" id="uniquekey1">
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_uniquekey"> Unique key </label>
-                                                    <div> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <div class="int-fielddescription"> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
                                                             <countdown>
@@ -143,7 +143,7 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_liveDataEndpoint"> Live Data Endpoint </label>
-                                                    <div> API Endpoint to pull Live Data </div>
+                                                    <div class="int-fielddescription"> API Endpoint to pull Live Data </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
                                                             <select  id="api1_liveDataEndpoint"  class="form-control" aria-label="Live Data Endpoint">
@@ -155,7 +155,7 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_callbackEndpoint"> Callback Endpoint </label>
-                                                    <div> API Endpoint to call before submission is allowed </div>
+                                                    <div class="int-fielddescription"> API Endpoint to call before submission is allowed </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
                                                             <select  id="api1_callbackEndpoint"  class="form-control" aria-label="Live Data Endpoint">
@@ -167,33 +167,22 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_nameLabel">URL </label>
-                                                    <div class=""> URL to the external application that allows action to be taken.</div>
+                                                    <div class="int-fielddescription"> URL to the external application that allows action to be taken.</div>
                                                     <input id="api1_nameLabel" aria-labelledby="api1_nameLabel"  class="form-control" type="text">
                                                 </div>
-                                               
-                                                
-                                                   
-       <div class="form-group">
-                            <label class="control-label" for="api1_buttonlable"> Button label </label>
-                            <div> The label for the button that will launch the URL.</div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <countdown>
-                                        <div class="rbt-charcount">
-                                            <input aria-labelledby="api1_buttonlable" class="form-control " formcontrolname="title" id="api1_buttonlable" value="Edit">
-                                            <span class="badge badge-success" id="api1_buttonlable_badge"> <span id="api1_buttonlable_counter">20</span> </span> </div>
-                                    </countdown>
-                                </div>
-                            </div>
-                        </div>
-    
-    
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api1_buttonlable"> Button label </label>
+                                                    <div class="int-fielddescription"> The label for the button that will launch the URL.</div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-lg-6">
+                                                            <countdown>
+                                                                <div class="rbt-charcount">
+                                                                    <input aria-labelledby="api1_buttonlable" class="form-control " formcontrolname="title" id="api1_buttonlable" value="Edit">
+                                                                    <span class="badge badge-success" id="api1_buttonlable_badge"> <span id="api1_buttonlable_counter">20</span> </span> </div>
+                                                            </countdown>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
@@ -216,7 +205,7 @@ $page_subtitle = 'Data';
                                             <div class="card-body collapse" data-parent="#child1" id="uniquekey2">
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_uniquekey"> Unique key </label>
-                                                    <div> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
+                                                    <div class="int-fielddescription"> This uniquely identifies this group on the whole verification. It is used to map up the live data pulled from the external application. Use this unique key in your data feed.</div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
                                                             <countdown>
@@ -229,7 +218,7 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_liveDataEndpoint"> Live Data Endpoint </label>
-                                                    <div> API Endpoint to pull Live Data </div>
+                                                    <div class="int-fielddescription"> API Endpoint to pull Live Data </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
                                                             <select  id="api2_liveDataEndpoint"  class="form-control" aria-label="Live Data Endpoint">
@@ -241,7 +230,7 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_callbackEndpoint"> Callback Endpoint </label>
-                                                    <div> API Endpoint to call before submission is allowed </div>
+                                                    <div class="int-fielddescription"> API Endpoint to call before submission is allowed </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
                                                             <select  id="api2_callbackEndpoint"  class="form-control" aria-label="Live Data Endpoint">
@@ -253,35 +242,25 @@ $page_subtitle = 'Data';
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_nameLabel">URL </label>
-                                                    <div class=""> URL to the external application that allows action to be taken.</div>
+                                                    <div class="int-fielddescription"> URL to the external application that allows action to be taken.</div>
                                                     <input id="api2_nameLabel" aria-labelledby="api2_nameLabel"  class="form-control" type="text">
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert">
                                                         <p class="rbt-ts-14"> This field is required.</p>
                                                     </div>
                                                 </div>
-                                                
-                                                
-                                                
-                                                                                             
-       <div class="form-group">
-                            <label class="control-label" for="api2_buttonlable"> Button label </label>
-                            <div> The label for the button that will launch the URL.</div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6">
-                                    <countdown>
-                                        <div class="rbt-charcount">
-                                            <input aria-labelledby="api2_buttonlable" class="form-control " formcontrolname="title" id="api2_buttonlable" value="Edit">
-                                            <span class="badge badge-success" id="api2_buttonlable_badge"> <span id="api2_buttonlable_counter">20</span> </span> </div>
-                                    </countdown>
-                                </div>
-                            </div>
-                        </div>
-    
-                                                
-                                                
-                                                
-                                                
-                                             
+                                                <div class="form-group">
+                                                    <label class="control-label" for="api2_buttonlable"> Button label </label>
+                                                    <div class="int-fielddescription"> The label for the button that will launch the URL.</div>
+                                                    <div class="row">
+                                                        <div class="col-12 col-lg-6">
+                                                            <countdown>
+                                                                <div class="rbt-charcount">
+                                                                    <input aria-labelledby="api2_buttonlable" class="form-control " formcontrolname="title" id="api2_buttonlable" value="Edit">
+                                                                    <span class="badge badge-success" id="api2_buttonlable_badge"> <span id="api2_buttonlable_counter">20</span> </span> </div>
+                                                            </countdown>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-end">
@@ -313,7 +292,7 @@ $page_subtitle = 'Data';
                                     <div class="card-body" id="child2">
                                         <div class="form-group">
                                             <label class="control-label" for="data-name2"> Name </label>
-                                            <div> The name of this verification (displayed on the main verification page).</div>
+                                            <div class="int-fielddescription"> The name of this verification (displayed on the main verification page).</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <input type="text" class="form-control"  id="data-name2" aria-describedby="data-name2" oninput='datamnameset2();datanamestore2();'>
@@ -322,7 +301,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="uniquekeyLabel2"> Unique Key </label>
-                                            <div class=""> This uniquely identifies this section on the current verification.</div>
+                                            <div class="int-fielddescription"> This uniquely identifies this section on the current verification.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
                                                     <input id="uniquekeyLabel2" aria-labelledby="uniquekeyLabel2"  class="form-control" type="text">
@@ -336,7 +315,7 @@ $page_subtitle = 'Data';
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="descriptionLabel2"> Description (optional) </label>
-                                            <div> The description for this section. It will display at the top of this section.</div>
+                                            <div class="int-fielddescription"> The description for this section. It will display at the top of this section.</div>
                                             <textarea id="descriptionLabel2"></textarea>
                                         </div>
                                         <div class="row">
