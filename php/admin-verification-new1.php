@@ -68,7 +68,7 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="vfy1_publisherLabel"> Publisher </label>
-                            <div class="int-fielddescription"> The owner of this verification </div>
+                            <div class="int-fielddescription"> The owner of this verification. </div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="vfy1_publisherLabel">

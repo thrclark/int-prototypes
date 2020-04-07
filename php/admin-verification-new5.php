@@ -39,23 +39,15 @@ $page_subtitle = 'Scheduling';
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-12">
-                        <div class="card mb-5">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="font-weight-bold mb-1 ts-16">Status</div>
-                                        <div>Specify the status of this verification upon saving</div>
-                                    </div>
-                                    <div class="col-auto px-7 border-left">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="show_enddate" value="option1" checked>
-                                            <label class="form-check-label" for="show_enddate"> Active </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="hide_enddate" value="option2">
-                                            <label class="form-check-label" for="hide_enddate"> Inactive </label>
-                                        </div>
-                                    </div>
+                        <div class="form-group">
+                            <label class="control-label" for="vfy_status"> Status </label>
+                            <div class="int-fielddescription"> Specify the status of this verification upon saving. </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="vfy_status">
+                                        <option value="active">Active</option>
+                                        <option value="inactive">Inactive</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -81,6 +73,20 @@ $page_subtitle = 'Scheduling';
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
+$(document).ready(function() {
+    $(function() {
+        $('#vfy_status').change(function() {
+            if ($('#vfy_status').val() == 'active') {
+                $('#enddate').show(); 
+            } else {
+                $('#enddate').hide(); 
+            }
+          
+        });
+    });
+});
+</script> 
+<script>
   $(document).ready(function(){
     $("#sticky").sticky({topSpacing:0});
   });
@@ -93,18 +99,6 @@ $page_subtitle = 'Scheduling';
 </script> <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
 	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
-</script> 
-<script>
-$(document).ready(function() {
-   $('input[type="radio"]').click(function() {
-       if($(this).attr('id') == 'show_enddate') {
-            $('#enddate').show();           
-       }
-       else {
-            $('#enddate').hide();   
-       }
-   });
-});
 </script>
 </body>
 </html>
