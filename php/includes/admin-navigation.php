@@ -1,3 +1,4 @@
+
  <a class="rbt-skip-link" href="#main-content" tabindex="0">Skip to content</a>
 <header class="d-flex flex-nowrap rbt-app-header rbt-app-header--light"> <img alt="trident" class="int-brand-image mr-3"/>
     <div class="rbt-brand-title-container flex-grow-1"> <a href="../admin-verifications.php" class="rbt-brand-title"><span class="font-weight-bold">IU Verify</span> Administration </a> </div>
@@ -25,14 +26,14 @@
 <div class="rbt-drawer d-lg-none">
     <nav>
         <ul class="list-group mt-3">
-            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse"  data-target="#nav_pub">Verifications</a>
+            <li class="list-group-item rbt-collapsable"> <button class="collapsed"  data-toggle="collapse"  data-target="#nav_pub">Verifications</button>
                 <ul class="collapse" id="nav_pub">
                     <li class="list-group-item"> <a href="admin-verifications.php">All verifications</a> </li>
                     <li class="list-group-item"> <a href="admin-verification-new1.php">New verification</a></li>
                     <li class="list-group-item"> <a href="admin-verification-reset.php">Reset user verifications </a> </li>
                 </ul>
             </li>
-            <li class="list-group-item rbt-collapsable"> <a href="#" class="collapsed"  data-toggle="collapse" data-target="#nav_settings">Settings</a>
+            <li class="list-group-item rbt-collapsable"> <button class="collapsed"  data-toggle="collapse" data-target="#nav_settings">Settings</button>
                 <ul class="collapse" id="nav_settings">
                     <li class="list-group-item"> <a href="admin-settings-general.php">General Settings </a> </li>
                     <li class="list-group-item"> <a href="admin-settings-apiaccounts.php">API Accounts </a> </li>
