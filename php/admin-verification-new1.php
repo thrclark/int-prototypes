@@ -240,9 +240,9 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="deferralwait">Deferral Wait </label>
-                            <div class="int-fielddescription"> The time to wait to display this verification to the user after they have verified later. </div>
+                            <div class="int-fielddescription"> The amount of time that transpires after a verification is deferred and the verification is set to display again to the user. </div>
                             <select class="form-control w-25" id="deferralwait">
-                                <option selected="selected">No wait</option>
+                                <option selected="selected">None</option>
                                 <option>1 hour</option>
                                 <option >3 hours</option>
                                 <option>6 hours</option>

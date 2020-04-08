@@ -11,6 +11,19 @@ $page_title = 'All verifications';
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-7">
+    
+    
+    
+    <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
+        <alert dismissible="true">
+            <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                <span>Verification has been reset.</span> </div>
+        </alert>
+    </growls>
+    
+    
+    
     <main class="main-content" id="main-content">
         <div class="row align-items-center mb-3 mb-md-6 ">
             <div class="col"> </div>
@@ -37,6 +50,9 @@ $page_title = 'All verifications';
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
+            
+            
+            <!---->
             <tbody>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Acceptable Use Agreement</span></td>
@@ -48,7 +64,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Citizenship Verification</span></td>
@@ -60,7 +79,12 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content">
+                        <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div>
+                       </span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">External Email Flag</span></td>
@@ -72,7 +96,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">FERPA Compliance</span></td>
@@ -84,7 +111,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">IU Login</span></td>
@@ -95,7 +125,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">IU-Notify</span></td>
@@ -107,7 +140,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Personal Information</span></td>
@@ -119,7 +155,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.12.19</span></td>
@@ -131,7 +170,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.19.19</span></td>
@@ -143,7 +185,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.27.19</span></td>
@@ -155,7 +200,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.5.19</span></td>
@@ -167,7 +215,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 7.3.19</span></td>
@@ -179,7 +230,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Travel or out-of-pocket Reimbursement Account</span></td>
@@ -191,7 +245,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Two-Step Login With Duo</span></td>
@@ -202,7 +259,10 @@ $page_title = 'All verifications';
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
+                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> --> <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu"> <a class="dropdown-item" href="admin-verification-new1.php">Edit</a> <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#exampleModal-form" data-backdrop="static" data-keyboard="false">Reset verification...</a> </div>
+                        </div></span></td>
                 </tr>
             </tbody>
         </table>
@@ -216,6 +276,27 @@ $page_title = 'All verifications';
                 <li class="page-item"><a class="page-link" href="#">20</a></li>
             </ul>
         </nav>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal-form" tabindex="-1" role="dialog" aria-labelledby="exampleModal-form" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Reset verification</div>
+                    </div>
+                    <div class="modal-body">
+                        <p>Resetting this verification will cause it to be reset fo all users, meaning that any user who has seen/responded to this verification in the past will see it again.</p>
+                        <p>If you only want to reset this verification for a specific user, this may be done on the '<a href="admin-verification-reset.php">Reset user verifications</a>' page.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rbt-button-group">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="resetverification">Reset for all users</button>
+                            <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
@@ -242,5 +323,20 @@ $page_title = 'All verifications';
 })
     });
 </script>
+    
+    
+    <script>
+    $(document).ready(function() {
+        $("#resetverification").click(function() {
+            $("#growl1").delay(500).fadeIn().delay(5000).fadeOut();
+        });
+       
+    });
+</script>
+    
+    
+    
+    
+    
 </body>
 </html>
