@@ -147,11 +147,10 @@ $page_title = 'All verifications';
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Personal Information</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Pending
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Scheduled
                         <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-3 list-unstyled'>
     <li>The verification is set to 'active'.</li>
-    <li>None of the recipient groups have an effective date which is in the past.</li>
-    <li>The end date (4/21/2024) has not yet transpired.</li>
+    <li>A recipient group is scheduled to start receiving this verification on 04/21/20204.</li>
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
@@ -192,11 +191,10 @@ $page_title = 'All verifications';
                 </tr>
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.27.19</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Pending
+                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content">Scheduled
                         <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-3 list-unstyled'>
     <li>The verification is set to 'active'.</li>
-    <li>None of the recipient groups have an effective date which is in the past.</li>
-    <li>The end date (4/21/2024) has not yet transpired.</li>
+    <li>A recipient group is scheduled to start receiving this verification on 04/21/20204.</li>
 
 </ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         </span></td>
