@@ -48,7 +48,7 @@ $page_subtitle = 'Setup';
                                     <countdown>
                                         <div class="rbt-charcount">
                                             <input aria-labelledby="vfy1_name" class="form-control " formcontrolname="title" id="vfy1_name">
-                                            <span class="badge badge-success" id="vfy1_name_badge"> <span id="vfy1_name_counter">20</span> </span> </div>
+                                            <span class="badge badge-success" id="vfy1_name_badge"> <span id="vfy1_name_counter">100</span> </span> </div>
                                     </countdown>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ $page_subtitle = 'Setup';
                                     <countdown>
                                         <div class="rbt-charcount">
                                             <input aria-labelledby="vfy1_unkey" class="form-control " formcontrolname="title" id="vfy1_unkey">
-                                            <span class="badge badge-success" id="vfy1_unkey_badge"> <span id="vfy1_unkey_counter">20</span> </span> </div>
+                                            <span class="badge badge-success" id="vfy1_unkey_badge"> <span id="vfy1_unkey_counter">100</span> </span> </div>
                                     </countdown>
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ $page_subtitle = 'Setup';
                                 <countdown>
                                     <div class="rbt-charcount">
                                         <textarea class="form-control" id="verify_now_custom_field"></textarea>
-                                        <span class="badge badge-success" id="verify_now_custom_field_badge"><span id="verify_now_custom_field_counter">50</span></span> </div>
+                                        <span class="badge badge-success" id="verify_now_custom_field_badge"><span id="verify_now_custom_field_counter">1000</span></span> </div>
                                 </countdown>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ $page_subtitle = 'Setup';
                                 <countdown>
                                     <div class="rbt-charcount">
                                         <textarea class="form-control" id="defer_now_custom_field"></textarea>
-                                        <span class="badge badge-success" id="defer_now_custom_field_badge"><span id="defer_now_custom_field_counter">50</span></span> </div>
+                                        <span class="badge badge-success" id="defer_now_custom_field_badge"><span id="defer_now_custom_field_counter">1000</span></span> </div>
                                 </countdown>
                             </div>
                         </div>
@@ -342,9 +342,9 @@ $page_subtitle = 'Setup';
 $(document).ready(function() {
     $("#vfy1_name").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#vfy1_name_counter').text(length);
-        if ($("#vfy1_name").val().length > 20) {
+        if ($("#vfy1_name").val().length > 100) {
             $("#vfy1_name_badge").last().addClass("badge-danger");
         } else {
             $("#vfy1_name_badge").last().removeClass("badge-danger");
@@ -352,9 +352,9 @@ $(document).ready(function() {
     });
     $("#vfy1_unkey").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#vfy1_unkey_counter').text(length);
-        if ($("#vfy1_unkey").val().length > 20) {
+        if ($("#vfy1_unkey").val().length > 100) {
             $("#vfy1_unkey_badge").last().addClass("badge-danger");
         } else {
             $("#vfy1_unkey_badge").last().removeClass("badge-danger");
@@ -362,9 +362,9 @@ $(document).ready(function() {
     });
     $("#verify_now_custom_field").keyup(function() {
         var length = $(this).val().length;
-        length = 50 - length;
+        length = 1000 - length;
         $('#verify_now_custom_field_counter').text(length);
-        if ($("#verify_now_custom_field").val().length > 50) {
+        if ($("#verify_now_custom_field").val().length > 1000) {
             $("#verify_now_custom_field_badge").last().addClass("badge-danger");
         } else {
             $("#verify_now_custom_field_badge").last().removeClass("badge-danger");
@@ -372,9 +372,9 @@ $(document).ready(function() {
     });
     $("#defer_now_custom_field").keyup(function() {
         var length = $(this).val().length;
-        length = 50 - length;
+        length = 1000 - length;
         $('#defer_now_custom_field_counter').text(length);
-        if ($("#defer_now_custom_field").val().length > 50) {
+        if ($("#defer_now_custom_field").val().length > 1000) {
             $("#defer_now_custom_field_badge").last().addClass("badge-danger");
         } else {
             $("#defer_now_custom_field_badge").last().removeClass("badge-danger");
