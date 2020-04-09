@@ -1,7 +1,7 @@
 <?php
 $section = '';
 $page_title = 'New verification';
-$page_subtitle = 'Recipient rulesets';
+$page_subtitle = 'Recipients';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,17 +86,17 @@ $page_subtitle = 'Recipient rulesets';
                                                 </div>
                                                 <div class="col-12 col-sm-6 col-md-4">
                                                     <label for="start-time"  class="">Start time</label>
-                                                    <input type="time" id="start-time" class="form-control" value="">
+                                                    <input type="time" id="start-time" class="form-control" value="" placeholder="hh:mm:AM">
                                                 </div>
                                                 <div class="col-12 col-sm-6 col-md-4 d-flex align-items-end">
                                                     <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
                                                 </div>
                                             </div>
                                         </fieldset>
-                                        <div class="font-weight-bold mb-2 ts-14">Recur annually</div>
+                                       
                                         <div class="form-check mb-5">
                                             <input class="form-check-input" type="checkbox" value="" id="recurannually">
-                                            <label class="form-check-label" for="recurannually"> Yes </label>
+                                            <label class="form-check-label" for="recurannually"> Recur annualy </label>
                                         </div>
                                         <div class="form-group">
                                             <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
