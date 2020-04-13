@@ -74,7 +74,7 @@ $page_subtitle = 'Data';
                                                     <countdown>
                                                         <div class="rbt-charcount">
                                                             <input aria-labelledby="vfy2_section_name" class="form-control " formcontrolname="title" id="vfy2_section_name">
-                                                            <span class="badge badge-success" id="vfy2_section_name_badge"> <span id="vfy2_section_name_counter">20</span> </span> </div>
+                                                            <span class="badge badge-success" id="vfy2_section_name_badge"> <span id="vfy2_section_name_counter">100</span> </span> </div>
                                                     </countdown>
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert">
                                                         <p class="rbt-ts-14"> This field is required.</p>
@@ -90,7 +90,7 @@ $page_subtitle = 'Data';
                                                     <countdown>
                                                         <div class="rbt-charcount">
                                                             <input aria-labelledby="vfy2_section_unkey" class="form-control " formcontrolname="title" id="vfy2_section_unkey">
-                                                            <span class="badge badge-success" id="vfy2_section_unkey_badge"> <span id="vfy2_section_unkey_counter">20</span> </span> </div>
+                                                            <span class="badge badge-success" id="vfy2_section_unkey_badge"> <span id="vfy2_section_unkey_counter">100</span> </span> </div>
                                                     </countdown>
                                                 </div>
                                             </div>
@@ -136,7 +136,7 @@ $page_subtitle = 'Data';
                                                             <countdown>
                                                                 <div class="rbt-charcount">
                                                                     <input aria-labelledby="api1_uniquekey" class="form-control " formcontrolname="title" id="api1_uniquekey" value="Field group 1">
-                                                                    <span class="badge badge-success" id="api1_uniquekey_badge"> <span id="api1_uniquekey_counter">20</span> </span> </div>
+                                                                    <span class="badge badge-success" id="api1_uniquekey_badge"> <span id="api1_uniquekey_counter">100</span> </span> </div>
                                                             </countdown>
                                                         </div>
                                                     </div>
@@ -178,7 +178,7 @@ $page_subtitle = 'Data';
                                                             <countdown>
                                                                 <div class="rbt-charcount">
                                                                     <input aria-labelledby="api1_buttonlable" class="form-control " formcontrolname="title" id="api1_buttonlable" value="Edit">
-                                                                    <span class="badge badge-success" id="api1_buttonlable_badge"> <span id="api1_buttonlable_counter">20</span> </span> </div>
+                                                                    <span class="badge badge-success" id="api1_buttonlable_badge"> <span id="api1_buttonlable_counter">15</span> </span> </div>
                                                             </countdown>
                                                         </div>
                                                     </div>
@@ -211,7 +211,7 @@ $page_subtitle = 'Data';
                                                             <countdown>
                                                                 <div class="rbt-charcount">
                                                                     <input aria-labelledby="api2_uniquekey" class="form-control " formcontrolname="title" id="api2_uniquekey" value="Field group 2">
-                                                                    <span class="badge badge-success" id="api2_uniquekey_badge"> <span id="api2_uniquekey_counter">20</span> </span> </div>
+                                                                    <span class="badge badge-success" id="api2_uniquekey_badge"> <span id="api2_uniquekey_counter">100</span> </span> </div>
                                                             </countdown>
                                                         </div>
                                                     </div>
@@ -256,7 +256,7 @@ $page_subtitle = 'Data';
                                                             <countdown>
                                                                 <div class="rbt-charcount">
                                                                     <input aria-labelledby="api2_buttonlable" class="form-control " formcontrolname="title" id="api2_buttonlable" value="Edit">
-                                                                    <span class="badge badge-success" id="api2_buttonlable_badge"> <span id="api2_buttonlable_counter">20</span> </span> </div>
+                                                                    <span class="badge badge-success" id="api2_buttonlable_badge"> <span id="api2_buttonlable_counter">15</span> </span> </div>
                                                             </countdown>
                                                         </div>
                                                     </div>
@@ -429,9 +429,9 @@ $(document).ready(function(){
 $(document).ready(function() {
     $("#vfy2_section_name").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#vfy2_section_name_counter').text(length);
-        if ($("#vfy2_section_name").val().length > 20) {
+        if ($("#vfy2_section_name").val().length > 100) {
             $("#vfy2_section_name_badge").last().addClass("badge-danger");
         } else {
             $("#vfy2_section_name_badge").last().removeClass("badge-danger");
@@ -439,9 +439,9 @@ $(document).ready(function() {
     });
     $("#vfy2_section_unkey").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#vfy2_section_unkey_counter').text(length);
-        if ($("#vfy2_section_unkey").val().length > 20) {
+        if ($("#vfy2_section_unkey").val().length > 100) {
             $("#vfy2_section_unkey_badge").last().addClass("badge-danger");
         } else {
             $("#vfy2_section_unkey_badge").last().removeClass("badge-danger");
@@ -449,9 +449,9 @@ $(document).ready(function() {
     });
     $("#api1_uniquekey").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#api1_uniquekey_counter').text(length);
-        if ($("#api1_uniquekey").val().length > 20) {
+        if ($("#api1_uniquekey").val().length > 100) {
             $("#api1_uniquekey_badge").last().addClass("badge-danger");
         } else {
             $("#api1_uniquekey_badge").last().removeClass("badge-danger");
@@ -459,9 +459,9 @@ $(document).ready(function() {
     });
     $("#api2_uniquekey").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#api2_uniquekey_counter').text(length);
-        if ($("#api2_uniquekey").val().length > 20) {
+        if ($("#api2_uniquekey").val().length > 100) {
             $("#api2_uniquekey_badge").last().addClass("badge-danger");
         } else {
             $("#api2_uniquekey_badge").last().removeClass("badge-danger");
@@ -469,9 +469,9 @@ $(document).ready(function() {
     });
     $("#api1_buttonlable").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 15 - length;
         $('#api1_buttonlable_counter').text(length);
-        if ($("#api1_buttonlable").val().length > 20) {
+        if ($("#api1_buttonlable").val().length > 15) {
             $("#api1_buttonlable_badge").last().addClass("badge-danger");
         } else {
             $("#api1_buttonlable_badge").last().removeClass("badge-danger");
@@ -479,9 +479,9 @@ $(document).ready(function() {
     });
     $("#api2_buttonlable").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 15 - length;
         $('#api2_buttonlable_counter').text(length);
-        if ($("#api2_buttonlable").val().length > 20) {
+        if ($("#api2_buttonlable").val().length > 15) {
             $("#api2_buttonlable_badge").last().addClass("badge-danger");
         } else {
             $("#api2_buttonlable_badge").last().removeClass("badge-danger");

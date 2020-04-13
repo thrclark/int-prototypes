@@ -41,9 +41,17 @@ $page_title = 'VERIFY';
                                 <option value="none">Hidden</option>
                             </select>
                             <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
-                            <input type="text" class="form-control mb-3 demojs-lockupcontrols"  id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="org-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                                    <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
+                            </countdown>
                             <label for="app-name" class="demojs-lockupcontrols">Application name</label>
-                            <input type="text" class="form-control mb-3 demojs-lockupcontrols" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="app-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                                    <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
+                            </countdown>
                         </div>
                     </div>
                 </div>
@@ -819,6 +827,34 @@ $(document).ready(function(){
     
     
     
+</script> 
+<script>
+$(document).ready(function() {
+    $("#org-name").keyup(function() {
+        var length = $(this).val().length;
+        length = 40 - length;
+        $('#org-name_counter').text(length);
+        if ($("#org-name").val().length > 40) {
+            $("#org-name_badge").last().addClass("badge-danger");
+        } else {
+            $("org-name_badge").last().removeClass("badge-danger");
+        }
+    });
+    
+     $("#app-name").keyup(function() {
+        var length = $(this).val().length;
+        length = 40 - length;
+        $('#app-name_counter').text(length);
+        if ($("#app-name").val().length > 40) {
+            $("#app-name_badge").last().addClass("badge-danger");
+        } else {
+            $("app-name_badge").last().removeClass("badge-danger");
+        }
+    });
+    
+    
+   
+});
 </script>
 </body>
 </html>

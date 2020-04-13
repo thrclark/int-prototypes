@@ -68,7 +68,7 @@ $page_subtitle = 'Recipients';
                                                     <countdown>
                                                         <div class="rbt-charcount">
                                                             <input aria-labelledby="ruleset1_name" class="form-control " formcontrolname="title" id="ruleset1_name" oninput='datamnameset();datanamestore();'>
-                                                            <span class="badge badge-success" id="ruleset1_name_badge"> <span id="ruleset1_name_counter">20</span> </span> </div>
+                                                            <span class="badge badge-success" id="ruleset1_name_badge"> <span id="ruleset1_name_counter">100</span> </span> </div>
                                                     </countdown>
                                                 </div>
                                             </div>
@@ -250,7 +250,7 @@ $page_subtitle = 'Recipients';
                                                     <countdown>
                                                         <div class="rbt-charcount">
                                                             <input aria-labelledby="ruleset2_name" class="form-control " formcontrolname="title" id="ruleset2_name" oninput='datamnameset2();datanamestore2();'>
-                                                            <span class="badge badge-success" id="ruleset2_name_badge"> <span id="ruleset2_name_counter">20</span> </span> </div>
+                                                            <span class="badge badge-success" id="ruleset2_name_badge"> <span id="ruleset2_name_counter">100</span> </span> </div>
                                                     </countdown>
                                                 </div>
                                             </div>
@@ -618,9 +618,9 @@ $(document).ready(function(){
     
         $("#ruleset1_name").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#ruleset1_name_counter').text(length);
-        if ($("#ruleset1_name").val().length > 20) {
+        if ($("#ruleset1_name").val().length > 100) {
             $("#ruleset1_name_badge").last().addClass("badge-danger");
         } else {
             $("#ruleset1_name_badge").last().removeClass("badge-danger");
@@ -631,9 +631,9 @@ $(document).ready(function(){
     
      $("#ruleset2_name").keyup(function() {
         var length = $(this).val().length;
-        length = 20 - length;
+        length = 100 - length;
         $('#ruleset2_name_counter').text(length);
-        if ($("#ruleset2_name").val().length > 20) {
+        if ($("#ruleset2_name").val().length > 100) {
             $("#ruleset2_name_badge").last().addClass("badge-danger");
         } else {
             $("#ruleset2_name_badge").last().removeClass("badge-danger");

@@ -219,7 +219,7 @@ $page_title = 'General Settings';
                                 <countdown>
                                     <div class="rbt-charcount">
                                         <textarea aria-labelledby="def_verify_message" class="form-control " formcontrolname="title" id="def_verify_message"></textarea>
-                                        <span class="badge badge-success" id="def_verify_message_badge"> <span id="def_verify_message_counter">100</span> </span> </div>
+                                        <span class="badge badge-success" id="def_verify_message_badge"> <span id="def_verify_message_counter">1000</span> </span> </div>
                                 </countdown>
                             </div>
                         </div>
@@ -279,7 +279,7 @@ $page_title = 'General Settings';
                         <countdown>
                             <div class="rbt-charcount">
                                 <textarea aria-labelledby="def_def_message" class="form-control " formcontrolname="title" id="def_def_message"></textarea>
-                                <span class="badge badge-success" id="def_def_message_badge"> <span id="def_def_message_counter">100</span> </span> </div>
+                                <span class="badge badge-success" id="def_def_message_badge"> <span id="def_def_message_counter">1000</span> </span> </div>
                         </countdown>
                     </div>
                     <hr>
@@ -306,7 +306,7 @@ $page_title = 'General Settings';
                         <countdown>
                             <div class="rbt-charcount">
                                 <textarea aria-labelledby="error_message" class="form-control " formcontrolname="title" id="error_message">There is a system error that is currently preventing verification of your information. Please skip verification at this time to proceed with your login. You will be prompted to verify your information at a later time.</textarea>
-                                <span class="badge badge-success" id="error_message_badge"> <span id="error_message_counter">200</span> </span> </div>
+                                <span class="badge badge-success" id="error_message_badge"> <span id="error_message_counter">1000</span> </span> </div>
                         </countdown>
                     </div>
                     <hr>
@@ -1176,9 +1176,9 @@ $(document).ready(function() {
     });
         $("#def_verify_message").keyup(function() {
         var length = $(this).val().length;
-        length = 100 - length;
+        length = 1000 - length;
         $('#def_verify_message_counter').text(length);
-        if ($("#def_verify_message").val().length > 100) {
+        if ($("#def_verify_message").val().length > 1000) {
             $("#def_verify_message_badge").last().addClass("badge-danger");
         } else {
             $("#def_verify_message_badge").last().removeClass("badge-danger");
@@ -1186,9 +1186,9 @@ $(document).ready(function() {
     });
         $("#def_def_message").keyup(function() {
         var length = $(this).val().length;
-        length = 100 - length;
+        length = 1000 - length;
         $('#def_def_message_counter').text(length);
-        if ($("#def_def_message").val().length > 100) {
+        if ($("#def_def_message").val().length > 1000) {
             $("#def_def_message_badge").last().addClass("badge-danger");
         } else {
             $("#def_def_message_badge").last().removeClass("badge-danger");
@@ -1196,9 +1196,9 @@ $(document).ready(function() {
     });
         $("#error_message").keyup(function() {
         var length = $(this).val().length;
-        length = 200 - length;
+        length = 1000 - length;
         $('#error_message_counter').text(length);
-        if ($("#error_message").val().length > 200) {
+        if ($("#error_message").val().length > 1000) {
             $("#error_message_badge").last().addClass("badge-danger");
         } else {
             $("#error_message_badge").last().removeClass("badge-danger");
