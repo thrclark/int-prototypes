@@ -91,7 +91,7 @@ $page_title = 'Publishers';
                             <countdown>
                                 <div class="rbt-charcount">
                                     <input aria-labelledby="pub_name" class="form-control" id="pub_name">
-                                    <span class="badge badge-success" id="pub_name_badge"> <span id="pub_name_counter">50</span> </span> </div>
+                                    <span class="badge badge-success" id="pub_name_badge"> <span id="pub_name_counter">100</span> </span> </div>
                             </countdown>
                         </div>
                     </div>
@@ -152,9 +152,9 @@ $page_title = 'Publishers';
     
             $("#pub_name").keyup(function() {
             var length = $(this).val().length;
-            length = 50 - length;
+            length = 100 - length;
             $('#pub_name_counter').text(length);
-            if ($("#pub_name").val().length > 50) {
+            if ($("#pub_name").val().length > 100) {
                 $("#pub_name_badge").last().addClass("badge-danger");
             } else {
                 $("#pub_name_badge").last().removeClass("badge-danger");

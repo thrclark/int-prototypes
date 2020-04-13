@@ -157,7 +157,7 @@ $page_title = 'API Accounts';
                             <countdown>
                                 <div class="rbt-charcount">
                                     <input aria-labelledby="api_accountname" class="form-control " formcontrolname="title" id="api_accountname">
-                                    <span class="badge badge-success" id="api_accountname_badge"> <span id="api_accountname_counter">20</span> </span> </div>
+                                    <span class="badge badge-success" id="api_accountname_badge"> <span id="api_accountname_counter">100</span> </span> </div>
                             </countdown>
                         </div>
                     </div>
@@ -554,9 +554,9 @@ $(document).ready(function() {
     $(document).ready(function() {
         $("#api_accountname").keyup(function() {
             var length = $(this).val().length;
-            length = 20 - length;
+            length = 100 - length;
             $('#api_accountname_counter').text(length);
-            if ($("#api_accountname").val().length > 20) {
+            if ($("#api_accountname").val().length > 100) {
                 $("#api_accountname_badge").last().addClass("badge-danger");
             } else {
                 $("#api_accountname_badge").last().removeClass("badge-danger");
