@@ -15,7 +15,7 @@ $page_title = 'Reset user verifications';
         <alert dismissible="true">
             <div role="alert" class="alert alert-success alert-dismissible mb-3">
                 <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                <span>Changes have been saved.</span> </div>
+                <span>Save successful.</span> </div>
         </alert>
     </growls>
     <main class="main-content" id="main-content">

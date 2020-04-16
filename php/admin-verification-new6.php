@@ -17,7 +17,7 @@ $page_subtitle = 'Review/save';
             <alert dismissible="true">
                 <div role="alert" class="alert alert-success alert-dismissible mb-3">
                     <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                    <span>Changes have been saved.</span> </div>
+                    <span>Save successful.</span> </div>
             </alert>
         </growls>
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>

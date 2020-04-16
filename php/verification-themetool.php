@@ -541,7 +541,7 @@ $page_title = 'VERIFY';
                 <alert dismissible="true">
                     <div role="alert" class="alert alert-success alert-dismissible mb-3">
                         <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                        <span>Changes have been saved.</span> </div>
+                        <span>Save successful.</span> </div>
                 </alert>
             </growls>
             <div class="container p-0" id="header_html_display"></div>

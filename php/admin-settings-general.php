@@ -19,8 +19,7 @@ $page_title = 'General Settings';
                 <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                     <alert dismissible="true">
                         <div role="alert" class="alert alert-success alert-dismissible mb-3">
-                            <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                            <span>Changes have been saved.</span> </div>
+                            <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button> <span>Save successful.</span> </div>
                     </alert>
                 </growls>
             </div>
