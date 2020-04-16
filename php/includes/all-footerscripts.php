@@ -2,7 +2,7 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/jquery.sticky.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/easymde@2.1.0/dist/easymde.min.js"></script>
+<script src="../js/easymde.min.js"></script>
 <script src="../js/pikaday.js"></script>
 <script src="../js/jscolor.js"></script>
 <script src="../js/jquery.multi-select.js"></script>

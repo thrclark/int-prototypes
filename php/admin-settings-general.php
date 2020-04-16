@@ -7,7 +7,7 @@ $page_title = 'General Settings';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/easymde@2.1.0/dist/easymde.min.css">
+
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
