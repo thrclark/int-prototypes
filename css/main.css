@@ -12872,8 +12872,7 @@ html .int-user {
           html .int-user main section .card .card-body a:focus, html .int-user .main section .card .card-body a:focus {
             outline: 0.125rem solid var(--action-color); }
         html .int-user main section .card .card-body .int-mask, html .int-user .main section .card .card-body .int-mask {
-          font-size: 10px;
-          letter-spacing: 1px; }
+          font-size: 10px; }
         html .int-user main section .card .card-body .list-group .list-group-item, html .int-user .main section .card .card-body .list-group .list-group-item {
           background-color: var(--panel-bg-color);
           color: var(--panel-text-color);
