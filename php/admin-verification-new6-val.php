@@ -331,6 +331,9 @@ $page_subtitle = 'Review/save';
             }
         });
     });
+</script> 
+<script>
+     $(window).resize(function(){location.reload();});
 </script>
 </body>
 </html>

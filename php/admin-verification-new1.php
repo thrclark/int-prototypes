@@ -402,5 +402,9 @@ $(document).ready(function() {
     });
 });
 </script>
+    
+<script>
+     $(window).resize(function(){location.reload();});
+</script>
 </body>
 </html>

@@ -96,9 +96,13 @@ $(document).ready(function() {
   });
 	
 	
-</script> <script>
+</script> 
+<script>
     var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
 	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
+</script>
+<script>
+     $(window).resize(function(){location.reload();});
 </script>
 </body>
 </html>
