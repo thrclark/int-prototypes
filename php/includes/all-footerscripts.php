@@ -295,5 +295,5 @@ function footerhtml_store() {
     textdata = document.getElementById('footer_html').value;
     document.getElementById('footer_html_display').innerHTML = textdata;
 }
-    $(window).resize(function(){location.reload();});
+   
 </script>
