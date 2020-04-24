@@ -40,8 +40,15 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-body"> <a href="php/verification-slowload.php" target="_blank" class="font-weight-bold">Slow load</a>
-                                        <div class="ts-14">End user view of page during slow loadikng conditions.</div>
+                                    <div class="media-body"> <a href="php/verification-slowload1.php" target="_blank" class="font-weight-bold">Slow load 1</a>
+                                        <div class="ts-14">End user view of page with sections that slowly load.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-slowload2.php" target="_blank" class="font-weight-bold">Slow load 2</a>
+                                        <div class="ts-14">End user view of page during slow loading conditions.</div>
                                     </div>
                                 </div>
                             </li>
