@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'VERIFY';
+$page_title = 'CampusConfirm';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,10 +35,10 @@ $page_title = 'VERIFY';
                     </h3>
                     <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="lockup-visibility">Lockup</label>
+                            <label for="lockup-visibility">Visible</label>
                             <select class="form-control mb-3" id="lockup-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
+                                <option selected="" value="block">Yes</option>
+                                <option value="none">No</option>
                             </select>
                             <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
                             <countdown>
@@ -548,7 +548,7 @@ $page_title = 'VERIFY';
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
                     <div class="int-lockup-group text-nowrap">
-                        <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
+                        <div class="int-lockup-org" id="org-name-display">XYZ UNIVERSITY</div>
                         <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
                     </div>
                     <div class="w-100"></div>

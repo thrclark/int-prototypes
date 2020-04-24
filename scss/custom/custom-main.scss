@@ -70,6 +70,7 @@ html {
         .card {
           font-size: var(--base_bodyfont_size);
           border-radius: var(--theme_border_radius);
+          border-color: var(--border-color) !important;
 
           background-color: var(--panel-bg-color);
           h1,h2,h3 {

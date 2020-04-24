@@ -12853,6 +12853,7 @@ html .int-user {
     html .int-user main section .card, html .int-user .main section .card {
       font-size: var(--base_bodyfont_size);
       border-radius: var(--theme_border_radius);
+      border-color: var(--border-color) !important;
       background-color: var(--panel-bg-color); }
       html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
         font-family: var(--font_header);
