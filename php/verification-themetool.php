@@ -15,23 +15,82 @@ $page_title = 'CampusConfirm';
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-3 mt-7">Customize theme</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
-                <div class="card predefined-themes">
+                <div class="card">
                     <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_preset" aria-expanded="false" aria-controls="panel_preset"> <i class="rbt-icon-chevron-right"></i> Predefined themes </button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
                     </h3>
-                    <div id="panel_preset" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body p-3">
-                            <button data-theme="white" style="background-color: white"> white </button>
-                            <button data-theme="brown" style="background-color: #6f5929"> brown </button>
-                            <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
-                            <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
-                            <button data-theme="black" style="background-color: #222"> black </button>
+                    <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="mb-2"> Color palette ideas</div>
+                                <button data-theme="white" style="background-color: #eaeaea"> white </button>
+                                <button data-theme="brown" style="background-color: #fdf7eb"> brown </button>
+                                <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
+                                <button data-theme="blue" style="background-color: #01a9c9"> blue </button>
+                                <button data-theme="red" style="background-color: #990000"> red </button>
+                                <button data-theme="purple" style="background-color: #62449b"> purple </button>
+                                <button data-theme="black" style="background-color: #222"> black </button>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="border-color" class="font-weight-normal ts-16 mb-2">Border color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="border-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Application name </button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Application identity </button>
                     </h3>
                     <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -52,15 +111,7 @@ $page_title = 'CampusConfirm';
                                     <input aria-labelledby="app-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
                                     <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
                             </countdown>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
-                    </h3>
-                    <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
+                            <hr>
                             <label for="logoimage-visibility">Logo image</label>
                             <select class="form-control mb-3" id="logoimage-visibility">
                                 <option selected="" value="block">Visible</option>
@@ -105,7 +156,7 @@ $page_title = 'CampusConfirm';
                     <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
-                                <p>Note - application icons are used for bookmarks, browswer tab icons, etc, and are not displayed in the theming tool.</p>
+                                <p class="ts-12 font-italic mb-3">Note - application icons are used for bookmarks, browswer tab icons, etc, and are not displayed here in the theming tool.</p>
                                 <label>Favicon icon</label>
                                 <div class="int-fielddescription">Icon to display as the favicon. This must be an .ico file.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
@@ -226,69 +277,6 @@ $page_title = 'CampusConfirm';
                             <div class="form-group mb-3">
                                 <label for="headerfooter_css">Header/footer CSS</label>
                                 <textarea class="form-control" id="headerfooter_css" rows="5"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
-                    </h3>
-                    <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="border-color" class="font-weight-normal ts-16 mb-2">Border color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="border-color-hexcolor">
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

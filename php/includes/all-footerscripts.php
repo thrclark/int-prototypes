@@ -70,7 +70,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
-                    'logoimage-url': "url('https://is.wfu.edu/wp-content/uploads/2017/01/cropped-favicon.png')",
+                    'logoimage-url': "url('../img/logo-darkblue.png')",
                     'body-bg-color': '#fcf7eb',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
@@ -94,12 +94,12 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'app-name': 'CampusConfirm',
                     'logo-image-visibility': 'block',
                     'logoimage-url': "url('../img/logo-blue.png')",
-                    'body-bg-color': '#f2feff',
+                    'body-bg-color': '#f1f8ff',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
-                    'action-color': '#40a41b',
-                    'border-color': '#ced9da',
+                    'action-color': '#00a9c8',
+                    'border-color': '#cfe2e5',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_headerfont_size': '2rem',
@@ -159,7 +159,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'lockup-visibility': 'block',
                     'org-name': 'INDIANA UNIVERSITY',
                     'app-name': 'VERIFY',
-                    'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
+                    'logoimage-url': "url('../img/logo-red.png')",
                     'body-bg-color': '#eaeaea',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
@@ -175,6 +175,57 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'mstile-bg-color': '#ff0000',
                 });
                 return;
+                
+                
+                
+                
+                 case 'red':
+                setTheme({
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'block',
+                    'org-name': 'INDIANA UNIVERSITY',
+                    'app-name': 'VERIFY',
+                    'logoimage-url': "url('../img/logo-red.png')",
+                    'body-bg-color': '#f5edec',
+                    'body-text-color': '#444444',
+                    'panel-bg-color': '#ffffff',
+                    'panel-text-color': '#444444',
+                    'action-color': '#990000',
+                    'border-color': '#e5cecd',
+                    'font_header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'base_headerfont_size': '2rem',
+                    'base_bodyfont_size': '1rem',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
+                });
+                return;
+                
+                
+                    case 'purple':
+                setTheme({
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'block',
+                    'org-name': 'INDIANA UNIVERSITY',
+                    'app-name': 'VERIFY',
+                    'logoimage-url': "url('../img/logo-purple.png')",
+                    'body-bg-color': '#f2eaff',
+                    'body-text-color': '#444444',
+                    'panel-bg-color': '#ffffff',
+                    'panel-text-color': '#444444',
+                    'action-color': '#367929',
+                    'border-color': '#e2d1ff',
+                    'font_header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'base_headerfont_size': '2rem',
+                    'base_bodyfont_size': '1rem',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
+                });
+                return;
+                
         }
     })
 }

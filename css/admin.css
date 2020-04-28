@@ -12309,7 +12309,8 @@ body {
   body .btn-outline-primary, body ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body label.img-ul-button {
     border-radius: var(--theme_border_radius);
     border-color: var(--action-color);
-    color: var(--action-color); }
+    color: var(--action-color);
+    background-color: var(--panel-bg-color); }
     body .btn-outline-primary:focus, body ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload body label.img-ul-button:focus {
       box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
   body .btn-link {

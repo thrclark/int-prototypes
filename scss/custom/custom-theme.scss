@@ -24,7 +24,7 @@ body {
     border-radius: var(--theme_border_radius);
     border-color: var(--action-color);
     color: var(--action-color);
-    //background-color: var(--panel-bg-color);
+    background-color: var(--panel-bg-color);
     &:focus {
       box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
     }
