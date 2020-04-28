@@ -7,7 +7,6 @@ $page_title = 'General Settings';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
-
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
@@ -19,7 +18,8 @@ $page_title = 'General Settings';
                 <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                     <alert dismissible="true">
                         <div role="alert" class="alert alert-success alert-dismissible mb-3">
-                            <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button> <span>Save successful.</span> </div>
+                            <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                            <span>Save successful.</span> </div>
                     </alert>
                 </growls>
             </div>
@@ -27,7 +27,6 @@ $page_title = 'General Settings';
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Description</th>
                         <th>Value</th>
                         <th><span class="sr-only">Actions</span></th>
                     </tr>
@@ -46,56 +45,49 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-welcomemessage.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>-->
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verification description</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed at the top of every verification.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verification description <span class="ts-12 d-block"> Text to be displayed at the top of every verification.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> On occasion, we require verification of your personal information. The item(s) presented on this … </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview1">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verify button text</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed on the Verification button.  This can be overridden by an individual verification.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verify button text <span class="ts-12 d-block"> Text to be displayed on the Verification button. This can be overridden by an individual verification.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Verify </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview2">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verify message</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed next to the Verify option.  This can be overridden by an individual verification.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verify message <span class="ts-12 d-block"> Text to be displayed next to the Verify option. This can be overridden by an individual verification.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> I have verified that the above information is up to date and correct. </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview3">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default defer button text</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed on the Defer button.  This can be overridden by an individual verification.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default defer button text <span class="ts-12 d-block"> Text to be displayed on the Defer button. This can be overridden by an individual verification.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Verify Later </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview4">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default defer message</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Text to be displayed next to the Defer option.  This can be overridden by an individual verification.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default defer message <span class="ts-12 d-block"> Text to be displayed next to the Defer option. This can be overridden by an individual verification.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> You may also skip this verification for now. </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview5">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Error message</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">A message that is displayed when an error occurs preventing a verification from being completed.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Error message <span class="ts-12 d-block"> A message that is displayed when an error occurs preventing a verification from being completed.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> There is a system error that is currently preventing verification of your information. Please ski… </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview6">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default target URL</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default target URL <span class="ts-12 d-block"> Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content">
                             <div>-</div>
                             </span></td>
@@ -104,16 +96,14 @@ $page_title = 'General Settings';
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Enable email</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Turn on email functionality. Default is no</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Enable email <span class="ts-12 d-block"> Turn on email functionality. Default is no</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> No </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview8">Edit</button>
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Google Analytics ID</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">The ID assigned to your domain in the Google Analytics administration tool</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Google Analytics ID <span class="ts-12 d-block"> The ID assigned to your domain in the Google Analytics administration tool</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> UA-39645822-14 </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview9">Edit</button>
@@ -126,8 +116,7 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-maintenanceresource.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
                 </tr>-->
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">System email</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Email address from which email is sent.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">System email <span class="ts-12 d-block"> Email address from which email is sent.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content">
                             <div>-</div>
                             </span></td>
@@ -136,8 +125,7 @@ $page_title = 'General Settings';
                             </span></td>
                     </tr>
                     <tr>
-                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Time zone</span></td>
-                        <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">Select the your time zone.</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Time zone <span class="ts-12 d-block"> Select the your time zone.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> US/Eastern </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview11">Edit</button>
@@ -158,13 +146,14 @@ $page_title = 'General Settings';
                     </nav>
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Default verification description</label>
-                        <div class="int-fielddescription">Text to be displayed at the top of every verification.</div>
-                        <textarea id="default_verification_description"></textarea>
-                    </div>
-                    <hr>
-                    <div class="rbt-button-group mt-3 mb-5">
-                        <button class="btn btn-primary demojs_showmainview"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
-                        <button class="btn btn-outline-primary demojs_cancelaction"> Cancel </button>
+                        <div class="int-fielddescription">Text to be displayed at the top of every verification.</span>
+                            <textarea id="default_verification_description"></textarea>
+                        </div>
+                        <hr>
+                        <div class="rbt-button-group mt-3 mb-5">
+                            <button class="btn btn-primary demojs_showmainview"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
+                            <button class="btn btn-outline-primary demojs_cancelaction"> Cancel </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1057,7 +1046,6 @@ $(document).ready(function() {
         $(".demojs_showmainview").prop('disabled', false);
     });
     $("#showview2").click(function() {
-
         $("#view_main, .demojs-section").hide();
         $("#view2").show();
         $(".demojs_showmainview").prop('disabled', false);
