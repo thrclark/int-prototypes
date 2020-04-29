@@ -40,9 +40,9 @@ const setTheme = options => {
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    setValueFromLocalStorage('logoimage-visibility');
+    //setValueFromLocalStorage('logoimage-visibility');
     //setValueFromLocalStorage('logoimage-url');
-    setValueFromLocalStorage('lockup-visibility');
+    //setValueFromLocalStorage('lockup-visibility');
     setValueFromLocalStorage('org-name');
     setValueFromLocalStorage('app-name');
     setValueFromLocalStorage('body-bg-color');
@@ -68,8 +68,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
+                    'org-name': 'XYZ UNIVERSITY',
+                    'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-darkblue.png')",
                     'body-bg-color': '#fcf7eb',
                     'body-text-color': '#444444',
@@ -112,10 +112,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
             case 'yellow':
                 setTheme({
                     'logoimage-visibility': 'block',
-                    'lockup-visibility': 'none',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
-                    'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/img/webster.png')",
+                    'lockup-visibility': 'block',
+                    'org-name': 'XYZ UNIVERSITY',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-beige.png')",
                     'body-bg-color': '#fff3db',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
@@ -133,17 +133,17 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 return;
             case 'black':
                 setTheme({
-                    'logoimage-visibility': 'none',
+                    'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
-                    'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
-                    'body-bg-color': '#929292',
+                    'org-name': 'XYZ UNIVERSITY',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-blue.png')",
+                    'body-bg-color': '#404040',
                     'body-text-color': '#ffffff',
-                    'panel-bg-color': '#ffffff',
+                    'panel-bg-color': '#edfcff',
                     'panel-text-color': '#444444',
-                    'action-color': '#980209',
-                    'border-color': '#dddddd',
+                    'action-color': '#0187a0',
+                    'border-color': '#01a9c9',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_headerfont_size': '2rem',
@@ -157,8 +157,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
+                    'org-name': 'XYZ UNIVERSITY',
+                    'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-red.png')",
                     'body-bg-color': '#eaeaea',
                     'body-text-color': '#444444',
@@ -183,8 +183,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
+                    'org-name': 'XYZ UNIVERSITY',
+                    'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-red.png')",
                     'body-bg-color': '#f5edec',
                     'body-text-color': '#444444',
@@ -207,8 +207,8 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
+                    'org-name': 'XYZ UNIVERSITY',
+                    'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-purple.png')",
                     'body-bg-color': '#f2eaff',
                     'body-text-color': '#444444',
@@ -234,15 +234,15 @@ const handleInputChange = (property, pixels) => {
     document.documentElement.style.setProperty(`--${property}`, `${event.target.value}${pixels ? 'px' : ''}`);
     localStorage.setItem(property, `${event.target.value}${pixels ? 'px' : ''}`);
 };
-document.querySelector('#logoimage-visibility').addEventListener('change', event => {
-    handleInputChange('logoimage-visibility', false);
-});
+//document.querySelector('#logoimage-visibility').addEventListener('change', event => {
+    //handleInputChange('logoimage-visibility', false);
+//});
 //document.querySelector('#logoimage-url').addEventListener('input', event => {
    // handleInputChange('logoimage-url', false);
 //});
-document.querySelector('#lockup-visibility').addEventListener('change', event => {
-    handleInputChange('lockup-visibility', false);
-});
+//document.querySelector('#lockup-visibility').addEventListener('change', event => {
+   // handleInputChange('lockup-visibility', false);
+//});
 document.querySelector('#body-bg-color').addEventListener('change', event => {
     handleInputChange('body-bg-color', false);
 });

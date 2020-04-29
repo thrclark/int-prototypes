@@ -78,7 +78,7 @@
                             <button class="btn btn-link"><span class="sr-only">Delete</span> <i class="rbt-icon-trash"></i></button>
                         </div>
                     </div>
-                    <div class="text-left">
+                    <div class="text-right">
                         <button class="btn btn-sm btn-outline-primary">Add</button>
                     </div>
                 </div>

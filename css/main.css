@@ -12936,9 +12936,6 @@ button[data-theme] {
   .int-accordion-controls .dropdown .dropdown-toggle:after {
     content: "\e944"; }
 
-.colorpick label {
-  font-size: 1rem !important; }
-
 .int-fontlinks .list-group-item .int-fontlink-checker {
   opacity: 0;
   transition: 0.3s;

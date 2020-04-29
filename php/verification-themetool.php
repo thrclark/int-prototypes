@@ -7,6 +7,12 @@ $page_title = 'CampusConfirm';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
+<style>
+.highlight-object {
+    outline-style: dotted;
+    outline-offset: 2px;
+}
+</style>
 </head>
 <body class="int-user">
 <main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
@@ -22,7 +28,7 @@ $page_title = 'CampusConfirm';
                     <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="border-bottom pb-3 mb-3">
-                                <div class="mb-2"> Color palette ideas</div>
+                                <div class="mb-2 font-weight-bold ts-14"> Color palette ideas</div>
                                 <button data-theme="white" style="background-color: #eaeaea"> white </button>
                                 <button data-theme="brown" style="background-color: #fdf7eb"> brown </button>
                                 <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
@@ -32,7 +38,7 @@ $page_title = 'CampusConfirm';
                                 <button data-theme="black" style="background-color: #222"> black </button>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
+                                <label for="body-bg-color" class="font-weight-bold ts-14 mb-2">Body background color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
                                     <div class="input-group-append">
@@ -41,7 +47,7 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
+                                <label for="body-text-color" class="font-weight-bold ts-14 mb-2">Body text color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
                                     <div class="input-group-append">
@@ -50,7 +56,7 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
+                                <label for="panel-bg-color" class="font-weight-bold ts-14 mb-2">Panel background color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
                                     <div class="input-group-append">
@@ -59,7 +65,7 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
+                                <label for="panel-text-color" class="font-weight-bold ts-14 mb-2">Panel text color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
                                     <div class="input-group-append">
@@ -68,7 +74,7 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
+                                <label for="action-color" class="font-weight-bold ts-14 mb-2">Action color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
                                     <div class="input-group-append">
@@ -77,7 +83,7 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="border-color" class="font-weight-normal ts-16 mb-2">Border color</label>
+                                <label for="border-color" class="font-weight-bold ts-14 mb-2">Border color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
                                     <div class="input-group-append">
@@ -94,34 +100,62 @@ $page_title = 'CampusConfirm';
                     </h3>
                     <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="lockup-visibility">Visible</label>
-                            <select class="form-control mb-3" id="lockup-visibility">
-                                <option selected="" value="block">Yes</option>
-                                <option value="none">No</option>
-                            </select>
-                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
-                            <countdown>
-                                <div class="rbt-charcount">
-                                    <input aria-labelledby="org-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
-                                    <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
-                            </countdown>
-                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
-                            <countdown>
-                                <div class="rbt-charcount">
-                                    <input aria-labelledby="app-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
-                                    <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
-                            </countdown>
-                            <hr>
-                            <label for="logoimage-visibility">Logo image</label>
-                            <select class="form-control mb-3" id="logoimage-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
-                            </select>
-                            <!--    <label for="logoimage-url" class="demojs-logourl">Logo image URL</label>
-                            <input type="text" class="form-control mb-3 demojs-logourl" id="logoimage-url" value="">
-                            -->
-                            
-                            <div class="form-group demojs-logourl">
+                            <div class="form-group">
+                                <div class="d-flex">
+                                    <label for="org-name" class=" font-weight-bold">Organization name </label>
+                                </div>
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <input aria-labelledby="org-name" class="form-control mb-3" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                                        <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
+                                </countdown>
+                            </div>
+                            <div class="form-group">
+                                <label for="app-name" class=" font-weight-bold">Application name <span class="font-weight-normal ts-12">(required)</span></label>
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <input aria-labelledby="app-name" class="form-control mb-3" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                                        <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
+                                </countdown>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="lockup-visibility2" value="option1" checked>
+                                <label class="form-check-label" for="lockup-visibility2">Display organization and application names on page</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
+                    </h3>
+                    <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="chooselogoimage" class="font-weight-bold ts-16">Logo source</label>
+                                <select class="form-control mb-3" id="chooselogoimage">
+                                    <option value="default">Default images</option>
+                                    <option value="upload">Upload image</option>
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs_defaultimages">
+                                <label class="">Default images</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-link p-2 px-3 btn-block mb-3 border-dark" style="border-width: 1px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="d-flex align-items-center">
+                                        <div class="mr-auto"> <img src="../img/logo-red.png" alt=""/ style="max-height: 50px"> </div>
+                                        <div class="ml-auto text-body"><i class="rbt-icon-chevron-down"></i></div>
+                                    </div>
+                                    </button>
+                                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">
+                                        <div><img src="../img/logo-red.png" alt=""/ style="max-height: 25px"></div>
+                                        <span class="sr-only">Red</span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-beige.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Beige</span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-blue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Blue</span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-darkblue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Dark blue </span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-purple.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Purple</span></a> <a class="dropdown-item" href="#">
+                                        <div><img src="../img/logofull-red.png" alt=""/ style="max-height: 25px"></div>
+                                        <span class="sr-only">Red full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-beige.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Beige full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-blue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Blue full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-darkblue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Dark blue full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-purple.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Purple full</span></a> </div>
+                                </div>
+                            </div>
+                            <div class="form-group demojs-logourl" style="display: none">
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
                                     <div class="">
                                         <div class="">
@@ -155,8 +189,10 @@ $page_title = 'CampusConfirm';
                     </h3>
                     <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
+                            <div class="alert alert-inline alert-primary mb-3" role="alert" >
+                                <p class="rbt-ts-14"> Application icons are used for bookmarks, browser tab icons, etc, and are not displayed here in the theming tool.</p>
+                            </div>
                             <div class="form-group">
-                                <p class="ts-12 font-italic mb-3">Note - application icons are used for bookmarks, browswer tab icons, etc, and are not displayed here in the theming tool.</p>
                                 <label>Favicon icon</label>
                                 <div class="int-fielddescription">Icon to display as the favicon. This must be an .ico file.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
@@ -249,7 +285,7 @@ $page_title = 'CampusConfirm';
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="mstile-bg-color" class="font-weight-normal ts-16 mb-2">MS Tile background color</label>
+                                <label for="mstile-bg-color" class="font-weight-bold ts-14 mb-2">MS Tile background color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="mstile-bg-color" value="#444444">
                                     <div class="input-group-append">
@@ -363,7 +399,7 @@ $page_title = 'CampusConfirm';
                                 </ul>
                             </div>
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_headerfont_size">Header font size</label>
+                                <label class="d-block" for="base_headerfont_size">Header font size</label>
                                 <div class="row">
                                     <div class="col-12">
                                         <input type="range" id="base_headerfont_size" value="32" min="20" max="48" step="1" class="form-control-range mb-3 w-100">
@@ -461,7 +497,7 @@ $page_title = 'CampusConfirm';
                                 </ul>
                             </div>
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_bodyfont_size">Body font size</label>
+                                <label class="d-block" for="base_bodyfont_size">Body font size</label>
                                 <div class="row">
                                     <div class="col-12">
                                         <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="form-control-range mb-3 w-100">
@@ -484,7 +520,7 @@ $page_title = 'CampusConfirm';
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_border_radius">Border radius</label>
+                                <label class="d-block"  for="theme_border_radius">Border radius</label>
                                 <div class="row">
                                     <div class="col-12">
                                         <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4"  class="form-control-range mb-3 w-100">
@@ -498,7 +534,7 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_page_margin">Page margin</label>
+                                <label class="d-block"  for="theme_page_margin">Page margin</label>
                                 <div class="row">
                                     <div class="col-12">
                                         <input id="theme_page_margin" type="range" min="440"max="880"step="10"value="880" class="form-control-range mb-3 w-100">
@@ -516,12 +552,12 @@ $page_title = 'CampusConfirm';
                 </div>
             </div>
             <div class="form-row">
-                <div class="col-6">
+                <div class="col-12">
                     <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
                 </div>
-                <div class="col-6">
+                <!-- <div class="col-6">
                     <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme"  disabled> Restore values </button>
-                </div>
+                </div>--> 
             </div>
         </div>
         <div class="rbt-shell-stage p-3">
@@ -612,6 +648,157 @@ $page_title = 'CampusConfirm';
 <?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
+<script type = "text/javascript" language = "javascript">
+    $(document).ready(function() {
+        $('#org-name').hover(
+            function() {
+                $(".int-lockup-org").addClass("highlight-object");
+            },
+            function() {
+                $(".int-lockup-org").removeClass("highlight-object");
+            }
+        );
+        
+        
+        $('#app-name').hover(
+            function() {
+                $(".int-lockup-pagetitle").addClass("highlight-object");
+            },
+            function() {
+                $(".int-lockup-pagetitle").removeClass("highlight-object");
+            }
+        );
+        
+         $('#chooselogoimage').hover(
+            function() {
+                $(".int-brand-image").addClass("highlight-object");
+            },
+            function() {
+                $(".int-brand-image").removeClass("highlight-object");
+            }
+        );
+         $('#header_html').hover(
+            function() {
+                $("#header_html_display").addClass("highlight-object");
+            },
+            function() {
+                $("#header_html_display").removeClass("highlight-object");
+            }
+        );
+        
+        
+        
+        
+         $('#footer_html').hover(
+            function() {
+                $("#footer_html_display").addClass("highlight-object");
+            },
+            function() {
+                $("#footer_html_display").removeClass("highlight-object");
+            }
+        );
+        
+        
+         $('#font_header').hover(
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
+            },
+            function() {
+                 $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
+            }
+        );
+        
+        
+        
+        
+        
+        
+         $('#base_headerfont_size, #show_base_headerfont_size_value').hover(
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
+            },
+            function() {
+                 $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
+            }
+        );
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          $('#font_body, #base_bodyfont_size, #show_base_bodyfont_size_value').hover(
+            function() {
+                $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").addClass("highlight-object");
+            },
+            function() {
+                 $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").removeClass("highlight-object");
+            }
+        );
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#chooselogoimage').change(function() {
+      
+            
+            if ($(this).val() == "default") {
+               $(".int-brand-image").show();
+               $(".demojs_defaultimages").show();
+                 $(".demojs-logourl").hide();
+            }
+            
+            
+            
+             if ($(this).val() == "upload") {
+               $(".int-brand-image").show();
+               $(".demojs_defaultimages").hide();
+                 $(".demojs-logourl").show();
+            }
+            
+                  if ($(this).val() == "none") {
+               $(".int-brand-image").hide();
+               $(".demojs_defaultimages").hide();
+                       $(".demojs-logourl").hide();
+            }
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#lockup-visibility2").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-group").show();
+            } else {
+                $(".int-lockup-group").hide();
+            }
+        });
+    })
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#logo-visibility2").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-brand-image").show();
+            } else {
+                $(".int-brand-image").hide();
+            }
+        });
+    })
+</script> 
 <script>
 $(document).ready(function() {
     $(function() {
@@ -699,46 +886,6 @@ $(document).ready(function(){
             if ($('#question4').is(':checked')) {
 				 $('#question4').popover('destroy')
             }
-        });
-    }); 
-</script> 
-<script>
-    $(document).ready(function() {
-        $('#lockup-visibility').change(function() {
-            if ($(this).val() == "block") {
-                $(".demojs-lockupcontrols").show();
-            }
-            if ($(this).val() == "none") {
-                $(".demojs-lockupcontrols").hide();
-            }
-        });
-		 $('#logoimage-visibility').change(function() {
-            if ($(this).val() == "block") {
-                $(".demojs-logourl").show();
-            }
-            if ($(this).val() == "none") {
-                $(".demojs-logourl").hide();
-            }
-        });
-		 $("[data-theme='white']").click(function() {
-			 $(".demojs-lockupcontrols").show();
-			 $(".demojs-logourl").show();
-        });
-		 $("[data-theme='brown']").click(function() {
-			 $(".demojs-lockupcontrols").show();
-			 $(".demojs-logourl").show();
-        });
-		 $("[data-theme='blue']").click(function() {
-			 $(".demojs-lockupcontrols").show();
-			 $(".demojs-logourl").show();
-        });
-		 $("[data-theme='yellow']").click(function() {
-			$(".demojs-lockupcontrols").hide();
-			$(".demojs-logourl").show();
-        });
-		 $("[data-theme='black']").click(function() {
-			$(".demojs-logourl").hide();
-			$(".demojs-lockupcontrols").show();
         });
     }); 
 </script> 
