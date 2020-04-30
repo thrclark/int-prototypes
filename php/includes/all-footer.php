@@ -1,7 +1,3 @@
-<footer class="rbt-footer fixed-bottom"> <img src="../img/trident-small.png" width="20" height="25" alt="" class="mr-3"/>
-    <ul class="rbt-footer-aux-links">
-        <li class="rbt-footer-aux-item"> <a href="https://accessibility.iu.edu/">Accessibility </a> </li>
-        <li class="rbt-footer-aux-item"> <a href="#0">Privacy Notice</a> </li>
-        <li class="rbt-footer-aux-item"> <a href="https://www.iu.edu/copyright/index.html">Copyright</a> © 2019 The Trustees of <a href="https://www.iu.edu/"> Indiana University </a> </li>
-    </ul>
-</footer>
+<div class="container p-0" id="footer_html_display">
+    <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.google.com/" target="_blank">Copyright</a> © 2020 The Trustees of <a href="https://www.google.com/" target="_blank">XYZ University</a>. </div>
+</div>

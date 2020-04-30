@@ -19,7 +19,7 @@ $page_title = 'CampusConfirm';
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
-            <h2 class="mb-3 mt-7">Customize theme</h2>
+            <h2 class="mb-5 mt-5">Customize theme</h2>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card">
                     <h3 class="mb-2">
@@ -28,7 +28,7 @@ $page_title = 'CampusConfirm';
                     <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="border-bottom pb-3 mb-3">
-                                <div class="mb-2 font-weight-bold ts-14"> Color palette ideas</div>
+                                <div class="mb-2 font-weight-bold ts-14"> Color palettes</div>
                                 <button data-theme="white" style="background-color: #eaeaea"> white </button>
                                 <button data-theme="brown" style="background-color: #fdf7eb"> brown </button>
                                 <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
@@ -96,7 +96,7 @@ $page_title = 'CampusConfirm';
                 </div>
                 <div class="card">
                     <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Application identity </button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Name </button>
                     </h3>
                     <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -134,12 +134,16 @@ $page_title = 'CampusConfirm';
                             <div class="form-group">
                                 <label for="chooselogoimage" class="font-weight-bold ts-16">Logo source</label>
                                 <select class="form-control mb-3" id="chooselogoimage">
-                                    <option value="default">Default images</option>
-                                    <option value="upload">Upload image</option>
+                                    <option value="default">Default logo</option>
+                                    <option value="upload">Upload logo</option>
                                     <option value="none">None</option>
                                 </select>
                             </div>
-                            <div class="form-group demojs_defaultimages">
+                            <div class="card demojs_defaultimages" >
+                                <div class="card-body text-center"> <img src="../img/logo-red.png" alt=""/ style="max-height: 70px"> </div>
+                            </div>
+                            
+                            <!--  <div class="form-group demojs_defaultimages">
                                 <label class="">Default images</label>
                                 <div class="dropdown">
                                     <button class="btn btn-link p-2 px-3 btn-block mb-3 border-dark" style="border-width: 1px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -154,31 +158,54 @@ $page_title = 'CampusConfirm';
                                         <div><img src="../img/logofull-red.png" alt=""/ style="max-height: 25px"></div>
                                         <span class="sr-only">Red full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-beige.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Beige full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-blue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Blue full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-darkblue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Dark blue full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-purple.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Purple full</span></a> </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <div class="form-group demojs-logourl" style="display: none">
-                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
-                                    <div class="">
-                                        <div class="">
-                                            <image-upload >
-                                                <div  filedrop="" class="img-ul"  >
-                                                    <div  class="img-ul-file-upload img-ul-hr-inline-group" >
-                                                        <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
-                                                            <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
-                                                        </label>
-                                                        <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
-                                                    </div>
-                                                </div>
-                                            </image-upload>
-                                            <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                                <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
-                                                    <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                                    <message key="global.buttons.delete">Delete</message>
-                                                    </span> </button>
+                                <div class="mb-3">
+                                    <div class="mb-2 font-weight-bold ts-14">For large screens <span class="ts-12 font-weight-normal">(required)</span></div>
+                                    <div class="int-fielddescription"> For best results, the large screen logo should have a height of 72px, and a width that does not exceed 450px.</div>
+                                    <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                        <image-upload >
+                                            <div  filedrop="" class="img-ul"  >
+                                                <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                    <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
+                                                        <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
+                                                    </label>
+                                                    <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
                                                 </div>
                                             </div>
+                                        </image-upload>
+                                        <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
+                                                <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                                <message key="global.buttons.delete">Delete</message>
+                                                </span> </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </ccf-image-upload>
+                                    </ccf-image-upload>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="mb-2 font-weight-bold ts-14">For small screens </div>
+                                    <div class="int-fielddescription"> For best results, the small screen logo should have a height of 48px, and a width that does not exceed 300px.</div>
+                                    <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                        <image-upload >
+                                            <div  filedrop="" class="img-ul"  >
+                                                <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                    <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
+                                                        <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
+                                                    </label>
+                                                    <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
+                                                </div>
+                                            </div>
+                                        </image-upload>
+                                        <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
+                                                <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                                <message key="global.buttons.delete">Delete</message>
+                                                </span> </button>
+                                            </div>
+                                        </div>
+                                    </ccf-image-upload>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -189,9 +216,7 @@ $page_title = 'CampusConfirm';
                     </h3>
                     <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <div class="alert alert-inline alert-primary mb-3" role="alert" >
-                                <p class="rbt-ts-14"> Application icons are used for bookmarks, browser tab icons, etc, and are not displayed here in the theming tool.</p>
-                            </div>
+                            <div class="ts-14 font-italic mb-3 mt-3"> Note - application icons are used for bookmarks, browser tab icons, etc, and are not displayed here in the theming tool. </div>
                             <div class="form-group">
                                 <label>Favicon icon</label>
                                 <div class="int-fielddescription">Icon to display as the favicon. This must be an .ico file.</div>
@@ -638,9 +663,7 @@ $page_title = 'CampusConfirm';
                     </div>
                 </section>
             </main>
-            <div class="container p-0" id="footer_html_display">
-                <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.iu.edu/copyright/index.html" target="_blank" class="text-dark">Copyright</a> © 2020 The Trustees of <a href="https://www.iu.edu/" target="_blank" class="text-dark">Indiana University</a>. </div>
-            </div>
+            <?php include('includes/all-footer.php') ?>
         </div>
     </div>
 </main>
@@ -649,106 +672,72 @@ $page_title = 'CampusConfirm';
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script type = "text/javascript" language = "javascript">
-    $(document).ready(function() {
-        $('#org-name').hover(
-            function() {
-                $(".int-lockup-org").addClass("highlight-object");
-            },
-            function() {
-                $(".int-lockup-org").removeClass("highlight-object");
-            }
-        );
-        
-        
-        $('#app-name').hover(
-            function() {
-                $(".int-lockup-pagetitle").addClass("highlight-object");
-            },
-            function() {
-                $(".int-lockup-pagetitle").removeClass("highlight-object");
-            }
-        );
-        
-         $('#chooselogoimage').hover(
-            function() {
-                $(".int-brand-image").addClass("highlight-object");
-            },
-            function() {
-                $(".int-brand-image").removeClass("highlight-object");
-            }
-        );
-         $('#header_html').hover(
-            function() {
-                $("#header_html_display").addClass("highlight-object");
-            },
-            function() {
-                $("#header_html_display").removeClass("highlight-object");
-            }
-        );
-        
-        
-        
-        
-         $('#footer_html').hover(
-            function() {
-                $("#footer_html_display").addClass("highlight-object");
-            },
-            function() {
-                $("#footer_html_display").removeClass("highlight-object");
-            }
-        );
-        
-        
-         $('#font_header').hover(
-            function() {
-                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
-            },
-            function() {
-                 $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
-            }
-        );
-        
-        
-        
-        
-        
-        
-         $('#base_headerfont_size, #show_base_headerfont_size_value').hover(
-            function() {
-                $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
-            },
-            function() {
-                 $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
-            }
-        );
-        
-        
-        
-        
-        
-        
-        
-        
-        
-          $('#font_body, #base_bodyfont_size, #show_base_bodyfont_size_value').hover(
-            function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").addClass("highlight-object");
-            },
-            function() {
-                 $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").removeClass("highlight-object");
-            }
-        );
-        
-        
-        
-        
-        
-        
-       
-        
-        
-        
-    });
+$(document).ready(function() {
+    $('#org-name').hover(
+        function() {
+            $(".int-lockup-org").addClass("highlight-object");
+        },
+        function() {
+            $(".int-lockup-org").removeClass("highlight-object");
+        }
+    );
+    $('#app-name').hover(
+        function() {
+            $(".int-lockup-pagetitle").addClass("highlight-object");
+        },
+        function() {
+            $(".int-lockup-pagetitle").removeClass("highlight-object");
+        }
+    );
+    $('#chooselogoimage').hover(
+        function() {
+            $(".int-brand-image").addClass("highlight-object");
+        },
+        function() {
+            $(".int-brand-image").removeClass("highlight-object");
+        }
+    );
+    $('#header_html').hover(
+        function() {
+            $("#header_html_display").addClass("highlight-object");
+        },
+        function() {
+            $("#header_html_display").removeClass("highlight-object");
+        }
+    );
+    $('#footer_html').hover(
+        function() {
+            $("#footer_html_display").addClass("highlight-object");
+        },
+        function() {
+            $("#footer_html_display").removeClass("highlight-object");
+        }
+    );
+    $('#font_header').hover(
+        function() {
+            $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
+        },
+        function() {
+            $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
+        }
+    );
+    $('#base_headerfont_size, #show_base_headerfont_size_value').hover(
+        function() {
+            $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
+        },
+        function() {
+            $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
+        }
+    );
+    $('#font_body, #base_bodyfont_size, #show_base_bodyfont_size_value').hover(
+        function() {
+            $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").addClass("highlight-object");
+        },
+        function() {
+            $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").removeClass("highlight-object");
+        }
+    );
+});
 </script> 
 <script>
     $(document).ready(function() {

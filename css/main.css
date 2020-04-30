@@ -12926,6 +12926,9 @@ button[data-theme] {
   outline: 0;
   cursor: pointer; }
 
+.int-fielddescription {
+  margin-bottom: .5rem; }
+
 .int-accordion-controls {
   position: absolute;
   top: 0px;
