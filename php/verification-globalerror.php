@@ -9,18 +9,7 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 </head>
 <body class="int-user">
-<header class="container p-3 px-sm-0 pt-sm-5">
-    <div class="d-flex"> <img src="http://www.indiana.edu/~espd/int/img/trident-large.png" alt="" class="int-brand-image">
-        <div class="int-lockup-group text-nowrap" style="display: block">
-            <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
-            <h1 class="int-lockup-pagetitle" id="app-name-display">VERIFY</h1>
-        </div>
-        <div class="w-100"></div>
-        <div class="d-none d-lg-block text-nowrap">
-            <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">UN</span> username </div>
-        </div>
-    </div>
-</header>
+<?php include('includes/user-header.php') ?>
 <main class="container p-0">
     <section>
         <div class="border-top text-center mb-2">

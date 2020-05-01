@@ -106,22 +106,53 @@ $page_title = 'CampusConfirm';
                                 </div>
                                 <countdown>
                                     <div class="rbt-charcount">
-                                        <input aria-labelledby="org-name" class="form-control mb-3" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                                        <input aria-labelledby="org-name" class="form-control mb-2" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
                                         <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
                                 </countdown>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="showonpage-orgname" value="option1" checked>
+                                    <label class="form-check-label font-weight-normal" for="showonpage-orgname">Show on page</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="caps-orgname" value="option2">
+                                    <label class="form-check-label font-weight-normal" for="caps-orgname">All caps</label>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="app-name" class=" font-weight-bold">Application name <span class="font-weight-normal ts-12">(required)</span></label>
                                 <countdown>
                                     <div class="rbt-charcount">
-                                        <input aria-labelledby="app-name" class="form-control mb-3" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                                        <input aria-labelledby="app-name" value="CampusConfirm" class="form-control mb-2" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
                                         <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
                                 </countdown>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="showonpage-appname" value="option1" checked>
+                                    <label class="form-check-label font-weight-normal" for="showonpage-appname">Show on page</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="caps-appname" value="option2">
+                                    <label class="form-check-label font-weight-normal" for="caps-appname">All caps</label>
+                                </div>
                             </div>
+                           <!-- <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="lockup-visibility2" value="option1" checked>
                                 <label class="form-check-label" for="lockup-visibility2">Display organization and application names on page</label>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -595,9 +626,9 @@ $page_title = 'CampusConfirm';
             </growls>
             <div class="container p-0" id="header_html_display"></div>
             <header class="container p-0 mt-7 mb-3">
-                <div class="d-flex"> <img alt="" class="int-brand-image">
-                    <div class="int-lockup-group text-nowrap">
-                        <div class="int-lockup-org" id="org-name-display">XYZ INSTITUTION</div>
+                <div class="d-flex align-content-center"> <img alt="" class="int-brand-image">
+                    <div class="d-flex flex-column align-self-center int-lockup-group text-nowrap">
+                        <div class="int-lockup-org" id="org-name-display">XYZ Institution</div>
                         <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
                     </div>
                     <div class="w-100"></div>
@@ -766,6 +797,79 @@ $(document).ready(function() {
         });
     });
 </script> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+    $(document).ready(function() {
+        $("#showonpage-orgname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-org").show();
+            } else {
+                $(".int-lockup-org").hide();
+            }
+        });
+        
+        
+         $("#showonpage-appname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-pagetitle").show();
+            } else {
+                $(".int-lockup-pagetitle").hide();
+            }
+        });
+        
+        
+        
+        
+        
+               $("#caps-orgname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-org").addClass("text-uppercase");
+            } else {
+               $(".int-lockup-org").removeClass("text-uppercase");
+            }
+        });
+        
+        
+        
+        
+               $("#caps-appname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-pagetitle").addClass("text-uppercase");
+            } else {
+               $(".int-lockup-pagetitle").removeClass("text-uppercase");
+            }
+        });
+        
+        
+        
+    })
+</script> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <script>
     $(document).ready(function() {
         $("#lockup-visibility2").click(function() {
