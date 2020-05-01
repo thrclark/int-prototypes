@@ -597,7 +597,7 @@ $page_title = 'CampusConfirm';
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex"> <img alt="" class="int-brand-image">
                     <div class="int-lockup-group text-nowrap">
-                        <div class="int-lockup-org" id="org-name-display">XYZ UNIVERSITY</div>
+                        <div class="int-lockup-org" id="org-name-display">XYZ INSTITUTION</div>
                         <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
                     </div>
                     <div class="w-100"></div>

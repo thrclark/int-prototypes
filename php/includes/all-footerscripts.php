@@ -68,7 +68,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-darkblue.png')",
                     'body-bg-color': '#fcf7eb',
@@ -90,7 +90,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logo-image-visibility': 'block',
                     'logoimage-url': "url('../img/logo-blue.png')",
@@ -113,7 +113,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-beige.png')",
                     'body-bg-color': '#fff3db',
@@ -135,7 +135,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-blue.png')",
                     'body-bg-color': '#404040',
@@ -157,7 +157,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-red.png')",
                     'body-bg-color': '#eaeaea',
@@ -183,7 +183,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-red.png')",
                     'body-bg-color': '#f5edec',
@@ -207,7 +207,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'XYZ UNIVERSITY',
+                    'org-name': 'XYZ INSTITUTION',
                     'app-name': 'CampusConfirm',
                     'logoimage-url': "url('../img/logo-purple.png')",
                     'body-bg-color': '#f2eaff',
