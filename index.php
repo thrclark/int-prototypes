@@ -40,15 +40,22 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-body"> <a href="php/verification-slowload1.php" target="_blank" class="font-weight-bold">Slow load 1</a>
+                                    <div class="media-body"> <a href="php/verification-slowload1.php" target="_blank" class="font-weight-bold">Slow load - section</a>
                                         <div class="ts-14">End user view of page with sections that slowly load.</div>
                                     </div>
                                 </div>
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-body"> <a href="php/verification-slowload2.php" target="_blank" class="font-weight-bold">Slow load 2</a>
+                                    <div class="media-body"> <a href="php/verification-slowload2.php" target="_blank" class="font-weight-bold">Slow load - page (var1)</a>
                                         <div class="ts-14">End user view of page during slow loading conditions.</div>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
+                                    <div class="media-body"> <a href="php/verification-slowload3.php" target="_blank" class="font-weight-bold">Slow load - page (var2)</a>
+                                        <div class="ts-14">End user view of page during slow loading conditions. Click on the Verify/Verify later buttons to trigger the interaction.</div>
                                     </div>
                                 </div>
                             </li>
