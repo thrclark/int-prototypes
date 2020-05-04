@@ -41,7 +41,7 @@ const setTheme = options => {
 }
 document.addEventListener('DOMContentLoaded', () => {
     //setValueFromLocalStorage('logoimage-visibility');
-    //setValueFromLocalStorage('logoimage-url');
+    setValueFromLocalStorage('logoimage-url');
     //setValueFromLocalStorage('lockup-visibility');
     setValueFromLocalStorage('org-name');
     setValueFromLocalStorage('app-name');
