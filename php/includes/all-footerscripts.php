@@ -55,9 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('font_body');
     setValueFromLocalStorage('base_headerfont_size');
     setValueFromLocalStorage('base_bodyfont_size');
+    
+    setValueFromLocalStorage('base_verifyblockfont_size');
+    
+    
     setValueFromLocalStorage('theme_border_radius');
     setValueFromLocalStorage('theme_page_margin');
     setValueFromLocalStorage('mstile-bg-color');
+    
+    //
 });
 const dataThemeButtons = document.querySelectorAll('[data-theme]');
 for (let i = 0; i < dataThemeButtons.length; i++) {
@@ -81,6 +87,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -104,6 +111,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -126,6 +134,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -148,6 +157,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -170,6 +180,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -196,6 +207,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -220,6 +232,7 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
                     'base_headerfont_size': '2rem',
                     'base_bodyfont_size': '1rem',
+'base_verifyblockfont_size': '1.5rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -286,6 +299,17 @@ document.querySelector('#base_headerfont_size').addEventListener('input', event 
 document.querySelector('#base_bodyfont_size').addEventListener('input', event => {
     handleInputChange('base_bodyfont_size', true);
 });
+    
+    
+    
+    
+    document.querySelector('#base_verifyblockfont_size').addEventListener('input', event => {
+    handleInputChange('base_verifyblockfont_size', true);
+});
+    
+    
+    
+    
 
 document.querySelector('#theme_border_radius').addEventListener('input', event => {
     handleInputChange('theme_border_radius', true);

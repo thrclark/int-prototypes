@@ -134,7 +134,7 @@ $page_title = 'CampusConfirm';
                                     <label class="form-check-label font-weight-normal" for="caps-appname">All caps</label>
                                 </div>
                             </div>
-                           <!-- <br>
+                            <!-- <br>
                             <br>
                             <br>
                             <br>
@@ -152,7 +152,7 @@ $page_title = 'CampusConfirm';
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="lockup-visibility2" value="option1" checked>
                                 <label class="form-check-label" for="lockup-visibility2">Display organization and application names on page</label>
-                            </div>-->
+                            </div>--> 
                         </div>
                     </div>
                 </div>
@@ -375,9 +375,9 @@ $page_title = 'CampusConfirm';
                 </div>
                 <div class="card">
                     <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_headerfonts" aria-expanded="false" aria-controls="panel_headerfonts"> <i class="rbt-icon-chevron-right"></i> Header font</button>
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontfamily" aria-expanded="false" aria-controls="panel_fontfamily"> <i class="rbt-icon-chevron-right"></i> Font family </button>
                     </h3>
-                    <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
+                    <div id="panel_fontfamily" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="font_header">Header font face</label>
@@ -437,46 +437,11 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="card demojs-customheaderfont" style="display: none">
                                 <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code> </li>
                                 </ul>
                             </div>
-                            <div class="form-group">
-                                <label class="d-block" for="base_headerfont_size">Header font size</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input type="range" id="base_headerfont_size" value="32" min="20" max="48" step="1" class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_base_headerfont_size_value" name="price" value="16" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_bodyfonts" aria-expanded="false" aria-controls="panel_bodyfonts"> <i class="rbt-icon-chevron-right"></i> Body font</button>
-                    </h3>
-                    <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
                             <div class="form-group">
                                 <label for="font_body">Body font face</label>
                                 <select class="form-control mb-3" id="font_body">
@@ -535,35 +500,59 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="card demojs-custombodyfont" style="display: none">
                                 <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code> </li>
                                 </ul>
                             </div>
-                            <div class="form-group">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontsizes" aria-expanded="false" aria-controls="panel_fontsizes"> <i class="rbt-icon-chevron-right"></i> Font sizes </button>
+                    </h3>
+                    <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                   
+                            
+                            
+                            
+                            
+                            
+                             
+                               <div class="form-group">
+                                <label class="d-block" for="base_headerfont_size">Header font size</label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_base_headerfont_size_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 65px;border: none;">
+                                    <input type="range" id="base_headerfont_size" value="32px" min="20" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                     
+                            
+                            
+                               <div class="form-group">
                                 <label class="d-block" for="base_bodyfont_size">Body font size</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_base_bodyfont_size_value" name="price" value="16" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_base_bodyfont_size_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 65px;border: none;">
+                                    <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="form-control-range w-100">
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <div class="form-group">
+                                <label class="d-block" for="base_verifyblockfont_size">Verify block font size</label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_base_verifyblockfont_size_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 65px;border: none;">
+                                    <input type="range" id="base_verifyblockfont_size" value="16" min="12" max="16" class="form-control-range w-100">
                                 </div>
                             </div>
                         </div>
@@ -674,7 +663,7 @@ $page_title = 'CampusConfirm';
                                     <div class="mb-3 ts-20">
                                         <div class="form-check form-check-inline">
                                             <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                            <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
+                                            <label class="form-check-label" for="question4" id="verifystatement"> I have verified that the above information is up to date and correct.</label>
                                         </div>
                                     </div>
                                     <div class="rbt-button-group mt-auto">
@@ -684,7 +673,7 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                    <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                                     <div class="rbt-button-group mt-auto">
                                         <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
                                     </div>
@@ -762,12 +751,38 @@ $(document).ready(function() {
     );
     $('#font_body, #base_bodyfont_size, #show_base_bodyfont_size_value').hover(
         function() {
-            $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").addClass("highlight-object");
+            $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
         },
         function() {
-            $(".rbt-shell-stage p, .rbt-shell-stage dl, #demojs_verifyscreen").removeClass("highlight-object");
+            $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
         }
     );
+
+    
+        $('#base_verifyblockfont_size').hover(
+        function() {
+            $("#deferstatement, #verifystatement").addClass("highlight-object");
+        },
+        function() {
+            $("#deferstatement, #verifystatement").removeClass("highlight-object");
+        }
+    );
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });
 </script> 
 <script>
@@ -797,15 +812,6 @@ $(document).ready(function() {
         });
     });
 </script> 
-    
-    
-    
-    
-    
-    
-    
-    
-    
 <script>
     $(document).ready(function() {
         $("#showonpage-orgname").click(function() {
@@ -852,24 +858,6 @@ $(document).ready(function() {
         
     })
 </script> 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 <script>
     $(document).ready(function() {
         $("#lockup-visibility2").click(function() {
@@ -907,18 +895,6 @@ $(document).ready(function() {
 });
 </script> 
 <script>
-    $(document).ready(function() {
-        $(function() {
-            $(".int-fontlink-checker button").click(function() {
-                $(this).text("Success!");
-                setTimeout(function() {
-                    $(".int-fontlink-checker button").text("Check link");
-                }, 4000)
-            });
-        });
-    });
-</script> 
-<script>
 $(document).ready(function() {
     $('#theme_page_margin').on('input', function() {
         var newVal = $(this).val();
@@ -937,6 +913,7 @@ $(document).ready(function() {
 	$('#base_bodyfont_size').on('input', function() {
         var newVal = $(this).val();
         $("#show_base_bodyfont_size_value").val(newVal);
+        $("#show_base_bodyfont_size_value").val(function() {return this.value + 'px';});
     });
     $('#show_base_bodyfont_size_value').on('input', function() {
         $('#base_bodyfont_size').val($(this).val())
@@ -944,6 +921,7 @@ $(document).ready(function() {
 	$('#base_headerfont_size').on('input', function() {
         var newVal = $(this).val();
         $("#show_base_headerfont_size_value").val(newVal);
+        $("#show_base_headerfont_size_value").val(function() {return this.value + 'px';});
     });
     $('#show_base_headerfont_size_value').on('input', function() {
         $('#base_headerfont_size').val($(this).val())

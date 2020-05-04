@@ -12887,8 +12887,9 @@ html .int-user {
               box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
     html .int-user main section .int-verify-controls, html .int-user .main section .int-verify-controls {
       color: var(--body-text-color);
-      font-family: var(--font_body);
-      font-size: var(--base_bodyfont_size); }
+      font-family: var(--font_body); }
+      html .int-user main section .int-verify-controls #verifystatement, html .int-user main section .int-verify-controls #deferstatement, html .int-user .main section .int-verify-controls #verifystatement, html .int-user .main section .int-verify-controls #deferstatement {
+        font-size: var(--base_verifyblockfont_size); }
   html .int-user .popover {
     top: -31px !important;
     left: 18px !important; }
@@ -12938,19 +12939,5 @@ button[data-theme] {
   margin-right: 10px; }
   .int-accordion-controls .dropdown .dropdown-toggle:after {
     content: "\e944"; }
-
-.int-fontlinks .list-group-item .int-fontlink-checker {
-  opacity: 0;
-  transition: 0.3s;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  z-index: 9999;
-  left: 0;
-  display: flex; }
-.int-fontlinks .list-group-item:hover .int-fontlink-checker {
-  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
