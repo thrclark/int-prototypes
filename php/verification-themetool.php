@@ -510,7 +510,7 @@ $page_title = 'CampusConfirm';
                 <div class="card">
                     <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontsizes" aria-expanded="false" aria-controls="panel_fontsizes"> <i class="rbt-icon-chevron-right"></i> Font sizes </button>
-                    </h3>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -519,6 +519,9 @@ $page_title = 'CampusConfirm';
                                 <div class="d-flex border rounded  px-3 py-1">
                                     <input id="show_base_headerfont_size_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
                                     <input type="range" id="base_headerfont_size" value="32px" min="20" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -541,7 +544,7 @@ $page_title = 'CampusConfirm';
                 <div class="card">
                     <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Margin &amp; radius</button>
-                    </h3>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -557,6 +560,9 @@ $page_title = 'CampusConfirm';
                                 <div class="d-flex border rounded  px-3 py-1">
                                     <input id="show_margin_value" name="price" value="880px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
                                     <input id="theme_page_margin" type="range" min="440"max="880"step="10" value="880" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the minimum limit.</p>
                                 </div>
                             </div>
                         </div>
