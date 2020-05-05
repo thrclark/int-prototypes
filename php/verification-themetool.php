@@ -10,7 +10,13 @@ $page_title = 'CampusConfirm';
 <style>
 .highlight-object {
     outline-style: dotted;
-    outline-offset: 2px;
+    outline-offset: 4px;
+}
+.demojs_validation {
+    display: none;
+}
+.alert.alert-inline.demojs_validation {
+    display: none !important;
 }
 </style>
 </head>
@@ -20,11 +26,14 @@ $page_title = 'CampusConfirm';
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-5 mt-5">Customize theme</h2>
+            <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                <p class="rbt-ts-14" id="standalone4	"> Please correct any errors before resubmitting.</p>
+            </div>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
-                    </h3>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="border-bottom pb-3 mb-3">
@@ -71,6 +80,9 @@ $page_title = 'CampusConfirm';
                                     <div class="input-group-append">
                                         <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
                                     </div>
+                                    <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                        <p class="rbt-ts-14" id="standalone4"> Please provide a valid hex value for this color (e.g. #990000).</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
@@ -95,8 +107,9 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Name </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -107,6 +120,9 @@ $page_title = 'CampusConfirm';
                                 <countdown>
                                     <div class="rbt-charcount">
                                         <input aria-labelledby="org-name" class="form-control mb-2" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                                        <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                            <p class="rbt-ts-14" id="standalone4"> Character count exceeds the maximum allowed limit.</p>
+                                        </div>
                                         <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
                                 </countdown>
                                 <div class="form-check form-check-inline">
@@ -134,31 +150,13 @@ $page_title = 'CampusConfirm';
                                     <label class="form-check-label font-weight-normal" for="caps-appname">All caps</label>
                                 </div>
                             </div>
-                            <!-- <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lockup-visibility2" value="option1" checked>
-                                <label class="form-check-label" for="lockup-visibility2">Display organization and application names on page</label>
-                            </div>--> 
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -173,23 +171,6 @@ $page_title = 'CampusConfirm';
                             <div class="card demojs_defaultimages" >
                                 <div class="card-body text-center"> <img src="../img/logo-red.png" alt=""/ style="max-height: 70px"> </div>
                             </div>
-                            
-                            <!--  <div class="form-group demojs_defaultimages">
-                                <label class="">Default images</label>
-                                <div class="dropdown">
-                                    <button class="btn btn-link p-2 px-3 btn-block mb-3 border-dark" style="border-width: 1px" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <div class="d-flex align-items-center">
-                                        <div class="mr-auto"> <img src="../img/logo-red.png" alt=""/ style="max-height: 50px"> </div>
-                                        <div class="ml-auto text-body"><i class="rbt-icon-chevron-down"></i></div>
-                                    </div>
-                                    </button>
-                                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton" aria-hidden="true" role="menu"> <a class="dropdown-item" href="#">
-                                        <div><img src="../img/logo-red.png" alt=""/ style="max-height: 25px"></div>
-                                        <span class="sr-only">Red</span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-beige.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Beige</span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-blue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Blue</span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-darkblue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Dark blue </span></a> <a class="dropdown-item" href="#"> <img src="../img/logo-purple.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Purple</span></a> <a class="dropdown-item" href="#">
-                                        <div><img src="../img/logofull-red.png" alt=""/ style="max-height: 25px"></div>
-                                        <span class="sr-only">Red full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-beige.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Beige full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-blue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Blue full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-darkblue.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Dark blue full</span></a> <a class="dropdown-item" href="#"> <img src="../img/logofull-purple.png" alt=""/ style="max-height: 25px"> <span class="sr-only">Purple full</span></a> </div>
-                                </div>
-                            </div>-->
                             <div class="form-group demojs-logourl" style="display: none">
                                 <div class="mb-3">
                                     <div class="mb-2 font-weight-bold ts-14">For large screens <span class="ts-12 font-weight-normal">(required)</span></div>
@@ -211,6 +192,9 @@ $page_title = 'CampusConfirm';
                                                 <message key="global.buttons.delete">Delete</message>
                                                 </span> </button>
                                             </div>
+                                        </div>
+                                        <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                            <p class="rbt-ts-14" id="standalone4"> File size must be less than 2mb.</p>
                                         </div>
                                     </ccf-image-upload>
                                 </div>
@@ -242,8 +226,9 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_favicon" aria-expanded="false" aria-controls="panel_favicon"> <i class="rbt-icon-chevron-right"></i> Application icons </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -262,6 +247,9 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                    <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                        <p class="rbt-ts-14" id="standalone4"> File must be an .ico format.</p>
+                                    </div>
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group">
@@ -353,8 +341,9 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_customheadfoot" aria-expanded="false" aria-controls="panel_customheadfoot"> <i class="rbt-icon-chevron-right"></i> Custom header/footer </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_customheadfoot" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -365,6 +354,9 @@ $page_title = 'CampusConfirm';
                             <div class="form-group mb-3">
                                 <label for="footer_html">Footer HTML</label>
                                 <textarea class="form-control" id="footer_html" rows="5" oninput='footerhtml_set();footerhtml_store();'></textarea>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Character count exceeds the maximum allowed limit.</p>
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="headerfooter_css">Header/footer CSS</label>
@@ -374,8 +366,9 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontfamily" aria-expanded="false" aria-controls="panel_fontfamily"> <i class="rbt-icon-chevron-right"></i> Font family </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_fontfamily" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -400,6 +393,9 @@ $page_title = 'CampusConfirm';
                                 <label for="custom_headerfontname">Font family name</label>
                                 <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
                                 <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
+                                </div>
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontweight">Weight</label>
@@ -463,6 +459,9 @@ $page_title = 'CampusConfirm';
                                 <label for="custom_bodyfontname">Font family name</label>
                                 <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
                                 <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput">
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
+                                </div>
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontweight">Weight</label>
@@ -509,8 +508,9 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontsizes" aria-expanded="false" aria-controls="panel_fontsizes"> <i class="rbt-icon-chevron-right"></i> Font sizes </button>
+                    </h3>
                     </h3>
                     <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -539,8 +539,9 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Margin &amp; radius</button>
+                    </h3>
                     </h3>
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -655,122 +656,98 @@ $page_title = 'CampusConfirm';
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script type = "text/javascript" language = "javascript">
-$(document).ready(function() {
-    $('#org-name').hover(
-        function() {
-            $(".int-lockup-org").addClass("highlight-object");
-        },
-        function() {
-            $(".int-lockup-org").removeClass("highlight-object");
-        }
-    );
-    $('#app-name').hover(
-        function() {
-            $(".int-lockup-pagetitle").addClass("highlight-object");
-        },
-        function() {
-            $(".int-lockup-pagetitle").removeClass("highlight-object");
-        }
-    );
-    $('#chooselogoimage').hover(
-        function() {
-            $(".int-brand-image").addClass("highlight-object");
-        },
-        function() {
-            $(".int-brand-image").removeClass("highlight-object");
-        }
-    );
-    $('#header_html').hover(
-        function() {
-            $("#header_html_display").addClass("highlight-object");
-        },
-        function() {
-            $("#header_html_display").removeClass("highlight-object");
-        }
-    );
-    $('#footer_html').hover(
-        function() {
-            $("#footer_html_display").addClass("highlight-object");
-        },
-        function() {
-            $("#footer_html_display").removeClass("highlight-object");
-        }
-    );
-    $('#font_header').hover(
-        function() {
-            $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
-        },
-        function() {
-            $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
-        }
-    );
-    $('#base_headerfont_size, #show_base_headerfont_size_value').hover(
-        function() {
-            $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
-        },
-        function() {
-            $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
-        }
-    );
-    $('#font_body, #base_bodyfont_size, #show_base_bodyfont_size_value').hover(
-        function() {
-            $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
-        },
-        function() {
-            $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
-        }
-    );
-
-    
+    $(document).ready(function() {
+        $('#org-name').hover(
+            function() {
+                $(".int-lockup-org").addClass("highlight-object");
+            },
+            function() {
+                $(".int-lockup-org").removeClass("highlight-object");
+            }
+        );
+        $('#app-name').hover(
+            function() {
+                $(".int-lockup-pagetitle").addClass("highlight-object");
+            },
+            function() {
+                $(".int-lockup-pagetitle").removeClass("highlight-object");
+            }
+        );
+        $('#chooselogoimage').hover(
+            function() {
+                $(".int-brand-image").addClass("highlight-object");
+            },
+            function() {
+                $(".int-brand-image").removeClass("highlight-object");
+            }
+        );
+        $('#header_html').hover(
+            function() {
+                $("#header_html_display").addClass("highlight-object");
+            },
+            function() {
+                $("#header_html_display").removeClass("highlight-object");
+            }
+        );
+        $('#footer_html').hover(
+            function() {
+                $("#footer_html_display").addClass("highlight-object");
+            },
+            function() {
+                $("#footer_html_display").removeClass("highlight-object");
+            }
+        );
+        $('#font_header').hover(
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
+            },
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
+            }
+        );
+        $('#base_headerfont_size, #show_base_headerfont_size_value').hover(
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
+            },
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
+            }
+        );
+        $('#font_body, #base_bodyfont_size, #show_base_bodyfont_size_value').hover(
+            function() {
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
+            },
+            function() {
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
+            }
+        );
         $('#base_verifyblockfont_size').hover(
-        function() {
-            $("#deferstatement, #verifystatement").addClass("highlight-object");
-        },
-        function() {
-            $("#deferstatement, #verifystatement").removeClass("highlight-object");
-        }
-    );
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-});
+            function() {
+                $("#deferstatement, #verifystatement").addClass("highlight-object");
+            },
+            function() {
+                $("#deferstatement, #verifystatement").removeClass("highlight-object");
+            }
+        );
+    });
 </script> 
 <script>
     $(document).ready(function() {
         $('#chooselogoimage').change(function() {
-      
-            
             if ($(this).val() == "default") {
-               $(".int-brand-image").show();
-               $(".demojs_defaultimages").show();
-                 $(".demojs-logourl").hide();
+                $(".int-brand-image").show();
+                $(".demojs_defaultimages").show();
+                $(".demojs-logourl").hide();
             }
-            
-            
-            
-             if ($(this).val() == "upload") {
-               $(".int-brand-image").show();
-               $(".demojs_defaultimages").hide();
-                 $(".demojs-logourl").show();
+            if ($(this).val() == "upload") {
+                $(".int-brand-image").show();
+                $(".demojs_defaultimages").hide();
+                $(".demojs-logourl").show();
             }
-            
-                  if ($(this).val() == "none") {
-               $(".int-brand-image").hide();
-               $(".demojs_defaultimages").hide();
-                       $(".demojs-logourl").hide();
+            if ($(this).val() == "none") {
+                $(".int-brand-image").hide();
+                $(".demojs_defaultimages").hide();
+                $(".demojs-logourl").hide();
             }
         });
     });
@@ -784,41 +761,27 @@ $(document).ready(function() {
                 $(".int-lockup-org").hide();
             }
         });
-        
-        
-         $("#showonpage-appname").click(function() {
+        $("#showonpage-appname").click(function() {
             if ($(this).is(":checked")) {
                 $(".int-lockup-pagetitle").show();
             } else {
                 $(".int-lockup-pagetitle").hide();
             }
         });
-        
-        
-        
-        
-        
-               $("#caps-orgname").click(function() {
+        $("#caps-orgname").click(function() {
             if ($(this).is(":checked")) {
                 $(".int-lockup-org").addClass("text-uppercase");
             } else {
-               $(".int-lockup-org").removeClass("text-uppercase");
+                $(".int-lockup-org").removeClass("text-uppercase");
             }
         });
-        
-        
-        
-        
-               $("#caps-appname").click(function() {
+        $("#caps-appname").click(function() {
             if ($(this).is(":checked")) {
                 $(".int-lockup-pagetitle").addClass("text-uppercase");
             } else {
-               $(".int-lockup-pagetitle").removeClass("text-uppercase");
+                $(".int-lockup-pagetitle").removeClass("text-uppercase");
             }
         });
-        
-        
-        
     })
 </script> 
 <script>
@@ -844,79 +807,69 @@ $(document).ready(function() {
     })
 </script> 
 <script>
-$(document).ready(function() {
-    $(function() {
-        $('#font_header').change(function() {
-			$('.demojs-customheaderfont').hide();
-            $('.' + $(this).val()).show();
-        });
-		 $('#font_body').change(function() {
-			$('.demojs-custombodyfont').hide();
-            $('.' + $(this).val()).show();
+    $(document).ready(function() {
+        $(function() {
+            $('#font_header').change(function() {
+                $('.demojs-customheaderfont').hide();
+                $('.' + $(this).val()).show();
+            });
+             $('#font_body').change(function() {
+                $('.demojs-custombodyfont').hide();
+                $('.' + $(this).val()).show();
+            });
         });
     });
-});
 </script> 
 <script>
-$(document).ready(function() {
-    $('#theme_page_margin').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_margin_value").val(newVal);
-        $("#show_margin_value").val(function() {return this.value + 'px';});
+    $(document).ready(function() {
+        $('#theme_page_margin').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_margin_value").val(newVal);
+            $("#show_margin_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_margin_value').on('input', function() {
+            $('#theme_page_margin').val($(this).val())
+        });
+        $('#theme_border_radius').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_border_value").val(newVal);
+            $("#show_border_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_border_value').on('input', function() {
+            $('#theme_border_radius').val($(this).val())
+        });
+        $('#base_bodyfont_size').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_base_bodyfont_size_value").val(newVal);
+            $("#show_base_bodyfont_size_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_base_bodyfont_size_value').on('input', function() {
+            $('#base_bodyfont_size').val($(this).val())
+        });
+         $('#base_verifyblockfont_size').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_base_verifyblockfont_size_value").val(newVal);
+            $("#show_base_verifyblockfont_size_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_base_verifyblockfont_size_value').on('input', function() {
+            $('#base_verifyblockfont_size').val($(this).val())
+        });
+        $('#base_headerfont_size').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_base_headerfont_size_value").val(newVal);
+            $("#show_base_headerfont_size_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_base_headerfont_size_value').on('input', function() {
+            $('#base_headerfont_size').val($(this).val())
+        });
     });
-    $('#show_margin_value').on('input', function() {
-        $('#theme_page_margin').val($(this).val())
-    });
-    $('#theme_border_radius').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_border_value").val(newVal);
-        $("#show_border_value").val(function() {return this.value + 'px';});
-    });
-    $('#show_border_value').on('input', function() {
-        $('#theme_border_radius').val($(this).val())
-    });
-	
-    
-    
-    
-    
-    $('#base_bodyfont_size').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_base_bodyfont_size_value").val(newVal);
-        $("#show_base_bodyfont_size_value").val(function() {return this.value + 'px';});
-    });
-    $('#show_base_bodyfont_size_value').on('input', function() {
-        $('#base_bodyfont_size').val($(this).val())
-    });
-    
-    
-     $('#base_verifyblockfont_size').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_base_verifyblockfont_size_value").val(newVal);
-        $("#show_base_verifyblockfont_size_value").val(function() {return this.value + 'px';});
-    });
-    $('#show_base_verifyblockfont_size_value').on('input', function() {
-        $('#base_verifyblockfont_size').val($(this).val())
-    });
-    
-    
-    
-	$('#base_headerfont_size').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_base_headerfont_size_value").val(newVal);
-        $("#show_base_headerfont_size_value").val(function() {return this.value + 'px';});
-    });
-    $('#show_base_headerfont_size_value').on('input', function() {
-        $('#base_headerfont_size').val($(this).val())
-    });
-});
 </script> 
 <script>
-$(document).ready(function(){
-  $("#demojs-themehandle").click(function(){
-    $(".rbt-shell-sidebar").toggleClass("int-themeclose");
-  });
-});
+    $(document).ready(function(){
+      $("#demojs-themehandle").click(function(){
+        $(".rbt-shell-sidebar").toggleClass("int-themeclose");
+      });
+    });
 </script> 
 <script>
     $(".demojs-reveal").click(function() {
@@ -1012,38 +965,37 @@ $(document).ready(function(){
 	$('#mstile-bg-color-hexcolor').on('change', function() {
 		$('#mstile-bg-color').val(this.value);
 	});
-    
-    
-    
-    
 </script> 
 <script>
-$(document).ready(function() {
-    $("#org-name").keyup(function() {
-        var length = $(this).val().length;
-        length = 40 - length;
-        $('#org-name_counter').text(length);
-        if ($("#org-name").val().length > 40) {
-            $("#org-name_badge").last().addClass("badge-danger");
-        } else {
-            $("org-name_badge").last().removeClass("badge-danger");
-        }
+    $(document).ready(function() {
+        $("#org-name").keyup(function() {
+            var length = $(this).val().length;
+            length = 40 - length;
+            $('#org-name_counter').text(length);
+            if ($("#org-name").val().length > 40) {
+                $("#org-name_badge").last().addClass("badge-danger");
+            } else {
+                $("org-name_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#app-name").keyup(function() {
+            var length = $(this).val().length;
+            length = 40 - length;
+            $('#app-name_counter').text(length);
+            if ($("#app-name").val().length > 40) {
+                $("#app-name_badge").last().addClass("badge-danger");
+            } else {
+                $("app-name_badge").last().removeClass("badge-danger");
+            }
+        });
     });
-    
-     $("#app-name").keyup(function() {
-        var length = $(this).val().length;
-        length = 40 - length;
-        $('#app-name_counter').text(length);
-        if ($("#app-name").val().length > 40) {
-            $("#app-name_badge").last().addClass("badge-danger");
-        } else {
-            $("app-name_badge").last().removeClass("badge-danger");
-        }
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#savetheme").click(function() {
+            $(".demojs_validation").removeClass("demojs_validation");
+        });
     });
-    
-    
-   
-});
 </script>
 </body>
 </html>
