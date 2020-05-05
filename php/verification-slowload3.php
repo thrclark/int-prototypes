@@ -96,7 +96,9 @@ $page_title = 'VERIFY';
     $(document).ready(function() {
         $(function() {
             $("#ButtonLoading").click(function() {
-                $('.btn.btn-primary').addClass('rbt-loading');
+
+				$("#ButtonLoading2").prop('disabled', true);
+                 $('.btn.btn-primary').addClass('rbt-loading');
 				$('.btn.btn-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-primary .visible').toggleClass('invisible');
 				$("#ButtonLoading").prop('disabled', true);
@@ -115,6 +117,7 @@ $page_title = 'VERIFY';
 				$('.btn.btn-outline-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-outline-primary .visible').toggleClass('invisible');
 				$("#ButtonLoading2").prop('disabled', true);
+				$("#ButtonLoading").prop('disabled', true);
                 setTimeout(function() {
                     window.location.href = "https://www.iu.edu";
                 }, 4000)
