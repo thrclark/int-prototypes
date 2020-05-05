@@ -514,45 +514,25 @@ $page_title = 'CampusConfirm';
                     </h3>
                     <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                   
-                            
-                            
-                            
-                            
-                            
-                             
-                               <div class="form-group">
+                            <div class="form-group">
                                 <label class="d-block" for="base_headerfont_size">Header font size</label>
                                 <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_base_headerfont_size_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 65px;border: none;">
+                                    <input id="show_base_headerfont_size_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
                                     <input type="range" id="base_headerfont_size" value="32px" min="20" max="48" step="1" class="form-control-range w-100">
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
-                     
-                            
-                            
-                               <div class="form-group">
+                            <div class="form-group">
                                 <label class="d-block" for="base_bodyfont_size">Body font size</label>
                                 <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_base_bodyfont_size_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 65px;border: none;">
+                                    <input id="show_base_bodyfont_size_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
                                     <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="form-control-range w-100">
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
-                            
-                            
                             <div class="form-group">
                                 <label class="d-block" for="base_verifyblockfont_size">Verify block font size</label>
                                 <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_base_verifyblockfont_size_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 65px;border: none;">
-                                    <input type="range" id="base_verifyblockfont_size" value="16" min="12" max="16" class="form-control-range w-100">
+                                    <input id="show_base_verifyblockfont_size_value" name="price" value="20px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="base_verifyblockfont_size" value="20" min="12" max="32" class="form-control-range w-100">
                                 </div>
                             </div>
                         </div>
@@ -566,30 +546,16 @@ $page_title = 'CampusConfirm';
                         <div class="card-body">
                             <div class="form-group">
                                 <label class="d-block"  for="theme_border_radius">Border radius</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4"  class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_border_value" name="price" value="4" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_border_value" name="price" value="4px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input id="theme_border_radius" type="range" min="0" max="20" value="4"  class="form-control-range w-100">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="d-block"  for="theme_page_margin">Page margin</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input id="theme_page_margin" type="range" min="440"max="880"step="10"value="880" class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_margin_value" name="price" value="880" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_margin_value" name="price" value="880px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input id="theme_page_margin" type="range" min="440"max="880"step="10" value="880" class="form-control-range w-100">
                                 </div>
                             </div>
                         </div>
@@ -600,9 +566,6 @@ $page_title = 'CampusConfirm';
                 <div class="col-12">
                     <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
                 </div>
-                <!-- <div class="col-6">
-                    <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme"  disabled> Restore values </button>
-                </div>--> 
             </div>
         </div>
         <div class="rbt-shell-stage p-3">
@@ -660,10 +623,10 @@ $page_title = 'CampusConfirm';
                         <div class="row mb-5" id="demojs_verifyscreen">
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3 ts-20">
+                                    <div class="mb-3" id="verifystatement">
                                         <div class="form-check form-check-inline">
                                             <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                            <label class="form-check-label" for="question4" id="verifystatement"> I have verified that the above information is up to date and correct.</label>
+                                            <label class="form-check-label" for="question4" > I have verified that the above information is up to date and correct.</label>
                                         </div>
                                     </div>
                                     <div class="rbt-button-group mt-auto">
@@ -673,7 +636,7 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                    <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s). </div>
                                     <div class="rbt-button-group mt-auto">
                                         <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
                                     </div>
@@ -899,6 +862,7 @@ $(document).ready(function() {
     $('#theme_page_margin').on('input', function() {
         var newVal = $(this).val();
         $("#show_margin_value").val(newVal);
+        $("#show_margin_value").val(function() {return this.value + 'px';});
     });
     $('#show_margin_value').on('input', function() {
         $('#theme_page_margin').val($(this).val())
@@ -906,11 +870,17 @@ $(document).ready(function() {
     $('#theme_border_radius').on('input', function() {
         var newVal = $(this).val();
         $("#show_border_value").val(newVal);
+        $("#show_border_value").val(function() {return this.value + 'px';});
     });
     $('#show_border_value').on('input', function() {
         $('#theme_border_radius').val($(this).val())
     });
-	$('#base_bodyfont_size').on('input', function() {
+	
+    
+    
+    
+    
+    $('#base_bodyfont_size').on('input', function() {
         var newVal = $(this).val();
         $("#show_base_bodyfont_size_value").val(newVal);
         $("#show_base_bodyfont_size_value").val(function() {return this.value + 'px';});
@@ -918,6 +888,19 @@ $(document).ready(function() {
     $('#show_base_bodyfont_size_value').on('input', function() {
         $('#base_bodyfont_size').val($(this).val())
     });
+    
+    
+     $('#base_verifyblockfont_size').on('input', function() {
+        var newVal = $(this).val();
+        $("#show_base_verifyblockfont_size_value").val(newVal);
+        $("#show_base_verifyblockfont_size_value").val(function() {return this.value + 'px';});
+    });
+    $('#show_base_verifyblockfont_size_value').on('input', function() {
+        $('#base_verifyblockfont_size').val($(this).val())
+    });
+    
+    
+    
 	$('#base_headerfont_size').on('input', function() {
         var newVal = $(this).val();
         $("#show_base_headerfont_size_value").val(newVal);
