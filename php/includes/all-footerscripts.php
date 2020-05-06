@@ -40,9 +40,9 @@ const setTheme = options => {
     }
 }
 document.addEventListener('DOMContentLoaded', () => {
-    setValueFromLocalStorage('logoimage-visibility');
-    //setValueFromLocalStorage('logoimage-url');
-    setValueFromLocalStorage('lockup-visibility');
+    //setValueFromLocalStorage('logoimage-visibility');
+    setValueFromLocalStorage('logoimage-url');
+    //setValueFromLocalStorage('lockup-visibility');
     setValueFromLocalStorage('org-name');
     setValueFromLocalStorage('app-name');
     setValueFromLocalStorage('body-bg-color');
@@ -53,11 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
     setValueFromLocalStorage('border-color');
     setValueFromLocalStorage('font_header');
     setValueFromLocalStorage('font_body');
-    setValueFromLocalStorage('base_headerfont_size');
-    setValueFromLocalStorage('base_bodyfont_size');
+    setValueFromLocalStorage('fontsize_appname');
+    setValueFromLocalStorage('fontsize_orgname');
+    setValueFromLocalStorage('fontsize_header');
+    setValueFromLocalStorage('fontsize_body');
+    
+    setValueFromLocalStorage('fontsize_verifyblock');
+    
+    
     setValueFromLocalStorage('theme_border_radius');
     setValueFromLocalStorage('theme_page_margin');
     setValueFromLocalStorage('mstile-bg-color');
+    
+    //
 });
 const dataThemeButtons = document.querySelectorAll('[data-theme]');
 for (let i = 0; i < dataThemeButtons.length; i++) {
@@ -68,9 +76,9 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
-                    'logoimage-url': "url('https://is.wfu.edu/wp-content/uploads/2017/01/cropped-favicon.png')",
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-darkblue.png')",
                     'body-bg-color': '#fcf7eb',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
@@ -78,9 +86,12 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#006298',
                     'border-color': '#dddddd',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_headerfont_size': '2rem',
-                    'base_bodyfont_size': '1rem',
+                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -90,20 +101,23 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
                     'logo-image-visibility': 'block',
-                    'logoimage-url': "url('https://cdn.freebiesupply.com/logos/large/2x/villanova-wildcats-logo-png-transparent.png')",
-                    'body-bg-color': '#e7e7f0',
+                    'logoimage-url': "url('../img/logo-blue.png')",
+                    'body-bg-color': '#f1f8ff',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
                     'panel-text-color': '#444444',
-                    'action-color': '#198f1a',
-                    'border-color': '#dddddd',
+                    'action-color': '#00a9c8',
+                    'border-color': '#cfe2e5',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_headerfont_size': '2rem',
-                    'base_bodyfont_size': '1rem',
+                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -112,10 +126,10 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
             case 'yellow':
                 setTheme({
                     'logoimage-visibility': 'block',
-                    'lockup-visibility': 'none',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
-                    'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/img/webster.png')",
+                    'lockup-visibility': 'block',
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-beige.png')",
                     'body-bg-color': '#fff3db',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
@@ -123,9 +137,12 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#b3842c',
                     'border-color': '#dddddd',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_headerfont_size': '2rem',
-                    'base_bodyfont_size': '1rem',
+                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -133,21 +150,24 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 return;
             case 'black':
                 setTheme({
-                    'logoimage-visibility': 'none',
+                    'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
-                    'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
-                    'body-bg-color': '#929292',
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-blue.png')",
+                    'body-bg-color': '#404040',
                     'body-text-color': '#ffffff',
-                    'panel-bg-color': '#ffffff',
+                    'panel-bg-color': '#edfcff',
                     'panel-text-color': '#444444',
-                    'action-color': '#980209',
-                    'border-color': '#dddddd',
+                    'action-color': '#0187a0',
+                    'border-color': '#01a9c9',
                     'font_header': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',
-                    'base_headerfont_size': '2rem',
-                    'base_bodyfont_size': '1rem',
+                    'font_body': 'Cambria, Georgia, "Times New Roman", serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
@@ -157,9 +177,9 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                 setTheme({
                     'logoimage-visibility': 'block',
                     'lockup-visibility': 'block',
-                    'org-name': 'INDIANA UNIVERSITY',
-                    'app-name': 'VERIFY',
-                    'logoimage-url': "url('http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png')",
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-red.png')",
                     'body-bg-color': '#eaeaea',
                     'body-text-color': '#444444',
                     'panel-bg-color': '#ffffff',
@@ -167,14 +187,74 @@ for (let i = 0; i < dataThemeButtons.length; i++) {
                     'action-color': '#006298',
                     'border-color': '#dddddd',
                     'font_header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-                    'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
-                    'base_headerfont_size': '2rem',
-                    'base_bodyfont_size': '1rem',
+                    'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
                     'theme_border_radius': '0.25rem',
                     'theme_page_margin': '880px',
                     'mstile-bg-color': '#ff0000',
                 });
                 return;
+                
+                
+                
+                
+                 case 'red':
+                setTheme({
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'block',
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-red.png')",
+                    'body-bg-color': '#f5edec',
+                    'body-text-color': '#444444',
+                    'panel-bg-color': '#ffffff',
+                    'panel-text-color': '#444444',
+                    'action-color': '#990000',
+                    'border-color': '#e5cecd',
+                    'font_header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
+                });
+                return;
+                
+                
+                    case 'purple':
+                setTheme({
+                    'logoimage-visibility': 'block',
+                    'lockup-visibility': 'block',
+                    'org-name': 'XYZ Institution',
+                    'app-name': 'CampusConfirm',
+                    'logoimage-url': "url('../img/logo-purple.png')",
+                    'body-bg-color': '#f2eaff',
+                    'body-text-color': '#444444',
+                    'panel-bg-color': '#ffffff',
+                    'panel-text-color': '#444444',
+                    'action-color': '#367929',
+                    'border-color': '#e2d1ff',
+                    'font_header': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',
+                    'font_body': '"BentonSans", "Helvetica Neue", "Helvetica", sans-serif;',                    
+                    'fontsize_orgname': '.875rem',
+                    'fontsize_appname': '1.625rem',
+                    'fontsize_header': '2rem',
+                    'fontsize_body': '1rem',
+                    'fontsize_verifyblock': '1.25rem',
+                    'theme_border_radius': '0.25rem',
+                    'theme_page_margin': '880px',
+                    'mstile-bg-color': '#ff0000',
+                });
+                return;
+                
         }
     })
 }
@@ -183,15 +263,15 @@ const handleInputChange = (property, pixels) => {
     document.documentElement.style.setProperty(`--${property}`, `${event.target.value}${pixels ? 'px' : ''}`);
     localStorage.setItem(property, `${event.target.value}${pixels ? 'px' : ''}`);
 };
-document.querySelector('#logoimage-visibility').addEventListener('change', event => {
-    handleInputChange('logoimage-visibility', false);
-});
+//document.querySelector('#logoimage-visibility').addEventListener('change', event => {
+    //handleInputChange('logoimage-visibility', false);
+//});
 //document.querySelector('#logoimage-url').addEventListener('input', event => {
    // handleInputChange('logoimage-url', false);
 //});
-document.querySelector('#lockup-visibility').addEventListener('change', event => {
-    handleInputChange('lockup-visibility', false);
-});
+//document.querySelector('#lockup-visibility').addEventListener('change', event => {
+   // handleInputChange('lockup-visibility', false);
+//});
 document.querySelector('#body-bg-color').addEventListener('change', event => {
     handleInputChange('body-bg-color', false);
 });
@@ -228,13 +308,33 @@ document.querySelector('#font_header').addEventListener('change', event => {
 document.querySelector('#font_body').addEventListener('change', event => {
     handleInputChange('font_body', false);
 });
-document.querySelector('#base_headerfont_size').addEventListener('input', event => {
-    handleInputChange('base_headerfont_size', true);
+
+document.querySelector('#fontsize_orgname').addEventListener('input', event => {
+    handleInputChange('fontsize_orgname', true);
+});
+    
+document.querySelector('#fontsize_appname').addEventListener('input', event => {
+    handleInputChange('fontsize_appname', true);
+});
+    
+document.querySelector('#fontsize_header').addEventListener('input', event => {
+    handleInputChange('fontsize_header', true);
 });
 
-document.querySelector('#base_bodyfont_size').addEventListener('input', event => {
-    handleInputChange('base_bodyfont_size', true);
+document.querySelector('#fontsize_body').addEventListener('input', event => {
+    handleInputChange('fontsize_body', true);
 });
+    
+    
+    
+    
+    document.querySelector('#fontsize_verifyblock').addEventListener('input', event => {
+    handleInputChange('fontsize_verifyblock', true);
+});
+    
+    
+    
+    
 
 document.querySelector('#theme_border_radius').addEventListener('input', event => {
     handleInputChange('theme_border_radius', true);

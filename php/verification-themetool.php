@@ -1,111 +1,239 @@
 <?php
 $section = '';
-$page_title = 'VERIFY';
+$page_title = 'CampusConfirm';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
+<style>
+.highlight-object {
+    outline-style: dotted;
+    outline-offset: 4px;
+}
+.demojs_validation {
+    display: none;
+}
+.alert.alert-inline.demojs_validation {
+    display: none !important;
+}
+</style>
 </head>
 <body class="int-user">
 <main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
-            <h2 class="mb-3 mt-7">Customize theme</h2>
+            <h2 class="mb-5 mt-5">Customize theme</h2>
+            <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                <p class="rbt-ts-14" id="standalone4	"> Please correct any errors before resubmitting.</p>
+            </div>
             <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
-                <div class="card predefined-themes">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_preset" aria-expanded="false" aria-controls="panel_preset"> <i class="rbt-icon-chevron-right"></i> Predefined themes </button>
-                    </h3>
-                    <div id="panel_preset" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body p-3">
-                            <button data-theme="white" style="background-color: white"> white </button>
-                            <button data-theme="brown" style="background-color: #6f5929"> brown </button>
-                            <button data-theme="blue" style="background-color: #3f51b5"> blue </button>
-                            <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
-                            <button data-theme="black" style="background-color: #222"> black </button>
-                        </div>
-                    </div>
-                </div>
                 <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Application name </button>
-                    </h3>
-                    <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
+                    <h3 class="d-flex align-items-center mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
+                    <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <label for="lockup-visibility">Lockup</label>
-                            <select class="form-control mb-3" id="lockup-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
-                            </select>
-                            <label for="org-name" class="demojs-lockupcontrols">Organization name</label>
-                            <countdown>
-                                <div class="rbt-charcount">
-                                    <input aria-labelledby="org-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
-                                    <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
-                            </countdown>
-                            <label for="app-name" class="demojs-lockupcontrols">Application name</label>
-                            <countdown>
-                                <div class="rbt-charcount">
-                                    <input aria-labelledby="app-name" class="form-control mb-3 demojs-lockupcontrols" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
-                                    <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
-                            </countdown>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
-                    </h3>
-                    <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
-                            <label for="logoimage-visibility">Logo image</label>
-                            <select class="form-control mb-3" id="logoimage-visibility">
-                                <option selected="" value="block">Visible</option>
-                                <option value="none">Hidden</option>
-                            </select>
-                            <!--    <label for="logoimage-url" class="demojs-logourl">Logo image URL</label>
-                            <input type="text" class="form-control mb-3 demojs-logourl" id="logoimage-url" value="">
-                            -->
-                            
-                            <div class="form-group demojs-logourl">
-                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
-                                    <div class="">
-                                        <div class="">
-                                            <image-upload >
-                                                <div  filedrop="" class="img-ul"  >
-                                                    <div  class="img-ul-file-upload img-ul-hr-inline-group" >
-                                                        <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
-                                                            <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
-                                                        </label>
-                                                        <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
-                                                    </div>
-                                                </div>
-                                            </image-upload>
-                                            <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                                <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
-                                                    <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                                    <message key="global.buttons.delete">Delete</message>
-                                                    </span> </button>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="mb-2 font-weight-bold ts-14"> Color palettes</div>
+                                <button data-theme="white" style="background-color: #eaeaea"> white </button>
+                                <button data-theme="brown" style="background-color: #fdf7eb"> brown </button>
+                                <button data-theme="yellow" style="background-color: #ffe08f"> yellow </button>
+                                <button data-theme="blue" style="background-color: #01a9c9"> blue </button>
+                                <button data-theme="red" style="background-color: #990000"> red </button>
+                                <button data-theme="purple" style="background-color: #62449b"> purple </button>
+                                <button data-theme="black" style="background-color: #222"> black </button>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-bg-color" class="font-weight-bold ts-14 mb-2">Body background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
                                     </div>
-                                </ccf-image-upload>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="body-text-color" class="font-weight-bold ts-14 mb-2">Body text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-bg-color" class="font-weight-bold ts-14 mb-2">Panel background color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="panel-text-color" class="font-weight-bold ts-14 mb-2">Panel text color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
+                                    </div>
+                                    <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                        <p class="rbt-ts-14" id="standalone4"> Please provide a valid hex value for this color (e.g. #990000).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="action-color" class="font-weight-bold ts-14 mb-2">Action color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
+                                <label for="border-color" class="font-weight-bold ts-14 mb-2">Border color</label>
+                                <div class="input-group">
+                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
+                                    <div class="input-group-append">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="border-color-hexcolor">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Name </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
+                    </h3>
+                    <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <div class="d-flex">
+                                    <label for="org-name" class=" font-weight-bold">Organization name </label>
+                                </div>
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <input aria-labelledby="org-name" class="form-control mb-2" formcontrolname="title" id="org-name" aria-describedby="textinput" oninput='orgnameset();orgnamestore();'>
+                                        <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                            <p class="rbt-ts-14" id="standalone4"> Character count exceeds the maximum allowed limit.</p>
+                                        </div>
+                                        <span class="badge badge-success" id="org-name_badge"> <span id="org-name_counter">40</span> </span> </div>
+                                </countdown>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="showonpage-orgname" value="option1" checked>
+                                    <label class="form-check-label font-weight-normal" for="showonpage-orgname">Show on page</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="caps-orgname" value="option2">
+                                    <label class="form-check-label font-weight-normal" for="caps-orgname">All caps</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="app-name" class=" font-weight-bold">Application name <span class="font-weight-normal ts-12">(required)</span></label>
+                                <countdown>
+                                    <div class="rbt-charcount">
+                                        <input aria-labelledby="app-name" value="CampusConfirm" class="form-control mb-2" formcontrolname="title" id="app-name" aria-describedby="textinput" oninput='appnameset();appnamestore();'>
+                                        <span class="badge badge-success" id="app-name_badge"> <span id="app-name_counter">40</span> </span> </div>
+                                </countdown>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="showonpage-appname" value="option1" checked>
+                                    <label class="form-check-label font-weight-normal" for="showonpage-appname">Show on page</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="caps-appname" value="option2">
+                                    <label class="form-check-label font-weight-normal" for="caps-appname">All caps</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="d-flex align-items-center mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
+                    </h3>
+                    <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="chooselogoimage" class="font-weight-bold ts-16">Logo source</label>
+                                <select class="form-control mb-3" id="chooselogoimage">
+                                    <option value="default">Default logo</option>
+                                    <option value="upload">Upload logo</option>
+                                    <option value="none">None</option>
+                                </select>
+                            </div>
+                            <div class="card demojs_defaultimages" >
+                                <div class="card-body text-center"> <img src="../img/logo-red.png" alt=""/ style="max-height: 70px"> </div>
+                            </div>
+                            <div class="form-group demojs-logourl" style="display: none">
+                                <div class="mb-3">
+                                    <div class="mb-2 font-weight-bold ts-14">For large screens <span class="ts-12 font-weight-normal">(required)</span></div>
+                                    <div class="int-fielddescription"> For best results, the large screen logo should have a height of 72px, and a width that does not exceed 450px.</div>
+                                    <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                        <image-upload >
+                                            <div  filedrop="" class="img-ul"  >
+                                                <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                    <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
+                                                        <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
+                                                    </label>
+                                                    <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
+                                                </div>
+                                            </div>
+                                        </image-upload>
+                                        <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
+                                                <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                                <message key="global.buttons.delete">Delete</message>
+                                                </span> </button>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                            <p class="rbt-ts-14" id="standalone4"> File size must be less than 2mb.</p>
+                                        </div>
+                                    </ccf-image-upload>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="mb-2 font-weight-bold ts-14">For small screens </div>
+                                    <div class="int-fielddescription"> For best results, the small screen logo should have a height of 48px, and a width that does not exceed 300px.</div>
+                                    <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
+                                        <image-upload >
+                                            <div  filedrop="" class="img-ul"  >
+                                                <div  class="img-ul-file-upload img-ul-hr-inline-group" >
+                                                    <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload Image</span>
+                                                        <input  multiple type="file" accept="image/png,image/jpg,image/jpeg">
+                                                    </label>
+                                                    <label  class="img-ul-clear img-ul-button"> <span >Clear</span> </label>
+                                                </div>
+                                            </div>
+                                        </image-upload>
+                                        <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png" class="">
+                                                <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                                <message key="global.buttons.delete">Delete</message>
+                                                </span> </button>
+                                            </div>
+                                        </div>
+                                    </ccf-image-upload>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_favicon" aria-expanded="false" aria-controls="panel_favicon"> <i class="rbt-icon-chevron-right"></i> Application icons </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
+                            <div class="ts-14 font-italic mb-3 mt-3"> Note - application icons are used for bookmarks, browser tab icons, etc, and are not displayed here in the theming tool. </div>
                             <div class="form-group">
-                                <p>Note - application icons are used for bookmarks, browswer tab icons, etc, and are not displayed in the theming tool.</p>
                                 <label>Favicon icon</label>
                                 <div class="int-fielddescription">Icon to display as the favicon. This must be an .ico file.</div>
                                 <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
@@ -119,6 +247,9 @@ $page_title = 'VERIFY';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                    <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                        <p class="rbt-ts-14" id="standalone4"> File must be an .ico format.</p>
+                                    </div>
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group">
@@ -198,7 +329,7 @@ $page_title = 'VERIFY';
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="mstile-bg-color" class="font-weight-normal ts-16 mb-2">MS Tile background color</label>
+                                <label for="mstile-bg-color" class="font-weight-bold ts-14 mb-2">MS Tile background color</label>
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="mstile-bg-color" value="#444444">
                                     <div class="input-group-append">
@@ -210,8 +341,9 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
+                    <h3 class="d-flex align-items-center mb-2">
                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_customheadfoot" aria-expanded="false" aria-controls="panel_customheadfoot"> <i class="rbt-icon-chevron-right"></i> Custom header/footer </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_customheadfoot" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
@@ -222,6 +354,9 @@ $page_title = 'VERIFY';
                             <div class="form-group mb-3">
                                 <label for="footer_html">Footer HTML</label>
                                 <textarea class="form-control" id="footer_html" rows="5" oninput='footerhtml_set();footerhtml_store();'></textarea>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Character count exceeds the maximum allowed limit.</p>
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="headerfooter_css">Header/footer CSS</label>
@@ -231,73 +366,11 @@ $page_title = 'VERIFY';
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
+                    <h3 class="d-flex align-items-center mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontfamily" aria-expanded="false" aria-controls="panel_fontfamily"> <i class="rbt-icon-chevron-right"></i> Font family </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
-                    <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="body-bg-color" class="font-weight-normal ts-16 mb-2">Body background color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="body-text-color" class="font-weight-normal ts-16 mb-2">Body text color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="panel-bg-color" class="font-weight-normal ts-16 mb-2">Panel background color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="panel-text-color" class="font-weight-normal ts-16 mb-2">Panel text color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="action-color" class="font-weight-normal ts-16 mb-2">Action color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="border-color" class="font-weight-normal ts-16 mb-2">Border color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="border-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_headerfonts" aria-expanded="false" aria-controls="panel_headerfonts"> <i class="rbt-icon-chevron-right"></i> Header font</button>
-                    </h3>
-                    <div id="panel_headerfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
+                    <div id="panel_fontfamily" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="font_header">Header font face</label>
@@ -320,6 +393,9 @@ $page_title = 'VERIFY';
                                 <label for="custom_headerfontname">Font family name</label>
                                 <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
                                 <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
+                                </div>
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontweight">Weight</label>
@@ -357,46 +433,11 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="card demojs-customheaderfont" style="display: none">
                                 <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code> </li>
                                 </ul>
                             </div>
-                            <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_headerfont_size">Header font size</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input type="range" id="base_headerfont_size" value="32" min="20" max="48" step="1" class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_base_headerfont_size_value" name="price" value="16" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_bodyfonts" aria-expanded="false" aria-controls="panel_bodyfonts"> <i class="rbt-icon-chevron-right"></i> Body font</button>
-                    </h3>
-                    <div id="panel_bodyfonts" class="collapse" aria-labelledby="" data-parent="#accordion">
-                        <div class="card-body">
                             <div class="form-group">
                                 <label for="font_body">Body font face</label>
                                 <select class="form-control mb-3" id="font_body">
@@ -418,6 +459,9 @@ $page_title = 'VERIFY';
                                 <label for="custom_bodyfontname">Font family name</label>
                                 <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
                                 <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput">
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
+                                </div>
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontweight">Weight</label>
@@ -455,72 +499,90 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="card demojs-custombodyfont" style="display: none">
                                 <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code>
-                                        <div class="int-fontlink-checker align-items-center justify-content-center">
-                                            <button class="btn btn-sm btn-outline-primary bg-white">Check link</button>
-                                        </div>
-                                    </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code> </li>
+                                    <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.ttf</code> </li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="d-flex align-items-center mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontsizes" aria-expanded="false" aria-controls="panel_fontsizes"> <i class="rbt-icon-chevron-right"></i> Font sizes </button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
+                    </h3>
+                    <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="form-group" id="fontsize_orgname_block">
+                                <label class="d-block" for="fontsize_orgname">Organization name </label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_fontsize_orgname_value" name="price" value="14px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="fontsize_orgname" value="14px" min="12" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
+                                </div>
+                            </div>
+                            <div class="form-group" id="fontsize_appname_block">
+                                <label class="d-block" for="fontsize_appname">Application name </label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_fontsize_appname_value" name="price" value="26px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="fontsize_appname" value="26px" min="12" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="base_bodyfont_size">Body font size</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input type="range" id="base_bodyfont_size" value="16" min="12" max="16" class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_base_bodyfont_size_value" name="price" value="16" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
+                                <label class="d-block" for="fontsize_header">Header </label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_fontsize_header_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="fontsize_header" value="32px" min="20" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block" for="fontsize_body">Body </label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_fontsize_body_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="fontsize_body" value="16" min="12" max="16" class="form-control-range w-100">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block" for="fontsize_verifyblock">Verify block </label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_fontsize_verifyblock_value" name="price" value="20px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="fontsize_verifyblock" value="20" min="12" max="32" class="form-control-range w-100">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <h3 class="mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Layout</button>
+                    <h3 class="d-flex align-items-center mb-2">
+                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Margin &amp; radius</button>
+                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
                     </h3>
                     <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_border_radius">Border radius</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input id="theme_border_radius" type="range" min="0" max="20" step="1" value="4"  class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_border_value" name="price" value="4" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
+                                <label class="d-block"  for="theme_border_radius">Border radius</label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_border_value" name="price" value="4px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input id="theme_border_radius" type="range" min="0" max="20" value="4"  class="form-control-range w-100">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="d-block font-weight-normal" style="font-size: 1rem !important" for="theme_page_margin">Page margin</label>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <input id="theme_page_margin" type="range" min="440"max="880"step="10"value="880" class="form-control-range mb-3 w-100">
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="input-group mb-5">
-                                            <input id="show_margin_value" name="price" value="880" class="form-control">
-                                            <div class="input-group-append"> <span class="input-group-text">px</span> </div>
-                                        </div>
-                                    </div>
+                                <label class="d-block"  for="theme_page_margin">Page margin</label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_margin_value" name="price" value="880px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input id="theme_page_margin" type="range" min="440"max="880"step="10" value="880" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the minimum limit.</p>
                                 </div>
                             </div>
                         </div>
@@ -528,11 +590,8 @@ $page_title = 'VERIFY';
                 </div>
             </div>
             <div class="form-row">
-                <div class="col-6">
+                <div class="col-12">
                     <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
-                </div>
-                <div class="col-6">
-                    <button type="button" class="btn btn-outline-primary btn-block demojs-savetheme"  disabled> Restore values </button>
                 </div>
             </div>
         </div>
@@ -546,9 +605,9 @@ $page_title = 'VERIFY';
             </growls>
             <div class="container p-0" id="header_html_display"></div>
             <header class="container p-0 mt-7 mb-3">
-                <div class="d-flex"> <img alt="" class="int-brand-image">
-                    <div class="int-lockup-group text-nowrap">
-                        <div class="int-lockup-org" id="org-name-display">INDIANA UNIVERSITY</div>
+                <div class="d-flex align-content-center"> <img alt="" class="int-brand-image">
+                    <div class="d-flex flex-column align-self-center int-lockup-group text-nowrap">
+                        <div class="int-lockup-org" id="org-name-display">XYZ Institution</div>
                         <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
                     </div>
                     <div class="w-100"></div>
@@ -591,10 +650,10 @@ $page_title = 'VERIFY';
                         <div class="row mb-5" id="demojs_verifyscreen">
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3 ts-20">
+                                    <div class="mb-3" id="verifystatement">
                                         <div class="form-check form-check-inline">
                                             <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                            <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
+                                            <label class="form-check-label" for="question4" > I have verified that the above information is up to date and correct.</label>
                                         </div>
                                     </div>
                                     <div class="rbt-button-group mt-auto">
@@ -604,7 +663,7 @@ $page_title = 'VERIFY';
                             </div>
                             <div class="col-md-6 d-flex pb-5 pb-md-0">
                                 <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3 ts-20"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                    <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s). </div>
                                     <div class="rbt-button-group mt-auto">
                                         <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
                                     </div>
@@ -614,9 +673,7 @@ $page_title = 'VERIFY';
                     </div>
                 </section>
             </main>
-            <div class="container p-0" id="footer_html_display">
-                <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.iu.edu/copyright/index.html" target="_blank" class="text-dark">Copyright</a> © 2020 The Trustees of <a href="https://www.iu.edu/" target="_blank" class="text-dark">Indiana University</a>. </div>
-            </div>
+            <?php include('includes/all-footer.php') ?>
         </div>
     </div>
 </main>
@@ -624,70 +681,251 @@ $page_title = 'VERIFY';
 <?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
+<script type = "text/javascript" language = "javascript">
+    $(document).ready(function() {
+        $('#org-name, #fontsize_orgname, #show_fontsize_orgname_value').hover(
+            function() {
+                $(".int-lockup-org").addClass("highlight-object");
+            },
+            function() {
+                $(".int-lockup-org").removeClass("highlight-object");
+            }
+        );
+        $('#app-name, #fontsize_appname, #show_fontsize_appname_value').hover(
+            function() {
+                $(".int-lockup-pagetitle").addClass("highlight-object");
+            },
+            function() {
+                $(".int-lockup-pagetitle").removeClass("highlight-object");
+            }
+        );
+        $('#chooselogoimage').hover(
+            function() {
+                $(".int-brand-image").addClass("highlight-object");
+            },
+            function() {
+                $(".int-brand-image").removeClass("highlight-object");
+            }
+        );
+        $('#header_html').hover(
+            function() {
+                $("#header_html_display").addClass("highlight-object");
+            },
+            function() {
+                $("#header_html_display").removeClass("highlight-object");
+            }
+        );
+        $('#footer_html').hover(
+            function() {
+                $("#footer_html_display").addClass("highlight-object");
+            },
+            function() {
+                $("#footer_html_display").removeClass("highlight-object");
+            }
+        );
+        $('#font_header').hover(
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
+            },
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
+            }
+        );
+        $('#fontsize_header, #show_fontsize_header_value').hover(
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
+            },
+            function() {
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
+            }
+        );
+        $('#font_body, #fontsize_body, #show_fontsize_body_value').hover(
+            function() {
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
+            },
+            function() {
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
+            }
+        );
+        $('#fontsize_verifyblock, #show_fontsize_verifyblock_value').hover(
+            function() {
+                $("#deferstatement, #verifystatement").addClass("highlight-object");
+            },
+            function() {
+                $("#deferstatement, #verifystatement").removeClass("highlight-object");
+            }
+        );
+    });
+</script> 
 <script>
-$(document).ready(function() {
-    $(function() {
-        $('#font_header').change(function() {
-			$('.demojs-customheaderfont').hide();
-            $('.' + $(this).val()).show();
-        });
-		 $('#font_body').change(function() {
-			$('.demojs-custombodyfont').hide();
-            $('.' + $(this).val()).show();
+    $(document).ready(function() {
+        $('#chooselogoimage').change(function() {
+            if ($(this).val() == "default") {
+                $(".int-brand-image").show();
+                $(".demojs_defaultimages").show();
+                $(".demojs-logourl").hide();
+            }
+            if ($(this).val() == "upload") {
+                $(".int-brand-image").show();
+                $(".demojs_defaultimages").hide();
+                $(".demojs-logourl").show();
+            }
+            if ($(this).val() == "none") {
+                $(".int-brand-image").hide();
+                $(".demojs_defaultimages").hide();
+                $(".demojs-logourl").hide();
+            }
         });
     });
-});
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#showonpage-orgname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-org, #fontsize_orgname_block").show();
+            } else {
+                $(".int-lockup-org, #fontsize_orgname_block").hide();
+            }
+        });
+        $("#showonpage-appname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-pagetitle, #fontsize_appname_block").show();
+            } else {
+                $(".int-lockup-pagetitle, #fontsize_appname_block").hide();
+            }
+        });
+        $("#caps-orgname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-org").addClass("text-uppercase");
+            } else {
+                $(".int-lockup-org").removeClass("text-uppercase");
+            }
+        });
+        $("#caps-appname").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-pagetitle").addClass("text-uppercase");
+            } else {
+                $(".int-lockup-pagetitle").removeClass("text-uppercase");
+            }
+        });
+    })
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#lockup-visibility2").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-lockup-group").show();
+            } else {
+                $(".int-lockup-group").hide();
+            }
+        });
+    })
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#logo-visibility2").click(function() {
+            if ($(this).is(":checked")) {
+                $(".int-brand-image").show();
+            } else {
+                $(".int-brand-image").hide();
+            }
+        });
+    })
 </script> 
 <script>
     $(document).ready(function() {
         $(function() {
-            $(".int-fontlink-checker button").click(function() {
-                $(this).text("Success!");
-                setTimeout(function() {
-                    $(".int-fontlink-checker button").text("Check link");
-                }, 4000)
+            $('#font_header').change(function() {
+                $('.demojs-customheaderfont').hide();
+                $('.' + $(this).val()).show();
+            });
+             $('#font_body').change(function() {
+                $('.demojs-custombodyfont').hide();
+                $('.' + $(this).val()).show();
             });
         });
     });
 </script> 
 <script>
-$(document).ready(function() {
-    $('#theme_page_margin').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_margin_value").val(newVal);
+    $(document).ready(function() {
+        $('#theme_page_margin').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_margin_value").val(newVal);
+            $("#show_margin_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_margin_value').on('input', function() {
+            $('#theme_page_margin').val($(this).val())
+        });
+        $('#theme_border_radius').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_border_value").val(newVal);
+            $("#show_border_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_border_value').on('input', function() {
+            $('#theme_border_radius').val($(this).val())
+        });
+        $('#fontsize_body').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_fontsize_body_value").val(newVal);
+            $("#show_fontsize_body_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_fontsize_body_value').on('input', function() {
+            $('#fontsize_body').val($(this).val())
+        });
+         $('#fontsize_verifyblock').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_fontsize_verifyblock_value").val(newVal);
+            $("#show_fontsize_verifyblock_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_fontsize_verifyblock_value').on('input', function() {
+            $('#fontsize_verifyblock').val($(this).val())
+        });
+        
+        
+        
+        $('#fontsize_header').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_fontsize_header_value").val(newVal);
+            $("#show_fontsize_header_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_fontsize_header_value').on('input', function() {
+            $('#fontsize_header').val($(this).val())
+        });
+        
+        
+        $('#fontsize_appname').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_fontsize_appname_value").val(newVal);
+            $("#show_fontsize_appname_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_fontsize_appname_value').on('input', function() {
+            $('#fontsize_appname').val($(this).val())
+        });
+        
+        
+         
+        $('#fontsize_orgname').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_fontsize_orgname_value").val(newVal);
+            $("#show_fontsize_orgname_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_fontsize_orgname_value').on('input', function() {
+            $('#fontsize_orgname').val($(this).val())
+        });
+        
+        
+        
+        
+        
+        
     });
-    $('#show_margin_value').on('input', function() {
-        $('#theme_page_margin').val($(this).val())
-    });
-    $('#theme_border_radius').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_border_value").val(newVal);
-    });
-    $('#show_border_value').on('input', function() {
-        $('#theme_border_radius').val($(this).val())
-    });
-	$('#base_bodyfont_size').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_base_bodyfont_size_value").val(newVal);
-    });
-    $('#show_base_bodyfont_size_value').on('input', function() {
-        $('#base_bodyfont_size').val($(this).val())
-    });
-	$('#base_headerfont_size').on('input', function() {
-        var newVal = $(this).val();
-        $("#show_base_headerfont_size_value").val(newVal);
-    });
-    $('#show_base_headerfont_size_value').on('input', function() {
-        $('#base_headerfont_size').val($(this).val())
-    });
-});
 </script> 
 <script>
-$(document).ready(function(){
-  $("#demojs-themehandle").click(function(){
-    $(".rbt-shell-sidebar").toggleClass("int-themeclose");
-  });
-});
+    $(document).ready(function(){
+      $("#demojs-themehandle").click(function(){
+        $(".rbt-shell-sidebar").toggleClass("int-themeclose");
+      });
+    });
 </script> 
 <script>
     $(".demojs-reveal").click(function() {
@@ -711,46 +949,6 @@ $(document).ready(function(){
             if ($('#question4').is(':checked')) {
 				 $('#question4').popover('destroy')
             }
-        });
-    }); 
-</script> 
-<script>
-    $(document).ready(function() {
-        $('#lockup-visibility').change(function() {
-            if ($(this).val() == "block") {
-                $(".demojs-lockupcontrols").show();
-            }
-            if ($(this).val() == "none") {
-                $(".demojs-lockupcontrols").hide();
-            }
-        });
-		 $('#logoimage-visibility').change(function() {
-            if ($(this).val() == "block") {
-                $(".demojs-logourl").show();
-            }
-            if ($(this).val() == "none") {
-                $(".demojs-logourl").hide();
-            }
-        });
-		 $("[data-theme='white']").click(function() {
-			 $(".demojs-lockupcontrols").show();
-			 $(".demojs-logourl").show();
-        });
-		 $("[data-theme='brown']").click(function() {
-			 $(".demojs-lockupcontrols").show();
-			 $(".demojs-logourl").show();
-        });
-		 $("[data-theme='blue']").click(function() {
-			 $(".demojs-lockupcontrols").show();
-			 $(".demojs-logourl").show();
-        });
-		 $("[data-theme='yellow']").click(function() {
-			$(".demojs-lockupcontrols").hide();
-			$(".demojs-logourl").show();
-        });
-		 $("[data-theme='black']").click(function() {
-			$(".demojs-logourl").hide();
-			$(".demojs-lockupcontrols").show();
         });
     }); 
 </script> 
@@ -823,38 +1021,37 @@ $(document).ready(function(){
 	$('#mstile-bg-color-hexcolor').on('change', function() {
 		$('#mstile-bg-color').val(this.value);
 	});
-    
-    
-    
-    
 </script> 
 <script>
-$(document).ready(function() {
-    $("#org-name").keyup(function() {
-        var length = $(this).val().length;
-        length = 40 - length;
-        $('#org-name_counter').text(length);
-        if ($("#org-name").val().length > 40) {
-            $("#org-name_badge").last().addClass("badge-danger");
-        } else {
-            $("org-name_badge").last().removeClass("badge-danger");
-        }
+    $(document).ready(function() {
+        $("#org-name").keyup(function() {
+            var length = $(this).val().length;
+            length = 40 - length;
+            $('#org-name_counter').text(length);
+            if ($("#org-name").val().length > 40) {
+                $("#org-name_badge").last().addClass("badge-danger");
+            } else {
+                $("org-name_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#app-name").keyup(function() {
+            var length = $(this).val().length;
+            length = 40 - length;
+            $('#app-name_counter').text(length);
+            if ($("#app-name").val().length > 40) {
+                $("#app-name_badge").last().addClass("badge-danger");
+            } else {
+                $("app-name_badge").last().removeClass("badge-danger");
+            }
+        });
     });
-    
-     $("#app-name").keyup(function() {
-        var length = $(this).val().length;
-        length = 40 - length;
-        $('#app-name_counter').text(length);
-        if ($("#app-name").val().length > 40) {
-            $("#app-name_badge").last().addClass("badge-danger");
-        } else {
-            $("app-name_badge").last().removeClass("badge-danger");
-        }
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#savetheme").click(function() {
+            $(".demojs_validation").removeClass("demojs_validation");
+        });
     });
-    
-    
-   
-});
 </script>
 </body>
 </html>

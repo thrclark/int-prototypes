@@ -45,11 +45,12 @@ html {
       .int-lockup-group {
         padding-left: 0.5rem;
         .int-lockup-org {
-          font-size: 0.875rem;
+          font-size: var(--fontsize_orgname);
           padding-top: 0.25rem;
         }
         .int-lockup-pagetitle {
-          font-size: 1.625rem;
+          //font-size: 1.625rem;
+          font-size: var(--fontsize_appname);
           font-weight: 700;
           letter-spacing: .04rem;
         }
@@ -63,18 +64,19 @@ html {
       section {
         color: var(--body-text-color);
         font-family: var(--font_body);
-        font-size: var(--base_bodyfont_size);
+        font-size: var(--fontsize_body);
         .border, .border-bottom {
           border-color: var(--border-color) !important;
         }
         .card {
-          font-size: var(--base_bodyfont_size);
+          font-size: var(--fontsize_body);
           border-radius: var(--theme_border_radius);
+          border-color: var(--border-color) !important;
 
           background-color: var(--panel-bg-color);
           h1,h2,h3 {
             font-family: var(--font_header);
-			font-size: var(--base_headerfont_size);
+			font-size: var(--fontsize_header);
           }
           .card-body {
             color: var(--panel-text-color);
@@ -118,11 +120,13 @@ html {
         .int-verify-controls {
           color: var(--body-text-color);
           font-family: var(--font_body);
-          font-size: var(--base_bodyfont_size);
+          //font-size: var(--fontsize_body);
+            
+            #verifystatement, #deferstatement{
+                font-size: var(--fontsize_verifyblock);
+            }
 
-          .rbt-button-group {
-
-          }
+         
         }
       }
     }
@@ -197,6 +201,11 @@ button[data-theme] {
   outline: 0;
   cursor: pointer;
 }
+
+.int-fielddescription {
+  margin-bottom: .5rem;
+}
+
 .int-accordion-controls {
   position: absolute;
   top: 0px;
@@ -214,28 +223,6 @@ button[data-theme] {
 }
 .colorpick {
   label {
-    font-size: 1rem !important;
-  }
-}
-.int-fontlinks {
-  .list-group-item {
-    .int-fontlink-checker {
-      opacity: 0;
-      transition: 0.3s;
-      position: absolute;
-      background-color: rgba(255, 255, 255, 0.8);
-      width: 100%;
-      height: 100%;
-      top: 0;
-      z-index: 9999;
-      left: 0;
-      display: flex;
-    }
-    &:hover {
-      .int-fontlink-checker {
-
-        opacity: 1;
-      }
-    }
+    //font-size: 1rem !important;
   }
 }
