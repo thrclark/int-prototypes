@@ -514,7 +514,7 @@ $page_title = 'CampusConfirm';
                     </h3>
                     <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
-                            <div class="form-group">
+                            <div class="form-group" id="fontsize_orgname_block">
                                 <label class="d-block" for="fontsize_orgname">Organization name </label>
                                 <div class="d-flex border rounded  px-3 py-1">
                                     <input id="show_fontsize_orgname_value" name="price" value="14px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
@@ -524,7 +524,7 @@ $page_title = 'CampusConfirm';
                                     <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" id="fontsize_appname_block">
                                 <label class="d-block" for="fontsize_appname">Application name </label>
                                 <div class="d-flex border rounded  px-3 py-1">
                                     <input id="show_fontsize_appname_value" name="price" value="26px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
@@ -782,16 +782,16 @@ $page_title = 'CampusConfirm';
     $(document).ready(function() {
         $("#showonpage-orgname").click(function() {
             if ($(this).is(":checked")) {
-                $(".int-lockup-org").show();
+                $(".int-lockup-org, #fontsize_orgname_block").show();
             } else {
-                $(".int-lockup-org").hide();
+                $(".int-lockup-org, #fontsize_orgname_block").hide();
             }
         });
         $("#showonpage-appname").click(function() {
             if ($(this).is(":checked")) {
-                $(".int-lockup-pagetitle").show();
+                $(".int-lockup-pagetitle, #fontsize_appname_block").show();
             } else {
-                $(".int-lockup-pagetitle").hide();
+                $(".int-lockup-pagetitle, #fontsize_appname_block").hide();
             }
         });
         $("#caps-orgname").click(function() {
