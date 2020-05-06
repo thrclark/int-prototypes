@@ -515,6 +515,26 @@ $page_title = 'CampusConfirm';
                     <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
                         <div class="card-body">
                             <div class="form-group">
+                                <label class="d-block" for="base_orgname_size">Organization name font size</label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_base_orgname_size_value" name="price" value="14px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="base_orgname_size" value="14px" min="12" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="d-block" for="base_appname_size">Application name font size</label>
+                                <div class="d-flex border rounded  px-3 py-1">
+                                    <input id="show_base_appname_size_value" name="price" value="26px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                    <input type="range" id="base_appname_size" value="26px" min="12" max="48" step="1" class="form-control-range w-100">
+                                </div>
+                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                    <p class="rbt-ts-14" id="standalone4"> Value exceeds the maximum limit.</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="d-block" for="base_headerfont_size">Header font size</label>
                                 <div class="d-flex border rounded  px-3 py-1">
                                     <input id="show_base_headerfont_size_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
@@ -663,7 +683,7 @@ $page_title = 'CampusConfirm';
 <?php include('includes/all-footerscripts.php') ?>
 <script type = "text/javascript" language = "javascript">
     $(document).ready(function() {
-        $('#org-name').hover(
+        $('#org-name, #base_orgname_size, #show_base_orgname_size_value').hover(
             function() {
                 $(".int-lockup-org").addClass("highlight-object");
             },
@@ -671,7 +691,7 @@ $page_title = 'CampusConfirm';
                 $(".int-lockup-org").removeClass("highlight-object");
             }
         );
-        $('#app-name').hover(
+        $('#app-name, #base_appname_size, #show_base_appname_size_value').hover(
             function() {
                 $(".int-lockup-pagetitle").addClass("highlight-object");
             },
@@ -727,7 +747,7 @@ $page_title = 'CampusConfirm';
                 $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
             }
         );
-        $('#base_verifyblockfont_size').hover(
+        $('#base_verifyblockfont_size, #show_base_verifyblockfont_size_value').hover(
             function() {
                 $("#deferstatement, #verifystatement").addClass("highlight-object");
             },
@@ -860,6 +880,9 @@ $page_title = 'CampusConfirm';
         $('#show_base_verifyblockfont_size_value').on('input', function() {
             $('#base_verifyblockfont_size').val($(this).val())
         });
+        
+        
+        
         $('#base_headerfont_size').on('input', function() {
             var newVal = $(this).val();
             $("#show_base_headerfont_size_value").val(newVal);
@@ -868,6 +891,33 @@ $page_title = 'CampusConfirm';
         $('#show_base_headerfont_size_value').on('input', function() {
             $('#base_headerfont_size').val($(this).val())
         });
+        
+        
+        $('#base_appname_size').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_base_appname_size_value").val(newVal);
+            $("#show_base_appname_size_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_base_appname_size_value').on('input', function() {
+            $('#base_appname_size').val($(this).val())
+        });
+        
+        
+         
+        $('#base_orgname_size').on('input', function() {
+            var newVal = $(this).val();
+            $("#show_base_orgname_size_value").val(newVal);
+            $("#show_base_orgname_size_value").val(function() {return this.value + 'px';});
+        });
+        $('#show_base_orgname_size_value').on('input', function() {
+            $('#base_orgname_size').val($(this).val())
+        });
+        
+        
+        
+        
+        
+        
     });
 </script> 
 <script>
