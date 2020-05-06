@@ -83,7 +83,11 @@ $page_title = 'System parameters';
                     <div class="form-group">
                         <label for="app_email" class="ts-26">Application email</label>
                         <div class="int-fielddescription"> The address from which global emails are sent.</div>
-                        <input type="text" class="form-control" id="app_email" aria-describedby="app_email">
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <input aria-labelledby="app_email" class="form-control " formcontrolname="title" id="app_email">
+                                <span class="badge badge-success" id="app_email_badge"> <span id="app_email_counter">100</span> </span> </div>
+                        </countdown>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -129,7 +133,11 @@ $page_title = 'System parameters';
                     <div class="form-group">
                         <label for="send_exemail" class="ts-26">Send exception email</label>
                         <div class="int-fielddescription">Space delimited list of email addresses to which exception reports are sent.</div>
-                        <textarea class="form-control" id="send_exemail" aria-describedby="send_exemail" rows="5"></textarea>
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <textarea class="form-control" id="send_exemail" aria-describedby="send_exemail" rows="5"></textarea>
+                                <span class="badge badge-success" id="send_exemail_badge"> <span id="send_exemail_counter">1000</span> </span> </div>
+                        </countdown>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -195,6 +203,40 @@ $page_title = 'System parameters';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+    $(document).ready(function() {
+        
+        
+        $("#app_email").keyup(function() {
+            var length = $(this).val().length;
+            length = 100 - length;
+            $('#app_email_counter').text(length);
+            if ($("#app_email").val().length > 100) {
+                $("#app_email_badge").last().addClass("badge-danger");
+            } else {
+                $("app_email_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+        
+         $("#send_exemail").keyup(function() {
+            var length = $(this).val().length;
+            length = 1000 - length;
+            $('#send_exemail_counter').text(length);
+            if ($("#send_exemail").val().length > 1000) {
+                $("#send_exemail_badge").last().addClass("badge-danger");
+            } else {
+                $("send_exemail_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+        
+    });
+</script> 
 <script>
 $(document).ready(function() {
     $("#showview1").click(function() {

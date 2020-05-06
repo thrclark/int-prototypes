@@ -318,7 +318,11 @@ $page_title = 'General Settings';
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">Default target URL</label>
                         <div class="int-fielddescription">Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</div>
-                        <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <input aria-labelledby="defaulttargeturl" class="form-control " formcontrolname="title" id="defaulttargeturl">
+                                <span class="badge badge-success" id="defaulttargeturl_badge"> <span id="defaulttargeturl_counter">500</span> </span> </div>
+                        </countdown>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -394,7 +398,11 @@ $page_title = 'General Settings';
                     <div class="form-group">
                         <label for="textinput-full" class="ts-26">System email</label>
                         <div class="int-fielddescription">Email address from which email is sent.</div>
-                        <input type="text" class="form-control" id="textinput-full" aria-describedby="textinput">
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <input aria-labelledby="systememail" class="form-control " formcontrolname="title" id="systememail">
+                                <span class="badge badge-success" id="systememail_badge"> <span id="systememail_counter">100</span> </span> </div>
+                        </countdown>
                     </div>
                     <hr>
                     <div class="rbt-button-group mt-3 mb-5">
@@ -1140,58 +1148,78 @@ $(document).ready(function() {
     });
 </script> 
 <script>
-$(document).ready(function() {
-    $("#def_ver_buttontext").keyup(function() {
-        var length = $(this).val().length;
-        length = 20 - length;
-        $('#def_ver_buttontext_counter').text(length);
-        if ($("#def_ver_buttontext").val().length > 20) {
-            $("#def_ver_buttontext_badge").last().addClass("badge-danger");
-        } else {
-            $("#def_ver_buttontext_badge").last().removeClass("badge-danger");
-        }
-    });
+    $(document).ready(function() {
+        $("#defaulttargeturl").keyup(function() {
+            var length = $(this).val().length;
+            length = 500 - length;
+            $('#defaulttargeturl_counter').text(length);
+            if ($("#defaulttargeturl").val().length > 500) {
+                $("#defaulttargeturl_badge").last().addClass("badge-danger");
+            } else {
+                $("#defaulttargeturl_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#systememail").keyup(function() {
+            var length = $(this).val().length;
+            length = 100 - length;
+            $('#systememail_counter').text(length);
+            if ($("#systememail").val().length > 100) {
+                $("#systememail_badge").last().addClass("badge-danger");
+            } else {
+                $("#systememail_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#def_ver_buttontext").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#def_ver_buttontext_counter').text(length);
+            if ($("#def_ver_buttontext").val().length > 20) {
+                $("#def_ver_buttontext_badge").last().addClass("badge-danger");
+            } else {
+                $("#def_ver_buttontext_badge").last().removeClass("badge-danger");
+            }
+        });
         $("#def_def_buttontext").keyup(function() {
-        var length = $(this).val().length;
-        length = 20 - length;
-        $('#def_def_buttontext_counter').text(length);
-        if ($("#def_def_buttontext").val().length > 20) {
-            $("#def_def_buttontext_badge").last().addClass("badge-danger");
-        } else {
-            $("#def_def_buttontext_badge").last().removeClass("badge-danger");
-        }
-    });
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#def_def_buttontext_counter').text(length);
+            if ($("#def_def_buttontext").val().length > 20) {
+                $("#def_def_buttontext_badge").last().addClass("badge-danger");
+            } else {
+                $("#def_def_buttontext_badge").last().removeClass("badge-danger");
+            }
+        });
         $("#def_verify_message").keyup(function() {
-        var length = $(this).val().length;
-        length = 1000 - length;
-        $('#def_verify_message_counter').text(length);
-        if ($("#def_verify_message").val().length > 1000) {
-            $("#def_verify_message_badge").last().addClass("badge-danger");
-        } else {
-            $("#def_verify_message_badge").last().removeClass("badge-danger");
-        }
-    });
+            var length = $(this).val().length;
+            length = 1000 - length;
+            $('#def_verify_message_counter').text(length);
+            if ($("#def_verify_message").val().length > 1000) {
+                $("#def_verify_message_badge").last().addClass("badge-danger");
+            } else {
+                $("#def_verify_message_badge").last().removeClass("badge-danger");
+            }
+        });
         $("#def_def_message").keyup(function() {
-        var length = $(this).val().length;
-        length = 1000 - length;
-        $('#def_def_message_counter').text(length);
-        if ($("#def_def_message").val().length > 1000) {
-            $("#def_def_message_badge").last().addClass("badge-danger");
-        } else {
-            $("#def_def_message_badge").last().removeClass("badge-danger");
-        }
-    });
+            var length = $(this).val().length;
+            length = 1000 - length;
+            $('#def_def_message_counter').text(length);
+            if ($("#def_def_message").val().length > 1000) {
+                $("#def_def_message_badge").last().addClass("badge-danger");
+            } else {
+                $("#def_def_message_badge").last().removeClass("badge-danger");
+            }
+        });
         $("#error_message").keyup(function() {
-        var length = $(this).val().length;
-        length = 1000 - length;
-        $('#error_message_counter').text(length);
-        if ($("#error_message").val().length > 1000) {
-            $("#error_message_badge").last().addClass("badge-danger");
-        } else {
-            $("#error_message_badge").last().removeClass("badge-danger");
-        }
+            var length = $(this).val().length;
+            length = 1000 - length;
+            $('#error_message_counter').text(length);
+            if ($("#error_message").val().length > 1000) {
+                $("#error_message_badge").last().addClass("badge-danger");
+            } else {
+                $("#error_message_badge").last().removeClass("badge-danger");
+            }
+        });
     });
-});
 </script>
 </body>
 </html>
