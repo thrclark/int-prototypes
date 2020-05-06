@@ -12836,10 +12836,10 @@ html .int-user {
   html .int-user header .int-lockup-group {
     padding-left: 0.5rem; }
     html .int-user header .int-lockup-group .int-lockup-org {
-      font-size: var(--base_orgname_size);
+      font-size: var(--fontsize_orgname);
       padding-top: 0.25rem; }
     html .int-user header .int-lockup-group .int-lockup-pagetitle {
-      font-size: var(--base_appname_size);
+      font-size: var(--fontsize_appname);
       font-weight: 700;
       letter-spacing: .04rem; }
   html .int-user header .rbt-header-avatar-id {
@@ -12848,17 +12848,17 @@ html .int-user {
   html .int-user main section, html .int-user .main section {
     color: var(--body-text-color);
     font-family: var(--font_body);
-    font-size: var(--base_bodyfont_size); }
+    font-size: var(--fontsize_body); }
     html .int-user main section .border, html .int-user main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user main section .card, html .int-user main section .border-bottom, html .int-user .main section .border, html .int-user .main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user .main section .card, html .int-user .main section .border-bottom {
       border-color: var(--border-color) !important; }
     html .int-user main section .card, html .int-user .main section .card {
-      font-size: var(--base_bodyfont_size);
+      font-size: var(--fontsize_body);
       border-radius: var(--theme_border_radius);
       border-color: var(--border-color) !important;
       background-color: var(--panel-bg-color); }
       html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
         font-family: var(--font_header);
-        font-size: var(--base_headerfont_size); }
+        font-size: var(--fontsize_header); }
       html .int-user main section .card .card-body, html .int-user .main section .card .card-body {
         color: var(--panel-text-color);
         padding: 2rem 2.5rem 2.5rem;
@@ -12889,7 +12889,7 @@ html .int-user {
       color: var(--body-text-color);
       font-family: var(--font_body); }
       html .int-user main section .int-verify-controls #verifystatement, html .int-user main section .int-verify-controls #deferstatement, html .int-user .main section .int-verify-controls #verifystatement, html .int-user .main section .int-verify-controls #deferstatement {
-        font-size: var(--base_verifyblockfont_size); }
+        font-size: var(--fontsize_verifyblock); }
   html .int-user .popover {
     top: -31px !important;
     left: 18px !important; }

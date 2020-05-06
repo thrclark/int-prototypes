@@ -45,12 +45,12 @@ html {
       .int-lockup-group {
         padding-left: 0.5rem;
         .int-lockup-org {
-          font-size: var(--base_orgname_size);
+          font-size: var(--fontsize_orgname);
           padding-top: 0.25rem;
         }
         .int-lockup-pagetitle {
           //font-size: 1.625rem;
-          font-size: var(--base_appname_size);
+          font-size: var(--fontsize_appname);
           font-weight: 700;
           letter-spacing: .04rem;
         }
@@ -64,19 +64,19 @@ html {
       section {
         color: var(--body-text-color);
         font-family: var(--font_body);
-        font-size: var(--base_bodyfont_size);
+        font-size: var(--fontsize_body);
         .border, .border-bottom {
           border-color: var(--border-color) !important;
         }
         .card {
-          font-size: var(--base_bodyfont_size);
+          font-size: var(--fontsize_body);
           border-radius: var(--theme_border_radius);
           border-color: var(--border-color) !important;
 
           background-color: var(--panel-bg-color);
           h1,h2,h3 {
             font-family: var(--font_header);
-			font-size: var(--base_headerfont_size);
+			font-size: var(--fontsize_header);
           }
           .card-body {
             color: var(--panel-text-color);
@@ -120,10 +120,10 @@ html {
         .int-verify-controls {
           color: var(--body-text-color);
           font-family: var(--font_body);
-          //font-size: var(--base_bodyfont_size);
+          //font-size: var(--fontsize_body);
             
             #verifystatement, #deferstatement{
-                font-size: var(--base_verifyblockfont_size);
+                font-size: var(--fontsize_verifyblock);
             }
 
          
