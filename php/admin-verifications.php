@@ -234,7 +234,7 @@ $page_title = 'All verifications';
                         <div class="modal-title" id="exampleModalLabel">Reset verification</div>
                     </div>
                     <div class="modal-body">
-                        <p>Resetting this verification will cause it to be reset for all users, meaning that any user who has seen/responded to this verification in the past will see it again immediately.</p>
+                        <p>Resetting this verification will cause it to be reset for all users, meaning that any user who has responded to this in the past (and still has access) will see it again the next time it is triggered.</p>
                         <p>If you only want to reset this verification for a specific user, this may be done on the '<a href="admin-verification-reset.php">Reset user verifications</a>' page.</p>
                     </div>
                     <div class="modal-footer">
