@@ -13,7 +13,7 @@ $page_title = 'CampusConfirm';
     outline-offset: 4px;
 }
 .demojs_validation {
-    display: none;
+    display: none !important;
 }
 .alert.alert-inline.demojs_validation {
     display: none !important;
@@ -49,38 +49,46 @@ $page_title = 'CampusConfirm';
                 <p class="rbt-ts-14" id="standalone4	"> Please correct any errors before resubmitting.</p>
             </div>
             <div class="position-relative h-100 overflow-hidden demo-theme-builder">
-                <nav class="newsidebar-nav">
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_colors">
-                    <div class="font-weight-normal">Colors</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                <nav class="newsidebar-nav" style="padding: 4px">
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_colors">
+                    <div class="font-weight-normal flex-grow-1 text-left">Colors</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_name">
-                    <div class="font-weight-normal">Name</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_name">
+                    <div class="font-weight-normal flex-grow-1 text-left">Name</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_applogo">
-                    <div class="font-weight-normal">Application logo</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_applogo">
+                    <div class="font-weight-normal flex-grow-1 text-left">Application logo</div>
+                  <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_appicons">
-                    <div class="font-weight-normal">Application icons</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_appicons">
+                    <div class="font-weight-normal flex-grow-1 text-left">Application icons</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_customheadfoot">
-                    <div class="font-weight-normal">Custom header &amp; footer</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_customheadfoot">
+                    <div class="font-weight-normal flex-grow-1 text-left">Custom header &amp; footer</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_fontfamily">
-                    <div class="font-weight-normal">Font family</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_fontfamily">
+                    <div class="font-weight-normal flex-grow-1 text-left">Font family</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_fontsize">
-                    <div class="font-weight-normal">Font size</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_fontsize">
+                    <div class="font-weight-normal flex-grow-1 text-left">Font size</div>
+                     <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
-                    <button type="button" class="btn btn-block border d-flex mb-3" id="show_theme_marginradius">
-                    <div class="font-weight-normal">Margin &amp; radius</div>
-                    <div class="ml-auto"><i class="rbt-icon-chevron-right"></i></div>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3" id="show_theme_marginradius">
+                    <div class="font-weight-normal flex-grow-1 text-left">Margin &amp; radius</div>
+                     <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
                     </button>
                 </nav>
                 <div class="newsidebar-section  hidden" id="theme_colors">
@@ -642,7 +650,7 @@ $page_title = 'CampusConfirm';
                         </div>
                     </div>
                 </div>
-                <div class="form-row newsidebar-nav">
+                <div class="form-row newsidebar-nav mt-5">
                     <div class="col-12">
                         <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
                     </div>
