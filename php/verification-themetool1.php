@@ -42,7 +42,7 @@ $page_title = 'CampusConfirm';
 <body class="int-user">
 <main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
-        <div class="rbt-shell-sidebar d-none d-md-block h-100" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
+        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-5 mt-5">Customize theme</h2>
             <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
