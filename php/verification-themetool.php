@@ -13,7 +13,7 @@ $page_title = 'CampusConfirm';
     outline-offset: 4px;
 }
 .demojs_validation {
-    display: none;
+    display: none !important;
 }
 .alert.alert-inline.demojs_validation {
     display: none !important;
@@ -29,12 +29,55 @@ $page_title = 'CampusConfirm';
             <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                 <p class="rbt-ts-14" id="standalone4	"> Please correct any errors before resubmitting.</p>
             </div>
-            <div class="rbt-collapse-accordion demo-theme-builder mb-5" id="accordion">
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_colors" aria-expanded="false" aria-controls="panel_colors"> <i class="rbt-icon-chevron-right"></i> Colors</button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    <div id="panel_colors" class="collapse" aria-labelledby="" data-parent="#accordion">
+            <div class="demo-theme-builder">
+                <nav class="newsidebar-nav" id="theme_nav">
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_colors">
+                    <div class="font-weight-normal flex-grow-1 text-left">Colors</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_name">
+                    <div class="font-weight-normal flex-grow-1 text-left">Name</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_applogo">
+                    <div class="font-weight-normal flex-grow-1 text-left">Application logo</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_appicons">
+                    <div class="font-weight-normal flex-grow-1 text-left">Application icons</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_customheadfoot">
+                    <div class="font-weight-normal flex-grow-1 text-left">Custom header &amp; footer</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_fontfamily">
+                    <div class="font-weight-normal flex-grow-1 text-left">Font family</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_fontsize">
+                    <div class="font-weight-normal flex-grow-1 text-left">Font size</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-link btn-block border d-flex align-items-center mb-3 text-body demojs_show_theme_marginradius">
+                    <div class="font-weight-normal flex-grow-1 text-left">Margin &amp; radius</div>
+                    <i class="rbt-icon-exclamation mb-0 ml-auto text-danger demojs_validation"></i>
+                    <div class="ml-3 mt-1"><i class="rbt-icon-chevron-right mb-0"></i></div>
+                    </button>
+                </nav>
+                <div class="newsidebar-section" id="theme_colors" style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Colors</h3>
+                        </div>
                         <div class="card-body">
                             <div class="border-bottom pb-3 mb-3">
                                 <div class="mb-2 font-weight-bold ts-14"> Color palettes</div>
@@ -105,13 +148,19 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div></div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_name font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_lockup" aria-expanded="false" aria-controls="panel_lockup"> <i class="rbt-icon-chevron-right"></i> Name </button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_lockup" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_name"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Name</h3>
+                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <div class="d-flex">
@@ -152,13 +201,21 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_colors font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_applogo font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_logo" aria-expanded="false" aria-controls="panel_logo"> <i class="rbt-icon-chevron-right"></i> Application logo </button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_logo" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_applogo"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Application logo</h3>
+                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="chooselogoimage" class="font-weight-bold ts-16">Logo source</label>
@@ -224,13 +281,21 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_name font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_appicons font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_favicon" aria-expanded="false" aria-controls="panel_favicon"> <i class="rbt-icon-chevron-right"></i> Application icons </button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_favicon" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_appicons"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Application icons</h3>
+                        </div>
                         <div class="card-body">
                             <div class="ts-14 font-italic mb-3 mt-3"> Note - application icons are used for bookmarks, browser tab icons, etc, and are not displayed here in the theming tool. </div>
                             <div class="form-group">
@@ -339,13 +404,21 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_applogo font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_customheadfoot font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_customheadfoot" aria-expanded="false" aria-controls="panel_customheadfoot"> <i class="rbt-icon-chevron-right"></i> Custom header/footer </button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_customheadfoot" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_customheadfoot"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Custom header &amp; footer</h3>
+                        </div>
                         <div class="card-body">
                             <div class="form-group mb-3">
                                 <label for="header_html">Header HTML</label>
@@ -364,13 +437,21 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_appicons font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_fontfamily font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontfamily" aria-expanded="false" aria-controls="panel_fontfamily"> <i class="rbt-icon-chevron-right"></i> Font family </button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_fontfamily" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_fontfamily"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Font family</h3>
+                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label for="font_header">Header font face</label>
@@ -506,13 +587,21 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_customheadfoot font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_fontsize font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_fontsizes" aria-expanded="false" aria-controls="panel_fontsizes"> <i class="rbt-icon-chevron-right"></i> Font sizes </button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_fontsizes" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_fontsize"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Font size</h3>
+                        </div>
                         <div class="card-body">
                             <div class="form-group" id="fontsize_orgname_block">
                                 <label class="d-block" for="fontsize_orgname">Organization name </label>
@@ -560,13 +649,21 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_fontfamily font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous </button>
+                        </div>
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_marginradius font-weight-normal" id="">Next <i class="rbt-icon-chevron-right ts-14"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3 class="d-flex align-items-center mb-2">
-                        <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#panel_layout" aria-expanded="false" aria-controls="panel_layout"> <i class="rbt-icon-chevron-right"></i> Margin &amp; radius</button>
-                        <i class="rbt-icon-exclamation text-danger position-absolute demojs_validation" style="right: 15px"></i> </h3>
-                    </h3>
-                    <div id="panel_layout" class="collapse" aria-labelledby="" data-parent="#accordion">
+                <div class="newsidebar-section" id="theme_marginradius"  style="display: none">
+                    <div class="newsidebar-section-content card">
+                        <div class="card-header d-flex align-items-center p-0" style="padding-left: 5px">
+                            <button class="btn btn-link text-body p-2 mr-1 demojs_backtothemenav"><i class="rbt-icon-chevron-left ts-20" style="margin-top: 8px;"></i><span class="sr-only">Back to categories</span></button>
+                            <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Margin &amp; radius</h3>
+                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label class="d-block"  for="theme_border_radius">Border radius</label>
@@ -587,11 +684,17 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-between my-3">
+                        <div>
+                            <button class="btn btn-link mr-1 demojs_show_theme_fontsize font-weight-normal" id=""><i class="rbt-icon-chevron-left ts-14"></i> Previous</button>
+                        </div>
+                        <div> </div>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="col-12">
-                    <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
+                <div class="form-row newsidebar-nav mt-5">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -681,6 +784,65 @@ $page_title = 'CampusConfirm';
 <?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+    $(document).ready(function() {
+
+        $(".demojs_show_theme_colors").click(function(){
+          $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_colors").show();
+        });
+        
+        
+        $(".demojs_show_theme_name").click(function(){
+          $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_name").show();
+        });
+        
+         $(".demojs_show_theme_applogo").click(function(){
+          $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_applogo").show();
+        });
+        
+        
+         $(".demojs_show_theme_appicons").click(function(){
+           $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_appicons").show();
+        });
+        
+        
+          
+         $(".demojs_show_theme_customheadfoot").click(function(){
+           $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_customheadfoot").show();
+        });
+        
+            
+         $(".demojs_show_theme_fontfamily").click(function(){
+           $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_fontfamily").show();
+        });
+             
+         $(".demojs_show_theme_fontsize").click(function(){
+           $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_fontsize").show();
+        });
+        
+        
+          $(".demojs_show_theme_marginradius").click(function(){
+           $(".newsidebar-nav, [id^=theme_]").hide();
+          $("#theme_marginradius").show();
+        });
+        
+        
+         $(".demojs_backtothemenav").click(function(){
+          $("#theme_nav, .newsidebar-nav").show();
+          $("#theme_colors, #theme_name, #theme_applogo, #theme_appicons, #theme_customheadfoot, #theme_fontfamily, #theme_fontsize, #theme_marginradius").hide();
+        });
+        
+        
+        //
+    });
+</script> 
 <script type = "text/javascript" language = "javascript">
     $(document).ready(function() {
         $('#org-name, #fontsize_orgname, #show_fontsize_orgname_value').hover(
