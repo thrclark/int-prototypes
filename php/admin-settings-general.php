@@ -37,13 +37,8 @@ $page_title = 'General Settings';
                     <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">The name of the application. This is displayed in the header.</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> IU Verify </span></td>
                     <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span> </b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-appname.php" class="btn btn-sm btn-outline-primary">Edit</a> </span></td>
-                </tr>
-                <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Welcome Message</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Description</b> <span class="rbt-table-responsive-cell-content ">The message displayed to welcome and identify the logged-in user.</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Hello, {username} </span></td>
-                    <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content"> <a href="admin-settings-general-welcomemessage.php" class="btn btn-sm btn-outline-primary">Edit</a></span></td>
                 </tr>-->
+                    
                     <tr>
                         <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Default verification description <span class="ts-12 d-block"> Text to be displayed at the top of every verification.</span> </span></td>
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> On occasion, we require verification of your personal information. The item(s) presented on this … </span></td>
@@ -129,6 +124,13 @@ $page_title = 'General Settings';
                         <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> US/Eastern </span></td>
                         <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
                             <button class="btn btn-sm btn-outline-primary" id="showview11">Edit</button>
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Welcome Message <span class="ts-12 d-block"> The message displayed to welcome and identify the logged-in user.</span></span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Value</b> <span class="rbt-table-responsive-cell-content"> Hello, {username} </span></td>
+                        <td><b class="rbt-table-responsive-cell-label"> <span class="visible-xs"> Actions </span></b> <span class="rbt-table-responsive-cell-content">
+                            <button class="btn btn-sm btn-outline-primary" id="showview12">Edit</button>
                             </span></td>
                     </tr>
                 </tbody>
@@ -321,7 +323,7 @@ $page_title = 'General Settings';
                         <countdown>
                             <div class="rbt-charcount">
                                 <input aria-labelledby="defaulttargeturl" class="form-control " formcontrolname="title" id="defaulttargeturl">
-                                <span class="badge badge-success" id="defaulttargeturl_badge"> <span id="defaulttargeturl_counter">500</span> </span> </div>
+                                <span class="badge badge-success" id="defaulttargeturl_badge"> <span id="defaulttargeturl_counter">2000</span> </span> </div>
                         </countdown>
                     </div>
                     <hr>
@@ -1035,6 +1037,33 @@ $page_title = 'General Settings';
                 </div>
             </div>
         </div>
+        <div class="demojs-section" id="view12" style="display: none">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <h1 class="rbt-ts-23 rbt-ts-32-md-up"> Welcome message</h1>
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb rbt-breadcrumb-no-bkg">
+                            <li class="breadcrumb-item"><a href="admin-settings-general.php">General settings</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Welcome message</li>
+                        </ol>
+                    </nav>
+                    <div class="form-group">
+                        <label for="textinput-full" class="ts-26">Welcome message</label>
+                        <div class="int-fielddescription">The message displayed to welcome and identify the logged-in user.</div>
+                        <countdown>
+                            <div class="rbt-charcount">
+                                <input aria-labelledby="welcome_message" value="Hello, {0}" class="form-control " formcontrolname="title" id="welcome_message">
+                                <span class="badge badge-success" id="welcome_message_badge"> <span id="welcome_message_counter">20</span> </span> </div>
+                        </countdown>
+                    </div>
+                    <hr>
+                    <div class="rbt-button-group mt-3 mb-5">
+                        <button class="btn btn-primary demojs_showmainview"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
+                        <button class="btn btn-outline-primary demojs_cancelaction"> Cancel </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
@@ -1112,6 +1141,13 @@ $(document).ready(function() {
         $("#view11").show();
         $(".demojs_showmainview").prop('disabled', false);
     });
+    
+     $("#showview12").click(function() {
+
+        $("#view_main, .demojs-section").hide();
+        $("#view12").show();
+        $(".demojs_showmainview").prop('disabled', false);
+    });
 });
 </script> 
 <script>
@@ -1151,9 +1187,9 @@ $(document).ready(function() {
     $(document).ready(function() {
         $("#defaulttargeturl").keyup(function() {
             var length = $(this).val().length;
-            length = 500 - length;
+            length = 2000 - length;
             $('#defaulttargeturl_counter').text(length);
-            if ($("#defaulttargeturl").val().length > 500) {
+            if ($("#defaulttargeturl").val().length > 2000) {
                 $("#defaulttargeturl_badge").last().addClass("badge-danger");
             } else {
                 $("#defaulttargeturl_badge").last().removeClass("badge-danger");
@@ -1217,6 +1253,19 @@ $(document).ready(function() {
                 $("#error_message_badge").last().addClass("badge-danger");
             } else {
                 $("#error_message_badge").last().removeClass("badge-danger");
+            }
+        });
+        
+        
+        
+        $("#welcome_message").keyup(function() {
+            var length = $(this).val().length;
+            length = 20 - length;
+            $('#welcome_message_counter').text(length);
+            if ($("#welcome_message").val().length > 20) {
+                $("#welcome_message_badge").last().addClass("badge-danger");
+            } else {
+                $("#welcome_message_badge").last().removeClass("badge-danger");
             }
         });
     });

@@ -101,7 +101,11 @@ $page_title = 'Publishers';
                     <div class="int-fielddescription"> Tier 2 functional contact information. </div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input value="" class="form-control" id="fcLabel" type="text">
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="fcLabel" class="form-control" id="fcLabel">
+                                    <span class="badge badge-success" id="fcLabel_badge"> <span id="fcLabel_counter">100</span> </span> </div>
+                            </countdown>
                         </div>
                     </div>
                 </div>
@@ -110,7 +114,11 @@ $page_title = 'Publishers';
                     <div class="int-fielddescription"> Tier 2 technical contact information.</div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input value="" class="form-control" id="tcLabel" type="text">
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="tcLabel" class="form-control" id="tcLabel">
+                                    <span class="badge badge-success" id="tcLabel_badge"> <span id="tcLabel_counter">100</span> </span> </div>
+                            </countdown>
                         </div>
                     </div>
                 </div>
@@ -119,9 +127,8 @@ $page_title = 'Publishers';
                     <div class="int-fielddescription"> Description of the publisher. This is helpful for distinguishing publishers with similar names. </div>
                     <countdown>
                         <div class="rbt-charcount">
-                            <textarea class="form-control" id="descLabel" rows="5" id="pub_description">
-                            </textarea>
-                            <span class="badge badge-success" id="pub_description_badge"> <span id="pub_description_counter">200</span> </span> </div>
+                            <textarea class="form-control" rows="5" id="pub_description"></textarea>
+                            <span class="badge badge-success" id="pub_description_badge"> <span id="pub_description_counter">1000</span> </span> </div>
                     </countdown>
                 </div>
                 <div class="form-group">
@@ -133,7 +140,11 @@ $page_title = 'Publishers';
                     <div class="int-fielddescription"> The email address is used to send updates/information to the publisher.</div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input value="" class="form-control" id="emailLabel" type="text">
+                            <countdown>
+                                <div class="rbt-charcount">
+                                    <input aria-labelledby="emailLabel" class="form-control" id="emailLabel">
+                                    <span class="badge badge-success" id="emailLabel_badge"> <span id="emailLabel_counter">100</span> </span> </div>
+                            </countdown>
                         </div>
                     </div>
                 </div>
@@ -167,19 +178,55 @@ $page_title = 'Publishers';
     
             $("#pub_description").keyup(function() {
             var length = $(this).val().length;
-            length = 200 - length;
+            length = 1000 - length;
             $('#pub_description_counter').text(length);
-            if ($("#pub_description").val().length > 200) {
+            if ($("#pub_description").val().length > 1000) {
                 $("#pub_description_badge").last().addClass("badge-danger");
             } else {
                 $("#pub_description_badge").last().removeClass("badge-danger");
             }
         });
+        
+        
+        
+         $("#fcLabel").keyup(function() {
+            var length = $(this).val().length;
+            length = 100 - length;
+            $('#fcLabel_counter').text(length);
+            if ($("#fcLabel").val().length > 100) {
+                $("#fcLabel_badge").last().addClass("badge-danger");
+            } else {
+                $("#fcLabel_badge").last().removeClass("badge-danger");
+            }
+        });
+    
+    
+         $("#tcLabel").keyup(function() {
+            var length = $(this).val().length;
+            length = 100 - length;
+            $('#tcLabel_counter').text(length);
+            if ($("#tcLabel").val().length > 100) {
+                $("#tcLabel_badge").last().addClass("badge-danger");
+            } else {
+                $("#tcLabel_badge").last().removeClass("badge-danger");
+            }
+        });
+    
+        
+        $("#emailLabel").keyup(function() {
+            var length = $(this).val().length;
+            length = 100 - length;
+            $('#emailLabel_counter').text(length);
+            if ($("#emailLabel").val().length > 100) {
+                $("#emailLabel_badge").last().addClass("badge-danger");
+            } else {
+                $("#emailLabel_badge").last().removeClass("badge-danger");
+            }
+        });
     
     
     
-    
-    
+    //
 
     });
 </script> 

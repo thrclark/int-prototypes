@@ -208,7 +208,7 @@ $page_title = 'API Accounts';
                                                 <countdown>
                                                     <div class="rbt-charcount">
                                                         <input aria-labelledby="url1_name" class="form-control " formcontrolname="title" id="url1_name">
-                                                        <span class="badge badge-success" id="url1_name_badge"> <span id="url1_name_counter">20</span> </span> </div>
+                                                        <span class="badge badge-success" id="url1_name_badge"> <span id="url1_name_counter">100</span> </span> </div>
                                                 </countdown>
                                             </div>
                                         </div>
@@ -217,8 +217,12 @@ $page_title = 'API Accounts';
                                         <label for="url1_url">URL</label>
                                         <div class="int-fielddescription">External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
-                                            <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url1_url">
+                                            <div class="col-12 col-lg-6">
+                                                <countdown>
+                                                    <div class="rbt-charcount">
+                                                        <input aria-labelledby="url1_url" class="form-control " formcontrolname="title" id="url1_url">
+                                                        <span class="badge badge-success" id="url1_url_badge"> <span id="url1_url_counter">2000</span> </span> </div>
+                                                </countdown>
                                             </div>
                                         </div>
                                     </div>
@@ -249,7 +253,7 @@ $page_title = 'API Accounts';
                                         <div class="int-fielddescription">Amount of time to wait for a response from the external application in milliseconds.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url1_timeout">
+                                                <input type="number" class="form-control" id="url1_timeout">
                                             </div>
                                         </div>
                                     </div>
@@ -275,7 +279,7 @@ $page_title = 'API Accounts';
                                                 <countdown>
                                                     <div class="rbt-charcount">
                                                         <input aria-labelledby="url2_name" class="form-control " formcontrolname="title" id="url2_name">
-                                                        <span class="badge badge-success" id="url2_name_badge"> <span id="url2_name_counter">20</span> </span> </div>
+                                                        <span class="badge badge-success" id="url2_name_badge"> <span id="url2_name_counter">100</span> </span> </div>
                                                 </countdown>
                                             </div>
                                         </div>
@@ -284,8 +288,12 @@ $page_title = 'API Accounts';
                                         <label for="url2_url">URL</label>
                                         <div class="int-fielddescription">External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
-                                            <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url2_url">
+                                            <div class="col-12 col-lg-6">
+                                                <countdown>
+                                                    <div class="rbt-charcount">
+                                                        <input aria-labelledby="url2_url" class="form-control " formcontrolname="title" id="url2_url">
+                                                        <span class="badge badge-success" id="url2_url_badge"> <span id="url2_url_counter">2000</span> </span> </div>
+                                                </countdown>
                                             </div>
                                         </div>
                                     </div>
@@ -316,7 +324,7 @@ $page_title = 'API Accounts';
                                         <div class="int-fielddescription">Amount of time to wait for a response from the external application in milliseconds.</div>
                                         <div class="row">
                                             <div class="col-12 col-sm-8 col-md-6">
-                                                <input type="text" class="form-control" id="url2_timeout">
+                                                <input type="number" class="form-control" id="url2_timeout">
                                             </div>
                                         </div>
                                     </div>
@@ -446,19 +454,17 @@ $(function () {
 });
 </script> 
 <script>
-$(document).ready(function(){
-  $(".demojs_addapi").click(function(){
-    $(".demojs_listview").hide();
-    $(".demojs_newview").show();
-  });
-    
-     $(".demojs_showlistview").click(function(){
-    $(".demojs_listview").show();
-    $(".demojs_newview").hide();
-  });
-    
+    $(document).ready(function(){
+      $(".demojs_addapi").click(function(){
+        $(".demojs_listview").hide();
+        $(".demojs_newview").show();
+      });
 
-});
+         $(".demojs_showlistview").click(function(){
+        $(".demojs_listview").show();
+        $(".demojs_newview").hide();
+      });
+    });
 </script> 
 <script>
     $(document).ready(function() {
@@ -495,7 +501,6 @@ $(document).ready(function() {
             } else {
                 $('.demojs-publishers').hide();
             }
-          
         });
     });
 });
@@ -509,7 +514,6 @@ $(document).ready(function() {
             } else {
                 $('.demojs-basicauth').hide();
             }
-          
         });
     });
 });
@@ -547,7 +551,6 @@ $(document).ready(function() {
         $("#submitform").click(function() {
             $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
         });
-       
     });
 </script> 
 <script>
@@ -564,22 +567,42 @@ $(document).ready(function() {
         });
         $("#url1_name").keyup(function() {
             var length = $(this).val().length;
-            length = 20 - length;
+            length = 100 - length;
             $('#url1_name_counter').text(length);
-            if ($("#url1_name").val().length > 20) {
+            if ($("#url1_name").val().length > 100) {
                 $("#url1_name_badge").last().addClass("badge-danger");
             } else {
                 $("#url1_name_badge").last().removeClass("badge-danger");
             }
         });
+        $("#url1_url").keyup(function() {
+            var length = $(this).val().length;
+            length = 2000 - length;
+            $('#url1_url_counter').text(length);
+            if ($("#url1_url").val().length > 2000) {
+                $("#url1_url_badge").last().addClass("badge-danger");
+            } else {
+                $("#url1_url_badge").last().removeClass("badge-danger");
+            }
+        });
         $("#url2_name").keyup(function() {
             var length = $(this).val().length;
-            length = 20 - length;
+            length = 100 - length;
             $('#url2_name_counter').text(length);
-            if ($("#url2_name").val().length > 20) {
+            if ($("#url2_name").val().length > 100) {
                 $("#url2_name_badge").last().addClass("badge-danger");
             } else {
                 $("#url2_name_badge").last().removeClass("badge-danger");
+            }
+        });
+         $("#url2_url").keyup(function() {
+            var length = $(this).val().length;
+            length = 2000 - length;
+            $('#url2_url_counter').text(length);
+            if ($("#url2_url").val().length > 2000) {
+                $("#url2_url_badge").last().addClass("badge-danger");
+            } else {
+                $("#url2_url_badge").last().removeClass("badge-danger");
             }
         });
     });
