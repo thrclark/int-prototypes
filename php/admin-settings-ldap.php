@@ -42,29 +42,29 @@ $page_title = 'LDAP Configuration';
                 <div class="form-group">
                     <label class="control-label" for="ldap_url"> LDAP URL </label>
                     <div class="int-fielddescription"> URL to the LDAP server (example: ldap://ads.mydomain.edu). </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input value="" aria-labelledby="" class="form-control" id="ldap_url" type="text">
-                        </div>
-                    </div>
+                    <countdown>
+                        <div class="rbt-charcount">
+                            <input aria-labelledby="ldap_url" class="form-control " formcontrolname="title" id="ldap_url">
+                            <span class="badge badge-success" id="ldap_url_badge"> <span id="ldap_url_counter">2000</span> </span> </div>
+                    </countdown>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="ldap_base">Base </label>
                     <div class="int-fielddescription"> LDAP base information. (example: ou=myOu,dc=ads,dc=myDomain,dc=edu). </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input value="" aria-labelledby="" class="form-control" id="ldap_base" type="text">
-                        </div>
-                    </div>
+                    <countdown>
+                        <div class="rbt-charcount">
+                            <input aria-labelledby="ldap_base" class="form-control " formcontrolname="title" id="ldap_base">
+                            <span class="badge badge-success" id="ldap_base_badge"> <span id="ldap_base_counter">200</span> </span> </div>
+                    </countdown>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="ldap_username">User name </label>
                     <div class="int-fielddescription"> LDAP account user name. (example: cn=myUser,ou=myOu,dc=ads,dc=myDomain,dc=edu). </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <input value="" aria-labelledby="" class="form-control" id="ldap_username" type="text">
-                        </div>
-                    </div>
+                    <countdown>
+                        <div class="rbt-charcount">
+                            <input aria-labelledby="ldap_username" class="form-control " formcontrolname="title" id="ldap_username">
+                            <span class="badge badge-success" id="ldap_username_badge"> <span id="ldap_username_counter">200</span> </span> </div>
+                    </countdown>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="ldap_password">Password </label>
@@ -93,6 +93,40 @@ $page_title = 'LDAP Configuration';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+    $(document).ready(function() {
+        $("#ldap_url").keyup(function() {
+            var length = $(this).val().length;
+            length = 2000 - length;
+            $('#ldap_url_counter').text(length);
+            if ($("#ldap_url").val().length > 2000) {
+                $("#ldap_url_badge").last().addClass("badge-danger");
+            } else {
+                $("#ldap_url_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#ldap_base").keyup(function() {
+            var length = $(this).val().length;
+            length = 200 - length;
+            $('#ldap_base_counter').text(length);
+            if ($("#ldap_base").val().length > 200) {
+                $("#ldap_base_badge").last().addClass("badge-danger");
+            } else {
+                $("#ldap_base_badge").last().removeClass("badge-danger");
+            }
+        });
+        $("#ldap_username").keyup(function() {
+            var length = $(this).val().length;
+            length = 200 - length;
+            $('#ldap_username_counter').text(length);
+            if ($("#ldap_username").val().length > 200) {
+                $("#ldap_username_badge").last().addClass("badge-danger");
+            } else {
+                $("#ldap_username_badge").last().removeClass("badge-danger");
+            }
+        });
+    });
+</script> 
 <script>
 	$(document).ready(function() {
      $('#submitform').prop('disabled', true);

@@ -8,7 +8,6 @@ $page_subtitle = 'Data';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-admin.php') ?>
-
 </head>
 <body class="int-admin">
 <?php include('includes/admin-navigation.php') ?>
@@ -166,9 +165,13 @@ $page_subtitle = 'Data';
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api1_nameLabel">URL </label>
+                                                    <label class="control-label" for="api1_url">URL </label>
                                                     <div class="int-fielddescription"> URL to the external application that allows action to be taken.</div>
-                                                    <input id="api1_nameLabel" aria-labelledby="api1_nameLabel"  class="form-control" type="text">
+                                                    <countdown>
+                                                        <div class="rbt-charcount">
+                                                            <input aria-labelledby="api1_url" class="form-control " formcontrolname="title" id="api1_url">
+                                                            <span class="badge badge-success" id="api1_url_badge"> <span id="api1_url_counter">2000</span> </span> </div>
+                                                    </countdown>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api1_buttonlable"> Button label </label>
@@ -241,12 +244,13 @@ $page_subtitle = 'Data';
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api2_nameLabel">URL </label>
+                                                    <label class="control-label" for="api2_url">URL </label>
                                                     <div class="int-fielddescription"> URL to the external application that allows action to be taken.</div>
-                                                    <input id="api2_nameLabel" aria-labelledby="api2_nameLabel"  class="form-control" type="text">
-                                                    <div class="alert alert-inline alert-danger mb-2" role="alert">
-                                                        <p class="rbt-ts-14"> This field is required.</p>
-                                                    </div>
+                                                    <countdown>
+                                                        <div class="rbt-charcount">
+                                                            <input aria-labelledby="api2_url" class="form-control " formcontrolname="title" id="api2_url">
+                                                            <span class="badge badge-success" id="api2_url_badge"> <span id="api2_url_counter">2000</span> </span> </div>
+                                                    </countdown>
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="control-label" for="api2_buttonlable"> Button label </label>
@@ -487,8 +491,40 @@ $(document).ready(function() {
             $("#api2_buttonlable_badge").last().removeClass("badge-danger");
         }
     });
+     
+    
+    $("#api1_url").keyup(function() {
+        var length = $(this).val().length;
+        length = 2000 - length;
+        $('#api1_url_counter').text(length);
+        if ($("#api1_url").val().length > 2000) {
+            $("api1_url_badge").last().addClass("badge-danger");
+        } else {
+            $("#api1_url_badge").last().removeClass("badge-danger");
+        }
+    });
+    
+    
+    
+       
+    $("#api2_url").keyup(function() {
+        var length = $(this).val().length;
+        length = 2000 - length;
+        $('#api2_url_counter').text(length);
+        if ($("#api2_url").val().length > 2000) {
+            $("api2_url_badge").last().addClass("badge-danger");
+        } else {
+            $("#api2_url_badge").last().removeClass("badge-danger");
+        }
+    });
+    
+    
+    
+    
+    
+    //api1_url
 });
-</script>
+</script> 
 <script>
      $(window).resize(function(){location.reload();});
 </script>
