@@ -512,7 +512,7 @@ $page_title = 'CampusConfirm';
                                     <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_headerfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
                                 </div>
                             </div>
-                            <div class="card demojs-customheaderfont" style="display: none">
+                            <div class="card demojs-customheaderfont mb-3" style="display: none">
                                 <ul class="int-fontlinks list-group list-group-flush rbt-list-group-compact">
                                     <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.eot</code> </li>
                                     <li class="list-group-item"><code>https://fonts.iu.edu/fonts/benton-sans-regular.woff</code> </li>
