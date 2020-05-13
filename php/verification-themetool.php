@@ -11,6 +11,10 @@ $page_title = 'CampusConfirm';
 .highlight-object {
     outline-style: dotted;
     outline-offset: 4px;
+    outline-color: #000000;
+}
+.invisible {
+    visibility: hidden;
 }
 .demojs_validation {
     display: none !important;
@@ -714,6 +718,7 @@ $page_title = 'CampusConfirm';
             </div>
         </div>
         <div class="rbt-shell-stage p-3">
+            <div class="container highlight-object h-100" style="display: none" id="showmargin"></div>
             <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                 <alert dismissible="true">
                     <div role="alert" class="alert alert-success alert-dismissible mb-3">
@@ -734,7 +739,7 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
             </header>
-            <main class="container p-0">
+            <main class="container p-0" id="wysiwyg_demo">
                 <section>
                     <div class="card">
                         <div class="card-body"> 
@@ -803,59 +808,41 @@ $page_title = 'CampusConfirm';
     $(document).ready(function() {
 
         $(".demojs_show_theme_colors").click(function(){
-          $(".newsidebar-nav, [id^=theme_]").hide();
+          $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_colors").show();
         });
-        
-        
         $(".demojs_show_theme_name").click(function(){
-          $(".newsidebar-nav, [id^=theme_]").hide();
+          $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_name").show();
         });
-        
          $(".demojs_show_theme_applogo").click(function(){
-          $(".newsidebar-nav, [id^=theme_]").hide();
+          $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_applogo").show();
         });
-        
-        
          $(".demojs_show_theme_appicons").click(function(){
-           $(".newsidebar-nav, [id^=theme_]").hide();
+           $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_appicons").show();
         });
-        
-        
-          
          $(".demojs_show_theme_customheadfoot").click(function(){
-           $(".newsidebar-nav, [id^=theme_]").hide();
+           $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_customheadfoot").show();
         });
-        
-            
          $(".demojs_show_theme_fontfamily").click(function(){
-           $(".newsidebar-nav, [id^=theme_]").hide();
+           $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_fontfamily").show();
         });
-             
          $(".demojs_show_theme_fontsize").click(function(){
-           $(".newsidebar-nav, [id^=theme_]").hide();
+           $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_fontsize").show();
         });
-        
-        
           $(".demojs_show_theme_marginradius").click(function(){
-           $(".newsidebar-nav, [id^=theme_]").hide();
+           $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_marginradius").show();
         });
-        
-        
          $(".demojs_backtothemenav").click(function(){
           $("#theme_nav, .newsidebar-nav").show();
           $("#theme_colors, #theme_name, #theme_applogo, #theme_appicons, #theme_customheadfoot, #theme_fontfamily, #theme_fontsize, #theme_marginradius").hide();
         });
-        
-        
-        //
     });
 </script> 
 <script type = "text/javascript" language = "javascript">
@@ -918,10 +905,10 @@ $page_title = 'CampusConfirm';
         );
         $('#font_body, #fontsize_body, #show_fontsize_body_value').hover(
             function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
+                $(".rbt-shell-stage p, .rbt-shell-stage dl, #verifystatement, #deferstatement").addClass("highlight-object");
             },
             function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
+                $(".rbt-shell-stage p, .rbt-shell-stage dl, #verifystatement, #deferstatement").removeClass("highlight-object");
             }
         );
         $('#fontsize_verifyblock, #show_fontsize_verifyblock_value').hover(
@@ -930,6 +917,24 @@ $page_title = 'CampusConfirm';
             },
             function() {
                 $("#deferstatement, #verifystatement").removeClass("highlight-object");
+            }
+        );
+         $('#theme_border_radius').hover(
+            function() {
+                $(".rbt-shell-stage .btn, .rbt-shell-stage .list-group-item, .rbt-shell-stage .card").addClass("highlight-object");
+            },
+            function() {
+                 $(".rbt-shell-stage .btn, .rbt-shell-stage .list-group-item, .rbt-shell-stage .card").removeClass("highlight-object");
+            }
+        );
+         $('#theme_page_margin').hover(
+            function() {
+                $("header, #wysiwyg_demo, #footer_html_display").hide();
+                $("#showmargin").show();
+            },
+            function() {
+                 $("header, #wysiwyg_demo, #footer_html_display").show();
+                $("#showmargin").hide();
             }
         );
     });
