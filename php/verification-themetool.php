@@ -532,7 +532,10 @@ $page_title = 'CampusConfirm';
                                 </ul>
                             </div>
                             <div class="form-group">
-                                <label for="font_body">Body font face</label>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="font_body">Body font face</label>
+                                    <button class="btn btn-sm btn-link ts-12 font-italic font-weight-normal p-1 mb-2">Same as header</button>
+                                </div>
                                 <select class="form-control mb-3" id="font_body">
                                     <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
