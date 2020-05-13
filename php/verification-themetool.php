@@ -422,18 +422,30 @@ $page_title = 'CampusConfirm';
                         <div class="card-body">
                             <div class="form-group mb-3">
                                 <label for="header_html">Header HTML</label>
-                                <textarea class="form-control" id="header_html" rows="5" oninput='headerhtml_set();headerhtml_store();'></textarea>
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="header_html" id="header_html" rows="5" oninput='headerhtml_set();headerhtml_store();'></textarea>
+                                    <div class="input-group-append"> <span class="input-group-text p-0">
+                                        <button class="btn btn-link btn-sm d-block w-100 h-100" ><span class="rbt-icon-sync"></span><span class="sr-only">Edit</span></button>
+                                        </span> </div>
+                                </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="footer_html">Footer HTML</label>
-                                <textarea class="form-control" id="footer_html" rows="5" oninput='footerhtml_set();footerhtml_store();'></textarea>
-                                <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
-                                    <p class="rbt-ts-14" id="standalone4"> Character count exceeds the maximum allowed limit.</p>
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="header_html" id="footer_html" rows="5" oninput='footerhtml_set();footerhtml_store();'></textarea>
+                                    <div class="input-group-append"> <span class="input-group-text p-0">
+                                        <button class="btn btn-link btn-sm d-block w-100 h-100" ><span class="rbt-icon-sync"></span><span class="sr-only">Edit</span></button>
+                                        </span> </div>
                                 </div>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="headerfooter_css">Header/footer CSS</label>
-                                <textarea class="form-control" id="headerfooter_css" rows="5"></textarea>
+                                <div class="input-group">
+                                    <textarea class="form-control" id="headerfooter_css" rows="5"></textarea>
+                                    <div class="input-group-append"> <span class="input-group-text p-0">
+                                        <button class="btn btn-link btn-sm d-block w-100 h-100" ><span class="rbt-icon-sync"></span><span class="sr-only">Edit</span></button>
+                                        </span> </div>
+                                </div>
                             </div>
                         </div>
                     </div>
