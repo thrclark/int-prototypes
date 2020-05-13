@@ -2,10 +2,14 @@
 <style>
 .demo-theme-builder input[type="color"] {
     -webkit-appearance: none;
-s border: 1px solid black;
+    border: 1px solid #666666;
     width: 3rem;
     flex: inherit;
     outline: 0;
+}
+.colorpick .input-group-append input {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
 }
 .demo-theme-builder input[type="color"]::-webkit-color-swatch-wrapper {
 padding: 0;
