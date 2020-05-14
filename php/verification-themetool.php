@@ -710,7 +710,7 @@ $page_title = 'CampusConfirm';
                         <div> </div>
                     </div>
                 </div>
-                <div class="form-row newsidebar-nav mt-5">
+                <div class="form-row mt-5">
                     <div class="col-12">
                         <button type="button" class="btn btn-primary btn-block demojs-savetheme" id="savetheme" disabled> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Publish theme</span> </button>
                     </div>
@@ -730,7 +730,7 @@ $page_title = 'CampusConfirm';
             <header class="container p-0 mt-7 mb-3">
                 <div class="d-flex align-content-center"> <img alt="" class="int-brand-image">
                     <div class="d-flex flex-column align-self-center int-lockup-group text-nowrap">
-                        <div class="int-lockup-org" id="org-name-display">XYZ Institution</div>
+                        <div class="int-lockup-org" id="org-name-display"></div>
                         <h1 class="int-lockup-pagetitle" id="app-name-display"><?php echo $page_title; ?></h1>
                     </div>
                     <div class="w-100"></div>
@@ -905,10 +905,10 @@ $page_title = 'CampusConfirm';
         );
         $('#font_body, #fontsize_body, #show_fontsize_body_value').hover(
             function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl, #verifystatement, #deferstatement").addClass("highlight-object");
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
             },
             function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl, #verifystatement, #deferstatement").removeClass("highlight-object");
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
             }
         );
         $('#fontsize_verifyblock, #show_fontsize_verifyblock_value').hover(
