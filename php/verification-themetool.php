@@ -8,10 +8,17 @@ $page_title = 'CampusConfirm';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 <style>
-.highlight-object {
+.outline-object {
     outline-style: dotted;
     outline-offset: 4px;
     outline-color: #000000;
+}
+.outline-object-sides {
+    border-style: dotted;
+    border-color: #000000;
+    border-width: 4px;
+    border-top: none;
+    border-bottom: none;
 }
 .invisible {
     visibility: hidden;
@@ -717,8 +724,7 @@ $page_title = 'CampusConfirm';
                 </div>
             </div>
         </div>
-        <div class="rbt-shell-stage p-3">
-            <div class="container highlight-object h-100" style="display: none" id="showmargin"></div>
+        <div class="rbt-shell-stage p-3"> 
             <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                 <alert dismissible="true">
                     <div role="alert" class="alert alert-success alert-dismissible mb-3">
@@ -726,8 +732,8 @@ $page_title = 'CampusConfirm';
                         <span>Save successful.</span> </div>
                 </alert>
             </growls>
-            <div class="container p-0" id="header_html_display"></div>
-            <header class="container p-0 mt-7 mb-3">
+            <div class="container p-0 demojs_wrapthis" id="header_html_display"></div>
+            <header class="container p-0 mt-7 mb-3 demojs_wrapthis">
                 <div class="d-flex align-content-center"> <img alt="" class="int-brand-image">
                     <div class="d-flex flex-column align-self-center int-lockup-group text-nowrap">
                         <div class="int-lockup-org" id="org-name-display"></div>
@@ -739,7 +745,7 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
             </header>
-            <main class="container p-0" id="wysiwyg_demo">
+            <main class="container p-0 demojs_wrapthis" id="wysiwyg_demo">
                 <section>
                     <div class="card">
                         <div class="card-body"> 
@@ -806,7 +812,6 @@ $page_title = 'CampusConfirm';
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {
-
         $(".demojs_show_theme_colors").click(function(){
           $(".newsidebar-nav, .newsidebar-section").hide();
           $("#theme_colors").show();
@@ -849,92 +854,90 @@ $page_title = 'CampusConfirm';
     $(document).ready(function() {
         $('#org-name, #fontsize_orgname, #show_fontsize_orgname_value').hover(
             function() {
-                $(".int-lockup-org").addClass("highlight-object");
+                $(".int-lockup-org").addClass("outline-object");
             },
             function() {
-                $(".int-lockup-org").removeClass("highlight-object");
+                $(".int-lockup-org").removeClass("outline-object");
             }
         );
         $('#app-name, #fontsize_appname, #show_fontsize_appname_value').hover(
             function() {
-                $(".int-lockup-pagetitle").addClass("highlight-object");
+                $(".int-lockup-pagetitle").addClass("outline-object");
             },
             function() {
-                $(".int-lockup-pagetitle").removeClass("highlight-object");
+                $(".int-lockup-pagetitle").removeClass("outline-object");
             }
         );
         $('#chooselogoimage').hover(
             function() {
-                $(".int-brand-image").addClass("highlight-object");
+                $(".int-brand-image").addClass("outline-object");
             },
             function() {
-                $(".int-brand-image").removeClass("highlight-object");
+                $(".int-brand-image").removeClass("outline-object");
             }
         );
         $('#header_html').hover(
             function() {
-                $("#header_html_display").addClass("highlight-object");
+                $("#header_html_display").addClass("outline-object");
             },
             function() {
-                $("#header_html_display").removeClass("highlight-object");
+                $("#header_html_display").removeClass("outline-object");
             }
         );
         $('#footer_html').hover(
             function() {
-                $("#footer_html_display").addClass("highlight-object");
+                $("#footer_html_display").addClass("outline-object");
             },
             function() {
-                $("#footer_html_display").removeClass("highlight-object");
+                $("#footer_html_display").removeClass("outline-object");
             }
         );
         $('#font_header').hover(
             function() {
-                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("highlight-object");
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").addClass("outline-object");
             },
             function() {
-                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("highlight-object");
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3, .int-lockup-group").removeClass("outline-object");
             }
         );
         $('#fontsize_header, #show_fontsize_header_value').hover(
             function() {
-                $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("highlight-object");
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").addClass("outline-object");
             },
             function() {
-                $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("highlight-object");
+                $(".rbt-shell-stage h2, .rbt-shell-stage h3").removeClass("outline-object");
             }
         );
         $('#font_body, #fontsize_body, #show_fontsize_body_value').hover(
             function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("highlight-object");
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").addClass("outline-object");
             },
             function() {
-                $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("highlight-object");
+                $(".rbt-shell-stage p, .rbt-shell-stage dl").removeClass("outline-object");
             }
         );
         $('#fontsize_verifyblock, #show_fontsize_verifyblock_value').hover(
             function() {
-                $("#deferstatement, #verifystatement").addClass("highlight-object");
+                $("#deferstatement, #verifystatement").addClass("outline-object");
             },
             function() {
-                $("#deferstatement, #verifystatement").removeClass("highlight-object");
+                $("#deferstatement, #verifystatement").removeClass("outline-object");
             }
         );
          $('#theme_border_radius').hover(
             function() {
-                $(".rbt-shell-stage .btn, .rbt-shell-stage .list-group-item, .rbt-shell-stage .card").addClass("highlight-object");
+                $(".rbt-shell-stage .btn, .rbt-shell-stage .list-group-item, .rbt-shell-stage .card").addClass("outline-object");
             },
             function() {
-                 $(".rbt-shell-stage .btn, .rbt-shell-stage .list-group-item, .rbt-shell-stage .card").removeClass("highlight-object");
+                 $(".rbt-shell-stage .btn, .rbt-shell-stage .list-group-item, .rbt-shell-stage .card").removeClass("outline-object");
             }
         );
          $('#theme_page_margin').hover(
             function() {
-                $("header, #wysiwyg_demo, #footer_html_display").hide();
-                $("#showmargin").show();
+               $( ".demojs_wrapthis" ).wrapAll( "<div class='container outline-object-sides p-0'></div>" );
             },
             function() {
-                 $("header, #wysiwyg_demo, #footer_html_display").show();
-                $("#showmargin").hide();
+                 $( ".demojs_wrapthis" ).unwrap();
             }
         );
     });
@@ -1062,9 +1065,6 @@ $page_title = 'CampusConfirm';
         $('#show_fontsize_verifyblock_value').on('input', function() {
             $('#fontsize_verifyblock').val($(this).val())
         });
-        
-        
-        
         $('#fontsize_header').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_header_value").val(newVal);
@@ -1073,8 +1073,6 @@ $page_title = 'CampusConfirm';
         $('#show_fontsize_header_value').on('input', function() {
             $('#fontsize_header').val($(this).val())
         });
-        
-        
         $('#fontsize_appname').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_appname_value").val(newVal);
@@ -1083,9 +1081,6 @@ $page_title = 'CampusConfirm';
         $('#show_fontsize_appname_value').on('input', function() {
             $('#fontsize_appname').val($(this).val())
         });
-        
-        
-         
         $('#fontsize_orgname').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_orgname_value").val(newVal);
@@ -1094,12 +1089,6 @@ $page_title = 'CampusConfirm';
         $('#show_fontsize_orgname_value').on('input', function() {
             $('#fontsize_orgname').val($(this).val())
         });
-        
-        
-        
-        
-        
-        
     });
 </script> 
 <script>
