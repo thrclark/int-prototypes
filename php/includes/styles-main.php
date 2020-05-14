@@ -1,5 +1,28 @@
 <link href="../css/main.css" rel="stylesheet" type="text/css">
 <style>
+    
+:root {
+--logoimage-visibility: block;
+--lockup-visibility: block;
+--logoimage-url: url('../img/logo-red.png');
+--body-bg-color: #eaeaea;
+--body-text-color: #444444;
+--panel-bg-color: #ffffff;
+--panel-text-color: #444444;
+--action-color: #006298;
+--border-color: #dddddd;
+--font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+--font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;                    ;
+--fontsize_orgname: .875rem;
+--fontsize_appname: 1.625rem;
+--fontsize_header: 2rem;
+--fontsize_body: 1rem;
+--fontsize_verifyblock: 1.25rem;
+--theme_border_radius: 0.25rem;
+--theme_page_margin: 880px;
+--mstile-bg-color: #ff0000;
+}
+    
 .demo-theme-builder input[type="color"] {
     -webkit-appearance: none;
     border: 1px solid #666666;
@@ -49,21 +72,7 @@ border: none;
 }
 </style>
 <style>
-:root {
---body-bg-color: #ffffff;
---body-font-color: #444444;
---font-stack: Cambria, Georgia, "Times New Roman", serif;
---headerfooter-bg-color: #fafafa;
---headerfooter-text-color: #444444;
---footer-link-color: #900000;
---logo-image-visibility: block;
---logo-image-url: url("http://www.indiana.edu/~espd/rvb/develop/img/trident-large.png");
---footer-logo-image-visibility: block;
---footer-logo-image-url: url("http://www.indiana.edu/~espd/rvb/develop/img/trident-small.png");
---application-name: none;
---base-font-size: 16px;
---base-line-height: 1.5;
-}
+
 body {
     background-color: var(--body-bg-color);
     color: var(--body-font-color);
