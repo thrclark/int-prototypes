@@ -21,7 +21,6 @@
 --theme_page_margin: 880px;
 --mstile-bg-color: #ff0000;
 }
-
 </style>
 
 <style type="text/css">
