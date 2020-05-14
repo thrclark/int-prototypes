@@ -1,8 +1,25 @@
 <link href="../css/admin.css" rel="stylesheet" type="text/css">
 <style>
 :root {
- --body-bg-color: #EAEAEA;
- --logo-image-url: url("http://www.indiana.edu/~espd/int/img/trident-large.png");
+--logoimage-visibility: block;
+--lockup-visibility: block;
+--logo-image-url: url('https://espd.sitehost.iu.edu/int/img/trident-large.png');
+--body-bg-color: #eaeaea;
+--body-text-color: #444444;
+--panel-bg-color: #ffffff;
+--panel-text-color: #444444;
+--action-color: #006298;
+--border-color: #dddddd;
+--font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
+--font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;                    ;
+--fontsize_orgname: .875rem;
+--fontsize_appname: 1.625rem;
+--fontsize_header: 2rem;
+--fontsize_body: 1rem;
+--fontsize_verifyblock: 1.25rem;
+--theme_border_radius: 0.25rem;
+--theme_page_margin: 880px;
+--mstile-bg-color: #ff0000;
 }
 
 </style>
