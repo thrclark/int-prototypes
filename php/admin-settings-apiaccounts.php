@@ -393,7 +393,7 @@ $page_title = 'API Accounts';
                     <label class="control-label" for="auth_type">Authentication Type</label>
                     <div class="int-fielddescription">The authentication type to use when logging into the application.</div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-6">
                             <select aria-labelledby="" class="form-control" aria-invalid="false" id="auth_type">
                                 <option label="" value="" selected="selected">Select</option>
                                 <option label="" value="basic_auth">Basic authentication</option>
@@ -402,29 +402,34 @@ $page_title = 'API Accounts';
                     </div>
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
-                    <label class="control-label" id="username"> User name </label>
-                    <div class="int-fielddescription"> Used for identification of the account. </div>
+                    <label class="control-label" id="username"> Client ID </label>
+                    <div class="int-fielddescription"> A unique identifier for this account. </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <input value="" aria-labelledby="" class="form-control" id="username" type="text">
+                        <div class="col-12 col-md-8">
+                            <input value="b038637f3cfe804736bc" aria-labelledby="" class="form-control" id="username" type="text" disabled>
                         </div>
                     </div>
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
-                    <label class="control-label" id="password"> Password </label>
-                    <div class="int-fielddescription"> Used for identification of the account. </div>
+                    <label class="control-label" id="password"> Client Secret </label>
+                    <div class="int-fielddescription"> The account secret (password). This will not be displayed again and cannot be retrieved after saving the account. Be sure to copy it to a secure location. </div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <input value="" aria-labelledby="" class="form-control" id="password" type="password">
+                        <div class="col-12 col-md-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="8EcBh5z6-iVQNCFklsI_VXg-fhMkELldb4ikBQiIwqM" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
-                    <label class="control-label" id="confirmpassword"> Confirm password </label>
-                    <div class="int-fielddescription"> Confirm the password. Passwords must match.</div>
+                    <label class="control-label" id="confirmpassword"> Expiration Date </label>
+                    <div class="int-fielddescription"> The account will expire 2 years from when created.</div>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <input value="" aria-labelledby="" class="form-control" id="confirmpassword" type="password">
+                        <div class="col-12 col-md-4">
+                            <input value="05/15/2022" aria-labelledby="" class="form-control" id="confirmpassword" type="text" disabled>
                         </div>
                     </div>
                 </div>
@@ -437,6 +442,18 @@ $page_title = 'API Accounts';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+<script type="text/javascript">
+     $(document).ready(function() {
+        $(function() {
+            $("#copypaste").click(function() {
+                $(".tooltip-inner").text("Copied!");
+                setTimeout(function() {
+                    $(".tooltip-inner").text("Copy");
+                }, 4000)
+            });
+        });
+    });
+</script>
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
