@@ -322,7 +322,13 @@ $page_title = 'CampusConfirm';
                                             </div>
                                         </div>
                                     </image-upload>
-                                    <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                    <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/favicon.ico" class="">
+                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                            <message key="global.buttons.delete">Delete</message>
+                                            </span> </button>
+                                        </div>
+                                    </div>
                                     <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                         <p class="rbt-ts-14" id="standalone4"> File must be an .ico format.</p>
                                     </div>
@@ -341,7 +347,13 @@ $page_title = 'CampusConfirm';
                                             </div>
                                         </div>
                                     </image-upload>
-                                    <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                    <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-196x196.png" class="">
+                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                            <message key="global.buttons.delete">Delete</message>
+                                            </span> </button>
+                                        </div>
+                                    </div>
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group">
@@ -357,7 +369,13 @@ $page_title = 'CampusConfirm';
                                             </div>
                                         </div>
                                     </image-upload>
-                                    <div class="img-preview" draggable="false" style="cursor: pointer;"> </div>
+                                    <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-180x180.png" class="">
+                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                            <message key="global.buttons.delete">Delete</message>
+                                            </span> </button>
+                                        </div>
+                                    </div>
                                 </ccf-image-upload>
                             </div>
                             <div class="form-group">
@@ -374,7 +392,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://via.placeholder.com/310x310" class="">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x310.png" class="">
                                             <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
                                             <message key="global.buttons.delete">Delete</message>
                                             </span> </button>
@@ -396,7 +414,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="http://via.placeholder.com/310x150" class="">
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x150.png" class="">
                                             <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
                                             <message key="global.buttons.delete">Delete</message>
                                             </span> </button>
@@ -724,7 +742,7 @@ $page_title = 'CampusConfirm';
                 </div>
             </div>
         </div>
-        <div class="rbt-shell-stage p-3"> 
+        <div class="rbt-shell-stage p-3">
             <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                 <alert dismissible="true">
                     <div role="alert" class="alert alert-success alert-dismissible mb-3">
