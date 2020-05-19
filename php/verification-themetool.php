@@ -105,7 +105,7 @@ $page_title = 'CampusConfirm';
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-bg-color" value="#444444">
                                     <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-bg-color-hexcolor">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="#eaeaea" id="body-bg-color-hexcolor">
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@ $page_title = 'CampusConfirm';
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="body-text-color" value="#444444">
                                     <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="body-text-color-hexcolor">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="#444444" id="body-text-color-hexcolor">
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@ $page_title = 'CampusConfirm';
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-bg-color" value="#444444">
                                     <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-bg-color-hexcolor">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="#ffffff" id="panel-bg-color-hexcolor">
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@ $page_title = 'CampusConfirm';
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="panel-text-color" value="#444444">
                                     <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="panel-text-color-hexcolor">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="#444444" id="panel-text-color-hexcolor">
                                     </div>
                                     <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                         <p class="rbt-ts-14" id="standalone4"> Please provide a valid hex value for this color (e.g. #990000).</p>
@@ -144,7 +144,7 @@ $page_title = 'CampusConfirm';
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="action-color" value="#444444">
                                     <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="action-color-hexcolor">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="#016198" id="action-color-hexcolor">
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@ $page_title = 'CampusConfirm';
                                 <div class="input-group">
                                     <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="border-color" value="#444444">
                                     <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="border-color-hexcolor">
+                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="#dddddd" id="border-color-hexcolor">
                                     </div>
                                 </div>
                             </div>
