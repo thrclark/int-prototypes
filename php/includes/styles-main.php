@@ -103,3 +103,24 @@ html body .rbt-footer img {
     display: var(--footer-logo-image-visibility);
 }
 </style>
+
+
+
+
+
+
+
+ <style>
+    @media all and (-ms-high-contrast:none)
+     {
+     .btn { color: green } /* IE10 */
+     *::-ms-backdrop, .btn { color: red } /* IE11 */
+     }
+  </style>
+
+
+
+
+
+
+
