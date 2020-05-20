@@ -1,6 +1,5 @@
 <link href="../css/main.css" rel="stylesheet" type="text/css">
 <style>
-    
 :root {
 --logoimage-visibility: block;
 --lockup-visibility: block;
@@ -12,7 +11,7 @@
 --action-color: #006298;
 --border-color: #dddddd;
 --font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
---font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;                    ;
+--font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;;
 --fontsize_orgname: .875rem;
 --fontsize_appname: 1.625rem;
 --fontsize_header: 2rem;
@@ -22,7 +21,6 @@
 --theme_page_margin: 880px;
 --mstile-bg-color: #ff0000;
 }
-    
 .demo-theme-builder input[type="color"] {
     -webkit-appearance: none;
     border: 1px solid #666666;
@@ -72,7 +70,6 @@ border: none;
 }
 </style>
 <style>
-
 body {
     background-color: var(--body-bg-color);
     color: var(--body-font-color);
@@ -103,24 +100,12 @@ html body .rbt-footer img {
     display: var(--footer-logo-image-visibility);
 }
 </style>
-
-
-
-
-
-
-
- <style>
-    @media all and (-ms-high-contrast:none)
-     {
-     .btn { color: green } /* IE10 */
-     *::-ms-backdrop, .btn { color: red } /* IE11 */
-     }
-  </style>
-
-
-
-
-
-
+<style>
+@media all and (-ms-high-contrast:none) {
+*::-ms-backdrop, .btn {
+color: purple;
+    padding-top: 20px;
+} /* IE11 */
+}
+</style>
 
