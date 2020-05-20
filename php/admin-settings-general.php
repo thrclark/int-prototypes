@@ -1067,10 +1067,22 @@ $page_title = 'General Settingsxxx';
     </main>
     
     
-    <custom-footer class="mt-auto" ccc1=""><div class="container p-0"> 
+
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+    
+    
+        <custom-footer class="mt-auto" ccc1=""><div class="container p-0"> 
  <div class="pt-3 pb-7 ts-12 text-center"> 
   <a class="text-dark iecp-u7" href="https://www.iu.edu/copyright/index.html" target="_blank" rel="nofollow" iecp-needed="true">Copyright</a> © 2020 The Trustees of 
-  <a class="text-dark iecp-u8" href="https://www.iu.edu/" target="_blank" rel="nofollow" iecp-needed="true">Indiana University</a>. 
+  <a class="text-dark iecp-u8" href="https://www.iu.edu/" target="_blank" rel="nofollow" iecp-needed="true">Indiana Universityyyy</a>. 
  </div> 
 </div></custom-footer>
     
@@ -1078,7 +1090,7 @@ $page_title = 'General Settingsxxx';
     
     
     
-</div>
+    
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     var easyMDE = new EasyMDE({
