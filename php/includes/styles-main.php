@@ -110,7 +110,6 @@ html body .rbt-footer img {
     }
     *::-ms-backdrop, .mt-auto {
     margin-top: 70px !important;
-        background: green;
     }
 }
 </style>
