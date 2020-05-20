@@ -102,10 +102,10 @@ html body .rbt-footer img {
 </style>
 <style>
 @media all and (-ms-high-contrast:none) {
-*::-ms-backdrop, .btn.btn-sm {
-color: green;
-    padding-top: 20px;
-} /* IE11 */
+    *::-ms-backdrop, .btn {
+    color: blue;
+    padding-top: 3px;
+    }
 }
 </style>
 
