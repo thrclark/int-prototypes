@@ -103,11 +103,9 @@ html body .rbt-footer img {
 <style>
 @media all and (-ms-high-contrast:none) {
     *::-ms-backdrop, .btn {
-    color: red;
-    padding-top: 20px;
+    padding-top: 12px;
     }
     *::-ms-backdrop, .btn.btn-sm {
-    color: yellow;
     padding-top: 3px;
     }
 }
