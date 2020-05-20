@@ -31,7 +31,8 @@ $page_title = 'CampusConfirm';
 }
 </style>
 </head>
-<body class="int-user">
+<body>
+<?php include('includes/admin-navigation.php') ?>
 <main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
@@ -888,10 +889,10 @@ $page_title = 'CampusConfirm';
         );
         $('#chooselogoimage').hover(
             function() {
-                $(".int-brand-image").addClass("outline-object");
+                $(".rbt-shell-stage .int-brand-image").addClass("outline-object");
             },
             function() {
-                $(".int-brand-image").removeClass("outline-object");
+                $(".rbt-shell-stage .int-brand-image").removeClass("outline-object");
             }
         );
         $('#header_html').hover(

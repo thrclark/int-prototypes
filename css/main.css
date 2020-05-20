@@ -12709,8 +12709,272 @@ button[aria-expanded="true"] .rbt-icon-chevron-right:before {
   color: #aaa;
   cursor: text; }
 
+html body {
+  font-family: var(--font_body);
+  transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
+  html body .rbt-app-header {
+    color: var(--panel-text-color); }
+    html body .rbt-app-header .rbt-brand-title-container {
+      font-family: var(--font_header); }
+  html body input[type="checkbox"] + label:before {
+    box-shadow: 0 0 0 0.08rem var(--body-text-color); }
+  html body .form-control {
+    color: var(--body-text-color);
+    border: 1px solid var(--body-text-color); }
+    html body .form-control[disabled] {
+      color: #777777; }
+    html body .form-control:focus {
+      color: var(--body-text-color); }
+  html body .card-body .editor-toolbar button i {
+    color: var(--panel-text-color); }
+  html body .card-body .CodeMirror pre.CodeMirror-line, html body .card-body .CodeMirror pre.CodeMirror-line-like {
+    color: var(--panel-text-color); }
+  html body .editor-toolbar button i {
+    color: var(--body-text-color); }
+  html body .CodeMirror pre.CodeMirror-line, html body .CodeMirror pre.CodeMirror-line-like {
+    color: var(--body-text-color); }
+  html body .rbt-collapse-accordion .card h1, html body .rbt-collapse-accordion .card h2, html body .rbt-collapse-accordion .card h3, html body .rbt-collapse-accordion .card h4, html body .rbt-collapse-accordion .card h5, html body .rbt-collapse-accordion .card h6 {
+    background-color: var(--body-bg-color);
+    border-radius: 0.25rem; }
+  html body .card-body {
+    color: var(--panel-text-color);
+    background-color: var(--panel-bg-color); }
+    html body .card-body .form-control {
+      color: var(--panel-text-color);
+      border: 1px solid var(--panel-text-color); }
+      html body .card-body .form-control:focus {
+        color: var(--panel-text-color); }
+  html body .rules-group-body .form-control {
+    color: var(--panel-text-color);
+    border: 1px solid var(--panel-text-color); }
+  html body .rvb-steps__label {
+    color: var(--body-text-color); }
+  html body button.rbt-btn-nostyle:hover {
+    background: var(--body-bg-color); }
+  html body h1, html body h2, html body h3 {
+    font-family: var(--font_header);
+    font-size: var(--fontsize_header); }
+  html body .int-brand-image {
+    content: var(--logoimage-url);
+    max-height: 48px;
+    display: var(--logoimage-visibility); }
+  html body .int-lockup-group {
+    display: var(--lockup-visibility);
+    font-family: var(--font_header); }
+  html body .rbt-shell-sidebar.int-themeclose i:before {
+    content: '\e93f'; }
+  html body .rbt-shell-sidebar .int-themehandle {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    right: -40px;
+    top: 10px;
+    background: #f7f7f7;
+    border-radius: 0.25rem;
+    padding-top: 9px;
+    padding-left: 9px;
+    border: none;
+    z-index: 10; }
+    html body .rbt-shell-sidebar .int-themehandle i {
+      font-size: 24px;
+      color: #666666; }
+  html body header .dropdown-item-text {
+    padding: 0.375rem 1rem; }
+  html body header .int-lockup-group {
+    padding-left: 0.5rem; }
+    html body header .int-lockup-group .int-lockup-org {
+      font-size: var(--fontsize_orgname);
+      padding-top: 0.25rem; }
+    html body header .int-lockup-group .int-lockup-pagetitle {
+      font-size: var(--fontsize_appname);
+      font-weight: 700;
+      letter-spacing: .04rem; }
+  html body header .rbt-header-avatar-id {
+    font-family: var(--font_body); }
+  html body main section, html body .main section {
+    color: var(--body-text-color);
+    font-family: var(--font_body);
+    font-size: var(--fontsize_body); }
+    html body main section .border, html body main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html body main section .card, html body main section .border-bottom, html body .main section .border, html body .main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html body .main section .card, html body .main section .border-bottom {
+      border-color: var(--border-color) !important; }
+    html body main section .card, html body .main section .card {
+      font-size: var(--fontsize_body);
+      border-radius: var(--theme_border_radius);
+      border-color: var(--border-color) !important;
+      background-color: var(--panel-bg-color); }
+      html body main section .card .card-body, html body .main section .card .card-body {
+        color: var(--panel-text-color);
+        padding: 2rem 2.5rem 2.5rem; }
+        html body main section .card .card-body .int-section-overlay, html body .main section .card .card-body .int-section-overlay {
+          background-color: rgba(255, 255, 255, 0.9);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 10; }
+        html body main section .card .card-body a, html body .main section .card .card-body a {
+          color: var(--action-color); }
+          html body main section .card .card-body a:focus, html body .main section .card .card-body a:focus {
+            outline: 0.125rem solid var(--action-color); }
+        html body main section .card .card-body .int-mask, html body .main section .card .card-body .int-mask {
+          font-size: 10px; }
+        html body main section .card .card-body .list-group .list-group-item, html body .main section .card .card-body .list-group .list-group-item {
+          background-color: var(--panel-bg-color);
+          color: var(--panel-text-color);
+          border-color: var(--border-color); }
+          html body main section .card .card-body .list-group .list-group-item .btn-outline-primary, html body main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html body main section .card .card-body .list-group .list-group-item label.img-ul-button, html body .main section .card .card-body .list-group .list-group-item .btn-outline-primary, html body .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html body .main section .card .card-body .list-group .list-group-item label.img-ul-button {
+            border-radius: var(--theme_border_radius);
+            color: var(--action-color);
+            border-color: var(--action-color); }
+            html body main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html body main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html body main section .card .card-body .list-group .list-group-item label.img-ul-button:focus, html body .main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html body .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html body .main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
+              box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
+    html body main section .int-verify-controls, html body .main section .int-verify-controls {
+      color: var(--body-text-color);
+      font-family: var(--font_body); }
+      html body main section .int-verify-controls #verifystatement, html body main section .int-verify-controls #deferstatement, html body .main section .int-verify-controls #verifystatement, html body .main section .int-verify-controls #deferstatement {
+        font-size: var(--fontsize_verifyblock); }
+  html body .popover {
+    top: -31px !important;
+    left: 18px !important; }
+
+@media (min-width: 576px) {
+  html .int-brand-image {
+    content: var(--logoimage-url);
+    max-height: 58px;
+    display: var(--logoimage-visibility); }
+  html header.container {
+    max-width: var(--theme_page_margin); }
+  html.cas header {
+    max-width: 440px; }
+  html.cas main {
+    max-width: 440px; } }
+html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container, main.container {
+  max-width: var(--theme_page_margin); }
+
+.int-themeopen {
+  margin-left: inherit; }
+
+.int-themeclose {
+  margin-left: -480px; }
+
+button[data-theme] {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.25rem;
+  border: 1px solid #555555;
+  font-size: 0;
+  background: transparent;
+  outline: 0;
+  cursor: pointer; }
+
+.int-fielddescription {
+  margin-bottom: .5rem; }
+
+.int-accordion-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 44px;
+  padding: 8px;
+  margin-right: 10px; }
+  .int-accordion-controls .dropdown .dropdown-toggle:after {
+    content: "\e944"; }
+
+html body {
+  color: var(--body-text-color); }
+  html body header .int-brand-image {
+    max-height: 72px; }
+  html body .main-content .int-wizardmenu-mobile {
+    background-color: var(--body-bg-color); }
+  html body .main-content .int-tabs .nav-item {
+    margin-right: 0px; }
+    html body .main-content .int-tabs .nav-item .nav-link {
+      z-index: 100;
+      background: none;
+      border: none;
+      color: #444444;
+      border-bottom: solid 4px transparent;
+      border-radius: 0px;
+      padding: 1rem 1.25rem; }
+  html body .main-content .int-tabs + .tab-content {
+    border: none;
+    border-top: solid 1px #dddddd;
+    padding: 0px;
+    transition: box-shadow .2s ease; }
+    html body .main-content .int-tabs + .tab-content:focus {
+      box-shadow: none; }
+
+@media (max-width: 575.98px) {
+  html body header .int-brand-image {
+    max-height: 48px; } }
+.rbt-collapse-accordion .int-accordion-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* width: 36px; */
+  height: 44px;
+  padding: 8px;
+  margin-right: 10px; }
+  .rbt-collapse-accordion .int-accordion-controls .dropdown .dropdown-toggle:after {
+    content: "\e944"; }
+
+.int-data-api .card-header .int-accordion-controls {
+  padding-top: 3px;
+  padding-left: 8px;
+  height: 33px; }
+
+.rvb-steps__item {
+  margin-bottom: 5px; }
+
+.rvb-steps--vertical .rvb-steps__item {
+  margin-bottom: 0px; }
+
+.int-fielddescription {
+  margin-bottom: .5rem; }
+
+.fa.fa-eye:before {
+  content: ""; }
+
+.fa.fa-bold:before {
+  content: ""; }
+
+.fa.fa-italic:before {
+  content: ""; }
+
+.fa.fa-header:before {
+  content: ""; }
+
+.fa.fa-quote-left:before {
+  content: ""; }
+
+.fa.fa-list-ul:before {
+  content: ""; }
+
+.fa.fa-list-ol:before {
+  content: ""; }
+
+.fa.fa-link:before {
+  content: ""; }
+
+.fa.fa-picture-o:before {
+  content: ""; }
+
+.fa.fa-columns:before {
+  content: ""; }
+
+.fa.fa-arrows-alt:before {
+  content: ""; }
+
+.fa.fa-question-circle:before {
+  content: ""; }
+
+.rvb-steps {
+  overflow-x: auto; }
+
 body {
-  background-color: var(--body-bg-color); }
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+  color: var(--body-text-color); }
   body a {
     color: var(--action-color); }
     body a:hover {
@@ -12753,197 +13017,58 @@ body {
     box-shadow: 0 0 0 0.08rem #666666, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color); }
   body input[type=checkbox]:checked:focus + label:before, body input[type=checkbox]:checked:focus + input + label:before {
     box-shadow: 0 0 0 0.08rem #006298, 0 0 0 0.1875rem #ffffff, 0 0 0 0.3125rem var(--action-color); }
-  body.int-admin {
+  body .rbt-app-header.rbt-app-header--light {
+    background-color: var(--panel-bg-color); }
+    body .rbt-app-header.rbt-app-header--light .rbt-brand-title {
+      color: var(--panel-text-color); }
+    body .rbt-app-header.rbt-app-header--light .nav .nav-link {
+      color: var(--panel-text-color); }
+  body .table {
     color: var(--body-text-color); }
-    body.int-admin .rbt-app-header.rbt-app-header--light {
-      background-color: var(--panel-bg-color); }
-      body.int-admin .rbt-app-header.rbt-app-header--light .rbt-brand-title {
-        color: var(--panel-text-color); }
-      body.int-admin .rbt-app-header.rbt-app-header--light .nav .nav-link {
-        color: var(--panel-text-color); }
-    body.int-admin .table {
-      color: var(--body-text-color); }
-      body.int-admin .table th {
-        color: #444444; }
-      body.int-admin .table tr {
-        border-bottom: 1px solid var(--border-color); }
-    body.int-admin a.rvb-steps__item-content:hover .rvb-steps__indicator,
-    body.int-admin a.rvb-steps__item-content:focus .rvb-steps__indicator,
-    body.int-admin a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
-      background-color: var(--action-color);
-      color: #ffffff;
-      border-color: var(--action-color); }
-    body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions .btn.active, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.active.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions label.active.img-ul-button {
-      background: var(--action-color); }
-    body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions .btn, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button, body.int-admin .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, body.int-admin ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
-      color: var(--action-color); }
-    body.int-admin .btn-primary:not(:disabled):not(.disabled):active, body.int-admin .btn-primary:not(:disabled):not(.disabled).active, body.int-admin .show > .btn-primary.dropdown-toggle {
-      border-color: var(--action-color);
-      color: #fff; }
-    body.int-admin .rvb-switch.rvb-switch-primary input:checked + .rvb-slider {
-      background-color: var(--action-color); }
-    body.int-admin .rvb-switch input:focus + .rvb-slider {
-      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
-    body.int-admin .int-tabs .nav-item .nav-link.active {
-      border-bottom: solid 4px var(--action-color); }
-    body.int-admin .rbt-collapse-accordion .card h1 button:focus,
-    body.int-admin .rbt-collapse-accordion .card h2 button:focus,
-    body.int-admin .rbt-collapse-accordion .card h3 button:focus,
-    body.int-admin .rbt-collapse-accordion .card h4 button:focus,
-    body.int-admin .rbt-collapse-accordion .card h5 button:focus,
-    body.int-admin .rbt-collapse-accordion .card h6 button:focus {
-      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color); }
-    body.int-admin .form-control:focus {
-      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color); }
-    body.int-admin .nav-pills .nav-item .nav-link:focus {
-      box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color) !important;
-      background-color: var(--action-color);
-      color: #ffffff;
-      border: solid 1px var(--action-color); }
-    body.int-admin .border-right {
-      border-right: 1px solid var(--border-color) !important; }
-    body.int-admin hr {
-      border-top: 1px solid var(--border-color) !important; }
-    body.int-admin .int-tabs + .tab-content {
-      border-top: solid 1px var(--border-color) !important; }
-  body.int-user {
-    color: var(--body-text-color); }
-    body.int-user .rbt-shell-sidebar {
+    body .table th {
       color: #444444; }
-
-html .int-brand-image {
-  content: var(--logoimage-url);
-  max-height: 48px;
-  display: var(--logoimage-visibility); }
-html .int-lockup-group {
-  display: var(--lockup-visibility);
-  font-family: var(--font_header); }
-html .int-user {
-  transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out; }
-  html .int-user .rbt-shell-sidebar.int-themeclose i:before {
-    content: '\e93f'; }
-  html .int-user .rbt-shell-sidebar .int-themehandle {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    right: -40px;
-    top: 10px;
-    background: #f7f7f7;
-    border-radius: 0.25rem;
-    padding-top: 9px;
-    padding-left: 9px;
-    border: none;
-    z-index: 10; }
-    html .int-user .rbt-shell-sidebar .int-themehandle i {
-      font-size: 24px;
-      color: #666666; }
-  html .int-user header .dropdown-item-text {
-    padding: 0.375rem 1rem; }
-  html .int-user header .int-lockup-group {
-    padding-left: 0.5rem; }
-    html .int-user header .int-lockup-group .int-lockup-org {
-      font-size: var(--fontsize_orgname);
-      padding-top: 0.25rem; }
-    html .int-user header .int-lockup-group .int-lockup-pagetitle {
-      font-size: var(--fontsize_appname);
-      font-weight: 700;
-      letter-spacing: .04rem; }
-  html .int-user header .rbt-header-avatar-id {
-    color: var(--body-text-color);
-    font-family: var(--font_body); }
-  html .int-user main section, html .int-user .main section {
-    color: var(--body-text-color);
-    font-family: var(--font_body);
-    font-size: var(--fontsize_body); }
-    html .int-user main section .border, html .int-user main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user main section .card, html .int-user main section .border-bottom, html .int-user .main section .border, html .int-user .main section .rbt-collapse-accordion .card, .rbt-collapse-accordion html .int-user .main section .card, html .int-user .main section .border-bottom {
-      border-color: var(--border-color) !important; }
-    html .int-user main section .card, html .int-user .main section .card {
-      font-size: var(--fontsize_body);
-      border-radius: var(--theme_border_radius);
-      border-color: var(--border-color) !important;
-      background-color: var(--panel-bg-color); }
-      html .int-user main section .card h1, html .int-user main section .card h2, html .int-user main section .card h3, html .int-user .main section .card h1, html .int-user .main section .card h2, html .int-user .main section .card h3 {
-        font-family: var(--font_header);
-        font-size: var(--fontsize_header); }
-      html .int-user main section .card .card-body, html .int-user .main section .card .card-body {
-        color: var(--panel-text-color);
-        padding: 2rem 2.5rem 2.5rem;
-        font-family: var(--font_body); }
-        html .int-user main section .card .card-body .int-section-overlay, html .int-user .main section .card .card-body .int-section-overlay {
-          background-color: rgba(255, 255, 255, 0.9);
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          z-index: 10; }
-        html .int-user main section .card .card-body a, html .int-user .main section .card .card-body a {
-          color: var(--action-color); }
-          html .int-user main section .card .card-body a:focus, html .int-user .main section .card .card-body a:focus {
-            outline: 0.125rem solid var(--action-color); }
-        html .int-user main section .card .card-body .int-mask, html .int-user .main section .card .card-body .int-mask {
-          font-size: 10px; }
-        html .int-user main section .card .card-body .list-group .list-group-item, html .int-user .main section .card .card-body .list-group .list-group-item {
-          background-color: var(--panel-bg-color);
-          color: var(--panel-text-color);
-          border-color: var(--border-color); }
-          html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button {
-            border-radius: var(--theme_border_radius);
-            color: var(--action-color);
-            border-color: var(--action-color); }
-            html .int-user main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user main section .card .card-body .list-group .list-group-item label.img-ul-button:focus, html .int-user .main section .card .card-body .list-group .list-group-item .btn-outline-primary:focus, html .int-user .main section .card .card-body .list-group .list-group-item ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button:focus, ccf-image-upload image-upload .img-ul .img-ul-file-upload html .int-user .main section .card .card-body .list-group .list-group-item label.img-ul-button:focus {
-              box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
-    html .int-user main section .int-verify-controls, html .int-user .main section .int-verify-controls {
-      color: var(--body-text-color);
-      font-family: var(--font_body); }
-      html .int-user main section .int-verify-controls #verifystatement, html .int-user main section .int-verify-controls #deferstatement, html .int-user .main section .int-verify-controls #verifystatement, html .int-user .main section .int-verify-controls #deferstatement {
-        font-size: var(--fontsize_verifyblock); }
-  html .int-user .popover {
-    top: -31px !important;
-    left: 18px !important; }
-
-@media (min-width: 576px) {
-  html .int-brand-image {
-    content: var(--logoimage-url);
-    max-height: 58px;
-    display: var(--logoimage-visibility); }
-  html .int-user header.container {
-    max-width: var(--theme_page_margin); }
-  html .int-user main, html .int-user .main {
-    max-width: var(--theme_page_margin); }
-  html .int-user.cas header {
-    max-width: 440px; }
-  html .int-user.cas main {
-    max-width: 440px; } }
-html body .rbt-shell-main .rbt-shell .rbt-shell-stage .container {
-  max-width: var(--theme_page_margin); }
-
-.int-themeopen {
-  margin-left: inherit; }
-
-.int-themeclose {
-  margin-left: -480px; }
-
-button[data-theme] {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.25rem;
-  border: 1px solid #555555;
-  font-size: 0;
-  background: transparent;
-  outline: 0;
-  cursor: pointer; }
-
-.int-fielddescription {
-  margin-bottom: .5rem; }
-
-.int-accordion-controls {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 44px;
-  padding: 8px;
-  margin-right: 10px; }
-  .int-accordion-controls .dropdown .dropdown-toggle:after {
-    content: "\e944"; }
+    body .table tr {
+      border-bottom: 1px solid var(--border-color); }
+  body a.rvb-steps__item-content:hover .rvb-steps__indicator,
+  body a.rvb-steps__item-content:focus .rvb-steps__indicator,
+  body a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
+    background-color: var(--action-color);
+    color: #ffffff;
+    border-color: var(--action-color); }
+  body .rbt-expressionbuilder .rules-group-container .group-conditions .btn.active, body .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.active.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body .rbt-expressionbuilder .rules-group-container .group-conditions label.active.img-ul-button {
+    background: var(--action-color); }
+  body .rbt-expressionbuilder .rules-group-container .group-conditions .btn, body .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload body .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button, body .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, body ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
+    color: var(--action-color); }
+  body .btn-primary:not(:disabled):not(.disabled):active, body .btn-primary:not(:disabled):not(.disabled).active, body .show > .btn-primary.dropdown-toggle {
+    border-color: var(--action-color);
+    color: #fff; }
+  body .rvb-switch.rvb-switch-primary input:checked + .rvb-slider {
+    background-color: var(--action-color); }
+  body .rvb-switch input:focus + .rvb-slider {
+    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important; }
+  body .int-tabs .nav-item .nav-link.active {
+    border-bottom: solid 4px var(--action-color); }
+  body .rbt-collapse-accordion .card h1 button:focus,
+  body .rbt-collapse-accordion .card h2 button:focus,
+  body .rbt-collapse-accordion .card h3 button:focus,
+  body .rbt-collapse-accordion .card h4 button:focus,
+  body .rbt-collapse-accordion .card h5 button:focus,
+  body .rbt-collapse-accordion .card h6 button:focus {
+    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color); }
+  body .form-control:focus {
+    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color); }
+  body .nav-pills .nav-item .nav-link:focus {
+    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color) !important;
+    background-color: var(--action-color);
+    color: #ffffff;
+    border: solid 1px var(--action-color); }
+  body .border-right {
+    border-right: 1px solid var(--border-color) !important; }
+  body hr {
+    border-top: 1px solid var(--border-color) !important; }
+  body .int-tabs + .tab-content {
+    border-top: solid 1px var(--border-color) !important; }
+  body .rbt-shell-sidebar {
+    color: #444444; }
 
 /*# sourceMappingURL=main.css.map */

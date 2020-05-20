@@ -8,7 +8,7 @@ $page_title = 'VERIFY';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 </head>
-<body class="int-user">
+<body>
 <div style="background: #444" class="py-5 mb-5">
     <div class="container text-white text-center rbt-ts-26">Verification preview</div>
 </div>

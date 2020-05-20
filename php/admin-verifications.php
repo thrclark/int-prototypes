@@ -6,9 +6,9 @@ $page_title = 'All verifications';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<?php include('includes/styles-admin.php') ?>
+<?php include('includes/styles-main.php') ?>
 </head>
-<body class="int-admin">
+<body>
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-7">
     <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
