@@ -102,8 +102,8 @@ html body .rbt-footer img {
 </style>
 <style>
 @media all and (-ms-high-contrast:none) {
-*::-ms-backdrop, .btn {
-color: purple;
+*::-ms-backdrop, .btn.btn-sm {
+color: green;
     padding-top: 20px;
 } /* IE11 */
 }
