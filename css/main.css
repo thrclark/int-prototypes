@@ -12744,6 +12744,9 @@ html body {
       border: 1px solid var(--panel-text-color); }
       html body .card-body .form-control:focus {
         color: var(--panel-text-color); }
+  html body .rules-group-body .form-control {
+    color: var(--panel-text-color);
+    border: 1px solid var(--panel-text-color); }
   html body .rvb-steps__label {
     color: var(--body-text-color); }
   html body button.rbt-btn-nostyle:hover {

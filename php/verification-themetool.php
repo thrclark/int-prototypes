@@ -889,10 +889,10 @@ $page_title = 'CampusConfirm';
         );
         $('#chooselogoimage').hover(
             function() {
-                $(".int-brand-image").addClass("outline-object");
+                $(".rbt-shell-stage .int-brand-image").addClass("outline-object");
             },
             function() {
-                $(".int-brand-image").removeClass("outline-object");
+                $(".rbt-shell-stage .int-brand-image").removeClass("outline-object");
             }
         );
         $('#header_html').hover(

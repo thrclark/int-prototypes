@@ -66,6 +66,13 @@ html {
       }
     }
 
+    .rules-group-body {
+      .form-control {
+        color: var(--panel-text-color);
+        border: 1px solid var(--panel-text-color);
+      }
+    }
+
     .rvb-steps__label {
 
       color: var(--body-text-color);
