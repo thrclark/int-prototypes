@@ -10,7 +10,7 @@
             </li>
             <li class="nav-item dropdown">
                 <button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</button>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left"> <a class="dropdown-item" href="admin-settings-general.php">General Settings </a> <a class="dropdown-item" href="admin-customize.php">Custom theme </a> <a class="dropdown-item" href="admin-settings-apiaccounts.php">API Accounts </a> <a class="dropdown-item" href="admin-settings-publishers.php">Publishers</a> <a class="dropdown-item" href="admin-settings-ldap.php">LDAP Configuration </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left"> <a class="dropdown-item" href="admin-settings-general.php">General Settings </a> <a class="dropdown-item" href="verification-themetool.php">Custom theme </a> <a class="dropdown-item" href="admin-settings-apiaccounts.php">API Accounts </a> <a class="dropdown-item" href="admin-settings-publishers.php">Publishers</a> <a class="dropdown-item" href="admin-settings-ldap.php">LDAP Configuration </a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="admin-admin-ga.php">Google Analytics</a> <a class="dropdown-item" href="admin-admin-sysparam.php">System parameters</a> <a class="dropdown-item" href="admin-admin-reloadcache.php">Reload Cache</a> </div>
             </li>
@@ -37,7 +37,7 @@
                 <ul class="collapse" id="nav_settings">
                     <li class="list-group-item"> <a href="admin-settings-general.php">General Settings </a> </li>
                     <li class="list-group-item"> <a href="admin-settings-apiaccounts.php">API Accounts </a> </li>
-                    <li class="list-group-item"> <a href="admin-customize.php">Custom theme </a> </li>
+                    <li class="list-group-item"> <a href="verification-themetool.php">Custom theme </a> </li>
                     <li class="list-group-item"> <a href="admin-settings-publishers.php">Publishers</a> </li>
                     <li class="list-group-item"> <a href="admin-settings-ldap.php">LDAP Configuration </a></li>
                     <li class="list-group-item"> <a href="admin-admin-ga.php">Google Analytics</a> </li>

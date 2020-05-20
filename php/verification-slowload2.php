@@ -9,7 +9,7 @@ $page_title = 'VERIFY';
 <?php include('includes/styles-main.php') ?>
 <style></style>
 </head>
-<body class="int-user">
+<body>
 <main class="container p-0 mt-auto mb-auto">
     <section>
         <div class=" position-relative" style="min-height: 500px">

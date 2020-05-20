@@ -8,7 +8,7 @@ $page_title = 'VERIFY';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 </head>
-<body class="int-user">
+<body>
 <?php include('includes/user-header.php') ?>
 <main class="container p-0">
     <section>

@@ -6,9 +6,9 @@ $page_title = 'System parameters';
 <html lang="en">
 <head>
 <?php include('includes/all-head-meta.php') ?>
-<?php include('includes/styles-admin.php') ?>
+<?php include('includes/styles-main.php') ?>
 </head>
-<body class="int-admin">
+<body>
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
