@@ -108,9 +108,9 @@ html body .rbt-footer img {
     *::-ms-backdrop, .btn.btn-sm {
     padding-top: 3px;
     }
-    *::-ms-backdrop, custom-footer {
+    *::-ms-backdrop, .mt-auto {
     margin-top: 70px !important;
-        background: red;
+        background: green;
     }
 }
 </style>
