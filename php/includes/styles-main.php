@@ -118,7 +118,6 @@ padding-top: 3px;
     bottom: 0;
     width: 100%;
     background-color: #ffffff;
-    color: white;
     }
     *::-ms-backdrop, .main-content {
     margin-bottom: 700px;
