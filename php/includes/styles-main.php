@@ -117,12 +117,10 @@ padding-top: 3px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: #ffffff;
     color: white;
-    text-align: center;
     }
     *::-ms-backdrop, .main-content {
-    background: blue;
     margin-bottom: 700px;
     }
 }
