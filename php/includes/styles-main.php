@@ -115,9 +115,9 @@ html body .rbt-footer img {
 <style>
 @media all and (-ms-high-contrast:none){
     *::-ms-backdrop, custom-footer {
-margin-top: auto;
+margin-top: 70px;
   width: 100%;
-  background-color: green;
+  background-color: red;
   color: white;
   text-align: center;
     }
