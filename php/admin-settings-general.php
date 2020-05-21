@@ -1,6 +1,6 @@
 <?php
 $section = '';
-$page_title = 'General Settingsxxx';
+$page_title = 'General Settings';
 ?>
 <!DOCTYPE html>
 <html lang="en">

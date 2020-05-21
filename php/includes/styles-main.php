@@ -108,11 +108,19 @@ html body .rbt-footer img {
     *::-ms-backdrop, .btn.btn-sm {
     padding-top: 3px;
     }
+
+}
+</style>
+
+<style>
+@media all and (-ms-high-contrast:none) {
     *::-ms-backdrop, .mt-auto {
     margin-top: 70px !important;
     }
 }
 </style>
+
+
 
 
 
