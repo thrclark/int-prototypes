@@ -112,7 +112,7 @@ padding-top: 3px;
 </style>
 <style>
 @media all and (-ms-high-contrast:none) {
-    *::-ms-backdrop, .mt-auto {
+    *::-ms-backdrop, custom-footer {
     position: fixed;
     left: 0;
     bottom: 0;
