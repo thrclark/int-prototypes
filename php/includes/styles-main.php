@@ -101,9 +101,10 @@ html body .rbt-footer img {
 }
 </style>
 <style>
-@media all and (-ms-high-contrast:none) {
+@media all and (-ms-high-contrast:none) and (min-width: 0px) {
     *::-ms-backdrop, .btn {
     padding-top: 12px;
+        color: blue;
     }
     *::-ms-backdrop, .btn.btn-sm {
     padding-top: 3px;
@@ -113,10 +114,10 @@ html body .rbt-footer img {
 </style>
 
 <style>
-@media all and (-ms-high-contrast:none) {
+@media all and (-ms-high-contrast:none) and (min-width: 0px){
     *::-ms-backdrop, .mt-auto {
     padding-top: 50px !important;
-        background: red
+        background: green;
     }
 }
 </style>
