@@ -102,33 +102,29 @@ html body .rbt-footer img {
 </style>
 <style>
 @media all and (-ms-high-contrast:none) {
-    *::-ms-backdrop, .btn {
-    padding-top: 12px;
-    }
-    *::-ms-backdrop, .btn.btn-sm {
-    padding-top: 3px;
-    }
-
+*::-ms-backdrop, .btn {
+padding-top: 12px;
+}
+*::-ms-backdrop, .btn.btn-sm {
+padding-top: 3px;
+}
 }
 </style>
-
 <style>
-@media all and (-ms-high-contrast:none){
+@media all and (-ms-high-contrast:none) {
     *::-ms-backdrop, .mt-auto {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    }
+    *::-ms-backdrop, .main-content {
+    background: blue;
+    margin-bottom: 700px;
     }
 }
 </style>
-
-
-
-
-
-
 
