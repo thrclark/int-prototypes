@@ -115,9 +115,11 @@ html body .rbt-footer img {
 <style>
 @media all and (-ms-high-contrast:none){
     *::-ms-backdrop, .mt-auto {
-margin-top: 70px !important;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  background-color: green;
+  background-color: red;
   color: white;
   text-align: center;
     }
