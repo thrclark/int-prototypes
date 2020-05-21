@@ -115,7 +115,8 @@ html body .rbt-footer img {
 <style>
 @media all and (-ms-high-contrast:none) {
     *::-ms-backdrop, .mt-auto {
-    margin-top: 70px !important;
+    padding-top: 50px !important;
+        background: red
     }
 }
 </style>
