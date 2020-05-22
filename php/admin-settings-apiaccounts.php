@@ -191,7 +191,7 @@ $page_title = 'API Accounts';
                     <div class="rbt-collapse-accordion" id="accordion">
                         <div class="card">
                             <div class="" id="heading_url1">
-                                <h3 class="mb-2">
+                                <h3>
                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapse_url1" aria-expanded="false" aria-controls="heading_url1"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">URL 1</span></button>
                                 </h3>
                                 <div class="int-accordion-controls">
@@ -262,7 +262,7 @@ $page_title = 'API Accounts';
                         </div>
                         <div class="card">
                             <div class="" id="heading_url2">
-                                <h3 class="mb-2">
+                                <h3>
                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapse_url2" aria-expanded="false" aria-controls="heading_url2"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">URL 2</span></button>
                                 </h3>
                                 <div class="int-accordion-controls">
@@ -406,7 +406,22 @@ $page_title = 'API Accounts';
                     <div class="int-fielddescription"> A unique identifier for this account. </div>
                     <div class="row">
                         <div class="col-12 col-md-8">
-                            <input value="b038637f3cfe804736bc" aria-labelledby="" class="form-control" id="username" type="text" disabled>
+                 
+                            
+                            
+                            
+                            
+                            
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="b038637f3cfe804736bc" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste1"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -418,7 +433,7 @@ $page_title = 'API Accounts';
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="8EcBh5z6-iVQNCFklsI_VXg-fhMkELldb4ikBQiIwqM" disabled>
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
+                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste2"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
                                 </div>
                             </div>
                         </div>
@@ -445,12 +460,23 @@ $page_title = 'API Accounts';
 <script type="text/javascript">
      $(document).ready(function() {
         $(function() {
-            $("#copypaste").click(function() {
+            $("#copypaste1").click(function() {
                 $(".tooltip-inner").text("Copied!");
                 setTimeout(function() {
                     $(".tooltip-inner").text("Copy");
                 }, 4000)
             });
+            
+            
+            $("#copypaste2").click(function() {
+                $(".tooltip-inner").text("Copied!");
+                setTimeout(function() {
+                    $(".tooltip-inner").text("Copy");
+                }, 4000)
+            });
+            
+            
+            
         });
     });
 </script>

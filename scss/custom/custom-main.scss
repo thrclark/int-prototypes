@@ -83,6 +83,9 @@ html {
       background: var(--body-bg-color);
     }
 
+    .rbt-collapse-accordion .card h3 button {
+      border: 1px solid var(--body-text-color);
+    }
 
     h1,h2,h3 {
       font-family: var(--font_header);
@@ -383,7 +386,7 @@ html {
 .rbt-collapse-accordion {
   .int-accordion-controls {
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0px;
     /* width: 36px; */
     height: 44px;

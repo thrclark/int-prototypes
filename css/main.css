@@ -12751,6 +12751,8 @@ html body {
     color: var(--body-text-color); }
   html body button.rbt-btn-nostyle:hover {
     background: var(--body-bg-color); }
+  html body .rbt-collapse-accordion .card h3 button {
+    border: 1px solid var(--body-text-color); }
   html body h1, html body h2, html body h3 {
     font-family: var(--font_header);
     font-size: var(--fontsize_header); }
@@ -12909,7 +12911,7 @@ html body {
     max-height: 48px; } }
 .rbt-collapse-accordion .int-accordion-controls {
   position: absolute;
-  top: 0px;
+  top: 5px;
   right: 0px;
   /* width: 36px; */
   height: 44px;
