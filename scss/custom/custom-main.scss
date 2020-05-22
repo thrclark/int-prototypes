@@ -17,14 +17,26 @@ html {
     .form-control {
       color: var(--body-text-color);
       border: 1px solid var(--body-text-color);
+      background: $white;
+      background-repeat: no-repeat;
       &[disabled] {
         color:$color-black--600;
       }
       &:focus {
-        color: var(--body-text-color);
+        //color: var(--body-text-color);
+        background: $white;
       }
 
     }
+
+
+    .rbt-datepicker__input input[type="text"] {
+      background: $white;
+    }
+
+
+
+
 
     .card-body {
       .editor-toolbar {
@@ -35,7 +47,7 @@ html {
         }
       }
       .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
-        color: var(--panel-text-color);
+        //color: var(--panel-text-color);
       }
     }
 
@@ -47,11 +59,22 @@ html {
       }
     }
     .CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like {
-      color: var(--body-text-color);
+      //color: var(--body-text-color);
     }
 
+    .editor-toolbar button.active, .editor-toolbar button:hover {
+      background: #fcfcfc;
+      border-color: #95a5a6;
+      i {
+        color: $body-color;
+      }
+
+    }
+
+
+
     .rbt-collapse-accordion .card h1, .rbt-collapse-accordion .card h2, .rbt-collapse-accordion .card h3, .rbt-collapse-accordion .card h4, .rbt-collapse-accordion .card h5, .rbt-collapse-accordion .card h6 {
-      background-color: var(--body-bg-color);
+      //background-color: var(--body-bg-color);
       border-radius: 0.25rem;
     }
     .card-body {
@@ -73,6 +96,14 @@ html {
       }
     }
 
+    .CodeMirror {
+
+      background:$white;
+    }
+    .editor-toolbar {
+      margin-top: .5rem;
+    }
+
     .rvb-steps__label {
 
       color: var(--body-text-color);
@@ -80,8 +111,19 @@ html {
     }
 
     button.rbt-btn-nostyle:hover {
-      background: var(--body-bg-color);
+     // background: var(--body-bg-color);
     }
+
+    .rbt-collapse-accordion .card h3 button {
+     // border: 1px solid var(--body-text-color);
+    }
+
+
+    .ms-container .ms-list {
+      border: 1px solid var(--body-text-color);
+      background: $white;
+    }
+
 
 
     h1,h2,h3 {
