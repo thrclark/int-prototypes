@@ -194,7 +194,7 @@ $page_title = 'API Accounts';
                                 <h3>
                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapse_url1" aria-expanded="false" aria-controls="heading_url1"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">URL 1</span></button>
                                 </h3>
-                                <div class="int-accordion-controls">
+                                <div class="int-accordion-controls mt-1">
                                     <button class="rbt-btn-nostyle"> <i class="rbt-icon-close"></i> <span class="sr-only">Remove</span></button>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@ $page_title = 'API Accounts';
                                 <h3>
                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapse_url2" aria-expanded="false" aria-controls="heading_url2"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">URL 2</span></button>
                                 </h3>
-                                <div class="int-accordion-controls">
+                                <div class="int-accordion-controls mt-1">
                                     <button class="rbt-btn-nostyle"> <i class="rbt-icon-close"></i> <span class="sr-only">Remove</span></button>
                                 </div>
                             </div>
@@ -353,7 +353,7 @@ $page_title = 'API Accounts';
                     <div class="int-fielddescription">Number of resources that are allowed to be created by this API Account. This prevents outside systems from accidentally over populating the system.</div>
                     <div class="row">
                         <div class="col-12 col-sm-8 col-md-6">
-                            <input type="text" class="form-control" id="max_resources">
+                            <input type="number" class="form-control" id="max_resources">
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group">
                     <label class="control-label" id="nameLabel"> Email </label>
-                    <div class="int-fielddescription"> The email is used to send a daily reminder starting 30 days from the API Account expiring. </div>
+                    <div class="int-fielddescription"> The email is used to send a daily reminder starting 60 days from the API Account expiring. </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <input value="" aria-labelledby="" class="form-control" id="clientID" type="text">

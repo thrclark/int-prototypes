@@ -12720,21 +12720,25 @@ html body {
     box-shadow: 0 0 0 0.08rem var(--body-text-color); }
   html body .form-control {
     color: var(--body-text-color);
-    border: 1px solid var(--body-text-color); }
+    border: 1px solid var(--body-text-color);
+    background: #fff;
+    background-repeat: no-repeat; }
     html body .form-control[disabled] {
       color: #777777; }
     html body .form-control:focus {
-      color: var(--body-text-color); }
+      background: #fff; }
+  html body .rbt-datepicker__input input[type="text"] {
+    background: #fff; }
   html body .card-body .editor-toolbar button i {
-    color: var(--panel-text-color); }
-  html body .card-body .CodeMirror pre.CodeMirror-line, html body .card-body .CodeMirror pre.CodeMirror-line-like {
     color: var(--panel-text-color); }
   html body .editor-toolbar button i {
     color: var(--body-text-color); }
-  html body .CodeMirror pre.CodeMirror-line, html body .CodeMirror pre.CodeMirror-line-like {
-    color: var(--body-text-color); }
+  html body .editor-toolbar button.active, html body .editor-toolbar button:hover {
+    background: #fcfcfc;
+    border-color: #95a5a6; }
+    html body .editor-toolbar button.active i, html body .editor-toolbar button:hover i {
+      color: #444444; }
   html body .rbt-collapse-accordion .card h1, html body .rbt-collapse-accordion .card h2, html body .rbt-collapse-accordion .card h3, html body .rbt-collapse-accordion .card h4, html body .rbt-collapse-accordion .card h5, html body .rbt-collapse-accordion .card h6 {
-    background-color: var(--body-bg-color);
     border-radius: 0.25rem; }
   html body .card-body {
     color: var(--panel-text-color);
@@ -12747,12 +12751,15 @@ html body {
   html body .rules-group-body .form-control {
     color: var(--panel-text-color);
     border: 1px solid var(--panel-text-color); }
+  html body .CodeMirror {
+    background: #fff; }
+  html body .editor-toolbar {
+    margin-top: .5rem; }
   html body .rvb-steps__label {
     color: var(--body-text-color); }
-  html body button.rbt-btn-nostyle:hover {
-    background: var(--body-bg-color); }
-  html body .rbt-collapse-accordion .card h3 button {
-    border: 1px solid var(--body-text-color); }
+  html body .ms-container .ms-list {
+    border: 1px solid var(--body-text-color);
+    background: #fff; }
   html body h1, html body h2, html body h3 {
     font-family: var(--font_header);
     font-size: var(--fontsize_header); }
@@ -12911,7 +12918,7 @@ html body {
     max-height: 48px; } }
 .rbt-collapse-accordion .int-accordion-controls {
   position: absolute;
-  top: 5px;
+  top: 0px;
   right: 0px;
   /* width: 36px; */
   height: 44px;
