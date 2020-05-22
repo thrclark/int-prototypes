@@ -44,7 +44,6 @@ $page_title = 'All verifications';
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
-            <!---->
             <tbody>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Acceptable Use Agreement</span></td>
