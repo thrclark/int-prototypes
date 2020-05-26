@@ -32,10 +32,6 @@ $page_title = 'API Accounts';
                 </div>
             </div>
             <div class="col-auto">
-                <div class="dropdown d-inline">
-                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> API docs </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-hidden="true" role="menu" aria-labelledby="dropdownMenuButton1"> <a class="dropdown-item" href="#">Version 1 </a> <a class="dropdown-item" href="#">Version 2 </a> <a class="dropdown-item" href="#">Version 3 </a> </div>
-                </div>
                 <button class="btn btn-sm btn-outline-primary demojs_addapi"><i class="rbt-icon-plus"></i> API account</button>
             </div>
         </div>
@@ -406,22 +402,12 @@ $page_title = 'API Accounts';
                     <div class="int-fielddescription"> A unique identifier for this account. </div>
                     <div class="row">
                         <div class="col-12 col-md-8">
-                 
-                            
-                            
-                            
-                            
-                            
-                              <div class="input-group">
+                            <div class="input-group">
                                 <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="b038637f3cfe804736bc" disabled>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste1"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
                                 </div>
                             </div>
-                            
-                            
-                            
-                            
                         </div>
                     </div>
                 </div>
@@ -479,7 +465,7 @@ $page_title = 'API Accounts';
             
         });
     });
-</script>
+</script> 
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
