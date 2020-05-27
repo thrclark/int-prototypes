@@ -19,10 +19,6 @@ $page_title = 'All verifications';
         </alert>
     </growls>
     <main class="main-content" id="main-content">
-        <div class="row align-items-center mb-3 mb-md-6 ">
-            <div class="col"></div>
-            <div class="col-auto"></div>
-        </div>
         <h1 class="rbt-ts-23 rbt-ts-32-md-up"><?php echo $page_title; ?></h1>
         <div class="form-row align-items-center my-3">
             <div class="col">

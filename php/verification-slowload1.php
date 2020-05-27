@@ -11,8 +11,8 @@ $page_title = 'VERIFY';
 </head>
 <body>
 <?php include('includes/user-header.php') ?>
-<main class="container p-0">
-    <section>
+<main class="main-content container int-theme-margin  p-0">
+    
         <div class="card">
             <div class="card-body position-relative" style="min-height: 500px">
                 <div class="int-section-overlay " style="top: 0px; left: 0px">
@@ -20,10 +20,10 @@ $page_title = 'VERIFY';
                 </div>
             </div>
         </div>
-    </section>
+    
 </main>
 <?php include('includes/all-footer.php') ?>
-<?php include('includes/theme-controls.php') ?>
+
 <?php include('includes/all-footerscripts.php') ?>
 </body>
 </html>

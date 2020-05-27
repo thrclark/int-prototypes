@@ -10,14 +10,14 @@ $page_title = 'VERIFY';
 </head>
 <body>
 <?php include('includes/user-header.php') ?>
-<main class="container p-0">
-    <section>
+<main class="main-content container int-theme-margin  p-0">
+    
         <div class="border-top text-center mb-2">
             <p class="ts-23  pt-7 mb-3"> Sorry, there was a problem.</p>
             <button class="btn btn-primary mb-5">Home</button>
             <div class="mb-7 ts-12"> Error: This is a detailed error message. This is a second sentence for this error.</div>
         </div>
-    </section>
+    
 </main>
 <div class="mt-auto">
     <custom-footer ccc1="">

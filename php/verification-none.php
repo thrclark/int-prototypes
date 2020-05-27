@@ -10,12 +10,12 @@ $page_title = 'VERIFY';
 </head>
 <body>
 <?php include('includes/user-header.php') ?>
-<main class="container p-0">
-    <section>
+<main class="main-content container int-theme-margin  p-0">
+    
         <div class="border-top text-center mb-2">
             <p class="ts-23  pt-7 mb-3"> There are no more items requiring your verification at this time.</p>
         </div>
-    </section>
+    
 </main>
 <div class="mt-auto">
     <custom-footer ccc1="">

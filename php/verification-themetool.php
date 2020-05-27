@@ -33,7 +33,7 @@ $page_title = 'CampusConfirm';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
+<div class="rbt-shell-main d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
@@ -91,7 +91,7 @@ $page_title = 'CampusConfirm';
                             <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Colors</h3>
                         </div>
                         <div class="card-body">
-                            <div class="border-bottom pb-3 mb-3">
+                            <div class="int-pallette-selectors border-bottom pb-3 mb-3">
                                 <div class="mb-2 font-weight-bold ts-14"> Color palettes</div>
                                 <button data-theme="white" style="background-color: #eaeaea"> white </button>
                                 <button data-theme="brown" style="background-color: #fdf7eb"> brown </button>
@@ -736,8 +736,8 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
             </header>
-            <main class="container p-0 demojs_wrapthis" id="wysiwyg_demo">
-                <section>
+            <main class="main-content container p-0 demojs_wrapthis" id="wysiwyg_demo">
+                
                     <div class="card">
                         <div class="card-body"> 
                             <!--  <div class="alert alert-warning mb-5" role="alert">
@@ -791,15 +791,15 @@ $page_title = 'CampusConfirm';
                             </div>
                         </div>
                     </div>
-                </section>
+                
             </main>
             <?php include('includes/all-footer.php') ?>
         </div>
     </div>
-</main>
+</div>
 <?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('modals/modal-bodyfont-urls.php') ?>
-<?php include('includes/theme-controls.php') ?>
+
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {

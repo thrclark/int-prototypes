@@ -13,8 +13,8 @@
 </header>
 <main class="container" style="max-width:880px">
     <div class="row">
-        <div class="col-12">
-           <!-- <div class="alert alert-primary alert-dismissible fade show mb-4" role="alert">
+        <div class="col-12"> 
+            <!-- <div class="alert alert-primary alert-dismissible fade show mb-4" role="alert">
                 <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
                 <div class="alert-heading">Note</div>
                 <p class="small">If any of these prototypes appear to have broken CSS, go to the <a href="php/verification-themetool.php" target="_blank">theme tool</a>, then 'Predefiend themes', and click the first white box.</p>
@@ -47,14 +47,7 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-body"> <a href="php/verification-slowload2.php" target="_blank" class="font-weight-bold">Slow load - page (var1)</a>
-                                        <div class="ts-14">End user view of page during slow loading conditions.</div>
-                                    </div> 
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="media">
-                                    <div class="media-body"> <a href="php/verification-slowload3.php" target="_blank" class="font-weight-bold">Slow load - page (var2)</a>
+                                    <div class="media-body"> <a href="php/verification-slowload3.php" target="_blank" class="font-weight-bold">Slow load - page (var1)</a>
                                         <div class="ts-14">End user view of page during slow loading conditions. Click on the Verify/Verify later buttons to trigger the interaction.</div>
                                     </div>
                                 </div>

@@ -27,50 +27,25 @@ $page_title = 'API documentaion';
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <div class="media">
-                                <div class="rbt-media-prepend pr-3">
-                                    <div class="bg-light rounded-circle p-4 position-relative"> <i class="rbt-icon-note ts-18 position-absolute" style="    left: 15px;
-    top: 15px;"></i></div>
-                                </div>
                                 <div class="media-body"> <a href="#" class="font-weight-bold ts-18">Publishing - version 1</a>
                                     <div class="ts-14">Documentation for maintaining resources as a publisher.</div>
                                 </div>
                             </div>
                         </li>
-                        
-                        
-                        
-                        
-                          <li class="list-group-item">
+                        <li class="list-group-item">
                             <div class="media">
-                                <div class="rbt-media-prepend pr-3">
-                                    <div class="bg-light rounded-circle p-4 position-relative"> <i class="rbt-icon-note ts-18 position-absolute" style="    left: 15px;
-    top: 15px;"></i></div>
-                                </div>
                                 <div class="media-body"> <a href="#" class="font-weight-bold ts-18">Publishing - version 2</a>
                                     <div class="ts-14">Documentation for maintaining resources as a publisher.</div>
                                 </div>
                             </div>
                         </li>
-                        
-                        
-                        
-                        
-                        
-                        
-                          <li class="list-group-item">
+                        <li class="list-group-item">
                             <div class="media">
-                                <div class="rbt-media-prepend pr-3">
-                                    <div class="bg-light rounded-circle p-4 position-relative"> <i class="rbt-icon-note ts-18 position-absolute" style="    left: 15px;
-    top: 15px;"></i></div>
-                                </div>
                                 <div class="media-body"> <a href="#" class="font-weight-bold ts-18">Publishing - version 3</a>
                                     <div class="ts-14">Documentation for maintaining resources as a publisher.</div>
                                 </div>
                             </div>
                         </li>
-                        
-                        
-                        
                     </ul>
                 </div>
             </div>
