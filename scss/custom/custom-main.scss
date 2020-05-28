@@ -212,8 +212,6 @@ html {
       }
     }
     .form-control {
-      color: var(--body-text-color);
-      border: 1px solid var(--body-text-color);
       background: $white;
       background-repeat: no-repeat;
       &[disabled] {

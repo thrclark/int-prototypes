@@ -12913,8 +12913,6 @@ html body {
     html body a:hover, html body button:hover {
       color: var(--action-color); }
   html body .form-control {
-    color: var(--body-text-color);
-    border: 1px solid var(--body-text-color);
     background: #fff;
     background-repeat: no-repeat; }
     html body .form-control[disabled] {
