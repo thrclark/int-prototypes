@@ -74,7 +74,7 @@ html {
       font-size: var(--fontsize_body);
       .card {
         font-size: var(--fontsize_body);
-        border-radius: var(--theme_border_radius);
+        border-radius: var(--theme_border_radius) !important;
         border-color: var(--border-color) !important;
         background-color: var(--panel-bg-color);
         &.int-data-api {
@@ -90,6 +90,7 @@ html {
           .card {
             h1,h2,h3,h4,h5,h6 {
               border-radius: 0.25rem;
+
               button {
                 &:focus {
                   box-shadow: 0 0 0 0.125rem $white, 0 0 0 0.25rem var(--action-color);
@@ -131,7 +132,7 @@ html {
         .card-body {
           color: var(--panel-text-color);
           padding: 2rem 2.5rem 2.5rem;
-          background-color: var(--panel-bg-color);
+
           .form-control {
             color: var(--panel-text-color);
             border: 1px solid var(--panel-text-color);
