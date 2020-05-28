@@ -46,7 +46,7 @@ $page_subtitle = 'Recipients';
                         <div class="rbt-collapse-accordion" id="accordion">
                             <div class="card" id='datacard1'>
                                 <div class="" id="headingOne">
-                                    <h3 class="mb-2">
+                                    <h3 >
                                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> <i class="rbt-icon-chevron-right"></i> Trigger <span id="showdash1" style="display: none">-</span> <span id="data-name-display"> </span></button>
                                     </h3>
                                     <div class="int-accordion-controls">
@@ -228,7 +228,7 @@ $page_subtitle = 'Recipients';
                             </div>
                             <div class="card" id='datacard2' style="display: none">
                                 <div class="" id="headingTwo">
-                                    <h3 class="mb-2">
+                                    <h3 >
                                         <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Trigger <span id="showdash2" style="display: none">-</span> <span id="data-name2-display"> </span></button>
                                     </h3>
                                     <div class="int-accordion-controls">
