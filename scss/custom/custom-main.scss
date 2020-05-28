@@ -5,19 +5,6 @@ html {
     color: var(--body-text-color);
     font-family: var(--font_body);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-
-
-
-
-
-
-
-
-
-
-
-
-
     header {
       .int-brand-image {
         max-height: 72px;
@@ -85,8 +72,6 @@ html {
       color: var(--body-text-color);
       font-family: var(--font_body);
       font-size: var(--fontsize_body);
-
-
       .card {
         font-size: var(--fontsize_body);
         border-radius: var(--theme_border_radius);
@@ -101,11 +86,15 @@ html {
             }
           }
         }
-
         .rbt-collapse-accordion {
           .card {
             h1,h2,h3,h4,h5,h6 {
               border-radius: 0.25rem;
+              button {
+                &:focus {
+                  box-shadow: 0 0 0 0.125rem $white, 0 0 0 0.25rem var(--action-color);
+                }
+              }
             }
           }
         }
@@ -213,9 +202,6 @@ html {
       }
 
     }
-
-
-
     a, button {
       color: var(--action-color);
       &:focus {
@@ -225,7 +211,6 @@ html {
         color: var(--action-color);
       }
     }
-
     .form-control {
       color: var(--body-text-color);
       border: 1px solid var(--body-text-color);
@@ -237,9 +222,9 @@ html {
       &:focus {
         //color: var(--body-text-color);
         background: $white;
+        box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
       }
     }
-
     .rbt-datepicker__input input[type="text"] {
       background: $white;
     }
@@ -254,13 +239,9 @@ html {
     input[type=checkbox]:focus + label:before, input[type=checkbox]:focus + input + label:before {
       box-shadow: 0 0 0 0.08rem var(--action-color), 0 0 0 0.1875rem $white, 0 0 0 0.3125rem var(--action-color);
     }
-
     input[type=checkbox]:checked:focus + label:before, input[type=checkbox]:checked:focus + input + label:before {
       box-shadow: 0 0 0 0.08rem var(--action-color), 0 0 0 0.1875rem $white, 0 0 0 0.3125rem var(--action-color);
     }
-
-
-
     .int-fielddescription {
       margin-bottom: .5rem;
     }
@@ -275,6 +256,30 @@ html {
           border-color: var(--action-color);
           i {
             color: $body-color;
+          }
+        }
+      }
+    }
+    .rbt-expressionbuilder {
+      .rules-group-container {
+        .group-conditions {
+          .btn {
+            color:  var(--action-color);
+            &.active {
+              background: var(--action-color);
+            }
+          }
+        }
+      }
+    }
+    ccf-image-upload {
+      image-upload {
+        .img-ul {
+          .img-ul-file-upload {
+            .img-ul-button {
+              border-color: var(--action-color);
+              color: var(--action-color);
+            }
           }
         }
       }
@@ -304,6 +309,13 @@ html {
           .rvb-steps__label {
             color: var(--body-text-color);
           }
+          &:hover, &:focus, &[aria-current] {
+            .rvb-steps__indicator {
+              background-color: var(--action-color);
+              color: $color-white;
+              border-color: var(--action-color);
+            }
+          }
         }
       }
     }
@@ -314,6 +326,7 @@ html {
     .rbt-shell-main {
       .rbt-shell {
         .rbt-shell-sidebar {
+          color: $color-black--900;
           &.int-themeclose {
             margin-left: -480px;
             i {
@@ -339,7 +352,6 @@ html {
               color: $color-black--700;
             }
           }
-
           .int-pallette-selectors {
 
             button {
@@ -353,15 +365,12 @@ html {
               outline: 0;
               cursor: pointer;
             }
-
           }
-
         }
         .rbt-shell-stage {
           .container {
             max-width: var(--theme_page_margin);
           }
-
         }
       }
 
@@ -401,6 +410,12 @@ html {
     .btn-link {
       color: var(--action-color);
     }
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .show > .btn-primary.dropdown-toggle {
+      border-color: var(--action-color);
+      color: $white;
+    }
     .list-group-item:last-child {
       border-bottom-right-radius: var(--theme_border_radius);
       border-bottom-left-radius: var(--theme_border_radius);
@@ -411,15 +426,30 @@ html {
     }
     .dropdown-item:hover {
       background-color: var(--action-color);
-
     }
-
+    .border-right {
+      border-right: 1px solid var(--border-color) !important;
+    }
+    hr {
+      border-top: 1px solid  var(--border-color) !important;
+    }
+  }
+  .pagination {
+    .page-item {
+      .page-link {
+        color: var(--action-color);
+      }
+      &.active {
+        .page-link {
+          background-color: var(--action-color);
+          border-color: var(--action-color);
+          color: var(--body-bg-color);
+        }
+      }
+    }
   }
 }
-
-
 @include media-breakpoint-down(xs) {
-
   html {
     body {
       header {
@@ -428,99 +458,5 @@ html {
         }
       }
     }
-
-  }
-
-}
-
-///////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-body {
-
-
-
-
-
-
-
-  a.rvb-steps__item-content:hover .rvb-steps__indicator,
-  a.rvb-steps__item-content:focus .rvb-steps__indicator,
-  a.rvb-steps__item-content[aria-current] .rvb-steps__indicator {
-    background-color: var(--action-color);
-    color: $color-white;
-    border-color: var(--action-color);
-  }
-  .rbt-expressionbuilder .rules-group-container .group-conditions .btn.active {
-    background: var(--action-color);
-
-  }
-  .rbt-expressionbuilder .rules-group-container .group-conditions .btn, .rbt-expressionbuilder .rules-group-container .group-conditions ccf-image-upload image-upload .img-ul .img-ul-file-upload label.img-ul-button, ccf-image-upload image-upload .img-ul .img-ul-file-upload .rbt-expressionbuilder .rules-group-container .group-conditions label.img-ul-button {
-    color:  var(--action-color);
-  }
-
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-
-    border-color: var(--action-color);
-    color: $white;
-  }
-
-  .rvb-switch.rvb-switch-primary input:checked + .rvb-slider {
-    background-color: var(--action-color);
-  }
-  .rvb-switch input:focus + .rvb-slider {
-    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.2875rem var(--action-color) !important;
-  }
-
-  .int-tabs .nav-item .nav-link.active {
-    border-bottom: solid 4px var(--action-color);
-  }
-
-  .rbt-collapse-accordion .card h1 button:focus,
-  .rbt-collapse-accordion .card h2 button:focus,
-  .rbt-collapse-accordion .card h3 button:focus,
-  .rbt-collapse-accordion .card h4 button:focus,
-  .rbt-collapse-accordion .card h5 button:focus,
-  .rbt-collapse-accordion .card h6 button:focus {
-    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
-
-  }
-  .form-control:focus {
-    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color);
-
-  }
-
-  .nav-pills .nav-item .nav-link:focus {
-    box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color) !important;
-    background-color: var(--action-color);
-    color: #ffffff;
-    border: solid 1px var(--action-color);
-
-  }
-
-  .border-right {
-    border-right: 1px solid var(--border-color) !important;
-  }
-  hr {
-
-    border-top: 1px solid  var(--border-color) !important;
-  }
-
-  .int-tabs + .tab-content {
-    border-top: solid 1px var(--border-color) !important;
-  }
-  //specific theming to end user screens
-  color: var(--body-text-color);
-
-  .rbt-shell-sidebar {
-    color: $color-black--900;
   }
 }
