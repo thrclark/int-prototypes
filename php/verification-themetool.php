@@ -278,7 +278,11 @@ $page_title = 'CampusConfirm';
                                             </div>
                                         </image-upload>
                                         <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-red.png" class=""> </div>
+                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-red.png" class="">
+                                                <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
+                                                <message key="global.buttons.delete">Delete</message>
+                                                </span> </button>
+                                            </div>
                                         </div>
                                     </ccf-image-upload>
                                 </div>
@@ -737,61 +741,59 @@ $page_title = 'CampusConfirm';
                 </div>
             </header>
             <main class="main-content container p-0 demojs_wrapthis" id="wysiwyg_demo">
-                
-                    <div class="card">
-                        <div class="card-body"> 
-                            <!--  <div class="alert alert-warning mb-5" role="alert">
+                <div class="card">
+                    <div class="card-body"> 
+                        <!--  <div class="alert alert-warning mb-5" role="alert">
                                 <h2 class="alert-heading">Privacy note</h2>
                                 <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
                             </div>-->
-                            <h2>Verification name</h2>
-                            <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                            <h3 class="mt-5">Verification data</h3>
-                            <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <dl class="row">
-                                        <dt class="col-sm-4">Street address</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
-                                        <dt class="col-sm-4">City</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
-                                        <dt class="col-sm-4">State</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
-                                        <dt class="col-sm-4">Zip</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
-                                    </dl>
-                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                </li>
-                            </ul>
-                        </div>
+                        <h2>Verification name</h2>
+                        <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
+                        <h3 class="mt-5">Verification data</h3>
+                        <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <dl class="row">
+                                    <dt class="col-sm-4">Street address</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
+                                    <dt class="col-sm-4">City</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
+                                    <dt class="col-sm-4">State</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
+                                    <dt class="col-sm-4">Zip</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
+                                </dl>
+                                <button class="btn btn-sm btn-outline-primary">Edit</button>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
-                    <div class="int-verify-controls py-3">
-                        <div class="row mb-5" id="demojs_verifyscreen">
-                            <div class="col-md-6 d-flex pb-5 pb-md-0">
-                                <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3" id="verifystatement">
-                                        <div class="form-check form-check-inline">
-                                            <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                            <label class="form-check-label" for="question4" > I have verified that the above information is up to date and correct.</label>
-                                        </div>
-                                    </div>
-                                    <div class="rbt-button-group mt-auto">
-                                        <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
+                </div>
+                <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
+                <div class="int-verify-controls py-3">
+                    <div class="row mb-5" id="demojs_verifyscreen">
+                        <div class="col-md-6 d-flex pb-5 pb-md-0">
+                            <div class="d-flex flex-fill flex-column">
+                                <div class="mb-3" id="verifystatement">
+                                    <div class="form-check form-check-inline">
+                                        <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
+                                        <label class="form-check-label" for="question4" > I have verified that the above information is up to date and correct.</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 d-flex pb-5 pb-md-0">
-                                <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s). </div>
-                                    <div class="rbt-button-group mt-auto">
-                                        <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
-                                    </div>
+                                <div class="rbt-button-group mt-auto">
+                                    <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6 d-flex pb-5 pb-md-0">
+                            <div class="d-flex flex-fill flex-column">
+                                <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s). </div>
+                                <div class="rbt-button-group mt-auto">
+                                    <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                
+                </div>
             </main>
             <?php include('includes/all-footer.php') ?>
         </div>
@@ -799,7 +801,6 @@ $page_title = 'CampusConfirm';
 </div>
 <?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('modals/modal-bodyfont-urls.php') ?>
-
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {
