@@ -768,15 +768,15 @@ $page_title = 'CampusConfirm';
                         </ul>
                     </div>
                 </div>
-                <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
-                <div class="int-verify-controls py-3">
+                <div class="int-verify-controls py-3 px-3 px-lg-0">
+                    <p class="border-bottom pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized.</p>
                     <div class="row mb-5" id="demojs_verifyscreen">
-                        <div class="col-md-6 d-flex pb-5 pb-md-0">
+                        <div class="col-md-6 d-flex  pb-5 pb-md-0">
                             <div class="d-flex flex-fill flex-column">
                                 <div class="mb-3" id="verifystatement">
                                     <div class="form-check form-check-inline">
                                         <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                        <label class="form-check-label" for="question4" > I have verified that the above information is up to date and correct.</label>
+                                        <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
                                     </div>
                                 </div>
                                 <div class="rbt-button-group mt-auto">
@@ -784,9 +784,9 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex pb-5 pb-md-0">
+                        <div class="col-md-6 d-flex  pb-5 pb-md-0">
                             <div class="d-flex flex-fill flex-column">
-                                <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s). </div>
+                                <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s).</div>
                                 <div class="rbt-button-group mt-auto">
                                     <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
                                 </div>
