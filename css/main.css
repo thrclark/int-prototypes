@@ -12835,7 +12835,7 @@ html body {
     font-size: var(--fontsize_body); }
     html body .main-content .card {
       font-size: var(--fontsize_body);
-      border-radius: var(--theme_border_radius);
+      border-radius: var(--theme_border_radius) !important;
       border-color: var(--border-color) !important;
       background-color: var(--panel-bg-color); }
       html body .main-content .card.int-data-api .card-header .int-accordion-controls {
@@ -12862,8 +12862,7 @@ html body {
         color: #444444; }
       html body .main-content .card .card-body {
         color: var(--panel-text-color);
-        padding: 2rem 2.5rem 2.5rem;
-        background-color: var(--panel-bg-color); }
+        padding: 2rem 2.5rem 2.5rem; }
         html body .main-content .card .card-body .form-control {
           color: var(--panel-text-color);
           border: 1px solid var(--panel-text-color); }
