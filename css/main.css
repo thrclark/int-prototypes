@@ -12899,6 +12899,9 @@ html body {
         font-size: var(--fontsize_verifyblock); }
     html body .main-content .int-wizardmenu-mobile {
       background-color: var(--body-bg-color); }
+    html body .main-content .ms-selection .ms-list, html body .main-content .ms-selectable .ms-list {
+      background: #fff;
+      border-color: #666666; }
     html body .main-content .table {
       color: var(--body-text-color); }
       html body .main-content .table th {
