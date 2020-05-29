@@ -192,6 +192,12 @@ html {
       .int-wizardmenu-mobile {
         background-color: var(--body-bg-color);
       }
+      .ms-selection,.ms-selectable {
+        .ms-list {
+          background: $white;
+          border-color: $input-border-color;
+        }
+      }
       .table {
         color: var(--body-text-color);
         th {
