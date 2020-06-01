@@ -33,7 +33,7 @@ $page_title = 'CampusConfirm';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<main class="rbt-shell-main d-lg-flex" style="max-width:inherit">
+<div class="rbt-shell-main d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
@@ -91,7 +91,7 @@ $page_title = 'CampusConfirm';
                             <h3 class="newsidebar-section-header mb-0 ts-20 mb-0 ts-20">Colors</h3>
                         </div>
                         <div class="card-body">
-                            <div class="border-bottom pb-3 mb-3">
+                            <div class="int-pallette-selectors border-bottom pb-3 mb-3">
                                 <div class="mb-2 font-weight-bold ts-14"> Color palettes</div>
                                 <button data-theme="white" style="background-color: #eaeaea"> white </button>
                                 <button data-theme="brown" style="background-color: #fdf7eb"> brown </button>
@@ -256,11 +256,7 @@ $page_title = 'CampusConfirm';
                                             </div>
                                         </image-upload>
                                         <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-red.png" class="">
-                                                <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                                <message key="global.buttons.delete">Delete</message>
-                                                </span> </button>
-                                            </div>
+                                            <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-red.png" class=""> </div>
                                         </div>
                                         <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                             <p class="rbt-ts-14" id="standalone4"> File size must be less than 2mb.</p>
@@ -324,11 +320,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/favicon.ico" class="">
-                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                            <message key="global.buttons.delete">Delete</message>
-                                            </span> </button>
-                                        </div>
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/favicon.ico" class=""> </div>
                                     </div>
                                     <div class="alert alert-inline alert-danger mb-3 demojs_validation mt-0" role="alert" style="margin-top: 0px !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                         <p class="rbt-ts-14" id="standalone4"> File must be an .ico format.</p>
@@ -349,11 +341,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-196x196.png" class="">
-                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                            <message key="global.buttons.delete">Delete</message>
-                                            </span> </button>
-                                        </div>
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-196x196.png" class=""> </div>
                                     </div>
                                 </ccf-image-upload>
                             </div>
@@ -371,11 +359,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview rbt-checkered-bg" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-180x180.png" class="">
-                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                            <message key="global.buttons.delete">Delete</message>
-                                            </span> </button>
-                                        </div>
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-180x180.png" class=""> </div>
                                     </div>
                                 </ccf-image-upload>
                             </div>
@@ -393,11 +377,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x310.png" class="">
-                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                            <message key="global.buttons.delete">Delete</message>
-                                            </span> </button>
-                                        </div>
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x310.png" class=""> </div>
                                     </div>
                                 </ccf-image-upload>
                             </div>
@@ -415,11 +395,7 @@ $page_title = 'CampusConfirm';
                                         </div>
                                     </image-upload>
                                     <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x150.png" class="">
-                                            <button class="btn btn-sm btn-outline-primary"> <i class="rbt-icon-close"></i> <span class="sr-only">
-                                            <message key="global.buttons.delete">Delete</message>
-                                            </span> </button>
-                                        </div>
+                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x150.png" class=""> </div>
                                     </div>
                                 </ccf-image-upload>
                             </div>
@@ -764,70 +740,67 @@ $page_title = 'CampusConfirm';
                     </div>
                 </div>
             </header>
-            <main class="container p-0 demojs_wrapthis" id="wysiwyg_demo">
-                <section>
-                    <div class="card">
-                        <div class="card-body"> 
-                            <!--  <div class="alert alert-warning mb-5" role="alert">
+            <main class="main-content container p-0 demojs_wrapthis" id="wysiwyg_demo">
+                <div class="card">
+                    <div class="card-body"> 
+                        <!--  <div class="alert alert-warning mb-5" role="alert">
                                 <h2 class="alert-heading">Privacy note</h2>
                                 <p>A message box such as this one will appear here in the cases where private data is displayed in this verification.</p>
                             </div>-->
-                            <h2>Verification name</h2>
-                            <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
-                            <h3 class="mt-5">Verification data</h3>
-                            <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <dl class="row">
-                                        <dt class="col-sm-4">Street address</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
-                                        <dt class="col-sm-4">City</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
-                                        <dt class="col-sm-4">State</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
-                                        <dt class="col-sm-4">Zip</dt>
-                                        <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
-                                    </dl>
-                                    <button class="btn btn-sm btn-outline-primary">Edit</button>
-                                </li>
-                            </ul>
-                        </div>
+                        <h2>Verification name</h2>
+                        <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy.</p>
+                        <h3 class="mt-5">Verification data</h3>
+                        <p>This is a paragraph that is used to describe the nature of this verification item to the user. It is possible to use a <a href="#">link</a> in this section.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <dl class="row">
+                                    <dt class="col-sm-4">Street address</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> 1234 Elm Street</span> </dd>
+                                    <dt class="col-sm-4">City</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> Springfield</span> </dd>
+                                    <dt class="col-sm-4">State</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> Indiana</span> </dd>
+                                    <dt class="col-sm-4">Zip</dt>
+                                    <dd class="col-sm-8"><span class="int-privatedata"> 48576</span> </dd>
+                                </dl>
+                                <button class="btn btn-sm btn-outline-primary">Edit</button>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="border-bottom mb-3 pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. </p>
-                    <div class="int-verify-controls py-3">
-                        <div class="row mb-5" id="demojs_verifyscreen">
-                            <div class="col-md-6 d-flex pb-5 pb-md-0">
-                                <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3" id="verifystatement">
-                                        <div class="form-check form-check-inline">
-                                            <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
-                                            <label class="form-check-label" for="question4" > I have verified that the above information is up to date and correct.</label>
-                                        </div>
-                                    </div>
-                                    <div class="rbt-button-group mt-auto">
-                                        <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
+                </div>
+                <div class="int-verify-controls py-3 px-3 px-lg-0">
+                    <p class="border-bottom pb-3">This is an optional paragraph that can be customized. This is an optional paragraph that can be customized. This is an optional paragraph that can be customized.</p>
+                    <div class="row mb-5" id="demojs_verifyscreen">
+                        <div class="col-md-6 d-flex  pb-5 pb-md-0">
+                            <div class="d-flex flex-fill flex-column">
+                                <div class="mb-3" id="verifystatement">
+                                    <div class="form-check form-check-inline">
+                                        <input id="question4" name="checked" type="checkbox" aria-invalid="false" data-container="body" data-toggle="popover" data-placement="top" data-content="Required" data-original-title="" title="">
+                                        <label class="form-check-label" for="question4"> I have verified that the above information is up to date and correct.</label>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 d-flex pb-5 pb-md-0">
-                                <div class="d-flex flex-fill flex-column">
-                                    <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s). </div>
-                                    <div class="rbt-button-group mt-auto">
-                                        <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
-                                    </div>
+                                <div class="rbt-button-group mt-auto">
+                                    <button type="button" class="btn btn-primary btn-block" id="submit2">Verify</button>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6 d-flex  pb-5 pb-md-0">
+                            <div class="d-flex flex-fill flex-column">
+                                <div class="mb-3" id="deferstatement"> You can choose to verify later. You may choose this option 3 more time(s).</div>
+                                <div class="rbt-button-group mt-auto">
+                                    <button type="button" class="btn btn-outline-primary btn-block">Verify later</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                </div>
             </main>
             <?php include('includes/all-footer.php') ?>
         </div>
     </div>
-</main>
+</div>
 <?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('modals/modal-bodyfont-urls.php') ?>
-<?php include('includes/theme-controls.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {

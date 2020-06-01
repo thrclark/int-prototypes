@@ -1,5 +1,5 @@
 
-<header class="container p-0 mt-7 mb-3">
+<header class="container int-theme-margin p-0 mt-7 mb-3">
     <div class="d-flex align-content-center"> <img alt="" src="../img/logo-red.png" class="int-brand-image">
         <div class="d-flex flex-column align-self-center int-lockup-group text-nowrap">
             <div class="int-lockup-org" id="org-name-display">XYZ University</div>

@@ -10,8 +10,8 @@ $page_title = 'VERIFY';
 </head>
 <body>
 <?php include('includes/user-header.php') ?>
-<main class="container p-0">
-    <section>
+<main class="main-content container int-theme-margin  p-0">
+    
         <div class="card">
             <div class="card-body">
                 <h2>Verification name</h2>
@@ -67,12 +67,12 @@ $page_title = 'VERIFY';
                 </div>
             </div>
         </div>
-    </section>
+    
 </main>
 <div class="container p-0" id="footer_html_display">
     <div class="pt-3 pb-7 ts-12 text-center"> <a href="https://www.iu.edu/copyright/index.html" target="_blank" class="text-dark">Copyright</a> © 2020 The Trustees of <a href="https://www.iu.edu/" target="_blank" class="text-dark">Indiana University</a>. </div>
 </div>
-<?php include('includes/theme-controls.php') ?>
+
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {

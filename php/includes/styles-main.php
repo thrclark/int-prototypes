@@ -90,7 +90,6 @@ html body .rbt-app-header .rbt-brand-image {
 }
 html body {
     font-size: var(--base-font-size);
-    line-height: var(--base-line-height);
 }
 html body .rbt-brand-title {
     display: var(--application-name);

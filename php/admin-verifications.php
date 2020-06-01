@@ -19,10 +19,6 @@ $page_title = 'All verifications';
         </alert>
     </growls>
     <main class="main-content" id="main-content">
-        <div class="row align-items-center mb-3 mb-md-6 ">
-            <div class="col"></div>
-            <div class="col-auto"></div>
-        </div>
         <h1 class="rbt-ts-23 rbt-ts-32-md-up"><?php echo $page_title; ?></h1>
         <div class="form-row align-items-center my-3">
             <div class="col">
@@ -44,12 +40,11 @@ $page_title = 'All verifications';
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
-            <!---->
             <tbody>
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Acceptable Use Agreement</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -61,8 +56,8 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Citizenship Verification</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past, which is set to recur annually.</li><li>There is no specified end date.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
-                        Live (recurring) </span></td>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
                             <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span></button>
@@ -70,11 +65,11 @@ $page_title = 'All verifications';
                         </div>
                         </span></td>
                 </tr>
-                <tr class="demojs-active">
+                <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">External Email Flag</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
-                        Live </span></td>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>The end date (4/21/2020) has transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        Expired </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
                             <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span></button>
@@ -85,8 +80,8 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">FERPA Compliance</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past, which is set to recur annually.</li><li>There is no specified end date.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
-                        Live (recurring) </span></td>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
                             <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span></button>
@@ -97,7 +92,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">IU Login</span></td>
                     <td class="demojs-active"><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'inactive'.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'inactive'.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Inactive </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -109,7 +104,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">IU-Notify</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -121,7 +116,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Personal Information</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>A recipient group is scheduled to start receiving this verification on 04/21/2024.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>A recipient group is scheduled to start receiving this verification on 04/21/2024.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Scheduled </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -133,7 +128,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.12.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -145,7 +140,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.19.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -157,7 +152,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.27.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>A recipient group is scheduled to start receiving this verification on 04/21/2024.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>A recipient group is scheduled to start receiving this verification on 04/21/2024.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Scheduled </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -169,7 +164,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.5.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -181,7 +176,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 7.3.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -193,7 +188,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Travel or out-of-pocket Reimbursement Account</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>There is at least one recipient group which has an effective date in the past.</li><li>The end date (4/21/2024) has not yet transpired.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Live </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -205,7 +200,7 @@ $page_title = 'All verifications';
                 <tr class="demojs-inactive" style="display: none">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Two-Step Login With Duo</span></td>
                     <td class="demojs-active"><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
-                        <button class="btn btn-sm btn-link text-decoration-none p-1 ml-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'inactive'.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
+                        <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'inactive'.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
                         Inactive </span></td>
                     <td><b class="rbt-table-responsive-cell-label"><span class="visible-xs"> Actions </span></b><span class="rbt-table-responsive-cell-content"><!-- <a href="admin-verification-new1.php" class="btn btn-sm b tn-outline-primary">Edit</a> -->
                         <div class="dropdown">
@@ -280,3 +275,5 @@ $page_title = 'All verifications';
 </script>
 </body>
 </html>
+
+

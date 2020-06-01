@@ -32,10 +32,6 @@ $page_title = 'API Accounts';
                 </div>
             </div>
             <div class="col-auto">
-                <div class="dropdown d-inline">
-                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> API docs </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-hidden="true" role="menu" aria-labelledby="dropdownMenuButton1"> <a class="dropdown-item" href="#">Version 1 </a> <a class="dropdown-item" href="#">Version 2 </a> <a class="dropdown-item" href="#">Version 3 </a> </div>
-                </div>
                 <button class="btn btn-sm btn-outline-primary demojs_addapi"><i class="rbt-icon-plus"></i> API account</button>
             </div>
         </div>
@@ -191,10 +187,10 @@ $page_title = 'API Accounts';
                     <div class="rbt-collapse-accordion" id="accordion">
                         <div class="card">
                             <div class="" id="heading_url1">
-                                <h3 class="mb-2">
+                                <h3>
                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapse_url1" aria-expanded="false" aria-controls="heading_url1"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">URL 1</span></button>
                                 </h3>
-                                <div class="int-accordion-controls">
+                                <div class="int-accordion-controls mt-1">
                                     <button class="rbt-btn-nostyle"> <i class="rbt-icon-close"></i> <span class="sr-only">Remove</span></button>
                                 </div>
                             </div>
@@ -262,10 +258,10 @@ $page_title = 'API Accounts';
                         </div>
                         <div class="card">
                             <div class="" id="heading_url2">
-                                <h3 class="mb-2">
+                                <h3>
                                     <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapse_url2" aria-expanded="false" aria-controls="heading_url2"> <i class="rbt-icon-chevron-right"></i> <span id="data-name-display">URL 2</span></button>
                                 </h3>
-                                <div class="int-accordion-controls">
+                                <div class="int-accordion-controls mt-1">
                                     <button class="rbt-btn-nostyle"> <i class="rbt-icon-close"></i> <span class="sr-only">Remove</span></button>
                                 </div>
                             </div>
@@ -353,7 +349,7 @@ $page_title = 'API Accounts';
                     <div class="int-fielddescription">Number of resources that are allowed to be created by this API Account. This prevents outside systems from accidentally over populating the system.</div>
                     <div class="row">
                         <div class="col-12 col-sm-8 col-md-6">
-                            <input type="text" class="form-control" id="max_resources">
+                            <input type="number" class="form-control" id="max_resources">
                         </div>
                     </div>
                 </div>
@@ -382,7 +378,7 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="form-group">
                     <label class="control-label" id="nameLabel"> Email </label>
-                    <div class="int-fielddescription"> The email is used to send a daily reminder starting 30 days from the API Account expiring. </div>
+                    <div class="int-fielddescription"> The email is used to send a daily reminder starting 60 days from the API Account expiring. </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <input value="" aria-labelledby="" class="form-control" id="clientID" type="text">
@@ -406,7 +402,12 @@ $page_title = 'API Accounts';
                     <div class="int-fielddescription"> A unique identifier for this account. </div>
                     <div class="row">
                         <div class="col-12 col-md-8">
-                            <input value="b038637f3cfe804736bc" aria-labelledby="" class="form-control" id="username" type="text" disabled>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="b038637f3cfe804736bc" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste1"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -418,7 +419,7 @@ $page_title = 'API Accounts';
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="" value="8EcBh5z6-iVQNCFklsI_VXg-fhMkELldb4ikBQiIwqM" disabled>
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
+                                    <button class="btn btn-outline-primary" type="button" data-toggle="tooltip" title="Copy" id="copypaste2"><i class="rbt-icon-copy"></i> <span class="sr-only">Copy</span></button>
                                 </div>
                             </div>
                         </div>
@@ -445,15 +446,26 @@ $page_title = 'API Accounts';
 <script type="text/javascript">
      $(document).ready(function() {
         $(function() {
-            $("#copypaste").click(function() {
+            $("#copypaste1").click(function() {
                 $(".tooltip-inner").text("Copied!");
                 setTimeout(function() {
                     $(".tooltip-inner").text("Copy");
                 }, 4000)
             });
+            
+            
+            $("#copypaste2").click(function() {
+                $(".tooltip-inner").text("Copied!");
+                setTimeout(function() {
+                    $(".tooltip-inner").text("Copy");
+                }, 4000)
+            });
+            
+            
+            
         });
     });
-</script>
+</script> 
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
