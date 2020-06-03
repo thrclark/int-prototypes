@@ -12,7 +12,7 @@
 --action-color: #006298;
 --border-color: #dddddd;
 --font_header: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;
---font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif;                    ;
+--font_body: "BentonSans", "Helvetica Neue", "Helvetica", sans-serif; 
 --fontsize_orgname: .875rem;
 --fontsize_appname: 1.625rem;
 --fontsize_header: 2rem;

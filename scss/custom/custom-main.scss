@@ -1,9 +1,11 @@
 //custom SCSS
+
+
+
 html {
   body {
     background-color: var(--body-bg-color);
     color: var(--body-text-color);
-    font-family: var(--font_body);
     transition: font-size 0.2s ease-in-out, line-height 0.2s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     header {
       .int-brand-image {
@@ -28,7 +30,6 @@ html {
         }
       }
       .rbt-header-avatar-id {
-        font-family: var(--font_body);
       }
       &.rbt-app-header {
         .int-brand-image {
@@ -70,11 +71,10 @@ html {
     }
     .main-content{
       color: var(--body-text-color);
-      font-family: var(--font_body);
       font-size: var(--fontsize_body);
       .card {
         font-size: var(--fontsize_body);
-        border-radius: var(--theme_border_radius) !important;
+        border-radius: $border-radius !important;
         border-color: var(--border-color) !important;
         background-color: var(--panel-bg-color);
         &.int-data-api {
@@ -157,7 +157,7 @@ html {
               color: var(--panel-text-color);
               border-color: var(--border-color);
               .btn-outline-primary {
-                border-radius: var(--theme_border_radius);
+                //border-radius: var(--theme_border_radius);
                 color: var(--action-color);
                 border-color: var(--action-color);
                 &:focus {
@@ -184,7 +184,6 @@ html {
       }
       .int-verify-controls {
         color: var(--body-text-color);
-        font-family: var(--font_body);
         #verifystatement, #deferstatement{
           font-size: var(--fontsize_verifyblock);
         }
@@ -392,7 +391,7 @@ html {
       }
     }
     .btn-primary {
-      border-radius: var(--theme_border_radius);
+      //border-radius: var(--theme_border_radius);
       background-color: var(--action-color);
       border-color: var(--action-color);
       &:focus {
@@ -404,7 +403,7 @@ html {
       }
     }
     .btn-outline-primary {
-      border-radius: var(--theme_border_radius);
+      //border-radius: var(--theme_border_radius);
       border-color: var(--action-color);
       color: var(--action-color);
       background-color: var(--panel-bg-color);
@@ -422,12 +421,12 @@ html {
       color: $white;
     }
     .list-group-item:last-child {
-      border-bottom-right-radius: var(--theme_border_radius);
-      border-bottom-left-radius: var(--theme_border_radius);
+      //border-bottom-right-radius: var(--theme_border_radius);
+      //border-bottom-left-radius: var(--theme_border_radius);
     }
     .list-group-item:first-child {
-      border-top-left-radius: var(--theme_border_radius);
-      border-top-right-radius: var(--theme_border_radius);
+      //border-top-left-radius: var(--theme_border_radius);
+      //border-top-right-radius: var(--theme_border_radius);
     }
     .dropdown-item:hover {
       background-color: var(--action-color);
