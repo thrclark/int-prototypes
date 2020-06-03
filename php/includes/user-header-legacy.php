@@ -7,7 +7,7 @@
         </div>
         <div class="w-100"></div>
         <div class="d-none d-lg-block text-nowrap">
-            <div class="rbt-header-avatar-id"> <span class="rbt-header-avatar" aria-hidden="true">UN</span> username </div>
+            <div class="rbt-header-avatar-id">Hello,  username </div>
         </div>
     </div>
 </header>

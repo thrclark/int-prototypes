@@ -40,6 +40,13 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
+                                    <div class="media-body"> <a href="php/verification-legacy-id-block.php" target="_blank" class="font-weight-bold">Legacy ID block</a>
+                                        <div class="ts-14">Base view of the verification with legacy ID block.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
                                     <div class="media-body"> <a href="php/verification-slowload1.php" target="_blank" class="font-weight-bold">Slow load - section</a>
                                         <div class="ts-14">End user view of page with sections that slowly load.</div>
                                     </div>
