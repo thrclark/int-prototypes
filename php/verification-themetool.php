@@ -33,7 +33,12 @@ $page_title = 'CampusConfirm';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="rbt-shell-main d-lg-flex" style="max-width:inherit">
+<div class="d-lg-none">
+    <div class="border-top text-center mb-2">
+        <p class="ts-23  pt-7 mb-3"> The custom theme tool is only available on desktop devices.</p>
+    </div>
+</div>
+<div class="rbt-shell-main d-none d-lg-flex" style="max-width:inherit">
     <div class="rbt-shell">
         <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
