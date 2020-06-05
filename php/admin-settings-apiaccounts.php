@@ -18,6 +18,13 @@ $page_title = 'API Accounts';
                 <span>Save successful.</span> </div>
         </alert>
     </growls>
+    <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl2">
+        <alert dismissible="true">
+            <div role="alert" class="alert alert-success alert-dismissible mb-3">
+                <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
+                <span>API Account deleted.</span> </div>
+        </alert>
+    </growls>
     <main class="main-content demojs_listview" id="main-content">
         <div class="row align-items-center mb-3 mb-md-6 ">
             <div class="col">
@@ -59,7 +66,7 @@ $page_title = 'API Accounts';
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item">Delete</button>
+                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_success">Delete...</button>
                                 </div>
                             </div>
                         </div></td>
@@ -76,7 +83,7 @@ $page_title = 'API Accounts';
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item">Delete</button>
+                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
                                 </div>
                             </div>
                         </div></td>
@@ -93,7 +100,7 @@ $page_title = 'API Accounts';
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item">Delete</button>
+                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
                                 </div>
                             </div>
                         </div></td>
@@ -110,7 +117,7 @@ $page_title = 'API Accounts';
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item">Delete</button>
+                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
                                 </div>
                             </div>
                         </div></td>
@@ -127,13 +134,62 @@ $page_title = 'API Accounts';
                                 <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
                                     <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item">Delete</button>
+                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
                                 </div>
                             </div>
                         </div></td>
                 </tr>
             </tbody>
         </table>
+        <div class="modal fade" id="speedbump_deleteapi_success" tabindex="-1" role="dialog" aria-labelledby="speedbump_deleteapi_success" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="failpage1">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Delete API account</div>
+                    </div>
+                    <div class="modal-body">
+                        <p> The API account 'Digital Compliance API AUA' will be deleted immediately. Are you sure you wish to proceed? </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rbt-button-group">
+                            <button type="button" class="btn btn-primary" id="delete_api_success" data-dismiss="modal">Delete account</button>
+                            <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="speedbump_deleteapi_fail" tabindex="-1" role="dialog" aria-labelledby="speedbump_deleteapi_fail" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" id="failpage1">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Delete API account</div>
+                    </div>
+                    <div class="modal-body">
+                        <p> The API account 'Digital Compliance API AUA' will be deleted immediately. Are you sure you wish to proceed? </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rbt-button-group">
+                            <button type="button" class="btn btn-primary" id="delete_api_fail">Delete account</button>
+                            <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-content" id="failpage2" style="display: none">
+                    <div class="modal-header">
+                        <div class="modal-title" id="exampleModalLabel">Unexpected error</div>
+                    </div>
+                    <div class="modal-body">
+                        <p>An unexpected error has occurred. If this problem persists, please contact your administrator.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="rbt-button-group">
+                            <button class="btn btn-primary" data-dismiss="modal" id="close_error">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <main class="main-content demojs_newview" style="display: none">
         <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
@@ -443,6 +499,22 @@ $page_title = 'API Accounts';
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
+<script>
+    $(document).ready(function() {
+        $("#delete_api_fail").click(function() {
+            $("#failpage1").hide();
+            $("#failpage2").show();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $("#close_error").click(function() {
+            $("#failpage1").show();
+            $("#failpage2").hide();
+        });
+    });
+</script> 
 <script type="text/javascript">
      $(document).ready(function() {
         $(function() {
@@ -577,8 +649,15 @@ $(document).ready(function() {
 </script> 
 <script>
     $(document).ready(function() {
-        $("#submitform").click(function() {
+        $("#submitform, #delete_api_success").click(function() {
             $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $(".demojs_deleteline").click(function() {
+            $("#growl2").delay(2000).fadeIn().delay(5000).fadeOut();
         });
     });
 </script> 
