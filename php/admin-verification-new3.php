@@ -98,8 +98,7 @@ $page_subtitle = 'Recipients';
                                             <input class="form-check-input" type="checkbox" value="" id="recurannually">
                                             <label class="form-check-label" for="recurannually"> Recur annualy </label>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
+                                        <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
                                             <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
                                             <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
                                                 <dl id="builder_group_0" class="rules-group-container">
@@ -222,7 +221,6 @@ $page_subtitle = 'Recipients';
                                                     </dd>
                                                 </dl>
                                             </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
