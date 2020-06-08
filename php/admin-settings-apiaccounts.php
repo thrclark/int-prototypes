@@ -143,7 +143,7 @@ $page_title = 'API Accounts';
         </table>
         <div class="modal fade" id="speedbump_deleteapi_success" tabindex="-1" role="dialog" aria-labelledby="speedbump_deleteapi_success" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content" id="failpage1">
+                <div class="modal-content">
                     <div class="modal-header">
                         <div class="modal-title" id="exampleModalLabel">Delete API account</div>
                     </div>
@@ -649,15 +649,15 @@ $(document).ready(function() {
 </script> 
 <script>
     $(document).ready(function() {
-        $("#submitform, #delete_api_success").click(function() {
+        $("#submitform").click(function() {
             $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
         });
     });
 </script> 
 <script>
     $(document).ready(function() {
-        $(".demojs_deleteline").click(function() {
-            $("#growl2").delay(2000).fadeIn().delay(5000).fadeOut();
+        $("#delete_api_success").click(function() {
+            $("#growl2").delay(500).fadeIn().delay(5000).fadeOut();
         });
     });
 </script> 
