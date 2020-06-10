@@ -15,7 +15,7 @@ $page_title = 'Reset user verifications';
         <alert dismissible="true">
             <div role="alert" class="alert alert-success alert-dismissible mb-3">
                 <button type="button" class="close" aria-label="Close" data-dismiss="alert"> <span class="rbt-icon-close"></span> </button>
-                <span>Save successful.</span> </div>
+                <span>Verification reset.</span> </div>
         </alert>
     </growls>
     <main class="main-content" id="main-content">
@@ -68,15 +68,24 @@ $page_title = 'Reset user verifications';
                 </tr>
             </tbody>
         </table>
+    
+    
+    
+     <div class="demojs-nosearchresults" style="display: none">
+            <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up  d-inline-block" >No results</h2>
+            <button class="btn btn-link ts-14 font-italic font-weight-normal p-0" id="clearresults2">(Clear)</button>
+        </div>
+    
+    
         <!-- Modal -->
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="exampleModalLabel">Confirm Reset User Verification</div>
+                        <div class="modal-title" id="exampleModalLabel">Confirm reset user verification</div>
                     </div>
                     <div class="modal-body">
-                        <p>Are you sure you want to reset this user to require verification again immediately?</p>
+                         <p> If this user has responded to this verification in the past (and still has access), they will see it again the next time this verification is triggered. Are you sure you want to reset this verification for this user?</p>
                         <dl>
                             <dt>Name</dt>
                             <dd>Citizenship Verification</dd>
@@ -97,10 +106,10 @@ $page_title = 'Reset user verifications';
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title" id="exampleModalLabel">Confirm Reset User Verification</div>
+                        <div class="modal-title" id="exampleModalLabel">Confirm reset user verification</div>
                     </div>
                     <div class="modal-body">
-                        <p>Are you sure you want to reset this user to require verification again immediately?</p>
+                        <p> If this user has responded to this verification in the past (and still has access), they will see it again the next time this verification is triggered. Are you sure you want to reset this verification for this user?</p>
                         <dl>
                             <dt>Name</dt>
                             <dd>FERPA Compliance</dd>
@@ -121,14 +130,21 @@ $page_title = 'Reset user verifications';
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
-    $(document).ready(function() {
-        $("#search").click(function() {
+$(document).ready(function() {
+    $('#search').click(function() {
+        if ($('#userSearch').val() == 'thrclark') {
             $(".demojs-searchresults").show();
-        });
-        $("#clearresults").click(function() {
+            $(".demojs-nosearchresults").hide();
+        } else {
             $(".demojs-searchresults").hide();
-        });
-    }); 
+            $(".demojs-nosearchresults").show();
+        }
+    });
+    $("#clearresults, #clearresults2").click(function() {
+        $(".demojs-searchresults").hide();
+        $(".demojs-nosearchresults").hide();
+    });
+});
 </script> 
 <script>
     $(document).ready(function() {
