@@ -73,154 +73,321 @@ $page_subtitle = 'Recipients';
                                                 </div>
                                             </div>
                                         </div>
-                                        <fieldset aria-describedby="selectdate1" class="mb-3">
+                                        <fieldset aria-describedby="selectdate1" class="">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <div class="int-fielddescription" id="selectdate1">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
-                                            <div class="row mt-3 mb-1">
-                                                <div class="col-12 col-sm-6 col-md-4">
-                                                    <label for="time-demo-start-day" class="">Start day</label>
+                                            <div class="row align-items-center">
+                                                <div class="col">
                                                     <div class="rbt-datepicker__input">
-                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control">
+                                                        <label for="datepicker_start" class="sr-only">Start date</label>
+                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control" placeholder="mm/dd/yyyy">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-sm-6 col-md-4">
-                                                    <label for="start-time"  class="">Start time</label>
-                                                    <input type="time" id="start-time" class="form-control" value="" placeholder="hh:mm:AM">
+                                                <div class="col">
+                                                    <timepicker class="ng-untouched ng-valid ng-dirty">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr class="text-center">
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-up"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-up"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="form-group"><label for="timepicker_hour" class="sr-only">Start hour</label>
+                                                                        <input class="form-control text-center bs-timepicker-field" id="timepicker_hour" maxlength="2" type="text" placeholder="hh"></td>
+                                                                    <td>&nbsp;:&nbsp;</td>
+                                                                    <td class="form-group"><label for="timepicker_minute" class="sr-only">Start minute</label>
+                                                                        <input class="form-control text-center bs-timepicker-field" id="timepicker_minute" maxlength="2" type="text" placeholder="mm"></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td><button class="btn btn-default text-center" type="button">AM </button></td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-down"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-down"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </timepicker>
                                                 </div>
-                                                <div class="col-12 col-sm-6 col-md-4 d-flex align-items-end">
+                                                <div class="col">
                                                     <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
                                                 </div>
                                             </div>
                                         </fieldset>
-                                       
                                         <div class="form-check mb-5">
                                             <input class="form-check-input" type="checkbox" value="" id="recurannually">
                                             <label class="form-check-label" for="recurannually"> Recur annualy </label>
                                         </div>
                                         <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
-                                            <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
-                                            <div id="builder" class="rbt-expressionbuilder query-builder form-inline">
-                                                <dl id="builder_group_0" class="rules-group-container">
-                                                    <dt class="rules-group-header">
-                                                        <div class="btn-group float-right group-actions">
-                                                            <div class="dropdown">
-                                                                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Add </button>
-                                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(73px, 24px, 0px);">
-                                                                    <button type="button" class="dropdown-item" data-add="rule"> <i class="glyphicon glyphicon-plus"></i> Add rule </button>
-                                                                    <button type="button" class="dropdown-item" data-add="group"> <i class="glyphicon glyphicon-plus-sign"></i> Add group </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="btn-group group-conditions">
-                                                            <label class="btn btn-sm btn-primary active">
-                                                                <input type="radio" name="builder_group_0_cond" value="AND">
-                                                                All </label>
-                                                            <label class="btn btn-sm btn-primary">
-                                                                <input type="radio" name="builder_group_0_cond" value="OR">
-                                                                Any </label>
-                                                        </div>
-                                                        <div class="error-container" data-toggle="tooltip"><i class="glyphicon glyphicon-warning-sign"></i></div>
-                                                    </dt>
-                                                    <dd class="rules-group-body">
-                                                        <ul class="rules-list">
-                                                            <li id="builder_rule_0" class="rule-container">
-                                                                <div class="rule-header">
-                                                                    <div class="btn-group float-right rule-actions">
-                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                        <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
+                                        <permissions _ngcontent-nrp-c4="" ng-reflect-expression-form-group="[object Object]">
+                                            <div class="rbt-expressionbuilder">
+                                                <non-leaf-expression ng-reflect-is-top-level="true" ng-reflect-expression-form="[object Object]" ng-reflect-attribute-mappings="[object Object],[object Object">
+                                                    <div ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid">
+                                                        <dl class="rules-group-container">
+                                                            <dt class="rules-group-header">
+                                                                <div class="btn-group float-right">
+                                                                    <div class="btn-group" dropdown="">
+                                                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle" dropdowntoggle="" type="button" aria-haspopup="true" aria-expanded="false">
+                                                                        <message key="acl.buttons.add" ng-reflect-key="acl.buttons.add">Add</message>
+                                                                        </button>
+                                                                        <!---->
+                                                                        <div class="dropdown-menu dropdown-menu-right" role="menu" style="left: auto; right: 0px;">
+                                                                            <button class="dropdown-item" type="button">
+                                                                            <message key="acl.action.addCriteria" ng-reflect-key="acl.action.addCriteria">Add Criteria</message>
+                                                                            </button>
+                                                                            <button class="dropdown-item" type="button">
+                                                                            <message key="acl.action.addGroup" ng-reflect-key="acl.action.addGroup">Add Criteria Grouping</message>
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
-                                                                <div class="rule-filter-container">
-                                                                    <select class="form-control" name="builder_rule_0_filter">
-                                                                        <option value="-1">------</option>
-                                                                        <option value="email">Email Address</option>
-                                                                        <option value="firstname">First Name</option>
-                                                                        <option value="lastname">Last Name</option>
-                                                                        <option value="campus">Campus</option>
-                                                                        <option value="roles">Roles</option>
-                                                                        <option value="groups">Groups</option>
-                                                                        <option value="personid">Person ID</option>
-                                                                        <option value="username">User Name</option>
-                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
-                                                                    </select>
+                                                                <div class="btn-group">
+                                                                    <button class="btn btn-sm btn-primary" type="button">
+                                                                    <message key="acl.group.or" ng-reflect-key="acl.group.or">Any</message>
+                                                                    </button>
+                                                                    <button class="btn btn-sm btn-outline-primary" type="button">
+                                                                    <message key="acl.group.and" ng-reflect-key="acl.group.and">All</message>
+                                                                    </button>
                                                                 </div>
-                                                                <div class="rule-operator-container">
-                                                                    <select class="form-control" name="builder_rule_0_operator">
-                                                                        <option value="equal">equal</option>
-                                                                        <option value="not_equal">not equal</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="rule-value-container">
-                                                                    <input class="form-control" type="text" name="builder_rule_0_value_0">
-                                                                </div>
-                                                            </li>
-                                                            <li id="builder_rule_1" class="rule-container">
-                                                                <div class="rule-header">
-                                                                    <div class="btn-group float-right rule-actions">
-                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
+                                                            </dt>
+                                                            <dd class="rules-group-body">
+                                                                <ul class="rules-list">
+                                                                    <li class="rule-container ng-untouched ng-pristine ng-valid" formarrayname="leafChildren" ng-reflect-name="leafChildren">
+                                                                        <div ng-reflect-name="0" class="ng-untouched ng-pristine ng-valid">
+                                                                            <expression-criteria ng-reflect-is-last-item="false" ng-reflect-attribute-mappings="[object Object],[object Object">
+                                                                                <div ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid">
+                                                                                    <div class="rule-header">
+                                                                                        <div class="btn-group rule-actions">
+                                                                                            <button class="btn btn-sm btn-link" type="button"> <i aria-hidden="true" class="rbt-icon-close"></i> <span class="sr-only">
+                                                                                            <message key="acl.action.remove" ng-reflect-key="acl.action.remove">remove</message>
+                                                                                            </span> </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!--                       <div class="row">
+                                                <div class="rule-filter-container col-5"> <span class="sr-only" id="mapping-name">
+                                                    <message key="acl.field.mappings.name" ng-reflect-key="acl.field.mappings.name">Select an attribute</message>
+                                                    </span>
+                                                    <select aria-labelledby="mapping-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="key" ng-reflect-name="key">
+                                                        <option value="0: null">
+                                                        <message key="global.select.blank" ng-reflect-key="global.select.blank">------</message>
+                                                        </option>
+                                                        <option value="emails" ng-reflect-value="emails">Email Address : mail</option>
+                                                        <option value="firstName" ng-reflect-value="firstName">First Name : givenName</option>
+                                                        <option value="lastName" ng-reflect-value="lastName">Last Name : sn</option>
+                                                        <option value="Campus" ng-reflect-value="Campus">Campus : ou</option>
+                                                        <option value="roles" ng-reflect-value="roles">Roles : eduPersonAffiliation</option>
+                                                        <option value="groups" ng-reflect-value="groups">Groups : memberOf</option>
+                                                        <option value="personId" ng-reflect-value="personId">Person ID : iuEduPSEMPLID</option>
+                                                        <option value="userName" ng-reflect-value="userName">User Name : sAMAccountName</option>
+                                                        <option value="primaryStudentAffiliation" ng-reflect-value="primaryStudentAffiliation">primaryStudentAffiliation : iuEduPrimaryStudentAffiliation</option>
+                                                    </select>
+                                                </div>
+                                                <div class="rule-operator-container col-2" hidden=""> <span class="sr-only" id="compare-name">
+                                                    <message key="acl.field.comparison.name" ng-reflect-key="acl.field.comparison.name">Select a comparison type</message>
+                                                    </span>
+                                                    <select aria-labelledby="compare-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="negated" ng-reflect-name="negated">
+                                                        <option value="0: false" ng-reflect-ng-value="false">
+                                                        <message key="acl.comparison.equal" ng-reflect-key="acl.comparison.equal">is</message>
+                                                        </option>
+                                                        <option value="1: true" ng-reflect-ng-value="true">
+                                                        <message key="acl.comparison.notEqual" ng-reflect-key="acl.comparison.notEqual">is not</message>
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="rule-value-container col-5" hidden=""> <span class="sr-only" id="name">
+                                                    <message key="acl.field.value.name" ng-reflect-key="acl.field.value.name">Attribute value</message>
+                                                    </span>
+                                                    <input aria-labelledby="name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="value" type="text" ng-reflect-name="value">
+                                                </div>
+                                            </div>-->
+                                                                                    
+                                                                                    <div class="row">
+                                                                                        <div class="rule-filter-container col-5"> <span class="sr-only" id="mapping-name">
+                                                                                            <message key="admin.acl.field.mappings.name">Select an attribute</message>
+                                                                                            </span>
+                                                                                            <select aria-labelledby="mapping-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="key">
+                                                                                                <option value="0: null">
+                                                                                                <message key="admin.select.blank">------</message>
+                                                                                                </option>
+                                                                                                <!---->
+                                                                                                <option value="emails">Email Address : mail</option>
+                                                                                                <option value="firstName">First Name : givenName</option>
+                                                                                                <option value="lastName">Last Name : sn</option>
+                                                                                                <option value="Campus">Campus : ou</option>
+                                                                                                <option value="roles">Roles : eduPersonAffiliation</option>
+                                                                                                <option value="groups">Groups : memberOf</option>
+                                                                                                <option value="personId">Person ID : iuEduPSEMPLID</option>
+                                                                                                <option value="userName">User Name : sAMAccountName</option>
+                                                                                                <option value="primaryStudentAffiliation">primaryStudentAffiliation : iuEduPrimaryStudentAffiliation</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rule-operator-container col-2"> <span class="sr-only" id="compare-name">
+                                                                                            <message key="admin.acl.field.comparison.name">Select a comparison type</message>
+                                                                                            </span>
+                                                                                            <select aria-labelledby="compare-name" class="form-control ng-pristine ng-valid ng-touched" formcontrolname="negated">
+                                                                                                <option value="0: false">
+                                                                                                <message key="admin.acl.comparison.equal">is</message>
+                                                                                                </option>
+                                                                                                <option value="1: true">
+                                                                                                <message key="admin.acl.comparison.notEqual">is not</message>
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rule-value-container col-5"> <span class="sr-only" id="name">
+                                                                                            <message key="admin.acl.field.value.name">Attribute value</message>
+                                                                                            </span>
+                                                                                            <input aria-labelledby="name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="value" type="text">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </expression-criteria>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="rule-container ng-untouched ng-pristine ng-valid" formarrayname="leafChildren" ng-reflect-name="leafChildren">
+                                                                        <div ng-reflect-name="1" class="ng-untouched ng-pristine ng-valid">
+                                                                            <expression-criteria ng-reflect-is-last-item="false" ng-reflect-attribute-mappings="[object Object],[object Object">
+                                                                                <div ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid">
+                                                                                    <div class="rule-header">
+                                                                                        <div class="btn-group rule-actions">
+                                                                                            <button class="btn btn-sm btn-link" type="button"> <i aria-hidden="true" class="rbt-icon-close"></i> <span class="sr-only">
+                                                                                            <message key="acl.action.remove" ng-reflect-key="acl.action.remove">remove</message>
+                                                                                            </span> </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="rule-filter-container col-5"> <span class="sr-only" id="mapping-name">
+                                                                                            <message key="acl.field.mappings.name" ng-reflect-key="acl.field.mappings.name">Select an attribute</message>
+                                                                                            </span>
+                                                                                            <select aria-labelledby="mapping-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="key" ng-reflect-name="key">
+                                                                                                <option value="0: null">
+                                                                                                <message key="global.select.blank" ng-reflect-key="global.select.blank">------</message>
+                                                                                                </option>
+                                                                                                <option value="emails" ng-reflect-value="emails">Email Address : mail</option>
+                                                                                                <option value="firstName" ng-reflect-value="firstName">First Name : givenName</option>
+                                                                                                <option value="lastName" ng-reflect-value="lastName">Last Name : sn</option>
+                                                                                                <option value="Campus" ng-reflect-value="Campus">Campus : ou</option>
+                                                                                                <option value="roles" ng-reflect-value="roles">Roles : eduPersonAffiliation</option>
+                                                                                                <option value="groups" ng-reflect-value="groups">Groups : memberOf</option>
+                                                                                                <option value="personId" ng-reflect-value="personId">Person ID : iuEduPSEMPLID</option>
+                                                                                                <option value="userName" ng-reflect-value="userName">User Name : sAMAccountName</option>
+                                                                                                <option value="primaryStudentAffiliation" ng-reflect-value="primaryStudentAffiliation">primaryStudentAffiliation : iuEduPrimaryStudentAffiliation</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rule-operator-container col-2" hidden=""> <span class="sr-only" id="compare-name">
+                                                                                            <message key="acl.field.comparison.name" ng-reflect-key="acl.field.comparison.name">Select a comparison type</message>
+                                                                                            </span>
+                                                                                            <select aria-labelledby="compare-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="negated" ng-reflect-name="negated">
+                                                                                                <option value="0: false" ng-reflect-ng-value="false">
+                                                                                                <message key="acl.comparison.equal" ng-reflect-key="acl.comparison.equal">is</message>
+                                                                                                </option>
+                                                                                                <option value="1: true" ng-reflect-ng-value="true">
+                                                                                                <message key="acl.comparison.notEqual" ng-reflect-key="acl.comparison.notEqual">is not</message>
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rule-value-container col-5" hidden=""> <span class="sr-only" id="name">
+                                                                                            <message key="acl.field.value.name" ng-reflect-key="acl.field.value.name">Attribute value</message>
+                                                                                            </span>
+                                                                                            <input aria-labelledby="name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="value" type="text" ng-reflect-name="value">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </expression-criteria>
+                                                                        </div>
+                                                                    </li>
+                                                                    <div formarrayname="nonLeafChildren" ng-reflect-name="nonLeafChildren" class="ng-untouched ng-pristine ng-valid">
+                                                                        <div ng-reflect-name="0" class="ng-untouched ng-pristine ng-valid">
+                                                                            <non-leaf-expression ng-reflect-is-top-level="false" ng-reflect-expression-form="[object Object]" ng-reflect-attribute-mappings="[object Object],[object Object">
+                                                                                <div ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid">
+                                                                                    <dl class="rules-group-container">
+                                                                                        <dt class="rules-group-header">
+                                                                                            <div class="btn-group float-right">
+                                                                                                <div class="btn-group" dropdown="">
+                                                                                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle" dropdowntoggle="" type="button" aria-haspopup="true">
+                                                                                                    <message key="acl.buttons.add" ng-reflect-key="acl.buttons.add">Add</message>
+                                                                                                    </button>
+                                                                                                </div>
+                                                                                                <button class="btn btn-sm btn-outline-primary" type="button"> <i aria-hidden="true" class="rbt-icon-close"></i> <span class="sr-only">
+                                                                                                <message key="acl.action.remove" ng-reflect-key="acl.action.remove">remove</message>
+                                                                                                </span> </button>
+                                                                                            </div>
+                                                                                            <div class="btn-group">
+                                                                                                <button class="btn btn-sm btn-outline-primary" type="button" disabled="">
+                                                                                                <message key="acl.group.or" ng-reflect-key="acl.group.or">Any</message>
+                                                                                                </button>
+                                                                                                <button class="btn btn-sm btn-outline-primary" type="button" disabled="">
+                                                                                                <message key="acl.group.and" ng-reflect-key="acl.group.and">All</message>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </dt>
+                                                                                        <dd class="rules-group-body">
+                                                                                            <ul class="rules-list">
+                                                                                                <li class="rule-container ng-untouched ng-pristine ng-valid" formarrayname="leafChildren" ng-reflect-name="leafChildren">
+                                                                                                    <div ng-reflect-name="0" class="ng-untouched ng-pristine ng-valid">
+                                                                                                        <expression-criteria ng-reflect-is-last-item="true" ng-reflect-attribute-mappings="[object Object],[object Object">
+                                                                                                            <div ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid">
+                                                                                                                <div class="row">
+                                                                                                                    <div class="rule-filter-container col-5"> <span class="sr-only" id="mapping-name">
+                                                                                                                        <message key="acl.field.mappings.name" ng-reflect-key="acl.field.mappings.name">Select an attribute</message>
+                                                                                                                        </span>
+                                                                                                                        <select aria-labelledby="mapping-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="key" ng-reflect-name="key">
+                                                                                                                            <option value="0: null">
+                                                                                                                            <message key="global.select.blank" ng-reflect-key="global.select.blank">------</message>
+                                                                                                                            </option>
+                                                                                                                            <option value="emails" ng-reflect-value="emails">Email Address : mail</option>
+                                                                                                                            <option value="firstName" ng-reflect-value="firstName">First Name : givenName</option>
+                                                                                                                            <option value="lastName" ng-reflect-value="lastName">Last Name : sn</option>
+                                                                                                                            <option value="Campus" ng-reflect-value="Campus">Campus : ou</option>
+                                                                                                                            <option value="roles" ng-reflect-value="roles">Roles : eduPersonAffiliation</option>
+                                                                                                                            <option value="groups" ng-reflect-value="groups">Groups : memberOf</option>
+                                                                                                                            <option value="personId" ng-reflect-value="personId">Person ID : iuEduPSEMPLID</option>
+                                                                                                                            <option value="userName" ng-reflect-value="userName">User Name : sAMAccountName</option>
+                                                                                                                            <option value="primaryStudentAffiliation" ng-reflect-value="primaryStudentAffiliation">primaryStudentAffiliation : iuEduPrimaryStudentAffiliation</option>
+                                                                                                                        </select>
+                                                                                                                    </div>
+                                                                                                                    <div class="rule-operator-container col-2" hidden=""> <span class="sr-only" id="compare-name">
+                                                                                                                        <message key="acl.field.comparison.name" ng-reflect-key="acl.field.comparison.name">Select a comparison type</message>
+                                                                                                                        </span>
+                                                                                                                        <select aria-labelledby="compare-name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="negated" ng-reflect-name="negated">
+                                                                                                                            <option value="0: false" ng-reflect-ng-value="false">
+                                                                                                                            <message key="acl.comparison.equal" ng-reflect-key="acl.comparison.equal">is</message>
+                                                                                                                            </option>
+                                                                                                                            <option value="1: true" ng-reflect-ng-value="true">
+                                                                                                                            <message key="acl.comparison.notEqual" ng-reflect-key="acl.comparison.notEqual">is not</message>
+                                                                                                                            </option>
+                                                                                                                        </select>
+                                                                                                                    </div>
+                                                                                                                    <div class="rule-value-container col-5" hidden=""> <span class="sr-only" id="name">
+                                                                                                                        <message key="acl.field.value.name" ng-reflect-key="acl.field.value.name">Attribute value</message>
+                                                                                                                        </span>
+                                                                                                                        <input aria-labelledby="name" class="form-control ng-untouched ng-pristine ng-valid" formcontrolname="value" type="text" ng-reflect-name="value">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </expression-criteria>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </dd>
+                                                                                    </dl>
+                                                                                </div>
+                                                                            </non-leaf-expression>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
-                                                                <div class="rule-filter-container">
-                                                                    <select class="form-control" name="builder_rule_1_filter">
-                                                                        <option value="-1">------</option>
-                                                                        <option value="email">Email Address</option>
-                                                                        <option value="firstname">First Name</option>
-                                                                        <option value="lastname">Last Name</option>
-                                                                        <option value="campus">Campus</option>
-                                                                        <option value="roles">Roles</option>
-                                                                        <option value="groups">Groups</option>
-                                                                        <option value="personid">Person ID</option>
-                                                                        <option value="username">User Name</option>
-                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="rule-operator-container">
-                                                                    <select class="form-control" name="builder_rule_1_operator">
-                                                                        <option value="equal">equal</option>
-                                                                        <option value="not_equal">not equal</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="rule-value-container">
-                                                                    <input class="form-control" type="text" name="builder_rule_1_value_0">
-                                                                </div>
-                                                            </li>
-                                                            <li id="builder_rule_2" class="rule-container">
-                                                                <div class="rule-header">
-                                                                    <div class="btn-group float-right rule-actions">
-                                                                        <button type="button" class="close" data-delete="rule"> <span class="rbt-icon-close"></span> </button>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="error-container"><i class="glyphicon glyphicon-warning-sign"></i></div>
-                                                                <div class="rule-filter-container">
-                                                                    <select class="form-control" name="builder_rule_2_filter">
-                                                                        <option value="-1">------</option>
-                                                                        <option value="email">Email Address</option>
-                                                                        <option value="firstname">First Name</option>
-                                                                        <option value="lastname">Last Name</option>
-                                                                        <option value="campus">Campus</option>
-                                                                        <option value="roles">Roles</option>
-                                                                        <option value="groups">Groups</option>
-                                                                        <option value="personid">Person ID</option>
-                                                                        <option value="username">User Name</option>
-                                                                        <option value="primarystudentaffiliation">Primary Student Affiliation</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="rule-operator-container">
-                                                                    <select class="form-control" name="builder_rule_2_operator">
-                                                                        <option value="equal">equal</option>
-                                                                        <option value="not_equal">not equal</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="rule-value-container">
-                                                                    <input class="form-control" type="text" name="builder_rule_2_value_0">
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </dd>
-                                                </dl>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </non-leaf-expression>
                                             </div>
+                                        </permissions>
                                     </div>
                                 </div>
                             </div>
@@ -642,7 +809,7 @@ $(document).ready(function(){
     
     
     });
-</script>
+</script> 
 <script>
      $(window).resize(function(){location.reload();});
 </script>

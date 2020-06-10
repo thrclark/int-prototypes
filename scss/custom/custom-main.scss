@@ -2,6 +2,8 @@
 
 
 
+
+
 html {
   body {
     background-color: var(--body-bg-color);
@@ -206,6 +208,9 @@ html {
           border-bottom: 1px solid  var(--border-color);
         }
       }
+      .rbt-datepicker__icon {
+        z-index: 1;
+      }
 
     }
     a, button {
@@ -218,7 +223,7 @@ html {
       }
     }
     .form-control {
-      background: $white;
+      background-color: $white;
       background-repeat: no-repeat;
       &[disabled] {
         color:$color-black--600;
@@ -230,7 +235,7 @@ html {
       }
     }
     .rbt-datepicker__input input[type="text"] {
-      background: $white;
+      background-color: $white;
     }
 
     input[type="checkbox"] + label:before, input[type="checkbox"] + input + label:before {
