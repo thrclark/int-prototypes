@@ -308,8 +308,8 @@ $page_subtitle = 'Recipients';
                                                                                 <div ng-reflect-form="[object Object]" class="ng-untouched ng-pristine ng-valid">
                                                                                     <dl class="rules-group-container">
                                                                                         <dt class="rules-group-header">
-                                                                                            <div class="btn-group float-right">
-                                                                                                <div class="btn-group" dropdown="">
+                                                                                            <div class="float-right">
+                                                                                                <div dropdown="">
                                                                                                     <button class="btn btn-sm btn-outline-primary dropdown-toggle" dropdowntoggle="" type="button" aria-haspopup="true">
                                                                                                     <message key="acl.buttons.add" ng-reflect-key="acl.buttons.add">Add</message>
                                                                                                     </button>
