@@ -77,14 +77,14 @@ $page_subtitle = 'Recipients';
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <div class="int-fielddescription" id="selectdate1">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
                                             <div class="row align-items-center">
-                                                <div class="col">
+                                                <div class="col-12 col-md-4">
                                                     <div class="rbt-datepicker__input">
                                                         <label for="datepicker_start" class="sr-only">Start date</label>
-                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control" placeholder="mm/dd/yyyy">
+                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control ng-invalid" placeholder="mm/dd/yyyy">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-12 col-md-4">
                                                     <timepicker class="ng-untouched ng-valid ng-dirty">
                                                         <table>
                                                             <tbody>
@@ -97,10 +97,10 @@ $page_subtitle = 'Recipients';
                                                                 </tr>
                                                                 <tr>
                                                                     <td class="form-group"><label for="timepicker_hour" class="sr-only">Start hour</label>
-                                                                        <input class="form-control text-center bs-timepicker-field" id="timepicker_hour" maxlength="2" type="text" placeholder="hh"></td>
+                                                                        <input class="form-control text-center bs-timepicker-field ng-invalid" id="timepicker_hour" maxlength="2" type="text" placeholder="hh"></td>
                                                                     <td>&nbsp;:&nbsp;</td>
                                                                     <td class="form-group"><label for="timepicker_minute" class="sr-only">Start minute</label>
-                                                                        <input class="form-control text-center bs-timepicker-field" id="timepicker_minute" maxlength="2" type="text" placeholder="mm"></td>
+                                                                        <input class="form-control text-center bs-timepicker-field ng-invalid" id="timepicker_minute" maxlength="2" type="text" placeholder="mm"></td>
                                                                     <td>&nbsp;&nbsp;&nbsp;</td>
                                                                     <td><button class="btn btn-default text-center" type="button">AM </button></td>
                                                                 </tr>
@@ -115,9 +115,22 @@ $page_subtitle = 'Recipients';
                                                         </table>
                                                     </timepicker>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-12 col-md-4">
                                                     <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
                                                 </div>
+                                            </div>
+                                            <div class="row align-items-center mb-3 mt-3 mt-md-0">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
+                                                        <p class="rbt-ts-14" id="standalone4	"> Invalid date format.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
+                                                        <p class="rbt-ts-14" id="standalone4	"> Invalid time format.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4"> </div>
                                             </div>
                                         </fieldset>
                                         <div class="form-check mb-5">

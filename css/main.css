@@ -12767,6 +12767,8 @@ html body {
           border: 1px solid var(--panel-text-color); }
           html body .main-content .card .card-body .form-control:focus {
             color: var(--panel-text-color); }
+          html body .main-content .card .card-body .form-control.ng-invalid {
+            border-color: #df3603; }
         html body .main-content .card .card-body .int-section-overlay {
           background-color: rgba(255, 255, 255, 0.9);
           position: absolute;
