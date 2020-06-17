@@ -76,15 +76,21 @@ $page_subtitle = 'Recipients';
                                         <fieldset aria-describedby="selectdate1" class="">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <div class="int-fielddescription" id="selectdate1">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
+                                           
+                                            
+                                            <div class="mt-3"> <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button></div>
+                                           
+                                            
+                                            
                                             <div class="row align-items-center">
-                                                <div class="col-12 col-md-4">
+                                                <div class="col-12 col-lg-3">
                                                     <div class="rbt-datepicker__input">
                                                         <label for="datepicker_start" class="sr-only">Start date</label>
                                                         <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control ng-invalid" placeholder="mm/dd/yyyy">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4">
+                                                <div class="col-12 col-lg-4">
                                                     <timepicker class="ng-untouched ng-valid ng-dirty">
                                                         <table>
                                                             <tbody>
@@ -115,28 +121,41 @@ $page_subtitle = 'Recipients';
                                                         </table>
                                                     </timepicker>
                                                 </div>
-                                                <div class="col-12 col-md-4">
-                                                    <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
-                                                </div>
+                                               
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                 <div class="col-12 col-lg-5">
+                                                
+                                                  <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="recurannually">
+                                            <label class="form-check-label" for="recurannually"> Recur annualy </label>
+                                        </div>
+                                                  </div>
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
                                             </div>
-                                            <div class="row align-items-center mb-3 mt-3 mt-md-0">
-                                                <div class="col-12 col-md-4">
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-lg-3">
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
                                                         <p class="rbt-ts-14" id="standalone4	"> Invalid date format.</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4">
+                                                <div class="col-12 col-lg-4">
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
                                                         <p class="rbt-ts-14" id="standalone4	"> Invalid time format.</p>
                                                     </div>
                                                 </div>
-                                                <div class="col-12 col-md-4"> </div>
+                                                <div class="col-12 col-lg-5"> </div>
                                             </div>
                                         </fieldset>
-                                        <div class="form-check mb-5">
-                                            <input class="form-check-input" type="checkbox" value="" id="recurannually">
-                                            <label class="form-check-label" for="recurannually"> Recur annualy </label>
-                                        </div>
+                                      
                                         <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
                                         <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
                                         <permissions _ngcontent-nrp-c4="" ng-reflect-expression-form-group="[object Object]">
@@ -593,7 +612,7 @@ $page_subtitle = 'Recipients';
                                 <label for="specifyleeway">Leeway</label>
                                 <div class="int-fielddescription">If the user has updated their information within this many days prior to the Effective Date, they will not be required to verify. This is useful if the external application behind this verification makes use of the user entry API.</div>
                                 <div class="row">
-                                    <div class="col-12 col-md-4">
+                                    <div class="col-12 col-lg-4">
                                         <input type="number" class="form-control" id="specifyleeway" aria-describedby="textinput" placeholder="How many days?">
                                     </div>
                                 </div>
