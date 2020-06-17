@@ -76,12 +76,9 @@ $page_subtitle = 'Recipients';
                                         <fieldset aria-describedby="selectdate1" class="">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
                                             <div class="int-fielddescription" id="selectdate1">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
-                                           
-                                            
-                                            <div class="mt-3"> <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button></div>
-                                           
-                                            
-                                            
+                                            <div class="mt-3">
+                                                <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
+                                            </div>
                                             <div class="row align-items-center">
                                                 <div class="col-12 col-lg-3">
                                                     <div class="rbt-datepicker__input">
@@ -121,25 +118,12 @@ $page_subtitle = 'Recipients';
                                                         </table>
                                                     </timepicker>
                                                 </div>
-                                               
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                 <div class="col-12 col-lg-5">
-                                                
-                                                  <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="recurannually">
-                                            <label class="form-check-label" for="recurannually"> Recur annualy </label>
-                                        </div>
-                                                  </div>
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
+                                                <div class="col-12 col-lg-5">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="recurannually">
+                                                        <label class="form-check-label" for="recurannually"> Recur annualy </label>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="row align-items-center">
                                                 <div class="col-12 col-lg-3">
@@ -155,7 +139,6 @@ $page_subtitle = 'Recipients';
                                                 <div class="col-12 col-lg-5"> </div>
                                             </div>
                                         </fieldset>
-                                      
                                         <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
                                         <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
                                         <permissions _ngcontent-nrp-c4="" ng-reflect-expression-form-group="[object Object]">
