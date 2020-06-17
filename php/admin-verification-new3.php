@@ -820,8 +820,7 @@ $(document).ready(function(){
         }
     });
     
-    
-    
+
     
     });
 </script> 
