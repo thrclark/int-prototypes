@@ -13,7 +13,13 @@ $page_subtitle = 'Scheduling';
 <?php include('includes/admin-navigation.php') ?>
 <div class="container mt-3 mt-md-5 mb-7">
     <main class="main-content" id="main-content">
-        <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+        <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+        <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb rbt-breadcrumb-no-bkg">
+                <li class="breadcrumb-item"><a href="admin-verifications.php" class="">All verifications</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New verification</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-2 border-right d-none d-sm-block">
                 <div id="sticky">
@@ -64,7 +70,7 @@ $page_subtitle = 'Scheduling';
                             </div>
                         </div>
                         <hr class="mt-7">
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"><a href="admin-verification-new3.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"><a href="admin-verification-new3.php" class="btn btn-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="admin-verification-new6.php" class="btn btn-primary"> Next <i class="rbt-icon-chevron-right"></i> </a> <a href="admin-verifications.php" class="btn btn-outline-primary demojs_cancelaction"> Cancel </a> </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +106,7 @@ $(document).ready(function() {
 <script>
     var picker = new Pikaday({ field: document.getElementById('datepicker_start') });
 	var picker = new Pikaday({ field: document.getElementById('datepicker_end') });
-</script>
+</script> 
 <script>
      $(window).resize(function(){location.reload();});
 </script>
