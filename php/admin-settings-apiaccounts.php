@@ -532,9 +532,6 @@ $page_title = 'API Accounts';
                     $(".tooltip-inner").text("Copy");
                 }, 4000)
             });
-            
-            
-            
         });
     });
 </script> 
