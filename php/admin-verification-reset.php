@@ -28,7 +28,7 @@ $page_title = 'Reset user verifications';
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Search user name, ID, or email" id="userSearch">
                         <div class="input-group-append">
-                            <button class="btn btn-primary" type="submit" id="search"><i class="rbt-icon-magnifying-glass"></i> Search</button>
+                            <button class="btn btn-primary" type="submit" id="search"><i class="rbt-icon-magnifying-glass"></i> <span class="sr-only">Search</span></button>
                         </div>
                     </div>
                 </div>
@@ -68,15 +68,11 @@ $page_title = 'Reset user verifications';
                 </tr>
             </tbody>
         </table>
-    
-    
-    
-     <div class="demojs-nosearchresults" style="display: none">
+        <div class="demojs-nosearchresults" style="display: none">
             <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up  d-inline-block" >No results</h2>
             <button class="btn btn-link ts-14 font-italic font-weight-normal p-0" id="clearresults2">(Clear)</button>
         </div>
-    
-    
+        
         <!-- Modal -->
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -85,7 +81,7 @@ $page_title = 'Reset user verifications';
                         <div class="modal-title" id="exampleModalLabel">Confirm reset user verification</div>
                     </div>
                     <div class="modal-body">
-                         <p> If this user has responded to this verification in the past (and still has access), they will see it again the next time this verification is triggered. Are you sure you want to reset this verification for this user?</p>
+                        <p> If this user has responded to this verification in the past (and still has access), they will see it again the next time this verification is triggered. Are you sure you want to reset this verification for this user?</p>
                         <dl>
                             <dt>Name</dt>
                             <dd>Citizenship Verification</dd>
@@ -130,6 +126,16 @@ $page_title = 'Reset user verifications';
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
+	$(document).ready(function() {
+     $('#search').prop('disabled', true);
+     $('.form-control').keyup(function() {
+        if($(this).val() != '') {
+           $('#search').prop('disabled', false);
+        }
+     });
+ });
+</script> 
+<script>
 $(document).ready(function() {
     $('#search').click(function() {
         if ($('#userSearch').val() == 'thrclark') {
@@ -158,5 +164,3 @@ $(document).ready(function() {
 </script>
 </body>
 </html>
-
-
