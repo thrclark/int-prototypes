@@ -269,7 +269,7 @@ $page_title = 'API Accounts';
                                         <label for="url1_url">URL</label>
                                         <div class="int-fielddescription">External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
-                                            <div class="col-12 col-lg-6">
+                                            <div class="col-12">
                                                 <countdown>
                                                     <div class="rbt-charcount">
                                                         <input aria-labelledby="url1_url" class="form-control " formcontrolname="title" id="url1_url">
@@ -340,7 +340,7 @@ $page_title = 'API Accounts';
                                         <label for="url2_url">URL</label>
                                         <div class="int-fielddescription">External URL to connect to retrieve data from.  Use the syntax {attributeName} for where you want the user data to be put in your URL (e.g https://example.com/{personId} or https://example.com?user={userName}.  Please only use one of these fields in your URL (userName, personId, emails).  These map up with your attributes (sAMAccountName, iuEduPSEMPLID, mail). </div>
                                         <div class="row">
-                                            <div class="col-12 col-lg-6">
+                                            <div class="col-12">
                                                 <countdown>
                                                     <div class="rbt-charcount">
                                                         <input aria-labelledby="url2_url" class="form-control " formcontrolname="title" id="url2_url">
