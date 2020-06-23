@@ -52,7 +52,7 @@ $page_subtitle = 'Scheduling';
                             </div>
                         </div>
                         <div class="mb-7" id="enddate">
-                            <label for="start" class="font-weight-bold">End date (optional)</label>
+                            <label for="start" class="ts-14 font-weight-bold">End date (optional)</label>
                             <div class="int-fielddescription">The date to stop this verification from being displayed (this will be based on the current timezone of GMT-04:00).</div>
                             <div class="row">
                                 <div class="col-12 col-md-4">

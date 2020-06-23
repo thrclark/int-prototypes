@@ -82,7 +82,7 @@ $page_subtitle = 'Data';
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="vfy2_section_unkey"> Unique Key </label>
+                                            <label class="control-label" for="vfy2_section_unkey"> Unique key </label>
                                             <div class="int-fielddescription"> This uniquely identifies this section on the current verification.</div>
                                             <div class="row">
                                                 <div class="col-12 col-lg-6">
@@ -94,7 +94,7 @@ $page_subtitle = 'Data';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="font-weight-bold mb-2 ts-14">Sensitive Data</div>
+                                        <div class="font-weight-bold mb-2 ts-14">Sensitive data</div>
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" type="checkbox" value="" id="maskdata1">
                                             <label class="form-check-label" for="maskdata1"> Mask this data for the user until the user takes action to unmask it. </label>
@@ -141,7 +141,7 @@ $page_subtitle = 'Data';
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api1_liveDataEndpoint"> Live Data Endpoint </label>
+                                                    <label class="control-label" for="api1_liveDataEndpoint"> Live data endpoint </label>
                                                     <div class="int-fielddescription"> API Endpoint to pull Live Data </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
@@ -153,7 +153,7 @@ $page_subtitle = 'Data';
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api1_callbackEndpoint"> Callback Endpoint </label>
+                                                    <label class="control-label" for="api1_callbackEndpoint"> Callback endpoint </label>
                                                     <div class="int-fielddescription"> API Endpoint to call before submission is allowed </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
@@ -220,7 +220,7 @@ $page_subtitle = 'Data';
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api2_liveDataEndpoint"> Live Data Endpoint </label>
+                                                    <label class="control-label" for="api2_liveDataEndpoint"> Live data endpoint </label>
                                                     <div class="int-fielddescription"> API Endpoint to pull Live Data </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">
@@ -232,7 +232,7 @@ $page_subtitle = 'Data';
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label class="control-label" for="api2_callbackEndpoint"> Callback Endpoint </label>
+                                                    <label class="control-label" for="api2_callbackEndpoint"> Callback endpoint </label>
                                                     <div class="int-fielddescription"> API Endpoint to call before submission is allowed </div>
                                                     <div class="row">
                                                         <div class="col-12 col-lg-6">

@@ -54,7 +54,7 @@ $page_subtitle = 'Setup';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="vfy1_unkey"> Unique Key </label>
+                            <label class="control-label" for="vfy1_unkey"> Unique key </label>
                             <div class="int-fielddescription"> This uniquely identifies this verification in the application.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
@@ -114,7 +114,7 @@ $page_subtitle = 'Setup';
                             <textarea id="disclaimerLabel"></textarea>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="disclaimerLabel"> Verify Text</label>
+                            <label class="control-label" for="disclaimerLabel"> Verify text</label>
                             <div class="int-fielddescription"> The text that will display for the verify checkbox for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
@@ -127,11 +127,11 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group ">
                             <div style=" display:block">
-                                <label class="sr-only" for="verify_now_standard"> Verification Confirmation Standard Text </label>
+                                <label class="sr-only" for="verify_now_standard"> Verification confirmation standard text </label>
                                 <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="3" disabled="" style="display: block;">I have verified that the information on this page is currently accurate.</textarea>
                             </div>
                             <div id="verify_now_custom" style="display: none;">
-                                <label class="sr-only" for="verify_now_custom_field"> Verification Confirmation Custom Text </label>
+                                <label class="sr-only" for="verify_now_custom_field"> Verification confirmation custom text </label>
                                 <countdown>
                                     <div class="rbt-charcount">
                                         <textarea class="form-control" id="verify_now_custom_field"></textarea>
@@ -140,24 +140,24 @@ $page_subtitle = 'Setup';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="disclaimerLabel"> Deferral Text</label>
+                            <label class="control-label" for="disclaimerLabel"> Deferral text</label>
                             <div class="int-fielddescription"> The text that will display for the deferral for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="defer_now_select" name="select">
-                                        <option value="defer_now_standard"> Use Default Text </option>
-                                        <option value="defer_now_custom"> Enter Custom Text </option>
+                                        <option value="defer_now_standard"> Use default text </option>
+                                        <option value="defer_now_custom"> Enter custom text </option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group ">
                             <div style=" display:block">
-                                <label class="sr-only" for="defer_now_standard"> Verification Confirmation Standard Text </label>
+                                <label class="sr-only" for="defer_now_standard"> Verification confirmation standard text </label>
                                 <textarea class="form-control" cols="40" id="defer_now_standard" name="textarea1" rows="3" disabled="" style="display: block;">I have verified that the information on this page is currently accurate.</textarea>
                             </div>
                             <div id="defer_now_custom" style="display: none;">
-                                <label class="sr-only" for="defer_now_custom_field"> Verification Confirmation Custom Text </label>
+                                <label class="sr-only" for="defer_now_custom_field"> Verification confirmation custom text </label>
                                 <countdown>
                                     <div class="rbt-charcount">
                                         <textarea class="form-control" id="defer_now_custom_field"></textarea>
@@ -166,13 +166,13 @@ $page_subtitle = 'Setup';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="verify_button_select"> Verify Button Text</label>
+                            <label class="control-label" for="verify_button_select"> Verify button text</label>
                             <div class="int-fielddescription"> The text that will display on the verify button for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="verify_button_select" name="select">
-                                        <option value="verify_button_standard"> Use Default Text </option>
-                                        <option value="verify_button_custom"> Enter Custom Text </option>
+                                        <option value="verify_button_standard"> Use default text </option>
+                                        <option value="verify_button_custom"> Enter custom text </option>
                                     </select>
                                 </div>
                             </div>
@@ -200,13 +200,13 @@ $page_subtitle = 'Setup';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="defer_button_select"> Deferral Button Text</label>
+                            <label class="control-label" for="defer_button_select"> Deferral button text</label>
                             <div class="int-fielddescription"> The text that will display on the deferral button for this verification.</div>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <select class="form-control" id="defer_button_select" name="select">
-                                        <option value="defer_button_standard"> Use Default Text </option>
-                                        <option value="defer_button_custom"> Enter Custom Text </option>
+                                        <option value="defer_button_standard"> Use default text </option>
+                                        <option value="defer_button_custom"> Enter custom text </option>
                                     </select>
                                 </div>
                             </div>
@@ -234,12 +234,12 @@ $page_subtitle = 'Setup';
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="deferrallimit"> Deferral Limit </label>
+                            <label class="control-label" for="deferrallimit"> Deferral limit </label>
                             <div class="int-fielddescription"> The number of times a user can defer this verification. A 0 means they must verify immediately. If left blank, there is no restriction and is unlimited. </div>
                             <input value="" aria-labelledby="deferrallimit" ccfvalidated="" class="form-control w-25" id="deferrallimit" formcontrolname="clientid" type="number" max="10">
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="deferralwait">Deferral Wait </label>
+                            <label class="control-label" for="deferralwait">Deferral wait </label>
                             <div class="int-fielddescription"> The amount of time that transpires after a verification is deferred and the verification is set to display again to the user. </div>
                             <select class="form-control w-25" id="deferralwait">
                                 <option selected="selected">None</option>
