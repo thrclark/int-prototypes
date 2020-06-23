@@ -227,7 +227,7 @@ $page_title = 'API Accounts';
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="account_type"> API Account Type </label>
+                    <label class="control-label" for="account_type"> API account type </label>
                     <div class="int-fielddescription"> Maintenance accounts are used for maintaining resources within the application. External accounts are used to connect to external applications for data.</div>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-4">
@@ -239,7 +239,7 @@ $page_title = 'API Accounts';
                     </div>
                 </div>
                 <div class="mb-5 demojs-externalapi">
-                    <div class="font-weight-bold ts-14 mb-2">External Rest API URLs</div>
+                    <div class="font-weight-bold ts-14 mb-2">External rest API URLs</div>
                     <div class="rbt-collapse-accordion" id="accordion">
                         <div class="card">
                             <div class="" id="heading_url1">
@@ -390,12 +390,12 @@ $page_title = 'API Accounts';
                 </div>
                 <div class="mb-5 demojs-maintenanceapi" style="display: none">
                     <div class="form-check mb-3">
-                        <div class="font-weight-bold ts-14 mb-2">Renew Account Expire Date</div>
+                        <div class="font-weight-bold ts-14 mb-2">Renew account expire date</div>
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                         <label class="form-check-label" for="defaultCheck1"> This account may be renewed within 30 days of expiration (Wed Oct 23 2019).</label>
                     </div>
                     <div class="form-check mb-3">
-                        <div class="font-weight-bold ts-14 mb-2">Locked Account</div>
+                        <div class="font-weight-bold ts-14 mb-2">Locked account</div>
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                         <label class="form-check-label" for="defaultCheck2"> Unlock this API Account so it may be used again</label>
                     </div>
@@ -442,7 +442,7 @@ $page_title = 'API Accounts';
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="auth_type">Authentication Type</label>
+                    <label class="control-label" for="auth_type">Authentication type</label>
                     <div class="int-fielddescription">The authentication type to use when logging into the application.</div>
                     <div class="row">
                         <div class="col-12 col-md-6">
@@ -468,7 +468,7 @@ $page_title = 'API Accounts';
                     </div>
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
-                    <label class="control-label" id="password"> Client Secret </label>
+                    <label class="control-label" id="password"> Client secret </label>
                     <div class="int-fielddescription"> The account secret (password). This will not be displayed again and cannot be retrieved after saving the account. Be sure to copy it to a secure location. </div>
                     <div class="row">
                         <div class="col-12 col-md-8">
@@ -482,7 +482,7 @@ $page_title = 'API Accounts';
                     </div>
                 </div>
                 <div class="form-group demojs-basicauth" style="display: none">
-                    <label class="control-label" id="confirmpassword"> Expiration Date </label>
+                    <label class="control-label" id="confirmpassword"> Expiration date </label>
                     <div class="int-fielddescription"> The account will expire 2 years from when created.</div>
                     <div class="row">
                         <div class="col-12 col-md-4">
