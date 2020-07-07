@@ -71,12 +71,30 @@ html {
         }
       }
     }
+    .dropdown-menu {
+      border-radius: 4px;
+    }
+
+    .editor-toolbar {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+
+    .CodeMirror {
+      border-bottom-left-radius:  $border-radius;
+      border-bottom-right-radius:  $border-radius;
+    }
+
+    .ms-container .ms-list {
+      border-radius: $border-radius;
+    }
+
     .main-content{
       color: var(--body-text-color);
       font-size: var(--fontsize_body);
       .card {
         font-size: var(--fontsize_body);
-        border-radius: $border-radius !important;
+        //border-radius: $border-radius !important;
         border-color: var(--border-color) !important;
         background-color: var(--panel-bg-color);
         &.int-data-api {
@@ -187,6 +205,7 @@ html {
       .border, .border-bottom {
         border-color: var(--border-color) !important;
       }
+
       .int-verify-controls {
         color: var(--body-text-color);
         #verifystatement, #deferstatement{
@@ -215,6 +234,18 @@ html {
         z-index: 1;
       }
 
+    }
+    .outline-object {
+      outline-style: dotted;
+      outline-offset: 4px;
+      outline-color: #000000;
+    }
+    .outline-object-sides {
+      border-style: dotted;
+      border-color: #000000;
+      border-width: 4px;
+      border-top: none;
+      border-bottom: none;
     }
     a, button {
       color: var(--action-color);

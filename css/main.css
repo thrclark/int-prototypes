@@ -12729,12 +12729,21 @@ html body {
         box-shadow: 0 0 0 0.125rem #ffffff, 0 0 0 0.25rem var(--action-color); }
     html body header.rbt-app-header.rbt-app-header--light .nav .nav-item .dropdown-item:hover {
       color: var(--panel-bg-color); }
+  html body .dropdown-menu {
+    border-radius: 4px; }
+  html body .editor-toolbar {
+    border-top-left-radius: var(--theme_border_radius);
+    border-top-right-radius: var(--theme_border_radius); }
+  html body .CodeMirror {
+    border-bottom-left-radius: var(--theme_border_radius);
+    border-bottom-right-radius: var(--theme_border_radius); }
+  html body .ms-container .ms-list {
+    border-radius: var(--theme_border_radius); }
   html body .main-content {
     color: var(--body-text-color);
     font-size: var(--fontsize_body); }
     html body .main-content .card {
       font-size: var(--fontsize_body);
-      border-radius: var(--theme_border_radius) !important;
       border-color: var(--border-color) !important;
       background-color: var(--panel-bg-color); }
       html body .main-content .card.int-data-api .card-header .int-accordion-controls {
@@ -12809,6 +12818,16 @@ html body {
         border-bottom: 1px solid var(--border-color); }
     html body .main-content .rbt-datepicker__icon {
       z-index: 1; }
+  html body .outline-object {
+    outline-style: dotted;
+    outline-offset: 4px;
+    outline-color: #000000; }
+  html body .outline-object-sides {
+    border-style: dotted;
+    border-color: #000000;
+    border-width: 4px;
+    border-top: none;
+    border-bottom: none; }
   html body a, html body button {
     color: var(--action-color); }
     html body a:focus, html body button:focus {
