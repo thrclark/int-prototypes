@@ -735,7 +735,7 @@ $page_title = 'CampusConfirm';
                 </div>
             </header>
             <main class="main-content container p-0 demojs_wrapthis" id="wysiwyg_demo">
-                <div class="card">
+                <div class="card int-verifyinfo">
                     <div class="card-body"> 
                         <!--  <div class="alert alert-warning mb-5" role="alert">
                                 <h2 class="alert-heading">Privacy note</h2>

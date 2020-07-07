@@ -12,7 +12,7 @@ $page_title = 'VERIFY';
 <?php include('includes/user-header.php') ?>
 <main class="main-content container int-theme-margin  p-0">
     
-        <div class="card">
+        <div class="card int-verifyinfo">
             <div class="card-body">
                 <div class="alert alert-warning mb-5" role="alert">
                     <h2 class="alert-heading">Privacy note</h2>
