@@ -8,18 +8,7 @@ $page_title = 'CampusConfirm';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 <style>
-.outline-object {
-    outline-style: dotted;
-    outline-offset: 4px;
-    outline-color: #000000;
-}
-.outline-object-sides {
-    border-style: dotted;
-    border-color: #000000;
-    border-width: 4px;
-    border-top: none;
-    border-bottom: none;
-}
+
 .invisible {
     visibility: hidden;
 }
