@@ -12799,6 +12799,8 @@ html body {
           color: var(--panel-text-color); }
         html body .main-content .card .card-body input[type="checkbox"] + label:before, html body .main-content .card .card-body input[type="checkbox"] + input + label:before {
           box-shadow: 0 0 0 0.08rem var(--panel-text-color); }
+      html body .main-content .card.int-verifyinfo {
+        border-radius: var(--theme_border_radius) !important; }
     html body .main-content .border, html body .main-content .border-bottom {
       border-color: var(--border-color) !important; }
     html body .main-content .int-verify-controls {

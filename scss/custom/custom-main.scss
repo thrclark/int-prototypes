@@ -94,7 +94,7 @@ html {
       font-size: var(--fontsize_body);
       .card {
         font-size: var(--fontsize_body);
-        //border-radius: $border-radius !important;
+       //border-radius: $border-radius !important;
         border-color: var(--border-color) !important;
         background-color: var(--panel-bg-color);
         &.int-data-api {
@@ -142,13 +142,9 @@ html {
             }
           }
         }
-
-
-
         h3 {
           color: $body-color;
         }
-
         .card-body {
           color: var(--panel-text-color);
           padding: 2rem 2.5rem 2.5rem;
@@ -200,6 +196,9 @@ html {
             box-shadow: 0 0 0 0.08rem var(--panel-text-color);
           }
 
+        }
+        &.int-verifyinfo{
+          border-radius: $border-radius !important;
         }
       }
       .border, .border-bottom {
