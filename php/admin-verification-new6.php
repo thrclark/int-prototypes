@@ -20,7 +20,13 @@ $page_subtitle = 'Review/save';
                     <span>Save successful.</span> </div>
             </alert>
         </growls>
-        <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+        <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+        <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb rbt-breadcrumb-no-bkg">
+                <li class="breadcrumb-item"><a href="admin-verifications.php" class="">All verifications</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New verification</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-2 border-right d-none d-sm-block">
                 <div id="sticky">
@@ -289,7 +295,7 @@ $page_subtitle = 'Review/save';
                         <hr class="mt-7">
                         <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-outline-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary"> Preview <i class="rbt-icon-link-external"></i> </a>
                             <button type="button" class="btn btn-primary" id="saveverification"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
-                        </div>
+                            <a href="admin-verifications.php" class="btn btn-outline-primary demojs_cancelaction"> Cancel </a> </div>
                     </div>
                 </div>
             </div>
