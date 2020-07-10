@@ -8,18 +8,7 @@ $page_title = 'CampusConfirm';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 <style>
-.outline-object {
-    outline-style: dotted;
-    outline-offset: 4px;
-    outline-color: #000000;
-}
-.outline-object-sides {
-    border-style: dotted;
-    border-color: #000000;
-    border-width: 4px;
-    border-top: none;
-    border-bottom: none;
-}
+
 .invisible {
     visibility: hidden;
 }
@@ -746,7 +735,7 @@ $page_title = 'CampusConfirm';
                 </div>
             </header>
             <main class="main-content container p-0 demojs_wrapthis" id="wysiwyg_demo">
-                <div class="card">
+                <div class="card int-verifyinfo">
                     <div class="card-body"> 
                         <!--  <div class="alert alert-warning mb-5" role="alert">
                                 <h2 class="alert-heading">Privacy note</h2>

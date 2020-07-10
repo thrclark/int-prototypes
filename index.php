@@ -149,7 +149,7 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
-                                    <div class="media-body"> <a href="php/admin-customize.php" target="_blank" class="font-weight-bold">Theme tool</a>
+                                    <div class="media-body"> <a href="php/verification-themetool.php" target="_blank" class="font-weight-bold">Theme tool</a>
                                         <div class="ts-14">Theme tool used to configure branding colors, fonts, etc. </div>
                                     </div>
                                 </div>
@@ -180,3 +180,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
 </body>
 </html>
+

@@ -11,7 +11,7 @@ $page_title = 'VERIFY';
 <body>
 <?php include('includes/user-header-legacy.php') ?>
 <main class="main-content container int-theme-margin  p-0">
-    <div class="card">
+    <div class="card int-verifyinfo">
         <div class="card-body">
             <h2>Verification name</h2>
             <p> On occasion, we require verification of your personal information. The item(s) listed below need your review for accuracy. 

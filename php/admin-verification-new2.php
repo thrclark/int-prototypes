@@ -116,9 +116,11 @@ $page_subtitle = 'Data';
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
-                                            <div class="card-header border-bottom-0 p-0">
-                                                <button class="rbt-btn-nostyle btn-block p-1" type="button" data-toggle="collapse" data-target="#uniquekey1"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
-                                                <div class="int-accordion-controls">
+                                            <div class="">
+                                                <h4>
+                                                    <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey1"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
+                                                </h4>
+                                                <div class="int-accordion-controls d-flex align-items-center"><span class="text-danger bg-white rounded px-2 py-0 mr-3">2 errors</span>
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
                                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
@@ -195,16 +197,18 @@ $page_subtitle = 'Data';
                                             </div>
                                         </div>
                                         <div class="card int-data-api">
-                                            <div class="card-header border-bottom-0 p-0">
-                                                <button class="rbt-btn-nostyle btn-block p-1" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Field group 2</button>
-                                                <div class="int-accordion-controls d-flex align-items-center"> <span class="text-danger bg-white rounded px-2 py-0 mt-1 mr-3">1 error</span>
+                                            <div class="">
+                                                <h4>
+                                                    <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#uniquekey2"> <i class="rbt-icon-chevron-right"></i> Field group 1</button>
+                                                </h4>
+                                                <div class="int-accordion-controls d-flex align-items-center">
                                                     <div class="dropdown">
                                                         <button class="dropdown-toggle rbt-btn-nostyle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Navigation menu</span> </button>
                                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton3" aria-hidden="true" role="menu">
-                                                            <button class="dropdown-item" id="xxxxxx">Move to top</button>
-                                                            <button class="dropdown-item" id="xxxxxx">Move up</button>
-                                                            <button class="dropdown-item disabled" id="xxxxxx">Move down</button>
-                                                            <button class="dropdown-item disabled" id="xxxxxx">Move to bottom</button>
+                                                            <button class="dropdown-item disabled" id="xxxxxx">Move to top</button>
+                                                            <button class="dropdown-item disabled" id="xxxxxx">Move up</button>
+                                                            <button class="dropdown-item" id="xxxxxx">Move down</button>
+                                                            <button class="dropdown-item" id="xxxxxx">Move to bottom</button>
                                                             <div class="dropdown-divider"></div>
                                                             <button class="dropdown-item" id="xxxxxx">Delete </button>
                                                         </div>
