@@ -8,7 +8,6 @@ $page_subtitle = 'Setup';
 <head>
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
-
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
@@ -235,8 +234,21 @@ $page_subtitle = 'Setup';
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="deferrallimit"> Deferral limit </label>
-                            <div class="int-fielddescription"> The number of times a user can defer this verification. A 0 means they must verify immediately. If left blank, there is no restriction and is unlimited. </div>
-                            <input value="" aria-labelledby="deferrallimit" ccfvalidated="" class="form-control w-25" id="deferrallimit" formcontrolname="clientid" type="number" max="10">
+                            <div class="int-fielddescription"> The number of times a user can defer this verification.</div>
+                            <select class="form-control w-25" id="deferrallimit">
+                                <option selected="selected">None</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+                                <option >4</option>
+                                <option >5</option>
+                                <option >6</option>
+                                <option >7</option>
+                                <option >8</option>
+                                <option >9</option>
+                                <option >10</option>
+                                <option >Unlimited</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="deferralwait">Deferral wait </label>
@@ -401,8 +413,7 @@ $(document).ready(function() {
         }
     });
 });
-</script>
-    
+</script> 
 <script>
      $(window).resize(function(){location.reload();});
 </script>
