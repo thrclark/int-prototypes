@@ -236,18 +236,14 @@ $page_subtitle = 'Setup';
                             <label class="control-label" for="deferrallimit"> Deferral limit </label>
                             <div class="int-fielddescription"> The number of times a user can defer this verification.</div>
                             <select class="form-control w-25" id="deferrallimit">
-                                <option selected="selected">None</option>
-                                <option >1</option>
-                                <option >2</option>
-                                <option >3</option>
-                                <option >4</option>
-                                <option >5</option>
-                                <option >6</option>
-                                <option >7</option>
-                                <option >8</option>
-                                <option >9</option>
-                                <option >10</option>
-                                <option >Unlimited</option>
+                                <option selected="selected">Unlimited</option>
+                                <option>No deferrals</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>5</option>
+                                <option>10</option>
+                                <option>25</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -256,7 +252,7 @@ $page_subtitle = 'Setup';
                             <select class="form-control w-25" id="deferralwait">
                                 <option selected="selected">None</option>
                                 <option>1 hour</option>
-                                <option >3 hours</option>
+                                <option>3 hours</option>
                                 <option>6 hours</option>
                                 <option>12 hours</option>
                                 <option>24 hours</option>
