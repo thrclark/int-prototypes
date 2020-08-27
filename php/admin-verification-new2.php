@@ -81,11 +81,16 @@ $page_subtitle = 'Data';
                                                             <input aria-labelledby="vfy2_section_name" class="form-control " formcontrolname="title" id="vfy2_section_name">
                                                             <span class="badge badge-success" id="vfy2_section_name_badge"> <span id="vfy2_section_name_counter">100</span> </span> </div>
                                                     </countdown>
-                                                    <div class="alert alert-inline alert-danger mb-2" role="alert">
+                                                    <!--  <div class="alert alert-inline alert-danger mb-2" role="alert">
                                                         <p class="rbt-ts-14"> This field is required.</p>
-                                                    </div>
+                                                    </div>--> 
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="font-weight-bold mb-2 ts-14">Name display</div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="namedisplay">
+                                            <label class="form-check-label" for="namedisplay"> Display this section name on the verification.</label>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="vfy2_section_unkey"> Unique key </label>
