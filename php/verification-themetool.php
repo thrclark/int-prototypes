@@ -749,6 +749,7 @@ $page_title = 'CampusConfirm';
 </div>
 <?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('modals/modal-bodyfont-urls.php') ?>
+<?php include('modals/modal-themespeedbump.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {
@@ -1078,6 +1079,7 @@ $page_title = 'CampusConfirm';
 				$('.btn.btn-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-primary .visible').toggleClass('invisible');
 				$('.demojs-savetheme').prop('disabled', true);
+                $('#savetheme_speedbump').modal();
                 $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
                 setTimeout(function() {
                     $('.btn.btn-primary').removeClass('rbt-loading');
