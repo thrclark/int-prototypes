@@ -8,7 +8,6 @@ $page_title = 'CampusConfirm';
 <?php include('includes/all-head-meta.php') ?>
 <?php include('includes/styles-main.php') ?>
 <style>
-
 .invisible {
     visibility: hidden;
 }
@@ -22,14 +21,14 @@ $page_title = 'CampusConfirm';
 </head>
 <body>
 <?php include('includes/admin-navigation.php') ?>
-<div class="d-lg-none">
+<!--<div class="d-lg-none">
     <div class="border-top text-center mb-2">
         <p class="ts-23  pt-7 mb-3"> The custom theme tool is only available on desktop devices.</p>
     </div>
-</div>
-<div class="rbt-shell-main d-none d-lg-flex" style="max-width:inherit">
+</div>-->
+<div class="rbt-shell-main " style="max-width:inherit">
     <div class="rbt-shell">
-        <div class="rbt-shell-sidebar d-none d-md-block" style="box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.07); flex-basis: 30rem;width: 30rem; position:relative; overflow: inherit;transition: all 0.3s ease; ">
+        <div class="rbt-shell-sidebar d-block" style="">
             <button class="int-themehandle" id="demojs-themehandle"><i class="rbt-icon-chevron-left"></i></button>
             <h2 class="mb-5 mt-5">Customize theme</h2>
             <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -357,51 +356,6 @@ $page_title = 'CampusConfirm';
                                     </div>
                                 </ccf-image-upload>
                             </div>
-                            <div class="form-group">
-                                <label>MS Tile image (square - 310x310 px)</label>
-                                <div class="int-fielddescription">Image to display as the Microsoft tile for size 310x310. The image should represent a solid white icon with a transparent background.</div>
-                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
-                                    <image-upload >
-                                        <div  filedrop="" class="img-ul"  >
-                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
-                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
-                                                    <input  multiple type="file">
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </image-upload>
-                                    <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x310.png" class=""> </div>
-                                    </div>
-                                </ccf-image-upload>
-                            </div>
-                            <div class="form-group">
-                                <label>MS Tile image (wide - 310x150 px)</label>
-                                <div class="int-fielddescription">Image to display as the Microsoft tile for size 310x150. The image should represent a solid white icon with a transparent background.</div>
-                                <ccf-image-upload arrayname="media" dimensions="NO_RESIZE" max="4" >
-                                    <image-upload >
-                                        <div  filedrop="" class="img-ul"  >
-                                            <div  class="img-ul-file-upload img-ul-hr-inline-group" >
-                                                <label  class="img-ul-upload img-ul-button" tabindex="0"> <span >Upload</span>
-                                                    <input  multiple type="file">
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </image-upload>
-                                    <div class="img-preview mstile-bg-color" draggable="false" style="cursor: pointer;">
-                                        <div draggable="true" style="cursor: move;" class=""> <img alt="" tabindex="0" src="../img/logo-ms-310x150.png" class=""> </div>
-                                    </div>
-                                </ccf-image-upload>
-                            </div>
-                            <div class="form-group colorpick" style="margin-bottom: .5rem !important">
-                                <label for="mstile-bg-color" class="font-weight-bold ts-14 mb-2">MS Tile background color</label>
-                                <div class="input-group">
-                                    <input type="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control mb-3 d-inline" id="mstile-bg-color" value="#444444">
-                                    <div class="input-group-append">
-                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" class="form-control d-inline w-75" value="" id="mstile-bg-color-hexcolor">
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between my-3">
@@ -713,7 +667,7 @@ $page_title = 'CampusConfirm';
                 </div>
             </div>
         </div>
-        <div class="rbt-shell-stage p-3">
+        <div class="rbt-shell-stage p-3 d-none d-lg-block">
             <growls style=" display: none; position: fixed; right:10px; top:80px;" id="growl1">
                 <alert dismissible="true">
                     <div role="alert" class="alert alert-success alert-dismissible mb-3">
@@ -795,6 +749,7 @@ $page_title = 'CampusConfirm';
 </div>
 <?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('modals/modal-bodyfont-urls.php') ?>
+<?php include('modals/modal-themespeedbump.php') ?>
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {
@@ -1124,6 +1079,7 @@ $page_title = 'CampusConfirm';
 				$('.btn.btn-primary .spinner-border').removeClass('d-none');
 				$('.btn.btn-primary .visible').toggleClass('invisible');
 				$('.demojs-savetheme').prop('disabled', true);
+                $('#savetheme_speedbump').modal();
                 $("#growl1").delay(2000).fadeIn().delay(5000).fadeOut();
                 setTimeout(function() {
                     $('.btn.btn-primary').removeClass('rbt-loading');
