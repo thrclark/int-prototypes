@@ -350,8 +350,12 @@ $page_subtitle = 'Setup';
         $('#vfy1_verificationtype').change(function() {
             if ($(this).val() === 'imposed_notification') {
                 $('.demojs_verifybuttonoptions').hide();
+                $("#deferrallimit, #deferralwait").prop('disabled', true);
             } else {
                 $('.demojs_verifybuttonoptions').show();
+                $("#deferrallimit, #deferralwait").prop('disabled', false);
+                
+                
             }
         });
     });
