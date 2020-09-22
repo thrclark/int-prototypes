@@ -110,6 +110,13 @@
                             </li>
                             <li class="list-group-item">
                                 <div class="media">
+                                    <div class="media-body"> <a href="php/verification-hideverify.php" target="_blank" class="font-weight-bold">Hidden verification button</a>
+                                        <div class="ts-14">End user view when a verification is set to not be verified, but always deferred.</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">
                                     <div class="media-body"> <a href="php/verification-none.php" target="_blank" class="font-weight-bold">No more verifications</a>
                                         <div class="ts-14">End user view when there are no verifications to complete.</div>
                                     </div>
@@ -180,4 +187,3 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
 </body>
 </html>
-

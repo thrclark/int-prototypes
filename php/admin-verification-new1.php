@@ -72,6 +72,18 @@ $page_subtitle = 'Setup';
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label" for="vfy1_verificationtype"> Verification type </label>
+                            <div class="int-fielddescription"> Select the verification type. 'Standard' allows the verification to be confirmed or deferred. 'Imposed notification' will only allow the verification to be deferred indefinitely.</div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <select class="form-control" id="vfy1_verificationtype">
+                                        <option value="" selected="standard">Standard</option>
+                                        <option value="imposed_notification">Imposed notification</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label" for="vfy1_publisherLabel"> Publisher </label>
                             <div class="int-fielddescription"> The owner of this verification. </div>
                             <div class="row">
@@ -95,16 +107,17 @@ $page_subtitle = 'Setup';
                                     <select class="form-control" id="verify_select_description" name="select">
                                         <option value="verify_select_description_standard"> Use default description </option>
                                         <option value="verify_select_description_custom"> Enter custom description </option>
+                                        <option value="verify_text_group"> Hide description </option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group ">
-                            <div style=" display:block" id="verify_select_description_standard">
+                        <div class="form-group" id="">
+                            <div class="verify_text_group" style=" display:block" id="verify_select_description_standard">
                                 <label class="sr-only" for="description_standard"> Verification description default text </label>
                                 <textarea class="form-control" cols="40" id="description_standard" name="description_standard" rows="3" disabled="" style="display: block;">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
                             </div>
-                            <div id="verify_select_description_custom" style="display: none;">
+                            <div class="verify_text_group" id="verify_select_description_custom" style="display: none;">
                                 <countdown>
                                     <label class="sr-only" for="description_custom"> Verification description custom text </label>
                                     <div class="rbt-charcount">
@@ -118,7 +131,7 @@ $page_subtitle = 'Setup';
                             <div class="int-fielddescription"> The text that will display below the verification.</div>
                             <textarea id="disclaimerLabel"></textarea>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group demojs_verifybuttonoptions">
                             <label class="control-label" for="disclaimerLabel"> Verify text</label>
                             <div class="int-fielddescription"> The text that will display for the verify checkbox for this verification.</div>
                             <div class="row">
@@ -130,7 +143,7 @@ $page_subtitle = 'Setup';
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group ">
+                        <div class="form-group demojs_verifybuttonoptions">
                             <div style=" display:block">
                                 <label class="sr-only" for="verify_now_standard"> Verification confirmation standard text </label>
                                 <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="3" disabled="" style="display: block;">I have verified that the information on this page is currently accurate.</textarea>
@@ -170,7 +183,7 @@ $page_subtitle = 'Setup';
                                 </countdown>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group demojs_verifybuttonoptions">
                             <label class="control-label" for="verify_button_select"> Verify button text</label>
                             <div class="int-fielddescription"> The text that will display on the verify button for this verification.</div>
                             <div class="row">
@@ -178,11 +191,12 @@ $page_subtitle = 'Setup';
                                     <select class="form-control" id="verify_button_select" name="select">
                                         <option value="verify_button_standard"> Use default text </option>
                                         <option value="verify_button_custom"> Enter custom text </option>
+                                        <option value="verify_button_hide"> Hide verify button </option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group demojs_verifybuttonoptions">
                             <div style=" display:block">
                                 <label class="sr-only" for="verify_button_standard"> Verify button default label </label>
                                 <div class="row">
@@ -333,6 +347,21 @@ $page_subtitle = 'Setup';
 </script> 
 <script>
     $(document).ready(function() {
+        $('#vfy1_verificationtype').change(function() {
+            if ($(this).val() === 'imposed_notification') {
+                $('.demojs_verifybuttonoptions').hide();
+                $("#deferrallimit, #deferralwait").prop('disabled', true);
+            } else {
+                $('.demojs_verifybuttonoptions').show();
+                $("#deferrallimit, #deferralwait").prop('disabled', false);
+                
+                
+            }
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
         $('#verify_button_select').change(function() {
             $('#verify_button_standard, #verify_button_custom').hide();
             $('#' + $(this).val()).show();
@@ -348,7 +377,18 @@ $page_subtitle = 'Setup';
     $(document).ready(function() {
         $('#verify_select_description').change(function() {
             $('#verify_select_description_standard, #verify_select_description_custom').hide();
+            
+            // verify_text_group
+            
             $('#' + $(this).val()).show();
+            //$('#verify_text_group').hide();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $('#verify_select_description').change(function() {
+            $('.' + $('verify_text_group').val()).hide();
         });
     });
 </script> 
