@@ -89,7 +89,7 @@ $page_subtitle = 'Recipients';
                                                 <div class="col-12 col-lg-3">
                                                     <div class="rbt-datepicker__input">
                                                         <label for="datepicker_start" class="sr-only">Start date</label>
-                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control ng-invalid" placeholder="mm/dd/yyyy">
+                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control ng-invaliddd" placeholder="mm/dd/yyyy">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
@@ -106,10 +106,10 @@ $page_subtitle = 'Recipients';
                                                                 </tr>
                                                                 <tr>
                                                                     <td class="form-group"><label for="timepicker_hour" class="sr-only">Start hour</label>
-                                                                        <input class="form-control text-center bs-timepicker-field ng-invalid" id="timepicker_hour" maxlength="2" type="text" placeholder="hh"></td>
+                                                                        <input class="form-control text-center bs-timepicker-field ng-invaliddd" id="timepicker_hour" maxlength="2" type="text" placeholder="hh"></td>
                                                                     <td>&nbsp;:&nbsp;</td>
                                                                     <td class="form-group"><label for="timepicker_minute" class="sr-only">Start minute</label>
-                                                                        <input class="form-control text-center bs-timepicker-field ng-invalid" id="timepicker_minute" maxlength="2" type="text" placeholder="mm"></td>
+                                                                        <input class="form-control text-center bs-timepicker-field ng-invaliddd" id="timepicker_minute" maxlength="2" type="text" placeholder="mm"></td>
                                                                     <td>&nbsp;&nbsp;&nbsp;</td>
                                                                     <td><button class="btn btn-default text-center" type="button">AM </button></td>
                                                                 </tr>
@@ -124,14 +124,8 @@ $page_subtitle = 'Recipients';
                                                         </table>
                                                     </timepicker>
                                                 </div>
-                                                <div class="col-12 col-lg-5">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="recurannually">
-                                                        <label class="form-check-label" for="recurannually"> Recur annualy </label>
-                                                    </div>
-                                                </div>
                                             </div>
-                                            <div class="row align-items-center">
+                                            <!--  <div class="row align-items-center">
                                                 <div class="col-12 col-lg-3">
                                                     <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
                                                         <p class="rbt-ts-14" id="standalone4	"> Invalid date format.</p>
@@ -143,8 +137,33 @@ $page_subtitle = 'Recipients';
                                                     </div>
                                                 </div>
                                                 <div class="col-12 col-lg-5"> </div>
-                                            </div>
+                                            </div>-->
                                         </fieldset>
+                                        <div class="form-group">
+                                            <label class="control-label" for="vfy1_recurrence"> Recurrence </label>
+                                            <div class="int-fielddescription"> Select the recurrence for this trigger</div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <select class="form-control" id="vfy1_recurrence">
+                                                        <option>No recurrence</option>
+                                                        <option>Every day</option>
+                                                        <option>Every 2 days</option>
+                                                        <option>Every 3 days</option>
+                                                        <option>Every 4 days</option>
+                                                        <option>Every 5 days</option>
+                                                        <option>Every 6 days</option>
+                                                        <option>Every week</option>
+                                                        <option>Every 2 weeks</option>
+                                                        <option>Every 3 weeks</option>
+                                                        <option>Every month</option>
+                                                        <option>Every 2 months</option>
+                                                        <option>Every 3 months</option>
+                                                        <option>Every half year</option>
+                                                        <option>Every year</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
                                         <div class="int-fielddescription"> Use the expression builder below to add users and groups to this ruleset.</div>
                                         <permissions _ngcontent-nrp-c4="" ng-reflect-expression-form-group="[object Object]">
@@ -441,30 +460,90 @@ $page_subtitle = 'Recipients';
                                                 </div>
                                             </div>
                                         </div>
-                                        <fieldset aria-describedby="selectdate2" class="mb-3">
+                                        <fieldset aria-describedby="selectdate1" class="">
                                             <legend class="ts-14 font-weight-bold mb-0">Effective date</legend>
-                                            <div class="int-fielddescription" id="selectdate2">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
-                                            <div class="row mt-3 mb-1">
-                                                <div class="col-3">
-                                                    <label for="time-demo-start-day" class="">Start day</label>
+                                            <div class="int-fielddescription" id="selectdate1">The start date and time that this ruleset will begin displaying for the selected users (note that these date/time settings will be based off of your current timezone of GMT-04:00).</div>
+                                            <div class="mt-3">
+                                                <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
+                                            </div>
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-lg-3">
                                                     <div class="rbt-datepicker__input">
-                                                        <input autocomplete="off" type="text" id="datepicker_start2" aria-describedby="hs-date-hint" class="form-control">
+                                                        <label for="datepicker_start" class="sr-only">Start date</label>
+                                                        <input autocomplete="off" type="text" id="datepicker_start" aria-describedby="hs-date-hint" class="form-control ng-invaliddd" placeholder="mm/dd/yyyy">
                                                         <div class="rbt-datepicker__icon"> <i class="rbt-icon-calendar"></i> </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <label for="start-time2"  class="">Start time</label>
-                                                    <input type="time" id="start-time2" class="form-control" value="">
-                                                </div>
-                                                <div class="col-6 d-flex align-items-end">
-                                                    <button class="btn btn-link ts-14 font-italic font-weight-normal p-0">Use today's date/time</button>
+                                                <div class="col-12 col-lg-4">
+                                                    <timepicker class="ng-untouched ng-valid ng-dirty">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr class="text-center">
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-up"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-up"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="form-group"><label for="timepicker_hour" class="sr-only">Start hour</label>
+                                                                        <input class="form-control text-center bs-timepicker-field ng-invaliddd" id="timepicker_hour" maxlength="2" type="text" placeholder="hh"></td>
+                                                                    <td>&nbsp;:&nbsp;</td>
+                                                                    <td class="form-group"><label for="timepicker_minute" class="sr-only">Start minute</label>
+                                                                        <input class="form-control text-center bs-timepicker-field ng-invaliddd" id="timepicker_minute" maxlength="2" type="text" placeholder="mm"></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td><button class="btn btn-default text-center" type="button">AM </button></td>
+                                                                </tr>
+                                                                <tr class="text-center">
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-down"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td><a class="btn btn-link"><span class="bs-chevron bs-chevron-down"></span></a></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </timepicker>
                                                 </div>
                                             </div>
+                                            <!--  <div class="row align-items-center">
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
+                                                        <p class="rbt-ts-14" id="standalone4	"> Invalid date format.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="alert alert-inline alert-danger mb-2" role="alert" ><span class="rbt-icon-close-circle" aria-hidden="true"></span>
+                                                        <p class="rbt-ts-14" id="standalone4	"> Invalid time format.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-5"> </div>
+                                            </div>-->
                                         </fieldset>
-                                        <div class="font-weight-bold mb-2 ts-14">Recur annually</div>
-                                        <div class="form-check mb-5">
-                                            <input class="form-check-input" type="checkbox" value="" id="recurannually">
-                                            <label class="form-check-label" for="recurannually"> Yes </label>
+                                        <div class="form-group">
+                                            <label class="control-label" for="vfy1_recurrence"> Recurrence </label>
+                                            <div class="int-fielddescription"> Select the recurrence for this trigger</div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <select class="form-control" id="vfy1_recurrence">
+                                                        <option>No recurrence</option>
+                                                        <option>Every day</option>
+                                                        <option>Every 2 days</option>
+                                                        <option>Every 3 days</option>
+                                                        <option>Every 4 days</option>
+                                                        <option>Every 5 days</option>
+                                                        <option>Every 6 days</option>
+                                                        <option>Every week</option>
+                                                        <option>Every 2 weeks</option>
+                                                        <option>Every 3 weeks</option>
+                                                        <option>Every month</option>
+                                                        <option>Every 2 months</option>
+                                                        <option>Every 3 months</option>
+                                                        <option>Every half year</option>
+                                                        <option>Every year</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
