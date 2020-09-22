@@ -191,7 +191,6 @@ $page_subtitle = 'Setup';
                                     <select class="form-control" id="verify_button_select" name="select">
                                         <option value="verify_button_standard"> Use default text </option>
                                         <option value="verify_button_custom"> Enter custom text </option>
-                                        <option value="verify_button_hide"> Hide verify button </option>
                                     </select>
                                 </div>
                             </div>
