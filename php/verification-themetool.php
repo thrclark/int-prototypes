@@ -422,7 +422,7 @@ $page_title = 'CampusConfirm';
                             <div class="form-group">
                                 <label for="font_header">Header font face</label>
                                 <select class="form-control mb-3" id="font_header">
-                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
                                     <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
                                     <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
@@ -438,17 +438,33 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontname">Font family name</label>
-                                <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
-                                <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
+                                <div class="int-fielddescription">Specify the name of this custom font.</div>
+                                <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput">
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                     <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
                                 </div>
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="font_header_fallback">Fallback fonts</label>
+                                <div class="int-fielddescription">In the event that custom font URLs for headers are unresponsive, select a browser-safe fallback font to use in it's place.</div>
+                                <select class="form-control mb-3" id="font_header_fallback">
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontweight">Weight</label>
                                 <div class="int-fielddescription">Specify the weight of this custom font.</div>
                                 <select class="form-control" id="custom_headerfontweight">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="BOLD">bold</option>
                                     <option value="W_100">100</option>
                                     <option value="W_200">200</option>
@@ -465,14 +481,14 @@ $page_title = 'CampusConfirm';
                                 <label for="custom_headerfontstyle">Style</label>
                                 <div class="int-fielddescription">Specify the style of this custom font.</div>
                                 <select class="form-control" id="custom_headerfontstyle">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="ITALIC">italic</option>
                                     <option value="OBLIQUE">oblique</option>
                                 </select>
                             </div>
                             <div class="row mb-2 demojs-customheaderfont" style="display: none">
                                 <div class="col">
-                                    <div class="ts-14 font-weight-bold mr-auto">Header font file sources</div>
+                                    <div class="ts-14 font-weight-bold mr-auto">Header font file URLs</div>
                                 </div>
                                 <div class="col-auto">
                                     <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_headerfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
@@ -491,7 +507,7 @@ $page_title = 'CampusConfirm';
                                     <button class="btn btn-sm btn-link ts-12 font-italic font-weight-normal p-1 mb-2">Same as header</button>
                                 </div>
                                 <select class="form-control mb-3" id="font_body">
-                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
                                     <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
                                     <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
@@ -507,17 +523,33 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontname">Font family name</label>
-                                <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <div class="int-fielddescription">Specify the name of this custom font.</div>
                                 <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput">
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                     <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
                                 </div>
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="font_body_fallback">Fallback fonts</label>
+                                <div class="int-fielddescription">In the event that custom font URLs for the body text are unresponsive, select a browser-safe fallback font to use in it's place.</div>
+                                <select class="form-control mb-3" id="font_body_fallback">
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontweight">Weight</label>
                                 <div class="int-fielddescription">Specify the weight of this custom font.</div>
                                 <select class="form-control" id="custom_bodyfontweight">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="BOLD">bold</option>
                                     <option value="W_100">100</option>
                                     <option value="W_200">200</option>
@@ -534,14 +566,14 @@ $page_title = 'CampusConfirm';
                                 <label for="custom_bodyfontstyle">Style</label>
                                 <div class="int-fielddescription">Specify the style of this custom font.</div>
                                 <select class="form-control" id="custom_bodyfontstyle">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="ITALIC">italic</option>
                                     <option value="OBLIQUE">oblique</option>
                                 </select>
                             </div>
                             <div class="row mb-2 demojs-custombodyfont" style="display: none">
                                 <div class="col">
-                                    <div class="ts-14 font-weight-bold mr-auto">Body font file sources</div>
+                                    <div class="ts-14 font-weight-bold mr-auto">Body font file URLs</div>
                                 </div>
                                 <div class="col-auto">
                                     <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_bodyfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
