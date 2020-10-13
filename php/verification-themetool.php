@@ -574,8 +574,9 @@ $page_title = 'CampusConfirm';
                         <div class="card-body">
                             <div class="form-group" id="fontsize_orgname_block">
                                 <label class="d-block" for="fontsize_orgname">Organization name </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_orgname_value" name="price" value="14px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_orgname_value" name="price" value="14" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_orgname" value="14px" min="12" max="48" step="1" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -584,8 +585,9 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group" id="fontsize_appname_block">
                                 <label class="d-block" for="fontsize_appname">Application name </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_appname_value" name="price" value="26px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_appname_value" name="price" value="26" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_appname" value="26px" min="12" max="48" step="1" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -594,8 +596,9 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group">
                                 <label class="d-block" for="fontsize_header">Header </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_header_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_header_value" name="price" value="32" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_header" value="32px" min="20" max="48" step="1" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -604,15 +607,17 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group">
                                 <label class="d-block" for="fontsize_body">Body </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_body_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_body_value" name="price" value="16" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_body" value="16" min="12" max="16" class="form-control-range w-100">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="d-block" for="fontsize_verifyblock">Verify block </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_verifyblock_value" name="price" value="20px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_verifyblock_value" name="price" value="20" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_verifyblock" value="20" min="12" max="32" class="form-control-range w-100">
                                 </div>
                             </div>
@@ -636,15 +641,17 @@ $page_title = 'CampusConfirm';
                         <div class="card-body">
                             <div class="form-group">
                                 <label class="d-block"  for="theme_border_radius">Border radius</label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_border_value" name="price" value="4px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_border_value" name="price" value="4" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input id="theme_border_radius" type="range" min="0" max="20" value="4"  class="form-control-range w-100">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="d-block"  for="theme_page_margin">Page margin</label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_margin_value" name="price" value="880px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_margin_value" name="price" value="880" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input id="theme_page_margin" type="range" min="440"max="880"step="10" value="880" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -977,7 +984,7 @@ $page_title = 'CampusConfirm';
         $('#theme_page_margin').on('input', function() {
             var newVal = $(this).val();
             $("#show_margin_value").val(newVal);
-            $("#show_margin_value").val(function() {return this.value + 'px';});
+            $("#show_margin_value").val(function() {return this.value + '';});
         });
         $('#show_margin_value').on('input', function() {
             $('#theme_page_margin').val($(this).val())
@@ -985,7 +992,7 @@ $page_title = 'CampusConfirm';
         $('#theme_border_radius').on('input', function() {
             var newVal = $(this).val();
             $("#show_border_value").val(newVal);
-            $("#show_border_value").val(function() {return this.value + 'px';});
+            $("#show_border_value").val(function() {return this.value + '';});
         });
         $('#show_border_value').on('input', function() {
             $('#theme_border_radius').val($(this).val())
@@ -993,7 +1000,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_body').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_body_value").val(newVal);
-            $("#show_fontsize_body_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_body_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_body_value').on('input', function() {
             $('#fontsize_body').val($(this).val())
@@ -1001,7 +1008,7 @@ $page_title = 'CampusConfirm';
          $('#fontsize_verifyblock').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_verifyblock_value").val(newVal);
-            $("#show_fontsize_verifyblock_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_verifyblock_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_verifyblock_value').on('input', function() {
             $('#fontsize_verifyblock').val($(this).val())
@@ -1009,7 +1016,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_header').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_header_value").val(newVal);
-            $("#show_fontsize_header_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_header_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_header_value').on('input', function() {
             $('#fontsize_header').val($(this).val())
@@ -1017,7 +1024,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_appname').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_appname_value").val(newVal);
-            $("#show_fontsize_appname_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_appname_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_appname_value').on('input', function() {
             $('#fontsize_appname').val($(this).val())
@@ -1025,7 +1032,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_orgname').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_orgname_value").val(newVal);
-            $("#show_fontsize_orgname_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_orgname_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_orgname_value').on('input', function() {
             $('#fontsize_orgname').val($(this).val())
