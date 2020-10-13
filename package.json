@@ -19,7 +19,7 @@
   "homepage": "https://github.com/thrclark/int-prototypes#readme",
   "dependencies": {
     "bootstrap": "4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "paginationjs": "^2.1.5",
     "popper.js": "^1.16.1",
