@@ -95,7 +95,7 @@ $page_subtitle = 'Setup';
                                     <select class="form-control" id="verify_select_description" name="select">
                                         <option value="verify_select_description_standard"> Use default description </option>
                                         <option value="verify_select_description_custom"> Enter custom description </option>
-                                        <option value="verify_text_group"> Hide description </option>
+                                        <option value="verify_select_description_hidden"> Hide description </option>
                                     </select>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ $page_subtitle = 'Setup';
                         <div class="form-group" id="">
                             <div class="verify_text_group" style=" display:block" id="verify_select_description_standard">
                                 <label class="sr-only" for="description_standard"> Verification description default text </label>
-                                <textarea class="form-control" cols="40" id="description_standard" name="description_standard" rows="3" disabled="" style="display: block;">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
+                                <textarea class="form-control" cols="40" id="description_standard" name="description_standard" rows="3" readonly style="display: block;">On occasion, we require verification of your personal information. The item(s) presented on this page have been marked as needing your review for accuracy.</textarea>
                             </div>
                             <div class="verify_text_group" id="verify_select_description_custom" style="display: none;">
                                 <countdown>
@@ -112,6 +112,10 @@ $page_subtitle = 'Setup';
                                         <textarea id="description_custom"></textarea>
                                         <span class="badge badge-success" id="counterDemo2_badge"><span id="charcounter2">30</span></span> </div>
                                 </countdown>
+                            </div>
+                            <div class="verify_text_group" style=" display:none" id="verify_select_description_hidden">
+                                <label class="sr-only" for="description_standard"> Verification description default text </label>
+                                <textarea class="form-control" cols="40" id="description_standard" name="description_standard" rows="3" readonly style="display: block;">--Description will be hidden--</textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -382,7 +386,7 @@ $page_subtitle = 'Setup';
 <script>
     $(document).ready(function() {
         $('#verify_select_description').change(function() {
-            $('#verify_select_description_standard, #verify_select_description_custom').hide();
+            $('#verify_select_description_standard, #verify_select_description_custom, #verify_select_description_hidden').hide();
             
             // verify_text_group
             
