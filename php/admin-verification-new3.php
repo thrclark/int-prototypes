@@ -142,26 +142,20 @@ $page_subtitle = 'Recipients';
                                         <div class="form-group">
                                             <label class="control-label" for="vfy1_recurrence"> Recurrence </label>
                                             <div class="int-fielddescription"> Select the recurrence for this trigger</div>
-                                            <div class="row">
+                                            <div class="row align-items-center">
                                                 <div class="col-12 col-lg-6">
                                                     <select class="form-control" id="vfy1_recurrence">
                                                         <option>No recurrence</option>
-                                                        <option>Every day</option>
-                                                        <option>Every 2 days</option>
-                                                        <option>Every 3 days</option>
-                                                        <option>Every 4 days</option>
-                                                        <option>Every 5 days</option>
-                                                        <option>Every 6 days</option>
-                                                        <option>Every week</option>
-                                                        <option>Every 2 weeks</option>
-                                                        <option>Every 3 weeks</option>
-                                                        <option>Every month</option>
-                                                        <option>Every 2 months</option>
-                                                        <option>Every 3 months</option>
-                                                        <option>Every half year</option>
-                                                        <option>Every year</option>
+                                                        <option value="triggerdate1">Every week</option>
+                                                        <option value="triggerdate2">Every month</option>
+                                                        <option value="triggerdate3">Every quarter</option>
+                                                        <option value="triggerdate4">Every year</option>
                                                     </select>
                                                 </div>
+                                                <div class="col-12 col-lg-6" id="triggerdate1" style="display: none"> (Next trigger date: 11/21/2020) </div>
+                                                <div class="col-12 col-lg-6" id="triggerdate2" style="display: none"> (Next trigger date: 12/15/2020) </div>
+                                                <div class="col-12 col-lg-6" id="triggerdate3" style="display: none"> (Next trigger date: 02/15/2021) </div>
+                                                <div class="col-12 col-lg-6" id="triggerdate4" style="display: none"> (Next trigger date: 11/15/2021) </div>
                                             </div>
                                         </div>
                                         <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
@@ -696,6 +690,16 @@ $page_subtitle = 'Recipients';
 </div>
 <?php include('includes/all-footerscripts.php') ?>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script> 
+<script>
+    $(document).ready(function() {
+        $('#vfy1_recurrence').change(function() {
+            $('#triggerdate1, #triggerdate2, #triggerdate3, #triggerdate4, #triggerdate5').hide();
+            $('#' + $(this).val()).show();
+        });
+
+        
+    });
+</script> 
 <script>
   $(document).ready(function(){
     $("#sticky").sticky({topSpacing:0});
