@@ -45,6 +45,10 @@ $page_subtitle = 'Review/save';
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-12">
+                        <div class="alert alert-danger fade show mb-4" role="alert">
+                            <h4 class="alert-heading">Errors found</h4>
+                            <p class="small">All errors must be fixed before previewing and saving.</p>
+                        </div>
                         <div class="rbt-collapse-accordion" id="accordion_parent">
                             <div class="card">
                                 <h3  id="collapse_setup">

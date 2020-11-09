@@ -29,8 +29,7 @@ $page_subtitle = 'Recipients';
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label  d-none d-lg-block">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </a> </li>
-                    </ol>
-                    <a href="verification-preview.php" target="_blank" class="btn btn-link p-0"> Preview <i class="rbt-icon-link-external"></i> </a> </div>
+                    </ol> <a href="admin-verification-new6-val.php" class="btn btn-link p-0"> Preview <i class="rbt-icon-link-external"></i> </a> </div>
             </div>
             <div class="col-12 col-sm-10 pl-sm-5">
                 <div class="row">
