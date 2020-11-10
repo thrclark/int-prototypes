@@ -21,7 +21,7 @@ $page_subtitle = 'Scheduling';
             </ol>
         </nav>
         <div class="row">
-            <div class="col-2 border-right d-none d-sm-block">
+            <div class="col-2 d-none d-sm-block">
                 <div id="sticky">
                     <ol class="rvb-steps rvb-steps--vertical mb-5" style="overflow-x:inherit">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
@@ -32,7 +32,7 @@ $page_subtitle = 'Scheduling';
                     </ol>
                 </div>
             </div>
-            <div class="col-12 col-sm-10 pl-sm-5">
+            <div class="col-12 col-sm-10 p-sm-5 pt-4 border-left int-panel">
                 <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
                 <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
                     <ol class="rvb-steps mb-5 d-sm-none">

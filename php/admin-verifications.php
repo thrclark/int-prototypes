@@ -20,6 +20,12 @@ $page_title = 'All verifications';
     </growls>
     <main class="main-content" id="main-content">
         <h1 class="rbt-ts-23 rbt-ts-32-md-up"><?php echo $page_title; ?></h1>
+      
+        
+        <div class="int-panel p-3">
+        
+        
+        
         <div class="form-row align-items-center my-3">
             <div class="col">
                 <div class="form-check form-check-inline">
@@ -221,6 +227,11 @@ $page_title = 'All verifications';
                 <li class="page-item"><a class="page-link" href="#">20</a></li>
             </ul>
         </nav>
+        
+        </div>
+        
+        
+        
         <!-- Modal -->
         <div class="modal fade" id="reset_speedbump_success" tabindex="-1" role="dialog" aria-labelledby="reset_speedbump_success" aria-hidden="true">
             <div class="modal-dialog" role="document">

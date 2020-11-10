@@ -101,4 +101,9 @@ html body .rbt-footer img {
     content: var(--footer-logo-image-url);
     display: var(--footer-logo-image-visibility);
 }
+    
+    .ms-container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 </style>
