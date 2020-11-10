@@ -422,7 +422,7 @@ $page_title = 'CampusConfirm';
                             <div class="form-group">
                                 <label for="font_header">Header font face</label>
                                 <select class="form-control mb-3" id="font_header">
-                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
                                     <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
                                     <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
@@ -438,17 +438,33 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontname">Font family name</label>
-                                <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
-                                <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput"  placeholder="e.g.: 'CustomFontName', sans-serif;'">
+                                <div class="int-fielddescription">Specify the name of this custom font.</div>
+                                <input type="text" class="form-control" id="custom_headerfontname" aria-describedby="textinput">
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                     <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
                                 </div>
                             </div>
                             <div class="form-group demojs-customheaderfont" style="display: none">
+                                <label for="font_header_fallback">Fallback fonts</label>
+                                <div class="int-fielddescription">In the event that custom font URLs for headers are unresponsive, select a browser-safe fallback font to use in it's place.</div>
+                                <select class="form-control mb-3" id="font_header_fallback">
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-customheaderfont" style="display: none">
                                 <label for="custom_headerfontweight">Weight</label>
                                 <div class="int-fielddescription">Specify the weight of this custom font.</div>
                                 <select class="form-control" id="custom_headerfontweight">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="BOLD">bold</option>
                                     <option value="W_100">100</option>
                                     <option value="W_200">200</option>
@@ -465,14 +481,14 @@ $page_title = 'CampusConfirm';
                                 <label for="custom_headerfontstyle">Style</label>
                                 <div class="int-fielddescription">Specify the style of this custom font.</div>
                                 <select class="form-control" id="custom_headerfontstyle">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="ITALIC">italic</option>
                                     <option value="OBLIQUE">oblique</option>
                                 </select>
                             </div>
                             <div class="row mb-2 demojs-customheaderfont" style="display: none">
                                 <div class="col">
-                                    <div class="ts-14 font-weight-bold mr-auto">Header font file sources</div>
+                                    <div class="ts-14 font-weight-bold mr-auto">Header font file URLs</div>
                                 </div>
                                 <div class="col-auto">
                                     <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_headerfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
@@ -491,7 +507,7 @@ $page_title = 'CampusConfirm';
                                     <button class="btn btn-sm btn-link ts-12 font-italic font-weight-normal p-1 mb-2">Same as header</button>
                                 </div>
                                 <select class="form-control mb-3" id="font_body">
-                                    <option value="Arial, Helvetica, sans-serif">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
                                     <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
                                     <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
                                     <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
@@ -507,17 +523,33 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontname">Font family name</label>
-                                <div class="int-fielddescription">Specify the name of this custom font. You may also provide fallback fonts to your custom font by separating each name with commas.</div>
+                                <div class="int-fielddescription">Specify the name of this custom font.</div>
                                 <input type="text" class="form-control" id="custom_bodyfontname" aria-describedby="textinput">
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
                                     <p class="rbt-ts-14" id="standalone4"> Please provide a custom font family name.</p>
                                 </div>
                             </div>
                             <div class="form-group demojs-custombodyfont" style="display: none">
+                                <label for="font_body_fallback">Fallback fonts</label>
+                                <div class="int-fielddescription">In the event that custom font URLs for the body text are unresponsive, select a browser-safe fallback font to use in it's place.</div>
+                                <select class="form-control mb-3" id="font_body_fallback">
+                                    <option value="Arial, Helvetica, sans-serif" selected="selected">Sans-Serif Arial, Helvetica, sans-serif</option>
+                                    <option value="'Arial Black', Gadget, sans-serif">Sans-Serif 'Arial Black', Gadget, sans-serif</option>
+                                    <option value="Impact, Charcoal, sans-serif">Sans-Serif Impact, Charcoal, sans-serif</option>
+                                    <option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Sans-Serif 'Lucida Sans Unicode', 'Lucida Grande', sans-serif</option>
+                                    <option value="Tahoma, Geneva, sans-serif">Sans-Serif Tahoma, Geneva, sans-serif</option>
+                                    <option value="'Trebuchet MS', Helvetica, sans-serif">Sans-Serif 'Trebuchet MS', Helvetica, sans-serif</option>
+                                    <option value="Verdana, Geneva, sans-serif">Sans-Serif Verdana, Geneva, sans-serif</option>
+                                    <option value="Georgia, serif">Serif Georgia, serif</option>
+                                    <option value="'Palatino Linotype', 'Book Antiqua', Palatino, serif">Serif 'Palatino Linotype', 'Book Antiqua', Palatino, serif</option>
+                                    <option value="'Times New Roman', Times, serif">Serif 'Times New Roman', Times, serif</option>
+                                </select>
+                            </div>
+                            <div class="form-group demojs-custombodyfont" style="display: none">
                                 <label for="custom_bodyfontweight">Weight</label>
                                 <div class="int-fielddescription">Specify the weight of this custom font.</div>
                                 <select class="form-control" id="custom_bodyfontweight">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="BOLD">bold</option>
                                     <option value="W_100">100</option>
                                     <option value="W_200">200</option>
@@ -534,14 +566,14 @@ $page_title = 'CampusConfirm';
                                 <label for="custom_bodyfontstyle">Style</label>
                                 <div class="int-fielddescription">Specify the style of this custom font.</div>
                                 <select class="form-control" id="custom_bodyfontstyle">
-                                    <option value="NORMAL">normal</option>
+                                    <option value="NORMAL" selected="selected">normal</option>
                                     <option value="ITALIC">italic</option>
                                     <option value="OBLIQUE">oblique</option>
                                 </select>
                             </div>
                             <div class="row mb-2 demojs-custombodyfont" style="display: none">
                                 <div class="col">
-                                    <div class="ts-14 font-weight-bold mr-auto">Body font file sources</div>
+                                    <div class="ts-14 font-weight-bold mr-auto">Body font file URLs</div>
                                 </div>
                                 <div class="col-auto">
                                     <button class="btn btn-sm rbt-btn-link text-primary" data-toggle="modal" data-target="#custom_bodyfont_urls"><span class="sr-only">Edit</span> <i class="rbt-icon-pencil"></i> </button>
@@ -574,8 +606,9 @@ $page_title = 'CampusConfirm';
                         <div class="card-body">
                             <div class="form-group" id="fontsize_orgname_block">
                                 <label class="d-block" for="fontsize_orgname">Organization name </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_orgname_value" name="price" value="14px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_orgname_value" name="price" value="14" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_orgname" value="14px" min="12" max="48" step="1" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -584,8 +617,9 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group" id="fontsize_appname_block">
                                 <label class="d-block" for="fontsize_appname">Application name </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_appname_value" name="price" value="26px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_appname_value" name="price" value="26" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_appname" value="26px" min="12" max="48" step="1" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -594,8 +628,9 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group">
                                 <label class="d-block" for="fontsize_header">Header </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_header_value" name="price" value="32px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_header_value" name="price" value="32" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_header" value="32px" min="20" max="48" step="1" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -604,15 +639,17 @@ $page_title = 'CampusConfirm';
                             </div>
                             <div class="form-group">
                                 <label class="d-block" for="fontsize_body">Body </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_body_value" name="price" value="16px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_body_value" name="price" value="16" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_body" value="16" min="12" max="16" class="form-control-range w-100">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="d-block" for="fontsize_verifyblock">Verify block </label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_fontsize_verifyblock_value" name="price" value="20px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_fontsize_verifyblock_value" name="price" value="20" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input type="range" id="fontsize_verifyblock" value="20" min="12" max="32" class="form-control-range w-100">
                                 </div>
                             </div>
@@ -636,15 +673,17 @@ $page_title = 'CampusConfirm';
                         <div class="card-body">
                             <div class="form-group">
                                 <label class="d-block"  for="theme_border_radius">Border radius</label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_border_value" name="price" value="4px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_border_value" name="price" value="4" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input id="theme_border_radius" type="range" min="0" max="20" value="4"  class="form-control-range w-100">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="d-block"  for="theme_page_margin">Page margin</label>
-                                <div class="d-flex border rounded  px-3 py-1">
-                                    <input id="show_margin_value" name="price" value="880px" class="ts-20 flex-shrink-1" style="width: 75px;border: none;">
+                                <div class="d-flex align-items-center border rounded  p-1 pr-3">
+                                    <input id="show_margin_value" name="price" value="880" class="ts-20 flex-shrink-1 text-right" style="width: 45px;border: none;">
+                                    <div class="mr-3">px</div>
                                     <input id="theme_page_margin" type="range" min="440"max="880"step="10" value="880" class="form-control-range w-100">
                                 </div>
                                 <div class="alert alert-inline alert-danger mb-3 demojs_validation" role="alert" style="margin-top: .5rem !important" ><span class="rbt-icon-exclamation" aria-hidden="true"></span>
@@ -977,7 +1016,7 @@ $page_title = 'CampusConfirm';
         $('#theme_page_margin').on('input', function() {
             var newVal = $(this).val();
             $("#show_margin_value").val(newVal);
-            $("#show_margin_value").val(function() {return this.value + 'px';});
+            $("#show_margin_value").val(function() {return this.value + '';});
         });
         $('#show_margin_value').on('input', function() {
             $('#theme_page_margin').val($(this).val())
@@ -985,7 +1024,7 @@ $page_title = 'CampusConfirm';
         $('#theme_border_radius').on('input', function() {
             var newVal = $(this).val();
             $("#show_border_value").val(newVal);
-            $("#show_border_value").val(function() {return this.value + 'px';});
+            $("#show_border_value").val(function() {return this.value + '';});
         });
         $('#show_border_value').on('input', function() {
             $('#theme_border_radius').val($(this).val())
@@ -993,7 +1032,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_body').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_body_value").val(newVal);
-            $("#show_fontsize_body_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_body_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_body_value').on('input', function() {
             $('#fontsize_body').val($(this).val())
@@ -1001,7 +1040,7 @@ $page_title = 'CampusConfirm';
          $('#fontsize_verifyblock').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_verifyblock_value").val(newVal);
-            $("#show_fontsize_verifyblock_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_verifyblock_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_verifyblock_value').on('input', function() {
             $('#fontsize_verifyblock').val($(this).val())
@@ -1009,7 +1048,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_header').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_header_value").val(newVal);
-            $("#show_fontsize_header_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_header_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_header_value').on('input', function() {
             $('#fontsize_header').val($(this).val())
@@ -1017,7 +1056,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_appname').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_appname_value").val(newVal);
-            $("#show_fontsize_appname_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_appname_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_appname_value').on('input', function() {
             $('#fontsize_appname').val($(this).val())
@@ -1025,7 +1064,7 @@ $page_title = 'CampusConfirm';
         $('#fontsize_orgname').on('input', function() {
             var newVal = $(this).val();
             $("#show_fontsize_orgname_value").val(newVal);
-            $("#show_fontsize_orgname_value").val(function() {return this.value + 'px';});
+            $("#show_fontsize_orgname_value").val(function() {return this.value + '';});
         });
         $('#show_fontsize_orgname_value').on('input', function() {
             $('#fontsize_orgname').val($(this).val())
