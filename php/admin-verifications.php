@@ -24,7 +24,7 @@ $page_title = 'All verifications';
             <div class="col">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="showinactive" value="option1" checked>
-                    <label class="form-check-label" for="showinactive">Live verifications only</label>
+                    <label class="form-check-label" for="showinactive">Live &amp; scheduled verifications only</label>
                 </div>
             </div>
             <div class="col-auto"><a href="admin-verification-new1.php" class="btn btn-sm btn-outline-primary"><i class="rbt-icon-plus"></i> Verification</a></div>
@@ -113,7 +113,7 @@ $page_title = 'All verifications';
                         </div>
                         </span></td>
                 </tr>
-                <tr class="demojs-inactive" style="display: none">
+                <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Personal Information</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
                         <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>A recipient group is scheduled to start receiving this verification on 04/21/2024.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
@@ -149,7 +149,7 @@ $page_title = 'All verifications';
                         </div>
                         </span></td>
                 </tr>
-                <tr class="demojs-inactive" style="display: none">
+                <tr class="demojs-active">
                     <td><b class="rbt-table-responsive-cell-label">Name</b><span class="rbt-table-responsive-cell-content">Sign Acceptable Use Agreement By 6.27.19</span></td>
                     <td><b class="rbt-table-responsive-cell-label">Status</b><span class="rbt-table-responsive-cell-content">
                         <button class="btn btn-sm btn-link text-decoration-none p-1 mb-0 mr-2" role="button" data-toggle="popover"  data-trigger="focus" data-placement="bottom" data-content=" <ul class='mb-2 list-unstyled'><li>The verification is set to 'active'.</li><li>A recipient group is scheduled to start receiving this verification on 04/21/2024.</li></ul>"><i class="rbt-icon-info-circle"><span class="sr-only">Info</span></i></button>
