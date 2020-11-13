@@ -32,6 +32,16 @@ $page_title = 'Publishers';
             </div>
             <div class="col-auto"><a href="#" class="btn btn-sm btn-outline-primary demojs_addpublisher"> <i class="rbt-icon-plus"></i> Publisher</a></div>
         </div>
+        
+        
+        
+        
+        
+        
+        <div class="int-panel p-3">
+            
+            
+            
         <table class="table rbt-table-responsive rbt-table-actions">
             <caption class="sr-only">
             List of all verifications
@@ -88,6 +98,11 @@ $page_title = 'Publishers';
                 </tr>
             </tbody>
         </table>
+            
+             </div>
+            
+            
+            
         <div class="modal fade" id="speedbump_deletepublisher_success" tabindex="-1" role="dialog" aria-labelledby="speedbump_deletepublisher_success" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -146,6 +161,13 @@ $page_title = 'Publishers';
                 <li class="breadcrumb-item active" aria-current="page">Add publisher</li>
             </ol>
         </nav>
+        
+        
+        
+        
+          <div class="int-panel p-3">
+              
+              
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="form-group">
@@ -219,6 +241,12 @@ $page_title = 'Publishers';
                     <a class="btn btn-outline-primary"  href="admin-settings-publishers.php"> Cancel </a> </div>
             </div>
         </div>
+              
+               </div>
+        
+        
+        
+        
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>

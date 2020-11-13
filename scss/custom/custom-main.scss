@@ -74,17 +74,14 @@ html {
     .dropdown-menu {
       border-radius: 4px;
     }
-
     .editor-toolbar {
       border-top-left-radius: $border-radius;
       border-top-right-radius: $border-radius;
     }
-
     .CodeMirror {
       border-bottom-left-radius:  $border-radius;
       border-bottom-right-radius:  $border-radius;
     }
-
     .ms-container .ms-list {
       border-radius: $border-radius;
     }
@@ -221,7 +218,8 @@ html {
         }
       }
       .table {
-        color: var(--body-text-color);
+        color: var(--panel-text-color);
+        background: var(--panel-bg-color);
         th {
           color: $color-black--900;
         }
@@ -462,6 +460,11 @@ html {
     }
     .border-right {
       border-right: 1px solid var(--border-color) !important;
+    }
+    .int-panel {
+      background: var(--panel-bg-color);
+      color: var(--panel-text-color);
+      border-radius: var(--theme_border_radius);
     }
     hr {
       border-top: 1px solid  var(--border-color) !important;
