@@ -20,8 +20,16 @@ $page_title = 'Reload Cache';
     </growls>
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+        
+        
+        
+        
+        <div class="int-panel p-3">
+            
+            
+            
         <div class="mb-3">Manually reload the system cache for all the resources and tenants.</div>
-        <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Reload cache</span> </button>
+        <button class="btn btn-primary" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Reload cache</span> </button></div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>

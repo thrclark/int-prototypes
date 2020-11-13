@@ -20,6 +20,13 @@ $page_title = 'LDAP Configuration';
     </growls>
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
+       
+        
+        
+        
+        <div class="int-panel p-3">
+        
+        
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="alert alert-warning alert-dismissible fade show mb-4" role="alert">
@@ -90,6 +97,8 @@ $page_title = 'LDAP Configuration';
                 </div>
             </div>
         </div>
+            
+            </div>
     </main>
 </div>
 <?php include('includes/all-footerscripts.php') ?>
