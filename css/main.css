@@ -12813,7 +12813,8 @@ html body {
       background: #fff;
       border-color: #666666; }
     html body .main-content .table {
-      color: var(--body-text-color); }
+      color: var(--panel-text-color);
+      background: var(--panel-bg-color); }
       html body .main-content .table th {
         color: #444444; }
       html body .main-content .table tr {
@@ -12949,6 +12950,10 @@ html body {
     background-color: var(--action-color); }
   html body .border-right {
     border-right: 1px solid var(--border-color) !important; }
+  html body .int-panel {
+    background: var(--panel-bg-color);
+    color: var(--panel-text-color);
+    border-radius: var(--theme_border_radius); }
   html body hr {
     border-top: 1px solid var(--border-color) !important; }
 html .pagination .page-item .page-link {

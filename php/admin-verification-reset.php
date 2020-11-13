@@ -20,7 +20,14 @@ $page_title = 'Reset user verifications';
     </growls>
     <main class="main-content" id="main-content">
         <h1 class="mb-3 mb-md-6 rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
-        <div class="form-group">
+    
+        
+        
+        <div class="int-panel p-3">
+        
+        
+        
+                <div class="form-group">
             <label class="control-label" for="userSearch"> Search </label>
             <div class="mb-2"> You may reset verifications for a specific user by searching user name, ID, or email address.</div>
             <div class="row mb-5">
@@ -72,6 +79,13 @@ $page_title = 'Reset user verifications';
             <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up  d-inline-block" >No results</h2>
             <button class="btn btn-link ts-14 font-italic font-weight-normal p-0" id="clearresults2">(Clear)</button>
         </div>
+        
+        
+        </div>
+        
+        
+        
+
         
         <!-- Modal -->
         <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">

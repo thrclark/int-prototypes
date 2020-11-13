@@ -31,116 +31,118 @@ $page_title = 'API Accounts';
                 <h1 class="rbt-ts-23 rbt-ts-32-md-up"> <?php echo $page_title; ?></h1>
             </div>
         </div>
-        <div class="form-row align-items-center mb-3">
-            <div class="col">
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="showinactive" value="option1" checked="">
-                    <label class="form-check-label" for="showinactive">Active accounts only</label>
+        <div class="int-panel p-3">
+            <div class="form-row align-items-center mb-3">
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="showinactive" value="option1" checked="">
+                        <label class="form-check-label" for="showinactive">Active accounts only</label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-sm btn-outline-primary demojs_addapi"><i class="rbt-icon-plus"></i> API account</button>
                 </div>
             </div>
-            <div class="col-auto">
-                <button class="btn btn-sm btn-outline-primary demojs_addapi"><i class="rbt-icon-plus"></i> API account</button>
-            </div>
+            <table class="table rbt-table-responsive rbt-table-actions">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Expires</th>
+                        <th>Email </th>
+                        <th><span class="sr-only">Actions</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Citizenship Status API</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">thrclark@iu.edu</span></td>
+                        <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
+                            <div class="rbt-table-responsive-cell-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                        <button class="dropdown-item demojs_addapi">Edit</button>
+                                        <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_success">Delete...</button>
+                                    </div>
+                                </div>
+                            </div></td>
+                    </tr>
+                    <tr class="demojs-inactive" style="display: none">
+                        <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle-empty mr-2 ts-12 text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Inactive"></i> </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b><span class="tablesaw-cell-content ng-binding">HR Personal Information</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">naiursd@iu.edu</span></td>
+                        <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
+                            <div class="rbt-table-responsive-cell-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                        <button class="dropdown-item demojs_addapi">Edit</button>
+                                        <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
+                                    </div>
+                                </div>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i></span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">IU Notify Live Data</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">tharoh@iu.edu</span></td>
+                        <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
+                            <div class="rbt-table-responsive-cell-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                        <button class="dropdown-item demojs_addapi">Edit</button>
+                                        <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
+                                    </div>
+                                </div>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-closed" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Locked"></i></span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">IU Notify Maintenance API</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Maintenance </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">yjalek@iu.edu</span></td>
+                        <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
+                            <div class="rbt-table-responsive-cell-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                        <button class="dropdown-item demojs_addapi">Edit</button>
+                                        <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
+                                    </div>
+                                </div>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-open" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Unlocked"></i></span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">TAM PRD Notifications</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Maintenance </span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
+                        <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">marcte@iu.edu</span></td>
+                        <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
+                            <div class="rbt-table-responsive-cell-content">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
+                                        <button class="dropdown-item demojs_addapi">Edit</button>
+                                        <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
+                                    </div>
+                                </div>
+                            </div></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <table class="table rbt-table-responsive rbt-table-actions">
-            <thead>
-                <tr>
-                    <th>Status</th>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Expires</th>
-                    <th>Email </th>
-                    <th><span class="sr-only">Actions</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">Citizenship Status API</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">thrclark@iu.edu</span></td>
-                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
-                        <div class="rbt-table-responsive-cell-content">
-                            <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span> </button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
-                                    <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_success">Delete...</button>
-                                </div>
-                            </div>
-                        </div></td>
-                </tr>
-                <tr class="demojs-inactive" style="display: none">
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle-empty mr-2 ts-12 text-muted" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Inactive"></i> </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b><span class="tablesaw-cell-content ng-binding">HR Personal Information</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">naiursd@iu.edu</span></td>
-                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
-                        <div class="rbt-table-responsive-cell-content">
-                            <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
-                                    <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
-                                </div>
-                            </div>
-                        </div></td>
-                </tr>
-                <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i></span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">IU Notify Live Data</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">External </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">---</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">tharoh@iu.edu</span></td>
-                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
-                        <div class="rbt-table-responsive-cell-content">
-                            <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
-                                    <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
-                                </div>
-                            </div>
-                        </div></td>
-                </tr>
-                <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-closed" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Locked"></i></span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">IU Notify Maintenance API</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Maintenance </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">yjalek@iu.edu</span></td>
-                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
-                        <div class="rbt-table-responsive-cell-content">
-                            <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
-                                    <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
-                                </div>
-                            </div>
-                        </div></td>
-                </tr>
-                <tr>
-                    <td><b class="rbt-table-responsive-cell-label">Status</b> <span class="rbt-table-responsive-cell-content "><i class="rbt-icon-circle mr-2 ts-12 text-success" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Active"></i> <i class="rbt-icon-lock-open" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Unlocked"></i></span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Name</b> <span class="rbt-table-responsive-cell-content ">TAM PRD Notifications</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Type</b> <span class="rbt-table-responsive-cell-content ">Maintenance </span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Expires</b> <span class="rbt-table-responsive-cell-content ">Mar 20, 2020</span></td>
-                    <td><b class="rbt-table-responsive-cell-label">Email</b> <span class="rbt-table-responsive-cell-content ">marcte@iu.edu</span></td>
-                    <td><b class="rbt-table-responsive-cell-label visible-xs"> Actions </b>
-                        <div class="rbt-table-responsive-cell-content">
-                            <div class="dropdown">
-                                <button class="btn btn-sm btn-outline-primary dropdown-toggle pl-2 pr-3" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="sr-only">Navigation menu</span></button>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton2" aria-hidden="true" role="menu">
-                                    <button class="dropdown-item demojs_addapi">Edit</button>
-                                    <button class="dropdown-item" data-toggle="modal" data-target="#speedbump_deleteapi_fail">Delete...</button>
-                                </div>
-                            </div>
-                        </div></td>
-                </tr>
-            </tbody>
-        </table>
         <div class="modal fade" id="speedbump_deleteapi_success" tabindex="-1" role="dialog" aria-labelledby="speedbump_deleteapi_success" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -199,6 +201,12 @@ $page_title = 'API Accounts';
                 <li class="breadcrumb-item active" aria-current="page"><?php echo $page_title; ?></li>
             </ol>
         </nav>
+        
+        
+         <div class="int-panel p-3">
+             
+             
+             
         <div class="row">
             <div class="col-12 col-lg-8">
                 <div class="form-group">
@@ -495,6 +503,10 @@ $page_title = 'API Accounts';
                     <button class="btn btn-primary demojs_showlistview" id="submitform"> <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span> <span class="visible">Save</span> </button>
                     <a class="btn btn-outline-primary demojs_showlistview" href="#"> Cancel </a> </div>
             </div>
+        </div>
+             
+             
+             
         </div>
     </main>
 </div>
