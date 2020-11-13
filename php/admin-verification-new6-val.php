@@ -20,17 +20,19 @@ $page_subtitle = 'Review/save';
                 <li class="breadcrumb-item active" aria-current="page">New verification</li>
             </ol>
         </nav>
-        <div class="row"> <div class="col-2 d-none d-sm-block">
+        <div class="row">
+            <div class="col-2 d-none d-sm-block">
                 <div id="sticky">
-                    <ol class="rvb-steps rvb-steps--vertical mb-5" style="overflow-x:inherit">
+                    <ol class="rvb-steps rvb-steps--vertical mb-7" style="overflow-x:inherit">
                         <li class="rvb-steps__item"> <a href="admin-verification-new1.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Setup</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-gear"></i></span> </a> </li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new2.php" class="rvb-steps__item-content"><span class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Data</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-clipboard"></i></span> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new3.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Recipients</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-users-group-solid"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new5.php" class="rvb-steps__item-content"> <span class="rvb-steps__label  d-none d-lg-block">Scheduling</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-calendar"></i> </span> </a></li>
                         <li class="rvb-steps__item"> <a href="admin-verification-new6.php" class="rvb-steps__item-content" aria-current="step"><span class="rvb-steps__item-content" aria-current="step"> <span class="rvb-steps__label  d-none d-lg-block">Review/save</span> <span class="rvb-steps__indicator"> <i class="rbt-icon-eye"></i></span> </span></a> </li>
                     </ol>
-                </div>
-            </div> <div class="col-12 col-sm-10 p-sm-5 pt-4 border-left int-panel">
+                    <a href="admin-verification-new6-val.php" class="btn btn-link p-0 d-none d-md-inline-block"> Preview <i class="rbt-icon-link-external"></i> </a> </div>
+            </div>
+            <div class="col-12 col-sm-10 p-sm-5 pt-4 border-left int-panel">
                 <h2 class="mb-3 rbt-ts-20 rbt-ts-26-md-up"><?php echo $page_subtitle; ?></h2>
                 <div id="sticky2" class="pb-2 d-sm-none rbt-z-1000 int-wizardmenu-mobile">
                     <ol class="rvb-steps mb-5 d-sm-none">
@@ -43,6 +45,10 @@ $page_subtitle = 'Review/save';
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-12">
+                        <div class="alert alert-danger fade show mb-4" role="alert">
+                            <h4 class="alert-heading">Errors found</h4>
+                            <p class="small">All errors must be fixed before previewing and saving.</p>
+                        </div>
                         <div class="rbt-collapse-accordion" id="accordion_parent">
                             <div class="card">
                                 <h3  id="collapse_setup">
@@ -303,7 +309,7 @@ $page_subtitle = 'Review/save';
                         </div>
                         <hr class="mt-7">
                         <div class="invalid-feedback mt-3"><span class="rbt-icon-close-circle" aria-hidden="true"></span> All errors must be fixed before previewing and saving. </div>
-                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary disabled"> Preview <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary disabled"> Save</a> <a href="admin-verifications.php" class="btn btn-outline-primary demojs_cancelaction"> Cancel </a> </div>
+                        <div class="rbt-button-group mt-3 mb-5" id="saveRecipients"> <a href="admin-verification-new5.php" class="btn btn-primary"> <i class="rbt-icon-chevron-left"></i> Previous </a> <a href="verification-preview.php" target="_blank" class="btn btn-outline-primary disabled d-md-none"> Preview <i class="rbt-icon-link-external"></i> </a> <a href="admin-verification-new6.php" class="btn btn-primary disabled"> Save</a> <a href="admin-verifications.php" class="btn btn-outline-primary demojs_cancelaction"> Cancel </a> </div>
                     </div>
                 </div>
             </div>
