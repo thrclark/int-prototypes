@@ -198,16 +198,18 @@ $page_subtitle = 'Review/save';
                                     <div class="card-body">
                                         <div class="rbt-collapse-accordion" id="accordion2">
                                             <div class="card">
-                                                <h5  id="headingTwo">
-                                                    <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> <i class="rbt-icon-chevron-right"></i> Recipient ruleset 1 </button>
-                                                </h5>
+                                                <h4 class="" id="headingTwo">
+                                                    <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> <i class="rbt-icon-chevron-right"></i> Trigger- TomTest</button>
+                                                </h4>
                                                 <div id="collapseOne1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
                                                     <div class="card-body">
                                                         <dl class="row">
+                                                            <dt class="col-sm-3">Name</dt>
+                                                            <dd class="col-sm-9">TomTest</dd>
                                                             <dt class="col-sm-3">Effective date</dt>
                                                             <dd class="col-sm-9">Fri Sep 27 2019, 12:01am </dd>
-                                                            <dt class="col-sm-3">Recur annually</dt>
-                                                            <dd class="col-sm-9">yes </dd>
+                                                            <dt class="col-sm-3">Recurrence</dt>
+                                                            <dd class="col-sm-9">Every week (Next recurrence date: 11/21/2020)</dd>
                                                             <dt class="col-sm-3">Specify recipients</dt>
                                                             <dd class="col-sm-9">
                                                                 <div class="rbt-expressionbuilder-read-only">
@@ -233,16 +235,18 @@ $page_subtitle = 'Review/save';
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <h5  id="headingTwo2">
-                                                    <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Recipient ruleset 2 </button>
-                                                </h5>
+                                                <h4 class="" id="headingTwo2">
+                                                    <button class="rbt-btn-nostyle btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <i class="rbt-icon-chevron-right"></i> Trigger- TomTest2</button>
+                                                </h4>
                                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
                                                     <div class="card-body">
                                                         <dl class="row">
+                                                            <dt class="col-sm-3">Name</dt>
+                                                            <dd class="col-sm-9">TomTest2</dd>
                                                             <dt class="col-sm-3">Effective date</dt>
                                                             <dd class="col-sm-9">Fri Sep 27 2019, 12:01am </dd>
-                                                            <dt class="col-sm-3">Recur annually</dt>
-                                                            <dd class="col-sm-9">yes </dd>
+                                                            <dt class="col-sm-3">Recurrence</dt>
+                                                            <dd class="col-sm-9">Every week (Next recurrence date: 11/21/2020)</dd>
                                                             <dt class="col-sm-3">Specify recipients</dt>
                                                             <dd class="col-sm-9">
                                                                 <div class="rbt-expressionbuilder-read-only">

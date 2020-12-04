@@ -154,10 +154,10 @@ $page_subtitle = 'Recipients';
                                                         <option value="triggerdate4">Every year</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-12 col-lg-6" id="triggerdate1" style="display: none"> (Next trigger date: 11/21/2020) </div>
-                                                <!--<div class="col-12 col-lg-6" id="triggerdate2" style="display: none"> (Next trigger date: 12/15/2020) </div>
-                                                <div class="col-12 col-lg-6" id="triggerdate3" style="display: none"> (Next trigger date: 02/15/2021) </div>-->
-                                                <div class="col-12 col-lg-6" id="triggerdate4" style="display: none"> (Next trigger date: 11/15/2021) </div>
+                                                <div class="col-12 col-lg-6" id="triggerdate1" style="display: none"> (Next recurrence date: 11/21/2020) </div>
+                                                <!--<div class="col-12 col-lg-6" id="triggerdate2" style="display: none"> (Next recurrence date: 12/15/2020) </div>
+                                                <div class="col-12 col-lg-6" id="triggerdate3" style="display: none"> (Next recurrence date: 02/15/2021) </div>-->
+                                                <div class="col-12 col-lg-6" id="triggerdate4" style="display: none"> (Next recurrence date: 11/15/2021) </div>
                                             </div>
                                         </div>
                                         <div class="font-weight-bold rbt-ts-14">Specify recipients</div>
