@@ -3,7 +3,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="savetheme_speedbumpLabel">Publsih theme changes</h5>
+                <h2 class="modal-title" id="savetheme_speedbumpLabel">Publsih theme changes</h2>
                 <button type="button" class="close" aria-label="Close" data-dismiss="modal"> <span class="rbt-icon-close"></span> </button>
             </div>
             <div class="modal-body">

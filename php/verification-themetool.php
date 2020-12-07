@@ -375,7 +375,17 @@ $page_title = 'CampusConfirm';
                         </div>
                         <div class="card-body">
                             <div class="form-group mb-3">
-                                <label for="header_html">Header HTML</label>
+                               
+                                
+                                
+                                <div class="d-flex justify-content-between">  <label for="header_html">Header HTML</label>   <button class="btn btn-link font-weight-normal p-0 mb-1 ts-12 font-italic" data-toggle="modal" data-target="#permittedmarkup"> Permitted markup</button>
+                                 </div>
+                                
+                                
+                                
+                                
+                                
+                                
                                 <div class="input-group">
                                     <textarea class="form-control" aria-label="header_html" id="header_html" rows="5" oninput='headerhtml_set();headerhtml_store();'></textarea>
                                     <div class="input-group-append"> <span class="input-group-text p-0">
@@ -384,13 +394,22 @@ $page_title = 'CampusConfirm';
                                 </div>
                             </div>
                             <div class="form-group mb-3">
-                                <label for="footer_html">Footer HTML</label>
+                                
+                                <div class="d-flex justify-content-between">  <label for="header_html">Footer HTML</label>   <button class="btn btn-link font-weight-normal p-0 mb-1 ts-12 font-italic" data-toggle="modal" data-target="#permittedmarkup"> Permitted markup</button>
+                                 </div>
+                                
                                 <div class="input-group">
                                     <textarea class="form-control" aria-label="header_html" id="footer_html" rows="5" oninput='footerhtml_set();footerhtml_store();'></textarea>
                                     <div class="input-group-append"> <span class="input-group-text p-0">
                                         <button class="btn btn-link btn-sm d-block w-100 h-100" ><span class="rbt-icon-sync"></span><span class="sr-only">Edit</span></button>
                                         </span> </div>
                                 </div>
+                                
+                                <div class="alert alert-inline alert-warning mb-3 mt-3 demojs_validation" role="alert"><span class="rbt-icon-exclamation" aria-hidden="true"></span>
+                                            <p class="rbt-ts-14" id="standalone4"> Some of the entered markup is not permitted, and has been removed. Please review the <a href="#" data-toggle="modal" data-target="#permittedmarkup">list of permissable html markup</a> for custom headers and footers.</p>
+                                        </div>
+                                
+                                
                             </div>
                             <div class="form-group mb-3">
                                 <label for="headerfooter_css">Header/footer CSS</label>
@@ -789,6 +808,11 @@ $page_title = 'CampusConfirm';
 <?php include('modals/modal-headerfont-urls.php') ?>
 <?php include('modals/modal-bodyfont-urls.php') ?>
 <?php include('modals/modal-themespeedbump.php') ?>
+    
+    <?php include('modals/modal-permittedmarkup.php') ?>
+    
+    
+    
 <?php include('includes/all-footerscripts.php') ?>
 <script>
     $(document).ready(function() {
