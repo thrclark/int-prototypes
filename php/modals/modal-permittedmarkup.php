@@ -7,7 +7,7 @@
                 <button type="button" class="close" aria-label="Close" data-dismiss="modal"> <span class="rbt-icon-close"></span> </button>
             </div>
             <div class="modal-body">
-                <p>The custom header and footer may include the following html markup tags. All other tags are not permitted, and will be stripped out.</p>
+                <p>The custom header and footer may include the following html markup tags. Any other tags are not permitted, and will be stripped out.</p>
                 <ul class="list-unstyled" style="columns: 3;-webkit-columns: 3;-moz-columns: 3;">
                     <li class="mt-0"><code>&lt;a&gt;</code></li>
                     <li><code>&lt;b&gt;</code></li>
